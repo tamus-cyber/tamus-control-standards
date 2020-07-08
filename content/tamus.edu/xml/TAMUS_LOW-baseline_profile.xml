@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<profile xmlns="http://csrc.nist.gov/ns/oscal/1.0" uuid="9df8d574-aa73-4471-9639-d940aa9f2894">
+
+   <metadata>
+      <title>Texas A&amp;M University System Low Baseline</title>
+      <published>2020-07-07T19:21:04Z</published>
+      <last-modified>2020-07-07T19:21:04Z</last-modified>
+      <version>0.7</version>
+      <oscal-version>1.0.0-milestone3</oscal-version>
+      <role id="prepared-by">
+         <title>Document creator</title>
+      </role>
+
+      <party uuid="00cd4c91-5db6-45f4-8c15-343baed5fdf8" type="organization">
+         <party-name>Texas A&amp;M University System Office of Cybersecurity</party-name>
+         <short-name>TAMUS Cybersecurity</short-name>
+         <link href="https://it.tamus.edu/cybersecurity" rel="homepage" />
+         <address type="work">
+            <addr-line>301 Tarrow St</addr-line>
+            <addr-line/>
+            <city>College Station</city>
+            <state>TX</state>
+            <postal-code>77840</postal-code>
+            <country>US</country>
+         </address>
+         <email>sciso@tamus.edu</email>
+      </party>
+
+      <responsible-party role-id="prepared-by">
+         <party-uuid>00cd4c91-5db6-45f4-8c15-343baed5fdf8</party-uuid>
+      </responsible-party>
+   </metadata>
+   <import href="#1cd52c1e-d57d-4f87-aa6f-a4514b31365c"/>
+   <merge>
+      <combine method="keep"/>
+      <as-is>true</as-is>
+   </merge>
+   <modify>
+     <alter control-id="ac-1">
+        <add position="ending" id-ref="ac-1_smt">
+           <part id="ac-1_tamus" name="item">
+              <title>TAMUS Implementation</title>
+              <p>The System member ensures proper mechanisms are in place to establish user identity and verify the user’s role before access is granted.</p>
+           </part>
+        </add>
+     </alter>
+   </modify>
+   <back-matter>
+      <resource uuid="1cd52c1e-d57d-4f87-aa6f-a4514b31365c">
+         <title>Texas Security Control Standards Catalog LOW Baseline</title>
+         <prop name="keep">always</prop>
+         <rlink media-type="application/xml" href="../../texas.gov/xml/TX_LOW-baseline-resolved-profile_catalog.xml"/>
+      </resource>
+   </back-matter>
+</profile>

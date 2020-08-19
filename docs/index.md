@@ -1,6 +1,6 @@
---
+---
 title: Texas A&M University System Cybersecurity Control Standards
---
+---
 
 Texas A&M University System members publish a security control catalog to
 implement organizational information security controls in a format that aligns

@@ -24,17 +24,17 @@ several formats:
   - Three variants are available:
 
     -
-      [sp800-53a+TXDIR+TAMUS+full_catalog.html](docs/sp800-53a+TXDIR+TAMUS+full_catalog.html)
+      [sp800-53a+TXDIR+TAMUS+full_catalog.html](https://tamuscyber.github.io/tamus-control-standards/sp800-53a+TXDIR+TAMUS+full_catalog.html)
       includes all controls presented in the Texas Security Control Standards
       Catalog
 
     -
-      [sp800-53a+TXDIR+TAMUS+baseline-controls_catalog.html](docs/sp800-53a+TXDIR+TAMUS+baseline-controls_catalog.html)
+      [sp800-53a+TXDIR+TAMUS+baseline-controls_catalog.html](https://tamuscyber.github.io/tamus-control-standards/sp800-53a+TXDIR+TAMUS+baseline-controls_catalog.html)
       includes only those controls from the Texas Security Control Standards
       Catalog that are part of a LOW, MODERATE, or HIGH baseline
 
     -
-      [sp800-53a+TXDIR+TAMUS+full-with-enhancements_catalog.html](docs/sp800-53a+TXDIR+TAMUS+full-with-enhancements_catalog.html)
+      [sp800-53a+TXDIR+TAMUS+full-with-enhancements_catalog.html](https://tamuscyber.github.io/tamus-control-standards/sp800-53a+TXDIR+TAMUS+full-with-enhancements_catalog.html)
       includes all controls from NIST SP 800-53, including control enhancements
 
 - Machine-readable data, in OSCAL-compliant XML format, of catalog and profile

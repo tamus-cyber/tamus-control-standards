@@ -282,6 +282,7 @@
     <alter control-id="pm-5">
       <add position="starting">
         <link href="#1d635223-295d-4ac9-a117-9c7558cb9ea3" rel="reference">NIST Special Publication 800-145</link>
+        <link href="#edeba4a2-6aec-49c5-9763-207a3970a366" rel="reference">NIST Special Publication 800-171 Rev 2</link>
       </add>
       <add position="ending" id-ref="pm-5_smt">
         <part id="pm-5_tamus" name="item">
@@ -290,7 +291,7 @@
             <p>The System member:</p>
             <part id="pm-5_tamus_smt.1.a" name="item">
               <prop name="label">a.</prop>
-              <p>designates a single system of record for inventory of all information systems owned or managed by the member;</p>
+              <p>designates a single system of record for inventory of all information systems [SP 800-171r2] and network-attached operational technology [SP 800-37r2] owned or managed by the member;</p>
             </part>
             <part id="pm-5_tamus_smt.1.b" name="item">
               <prop name="label">b.</prop>
@@ -298,8 +299,8 @@
             </part>
             <part id="pm-5_tamus_smt.1.c" name="item">
               <prop name="label">c.</prop>
-              <p>designates which data regarding an information system to record in the inventory of information systems. At a minimum, the data includes a unique identifier (e.g., serial number or system name), owner, custodian, and highest level of data
-                classification stored/processed on the information system.</p>
+              <p>designates which data regarding an information system to record in the inventory of information systems. At a minimum, the data includes a unique identifier (e.g., serial number or system name), owner, custodian, description of the
+                information sytem's function or major application, and highest level of data classification stored/processed on the information system.</p>
             </part>
           </part>
         </part>
@@ -485,6 +486,14 @@
         <text>Texas A&amp;M System Regulation 34.07.01, Emergency Management Plans</text>
       </citation>
       <rlink href="https://policies.tamus.edu/34-07.pdf"/>
+    </resource>
+    <resource uuid="d0d067ca-f98e-44e5-afd7-671a3a78b090">
+      <title>NIST Special Publication 800-37 Rev. 2</title>
+      <citation>
+        <text>NIST Special Publication 800-37 Rev. 2, Risk Management Framework for Information Systems and Organizations: A System Life Cycle Approach for Security and Privacy</text>
+      </citation>
+      <doc-id type="doi">10.6028/NIST.SP.800-37r2</doc-id>
+      <rlink href="https://doi.org/10.6028/NIST.SP.800-37r2"/>
     </resource>
     <resource uuid="945f11a5-4895-414e-bedc-528929d279a0">
       <title>NIST Special Publication 800-39</title>

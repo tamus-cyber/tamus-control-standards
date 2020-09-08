@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0"
-         uuid="cc21114b-f6d3-4664-abc0-3a040708c1ad">
+         uuid="8aace470-bf72-4595-a3a7-bca5197cc7d8">
    <metadata>
       <title>NIST Special Publication 800-53 Revision 4 Catalog with Priorities</title>
       <last-modified>2020-05-29T23:29:27.272-04:00</last-modified>
       <version>2015-01-22</version>
       <oscal-version>1.0.0-milestone3</oscal-version>
-      <prop name="resolution-timestamp">2020-08-19T11:32:22.892426-05:00</prop>
+      <prop name="resolution-timestamp">2020-09-08T15:41:38.443738-05:00</prop>
       <link rel="resolution-source" href="NIST_SP-800-53_rev4_profile.xml">NIST Special Publication 800-53 Revision 4 Catalog with Priorities</link>
       <role id="creator">
          <title>Document Creator</title>

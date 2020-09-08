@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0"
-         uuid="c6465cb6-553a-41de-90f6-eca6912c9289">
+         uuid="056b0e88-b547-4268-9223-3ef062617cdb">
    <metadata>
       <title>Texas A&amp;M University System Cybersecurity Control Standards</title>
       <published>2020-08-18T18:17:00Z</published>
       <last-modified>2020-08-18T18:17:00Z</last-modified>
       <version>1.0</version>
       <oscal-version>1.0.0-milestone3</oscal-version>
-      <prop name="resolution-timestamp">2020-08-19T11:32:54.787671-05:00</prop>
+      <prop name="resolution-timestamp">2020-09-08T15:42:08.968431-05:00</prop>
       <link rel="resolution-source" href="TAMUS_profile_full-with-enhancements.xml">Texas A&amp;M University System Cybersecurity Control Standards</link>
       <role id="prepared-by">
          <title>Document creator</title>

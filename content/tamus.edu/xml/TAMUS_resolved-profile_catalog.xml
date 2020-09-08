@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0"
-         uuid="dc8d21ec-2712-46a3-acba-a0e96fbeac95">
+         uuid="50ad58c7-9584-4fd9-a28f-f3071965f7f1">
    <metadata>
       <title>Texas A&amp;M University System Cybersecurity Control Standards</title>
       <published>2020-08-18T18:17:00Z</published>
       <last-modified>2020-08-18T18:17:00Z</last-modified>
       <version>1.0</version>
       <oscal-version>1.0.0-milestone3</oscal-version>
-      <prop name="resolution-timestamp">2020-08-19T11:32:29.277819-05:00</prop>
+      <prop name="resolution-timestamp">2020-09-08T15:41:44.730751-05:00</prop>
       <link rel="resolution-source" href="TAMUS_profile.xml">Texas A&amp;M University System Cybersecurity Control Standards</link>
       <role id="prepared-by">
          <title>Document creator</title>
@@ -27261,6 +27261,7 @@
          <prop name="label">PM-5</prop>
          <prop name="sort-id">pm-05</prop>
          <link href="#1d635223-295d-4ac9-a117-9c7558cb9ea3" rel="reference">NIST Special Publication 800-145</link>
+         <link href="#edeba4a2-6aec-49c5-9763-207a3970a366" rel="reference">NIST Special Publication 800-171 Rev 2</link>
          <link href="#9bd19d23-025f-4a47-935e-44810a0552a4" rel="reference">http://www.omb.gov</link>
          <part id="pm-5_smt" name="statement">
             <p>The organization develops and maintains an inventory of its information systems.</p>
@@ -27276,7 +27277,7 @@
                   <p>The System member:</p>
                   <part id="pm-5_tamus_smt.1.a" name="item">
                      <prop name="label">a.</prop>
-                     <p>designates a single system of record for inventory of all information systems owned or managed by the member;</p>
+                     <p>designates a single system of record for inventory of all information systems [SP 800-171r2] and network-attached operational technology [SP 800-37r2] owned or managed by the member;</p>
                   </part>
                   <part id="pm-5_tamus_smt.1.b" name="item">
                      <prop name="label">b.</prop>
@@ -27284,8 +27285,8 @@
                   </part>
                   <part id="pm-5_tamus_smt.1.c" name="item">
                      <prop name="label">c.</prop>
-                     <p>designates which data regarding an information system to record in the inventory of information systems. At a minimum, the data includes a unique identifier (e.g., serial number or system name), owner, custodian, and highest level of data
-                classification stored/processed on the information system.</p>
+                     <p>designates which data regarding an information system to record in the inventory of information systems. At a minimum, the data includes a unique identifier (e.g., serial number or system name), owner, custodian, description of the
+                information sytem's function or major application, and highest level of data classification stored/processed on the information system.</p>
                   </part>
                </part>
             </part>
@@ -29191,6 +29192,15 @@
          </citation>
          <doc-id type="doi">10.6028/NIST.SP.800-145</doc-id>
          <rlink href="https://doi.org/10.6028/NIST.SP.800-145"/>
+      </resource>
+      <resource uuid="edeba4a2-6aec-49c5-9763-207a3970a366">
+         <title>NIST Special Publication 800-171 Rev. 2</title>
+         <citation>
+            <text>NIST Special Publication 800-171 Rev. 2, Protecting Controlled Unclassified Information in Nonfederal Systems and Organizations</text>
+         </citation>
+         <doc-id type="doi">10.6028/NIST.SP.800-171r2</doc-id>
+         <prop name="version" ns="https://fedramp.gov/ns/oscal">Revision 2</prop>
+         <rlink href="https://doi.org/10.6028/NIST.SP.800-171r2"/>
       </resource>
       <resource uuid="97e290b3-a31a-40a9-b483-cb4cf35888f0">
          <title>FIPS Publication 140-2</title>

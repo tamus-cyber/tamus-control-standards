@@ -5,6 +5,7 @@ The Texas A&M University System (“**A&M System**”) provides the following in
 ## Online Privacy Notice
 
 This Online Privacy Notice (“**Notice**”) applies to the information that we collect when you visit the A&M System main website ([www.tamus.edu](https://www.tamus.edu)) and other websites that we own or control or who are members of the A&M System and link or refer to this Privacy Notice (together, the “**Sites**”). This Notice describes how this information is processed, as well as the choices that are available to you regarding the use of the information you provide.
+
 Unless otherwise indicated on a specific Site, the A&M System or the applicable member (“**member**”) is the data controller for all information collected under this Notice. Contact information for A&M System members is listed at the end of this Notice.
 
 ## Personal Information we Collect and Process

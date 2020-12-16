@@ -1,1 +1,55 @@
-theme: jekyll-theme-slate
+# OpenGraph / Twitter metadata
+title: cyber.dhs.gov
+small_title: cyber.dhs.gov
+smallest_title: cyber.dhs.gov
+description: A site for cybersecurity directives and implementation guidance, from the Cybersecurity and Infrastructure Security Agency.
+name: cyber.dhs.gov
+
+# GA and GitHub
+google_analytics_ua: ua-33523145-2
+org_name: cisagov
+repo_name: cyber.dhs.gov
+branch: master
+
+uswds_path: assets/vendor/uswds
+
+exclude:
+- CONTRIBUTING.md
+- _config.yml
+- .travis.yml
+- .gitignore
+- Gemfile
+- Gemfile.lock
+- LICENSE.md
+- README.md
+- vendor
+- gulpfile.js
+- manifest.yml
+- package.json
+- Staticfile
+- Staticfile.auth
+- node_modules
+- .nvmrc
+- .sass-cache
+- todo.txt
+
+markdown: kramdown
+
+plugins:
+  - jekyll-redirect-from
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+
+collections:
+  pages:
+    output: true
+    permalink: /:path/

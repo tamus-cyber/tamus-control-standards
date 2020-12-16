@@ -1,5 +1,6 @@
 ---
 title: Texas A&M University System Cybersecurity Control Standards
+layout: base
 ---
 
 Texas A&M University System members publish a security control catalog to

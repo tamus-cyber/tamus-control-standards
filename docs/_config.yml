@@ -1,14 +1,14 @@
 # OpenGraph / Twitter metadata
-title: cyber.dhs.gov
-small_title: cyber.dhs.gov
-smallest_title: cyber.dhs.gov
-description: A site for cybersecurity directives and implementation guidance, from the Cybersecurity and Infrastructure Security Agency.
-name: cyber.dhs.gov
+title: cyber-standards.tamus.edu
+small_title: cyber-standards.tamus.edu
+smallest_title: cyber-standards.tamus.edu
+description: A site for cybersecurity standards, from the Texas A&M University System Office of Cybersecurity.
+name: cyber-standards.tamus.edu
 
 # GA and GitHub
-google_analytics_ua: ua-33523145-2
-org_name: cisagov
-repo_name: cyber.dhs.gov
+#google_analytics_ua: ua-33523145-2
+org_name: tamuscyber
+repo_name: tamus-control-standards
 branch: master
 
 uswds_path: assets/vendor/uswds

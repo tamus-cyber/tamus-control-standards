@@ -9,7 +9,7 @@ name: cyber-standards.tamus.edu
 #google_analytics_ua: ua-33523145-2
 org_name: tamuscyber
 repo_name: tamus-control-standards
-branch: master/docs
+branch: main/docs
 
 uswds_path: assets/vendor/uswds
 
@@ -53,5 +53,3 @@ collections:
   pages:
     output: true
     permalink: /:path/
-
-theme: jekyll-theme-cayman

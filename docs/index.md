@@ -12,7 +12,7 @@ Texas A&M University System members publish a security control catalog to implem
 
 Texas A&M System Cybersecurity Control Standards provide system members with additional guidance that enhances State-level requirements for implementing security controls. These standards are prescribed by Texas A&M System Regulation 29.01.03, Information Security, paragraph 1.2(c).
 
-- This standard is intended to be used as a supplement to Texas Security Control Standards Catalog Version 1.3, updated February 26, 2016, and is presented in several formats:
+This standard is intended to be used as a supplement to Texas Security Control Standards Catalog Version 1.3, updated February 26, 2016, and is presented in several formats:
 
   - [The official standard in PDF format](static/tamus-control-standards.pdf), that presents Texas A&M System enhancements to statewide controls, along with appendices
 

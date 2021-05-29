@@ -1,0 +1,17 @@
+{% include TAMUSPagesHeader.html %}
+<div class="site-inner">
+  <div class="inner-header">
+    <aside class="page-header-content">
+      <div class="wrap">
+        <h2>{{ page.header_title }}</h2>
+        <p>{{ page.header_description }}</p>
+      </div><!-- end .wrap -->
+    </aside><!-- end .page-header-content -->
+  </div>
+  <div class="content-sidebar-wrap">
+    <main class="content">
+      {{ content }}
+    </main>
+  </div>
+</div>
+{% include TAMUSPagesFooter.html %}

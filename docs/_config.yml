@@ -1,55 +1,6 @@
-# OpenGraph / Twitter metadata
-title: Texas A&amp;M University System Cybersecurity Control Standards
-small_title: Texas A&amp;M University System Cybersecurity Control Standards
-smallest_title: Texas A&amp;M University System Cybersecurity Control Standards
-description: A site for cybersecurity standards, from the Texas A&amp;M University System Office of Cybersecurity.
-name: cyber-standards.tamus.edu
+# Site settings
+title: "NIST Pages Template"
+description: "Providing a page template for pages.nist.gov hosting groups."
 
-# GA and GitHub
-#google_analytics_ua: ua-33523145-2
-org_name: tamuscyber
-repo_name: tamus-control-standards
-branch: main/docs
-
-uswds_path: assets/vendor/uswds
-
-exclude:
-- CONTRIBUTING.md
-- _config.yml
-- .travis.yml
-- .gitignore
-- Gemfile
-- Gemfile.lock
-- LICENSE.md
-- README.md
-- vendor
-- gulpfile.js
-- manifest.yml
-- package.json
-- Staticfile
-- Staticfile.auth
-- node_modules
-- .nvmrc
-- .sass-cache
-- todo.txt
-
-markdown: kramdown
-
-plugins:
-  - jekyll-redirect-from
-
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
-
-defaults:
-  - scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "default"
-
-collections:
-  pages:
-    output: true
-    permalink: /:path/
+baseurl: ""
+rooturl: ""

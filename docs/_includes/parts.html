@@ -1,0 +1,19 @@
+{% for part in parts %}
+<ul>
+{% if part.title %}<strong>{{ part.title }}</strong>{% endif %}
+<li>
+  {% assign label = part.properties | where: "name", "label" %}
+  {% assign prose = part.prose %}
+  {% for param in control.parameters %}
+    {% assign prose = prose | replace: param.id, param.label %}
+    {% assign prose = prose | replace: "{{ ", "<em>[" %}
+    {% assign prose = prose | replace: " }}", "]</em>" %}
+  {% endfor %}
+  {{ label[0].value }} {{ prose }}
+  {% if part.parts %}
+    {% assign parts = part.parts %}
+    {% include parts.html %}
+  {% endif %}
+</li>
+</ul>
+{% endfor %}

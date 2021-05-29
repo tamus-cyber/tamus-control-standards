@@ -1,0 +1,51 @@
+---
+layout: main
+title: Texas A&M System Cybersecurity Control Standards Catalog
+header_title: Texas A&M System Cybersecurity Control Standards Catalog
+header_description: Complete NIST SP 800-53 control catalog
+---
+<h1>Texas A&M System Cybersecurity Control Standards Catalog</h1>
+
+<div class="catalog">
+  {% assign groups = site.data.tamus_catalog.catalog.groups | sort: "id" %}
+  {% for group in groups %}
+  <details>
+  <summary><strong>{{ group.id | upcase }} - {{ group.title }}</strong></summary>
+    <ul>
+      {% for control in group.controls %}
+        <details>
+        <summary><strong>{{ control.id | upcase }} {{ control.title }}</strong></summary>
+            <dl>
+              {% assign baseline = control.properties | where: "name", "baseline" %}
+              {% assign priority = control.properties | where: "name", "priority" %}
+              <dt>Baseline</dt>
+              <dd>{{ baseline[0].value | default: "None" }}</dd>
+              <dt>Priority</dt>
+              <dd>{{ priority[0].value | default: "P0" }}</dd>
+              <dt>Control Description</dt>
+              <dd>
+                {% assign parts = control.parts | where: "name", "statement" %}
+                {% include parts.html %}
+              </dd>
+              <dt>Supplemental Guidance</dt>
+              <dd>
+                {% assign parts = control.parts | where: "name", "guidance" %}
+                {% include parts.html %}
+              </dd>
+              {% if control.links %}
+                <dt>References</dt>
+                <dd>
+                  <ul>
+                    {% for link in control.links %}
+                      <li>{{ link.text }}</li>
+                    {% endfor %}
+                  </ul>
+                </dd>
+              {% endif %}
+            </dl>
+        </details>
+      {% endfor %}
+    </ul>
+  </details>
+  {% endfor %}
+</div>

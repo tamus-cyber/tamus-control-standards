@@ -10,15 +10,13 @@ header_description: >
 
 Texas A&M System Cybersecurity Control Standards provide system members with additional guidance that enhances State-level requirements for implementing security controls. These standards are prescribed by Texas A&M System Regulation 29.01.03, Information Security, paragraph 1.2(c).
 
-[Texas A&M System Cybersecurity Control Standards & Implementation Guide](https://cyber-standards.tamus.edu/static/tamus-control-standards.pdf)
+[Texas A&M System Cybersecurity Control Standards & Implementation Guide](/static/tamus-control-standards.pdf)
 
-A combined view, in HTML format, of the NIST SP 800-53 catalog, Texas statewide controls and Texas A&M System enhancements is also available in one of these three variants:
+A combined view of the NIST SP 800-53 catalog, Texas statewide control standards, and Texas A&M System control standards is also available in one of these variants:
 
-  - [All controls presented in the Texas Security Control Standards Catalog](https://static/sp800-53a+TXDIR+TAMUS+full_catalog.html)
+  - [All controls presented in the Texas Security Control Standards Catalog](/control-catalog)
 
-  - [Only controls from the Texas Security Control Standards Catalog that are part of a LOW, MODERATE, or HIGH baseline](static/sp800-53a+TXDIR+TAMUS+baseline-controls_catalog.html)
-
-  - [All controls from NIST SP 800-53, including control enhancements](static/sp800-53a+TXDIR+TAMUS+full-with-enhancements_catalog.html)
+  - [Only controls from the Texas Security Control Standards Catalog that are part of a LOW, MODERATE, or HIGH baseline](/required_controls)
 
 Contributions and feedback for future control standards releases are welcome via GitHub. [Please open a new issue with your feedback](https://github.com/tamuscyber/tamus-control-standards/issues).
 

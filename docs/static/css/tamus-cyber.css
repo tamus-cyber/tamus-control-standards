@@ -10,3 +10,28 @@ ul, menu, dir {
 li {
   list-style-type: disc;
 }
+
+.catalog summary:hover {
+  cursor: pointer;
+}
+
+.catalog details {
+  margin-bottom: 1em;
+}
+
+.catalog li {
+  list-style-type: none;
+}
+
+.catalog dl {
+  margin-left: 3em;
+}
+
+.catalog dt {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.catalog dd {
+  margin-bottom: 1em;
+}

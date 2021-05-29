@@ -16,7 +16,7 @@ A combined view of the NIST SP 800-53 catalog, Texas statewide control standards
 
   - [All controls presented in the Texas Security Control Standards Catalog](/control-catalog)
 
-  - [Only controls from the Texas Security Control Standards Catalog that are part of a LOW, MODERATE, or HIGH baseline](/required-controls)
+  - [Only controls from the Texas Security Control Standards Catalog required by Texas DIR or the Texas A&M System](/required-controls)
 
 Contributions and feedback for future control standards releases are welcome via GitHub. [Please open a new issue with your feedback](https://github.com/tamuscyber/tamus-control-standards/issues).
 

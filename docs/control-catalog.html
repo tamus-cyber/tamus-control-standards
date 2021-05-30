@@ -9,11 +9,11 @@ header_description: Complete NIST SP 800-53 control catalog
 <div class="catalog">
   {% assign groups = site.data.tamus_catalog.catalog.groups | sort: "id" %}
   {% for group in groups %}
-  <details>
+  <details id="{{ group.id }}">
   <summary><strong>{{ group.id | upcase }} - {{ group.title }}</strong></summary>
     <ul>
       {% for control in group.controls %}
-        <details>
+        <details id="{{ control.id }}">
         <summary><strong>{{ control.id | upcase }} {{ control.title }}</strong></summary>
             <dl>
               {% assign baseline = control.properties | where: "name", "baseline" %}
@@ -49,3 +49,28 @@ header_description: Complete NIST SP 800-53 control catalog
   </details>
   {% endfor %}
 </div>
+<script lang="javascript" type="text/javascript">
+  if (window.location.hash) {
+    let hash = location.hash.match(/^#([a-z]{2})/)
+
+    if (hash) {
+      let family = document.getElementById(hash[1]);
+
+      if (family) {
+        family.closest('details').open = true;
+
+        let controlHash = location.hash.match(/^#([a-z]{2}-\d+)$/);
+
+        if (controlHash) {
+          let control = document.getElementById(controlHash[1]);
+
+          if (control) {
+            control.closest('details').open = true;
+          }
+        }
+      }
+
+      location.href = hash[0]
+    }
+  }
+</script>

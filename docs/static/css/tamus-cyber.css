@@ -1,4 +1,28 @@
-ul, menu, dir {
+dd {
+  margin-bottom: 1em;
+}
+
+dl {
+  margin-left: 3em;
+}
+
+dt {
+  font-style: italic;
+  font-weight: bold;
+}
+
+h1 {
+  border-bottom: #ccc dotted 1px;
+  margin-top: 2em;
+  padding-bottom: 0.5em;
+}
+
+h2 {
+  font-size: 20px;
+  margin-top: 2em;
+}
+
+ol, ul, menu, dir {
   display: block;
   margin-block-start: 1em;
   margin-block-end: 1em;
@@ -7,7 +31,11 @@ ul, menu, dir {
   padding-inline-start: 40px;
 }
 
-li {
+ol li {
+  list-style-type: decimal;
+}
+
+ul li {
   list-style-type: disc;
 }
 
@@ -19,19 +47,15 @@ li {
   margin-bottom: 1em;
 }
 
-.catalog li {
+.catalog li,
+.on-this-page li {
   list-style-type: none;
 }
 
-.catalog dl {
-  margin-left: 3em;
-}
-
-.catalog dt {
-  font-style: italic;
-  font-weight: bold;
-}
-
-.catalog dd {
-  margin-bottom: 1em;
+.on-this-page {
+  background-color: #eee;
+  border: #000 solid 0.5px;
+  margin-bottom: 2em;
+  padding: 1em 1em 0 1em;
+  width: 300px;
 }

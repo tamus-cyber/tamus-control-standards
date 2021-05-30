@@ -1,0 +1,8 @@
+<div class="on-this-page">
+  <h4>On This Page</h4>
+  <ul>
+    {% for nav in page.nav %}
+    <li><a href="#{{ nav | slugify }}">{{ nav }}</a></li>
+    {% endfor %}
+  </ul>
+</div>

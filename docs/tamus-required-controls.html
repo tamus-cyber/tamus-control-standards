@@ -2,7 +2,7 @@
 layout: main
 title: Texas A&M System Cybersecurity Control Standards Catalog
 header_title: Texas A&M System Cybersecurity Control Standards Catalog
-header_description: State of Texas and/or Texas A&M System required controls from NIST SP 800-53 control catalog
+header_description: Texas A&M System required controls from NIST SP 800-53 control catalog
 ---
 <h1>Texas A&M System Cybersecurity Control Standards Catalog</h1>
 
@@ -15,12 +15,10 @@ header_description: State of Texas and/or Texas A&M System required controls fro
       {% for control in group.controls %}
         {% for part in control.parts %}
           {% assign parts = control.parts | where: "name", "statement" %}
-          {% capture tx_id %}{{ control.id }}_tx{% endcapture %}
           {% capture tamus_id %}{{ control.id }}_tamus{% endcapture %}
-          {% assign tx_required_by = parts[0].parts | where: "id", tx_id %}
           {% assign tamus_required_by = parts[0].parts | where: "id", tamus_id %}
         {% endfor %}
-        {% if tx_required_by[0] or tamus_required_by[0] %}
+        {% if tamus_required_by[0] %}
           <details>
           <summary><strong>{{ control.id | upcase }} {{ control.title }}</strong></summary>
               <dl>

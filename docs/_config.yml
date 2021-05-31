@@ -1,6 +1,8 @@
 # Site settings
-title: "NIST Pages Template"
-description: "Providing a page template for pages.nist.gov hosting groups."
+title: Texas A&M University System Cybersecurity Control Standards
+description:
 
-baseurl: ""
-rooturl: ""
+github:
+  repo: tamuscyber/tamus-control-standards
+  branch: main
+  baseurl: /docs

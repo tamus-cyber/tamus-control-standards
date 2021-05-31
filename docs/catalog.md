@@ -48,7 +48,7 @@ Prior to publishing new or revised standards, the Office of Cybersecurity will s
 
 # References
 
-{% include_relative references.md %}
+{% include_relative catalog-references.md %}
 
 # Legacy Security Standard Crosswalk
 

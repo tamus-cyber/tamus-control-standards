@@ -1,5 +1,5 @@
 ---
-name: Control catalog future content request
+name: Control standards catalog content request
 about: Suggest an addition or change to the control standards catalog
 title: ''
 labels: ''
@@ -17,4 +17,4 @@ A clear and concise description of what you would like to see.
 A clear and concise description of any alternative solutions you've considered.
 
 **Additional context**
-Add any other context or screenshots about the feature request here.
+Add any other context about the content request here.

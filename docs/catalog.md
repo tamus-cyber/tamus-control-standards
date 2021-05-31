@@ -206,7 +206,7 @@ Texas A&M University System (A&M System) data classification consists of a minim
 
 2. This classification criteria will be used to assess information access and security requirements for information to be stored or processed within member shared information centers.
 
-3. When determining security controls to use for a given set of information, Information Owners and Custodians should also assess whether special requirements exist regarding importance of information availability and integrity and rate the need as LOW, MODERATE, or HIGH for both integrity and availability. The needs regarding availability and integrity may impact security control decisions but are not used for purposes of assigning a classification label of Confidential, Controlled, or Public.
+3. When determining security controls to use for a given set of information, Information Owners and Custodians should also assess whether special requirements exist regarding importance of information availability and integrity and rate the need as LOW, MODERATE, or HIGH for both integrity and availability. The needs regarding availability and integrity may impact security control decisions but are not used for purposes of assigning a classification label of Confidential, Internal Use, or Public.
 
 4. Some classes of information may have attributes, such as “mission critical” or “business critical”. Information attributes do not supplant these classifications but should be used to clarify their importance to the institution.
 

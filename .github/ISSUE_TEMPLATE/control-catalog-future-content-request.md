@@ -1,6 +1,6 @@
 ---
-name: Future content request
-about: Suggest an addition or change to the control standard
+name: Control catalog future content request
+about: Suggest an addition or change to the control standards catalog
 title: ''
 labels: ''
 assignees: ''

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0"
-         uuid="50ad58c7-9584-4fd9-a28f-f3071965f7f1">
+         uuid="7e2af5a5-a65f-4f75-99a5-4715d36d669e">
    <metadata>
       <title>Texas A&amp;M University System Cybersecurity Control Standards</title>
       <published>2020-08-18T18:17:00Z</published>
       <last-modified>2020-08-18T18:17:00Z</last-modified>
       <version>1.0</version>
       <oscal-version>1.0.0-milestone3</oscal-version>
-      <prop name="resolution-timestamp">2020-09-08T15:41:44.730751-05:00</prop>
+      <prop name="resolution-timestamp">2021-06-23T12:44:59.41-06:00</prop>
       <link rel="resolution-source" href="TAMUS_profile.xml">Texas A&amp;M University System Cybersecurity Control Standards</link>
       <role id="prepared-by">
          <title>Document creator</title>
@@ -10574,9 +10574,15 @@
          </param>
          <prop name="label">IA-11</prop>
          <prop name="sort-id">ia-11</prop>
-         <link href="#ed82ad7b-a0cf-44d3-839d-905d2ad57cc0" rel="reference">NIST Special Publication 800-63B</link>
+         <link href="#d7782c05-5d7b-4d34-a144-4f99bc496b04" rel="reference">NIST Special Publication 800-63B</link>
          <part id="ia-11_smt" name="statement">
             <p>The organization requires users and devices to re-authenticate when <insert param-id="ia-11_prm_1"/>.</p>
+            <part id="ia-11_tamus" name="item">
+               <title>TAMUS Implementation</title>
+               <part id="ia-11_tamus_smt.1" name="item">
+                  <p>The System member limits the lifetime of browser cookies used for binding authenticated sessions to System-owned or -managed information systems to no more than five (5) days.</p>
+               </part>
+            </part>
          </part>
          <part id="ia-11_gdn" name="guidance">
             <p>In addition to the re-authentication requirements associated with session locks,
@@ -10602,12 +10608,6 @@
                <prop name="label">IA-11[3]</prop>
                <p>requires devices to re-authenticate when organization-defined circumstances or
                   situations require re-authentication.</p>
-            </part>
-            <part id="ia-11_tamus" name="item">
-              <title>TAMUS Implementation</title>
-              <part id="ia-11_tamus_smt.1" name="item">
-                <p>The System member limits the lifetime of browser cookies used for binding authenticated sessions to System-owned or -managed information systems to no more than five (5) days.</p>
-              </part>
             </part>
          </part>
          <part name="assessment">
@@ -28926,13 +28926,6 @@
          </citation>
          <rlink href="http://csrc.nist.gov/publications/PubsSPs.html#800-63"/>
       </resource>
-      <resource uuid="ed82ad7b-a0cf-44d3-839d-905d2ad57cc0">
-         <title>NIST Special Publication 800-63B</title>
-         <citation>
-            <text>NIST Special Publication 800-63B</text>
-         </citation>
-         <rlink href="https://doi.org/10.6028/NIST.SP.800-63b"/>
-      </resource>
       <resource uuid="abd950ae-092f-4b7a-b374-1c7c67fe9350">
          <title>NIST Special Publication 800-64</title>
          <citation>
@@ -29198,6 +29191,14 @@
             <text>Texas A&amp;M System Regulation 34.07.01, Emergency Management Plans</text>
          </citation>
          <rlink href="https://policies.tamus.edu/34-07.pdf"/>
+      </resource>
+      <resource uuid="d7782c05-5d7b-4d34-a144-4f99bc496b04">
+         <title>NIST Special Publication 800-63B</title>
+         <citation>
+            <text>NIST Special Publication 800-63B, Digital Identity Guidelines: Authentication and Lifecycle Management</text>
+         </citation>
+         <doc-id type="doi">10.6028/NIST.SP.800-63b</doc-id>
+         <rlink href="https://doi.org/10.6028/NIST.SP.800-63b"/>
       </resource>
       <resource uuid="1d635223-295d-4ac9-a117-9c7558cb9ea3">
          <title>NIST Special Publication 800-145</title>

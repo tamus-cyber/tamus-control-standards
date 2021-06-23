@@ -214,7 +214,7 @@
     </alter>
     <alter control-id="ia-11">
       <add position="starting">
-        <link href="#ed82ad7b-a0cf-44d3-839d-905d2ad57cc0" rel="reference">NIST Special Publication 800-63B</link>
+        <link href="#d7782c05-5d7b-4d34-a144-4f99bc496b04" rel="reference">NIST Special Publication 800-63B</link>
       </add>
       <add position="ending" id-ref="ia-11_smt">
         <part id="ia-11_tamus" name="item">
@@ -516,7 +516,7 @@
       <doc-id type="doi">10.6028/NIST.SP.800-39</doc-id>
       <rlink href="https://doi.org/10.6028/NIST.SP.800-39"/>
     </resource>
-    <resource uuid="ed82ad7b-a0cf-44d3-839d-905d2ad57cc0">
+    <resource uuid="d7782c05-5d7b-4d34-a144-4f99bc496b04">
       <title>NIST Special Publication 800-63B</title>
       <citation>
         <text>NIST Special Publication 800-63B, Digital Identity Guidelines: Authentication and Lifecycle Management</text>

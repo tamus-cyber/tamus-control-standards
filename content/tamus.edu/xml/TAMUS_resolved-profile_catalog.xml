@@ -10574,6 +10574,7 @@
          </param>
          <prop name="label">IA-11</prop>
          <prop name="sort-id">ia-11</prop>
+         <link href="#ed82ad7b-a0cf-44d3-839d-905d2ad57cc0" rel="reference">NIST Special Publication 800-63B</link>
          <part id="ia-11_smt" name="statement">
             <p>The organization requires users and devices to re-authenticate when <insert param-id="ia-11_prm_1"/>.</p>
          </part>
@@ -10601,6 +10602,12 @@
                <prop name="label">IA-11[3]</prop>
                <p>requires devices to re-authenticate when organization-defined circumstances or
                   situations require re-authentication.</p>
+            </part>
+            <part id="ia-11_tamus" name="item">
+              <title>TAMUS Implementation</title>
+              <part id="ia-11_tamus_smt.1" name="item">
+                <p>The System member limits the lifetime of browser cookies used for binding authenticated sessions to System-owned or -managed information systems to no more than five (5) days.</p>
+              </part>
             </part>
          </part>
          <part name="assessment">
@@ -28918,6 +28925,13 @@
             <text>NIST Special Publication 800-63</text>
          </citation>
          <rlink href="http://csrc.nist.gov/publications/PubsSPs.html#800-63"/>
+      </resource>
+      <resource uuid="ed82ad7b-a0cf-44d3-839d-905d2ad57cc0">
+         <title>NIST Special Publication 800-63B</title>
+         <citation>
+            <text>NIST Special Publication 800-63B</text>
+         </citation>
+         <rlink href="https://doi.org/10.6028/NIST.SP.800-63b"/>
       </resource>
       <resource uuid="abd950ae-092f-4b7a-b374-1c7c67fe9350">
          <title>NIST Special Publication 800-64</title>

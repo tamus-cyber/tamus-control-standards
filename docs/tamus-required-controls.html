@@ -21,7 +21,10 @@ header_description: >
         {% endfor %}
         {% if tamus_required_by[0] %}
           <details>
-          <summary><strong>{{ control.id | upcase }} {{ control.title }}</strong></summary>
+            <summary>
+              <strong>{{ control.id | upcase }} {{ control.title }}</strong>
+              <a class="control-link" href="{{ page.id }}#{{ control.id }}"><i class="fas fa-link"></i></a>
+            </summary>
               <dl>
                 {% assign baseline = control.properties | where: "name", "baseline" %}
                 {% assign priority = control.properties | where: "name", "priority" %}

@@ -59,7 +59,7 @@ ul li {
 }
 
 .control-item:hover .control-link {
-  display: block;
+  display: inline-block;
 }
 
 .on-this-page {

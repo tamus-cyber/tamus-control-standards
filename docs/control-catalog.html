@@ -13,8 +13,11 @@ header_description: Complete NIST SP 800-53 Revision 4 control catalog
   <summary><strong>{{ group.id | upcase }} - {{ group.title }}</strong></summary>
     <ul>
       {% for control in group.controls %}
-        <details id="{{ control.id }}">
-        <summary><strong>{{ control.id | upcase }} {{ control.title }}</strong></summary>
+        <details class="control-item" id="{{ control.id }}">
+        <summary>
+          <strong>{{ control.id | upcase }} {{ control.title }}</strong>
+          <a class="control-link" href="{{ page.id }}#{{ control.id }}"><i class="fas fa-link"></i></a>
+        </summary>
             <dl>
               {% assign baseline = control.properties | where: "name", "baseline" %}
               {% assign priority = control.properties | where: "name", "priority" %}

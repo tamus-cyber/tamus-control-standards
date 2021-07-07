@@ -52,6 +52,16 @@ ul li {
   list-style-type: none;
 }
 
+.control-link {
+  color: #cccccc;
+  display: none;
+  padding-left: 10px;
+}
+
+.control-item:hover .control-link {
+  display: block;
+}
+
 .on-this-page {
   background-color: #eee;
   border: #000 solid 0.5px;

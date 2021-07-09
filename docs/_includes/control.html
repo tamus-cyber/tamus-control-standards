@@ -1,6 +1,9 @@
 <details class="control-item" id="{{ control.id }}">
 <summary>
-  <strong>{{ control.id | upcase }} {{ control.title }}</strong>
+  <strong>
+    {{ control.id | upcase }} {{ control.title }}
+    {% if include.revised %} ({{ include.revised }}){% endif %}
+  </strong>
   <a class="control-link" href="{{ page.id }}#{{ control.id }}"><i class="fas fa-link"></i></a>
 </summary>
     <dl>

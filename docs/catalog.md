@@ -46,6 +46,8 @@ Prior to publishing new or revised standards, the Office of Cybersecurity will s
 
 - [Only controls from the Texas Security Control Standards Catalog required by the Texas A&M System](/tamus-required-controls)
 
+- [Only recently updated Texas A&M System required controls](/recent-updated-controls)
+
 # References
 
 {% include_relative catalog-references.md %}

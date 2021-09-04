@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0"
-         uuid="7e2af5a5-a65f-4f75-99a5-4715d36d669e">
+         uuid="c62b543a-4946-4455-b24b-17c744fdee96">
    <metadata>
       <title>Texas A&amp;M University System Cybersecurity Control Standards</title>
       <published>2020-08-18T18:17:00Z</published>
-      <last-modified>2020-08-18T18:17:00Z</last-modified>
-      <version>1.0</version>
+      <last-modified>2021-09-04T16:15:00Z</last-modified>
+      <version>1.2</version>
       <oscal-version>1.0.0-milestone3</oscal-version>
-      <prop name="resolution-timestamp">2021-06-23T12:44:59.41-06:00</prop>
+      <prop name="resolution-timestamp">2021-09-04T12:20:43.692-04:00</prop>
       <link rel="resolution-source" href="TAMUS_profile.xml">Texas A&amp;M University System Cybersecurity Control Standards</link>
       <role id="prepared-by">
          <title>Document creator</title>
@@ -17946,7 +17946,15 @@
             <part id="ra-2_tamus" name="item">
                <title>TAMUS Implementation</title>
                <part id="ra-2_tamus_smt.1" name="item">
-                  <p>The System member categorizes information and information systems owned or managed by the member using a data classification structure that incorporates the guidance provided in Appendix D: Data Classification, at a minimum.</p>
+                  <p>The System member:</p>
+                  <part id="ra-2_tamus_smt.1.a" name="item">
+                     <prop name="label">a.</prop>
+                     <p>categorizes information and information systems owned or managed by the member using a data classification structure that incorporates the guidance provided in Appendix D: Data Classification, at a minimum.</p>
+                  </part>
+                  <part id="ra-2_tamus_smt.1.b" name="item">
+                     <prop name="label">b.</prop>
+                     <p>reduces, and eliminates where possible, the collection and/or use of sensitive personal information [TxBCC 521.002] in information resources under the control of the member.</p>
+                  </part>
                </part>
             </part>
          </part>

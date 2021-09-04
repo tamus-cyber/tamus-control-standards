@@ -4,8 +4,8 @@
   <metadata>
     <title>Texas A&amp;M University System Cybersecurity Control Standards</title>
     <published>2020-08-18T18:17:00Z</published>
-    <last-modified>2020-08-18T18:17:00Z</last-modified>
-    <version>1.0</version>
+    <last-modified>2021-09-04T16:15:00Z</last-modified>
+    <version>1.2</version>
     <oscal-version>1.0.0-milestone3</oscal-version>
     <role id="prepared-by">
       <title>Document creator</title>
@@ -198,20 +198,6 @@
         </part>
       </add>
     </alter>
-    <alter control-id="dm-1">
-      <add position="starting">
-        <link href="#5b23f2c5-4c42-4b0e-a75b-34af3bcafb10" rel="reference">Texas Business &amp; Commerce Code §521.002</link>
-      </add>
-      <add position="ending" id-ref="dm-1_smt">
-        <part id="dm-1_tamus" name="item">
-          <title>TAMUS Implementation</title>
-          <part id="dm-1_tamus_smt.1" name="item">
-            <p>The System member reduces, and eliminates where possible, the collection and/or use of sensitive personal information [TxBCC 521.002] in information resources under the control of the member. [Editorial note: System members may implement this
-              standard as part of RA-2, Risk Categorization]</p>
-          </part>
-        </part>
-      </add>
-    </alter>
     <alter control-id="ia-11">
       <add position="starting">
         <link href="#d7782c05-5d7b-4d34-a144-4f99bc496b04" rel="reference">NIST Special Publication 800-63B</link>
@@ -334,7 +320,15 @@
         <part id="ra-2_tamus" name="item">
           <title>TAMUS Implementation</title>
           <part id="ra-2_tamus_smt.1" name="item">
-            <p>The System member categorizes information and information systems owned or managed by the member using a data classification structure that incorporates the guidance provided in Appendix D: Data Classification, at a minimum.</p>
+            <p>The System member:</p>
+            <part id="ra-2_tamus_smt.1.a" name="item">
+              <prop name="label">a.</prop>
+              <p>categorizes information and information systems owned or managed by the member using a data classification structure that incorporates the guidance provided in Appendix D: Data Classification, at a minimum.</p>
+            </part>
+            <part id="ra-2_tamus_smt.1.b" name="item">
+              <prop name="label">b.</prop>
+              <p>reduces, and eliminates where possible, the collection and/or use of sensitive personal information [TxBCC 521.002] in information resources under the control of the member.</p>
+            </part>
           </part>
         </part>
       </add>

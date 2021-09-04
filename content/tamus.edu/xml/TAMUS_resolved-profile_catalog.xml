@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0"
-         uuid="c62b543a-4946-4455-b24b-17c744fdee96">
+         uuid="f12b93a3-4682-4bc9-8d06-f4d905019873">
    <metadata>
       <title>Texas A&amp;M University System Cybersecurity Control Standards</title>
       <published>2020-08-18T18:17:00Z</published>
       <last-modified>2021-09-04T16:15:00Z</last-modified>
       <version>1.2</version>
       <oscal-version>1.0.0-milestone3</oscal-version>
-      <prop name="resolution-timestamp">2021-09-04T12:20:43.692-04:00</prop>
+      <prop name="resolution-timestamp">2021-09-04T12:38:05.56-04:00</prop>
       <link rel="resolution-source" href="TAMUS_profile.xml">Texas A&amp;M University System Cybersecurity Control Standards</link>
       <role id="prepared-by">
          <title>Document creator</title>
@@ -1145,6 +1145,13 @@
                <part id="ac-8_tx_smt.1" name="item">
                   <p>System identification/logon banners shall have warning statements that include the following topics: (a) Unauthorized use is prohibited; (b) Usage may be subject to security testing and monitoring; (c) Misuse is subject to criminal prosecution;
               and (d) Users have no expectation of privacy except as otherwise provided by applicable privacy laws.</p>
+               </part>
+            </part>
+            <part id="ac-8_tamus" name="item">
+               <title>TAMUS Implementation</title>
+               <part id="ac-8_tamus_smt.1" name="item">
+                  <p>The System member publishes a privacy notice on websites owned by the member which contains, at a minimum, the content contained on the Texas A&amp;M University System website at
+              <a href="https://www.tamus.edu/marcomm/reports/privacy">https://www.tamus.edu/marcomm/reports/privacy</a>.</p>
                </part>
             </part>
          </part>

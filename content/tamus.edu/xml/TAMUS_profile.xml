@@ -69,6 +69,17 @@
         </part>
       </add>
     </alter>
+    <alter control-id="ac-8">
+      <add position="ending" id-ref="ac-8_smt">
+        <part id="ac-8_tamus" name="item">
+          <title>TAMUS Implementation</title>
+          <part id="ac-8_tamus_smt.1" name="item">
+            <p>The System member publishes a privacy notice on websites owned by the member which contains, at a minimum, the content contained on the Texas A&amp;M University System website at
+              <a href="https://www.tamus.edu/marcomm/reports/privacy">https://www.tamus.edu/marcomm/reports/privacy</a>.</p>
+          </part>
+        </part>
+      </add>
+    </alter>
     <alter control-id="ac-22">
       <add position="ending" id-ref="ac-22_smt">
         <part id="ac-22_tamus" name="item">
@@ -406,17 +417,6 @@
           <title>TAMUS Implementation</title>
           <part id="si-4_tamus_smt.1" name="item">
             <p>The System member ensures the security of information systems through monitoring network traffic and use of information resources.</p>
-          </part>
-        </part>
-      </add>
-    </alter>
-    <alter control-id="tr-1">
-      <add position="ending" id-ref="tr-1_smt">
-        <part id="tr-1_tamus" name="item">
-          <title>TAMUS Implementation</title>
-          <part id="tr-1_tamus_smt.1" name="item">
-            <p>The System member publishes a privacy notice on websites owned by the member which contains, at a minimum, the content contained on the Texas A&amp;M University System website at
-              <a href="https://www.tamus.edu/marcomm/reports/privacy">https://www.tamus.edu/marcomm/reports/privacy</a>.</p>
           </part>
         </part>
       </add>

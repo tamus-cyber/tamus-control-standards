@@ -166,7 +166,7 @@
     </alter>
     <alter control-id="cp-1">
       <add position="starting">
-        <link href="#28edd686-b17c-47ca-aba4-4c7de11e82f5" rel="reference">Texas A&amp; System Regulation 34.07.01</link>
+        <link href="#28edd686-b17c-47ca-aba4-4c7de11e82f5" rel="reference">Texas A&amp;M System Regulation 34.07.01</link>
       </add>
       <add position="ending" id-ref="cp-1_smt">
         <part id="cp-1_tamus" name="item">

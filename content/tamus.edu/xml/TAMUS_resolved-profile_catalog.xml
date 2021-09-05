@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0"
-         uuid="8d0b6dac-9e7b-49bc-b05c-99edd2381ad5">
+         uuid="bb6a069d-4d5e-4e32-bd19-149232eec5d2">
    <metadata>
       <title>Texas A&amp;M University System Cybersecurity Control Standards</title>
       <published>2020-08-18T18:17:00Z</published>
       <last-modified>2021-09-05T18:00:00Z</last-modified>
       <version>1.2</version>
       <oscal-version>1.0.0-milestone3</oscal-version>
-      <prop name="resolution-timestamp">2021-09-05T14:25:18.928-04:00</prop>
+      <prop name="resolution-timestamp">2021-09-05T14:34:54.281-04:00</prop>
       <link rel="resolution-source" href="TAMUS_profile.xml">Texas A&amp;M University System Cybersecurity Control Standards</link>
       <role id="prepared-by">
          <title>Document creator</title>
@@ -7751,7 +7751,7 @@
          <prop name="priority">P1</prop>
          <prop name="label">CP-1</prop>
          <prop name="sort-id">cp-01</prop>
-         <link href="#28edd686-b17c-47ca-aba4-4c7de11e82f5" rel="reference">Texas A&amp; System Regulation 34.07.01</link>
+         <link href="#28edd686-b17c-47ca-aba4-4c7de11e82f5" rel="reference">Texas A&amp;M System Regulation 34.07.01</link>
          <link href="#023104bc-6f75-4cd5-b7d0-fc92326f8007" rel="reference">Federal Continuity Directive 1</link>
          <link href="#5c201b63-0768-417b-ac22-3f014e3941b2" rel="reference">NIST Special Publication 800-12</link>
          <link href="#748a81b9-9cad-463f-abde-8b368167e70d" rel="reference">NIST Special Publication 800-34</link>

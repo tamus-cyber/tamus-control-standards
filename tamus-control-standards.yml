@@ -3,8 +3,8 @@ profile:
   metadata:
     title: Texas A&M University System Cybersecurity Control Standards
     published: "2020-08-18T18:17:00Z"
-    last-modified: "2021-09-05T18:00:00Z"
-    version: "1.2"
+    last-modified: "2021-09-05T19:15:00Z"
+    version: 1.2.1
     oscal-version: 1.0.0-milestone3
     roles:
       - id: prepared-by
@@ -196,7 +196,7 @@ profile:
                     name: item
                     prose: |-
                       The System member adopts baseline security configuration checklists that meet or exceed published industry best practice sources (e.g., Center for Internet Security Benchmarks [CIS Benchmarks], NIST National Checklist Program [NCP]) when
-                                    available, or locally develops security configuration checklists otherwise, for all System-owned or -managed major and mission-critical information systems, and systems processing confidential information.
+                                    available, or locally develops security configuration checklists otherwise, for all System-owned or -managed major and high-impact information systems, and systems processing confidential information.
       - control-id: cm-10
         additions:
           - position: ending
@@ -252,7 +252,7 @@ profile:
                         properties:
                           - name: label
                             value: b.
-                        prose: tests the contingency plan at least every three years with a full interruption of mission-critical, on-premise services, and
+                        prose: tests the contingency plan at least every three years with a full interruption of high-impact, on-premise services, and
                       - id: cp-4_tamus_smt.1.c
                         name: item
                         properties:
@@ -270,7 +270,7 @@ profile:
                 parts:
                   - id: cp-9_tamus_smt.1
                     name: item
-                    prose: The System member stores backup copies of information systems that process and/or store sensitive or mission-critical information offline or in a separate facility that is not collocated with the operational system.
+                    prose: The System member stores backup copies of information systems that process and/or store sensitive or high-impact information offline or in a separate facility that is not collocated with the operational system.
       - control-id: ia-11
         additions:
           - position: starting
@@ -300,7 +300,7 @@ profile:
                   - id: ir-6_tamus_smt.1
                     name: item
                     prose: |-
-                      The System member discloses incidents which compromise the confidentiality, integrity, or availability of major or mission-critical information systems, or systems processing confidential information, as quickly as possible upon the discovery or
+                      The System member discloses incidents which compromise the confidentiality, integrity, or availability of major or high-impact information systems, or systems processing confidential information, as quickly as possible upon the discovery or
                                     receipt of notification of the incident, using the notification matrix in Appendix C: Incident Notification Process, unless a law enforcement agency determines such a notification will impede a criminal investigation.
       - control-id: mp-3
         additions:
@@ -471,7 +471,7 @@ profile:
                 parts:
                   - id: sa-3_tamus_smt.1
                     name: item
-                    prose: The System member Information Security Officer (ISO) reviews the data security requirements and specifications of any new information systems or services that process and/or store sensitive or mission-critical information.
+                    prose: The System member Information Security Officer (ISO) reviews the data security requirements and specifications of any new information systems or services that process and/or store sensitive or high-impact information.
       - control-id: sa-4
         additions:
           - position: ending
@@ -490,7 +490,7 @@ profile:
                         properties:
                           - name: label
                             value: a.
-                        prose: reviews and approves the security requirements in acquisition contracts of any new information system that processes and/or stores sensitive or mission-critical information prior to the member procuring the system or service, and
+                        prose: reviews and approves the security requirements in acquisition contracts of any new information system that processes and/or stores sensitive or high-impact information prior to the member procuring the system or service, and
                       - id: sa-4_tamus_smt.1.b
                         name: item
                         properties:
@@ -551,7 +551,7 @@ profile:
                         properties:
                           - name: label
                             value: b.
-                        prose: ensures personally owned devices that connect to networks within the same boundary as confidential or mission-critical information systems employ endpoint protection software or suitable compensating controls, based on assessed risk.
+                        prose: ensures personally owned devices that connect to networks within the same boundary as confidential or high-impact information systems employ endpoint protection software or suitable compensating controls, based on assessed risk.
       - control-id: si-4
         additions:
           - position: ending

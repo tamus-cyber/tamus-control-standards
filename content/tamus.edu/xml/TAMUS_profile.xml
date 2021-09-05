@@ -4,8 +4,8 @@
   <metadata>
     <title>Texas A&amp;M University System Cybersecurity Control Standards</title>
     <published>2020-08-18T18:17:00Z</published>
-    <last-modified>2021-09-05T18:00:00Z</last-modified>
-    <version>1.2</version>
+    <last-modified>2021-09-05T19:15:00Z</last-modified>
+    <version>1.2.1</version>
     <oscal-version>1.0.0-milestone3</oscal-version>
     <role id="prepared-by">
       <title>Document creator</title>
@@ -148,7 +148,7 @@
           <title>TAMUS Implementation</title>
           <part id="cm-6_tamus_smt.1" name="item">
             <p>The System member adopts baseline security configuration checklists that meet or exceed published industry best practice sources (e.g., Center for Internet Security Benchmarks [CIS Benchmarks], NIST National Checklist Program [NCP]) when
-              available, or locally develops security configuration checklists otherwise, for all System-owned or -managed major and mission-critical information systems, and systems processing confidential information.</p>
+              available, or locally develops security configuration checklists otherwise, for all System-owned or -managed major and high-impact information systems, and systems processing confidential information.</p>
           </part>
         </part>
       </add>
@@ -189,7 +189,7 @@
             </part>
             <part id="cp-4_tamus_smt.1.b" name="item">
               <prop name="label">b.</prop>
-              <p>tests the contingency plan at least every three years with a full interruption of mission-critical, on-premise services, and</p>
+              <p>tests the contingency plan at least every three years with a full interruption of high-impact, on-premise services, and</p>
             </part>
             <part id="cp-4_tamus_smt.1.c" name="item">
               <prop name="label">c.</prop>
@@ -204,7 +204,7 @@
         <part id="cp-9_tamus" name="item">
           <title>TAMUS Implementation</title>
           <part id="cp-9_tamus_smt.1" name="item">
-            <p>The System member stores backup copies of information systems that process and/or store sensitive or mission-critical information offline or in a separate facility that is not collocated with the operational system.</p>
+            <p>The System member stores backup copies of information systems that process and/or store sensitive or high-impact information offline or in a separate facility that is not collocated with the operational system.</p>
           </part>
         </part>
       </add>
@@ -227,7 +227,7 @@
         <part id="ir-6_tamus" name="item">
           <title>TAMUS Implementation</title>
           <part id="ir-6_tamus_smt.1" name="item">
-            <p>The System member discloses incidents which compromise the confidentiality, integrity, or availability of major or mission-critical information systems, or systems processing confidential information, as quickly as possible upon the discovery or
+            <p>The System member discloses incidents which compromise the confidentiality, integrity, or availability of major or high-impact information systems, or systems processing confidential information, as quickly as possible upon the discovery or
               receipt of notification of the incident, using the notification matrix in Appendix C: Incident Notification Process, unless a law enforcement agency determines such a notification will impede a criminal investigation.</p>
           </part>
         </part>
@@ -349,7 +349,7 @@
         <part id="sa-3_tamus" name="item">
           <title>TAMUS Implementation</title>
           <part id="sa-3_tamus_smt.1" name="item">
-            <p>The System member Information Security Officer (ISO) reviews the data security requirements and specifications of any new information systems or services that process and/or store sensitive or mission-critical information.</p>
+            <p>The System member Information Security Officer (ISO) reviews the data security requirements and specifications of any new information systems or services that process and/or store sensitive or high-impact information.</p>
           </part>
         </part>
       </add>
@@ -362,7 +362,7 @@
             <p>The System member Information Security Officer (ISO):</p>
             <part id="sa-4_tamus_smt.1.a" name="item">
               <prop name="label">a.</prop>
-              <p>reviews and approves the security requirements in acquisition contracts of any new information system that processes and/or stores sensitive or mission-critical information prior to the member procuring the system or service, and</p>
+              <p>reviews and approves the security requirements in acquisition contracts of any new information system that processes and/or stores sensitive or high-impact information prior to the member procuring the system or service, and</p>
             </part>
             <part id="sa-4_tamus_smt.1.b" name="item">
               <prop name="label">b.</prop>
@@ -405,7 +405,7 @@
             </part>
             <part id="si-3_tamus_smt.1.b" name="item">
               <prop name="label">b.</prop>
-              <p>ensures personally owned devices that connect to networks within the same boundary as confidential or mission-critical information systems employ endpoint protection software or suitable compensating controls, based on assessed risk.</p>
+              <p>ensures personally owned devices that connect to networks within the same boundary as confidential or high-impact information systems employ endpoint protection software or suitable compensating controls, based on assessed risk.</p>
             </part>
           </part>
         </part>

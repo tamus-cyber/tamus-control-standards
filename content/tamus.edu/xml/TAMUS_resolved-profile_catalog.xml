@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0"
-         uuid="4a4c3142-b0cc-441c-a1a2-45be42123ec8">
+         uuid="8d0b6dac-9e7b-49bc-b05c-99edd2381ad5">
    <metadata>
       <title>Texas A&amp;M University System Cybersecurity Control Standards</title>
       <published>2020-08-18T18:17:00Z</published>
-      <last-modified>2021-09-04T16:15:00Z</last-modified>
+      <last-modified>2021-09-05T18:00:00Z</last-modified>
       <version>1.2</version>
       <oscal-version>1.0.0-milestone3</oscal-version>
-      <prop name="resolution-timestamp">2021-09-04T12:44:28.873-04:00</prop>
+      <prop name="resolution-timestamp">2021-09-05T14:25:18.928-04:00</prop>
       <link rel="resolution-source" href="TAMUS_profile.xml">Texas A&amp;M University System Cybersecurity Control Standards</link>
       <role id="prepared-by">
          <title>Document creator</title>
@@ -17956,7 +17956,7 @@
                   <p>The System member:</p>
                   <part id="ra-2_tamus_smt.1.a" name="item">
                      <prop name="label">a.</prop>
-                     <p>categorizes information and information systems owned or managed by the member using a data classification structure that incorporates the guidance provided in Appendix D: Data Classification, at a minimum.</p>
+                     <p>categorizes information and information systems owned or managed by the member using a data classification structure that incorporates the guidance provided in Appendix D: Data Classification, at a minimum, and</p>
                   </part>
                   <part id="ra-2_tamus_smt.1.b" name="item">
                      <prop name="label">b.</prop>

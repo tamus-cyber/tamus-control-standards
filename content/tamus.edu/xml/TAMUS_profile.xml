@@ -4,7 +4,7 @@
   <metadata>
     <title>Texas A&amp;M University System Cybersecurity Control Standards</title>
     <published>2020-08-18T18:17:00Z</published>
-    <last-modified>2021-09-04T16:15:00Z</last-modified>
+    <last-modified>2021-09-05T18:00:00Z</last-modified>
     <version>1.2</version>
     <oscal-version>1.0.0-milestone3</oscal-version>
     <role id="prepared-by">
@@ -334,7 +334,7 @@
             <p>The System member:</p>
             <part id="ra-2_tamus_smt.1.a" name="item">
               <prop name="label">a.</prop>
-              <p>categorizes information and information systems owned or managed by the member using a data classification structure that incorporates the guidance provided in Appendix D: Data Classification, at a minimum.</p>
+              <p>categorizes information and information systems owned or managed by the member using a data classification structure that incorporates the guidance provided in Appendix D: Data Classification, at a minimum, and</p>
             </part>
             <part id="ra-2_tamus_smt.1.b" name="item">
               <prop name="label">b.</prop>

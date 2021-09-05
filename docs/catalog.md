@@ -11,8 +11,8 @@ nav:
   - References
   - Legacy Security Standard Crosswalk
   - Identity Role Examples
-  - Incident Notification Matrix
-  - Data Classification
+  - Incident Notification Process
+  - Data Categorization
 ---
 # Texas A&M University System Cybersecurity Control Standards
 
@@ -41,12 +41,16 @@ Prior to publishing new or revised standards, the Office of Cybersecurity will s
 # Control Catalog
 
 - [All controls presented in the Texas Security Control Standards Catalog](/control-catalog)
+  - _**Ideal for:** someone who knows exactly which control they want to reference_
 
 - [Only controls from the Texas Security Control Standards Catalog required by Texas DIR or the Texas A&M System](/required-controls)
+  - _**Ideal for:** someone who wants to review all of the required controls that must be implemented, whether by DIR or TAMUS_
 
 - [Only controls from the Texas Security Control Standards Catalog required by the Texas A&M System](/tamus-required-controls)
+  - _**Ideal for:** someone who has already gone through the DIR catalog and implemented all of their required controls but needs a reference to those TAMUS-specific required controls_
 
 - [Only recently updated Texas A&M System required controls](/recent-updated-controls)
+  - _**Ideal for:** someone who wants to check for new additions/updates to TAMUS-specific required controls_
 
 # References
 
@@ -69,7 +73,7 @@ Prior to publishing new or revised standards, the Office of Cybersecurity will s
 ## Data Classification Standard
 
 - [RA-2	Security Categorization](control-catalog#ra-2)
-- [Data Classification](#data-classification)
+- [Data Categorization](#data-classification)
 
 ## Electronic Media Protection Standard
 
@@ -107,7 +111,7 @@ Prior to publishing new or revised standards, the Office of Cybersecurity will s
 
 ## Notification Matrix
 
-- [Incident Notification Matrix](#incident-notification-matrix)
+- [Incident Notification Process](#incident-notification-process)
 
 ## Online Privacy Standard
 
@@ -190,25 +194,27 @@ Visiting Professor
 Visiting Research Professional
 : personnel who are not system employees, faculty or researchers, but who have an official system research sponsor who is either doing direct or assistive work with system research
 
-# Incident Notification Matrix
+# Incident Notification Process
+
+[![Incident Notification Process](/static/images/incident-notification-process.png)](/static/pdf/incident-notification-process.pdf)
 
 [![Incident Notification Matrix](/static/images/incident-notification-matrix.png)](/static/pdf/incident-notification-matrix.pdf)
 
-# Data Classification
+# Data Categorization
 
-Texas A&M University System (A&M System) data classification consists of a minimum of three specific classifications based on access restrictions and risk. These classifications apply to all members. While the classification applicable to specific information may change based on circumstances, the intent of this document is to define the appropriate classification for different types of information. These three classifications are:
+Texas A&M University System (A&M System) data categorization consists of a minimum of three specific categories based on access restrictions and risk. These categories apply to all members and may be expanded upon as required by the member. While the categorization applicable to specific information may change based on circumstances, the intent of this document is to define the appropriate categories for different types of information. These three categories are:
 
-| **Classification** | **Description** | **Examples** | **Comments** |
+| **Category** | **Description** | **Examples** | **Comments** |
 |-|-|-|-|
-| **Confidential Information** | Information that must be protected from unauthorized disclosure or public release based on state or federal law or other legal agreement (1 TAC §202.1). | - Patient billing information and protected health information as protected by HIPAA.<br>- Student education records protected by FERPA.<br>- Information or Information System security plans, reports and related information<br>- Credit/debit card numbers, bank account numbers<br>- Personal financial information<br>- Social security numbers<br>- A&M System intellectual property and research information having commercial potential<br><br>Confidential Information requiring breach notifications or having stricter access requirements may include SPI as defined by Texas Business and Commerce Code § 521.002(a)(2); credit card numbers covered by PCI DSS v3.1.<br><br>Classified National Security Information under Executive Order 13526, and Controlled Unclassified Information under Executive Order 13556, shall be protected as prescribed by System Regulations 15.05.01 and 15.05.02, respectively, and the System Facility Security Officer (FSO). | This classification may not be absolute; context is an essential element.<br><br>Owners of confidential information must ensure such information is correctly classified.<br><br>Custodians of confidential information must implement appropriate controls.<br><br>HIPAA, FTI or PCI information is covered in this category. This classification may include agreements or contracts for research work that require higher levels of security and/or procedural elements for handling of information.<br><br>Consult the Office of General Counsel regarding confidential information requested through open records, subpoena, or other legal process. |
+| **Confidential Information** | Information that must be protected from unauthorized disclosure or public release based on state or federal law or other legal agreement (1 TAC §202.1). | - Patient billing information and protected health information as protected by HIPAA.<br>- Student education records protected by FERPA.<br>- Information or Information System security plans, reports and related information<br>- Credit/debit card numbers, bank account numbers<br>- Personal financial information<br>- Social security numbers<br>- A&M System intellectual property and research information having commercial potential<br><br>Confidential Information requiring breach notifications or having stricter access requirements may include SPI as defined by Texas Business and Commerce Code § 521.002(a)(2); credit card numbers covered by PCI DSS v3.1.<br><br>Classified National Security Information under Executive Order 13526, and Controlled Unclassified Information under Executive Order 13556, shall be protected as prescribed by System Regulations 15.05.01 and 15.05.02, respectively, and the System Facility Security Officer (FSO). | This category may not be absolute; context is an essential element.<br><br>Owners of confidential information must ensure such information is correctly categorized.<br><br>Custodians of confidential information must implement appropriate controls.<br><br>HIPAA, FTI or PCI information is covered in this category. This category may include agreements or contracts for research work that require higher levels of security and/or procedural elements for handling of information.<br><br>Consult the Office of General Counsel regarding confidential information requested through open records, subpoena, or other legal process. |
 | **Internal Use** | Information that is not generally created for or made available for public consumption but that may or may not be subject to public disclosure through the Texas Public Information Act or similar laws. | This information includes institutional budgetary, financial and operational records such as expenditures, statistics, contracting information, non-confidential personnel information. It may also include non-confidential internal communications. | Consult the Office of General Counsel regarding controlled information requested through open records, subpoena, or other legal process. |
-| **Public Information** | Public information includes all information made available to the public through posting to public websites, distribution through email, or social media, print publications or other media. This classification also includes information for which public disclosure is intended or required. | Published system and system member policy documents, organizational charts, Statistical reports, Fast Facts, unrestricted directory information, employee salaries, and educational content available to the public at no cost. | Information can migrate from one classification to another based on information lifecycle. For example, a draft policy document would fit the criteria of “Internal Use” until being published upon which it would become “Public Information”. |
+| **Public Information** | Public information includes all information made available to the public through posting to public websites, distribution through email, or social media, print publications or other media. This classification also includes information for which public disclosure is intended or required. | Published system and system member policy documents, organizational charts, Statistical reports, Fast Facts, unrestricted directory information, employee salaries, and educational content available to the public at no cost. | Information can migrate from one categorization to another based on information lifecycle. For example, a draft policy document would fit the criteria of “Internal Use” until being published upon which it would become “Public Information”. |
 
-1. Each member will use this classification criteria as their baseline standard. If a member requires a more restrictive classification for a class of data due to state, federal or other agreements, the more restrictive classification will apply.
+1. Each member will use this categorization criteria as their baseline standard. If a member requires a more restrictive categorization for a class of data due to state, federal or other agreements, the more restrictive categorization will apply.
 
-2. This classification criteria will be used to assess information access and security requirements for information to be stored or processed within member shared information centers.
+2. This categorization criteria will be used to assess information access and security requirements for information to be stored or processed within member shared information centers.
 
-3. When determining security controls to use for a given set of information, Information Owners and Custodians should also assess whether special requirements exist regarding importance of information availability and integrity and rate the need as LOW, MODERATE, or HIGH for both integrity and availability. The needs regarding availability and integrity may impact security control decisions but are not used for purposes of assigning a classification label of Confidential, Internal Use, or Public.
+3. When determining security controls to use for a given set of information, Information Owners and Custodians should also assess whether special requirements exist regarding importance of information availability and integrity and rate the need as LOW, MODERATE, or HIGH for both availability and integrity. The needs regarding availability and integrity may impact security control decisions but are not used for purposes of assigning a categorization label of Confidential, Internal Use, or Public Information.
 
 4. Some classes of information may have attributes, such as “mission critical” or “business critical”. Information attributes do not supplant these classifications but should be used to clarify their importance to the institution.
 
@@ -226,6 +232,6 @@ Texas A&M University System (A&M System) data classification consists of a minim
 
 Using the table above, any set of information can be assigned three security ratings: one for Confidentiality (LOW, MODERATE or HIGH), another for Integrity (LOW, MODERATE or HIGH), and a third for Availability (LOW, MODERATE or HIGH). This is useful for defining security controls in cases where, for example, a set of information may have a low need for confidentiality (LOW impact) but require HIGH availability. In this example, encryption may not be appropriate, but redundancy may be a requirement.
 
-Most breaches that cause HIGH impact are a result of unauthorized access to Confidential information. Therefore, this document and System member assignment of classification places prime importance on the level of Confidentiality required of the information.
+Most breaches that cause HIGH impact are a result of unauthorized access to Confidential information. Therefore, this document and System member assignment of categorization places prime importance on the level of Confidentiality required of the information.
 
 {% include references.md %}

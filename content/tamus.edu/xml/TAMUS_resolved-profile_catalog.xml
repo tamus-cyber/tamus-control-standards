@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0"
-         uuid="bb6a069d-4d5e-4e32-bd19-149232eec5d2">
+         uuid="a4a90349-15ca-41d6-a97e-71899b3c00b1">
    <metadata>
       <title>Texas A&amp;M University System Cybersecurity Control Standards</title>
       <published>2020-08-18T18:17:00Z</published>
       <last-modified>2021-09-05T18:00:00Z</last-modified>
       <version>1.2</version>
       <oscal-version>1.0.0-milestone3</oscal-version>
-      <prop name="resolution-timestamp">2021-09-05T14:34:54.281-04:00</prop>
+      <prop name="resolution-timestamp">2021-09-05T15:12:33.963-04:00</prop>
       <link rel="resolution-source" href="TAMUS_profile.xml">Texas A&amp;M University System Cybersecurity Control Standards</link>
       <role id="prepared-by">
          <title>Document creator</title>
@@ -11317,7 +11317,7 @@
                <title>TAMUS Implementation</title>
                <part id="ir-6_tamus_smt.1" name="item">
                   <p>The System member discloses incidents which compromise the confidentiality, integrity, or availability of major or mission-critical information systems, or systems processing confidential information, as quickly as possible upon the discovery or
-              receipt of notification of the incident, using the notification matrix in Appendix C: Incident Notification Matrix, unless a law enforcement agency determines such a notification will impede a criminal investigation.</p>
+              receipt of notification of the incident, using the notification matrix in Appendix C: Incident Notification Process, unless a law enforcement agency determines such a notification will impede a criminal investigation.</p>
                </part>
             </part>
          </part>
@@ -13050,7 +13050,7 @@
                <title>TAMUS Implementation</title>
                <part id="mp-3_tamus_smt.1" name="item">
                   <p>The System member marks, physically or electronically, removable electronic media and information resources output containing sensitive personal information [TxBCC 521.002] by indicating the ownership, distribution limitations, handling caveats,
-              and applicable data classifications.</p>
+              and applicable data categorizations.</p>
                </part>
             </part>
          </part>
@@ -17956,7 +17956,7 @@
                   <p>The System member:</p>
                   <part id="ra-2_tamus_smt.1.a" name="item">
                      <prop name="label">a.</prop>
-                     <p>categorizes information and information systems owned or managed by the member using a data classification structure that incorporates the guidance provided in Appendix D: Data Classification, at a minimum, and</p>
+                     <p>categorizes information and information systems owned or managed by the member using a data categorization structure that incorporates the guidance provided in Appendix D: Data Categorization, at a minimum, and</p>
                   </part>
                   <part id="ra-2_tamus_smt.1.b" name="item">
                      <prop name="label">b.</prop>
@@ -27308,7 +27308,7 @@
                   <part id="pm-5_tamus_smt.1.c" name="item">
                      <prop name="label">c.</prop>
                      <p>designates which data regarding an information system to record in the inventory of information systems. At a minimum, the data includes a unique identifier (e.g., serial number or system name), owner, custodian, description of the
-                information sytem's function or major application, and highest level of data classification stored/processed on the information system.</p>
+                information sytem's function or major application, and highest level of data categorization stored/processed on the information system.</p>
                   </part>
                </part>
             </part>

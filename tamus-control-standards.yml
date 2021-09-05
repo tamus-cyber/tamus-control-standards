@@ -301,7 +301,7 @@ profile:
                     name: item
                     prose: |-
                       The System member discloses incidents which compromise the confidentiality, integrity, or availability of major or mission-critical information systems, or systems processing confidential information, as quickly as possible upon the discovery or
-                                    receipt of notification of the incident, using the notification matrix in Appendix C: Incident Notification Matrix, unless a law enforcement agency determines such a notification will impede a criminal investigation.
+                                    receipt of notification of the incident, using the notification matrix in Appendix C: Incident Notification Process, unless a law enforcement agency determines such a notification will impede a criminal investigation.
       - control-id: mp-3
         additions:
           - position: starting
@@ -320,7 +320,7 @@ profile:
                     name: item
                     prose: |-
                       The System member marks, physically or electronically, removable electronic media and information resources output containing sensitive personal information [TxBCC 521.002] by indicating the ownership, distribution limitations, handling caveats,
-                                    and applicable data classifications.
+                                    and applicable data categorizations.
       - control-id: pe-6
         additions:
           - position: ending
@@ -422,7 +422,7 @@ profile:
                             value: c.
                         prose: |-
                           designates which data regarding an information system to record in the inventory of information systems. At a minimum, the data includes a unique identifier (e.g., serial number or system name), owner, custodian, description of the
-                                          information sytem's function or major application, and highest level of data classification stored/processed on the information system.
+                                          information sytem's function or major application, and highest level of data categorization stored/processed on the information system.
       - control-id: pm-14
         additions:
           - position: ending
@@ -453,7 +453,7 @@ profile:
                         properties:
                           - name: label
                             value: a.
-                        prose: 'categorizes information and information systems owned or managed by the member using a data classification structure that incorporates the guidance provided in Appendix D: Data Classification, at a minimum, and'
+                        prose: 'categorizes information and information systems owned or managed by the member using a data categorization structure that incorporates the guidance provided in Appendix D: Data Categorization, at a minimum, and'
                       - id: ra-2_tamus_smt.1.b
                         name: item
                         properties:

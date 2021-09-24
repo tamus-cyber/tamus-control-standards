@@ -58,7 +58,7 @@ ul li {
   padding-left: 10px;
 }
 
-.control-item:hover .control-link {
+.control-item summary:hover .control-link {
   display: inline-block;
 }
 

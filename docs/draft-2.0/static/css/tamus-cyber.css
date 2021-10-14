@@ -62,6 +62,10 @@ ul li {
   display: inline-block;
 }
 
+.control-item>dl>dd>ul {
+  padding-inline-start: 0px;
+}
+
 .on-this-page {
   background-color: #eee;
   border: #000 solid 0.5px;

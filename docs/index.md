@@ -9,9 +9,8 @@ nav:
   - Lifecycle
   - Control Catalog
   - References
-  - Legacy Security Standard Crosswalk
   - Identity Role Examples
-  - Incident Notification Process
+  - Incident Notification
   - Data Categorization
 ---
 # Texas A&M University System Cybersecurity Control Standards
@@ -55,82 +54,6 @@ Prior to publishing new or revised standards, the Office of Cybersecurity will s
 # References
 
 {% include_relative catalog-references.md %}
-
-# Legacy Security Standard Crosswalk
-
-## Configuration Management Standard
-
-- [CM-3 Configuration Change Control](control-catalog#cm-3)
-- [CM-8	Information System Component Inventory](control-catalog#cm-8)
-- [PM-5	Information System Inventory](control-catalog#pm-5)
-
-## Contingency Planning Standard
-
-- [CP-1	Contingency Planning Policy and Procedures](control-catalog#cp-1)
-- [CP-2	Contingency Plan](control-catalog#cp-2)
-- [CP-4	Contingency Plan Testing](control-catalog#cp-4)
-
-## Data Classification Standard
-
-- [RA-2	Security Categorization](control-catalog#ra-2)
-- [Data Categorization](#data-classification)
-
-## Electronic Media Protection Standard
-
-- [MP-3	Media Marking](control-catalog#mp-3)
-
-## Electronic Signature Standard
-
-- [Removed from Cybersecurity Control Standards]
-
-## Identity Management Standard
-
-- [AC-1	Access Control Policy and Procedures](control-catalog#ac-1)
-- [AC-2	Account Management](control-catalog#ac-2)
-
-## Incident Management Standard
-
-- [IR-6	Incident Reporting](control-catalog#ir-6)
-
-## Information Integrity Standard
-
-- [CM-2	Baseline Configuration](control-catalog#cm-2)
-- [CM-10 Software Usage Restrictions](control-catalog#cm-10)
-- [PL-4	Rules of Behavior](control-catalog#pl-4)
-- [SI-3	Malicious Code Protection](control-catalog#si-3)
-
-## Information Resources Access Standard
-
-- [AC-2	Account Management](control-catalog#ac-2)
-- [PL-4	Rules of Behavior](control-catalog#pl-4)
-
-## Information System Monitoring Standard
-
-- [PM-14 Testing, Training, and Monitoring](control-catalog#pm-14)
-- [SI-4	Information System Monitoring](control-catalog#si-4)
-
-## Notification Matrix
-
-- [Incident Notification Process](#incident-notification-process)
-
-## Online Privacy Standard
-
-- [TR-1	Privacy Policy](control-catalog#tr-1)
-
-## Physical and Environmental Protection Standard
-
-- [DM-1	Minimization of Personally Identifiable Information](control-catalog#dm-1)
-- [PE-6	Monitoring Physical Access](control-catalog#pe-6)
-- [PL-4	Rules of Behavior](control-catalog#pl-4)
-
-## Preservation Holds Standard
-
--	[Removed from Cybersecurity Control Standards]
-
-## System Development and Acquisition Standard
-
-- [SA-3	System Development Life Cycle](control-catalog#sa-3)
-- [SA-4	Acquisition Process](control-catalog#sa-4)
 
 # Identity Role Examples
 
@@ -194,11 +117,9 @@ Visiting Professor
 Visiting Research Professional
 : personnel who are not system employees, faculty or researchers, but who have an official system research sponsor who is either doing direct or assistive work with system research
 
-# Incident Notification Process
+# Incident Notification
 
-[![Incident Notification Process](/static/images/incident-notification-process.png)](/static/pdf/incident-notification-process.pdf)
-
-[![Incident Notification Matrix](/static/images/incident-notification-matrix.png)](/static/pdf/incident-notification-matrix.pdf)
+[View the Incident Notification Guidelines](/incident-notification)
 
 # Data Categorization
 

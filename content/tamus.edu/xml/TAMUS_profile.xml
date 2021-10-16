@@ -30,9 +30,10 @@
       <party-uuid>00cd4c91-5db6-45f4-8c15-343baed5fdf8</party-uuid>
     </responsible-party>
   </metadata>
-  <import href="#1cd52c1e-d57d-4f87-aa6f-a4514b31365c"/>
+  <import href="#1cd52c1e-d57d-4f87-aa6f-a4514b31365c">
+    <include-all/>
+  </import>
   <merge>
-    <combine method="keep"/>
     <as-is>true</as-is>
   </merge>
   <modify>
@@ -227,8 +228,8 @@
         <part id="ir-6_tamus" name="item">
           <title>TAMUS Implementation</title>
           <part id="ir-6_tamus_smt.1" name="item">
-            <p>The System member discloses incidents which compromise the confidentiality, integrity, or availability of major or high-impact information systems, or systems processing confidential information, as quickly as possible upon the discovery or
-              receipt of notification of the incident, using the notification matrix in Appendix C: Incident Notification Process, unless a law enforcement agency determines such a notification will impede a criminal investigation.</p>
+            <p>The System member reports information security incidents where the confidentiality, integrity, or availability of a major System-owned or -managed information system, or a system processing confidential information, is potentially compromised to
+              the System Office of Cybersecurity within four hours of being identified by the member or the Security Operations Center (SOC), following the Incident Notifation Guidelines published at https://cyber-standards.tamus.edu/incident-notification.</p>
           </part>
         </part>
       </add>

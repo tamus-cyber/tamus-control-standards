@@ -41,12 +41,8 @@ profile:
           - position: ending
             parts:
               - id: ac-1_tamus
-                name: item
-                title: TAMUS Implementation
-                parts:
-                  - id: ac-1_tamus_smt.1
-                    name: item
-                    prose: The System member ensures adequate processes are in place to positively establish the identity of (identity-proof) a user and determine the appropriate user role(s) before access is granted.
+                name: tamus_implementation
+                prose: The System member ensures adequate processes are in place to positively establish the identity of (identity-proof) a user and determine the appropriate user role(s) before access is granted.
       - control-id: ac-2
         adds:
           - position: starting
@@ -56,63 +52,42 @@ profile:
           - position: ending
             parts:
               - id: ac-2_tamus
-                name: item
-                title: TAMUS Implementation
-                parts:
-                  - id: ac-2_tamus_smt.1
-                    name: item
-                    prose: The System member implements role-based (e.g., students, employees, third parties, guests) access control or adopts an InCommon Federation assurance profile [InCommon], where possible.
+                name: tamus_implementation
+                prose: The System member implements role-based (e.g., students, employees, third parties, guests) access control or adopts an InCommon Federation assurance profile [InCommon], where possible.
       - control-id: ac-6
         adds:
           - position: ending
             parts:
               - id: ac-6_tamus
-                name: item
-                title: TAMUS Implementation
-                parts:
-                  - id: ac-6_tamus_smt.1
-                    name: item
-                    prose: The System member ensures users with privileged (also known as administrative or special access) accounts are aware of the extraordinary responsibilities associated with the use of privileged accounts.
+                name: tamus_implementation
+                prose: The System member ensures users with privileged (also known as administrative or special access) accounts are aware of the extraordinary responsibilities associated with the use of privileged accounts.
       - control-id: ac-8
         adds:
           - position: ending
             parts:
               - id: ac-8_tamus
-                name: item
-                title: TAMUS Implementation
-                parts:
-                  - id: ac-8_tamus_smt.1
-                    name: item
-                    prose: The System member publishes a privacy notice on websites owned by the member which contains, at a minimum, the content contained on the Texas A&M University System website at https://www.tamus.edu/marcomm/reports/privacy.
+                name: tamus_implementation
+                prose: The System member publishes a privacy notice on websites owned by the member which contains, at a minimum, the content contained on the Texas A&M University System website at https://www.tamus.edu/marcomm/reports/privacy.
       - control-id: ac-22
         adds:
           - position: ending
             parts:
               - id: ac-22_tamus
-                name: item
-                title: TAMUS Implementation
-                parts:
-                  - id: ac-22_tamus_smt.1
-                    name: item
-                    prose: The System member ensures organizational security controls are applied to official social media use by the member.
+                name: tamus_implementation
+                prose: The System member ensures organizational security controls are applied to official social media use by the member.
       - control-id: cm-2
         adds:
           - position: ending
             parts:
               - id: cm-2_tamus
-                name: item
-                title: TAMUS Implementation
-                parts:
-                  - id: cm-2_tamus_smt.1
-                    name: item
-                    prose: The System member ensures all servers on System-owned or -managed networks conform to a baseline security configuration and are security-hardened based on risk.
+                name: tamus_implementation
+                prose: The System member ensures all servers on System-owned or -managed networks conform to a baseline security configuration and are security-hardened based on risk.
       - control-id: cm-3
         adds:
           - position: ending
             parts:
               - id: cm-3_tamus
-                name: item
-                title: TAMUS Implementation
+                name: tamus_implementation
                 parts:
                   - id: cm-3_tamus_smt.1
                     name: item
@@ -122,36 +97,43 @@ profile:
                         name: item
                         props:
                           - name: label
+                            value: a.
                         prose: formally identifying, classifying, prioritizing, and requesting changes;
                       - id: cm-3_tamus_smt.1.b
                         name: item
                         props:
                           - name: label
+                            value: b.
                         prose: identifying and deploying emergency changes;
                       - id: cm-3_tamus_smt.1.c
                         name: item
                         props:
                           - name: label
+                            value: c.
                         prose: assessing potential impacts from changes;
                       - id: cm-3_tamus_smt.1.d
                         name: item
                         props:
                           - name: label
+                            value: d.
                         prose: authorizing changes and exceptions;
                       - id: cm-3_tamus_smt.1.e
                         name: item
                         props:
                           - name: label
+                            value: e.
                         prose: testing changes;
                       - id: cm-3_tamus_smt.1.f
                         name: item
                         props:
                           - name: label
+                            value: f.
                         prose: implementing changes and planning for back-outs, and
                       - id: cm-3_tamus_smt.1.g
                         name: item
                         props:
                           - name: label
+                            value: g.
                         prose: documenting and tracking changes.
       - control-id: cm-6
         adds:
@@ -164,23 +146,15 @@ profile:
           - position: ending
             parts:
               - id: cm-6_tamus
-                name: item
-                title: TAMUS Implementation
-                parts:
-                  - id: cm-6_tamus_smt.1
-                    name: item
-                    prose: The System member adopts baseline security configuration checklists that meet or exceed published industry best practice sources (e.g., Center for Internet Security Benchmarks [CIS Benchmarks], NIST National Checklist Program [NCP]) when available, or locally develops security configuration checklists otherwise, for all System-owned or -managed major and high-impact information systems, and systems processing confidential information.
+                name: tamus_implementation
+                prose: The System member adopts baseline security configuration checklists that meet or exceed published industry best practice sources (e.g., Center for Internet Security Benchmarks [CIS Benchmarks], NIST National Checklist Program [NCP]) when available, or locally develops security configuration checklists otherwise, for all System-owned or -managed major and high-impact information systems, and systems processing confidential information.
       - control-id: cm-10
         adds:
           - position: ending
             parts:
               - id: cm-10_tamus
-                name: item
-                title: TAMUS Implementation
-                parts:
-                  - id: cm-10_tamus_smt.1
-                    name: item
-                    prose: The System member ensures software installed on System-owned or -managed information systems is used in accordance with the applicable software license(s) and understands unauthorized or unlicensed use of software is regarded as a serious matter subject to disciplinary action.
+                name: tamus_implementation
+                prose: The System member ensures software installed on System-owned or -managed information systems is used in accordance with the applicable software license(s) and understands unauthorized or unlicensed use of software is regarded as a serious matter subject to disciplinary action.
       - control-id: cp-1
         adds:
           - position: starting
@@ -190,19 +164,14 @@ profile:
           - position: ending
             parts:
               - id: cp-1_tamus
-                name: item
-                title: TAMUS Implementation
-                parts:
-                  - id: cp-1_tamus_smt.1
-                    name: item
-                    prose: The System member develops information resources contingency planning policy and procedures that align with the member’s emergency management plan as required by Texas A&M System Regulation 34.07.01, Emergency Management [TAMUS 34.07.01].
+                name: tamus_implementation
+                prose: The System member develops information resources contingency planning policy and procedures that align with the member’s emergency management plan as required by Texas A&M System Regulation 34.07.01, Emergency Management [TAMUS 34.07.01].
       - control-id: cp-4
         adds:
           - position: ending
             parts:
               - id: cp-4_tamus
-                name: item
-                title: TAMUS Implementation
+                name: tamus_implementation
                 parts:
                   - id: cp-4_tamus_smt.1
                     name: item
@@ -212,28 +181,27 @@ profile:
                         name: item
                         props:
                           - name: label
+                            value: a.
                         prose: tests the contingency plan at least annually through a tabletop exercise;
                       - id: cp-4_tamus_smt.1.b
                         name: item
                         props:
                           - name: label
+                            value: b.
                         prose: tests the contingency plan at least every three years with a full interruption of high-impact, on-premise services, and
                       - id: cp-4_tamus_smt.1.c
                         name: item
                         props:
                           - name: label
+                            value: c.
                         prose: includes information resources contingency plan testing in the member’s emergency management plan testing and exercises.
       - control-id: cp-9
         adds:
           - position: ending
             parts:
               - id: cp-9_tamus
-                name: item
-                title: TAMUS Implementation
-                parts:
-                  - id: cp-9_tamus_smt.1
-                    name: item
-                    prose: The System member stores backup copies of information systems that process and/or store sensitive or high-impact information offline or in a separate facility that is not collocated with the operational system.
+                name: tamus_implementation
+                prose: The System member stores backup copies of information systems that process and/or store sensitive or high-impact information offline or in a separate facility that is not collocated with the operational system.
       - control-id: ia-11
         adds:
           - position: starting
@@ -243,23 +211,15 @@ profile:
           - position: ending
             parts:
               - id: ia-11_tamus
-                name: item
-                title: TAMUS Implementation
-                parts:
-                  - id: ia-11_tamus_smt.1
-                    name: item
-                    prose: The System member limits the lifetime of browser cookies used for binding authenticated sessions to System-owned or -managed information systems to no more than five (5) days.
+                name: tamus_implementation
+                prose: The System member limits the lifetime of browser cookies used for binding authenticated sessions to System-owned or -managed information systems to no more than five (5) days.
       - control-id: ir-6
         adds:
           - position: ending
             parts:
               - id: ir-6_tamus
-                name: item
-                title: TAMUS Implementation
-                parts:
-                  - id: ir-6_tamus_smt.1
-                    name: item
-                    prose: The System member reports information security incidents where the confidentiality, integrity, or availability of a major System-owned or -managed information system, or a system processing confidential information, is potentially compromised to the System Office of Cybersecurity within four hours of being identified by the member or the Security Operations Center (SOC), following the Incident Notifation Guidelines published at https://cyber-standards.tamus.edu/incident-notification.
+                name: tamus_implementation
+                prose: The System member reports information security incidents where the confidentiality, integrity, or availability of a major System-owned or -managed information system, or a system processing confidential information, is potentially compromised to the System Office of Cybersecurity within four hours of being identified by the member or the Security Operations Center (SOC), following the Incident Notifation Guidelines published at https://cyber-standards.tamus.edu/incident-notification.
       - control-id: mp-3
         adds:
           - position: starting
@@ -269,23 +229,15 @@ profile:
           - position: ending
             parts:
               - id: mp-3_tamus
-                name: item
-                title: TAMUS Implementation
-                parts:
-                  - id: mp-3_tamus_smt.1
-                    name: item
-                    prose: The System member marks, physically or electronically, removable electronic media and information resources output containing sensitive personal information [TxBCC 521.002] by indicating the ownership, distribution limitations, handling caveats, and applicable data categorizations.
+                name: tamus_implementation
+                prose: The System member marks, physically or electronically, removable electronic media and information resources output containing sensitive personal information [TxBCC 521.002] by indicating the ownership, distribution limitations, handling caveats, and applicable data categorizations.
       - control-id: pe-6
         adds:
           - position: ending
             parts:
               - id: pe-6_tamus
-                name: item
-                title: TAMUS Implementation
-                parts:
-                  - id: pe-6_tamus_smt.1
-                    name: item
-                    prose: The System member ensures audio-visual surveillance technology used to monitor physical access to information systems is used responsibly and within the intended scope of the purpose for such deployment, and transparent processes and controls are implemented for the use of such technology and any resulting recorded material.
+                name: tamus_implementation
+                prose: The System member ensures audio-visual surveillance technology used to monitor physical access to information systems is used responsibly and within the intended scope of the purpose for such deployment, and transparent processes and controls are implemented for the use of such technology and any resulting recorded material.
       - control-id: pl-4
         adds:
           - position: starting
@@ -297,8 +249,7 @@ profile:
           - position: ending
             parts:
               - id: pl-4_tamus
-                name: item
-                title: TAMUS Implementation
+                name: tamus_implementation
                 parts:
                   - id: pl-4_tamus_smt.1
                     name: item
@@ -308,21 +259,25 @@ profile:
                         name: item
                         props:
                           - name: label
+                            value: a.
                         prose: documents acceptable use guidelines;
                       - id: pl-4_tamus_smt.1.b
                         name: item
                         props:
                           - name: label
+                            value: b.
                         prose: ensures users formally acknowledge, agree to abide by, and adhere to prudent and responsible Internet use practices (including reasonable personal use) outlined in Texas A&M System Policy 33.04, Use of System Resources [TAMUS 33.04], and the member’s acceptable use guidelines;
                       - id: pl-4_tamus_smt.1.c
                         name: item
                         props:
                           - name: label
+                            value: c.
                         prose: establishes a documented process for authorization to monitor member information resources, and
                       - id: pl-4_tamus_smt.1.d
                         name: item
                         props:
                           - name: label
+                            value: d.
                         prose: monitors information resources in accordance with Texas A&M System Policy 29.01, Information Resources [TAMUS 29.01].
       - control-id: pm-5
         adds:
@@ -335,8 +290,7 @@ profile:
           - position: ending
             parts:
               - id: pm-5_tamus
-                name: item
-                title: TAMUS Implementation
+                name: tamus_implementation
                 parts:
                   - id: pm-5_tamus_smt.1
                     name: item
@@ -346,35 +300,33 @@ profile:
                         name: item
                         props:
                           - name: label
+                            value: a.
                         prose: designates a single system of record for inventory of all information systems [SP 800-171r2] and network-attached operational technology [SP 800-37r2] owned or managed by the member;
                       - id: pm-5_tamus_smt.1.b
                         name: item
                         props:
                           - name: label
+                            value: b.
                         prose: includes any cloud computing services [SP 800-145] operated by the member in its inventory of information systems, and
                       - id: pm-5_tamus_smt.1.c
                         name: item
                         props:
                           - name: label
+                            value: c.
                         prose: designates which data regarding an information system to record in the inventory of information systems. At a minimum, the data includes a unique identifier (e.g., serial number or system name), owner, custodian, description of the information sytem's function or major application, and highest level of data categorization stored/processed on the information system.
       - control-id: pm-14
         adds:
           - position: ending
             parts:
               - id: pm-14_tamus
-                name: item
-                title: TAMUS Implementation
-                parts:
-                  - id: pm-14_tamus_smt.1
-                    name: item
-                    prose: The System member ensures an IT organization is designated to provide security monitoring for all information systems, in both centralized and decentralized IT environments, owned or managed by the member.
+                name: tamus_implementation
+                prose: The System member ensures an IT organization is designated to provide security monitoring for all information systems, in both centralized and decentralized IT environments, owned or managed by the member.
       - control-id: ra-2
         adds:
           - position: ending
             parts:
               - id: ra-2_tamus
-                name: item
-                title: TAMUS Implementation
+                name: tamus_implementation
                 parts:
                   - id: ra-2_tamus_smt.1
                     name: item
@@ -384,30 +336,27 @@ profile:
                         name: item
                         props:
                           - name: label
+                            value: a.
                         prose: 'categorizes information and information systems owned or managed by the member using a data categorization structure that incorporates the guidance provided in Appendix D: Data Categorization, at a minimum, and'
                       - id: ra-2_tamus_smt.1.b
                         name: item
                         props:
                           - name: label
+                            value: b.
                         prose: reduces, and eliminates where possible, the collection and/or use of sensitive personal information [TxBCC 521.002] in information resources under the control of the member.
       - control-id: sa-3
         adds:
           - position: ending
             parts:
               - id: sa-3_tamus
-                name: item
-                title: TAMUS Implementation
-                parts:
-                  - id: sa-3_tamus_smt.1
-                    name: item
-                    prose: The System member Information Security Officer (ISO) reviews the data security requirements and specifications of any new information systems or services that process and/or store sensitive or high-impact information.
+                name: tamus_implementation
+                prose: The System member Information Security Officer (ISO) reviews the data security requirements and specifications of any new information systems or services that process and/or store sensitive or high-impact information.
       - control-id: sa-4
         adds:
           - position: ending
             parts:
               - id: sa-4_tamus
-                name: item
-                title: TAMUS Implementation
+                name: tamus_implementation
                 parts:
                   - id: sa-4_tamus_smt.1
                     name: item
@@ -417,22 +366,26 @@ profile:
                         name: item
                         props:
                           - name: label
+                            value: a.
                         prose: reviews and approves the security requirements in acquisition contracts of any new information system that processes and/or stores sensitive or high-impact information prior to the member procuring the system or service, and
                       - id: sa-4_tamus_smt.1.b
                         name: item
                         props:
                           - name: label
+                            value: b.
                         prose: ensures acquisition contracts for information systems, system components, or information system services address information security, backup, and privacy requirements.
                         parts:
                           - id: sa-4_tamus_smt.1.b.1
                             name: item
                             props:
                               - name: label
+                                value: (1)
                             prose: Such contracts should include right-to-audit and other provisions to provide appropriate assurance that applications and information are adequately protected.
                           - id: sa-4_tamus_smt.1.b.2
                             name: item
                             props:
                               - name: label
+                                value: (2)
                             prose: Vendors and third parties adhere to all state and Federal laws and System policies pertaining to the protection of information resources and privacy of sensitive information.
       - control-id: sc-13
         adds:
@@ -443,19 +396,14 @@ profile:
           - position: ending
             parts:
               - id: sc-13_tamus
-                name: item
-                title: TAMUS Implementation
-                parts:
-                  - id: sc-13_tamus_smt.1
-                    name: item
-                    prose: The System member ensures that information systems owned or operated by the member implement FIPS-validated cryptography [FIPS 140-2].
+                name: tamus_implementation
+                prose: The System member ensures that information systems owned or operated by the member implement FIPS-validated cryptography [FIPS 140-2].
       - control-id: si-3
         adds:
           - position: ending
             parts:
               - id: si-3_tamus
-                name: item
-                title: TAMUS Implementation
+                name: tamus_implementation
                 parts:
                   - id: si-3_tamus_smt.1
                     name: item
@@ -465,23 +413,21 @@ profile:
                         name: item
                         props:
                           - name: label
+                            value: a.
                         prose: ensures all System-owned or -managed information systems that connect to a member network employ endpoint protection software and any other protective measures required by applicable policies or guidelines, and
                       - id: si-3_tamus_smt.1.b
                         name: item
                         props:
                           - name: label
+                            value: b.
                         prose: ensures personally owned devices that connect to networks within the same boundary as confidential or high-impact information systems employ endpoint protection software or suitable compensating controls, based on assessed risk.
       - control-id: si-4
         adds:
           - position: ending
             parts:
               - id: si-4_tamus
-                name: item
-                title: TAMUS Implementation
-                parts:
-                  - id: si-4_tamus_smt.1
-                    name: item
-                    prose: The System member ensures the security of information systems through monitoring network traffic and use of information resources.
+                name: tamus_implementation
+                prose: The System member ensures the security of information systems through monitoring network traffic and use of information resources.
   back-matter:
     resources:
       - uuid: f1093641-01d8-4436-b069-8d4807af95b4

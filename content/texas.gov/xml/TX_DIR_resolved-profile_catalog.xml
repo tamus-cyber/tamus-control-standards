@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0"
-         uuid="5e8222c1-b732-4192-ba70-9bfc89cd13f7">
+         uuid="d31f7932-7613-4497-bf00-39157bac9517">
    <metadata>
       <title>Texas Security Control Standards Catalog Profile</title>
       <published>2020-07-07T12:55:52Z</published>
-      <last-modified>2021-10-15T19:14:58.231-05:00</last-modified>
+      <last-modified>2021-10-17T10:03:32.048-05:00</last-modified>
       <version>1.3</version>
       <oscal-version>1.0.0-milestone3</oscal-version>
       <link rel="resolution-source" href="TX_DIR_profile.xml"/>
@@ -183,11 +183,8 @@
                <p>organizational personnel with information security responsibilities</p>
             </part>
          </part>
-         <part id="ac-1_tx" name="item">
-            <title>State Implementation</title>
-            <part id="ac-1_tx_smt.1" name="item">
-               <p>Each state organization shall create, distribute, and implement an account management policy which defines the rules for establishing user identity, administering user accounts, and establishing and monitoring user access to information resources.</p>
-            </part>
+         <part name="tx_implementation" id="ac-1_tx">
+            <p>Each state organization shall create, distribute, and implement an account management policy which defines the rules for establishing user identity, administering user accounts, and establishing and monitoring user access to information resources.</p>
          </part>
       </control>
       <control class="SP800-53" id="ac-2">
@@ -493,12 +490,9 @@
                <p>automated mechanisms for implementing account management</p>
             </part>
          </part>
-         <part id="ac-2_tx" name="item">
-            <title>State Implementation</title>
-            <part id="ac-2_tx_smt.1" name="item">
-               <p>Confidential information shall be accessible only to authorized users. An information file or record containing any confidential information shall be identified, documented, and protected in its entirety. Information resources assigned from one
-              state organization to another or from a state organization to a contractor or other third party, at a minimum, shall be protected in accordance with the conditions imposed by the providing state organization.</p>
-            </part>
+         <part name="tx_implementation" id="ac-2_tx">
+            <p>Confidential information shall be accessible only to authorized users. An information file or record containing any confidential information shall be identified, documented, and protected in its entirety. Information resources assigned from one
+            state organization to another or from a state organization to a contractor or other third party, at a minimum, shall be protected in accordance with the conditions imposed by the providing state organization.</p>
          </part>
          <control class="SP800-53-enhancement" id="ac-2.1">
             <title>Automated System Account Management</title>
@@ -1342,8 +1336,7 @@
                <p>Automated mechanisms implementing access control policy</p>
             </part>
          </part>
-         <part id="ac-3_tx" name="item">
-            <title>State Implementation</title>
+         <part name="tx_implementation" id="ac-3_tx">
             <part id="ac-3_tx_smt.1" name="item">
                <prop name="label" value="1."/>
                <p>Access to state information resources shall be appropriately managed.</p>
@@ -3372,11 +3365,8 @@
                <p>Automated mechanisms implementing separation of duties policy</p>
             </part>
          </part>
-         <part id="ac-5_tx" name="item">
-            <title>State Implementation</title>
-            <part id="ac-5_tx_smt.1" name="item">
-               <p>State organizations shall ensure adequate controls and separation of duties for tasks that are susceptible to fraudulent or other unauthorized activity.</p>
-            </part>
+         <part name="tx_implementation" id="ac-5_tx">
+            <p>State organizations shall ensure adequate controls and separation of duties for tasks that are susceptible to fraudulent or other unauthorized activity.</p>
          </part>
       </control>
       <control class="SP800-53" id="ac-6">
@@ -4089,8 +4079,7 @@
                <p>Automated mechanisms implementing access control policy for unsuccessful logon attempts</p>
             </part>
          </part>
-         <part id="ac-7_tx" name="item">
-            <title>State Implementation</title>
+         <part name="tx_implementation" id="ac-7_tx">
             <part id="ac-7_tx_smt.1" name="item">
                <prop name="label" value="1."/>
                <p>As technology permits, state organizations should enforce account lockouts after no more than 10 failed attempts. This threshold may be lowered for Moderate or High risk systems.</p>
@@ -4322,12 +4311,9 @@
                <p>Automated mechanisms implementing system use notification</p>
             </part>
          </part>
-         <part id="ac-8_tx" name="item">
-            <title>State Implementation</title>
-            <part id="ac-8_tx_smt.1" name="item">
-               <p>System identification/logon banners shall have warning statements that include the following topics: (a) Unauthorized use is prohibited; (b) Usage may be subject to security testing and monitoring; (c) Misuse is subject to criminal prosecution;
-              and (d) Users have no expectation of privacy except as otherwise provided by applicable privacy laws.</p>
-            </part>
+         <part name="tx_implementation" id="ac-8_tx">
+            <p>System identification/logon banners shall have warning statements that include the following topics: (a) Unauthorized use is prohibited; (b) Usage may be subject to security testing and monitoring; (c) Misuse is subject to criminal prosecution;
+            and (d) Users have no expectation of privacy except as otherwise provided by applicable privacy laws.</p>
          </part>
       </control>
       <control class="SP800-53" id="ac-9">
@@ -4943,11 +4929,8 @@
                <p>organizational personnel with information security responsibilities</p>
             </part>
          </part>
-         <part id="ac-14_tx" name="item">
-            <title>State Implementation</title>
-            <part id="ac-14_tx_smt.1" name="item">
-               <p>The state organization identifies, documents, and provides supporting rationale in the security plan for any actions that may be performed on an information system without identification or authentication.</p>
-            </part>
+         <part name="tx_implementation" id="ac-14_tx">
+            <p>The state organization identifies, documents, and provides supporting rationale in the security plan for any actions that may be performed on an information system without identification or authentication.</p>
          </part>
          <control class="SP800-53-enhancement" id="ac-14.1">
             <title>Necessary Uses</title>
@@ -5745,8 +5728,7 @@
                <p>Remote access management capability for the information system</p>
             </part>
          </part>
-         <part id="ac-17_tx" name="item">
-            <title>State Implementation</title>
+         <part name="tx_implementation" id="ac-17_tx">
             <part id="ac-17_tx_smt.1" name="item">
                <prop name="label" value="1."/>
                <p>The state organization establishes, documents, and reviews usage restrictions, configuration/connection requirements, and implementation guidance for each type of remote access allowed.</p>
@@ -6148,8 +6130,7 @@
                <p>Wireless access management capability for the information system</p>
             </part>
          </part>
-         <part id="ac-18_tx" name="item">
-            <title>State Implementation</title>
+         <part name="tx_implementation" id="ac-18_tx">
             <part id="ac-18_tx_smt.1" name="item">
                <p>State organizations shall establish the requirements and security restrictions for installing or providing access to the state organization information resources systems. The wireless policy shall address the following topic areas:</p>
                <part id="ac-18_tx_smt.1.a" name="item">
@@ -6456,11 +6437,8 @@
                <p>Access control capability authorizing mobile device connections to organizational information systems</p>
             </part>
          </part>
-         <part id="ac-19_tx" name="item">
-            <title>State Implementation</title>
-            <part id="ac-19_tx_smt.1" name="item">
-               <p>State organizations shall establishes usage restrictions, configuration requirements, connection requirements, and implementation guidance for organization-controlled mobile devices, whether owned by the state organization or the employee.</p>
-            </part>
+         <part name="tx_implementation" id="ac-19_tx">
+            <p>State organizations shall establishes usage restrictions, configuration requirements, connection requirements, and implementation guidance for organization-controlled mobile devices, whether owned by the state organization or the employee.</p>
          </part>
          <control class="SP800-53-enhancement" id="ac-19.1">
             <title>Use of Writable / Portable Storage Devices</title>
@@ -6740,8 +6718,7 @@
                <p>Automated mechanisms implementing terms and conditions on use of external information systems</p>
             </part>
          </part>
-         <part id="ac-20_tx" name="item">
-            <title>State Implementation</title>
+         <part name="tx_implementation" id="ac-20_tx">
             <part id="ac-20_tx_smt.1" name="item">
                <prop name="label" value="1."/>
                <p>State organizations shall develop policies governing the use of external information systems and resources including the type and classification of data that can be stored outside of the state organization.</p>
@@ -7223,11 +7200,8 @@
                <p>Automated mechanisms implementing management of publicly accessible content</p>
             </part>
          </part>
-         <part id="ac-22_tx" name="item">
-            <title>State Implementation</title>
-            <part id="ac-22_tx_smt.1" name="item">
-               <p>State organizations shall develop policies governing the procedures to post information on publicly accessible information systems.</p>
-            </part>
+         <part name="tx_implementation" id="ac-22_tx">
+            <p>State organizations shall develop policies governing the procedures to post information on publicly accessible information systems.</p>
          </part>
       </control>
       <control class="SP800-53" id="ac-23">
@@ -7666,11 +7640,8 @@
                <p>organizational personnel with information security responsibilities</p>
             </part>
          </part>
-         <part id="at-1_tx" name="item">
-            <title>State Implementation</title>
-            <part id="at-1_tx_smt.1" name="item">
-               <p>State organizations shall establish the requirements to ensure each user of information resources receives adequate training on computer security issues.</p>
-            </part>
+         <part name="tx_implementation" id="at-1_tx">
+            <p>State organizations shall establish the requirements to ensure each user of information resources receives adequate training on computer security issues.</p>
          </part>
       </control>
       <control class="SP800-53" id="at-2">
@@ -7757,8 +7728,7 @@
                <p>Automated mechanisms managing security awareness training</p>
             </part>
          </part>
-         <part id="at-2_tx" name="item">
-            <title>State Implementation</title>
+         <part name="tx_implementation" id="at-2_tx">
             <part id="at-2_tx_smt.1" name="item">
                <p>State organizations shall:</p>
                <part id="at-2_tx_smt.1.a" name="item">
@@ -7939,11 +7909,8 @@
                <p>Automated mechanisms managing role-based security training</p>
             </part>
          </part>
-         <part id="at-3_tx" name="item">
-            <title>State Implementation</title>
-            <part id="at-3_tx_smt.1" name="item">
-               <p>State organizations shall provide role-based information security training to staff with information security responsibilities.</p>
-            </part>
+         <part name="tx_implementation" id="at-3_tx">
+            <p>State organizations shall provide role-based information security training to staff with information security responsibilities.</p>
          </part>
          <control class="SP800-53-enhancement" id="at-3.1">
             <title>Environmental Controls</title>
@@ -8230,11 +8197,8 @@
                <p>Automated mechanisms supporting management of security training records</p>
             </part>
          </part>
-         <part id="at-4_tx" name="item">
-            <title>State Implementation</title>
-            <part id="at-4_tx_smt.1" name="item">
-               <p>State organizations shall maintain information security awareness and training records.</p>
-            </part>
+         <part name="tx_implementation" id="at-4_tx">
+            <p>State organizations shall maintain information security awareness and training records.</p>
          </part>
       </control>
       <control class="SP800-53" id="at-5">
@@ -8399,11 +8363,8 @@
                <p>organizational personnel with information security responsibilities</p>
             </part>
          </part>
-         <part id="au-1_tx" name="item">
-            <title>State Implementation</title>
-            <part id="au-1_tx_smt.1" name="item">
-               <p>The state organization develops, disseminates, and periodically reviews/updates formal, documented procedures to facilitate the implementation of the audit and accountability policy and associated audit and accountability controls.</p>
-            </part>
+         <part name="tx_implementation" id="au-1_tx">
+            <p>The state organization develops, disseminates, and periodically reviews/updates formal, documented procedures to facilitate the implementation of the audit and accountability policy and associated audit and accountability controls.</p>
          </part>
       </control>
       <control class="SP800-53" id="au-2">
@@ -8515,8 +8476,7 @@
                <p>Automated mechanisms implementing information system auditing</p>
             </part>
          </part>
-         <part id="au-2_tx" name="item">
-            <title>State Implementation</title>
+         <part name="tx_implementation" id="au-2_tx">
             <part id="au-2_tx_smt.1" name="item">
                <prop name="label" value="1."/>
                <p>Information resources systems shall provide the means whereby authorized personnel have the ability to audit and establish individual accountability for any action that can potentially cause access to, generation of, modification of, or affect the
@@ -8675,8 +8635,7 @@
                <p>Automated mechanisms implementing information system auditing of auditable events</p>
             </part>
          </part>
-         <part id="au-3_tx" name="item">
-            <title>State Implementation</title>
+         <part name="tx_implementation" id="au-3_tx">
             <part id="au-3_tx_smt.1" name="item">
                <p>Audit record content includes, for most audit records:</p>
                <part id="au-3_tx_smt.1.a" name="item">
@@ -8869,11 +8828,8 @@
                <p>Audit record storage capacity and related configuration settings</p>
             </part>
          </part>
-         <part id="au-4_tx" name="item">
-            <title>State Implementation</title>
-            <part id="au-4_tx_smt.1" name="item">
-               <p>The state organization allocates sufficient audit record storage capacity and configures auditing to reduce the likelihood of such capacity being exceeded.</p>
-            </part>
+         <part name="tx_implementation" id="au-4_tx">
+            <p>The state organization allocates sufficient audit record storage capacity and configures auditing to reduce the likelihood of such capacity being exceeded.</p>
          </part>
          <control class="SP800-53-enhancement" id="au-4.1">
             <title>Transfer to Alternate Storage</title>
@@ -9010,11 +8966,8 @@
                <p>Automated mechanisms implementing information system response to audit processing failures</p>
             </part>
          </part>
-         <part id="au-5_tx" name="item">
-            <title>State Implementation</title>
-            <part id="au-5_tx_smt.1" name="item">
-               <p>The information system alerts appropriate organizational officials in the event of an audit processing failure.</p>
-            </part>
+         <part name="tx_implementation" id="au-5_tx">
+            <p>The information system alerts appropriate organizational officials in the event of an audit processing failure.</p>
          </part>
          <control class="SP800-53-enhancement" id="au-5.1">
             <title>Audit Storage Capacity</title>
@@ -9422,12 +9375,9 @@
                <p>organizational personnel with information security responsibilities</p>
             </part>
          </part>
-         <part id="au-6_tx" name="item">
-            <title>State Implementation</title>
-            <part id="au-6_tx_smt.1" name="item">
-               <p>The state organization regularly reviews/analyzes information system audit records for indications of inappropriate or unusual activity, investigates suspicious activity or suspected violations, reports findings to appropriate officials, and takes
-              necessary actions.</p>
-            </part>
+         <part name="tx_implementation" id="au-6_tx">
+            <p>The state organization regularly reviews/analyzes information system audit records for indications of inappropriate or unusual activity, investigates suspicious activity or suspected violations, reports findings to appropriate officials, and takes
+            necessary actions.</p>
          </part>
          <control class="SP800-53-enhancement" id="au-6.1">
             <title>Process Integration</title>
@@ -10161,11 +10111,8 @@
                <p>Automated mechanisms implementing time stamp generation</p>
             </part>
          </part>
-         <part id="au-8_tx" name="item">
-            <title>State Implementation</title>
-            <part id="au-8_tx_smt.1" name="item">
-               <p>Whenever technically possible, information systems should provide time stamps for use in audit record generation.</p>
-            </part>
+         <part name="tx_implementation" id="au-8_tx">
+            <p>Whenever technically possible, information systems should provide time stamps for use in audit record generation.</p>
          </part>
          <control class="SP800-53-enhancement" id="au-8.1">
             <title>Synchronization with Authoritative Time Source</title>
@@ -10370,11 +10317,8 @@
                <p>Automated mechanisms implementing audit information protection</p>
             </part>
          </part>
-         <part id="au-9_tx" name="item">
-            <title>State Implementation</title>
-            <part id="au-9_tx_smt.1" name="item">
-               <p>The information system protects audit information and audit tools from unauthorized access, modification, and deletion.</p>
-            </part>
+         <part name="tx_implementation" id="au-9_tx">
+            <p>The information system protects audit information and audit tools from unauthorized access, modification, and deletion.</p>
          </part>
          <control class="SP800-53-enhancement" id="au-9.1">
             <title>Hardware Write-once Media</title>
@@ -11119,11 +11063,8 @@
                <p>system/network administrators</p>
             </part>
          </part>
-         <part id="au-11_tx" name="item">
-            <title>State Implementation</title>
-            <part id="au-11_tx_smt.1" name="item">
-               <p>The state organization retains audit records to provide support for after-the-fact investigations of security incidents and to meet regulatory and organizational information retention requirements.</p>
-            </part>
+         <part name="tx_implementation" id="au-11_tx">
+            <p>The state organization retains audit records to provide support for after-the-fact investigations of security incidents and to meet regulatory and organizational information retention requirements.</p>
          </part>
          <control class="SP800-53-enhancement" id="au-11.1">
             <title>Long-term Retrieval Capability</title>
@@ -11271,11 +11212,8 @@
                <p>Automated mechanisms implementing audit record generation capability</p>
             </part>
          </part>
-         <part id="au-12_tx" name="item">
-            <title>State Implementation</title>
-            <part id="au-12_tx_smt.1" name="item">
-               <p>State organizations shall configure information systems to generate audit records to support AU-2 and AU-3.</p>
-            </part>
+         <part name="tx_implementation" id="au-12_tx">
+            <p>State organizations shall configure information systems to generate audit records to support AU-2 and AU-3.</p>
          </part>
          <control class="SP800-53-enhancement" id="au-12.1">
             <title>System-wide / Time-correlated Audit Trail</title>
@@ -12121,11 +12059,8 @@
                <p>organizational personnel with information security responsibilities</p>
             </part>
          </part>
-         <part id="ca-1_tx" name="item">
-            <title>State Implementation</title>
-            <part id="ca-1_tx_smt.1" name="item">
-               <p>The state organization shall establish a security assessment procedure.</p>
-            </part>
+         <part name="tx_implementation" id="ca-1_tx">
+            <p>The state organization shall establish a security assessment procedure.</p>
          </part>
       </control>
       <control class="SP800-53" id="ca-2">
@@ -12269,12 +12204,9 @@
                <p>Automated mechanisms supporting security assessment, security assessment plan development, and/or security assessment reporting</p>
             </part>
          </part>
-         <part id="ca-2_tx" name="item">
-            <title>State Implementation</title>
-            <part id="ca-2_tx_smt.1" name="item">
-               <p>A review of the state organization’s information security program for compliance with these standards will be performed at least annually, based on business risk management decisions, by individual(s) independent of the information security
-              program and designated by the state organization head or his or her designated representative(s).</p>
-            </part>
+         <part name="tx_implementation" id="ca-2_tx">
+            <p>A review of the state organization’s information security program for compliance with these standards will be performed at least annually, based on business risk management decisions, by individual(s) independent of the information security
+            program and designated by the state organization head or his or her designated representative(s).</p>
          </part>
          <control class="SP800-53-enhancement" id="ca-2.1">
             <title>Independent Assessors</title>
@@ -12580,12 +12512,9 @@
                <p>personnel managing the system(s) to which the Interconnection Security Agreement applies</p>
             </part>
          </part>
-         <part id="ca-3_tx" name="item">
-            <title>State Implementation</title>
-            <part id="ca-3_tx_smt.1" name="item">
-               <p>The organization authorizes all connections from internal/organization information system to other information systems outside of organization through the use of system connection agreements and monitors/controls the system connections on an
-              ongoing basis.</p>
-            </part>
+         <part name="tx_implementation" id="ca-3_tx">
+            <p>The organization authorizes all connections from internal/organization information system to other information systems outside of organization through the use of system connection agreements and monitors/controls the system connections on an
+            ongoing basis.</p>
          </part>
          <control class="SP800-53-enhancement" id="ca-3.1">
             <title>Unclassified National Security System Connections</title>
@@ -12998,12 +12927,9 @@
                <p>Automated mechanisms for developing, implementing, and maintaining plan of action and milestones</p>
             </part>
          </part>
-         <part id="ca-5_tx" name="item">
-            <title>State Implementation</title>
-            <part id="ca-5_tx_smt.1" name="item">
-               <p>The state organization develops and updates, a plan of action and milestones for the information system that documents the organization’s planned, implemented, and evaluated remedial actions to correct deficiencies noted during the assessment of
-              the security controls and to reduce or eliminate known vulnerabilities in the system.</p>
-            </part>
+         <part name="tx_implementation" id="ca-5_tx">
+            <p>The state organization develops and updates, a plan of action and milestones for the information system that documents the organization’s planned, implemented, and evaluated remedial actions to correct deficiencies noted during the assessment of
+            the security controls and to reduce or eliminate known vulnerabilities in the system.</p>
          </part>
          <control class="SP800-53-enhancement" id="ca-5.1">
             <title>Automation Support for Accuracy / Currency</title>
@@ -13136,8 +13062,7 @@
                <p>Automated mechanisms that facilitate security authorizations and updates</p>
             </part>
          </part>
-         <part id="ca-6_tx" name="item">
-            <title>State Implementation</title>
+         <part name="tx_implementation" id="ca-6_tx">
             <part id="ca-6_tx_smt.1" name="item">
                <prop name="label" value="1."/>
                <p>The state organization authorizes the information system for processing before operations or when there is a significant change to the system.</p>
@@ -13354,11 +13279,8 @@
                <p>Mechanisms implementing continuous monitoring</p>
             </part>
          </part>
-         <part id="ca-7_tx" name="item">
-            <title>State Implementation</title>
-            <part id="ca-7_tx_smt.1" name="item">
-               <p>The state organization monitors the security controls in the information system on an ongoing basis.</p>
-            </part>
+         <part name="tx_implementation" id="ca-7_tx">
+            <p>The state organization monitors the security controls in the information system on an ongoing basis.</p>
          </part>
          <control class="SP800-53-enhancement" id="ca-7.1">
             <title>Independent Assessment</title>
@@ -13707,11 +13629,8 @@
                <p>organizational personnel with information security responsibilities</p>
             </part>
          </part>
-         <part id="ca-9_tx" name="item">
-            <title>State Implementation</title>
-            <part id="ca-9_tx_smt.1" name="item">
-               <p>The state organization has a procedure for authorizing internal information resource connections.</p>
-            </part>
+         <part name="tx_implementation" id="ca-9_tx">
+            <p>The state organization has a procedure for authorizing internal information resource connections.</p>
          </part>
          <control class="SP800-53-enhancement" id="ca-9.1">
             <title>Security Compliance Checks</title>
@@ -13913,11 +13832,8 @@
                <p>system/network administrators</p>
             </part>
          </part>
-         <part id="cm-1_tx" name="item">
-            <title>State Implementation</title>
-            <part id="cm-1_tx_smt.1" name="item">
-               <p>The organization establishes the process for controlling modifications to hardware, software, firmware, and documentation to ensure the information resources are protected against improper modification before, during, and after system implementation.</p>
-            </part>
+         <part name="tx_implementation" id="cm-1_tx">
+            <p>The organization establishes the process for controlling modifications to hardware, software, firmware, and documentation to ensure the information resources are protected against improper modification before, during, and after system implementation.</p>
          </part>
       </control>
       <control class="SP800-53" id="cm-2">
@@ -13981,11 +13897,8 @@
                <p>automated mechanisms supporting configuration control of the baseline configuration</p>
             </part>
          </part>
-         <part id="cm-2_tx" name="item">
-            <title>State Implementation</title>
-            <part id="cm-2_tx_smt.1" name="item">
-               <p>The state organization develops, documents, and maintains a current baseline configuration of the information system.</p>
-            </part>
+         <part name="tx_implementation" id="cm-2_tx">
+            <p>The state organization develops, documents, and maintains a current baseline configuration of the information system.</p>
          </part>
          <control class="SP800-53-enhancement" id="cm-2.1">
             <title>Reviews and Updates</title>
@@ -14938,8 +14851,7 @@
                <p>Organizational processes for security impact analysis</p>
             </part>
          </part>
-         <part id="cm-4_tx" name="item">
-            <title>State Implementation</title>
+         <part name="tx_implementation" id="cm-4_tx">
             <part id="cm-4_tx_smt.1" name="item">
                <prop name="label" value="1."/>
                <p>All security-related information resources changes shall be approved by the information owner through a change control process.</p>
@@ -15688,8 +15600,7 @@
                <p>automated mechanisms that identify and/or document deviations from established configuration settings</p>
             </part>
          </part>
-         <part id="cm-6_tx" name="item">
-            <title>State Implementation</title>
+         <part name="tx_implementation" id="cm-6_tx">
             <part id="cm-6_tx_smt.1" name="item">
                <p>The state organization:</p>
                <part id="cm-6_tx_smt.1.a" name="item">
@@ -15978,11 +15889,8 @@
                <p>automated mechanisms implementing restrictions or prohibition of functions, ports, protocols, and/or services</p>
             </part>
          </part>
-         <part id="cm-7_tx" name="item">
-            <title>State Implementation</title>
-            <part id="cm-7_tx_smt.1" name="item">
-               <p>The state organization configures information system to provide only essential capabilities.</p>
-            </part>
+         <part name="tx_implementation" id="cm-7_tx">
+            <p>The state organization configures information system to provide only essential capabilities.</p>
          </part>
          <control class="SP800-53-enhancement" id="cm-7.1">
             <title>Periodic Review</title>
@@ -16589,11 +16497,8 @@
                <p>automated mechanisms supporting and/or implementing the information system component inventory</p>
             </part>
          </part>
-         <part id="cm-8_tx" name="item">
-            <title>State Implementation</title>
-            <part id="cm-8_tx_smt.1" name="item">
-               <p>The state organization develops, documents, and maintains a current inventory of the components of the information system and relevant ownership information.</p>
-            </part>
+         <part name="tx_implementation" id="cm-8_tx">
+            <p>The state organization develops, documents, and maintains a current inventory of the components of the information system and relevant ownership information.</p>
          </part>
          <control class="SP800-53-enhancement" id="cm-8.1">
             <title>Updates During Installations / Removals</title>
@@ -17381,8 +17286,7 @@
                <p>automated mechanisms implementing and controlling the use of peer-to-peer files sharing technology</p>
             </part>
          </part>
-         <part id="cm-10_tx" name="item">
-            <title>State Implementation</title>
+         <part name="tx_implementation" id="cm-10_tx">
             <part id="cm-10_tx_smt.1" name="item">
                <p>The state organization:</p>
                <part id="cm-10_tx_smt.1.a" name="item">
@@ -17561,11 +17465,8 @@
                <p>automated mechanisms monitoring policy compliance</p>
             </part>
          </part>
-         <part id="cm-11_tx" name="item">
-            <title>State Implementation</title>
-            <part id="cm-11_tx_smt.1" name="item">
-               <p>The state organization establishes and enforces a policy governing the installation of software by users.</p>
-            </part>
+         <part name="tx_implementation" id="cm-11_tx">
+            <p>The state organization establishes and enforces a policy governing the installation of software by users.</p>
          </part>
          <control class="SP800-53-enhancement" id="cm-11.1">
             <title>Alerts for Unauthorized Installations</title>
@@ -17824,12 +17725,9 @@
                <p>organizational personnel with information security responsibilities</p>
             </part>
          </part>
-         <part id="cp-1_tx" name="item">
-            <title>State Implementation</title>
-            <part id="cp-1_tx_smt.1" name="item">
-               <p>State organizations shall maintain written Continuity of Operations Plans that address information resources so that the effects of a disaster will be minimized, and the state organization will be able either to maintain or quickly resume
-              mission-critical functions.</p>
-            </part>
+         <part name="tx_implementation" id="cp-1_tx">
+            <p>State organizations shall maintain written Continuity of Operations Plans that address information resources so that the effects of a disaster will be minimized, and the state organization will be able either to maintain or quickly resume
+            mission-critical functions.</p>
          </part>
       </control>
       <control class="SP800-53" id="cp-2">
@@ -18063,8 +17961,7 @@
                <p>automated mechanisms for developing, reviewing, updating and/or protecting the contingency plan</p>
             </part>
          </part>
-         <part id="cp-2_tx" name="item">
-            <title>State Implementation</title>
+         <part name="tx_implementation" id="cp-2_tx">
             <part id="cp-2_tx_smt.1" name="item">
                <p>The plan shall be distributed to key personnel and a copy stored offsite. Elements of the plan for information resources shall include:</p>
                <part id="cp-2_tx_smt.1.a" name="item">
@@ -18592,11 +18489,8 @@
                <p>Organizational processes for contingency training</p>
             </part>
          </part>
-         <part id="cp-3_tx" name="item">
-            <title>State Implementation</title>
-            <part id="cp-3_tx_smt.1" name="item">
-               <p>The state organization trains personnel in their contingency roles and responsibilities with respect to the information system and provides periodic refresher training.</p>
-            </part>
+         <part name="tx_implementation" id="cp-3_tx">
+            <p>The state organization trains personnel in their contingency roles and responsibilities with respect to the information system and provides periodic refresher training.</p>
          </part>
          <control class="SP800-53-enhancement" id="cp-3.1">
             <title>Simulated Events</title>
@@ -18761,11 +18655,8 @@
                <p>automated mechanisms supporting the contingency plan and/or contingency plan testing</p>
             </part>
          </part>
-         <part id="cp-4_tx" name="item">
-            <title>State Implementation</title>
-            <part id="cp-4_tx_smt.1" name="item">
-               <p>Each state organization’s written disaster recovery plan will include provisions for annual testing.</p>
-            </part>
+         <part name="tx_implementation" id="cp-4_tx">
+            <p>Each state organization’s written disaster recovery plan will include provisions for annual testing.</p>
          </part>
          <control class="SP800-53-enhancement" id="cp-4.1">
             <title>Coordinate with Related Plans</title>
@@ -19032,11 +18923,8 @@
                <p>automated mechanisms supporting and/or implementing storage and retrieval of information system backup information at the alternate storage site</p>
             </part>
          </part>
-         <part id="cp-6_tx" name="item">
-            <title>State Implementation</title>
-            <part id="cp-6_tx_smt.1" name="item">
-               <p>Mission-critical information shall be backed up on a scheduled basis and stored off site in a secure, environmentally safe, locked facility accessible only to authorized state organization representatives.</p>
-            </part>
+         <part name="tx_implementation" id="cp-6_tx">
+            <p>Mission-critical information shall be backed up on a scheduled basis and stored off site in a secure, environmentally safe, locked facility accessible only to authorized state organization representatives.</p>
          </part>
          <control class="SP800-53-enhancement" id="cp-6.1">
             <title>Separation from Primary Site</title>
@@ -19867,11 +19755,8 @@
                <p>automated mechanisms supporting and/or implementing information system backups</p>
             </part>
          </part>
-         <part id="cp-9_tx" name="item">
-            <title>State Implementation</title>
-            <part id="cp-9_tx_smt.1" name="item">
-               <p>The state organization conducts backups of system-level information (including system state information) and critical user-level information contained in the information system and protects backup information at the storage location.</p>
-            </part>
+         <part name="tx_implementation" id="cp-9_tx">
+            <p>The state organization conducts backups of system-level information (including system state information) and critical user-level information contained in the information system and protects backup information at the storage location.</p>
          </part>
          <control class="SP800-53-enhancement" id="cp-9.1">
             <title>Testing for Reliability / Integrity</title>
@@ -20276,11 +20161,8 @@
                <p>automated mechanisms supporting and/or implementing information system recovery and reconstitution operations</p>
             </part>
          </part>
-         <part id="cp-10_tx" name="item">
-            <title>State Implementation</title>
-            <part id="cp-10_tx_smt.1" name="item">
-               <p>The state organization employs mechanisms with supporting procedures to allow the information system to be recovered and reconstituted to a known secure state after a disruption or failure.</p>
-            </part>
+         <part name="tx_implementation" id="cp-10_tx">
+            <p>The state organization employs mechanisms with supporting procedures to allow the information system to be recovered and reconstituted to a known secure state after a disruption or failure.</p>
          </part>
          <control class="SP800-53-enhancement" id="cp-10.1">
             <title>Contingency Plan Testing</title>
@@ -20795,11 +20677,8 @@
                <p>organizational personnel with information security responsibilities</p>
             </part>
          </part>
-         <part id="ia-1_tx" name="item">
-            <title>State Implementation</title>
-            <part id="ia-1_tx_smt.1" name="item">
-               <p>The state organization establishes the policies for verifying the identity of a user, process, or device, as a prerequisite for granting access to resources in an information system.</p>
-            </part>
+         <part name="tx_implementation" id="ia-1_tx">
+            <p>The state organization establishes the policies for verifying the identity of a user, process, or device, as a prerequisite for granting access to resources in an information system.</p>
          </part>
       </control>
       <control class="SP800-53" id="ia-2">
@@ -20866,12 +20745,9 @@
                <p>automated mechanisms supporting and/or implementing identification and authentication capability</p>
             </part>
          </part>
-         <part id="ia-2_tx" name="item">
-            <title>State Implementation</title>
-            <part id="ia-2_tx_smt.1" name="item">
-               <p>Each user of information resources shall be assigned a unique identifier except for situations where risk analysis demonstrates no need for individual accountability of users. User identification shall be authenticated before the information
-              resources system may grant that user access.</p>
-            </part>
+         <part name="tx_implementation" id="ia-2_tx">
+            <p>Each user of information resources shall be assigned a unique identifier except for situations where risk analysis demonstrates no need for individual accountability of users. User identification shall be authenticated before the information
+            resources system may grant that user access.</p>
          </part>
          <control class="SP800-53-enhancement" id="ia-2.1">
             <title>Network Access to Privileged Accounts</title>
@@ -22031,11 +21907,8 @@
                <p>Automated mechanisms supporting and/or implementing identifier management</p>
             </part>
          </part>
-         <part id="ia-4_tx" name="item">
-            <title>State Implementation</title>
-            <part id="ia-4_tx_smt.1" name="item">
-               <p>A user’s access authorization shall be appropriately modified or removed when the user’s employment or job responsibilities within the state organization change.</p>
-            </part>
+         <part name="tx_implementation" id="ia-4_tx">
+            <p>A user’s access authorization shall be appropriately modified or removed when the user’s employment or job responsibilities within the state organization change.</p>
          </part>
          <control class="SP800-53-enhancement" id="ia-4.1">
             <title>Prohibit Account Identifiers as Public Identifiers</title>
@@ -22538,8 +22411,7 @@
                <p>Automated mechanisms supporting and/or implementing authenticator management capability</p>
             </part>
          </part>
-         <part id="ia-5_tx" name="item">
-            <title>State Implementation</title>
+         <part name="tx_implementation" id="ia-5_tx">
             <part id="ia-5_tx_smt.1" name="item">
                <p>The state organization manages information system authenticators by:</p>
                <part id="ia-5_tx_smt.1.a" name="item">
@@ -23517,11 +23389,8 @@
                <p>Automated mechanisms supporting and/or implementing the obscuring of feedback of authentication information during authentication</p>
             </part>
          </part>
-         <part id="ia-6_tx" name="item">
-            <title>State Implementation</title>
-            <part id="ia-6_tx_smt.1" name="item">
-               <p>The information system obscures feedback of authentication information during the authentication process to protect the information from possible exploitation/use by unauthorized individuals.</p>
-            </part>
+         <part name="tx_implementation" id="ia-6_tx">
+            <p>The information system obscures feedback of authentication information during the authentication process to protect the information from possible exploitation/use by unauthorized individuals.</p>
          </part>
       </control>
       <control class="SP800-53" id="ia-7">
@@ -23570,11 +23439,8 @@
                <p>Automated mechanisms supporting and/or implementing cryptographic module authentication</p>
             </part>
          </part>
-         <part id="ia-7_tx" name="item">
-            <title>State Implementation</title>
-            <part id="ia-7_tx_smt.1" name="item">
-               <p>Encryption used by the state organization meets the requirements of applicable laws, Executive Orders, directives, policies, regulations, standards, and guidance for authentication to a cryptographic module.</p>
-            </part>
+         <part name="tx_implementation" id="ia-7_tx">
+            <p>Encryption used by the state organization meets the requirements of applicable laws, Executive Orders, directives, policies, regulations, standards, and guidance for authentication to a cryptographic module.</p>
          </part>
       </control>
       <control class="SP800-53" id="ia-8">
@@ -23640,11 +23506,8 @@
                <p>Automated mechanisms supporting and/or implementing identification and authentication capability</p>
             </part>
          </part>
-         <part id="ia-8_tx" name="item">
-            <title>State Implementation</title>
-            <part id="ia-8_tx_smt.1" name="item">
-               <p>The information system uniquely identifies and authenticates non-organizational users (or processes acting on behalf of non-organizational users).</p>
-            </part>
+         <part name="tx_implementation" id="ia-8_tx">
+            <p>The information system uniquely identifies and authenticates non-organizational users (or processes acting on behalf of non-organizational users).</p>
          </part>
          <control class="SP800-53-enhancement" id="ia-8.1">
             <title>Acceptance of PIV Credentials from Other Agencies</title>
@@ -24357,12 +24220,9 @@
                <p>organizational personnel with information security responsibilities</p>
             </part>
          </part>
-         <part id="ir-1_tx" name="item">
-            <title>State Implementation</title>
-            <part id="ir-1_tx_smt.1" name="item">
-               <p>State organizations shall assess the significance of a security incident based on the business impact on the affected resources and the current and potential technical effect of the incident, e.g., loss of revenue, productivity, access to
-              services, reputation, unauthorized disclosure of confidential information, or propagation to other networks.</p>
-            </part>
+         <part name="tx_implementation" id="ir-1_tx">
+            <p>State organizations shall assess the significance of a security incident based on the business impact on the affected resources and the current and potential technical effect of the incident, e.g., loss of revenue, productivity, access to
+            services, reputation, unauthorized disclosure of confidential information, or propagation to other networks.</p>
          </part>
       </control>
       <control class="SP800-53" id="ir-2">
@@ -24452,11 +24312,8 @@
                <p>organizational personnel with information security responsibilities</p>
             </part>
          </part>
-         <part id="ir-2_tx" name="item">
-            <title>State Implementation</title>
-            <part id="ir-2_tx_smt.1" name="item">
-               <p>The state organization trains personnel in their incident response roles and responsibilities with respect to the information system and provides refresher training at least annually.</p>
-            </part>
+         <part name="tx_implementation" id="ir-2_tx">
+            <p>The state organization trains personnel in their incident response roles and responsibilities with respect to the information system and provides refresher training at least annually.</p>
          </part>
          <control class="SP800-53-enhancement" id="ir-2.1">
             <title>Simulated Events</title>
@@ -24811,11 +24668,8 @@
                <p>Incident handling capability for the organization</p>
             </part>
          </part>
-         <part id="ir-4_tx" name="item">
-            <title>State Implementation</title>
-            <part id="ir-4_tx_smt.1" name="item">
-               <p>The state organization implements an incident handling capability for security incidents that includes preparation, detection and analysis, containment, eradication, and recovery.</p>
-            </part>
+         <part name="tx_implementation" id="ir-4_tx">
+            <p>The state organization implements an incident handling capability for security incidents that includes preparation, detection and analysis, containment, eradication, and recovery.</p>
          </part>
          <control class="SP800-53-enhancement" id="ir-4.1">
             <title>Automated Incident Handling Processes</title>
@@ -25369,11 +25223,8 @@
                <p>automated mechanisms supporting and/or implementing tracking and documenting of system security incidents</p>
             </part>
          </part>
-         <part id="ir-5_tx" name="item">
-            <title>State Implementation</title>
-            <part id="ir-5_tx_smt.1" name="item">
-               <p>The state organization tracks and documents information system security incidents on an ongoing basis.</p>
-            </part>
+         <part name="tx_implementation" id="ir-5_tx">
+            <p>The state organization tracks and documents information system security incidents on an ongoing basis.</p>
          </part>
          <control class="SP800-53-enhancement" id="ir-5.1">
             <title>Automated Tracking / Data Collection / Analysis</title>
@@ -25515,8 +25366,7 @@
                <p>automated mechanisms supporting and/or implementing incident reporting</p>
             </part>
          </part>
-         <part id="ir-6_tx" name="item">
-            <title>State Implementation</title>
+         <part name="tx_implementation" id="ir-6_tx">
             <part id="ir-6_tx_smt.1.a" name="item">
                <prop name="label" value="a."/>
                <p>Security incidents shall be promptly reported to immediate supervisors and the state organization Information Security Officer. Security incidents that require timely reporting to the department include those events that are assessed to:</p>
@@ -25738,12 +25588,9 @@
                <p>automated mechanisms supporting and/or implementing incident response assistance</p>
             </part>
          </part>
-         <part id="ir-7_tx" name="item">
-            <title>State Implementation</title>
-            <part id="ir-7_tx_smt.1" name="item">
-               <p>The state organization provides an incident response support resource that offers advice and assistance to users of the information system for the handling and reporting of security incidents. The support resource is an integral part of the
-              organization’s incident response capability.</p>
-            </part>
+         <part name="tx_implementation" id="ir-7_tx">
+            <p>The state organization provides an incident response support resource that offers advice and assistance to users of the information system for the handling and reporting of security incidents. The support resource is an integral part of the
+            organization’s incident response capability.</p>
          </part>
          <control class="SP800-53-enhancement" id="ir-7.1">
             <title>Automation Support for Availability of Information / Support</title>
@@ -26075,11 +25922,8 @@
                <p>Organizational incident response plan and related organizational processes</p>
             </part>
          </part>
-         <part id="ir-8_tx" name="item">
-            <title>State Implementation</title>
-            <part id="ir-8_tx_smt.1" name="item">
-               <p>The state organization has an incident management policy that describes the requirements for dealing with computer security incidents including prevention, detection, response, remediation, and reporting.</p>
-            </part>
+         <part name="tx_implementation" id="ir-8_tx">
+            <p>The state organization has an incident management policy that describes the requirements for dealing with computer security incidents including prevention, detection, response, remediation, and reporting.</p>
          </part>
       </control>
       <control class="SP800-53" id="ir-9">
@@ -26557,11 +26401,8 @@
                <p>organizational personnel with information security responsibilities</p>
             </part>
          </part>
-         <part id="ma-1_tx" name="item">
-            <title>State Implementation</title>
-            <part id="ma-1_tx_smt.1" name="item">
-               <p>The state organization has a policy that addresses system maintenance controls.</p>
-            </part>
+         <part name="tx_implementation" id="ma-1_tx">
+            <p>The state organization has a policy that addresses system maintenance controls.</p>
          </part>
       </control>
       <control class="SP800-53" id="ma-2">
@@ -26739,12 +26580,9 @@
                <p>automated mechanisms implementing sanitization of information system components</p>
             </part>
          </part>
-         <part id="ma-2_tx" name="item">
-            <title>State Implementation</title>
-            <part id="ma-2_tx_smt.1" name="item">
-               <p>The state organization schedules, performs, documents, and reviews records of routine preventative and regular maintenance (including repairs) on the components of the information system in accordance with manufacturer or vendor specifications
-              and/or organizational requirements.</p>
-            </part>
+         <part name="tx_implementation" id="ma-2_tx">
+            <p>The state organization schedules, performs, documents, and reviews records of routine preventative and regular maintenance (including repairs) on the components of the information system in accordance with manufacturer or vendor specifications
+            and/or organizational requirements.</p>
          </part>
          <control class="SP800-53-enhancement" id="ma-2.1">
             <title>Record Content</title>
@@ -27240,11 +27078,8 @@
                <p>automated mechanisms for terminating nonlocal maintenance sessions and network connections</p>
             </part>
          </part>
-         <part id="ma-4_tx" name="item">
-            <title>State Implementation</title>
-            <part id="ma-4_tx_smt.1" name="item">
-               <p>The state organization authorizes, monitors, and controls any remotely executed maintenance and diagnostic activities, if employed.</p>
-            </part>
+         <part name="tx_implementation" id="ma-4_tx">
+            <p>The state organization authorizes, monitors, and controls any remotely executed maintenance and diagnostic activities, if employed.</p>
          </part>
          <control class="SP800-53-enhancement" id="ma-4.1">
             <title>Auditing and Review</title>
@@ -27776,11 +27611,8 @@
                <p>automated mechanisms supporting and/or implementing authorization of maintenance personnel</p>
             </part>
          </part>
-         <part id="ma-5_tx" name="item">
-            <title>State Implementation</title>
-            <part id="ma-5_tx_smt.1" name="item">
-               <p>The state organization allows only authorized personnel to perform maintenance on the information system.</p>
-            </part>
+         <part name="tx_implementation" id="ma-5_tx">
+            <p>The state organization allows only authorized personnel to perform maintenance on the information system.</p>
          </part>
          <control class="SP800-53-enhancement" id="ma-5.1">
             <title>Individuals Without Appropriate Access</title>
@@ -28482,11 +28314,8 @@
                <p>organizational personnel with information security responsibilities</p>
             </part>
          </part>
-         <part id="mp-1_tx" name="item">
-            <title>State Implementation</title>
-            <part id="mp-1_tx_smt.1" name="item">
-               <p>The state organization has a policy that addresses media protection controls.</p>
-            </part>
+         <part name="tx_implementation" id="mp-1_tx">
+            <p>The state organization has a policy that addresses media protection controls.</p>
          </part>
       </control>
       <control class="SP800-53" id="mp-2">
@@ -28558,11 +28387,8 @@
                <p>automated mechanisms supporting and/or implementing media access restrictions</p>
             </part>
          </part>
-         <part id="mp-2_tx" name="item">
-            <title>State Implementation</title>
-            <part id="mp-2_tx_smt.1" name="item">
-               <p>The state organization restricts access to information system media to authorized individuals.</p>
-            </part>
+         <part name="tx_implementation" id="mp-2_tx">
+            <p>The state organization restricts access to information system media to authorized individuals.</p>
          </part>
          <control class="SP800-53-enhancement" id="mp-2.1">
             <title>Automated Restricted Access</title>
@@ -29125,8 +28951,7 @@
                <p>automated mechanisms supporting and/or implementing media sanitization</p>
             </part>
          </part>
-         <part id="mp-6_tx" name="item">
-            <title>State Implementation</title>
+         <part name="tx_implementation" id="mp-6_tx">
             <part id="mp-6_tx_smt.1" name="item">
                <prop name="label" value="1."/>
                <p>Prior to the sale or transfer of data processing equipment, to other than another Texas state agency or agent of the state, state agencies shall assess whether to remove data from any associated storage device.</p>
@@ -29571,11 +29396,8 @@
                <p>automated mechanisms restricting or prohibiting use of information system media on information systems or system components</p>
             </part>
          </part>
-         <part id="mp-7_tx" name="item">
-            <title>State Implementation</title>
-            <part id="mp-7_tx_smt.1" name="item">
-               <p>The state organization restricts the use of mobile devices with information storage capability, based on documented risk management decisions.</p>
-            </part>
+         <part name="tx_implementation" id="mp-7_tx">
+            <p>The state organization restricts the use of mobile devices with information storage capability, based on documented risk management decisions.</p>
          </part>
          <control class="SP800-53-enhancement" id="mp-7.1">
             <title>Prohibit Use Without Owner</title>
@@ -30105,12 +29927,9 @@
                <p>organizational personnel with information security responsibilities</p>
             </part>
          </part>
-         <part id="pe-1_tx" name="item">
-            <title>State Implementation</title>
-            <part id="pe-1_tx_smt.1" name="item">
-               <p>The state organization head or his or her designated representative(s) shall document and manage physical access to mission critical information resources facilities to ensure the protection of information resources from unlawful or unauthorized
-              access, use, modification or destruction.</p>
-            </part>
+         <part name="tx_implementation" id="pe-1_tx">
+            <p>The state organization head or his or her designated representative(s) shall document and manage physical access to mission critical information resources facilities to ensure the protection of information resources from unlawful or unauthorized
+            access, use, modification or destruction.</p>
          </part>
       </control>
       <control class="SP800-53" id="pe-2">
@@ -30213,12 +30032,9 @@
                <p>automated mechanisms supporting and/or implementing physical access authorizations</p>
             </part>
          </part>
-         <part id="pe-2_tx" name="item">
-            <title>State Implementation</title>
-            <part id="pe-2_tx_smt.1" name="item">
-               <p>The state organization develops and keeps current a list of personnel with authorized access to the facility where the information system resides (except for those areas within the facility officially designated as publicly accessible) and issues
-              appropriate authorization credentials.</p>
-            </part>
+         <part name="tx_implementation" id="pe-2_tx">
+            <p>The state organization develops and keeps current a list of personnel with authorized access to the facility where the information system resides (except for those areas within the facility officially designated as publicly accessible) and issues
+            appropriate authorization credentials.</p>
          </part>
          <control class="SP800-53-enhancement" id="pe-2.1">
             <title>Access by Position / Role</title>
@@ -30670,12 +30486,9 @@
                <p>physical access control devices</p>
             </part>
          </part>
-         <part id="pe-3_tx" name="item">
-            <title>State Implementation</title>
-            <part id="pe-3_tx_smt.1" name="item">
-               <p>The state organization controls all physical access points (including designated entry/exit points) to the facility where the information system resides (except for those areas within the facility officially designated as publicly accessible) and
-              verifies individual access authorizations before granting access to the facility.</p>
-            </part>
+         <part name="tx_implementation" id="pe-3_tx">
+            <p>The state organization controls all physical access points (including designated entry/exit points) to the facility where the information system resides (except for those areas within the facility officially designated as publicly accessible) and
+            verifies individual access authorizations before granting access to the facility.</p>
          </part>
          <control class="SP800-53-enhancement" id="pe-3.1">
             <title>Information System Access</title>
@@ -31405,11 +31218,8 @@
                <p>automated mechanisms supporting and/or implementing reviewing of physical access logs</p>
             </part>
          </part>
-         <part id="pe-6_tx" name="item">
-            <title>State Implementation</title>
-            <part id="pe-6_tx_smt.1" name="item">
-               <p>The state organization monitors physical access to the information system to detect and respond to physical security incidents.</p>
-            </part>
+         <part name="tx_implementation" id="pe-6_tx">
+            <p>The state organization monitors physical access to the information system to detect and respond to physical security incidents.</p>
          </part>
          <control class="SP800-53-enhancement" id="pe-6.1">
             <title>Intrusion Alarms / Surveillance Equipment</title>
@@ -31714,11 +31524,8 @@
                <p>automated mechanisms supporting and/or implementing maintenance and review of visitor access records</p>
             </part>
          </part>
-         <part id="pe-8_tx" name="item">
-            <title>State Implementation</title>
-            <part id="pe-8_tx_smt.1" name="item">
-               <p>The state organization maintains visitor access records to the facility where the information system resides (except for those areas within the facility officially designated as publicly accessible).</p>
-            </part>
+         <part name="tx_implementation" id="pe-8_tx">
+            <p>The state organization maintains visitor access records to the facility where the information system resides (except for those areas within the facility officially designated as publicly accessible).</p>
          </part>
          <control class="SP800-53-enhancement" id="pe-8.1">
             <title>Automated Records Maintenance / Review</title>
@@ -32204,11 +32011,8 @@
                <p>Automated mechanisms supporting and/or implementing emergency lighting capability</p>
             </part>
          </part>
-         <part id="pe-12_tx" name="item">
-            <title>State Implementation</title>
-            <part id="pe-12_tx_smt.1" name="item">
-               <p>The state organization employs and maintains automatic emergency lighting that activates in the event of a power outage or disruption and that covers emergency exits and evacuation routes.</p>
-            </part>
+         <part name="tx_implementation" id="pe-12_tx">
+            <p>The state organization employs and maintains automatic emergency lighting that activates in the event of a power outage or disruption and that covers emergency exits and evacuation routes.</p>
          </part>
          <control class="SP800-53-enhancement" id="pe-12.1">
             <title>Essential Missions / Business Functions</title>
@@ -32295,11 +32099,8 @@
                <p>Automated mechanisms supporting and/or implementing fire suppression/detection devices/systems</p>
             </part>
          </part>
-         <part id="pe-13_tx" name="item">
-            <title>State Implementation</title>
-            <part id="pe-13_tx_smt.1" name="item">
-               <p>Information resources shall be protected from environmental hazards. Designated employees shall monitor equipment and shall be trained in environmental control procedures and in desired response in case of emergencies or equipment problems.</p>
-            </part>
+         <part name="tx_implementation" id="pe-13_tx">
+            <p>Information resources shall be protected from environmental hazards. Designated employees shall monitor equipment and shall be trained in environmental control procedures and in desired response in case of emergencies or equipment problems.</p>
          </part>
          <control class="SP800-53-enhancement" id="pe-13.1">
             <title>Detection Devices / Systems</title>
@@ -32630,11 +32431,8 @@
                <p>Automated mechanisms supporting and/or implementing maintenance and monitoring of temperature and humidity levels</p>
             </part>
          </part>
-         <part id="pe-14_tx" name="item">
-            <title>State Implementation</title>
-            <part id="pe-14_tx_smt.1" name="item">
-               <p>The state organization regularly maintains, within acceptable levels, and monitors the temperature and humidity within the facility where the information system resides.</p>
-            </part>
+         <part name="tx_implementation" id="pe-14_tx">
+            <p>The state organization regularly maintains, within acceptable levels, and monitors the temperature and humidity within the facility where the information system resides.</p>
          </part>
          <control class="SP800-53-enhancement" id="pe-14.1">
             <title>Automatic Controls</title>
@@ -32787,11 +32585,8 @@
                <p>organizational process for activating master water-shutoff</p>
             </part>
          </part>
-         <part id="pe-15_tx" name="item">
-            <title>State Implementation</title>
-            <part id="pe-15_tx_smt.1" name="item">
-               <p>The state organization protects the information system from water damage resulting from broken plumbing lines or other sources of water leakage by providing master shutoff valves that are accessible, working properly, and known to key personnel.</p>
-            </part>
+         <part name="tx_implementation" id="pe-15_tx">
+            <p>The state organization protects the information system from water damage resulting from broken plumbing lines or other sources of water leakage by providing master shutoff valves that are accessible, working properly, and known to key personnel.</p>
          </part>
          <control class="SP800-53-enhancement" id="pe-15.1">
             <title>Automation Support</title>
@@ -32933,11 +32728,8 @@
                <p>automated mechanisms supporting and/or implementing authorizing, monitoring, and controlling information system-related items entering and exiting the facility</p>
             </part>
          </part>
-         <part id="pe-16_tx" name="item">
-            <title>State Implementation</title>
-            <part id="pe-16_tx_smt.1" name="item">
-               <p>The state organization authorizes, monitors, and controls system components entering and exiting data processing facilities and maintains records of those items.</p>
-            </part>
+         <part name="tx_implementation" id="pe-16_tx">
+            <p>The state organization authorizes, monitors, and controls system components entering and exiting data processing facilities and maintains records of those items.</p>
          </part>
       </control>
       <control class="SP800-53" id="pe-17">
@@ -33458,11 +33250,8 @@
                <p>organizational personnel with information security responsibilities</p>
             </part>
          </part>
-         <part id="pl-1_tx" name="item">
-            <title>State Implementation</title>
-            <part id="pl-1_tx_smt.1" name="item">
-               <p>As required by TAC 202.23/73(a), the state organization delivers, at least annually, to the organization head a report on state organization information security program.</p>
-            </part>
+         <part name="tx_implementation" id="pl-1_tx">
+            <p>As required by TAC 202.23/73(a), the state organization delivers, at least annually, to the organization head a report on state organization information security program.</p>
          </part>
       </control>
       <control class="SP800-53" id="pl-2">
@@ -33684,12 +33473,9 @@
                <p>automated mechanisms supporting the information system security plan</p>
             </part>
          </part>
-         <part id="pl-2_tx" name="item">
-            <title>State Implementation</title>
-            <part id="pl-2_tx_smt.1" name="item">
-               <p>The state organization develops and implements a security plan for the information system that provides an overview of the security requirements for the system and a description of the security controls in place or planned for meeting those
-              requirements. Designated officials within the organization review and approve the plan.</p>
-            </part>
+         <part name="tx_implementation" id="pl-2_tx">
+            <p>The state organization develops and implements a security plan for the information system that provides an overview of the security requirements for the system and a description of the security controls in place or planned for meeting those
+            requirements. Designated officials within the organization review and approve the plan.</p>
          </part>
          <control class="SP800-53-enhancement" id="pl-2.1">
             <title>Concept of Operations</title>
@@ -33871,11 +33657,8 @@
                <p>automated mechanisms supporting and/or implementing the establishment, review, dissemination, and update of rules of behavior</p>
             </part>
          </part>
-         <part id="pl-4_tx" name="item">
-            <title>State Implementation</title>
-            <part id="pl-4_tx_smt.1" name="item">
-               <p>The state organization defines scope, behavior, and practices; compliance monitoring pertaining to users of information resources.</p>
-            </part>
+         <part name="tx_implementation" id="pl-4_tx">
+            <p>The state organization defines scope, behavior, and practices; compliance monitoring pertaining to users of information resources.</p>
          </part>
          <control class="SP800-53-enhancement" id="pl-4.1">
             <title>Social Media and Networking Restrictions</title>
@@ -34471,11 +34254,8 @@
                <p>organizational personnel with information security responsibilities</p>
             </part>
          </part>
-         <part id="ps-1_tx" name="item">
-            <title>State Implementation</title>
-            <part id="ps-1_tx_smt.1" name="item">
-               <p>The state organization has a formal, documented, personnel security policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance.</p>
-            </part>
+         <part name="tx_implementation" id="ps-1_tx">
+            <p>The state organization has a formal, documented, personnel security policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance.</p>
          </part>
       </control>
       <control class="SP800-53" id="ps-2">
@@ -34558,13 +34338,10 @@
                <p>organizational processes for establishing screening criteria</p>
             </part>
          </part>
-         <part id="ps-2_tx" name="item">
-            <title>State Implementation</title>
-            <part id="ps-2_tx_smt.1" name="item">
-               <p>All authorized users (including, but not limited to, state organization personnel, temporary employees, and employees of independent contractors) of the state organization’s information resources, shall formally acknowledge that they will comply
-              with the security policies and procedures of the state organization or they shall not be granted access to information resources. The state organization head or his or her designated representative will determine the method of acknowledgement and how
-              often this acknowledgement must be re-executed by the user to maintain access to state organization information resources.</p>
-            </part>
+         <part name="tx_implementation" id="ps-2_tx">
+            <p>All authorized users (including, but not limited to, state organization personnel, temporary employees, and employees of independent contractors) of the state organization’s information resources, shall formally acknowledge that they will comply
+            with the security policies and procedures of the state organization or they shall not be granted access to information resources. The state organization head or his or her designated representative will determine the method of acknowledgement and how
+            often this acknowledgement must be re-executed by the user to maintain access to state organization information resources.</p>
          </part>
       </control>
       <control class="SP800-53" id="ps-3">
@@ -34648,11 +34425,8 @@
                <p>Organizational processes for personnel screening</p>
             </part>
          </part>
-         <part id="ps-3_tx" name="item">
-            <title>State Implementation</title>
-            <part id="ps-3_tx_smt.1" name="item">
-               <p>The state organization screens individuals requiring access to organizational information and information systems before authorizing access.</p>
-            </part>
+         <part name="tx_implementation" id="ps-3_tx">
+            <p>The state organization screens individuals requiring access to organizational information and information systems before authorizing access.</p>
          </part>
          <control class="SP800-53-enhancement" id="ps-3.1">
             <title>Classified Information</title>
@@ -34940,12 +34714,9 @@
                <p>automated mechanisms for disabling information system access/revoking authenticators</p>
             </part>
          </part>
-         <part id="ps-4_tx" name="item">
-            <title>State Implementation</title>
-            <part id="ps-4_tx_smt.1" name="item">
-               <p>The state organization, upon termination of individual employment, terminates information system access, retrieves all organizational information system-related property, and provides appropriate personnel with access to official records created
-              by the terminated employee that are stored on organizational information systems.</p>
-            </part>
+         <part name="tx_implementation" id="ps-4_tx">
+            <p>The state organization, upon termination of individual employment, terminates information system access, retrieves all organizational information system-related property, and provides appropriate personnel with access to official records created
+            by the terminated employee that are stored on organizational information systems.</p>
          </part>
          <control class="SP800-53-enhancement" id="ps-4.1">
             <title>Post-employment Requirements</title>
@@ -35175,11 +34946,8 @@
                <p>automated mechanisms for disabling information system access/revoking authenticators</p>
             </part>
          </part>
-         <part id="ps-5_tx" name="item">
-            <title>State Implementation</title>
-            <part id="ps-5_tx_smt.1" name="item">
-               <p>The organization reviews information systems/facilities access authorizations when personnel are reassigned or transferred to other positions within the organization and initiates appropriate actions.</p>
-            </part>
+         <part name="tx_implementation" id="ps-5_tx">
+            <p>The organization reviews information systems/facilities access authorizations when personnel are reassigned or transferred to other positions within the organization and initiates appropriate actions.</p>
          </part>
       </control>
       <control class="SP800-53" id="ps-6">
@@ -35288,11 +35056,8 @@
                <p>automated mechanisms supporting access agreements</p>
             </part>
          </part>
-         <part id="ps-6_tx" name="item">
-            <title>State Implementation</title>
-            <part id="ps-6_tx_smt.1" name="item">
-               <p>The state organization completes appropriate signed access agreements for individuals requiring access to organizational information and information systems before authorizing access.</p>
-            </part>
+         <part name="tx_implementation" id="ps-6_tx">
+            <p>The state organization completes appropriate signed access agreements for individuals requiring access to organizational information and information systems before authorizing access.</p>
          </part>
          <control class="SP800-53-enhancement" id="ps-6.1">
             <title>Information Requiring Special Protection</title>
@@ -35537,11 +35302,8 @@
                <p>automated mechanisms supporting and/or implementing monitoring of provider compliance</p>
             </part>
          </part>
-         <part id="ps-7_tx" name="item">
-            <title>State Implementation</title>
-            <part id="ps-7_tx_smt.1" name="item">
-               <p>The state organization establishes personnel security requirements including security roles and responsibilities for third-party providers and monitors provider compliance.</p>
-            </part>
+         <part name="tx_implementation" id="ps-7_tx">
+            <p>The state organization establishes personnel security requirements including security roles and responsibilities for third-party providers and monitors provider compliance.</p>
          </part>
       </control>
       <control class="SP800-53" id="ps-8">
@@ -35619,11 +35381,8 @@
                <p>automated mechanisms supporting and/or implementing notifications</p>
             </part>
          </part>
-         <part id="ps-8_tx" name="item">
-            <title>State Implementation</title>
-            <part id="ps-8_tx_smt.1" name="item">
-               <p>The state organization employs a formal sanctions process for personnel failing to comply with established information security policies and procedures.</p>
-            </part>
+         <part name="tx_implementation" id="ps-8_tx">
+            <p>The state organization employs a formal sanctions process for personnel failing to comply with established information security policies and procedures.</p>
          </part>
       </control>
    </group>
@@ -35782,12 +35541,9 @@
                <p>organizational personnel with information security responsibilities</p>
             </part>
          </part>
-         <part id="ra-1_tx" name="item">
-            <title>State Implementation</title>
-            <part id="ra-1_tx_smt.1" name="item">
-               <p>The state organization has a risk assessment policy which includes process of identifying, evaluating, and documenting the level of impact that may result from the operation of an information system on an organization’s mission, functions, image,
-              reputation, assets, or individuals.</p>
-            </part>
+         <part name="tx_implementation" id="ra-1_tx">
+            <p>The state organization has a risk assessment policy which includes process of identifying, evaluating, and documenting the level of impact that may result from the operation of an information system on an organization’s mission, functions, image,
+            reputation, assets, or individuals.</p>
          </part>
       </control>
       <control class="SP800-53" id="ra-2">
@@ -35862,11 +35618,8 @@
                <p>Organizational processes for security categorization</p>
             </part>
          </part>
-         <part id="ra-2_tx" name="item">
-            <title>State Implementation</title>
-            <part id="ra-2_tx_smt.1" name="item">
-               <p>State organizations are responsible for defining all information classification categories except the Confidential Information category, which is defined in Subchapter A of this chapter, and establishing the appropriate controls for each.</p>
-            </part>
+         <part name="tx_implementation" id="ra-2_tx">
+            <p>State organizations are responsible for defining all information classification categories except the Confidential Information category, which is defined in Subchapter A of this chapter, and establishing the appropriate controls for each.</p>
          </part>
       </control>
       <control class="SP800-53" id="ra-3">
@@ -36040,8 +35793,7 @@
                <p>automated mechanisms supporting and/or for conducting, documenting, reviewing, disseminating, and updating the risk assessment</p>
             </part>
          </part>
-         <part id="ra-3_tx" name="item">
-            <title>State Implementation</title>
+         <part name="tx_implementation" id="ra-3_tx">
             <part id="ra-3_tx_smt.1" name="item">
                <prop name="label" value="1."/>
                <p>A risk assessment of information resources shall be performed and documented. The risk assessment shall be updated based on the inherent risk. The inherent risk and frequency of the risk assessment will be ranked, at a minimum, as either “High,”
@@ -36272,11 +36024,8 @@
                <p>automated mechanisms supporting and/or implementing vulnerability scanning, analysis, remediation, and information sharing</p>
             </part>
          </part>
-         <part id="ra-5_tx" name="item">
-            <title>State Implementation</title>
-            <part id="ra-5_tx_smt.1" name="item">
-               <p>The state organization scans for vulnerabilities in the information system at least annually or when significant new vulnerabilities potentially affecting the system are identified and reported.</p>
-            </part>
+         <part name="tx_implementation" id="ra-5_tx">
+            <p>The state organization scans for vulnerabilities in the information system at least annually or when significant new vulnerabilities potentially affecting the system are identified and reported.</p>
          </part>
          <control class="SP800-53-enhancement" id="ra-5.1">
             <title>Update Tool Capability</title>
@@ -36956,11 +36705,8 @@
                <p>organizational personnel with information security responsibilities</p>
             </part>
          </part>
-         <part id="sa-1_tx" name="item">
-            <title>State Implementation</title>
-            <part id="sa-1_tx_smt.1" name="item">
-               <p>Security requirements shall be identified, documented, and addressed in all phases of development or acquisition of information resources.</p>
-            </part>
+         <part name="tx_implementation" id="sa-1_tx">
+            <p>Security requirements shall be identified, documented, and addressed in all phases of development or acquisition of information resources.</p>
          </part>
       </control>
       <control class="SP800-53" id="sa-2">
@@ -37044,11 +36790,8 @@
                <p>automated mechanisms supporting and/or implementing organizational capital planning, programming, and budgeting</p>
             </part>
          </part>
-         <part id="sa-2_tx" name="item">
-            <title>State Implementation</title>
-            <part id="sa-2_tx_smt.1" name="item">
-               <p>The state organization determines, documents, and allocates as part of its capital planning and investment control process, the resources required to adequately protect the information system.</p>
-            </part>
+         <part name="tx_implementation" id="sa-2_tx">
+            <p>The state organization determines, documents, and allocates as part of its capital planning and investment control process, the resources required to adequately protect the information system.</p>
          </part>
       </control>
       <control class="SP800-53" id="sa-3">
@@ -37141,11 +36884,8 @@
                <p>automated mechanisms supporting and/or implementing the SDLC</p>
             </part>
          </part>
-         <part id="sa-3_tx" name="item">
-            <title>State Implementation</title>
-            <part id="sa-3_tx_smt.1" name="item">
-               <p>Information security, security testing, and audit controls shall be included in all phases of the system development lifecycle or acquisition process.</p>
-            </part>
+         <part name="tx_implementation" id="sa-3_tx">
+            <p>Information security, security testing, and audit controls shall be included in all phases of the system development lifecycle or acquisition process.</p>
          </part>
       </control>
       <control class="SP800-53" id="sa-4">
@@ -37278,11 +37018,8 @@
                <p>automated mechanisms supporting and/or implementing acquisitions and inclusion of security requirements in contracts</p>
             </part>
          </part>
-         <part id="sa-4_tx" name="item">
-            <title>State Implementation</title>
-            <part id="sa-4_tx_smt.1" name="item">
-               <p>The state organization includes security requirements and/or security specifications, either explicitly or by reference, in information system acquisition contracts based on an assessment of risk and in accordance with applicable laws and standards.</p>
-            </part>
+         <part name="tx_implementation" id="sa-4_tx">
+            <p>The state organization includes security requirements and/or security specifications, either explicitly or by reference, in information system acquisition contracts based on an assessment of risk and in accordance with applicable laws and standards.</p>
          </part>
          <control class="SP800-53-enhancement" id="sa-4.1">
             <title>Functional Properties of Security Controls</title>
@@ -38057,11 +37794,8 @@
                <p>Organizational processes for obtaining, protecting, and distributing information system administrator and user documentation</p>
             </part>
          </part>
-         <part id="sa-5_tx" name="item">
-            <title>State Implementation</title>
-            <part id="sa-5_tx_smt.1" name="item">
-               <p>The state organization obtains, protects as required, and makes available to authorized personnel, adequate documentation for the information system.</p>
-            </part>
+         <part name="tx_implementation" id="sa-5_tx">
+            <p>The state organization obtains, protects as required, and makes available to authorized personnel, adequate documentation for the information system.</p>
          </part>
          <control class="SP800-53-enhancement" id="sa-5.1">
             <title>Functional Properties of Security Controls</title>
@@ -38287,11 +38021,8 @@
                <p>automated mechanisms for monitoring security control compliance by external service providers on an ongoing basis</p>
             </part>
          </part>
-         <part id="sa-9_tx" name="item">
-            <title>State Implementation</title>
-            <part id="sa-9_tx_smt.1" name="item">
-               <p>The state organization requires that providers of external information system services employ adequate security controls in accordance with these standards and monitors security control compliance.</p>
-            </part>
+         <part name="tx_implementation" id="sa-9_tx">
+            <p>The state organization requires that providers of external information system services employ adequate security controls in accordance with these standards and monitors security control compliance.</p>
          </part>
          <control class="SP800-53-enhancement" id="sa-9.1">
             <title>Risk Assessments / Organizational Approvals</title>
@@ -38806,11 +38537,8 @@
                <p>automated mechanisms supporting and/or implementing the monitoring of developer configuration management</p>
             </part>
          </part>
-         <part id="sa-10_tx" name="item">
-            <title>State Implementation</title>
-            <part id="sa-10_tx_smt.1" name="item">
-               <p>All security-related information resources changes shall be approved by the information owner through a change control process. Approval shall occur prior to implementation by the state organization or independent contractors.</p>
-            </part>
+         <part name="tx_implementation" id="sa-10_tx">
+            <p>All security-related information resources changes shall be approved by the information owner through a change control process. Approval shall occur prior to implementation by the state organization or independent contractors.</p>
          </part>
          <control class="SP800-53-enhancement" id="sa-10.1">
             <title>Software / Firmware Integrity Verification</title>
@@ -43072,8 +42800,7 @@
                <p>organizational personnel with information security responsibilities</p>
             </part>
          </part>
-         <part id="sc-1_tx" name="item">
-            <title>State Implementation</title>
+         <part name="tx_implementation" id="sc-1_tx">
             <part id="sc-1_tx_smt.1" name="item">
                <p>The state organization develops, disseminates, and periodically reviews/updates:</p>
                <part id="sc-1_tx_smt.1.a" name="item">
@@ -43617,8 +43344,7 @@
                <p>Automated mechanisms protecting against or limiting the effects of denial of service attacks</p>
             </part>
          </part>
-         <part id="sc-5_tx" name="item">
-            <title>State Implementation</title>
+         <part name="tx_implementation" id="sc-5_tx">
             <part id="sc-5_tx_smt.1" name="item">
                <prop name="label" value="1."/>
                <p>Each state organization head or his/her designated representative and information security officer shall establish a security strategy that includes perimeter protection.</p>
@@ -44004,11 +43730,8 @@
                <p>Automated mechanisms implementing boundary protection capability</p>
             </part>
          </part>
-         <part id="sc-7_tx" name="item">
-            <title>State Implementation</title>
-            <part id="sc-7_tx_smt.1" name="item">
-               <p>The information system monitors and controls communications at the external boundary of the information system and at key internal boundaries within the system.</p>
-            </part>
+         <part name="tx_implementation" id="sc-7_tx">
+            <p>The information system monitors and controls communications at the external boundary of the information system and at key internal boundaries within the system.</p>
          </part>
          <control class="SP800-53-enhancement" id="sc-7.1">
             <title>Physically Separated Subnetworks</title>
@@ -45193,11 +44916,8 @@
                <p>Automated mechanisms supporting and/or implementing transmission confidentiality and/or integrity</p>
             </part>
          </part>
-         <part id="sc-8_tx" name="item">
-            <title>State Implementation</title>
-            <part id="sc-8_tx_smt.1" name="item">
-               <p>Confidential information that is transmitted over a public network (e.g.: the Internet) must be encrypted with, at minimum a 128-bit encryption algorithm. An organization may also choose to implement encryption for other data classifications.</p>
-            </part>
+         <part name="tx_implementation" id="sc-8_tx">
+            <p>Confidential information that is transmitted over a public network (e.g.: the Internet) must be encrypted with, at minimum a 128-bit encryption algorithm. An organization may also choose to implement encryption for other data classifications.</p>
          </part>
          <control class="SP800-53-enhancement" id="sc-8.1">
             <title>Cryptographic or Alternate Physical Protection</title>
@@ -45686,11 +45406,8 @@
                <p>Automated mechanisms supporting and/or implementing cryptographic key establishment and management</p>
             </part>
          </part>
-         <part id="sc-12_tx" name="item">
-            <title>State Implementation</title>
-            <part id="sc-12_tx_smt.1" name="item">
-               <p>When cryptography is required and employed within the information system, the organization establishes and manages cryptographic keys using automated mechanisms with supporting procedures or manual procedures.</p>
-            </part>
+         <part name="tx_implementation" id="sc-12_tx">
+            <p>When cryptography is required and employed within the information system, the organization establishes and manages cryptographic keys using automated mechanisms with supporting procedures or manual procedures.</p>
          </part>
          <control class="SP800-53-enhancement" id="sc-12.1">
             <title>Availability</title>
@@ -45940,8 +45657,7 @@
                <p>Automated mechanisms supporting and/or implementing cryptographic protection</p>
             </part>
          </part>
-         <part id="sc-13_tx" name="item">
-            <title>State Implementation</title>
+         <part name="tx_implementation" id="sc-13_tx">
             <part id="sc-13_tx_smt.1" name="item">
                <prop name="label" value="1."/>
                <p>Encryption requirements for information storage devices and data transmissions, as well as specific requirements for portable devices, removable media, and encryption key standards and management, shall be based on documented state organization
@@ -46962,11 +46678,8 @@
                <p>Automated mechanisms supporting and/or implementing secure name/address resolution service</p>
             </part>
          </part>
-         <part id="sc-20_tx" name="item">
-            <title>State Implementation</title>
-            <part id="sc-20_tx_smt.1" name="item">
-               <p>The information system that provides name/address resolution service provides additional data origin and integrity artifacts along with the authoritative data it returns in response to resolution queries.</p>
-            </part>
+         <part name="tx_implementation" id="sc-20_tx">
+            <p>The information system that provides name/address resolution service provides additional data origin and integrity artifacts along with the authoritative data it returns in response to resolution queries.</p>
          </part>
          <control class="SP800-53-enhancement" id="sc-20.1">
             <title>Child Subspaces</title>
@@ -47072,12 +46785,9 @@
                <p>Automated mechanisms supporting and/or implementing data origin authentication and data integrity verification for name/address resolution services</p>
             </part>
          </part>
-         <part id="sc-21_tx" name="item">
-            <title>State Implementation</title>
-            <part id="sc-21_tx_smt.1" name="item">
-               <p>The information system that provides name/address resolution service for local clients performs data origin authentication and data integrity verification on the resolution responses it receives from authoritative sources when requested by client
-              systems.</p>
-            </part>
+         <part name="tx_implementation" id="sc-21_tx">
+            <p>The information system that provides name/address resolution service for local clients performs data origin authentication and data integrity verification on the resolution responses it receives from authoritative sources when requested by client
+            systems.</p>
          </part>
          <control class="SP800-53-enhancement" id="sc-21.1">
             <title>Data Origin / Integrity</title>
@@ -47143,11 +46853,8 @@
                <p>Automated mechanisms supporting and/or implementing name/address resolution service for fault tolerance and role separation</p>
             </part>
          </part>
-         <part id="sc-22_tx" name="item">
-            <title>State Implementation</title>
-            <part id="sc-22_tx_smt.1" name="item">
-               <p>The information systems that collectively provide name/address resolution service for an organization are fault tolerant and implement role separation.</p>
-            </part>
+         <part name="tx_implementation" id="sc-22_tx">
+            <p>The information systems that collectively provide name/address resolution service for an organization are fault tolerant and implement role separation.</p>
          </part>
       </control>
       <control class="SP800-53" id="sc-23">
@@ -49224,11 +48931,8 @@
                <p>Automated mechanisms supporting and/or implementing separate execution domains for each executing process</p>
             </part>
          </part>
-         <part id="sc-39_tx" name="item">
-            <title>State Implementation</title>
-            <part id="sc-39_tx_smt.1" name="item">
-               <p>The organization uses operating systems that support process isolation.</p>
-            </part>
+         <part name="tx_implementation" id="sc-39_tx">
+            <p>The organization uses operating systems that support process isolation.</p>
          </part>
          <control class="SP800-53-enhancement" id="sc-39.1">
             <title>Hardware Separation</title>
@@ -50238,11 +49942,8 @@
                <p>organizational personnel with information security responsibilities</p>
             </part>
          </part>
-         <part id="si-1_tx" name="item">
-            <title>State Implementation</title>
-            <part id="si-1_tx_smt.1" name="item">
-               <p>The integrity of data, its source, its destination, and processes applied to it shall be assured. Changes to data shall be made only in an authorized manner.</p>
-            </part>
+         <part name="tx_implementation" id="si-1_tx">
+            <p>The integrity of data, its source, its destination, and processes applied to it shall be assured. Changes to data shall be made only in an authorized manner.</p>
          </part>
       </control>
       <control class="SP800-53" id="si-2">
@@ -50374,11 +50075,8 @@
                <p>automated mechanisms supporting and/or implementing testing software and firmware updates</p>
             </part>
          </part>
-         <part id="si-2_tx" name="item">
-            <title>State Implementation</title>
-            <part id="si-2_tx_smt.1" name="item">
-               <p>The state organization identifies, reports, and corrects information system flaws.</p>
-            </part>
+         <part name="tx_implementation" id="si-2_tx">
+            <p>The state organization identifies, reports, and corrects information system flaws.</p>
          </part>
          <control class="SP800-53-enhancement" id="si-2.1">
             <title>Central Management</title>
@@ -50885,11 +50583,8 @@
                <p>automated mechanisms supporting and/or implementing malicious code scanning and subsequent actions</p>
             </part>
          </part>
-         <part id="si-3_tx" name="item">
-            <title>State Implementation</title>
-            <part id="si-3_tx_smt.1" name="item">
-               <p>The information system implements malicious code protection.</p>
-            </part>
+         <part name="tx_implementation" id="si-3_tx">
+            <p>The information system implements malicious code protection.</p>
          </part>
          <control class="SP800-53-enhancement" id="si-3.1">
             <title>Central Management</title>
@@ -51635,8 +51330,7 @@
                <p>automated mechanisms supporting and/or implementing information system monitoring capability</p>
             </part>
          </part>
-         <part id="si-4_tx" name="item">
-            <title>State Implementation</title>
+         <part name="tx_implementation" id="si-4_tx">
             <part id="si-4_tx_smt.1" name="item">
                <prop name="label" value="1."/>
                <p>Each state organization head or his/her designated representative and information security officer shall establish a security strategy that includes perimeter protection.</p>
@@ -53120,11 +52814,8 @@
                <p>automated mechanisms supporting and/or implementing security directives</p>
             </part>
          </part>
-         <part id="si-5_tx" name="item">
-            <title>State Implementation</title>
-            <part id="si-5_tx_smt.1" name="item">
-               <p>The state organization receives information system security alerts/advisories on a regular basis, issues alerts/advisories to appropriate personnel, and takes appropriate actions in response.</p>
-            </part>
+         <part name="tx_implementation" id="si-5_tx">
+            <p>The state organization receives information system security alerts/advisories on a regular basis, issues alerts/advisories to appropriate personnel, and takes appropriate actions in response.</p>
          </part>
          <control class="SP800-53-enhancement" id="si-5.1">
             <title>Automated Alerts and Advisories</title>
@@ -55226,11 +54917,8 @@
                <p>automated mechanisms supporting and/or implementing information handling and retention</p>
             </part>
          </part>
-         <part id="si-12_tx" name="item">
-            <title>State Implementation</title>
-            <part id="si-12_tx_smt.1" name="item">
-               <p>The state organization handles and retains output from the information system in accordance with applicable laws, standards, and operational requirements.</p>
-            </part>
+         <part name="tx_implementation" id="si-12_tx">
+            <p>The state organization handles and retains output from the information system in accordance with applicable laws, standards, and operational requirements.</p>
          </part>
       </control>
       <control class="SP800-53" id="si-13">
@@ -56073,11 +55761,8 @@
                <p>automated mechanisms supporting and/or implementing the information security program plan</p>
             </part>
          </part>
-         <part id="pm-1_tx" name="item">
-            <title>State Implementation</title>
-            <part id="pm-1_tx_smt.1" name="item">
-               <p>All state organizations are required to have an information resources security program consistent with these standards, and the state organization’s head is responsible for the protection of information resources.</p>
-            </part>
+         <part name="tx_implementation" id="pm-1_tx">
+            <p>All state organizations are required to have an information resources security program consistent with these standards, and the state organization’s head is responsible for the protection of information resources.</p>
          </part>
       </control>
       <control class="SP800-53" id="pm-2">
@@ -56129,11 +55814,8 @@
                <p>organizational personnel with information security responsibilities</p>
             </part>
          </part>
-         <part id="pm-2_tx" name="item">
-            <title>State Implementation</title>
-            <part id="pm-2_tx_smt.1" name="item">
-               <p>Each state organization head or his or her designated representative(s) shall designate an information security officer to administer the state organization information security program.</p>
-            </part>
+         <part name="tx_implementation" id="pm-2_tx">
+            <p>Each state organization head or his or her designated representative(s) shall designate an information security officer to administer the state organization information security program.</p>
          </part>
       </control>
       <control class="SP800-53" id="pm-3">
@@ -56213,11 +55895,8 @@
                <p>automated mechanisms supporting the capital planning and investment process</p>
             </part>
          </part>
-         <part id="pm-3_tx" name="item">
-            <title>State Implementation</title>
-            <part id="pm-3_tx_smt.1" name="item">
-               <p>State implementation of this standard is incorporated into TAC 202.</p>
-            </part>
+         <part name="tx_implementation" id="pm-3_tx">
+            <p>State implementation of this standard is incorporated into TAC 202.</p>
          </part>
       </control>
       <control class="SP800-53" id="pm-4">
@@ -56320,12 +55999,9 @@
                <p>automated mechanisms supporting plans of action and milestones</p>
             </part>
          </part>
-         <part id="pm-4_tx" name="item">
-            <title>State Implementation</title>
-            <part id="pm-4_tx_smt.1" name="item">
-               <p>The state organization develops and updates, a plan of action and milestone process for the information system that documents the organization’s planned, implemented, and evaluated remedial actions to correct deficiencies noted during the
-              assessment of the security controls in order to reduce or eliminate known vulnerabilities in the system.</p>
-            </part>
+         <part name="tx_implementation" id="pm-4_tx">
+            <p>The state organization develops and updates, a plan of action and milestone process for the information system that documents the organization’s planned, implemented, and evaluated remedial actions to correct deficiencies noted during the
+            assessment of the security controls in order to reduce or eliminate known vulnerabilities in the system.</p>
          </part>
       </control>
       <control class="SP800-53" id="pm-5">
@@ -56377,11 +56053,8 @@
                <p>automated mechanisms supporting the information system inventory</p>
             </part>
          </part>
-         <part id="pm-5_tx" name="item">
-            <title>State Implementation</title>
-            <part id="pm-5_tx_smt.1" name="item">
-               <p>The state organization develops and maintains an inventory of its information systems.</p>
-            </part>
+         <part name="tx_implementation" id="pm-5_tx">
+            <p>The state organization develops and maintains an inventory of its information systems.</p>
          </part>
       </control>
       <control class="SP800-53" id="pm-6">
@@ -56436,11 +56109,8 @@
                <p>automated mechanisms supporting the development, monitoring, and reporting of information security measures of performance</p>
             </part>
          </part>
-         <part id="pm-6_tx" name="item">
-            <title>State Implementation</title>
-            <part id="pm-6_tx_smt.1" name="item">
-               <p>The state organization develops, monitors, and reports on the results of information security measures of performance.</p>
-            </part>
+         <part name="tx_implementation" id="pm-6_tx">
+            <p>The state organization develops, monitors, and reports on the results of information security measures of performance.</p>
          </part>
       </control>
       <control class="SP800-53" id="pm-7">
@@ -56498,11 +56168,8 @@
                <p>automated mechanisms supporting the enterprise architecture and its development</p>
             </part>
          </part>
-         <part id="pm-7_tx" name="item">
-            <title>State Implementation</title>
-            <part id="pm-7_tx_smt.1" name="item">
-               <p>State implementation of this standard is an outcome of TAC 202 implementation.</p>
-            </part>
+         <part name="tx_implementation" id="pm-7_tx">
+            <p>State implementation of this standard is an outcome of TAC 202 implementation.</p>
          </part>
       </control>
       <control class="SP800-53" id="pm-8">
@@ -57105,11 +56772,8 @@
                <p>automated mechanisms supporting and/or implementing the cross-organization information-sharing capability</p>
             </part>
          </part>
-         <part id="pm-16_tx" name="item">
-            <title>State Implementation</title>
-            <part id="pm-16_tx_smt.1" name="item">
-               <p>State implementation of this standard is incorporated into TAC 202.</p>
-            </part>
+         <part name="tx_implementation" id="pm-16_tx">
+            <p>State implementation of this standard is incorporated into TAC 202.</p>
          </part>
       </control>
    </group>

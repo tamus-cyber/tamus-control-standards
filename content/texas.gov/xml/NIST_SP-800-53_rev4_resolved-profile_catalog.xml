@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0"
-         uuid="06d41e8d-799f-430f-9d60-7302ebcaef2e">
+         uuid="e4fdf3a1-bc1b-468a-89d0-cfd1ee2c1893">
    <metadata>
       <title>NIST Special Publication 800-53 Revision 4 Catalog with Priorities</title>
-      <last-modified>2021-10-15T19:14:52.58-05:00</last-modified>
+      <last-modified>2021-10-17T10:03:26.396-05:00</last-modified>
       <version>2015-01-22</version>
       <oscal-version>1.0.0-milestone3</oscal-version>
       <link rel="resolution-source" href="NIST_SP-800-53_rev4_profile.xml"/>

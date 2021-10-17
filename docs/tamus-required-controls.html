@@ -11,16 +11,25 @@ controls: tamus-required-controls
 <div class="catalog">
   {% assign groups = site.data.tamus_catalog.catalog.groups | sort: "id" %}
   {% for group in groups %}
-  <details>
-  <summary><strong>{{ group.id | upcase }} - {{ group.title }}</strong></summary>
-    <ul>
-      {% for control in group.controls %}
-        {% assign tamus_required = control.parts | where: "name", "tamus_implementation" %}
-        {% if tamus_required[0] %}
-          {% include control.html %}
-        {% endif %}
-      {% endfor %}
-    </ul>
-  </details>
+    {% assign tamus_required_group = false %}
+    {% for control in group.controls %}
+      {% assign tamus_required = control.parts | where: "name", "tamus_implementation" %}
+      {% if tamus_required[0] and tamus_required_group == false %}
+        {% assign tamus_required_group = true %}
+      {% endif %}
+    {% endfor %}
+    {% if tamus_required_group == true %}
+      <details>
+      <summary><strong>{{ group.id | upcase }} - {{ group.title }}</strong></summary>
+        <ul>
+          {% for control in group.controls %}
+            {% assign tamus_required = control.parts | where: "name", "tamus_implementation" %}
+            {% if tamus_required[0] %}
+              {% include control.html %}
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </details>
+    {% endif %}
   {% endfor %}
 </div>

@@ -12,17 +12,27 @@ controls: required-controls
 <div class="catalog">
   {% assign groups = site.data.tamus_catalog.catalog.groups | sort: "id" %}
   {% for group in groups %}
-  <details>
-  <summary><strong>{{ group.id | upcase }} - {{ group.title }}</strong></summary>
-    <ul>
-      {% for control in group.controls %}
-        {% assign tx_required = control.props | where: "name", "required_by" %}
-        {% assign tamus_required = control.parts | where: "name", "tamus_implementation" %}
-        {% if tx_required[0] or tamus_required[0] %}
-          {% include control.html %}
-        {% endif %}
-      {% endfor %}
-    </ul>
-  </details>
+    {% assign required_group = false %}
+    {% for control in group.controls %}
+      {% assign tx_required = control.props | where: "name", "required_by" %}
+      {% assign tamus_required = control.parts | where: "name", "tamus_implementation" %}
+      {% if tx_required[0] or tamus_required[0] and required_group == false %}
+        {% assign required_group = true %}
+      {% endif %}
+    {% endfor %}
+    {% if required_group == true %}
+      <details>
+      <summary><strong>{{ group.id | upcase }} - {{ group.title }}</strong></summary>
+        <ul>
+          {% for control in group.controls %}
+            {% assign tx_required = control.props | where: "name", "required_by" %}
+            {% assign tamus_required = control.parts | where: "name", "tamus_implementation" %}
+            {% if tx_required[0] or tamus_required[0] %}
+              {% include control.html %}
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </details>
+    {% endif %}
   {% endfor %}
 </div>

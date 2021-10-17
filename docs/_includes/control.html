@@ -16,7 +16,7 @@
       {% endif %}
       {% if required_by[0] %}
         <dt>Required By</dt>
-        <dd>{{ required_by[0].value | default: "None" }}</dd>
+        <dd>{{ required_by[0].value | date: "%B %Y" | default: "None" }}</dd>
       {% endif %}
       <dt>Control</dt>
       {% assign withdrawn = control.props | where: "name", "status" %}

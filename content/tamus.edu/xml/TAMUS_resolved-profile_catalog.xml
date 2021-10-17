@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0"
-         uuid="08dfb809-e856-4c5d-b200-fb5f0a029f4c">
+         uuid="f0bfc169-2050-477e-9e3c-ed937193f886">
    <metadata>
       <title>Texas A&amp;M University System Cybersecurity Control Standards</title>
       <published>2020-08-18T18:17:00Z</published>
-      <last-modified>2021-10-17T10:03:37.667-05:00</last-modified>
+      <last-modified>2021-10-17T10:28:54.604-05:00</last-modified>
       <version>1.2.1</version>
       <oscal-version>1.0.0-milestone3</oscal-version>
       <link rel="resolution-source" href="TAMUS_profile.xml"/>
@@ -43,7 +43,7 @@
             <label>organization-defined frequency</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2015"/>
+         <prop name="required_by" value="2015-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="AC-1"/>
          <prop name="sort-id" value="ac-01"/>
@@ -205,7 +205,7 @@
             <label>organization-defined frequency</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2015"/>
+         <prop name="required_by" value="2015-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="AC-2"/>
          <prop name="sort-id" value="ac-02"/>
@@ -1284,7 +1284,7 @@
       <control class="SP800-53" id="ac-3">
          <title>Access Enforcement</title>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2015"/>
+         <prop name="required_by" value="2015-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="AC-3"/>
          <prop name="sort-id" value="ac-03"/>
@@ -1344,11 +1344,11 @@
             </part>
          </part>
          <part name="tx_implementation" id="ac-3_tx">
-            <part id="ac-3_tx_smt.1" name="item">
+            <part name="item" id="ac-3_tx_smt.1">
                <prop name="label" value="1."/>
                <p>Access to state information resources shall be appropriately managed.</p>
             </part>
-            <part id="ac-3_tx_smt.2" name="item">
+            <part name="item" id="ac-3_tx_smt.2">
                <prop name="label" value="2."/>
                <p>Each user of information resources shall be assigned a unique identifier except for situations where risk analysis demonstrates no need for individual accountability of users. User identification shall be authenticated before the information
               resources system may grant that user access.</p>
@@ -3297,7 +3297,7 @@
             <label>organization-defined duties of individuals</label>
          </param>
          <prop name="baseline" value="MOD, HIGH"/>
-         <prop name="required_by" value="February 2015"/>
+         <prop name="required_by" value="2015-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="AC-5"/>
          <prop name="sort-id" value="ac-05"/>
@@ -4000,7 +4000,7 @@
             <label>organization-defined delay algorithm</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2017"/>
+         <prop name="required_by" value="2017-02-01"/>
          <prop name="priority" value="P2"/>
          <prop name="label" value="AC-7"/>
          <prop name="sort-id" value="ac-07"/>
@@ -4090,11 +4090,11 @@
             </part>
          </part>
          <part name="tx_implementation" id="ac-7_tx">
-            <part id="ac-7_tx_smt.1" name="item">
+            <part name="item" id="ac-7_tx_smt.1">
                <prop name="label" value="1."/>
                <p>As technology permits, state organizations should enforce account lockouts after no more than 10 failed attempts. This threshold may be lowered for Moderate or High risk systems.</p>
             </part>
-            <part id="ac-7_tx_smt.2" name="item">
+            <part name="item" id="ac-7_tx_smt.2">
                <prop name="label" value="2."/>
                <p>Accounts locked out due to multiple incorrect logon attempts should stay locked out for a minimum of 15 minutes. Accounts for Moderate or High risk systems should remain locked until reset by an administrator.</p>
             </part>
@@ -4185,7 +4185,7 @@
             <label>organization-defined conditions</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2015"/>
+         <prop name="required_by" value="2015-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="AC-8"/>
          <prop name="sort-id" value="ac-08"/>
@@ -4885,7 +4885,7 @@
             <label>organization-defined user actions</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2017"/>
+         <prop name="required_by" value="2017-02-01"/>
          <prop name="priority" value="P3"/>
          <prop name="label" value="AC-14"/>
          <prop name="sort-id" value="ac-14"/>
@@ -5629,7 +5629,7 @@
       <control class="SP800-53" id="ac-17">
          <title>Remote Access</title>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2016"/>
+         <prop name="required_by" value="2016-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="AC-17"/>
          <prop name="sort-id" value="ac-17"/>
@@ -5742,11 +5742,11 @@
             </part>
          </part>
          <part name="tx_implementation" id="ac-17_tx">
-            <part id="ac-17_tx_smt.1" name="item">
+            <part name="item" id="ac-17_tx_smt.1">
                <prop name="label" value="1."/>
                <p>The state organization establishes, documents, and reviews usage restrictions, configuration/connection requirements, and implementation guidance for each type of remote access allowed.</p>
             </part>
-            <part id="ac-17_tx_smt.2" name="item">
+            <part name="item" id="ac-17_tx_smt.2">
                <prop name="label" value="2."/>
                <p>All remote access connections must be authorizes prior to allowing such connections.</p>
             </part>
@@ -6060,7 +6060,7 @@
       <control class="SP800-53" id="ac-18">
          <title>Wireless Access</title>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2018"/>
+         <prop name="required_by" value="2018-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="AC-18"/>
          <prop name="sort-id" value="ac-18"/>
@@ -6144,20 +6144,20 @@
             </part>
          </part>
          <part name="tx_implementation" id="ac-18_tx">
-            <part id="ac-18_tx_smt.1" name="item">
+            <part name="item" id="ac-18_tx_smt.1">
                <p>State organizations shall establish the requirements and security restrictions for installing or providing access to the state organization information resources systems. The wireless policy shall address the following topic areas:</p>
-               <part id="ac-18_tx_smt.1.a" name="item">
+               <part name="item" id="ac-18_tx_smt.1.a">
                   <prop name="label" value="a."/>
                   <p>Wireless Local Area Networks. Ensure that Service Set Identifiers (SSID) values are changed from the manufacturer default setting. Some networks should not include organizational or location information in the SSID. Additional equipment
                 configuration recommendations are included in the Wireless Security Guidelines.</p>
                </part>
-               <part id="ac-18_tx_smt.1.b" name="item">
+               <part name="item" id="ac-18_tx_smt.1.b">
                   <prop name="label" value="b."/>
                   <p>Types of information that may be transmitted via wireless networks and devices with or without encryption including mission critical information or sensitive personal information. State organizations shall not transmit confidential information via
                 a wireless connection to, or from a portable computing device unless encryption methods, such as a Virtual Private Network (VPN), Wi-Fi Protected Access, or other secure encryption protocols that meet appropriate protection or certification
                 standards, are used to protect the information.</p>
                </part>
-               <part id="ac-18_tx_smt.1.c" name="item">
+               <part name="item" id="ac-18_tx_smt.1.c">
                   <prop name="label" value="c."/>
                   <p>Prohibit and periodically monitor any unauthorized installation or use of Wireless Personal Area Networks on state organizational IT systems by individuals without the approval of the state organization information resources manager.</p>
                </part>
@@ -6361,7 +6361,7 @@
       <control class="SP800-53" id="ac-19">
          <title>Access Control for Mobile Devices</title>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2016"/>
+         <prop name="required_by" value="2016-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="AC-19"/>
          <prop name="sort-id" value="ac-19"/>
@@ -6669,7 +6669,7 @@
       <control class="SP800-53" id="ac-20">
          <title>Use of External Information Systems</title>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2016"/>
+         <prop name="required_by" value="2016-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="AC-20"/>
          <prop name="sort-id" value="ac-20"/>
@@ -6732,11 +6732,11 @@
             </part>
          </part>
          <part name="tx_implementation" id="ac-20_tx">
-            <part id="ac-20_tx_smt.1" name="item">
+            <part name="item" id="ac-20_tx_smt.1">
                <prop name="label" value="1."/>
                <p>State organizations shall develop policies governing the use of external information systems and resources including the type and classification of data that can be stored outside of the state organization.</p>
             </part>
-            <part id="ac-20_tx_smt.2" name="item">
+            <part name="item" id="ac-20_tx_smt.2">
                <prop name="label" value="2."/>
                <p>State organizations shall establish terms and conditions for contracting with external information resources providers.</p>
             </part>
@@ -7125,7 +7125,7 @@
             <label>organization-defined frequency</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2017"/>
+         <prop name="required_by" value="2017-02-01"/>
          <prop name="priority" value="P3"/>
          <prop name="label" value="AC-22"/>
          <prop name="sort-id" value="ac-22"/>
@@ -7514,7 +7514,7 @@
             <label>organization-defined frequency</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2015"/>
+         <prop name="required_by" value="2015-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="AT-1"/>
          <prop name="sort-id" value="at-01"/>
@@ -7666,7 +7666,7 @@
             <label>organization-defined frequency</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2015"/>
+         <prop name="required_by" value="2015-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="AT-2"/>
          <prop name="sort-id" value="at-02"/>
@@ -7745,13 +7745,13 @@
             </part>
          </part>
          <part name="tx_implementation" id="at-2_tx">
-            <part id="at-2_tx_smt.1" name="item">
+            <part name="item" id="at-2_tx_smt.1">
                <p>State organizations shall:</p>
-               <part id="at-2_tx_smt.1.a" name="item">
+               <part name="item" id="at-2_tx_smt.1.a">
                   <prop name="label" value="a."/>
                   <p>Provide an ongoing information security awareness education program for all users; and</p>
                </part>
-               <part id="at-2_tx_smt.1.b" name="item">
+               <part name="item" id="at-2_tx_smt.1.b">
                   <prop name="label" value="b."/>
                   <p>Use new employee orientation to introduce information security awareness and inform new employees of information security policies and procedures.</p>
                </part>
@@ -7844,7 +7844,7 @@
             <label>organization-defined frequency</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2016"/>
+         <prop name="required_by" value="2016-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="AT-3"/>
          <prop name="sort-id" value="at-03"/>
@@ -8129,7 +8129,7 @@
             <label>organization-defined time period</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2017"/>
+         <prop name="required_by" value="2017-02-01"/>
          <prop name="priority" value="P3"/>
          <prop name="label" value="AT-4"/>
          <prop name="sort-id" value="at-04"/>
@@ -8239,7 +8239,7 @@
             <label>organization-defined frequency</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2016"/>
+         <prop name="required_by" value="2016-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="AU-1"/>
          <prop name="sort-id" value="au-01"/>
@@ -8392,7 +8392,7 @@
             <label>organization-defined audited events (the subset of the auditable events defined in AU-2 a.) along with the frequency of (or situation requiring) auditing for each identified event</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2015"/>
+         <prop name="required_by" value="2015-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="AU-2"/>
          <prop name="sort-id" value="au-02"/>
@@ -8493,16 +8493,16 @@
             </part>
          </part>
          <part name="tx_implementation" id="au-2_tx">
-            <part id="au-2_tx_smt.1" name="item">
+            <part name="item" id="au-2_tx_smt.1">
                <prop name="label" value="1."/>
                <p>Information resources systems shall provide the means whereby authorized personnel have the ability to audit and establish individual accountability for any action that can potentially cause access to, generation of, modification of, or affect the
               release of confidential information.</p>
             </part>
-            <part id="au-2_tx_smt.2" name="item">
+            <part name="item" id="au-2_tx_smt.2">
                <prop name="label" value="2."/>
                <p>Appropriate audit trails shall be maintained to provide accountability for updates to mission critical information, hardware and software and for all changes to automated security or access rules.</p>
             </part>
-            <part id="au-2_tx_smt.3" name="item">
+            <part name="item" id="au-2_tx_smt.3">
                <prop name="label" value="3."/>
                <p>Based on the risk assessment, a sufficiently complete history of transactions shall be maintained to permit an audit of the information resources system by logging and tracing the activities of individuals through the system.</p>
             </part>
@@ -8583,7 +8583,7 @@
       <control class="SP800-53" id="au-3">
          <title>Content of Audit Records</title>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2016"/>
+         <prop name="required_by" value="2016-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="AU-3"/>
          <prop name="sort-id" value="au-03"/>
@@ -8652,25 +8652,25 @@
             </part>
          </part>
          <part name="tx_implementation" id="au-3_tx">
-            <part id="au-3_tx_smt.1" name="item">
+            <part name="item" id="au-3_tx_smt.1">
                <p>Audit record content includes, for most audit records:</p>
-               <part id="au-3_tx_smt.1.a" name="item">
+               <part name="item" id="au-3_tx_smt.1.a">
                   <prop name="label" value="a."/>
                   <p>date and time of the event;</p>
                </part>
-               <part id="au-3_tx_smt.1.b" name="item">
+               <part name="item" id="au-3_tx_smt.1.b">
                   <prop name="label" value="b."/>
                   <p>the component of the information system (e.g., software component, hardware component) where the event occurred;</p>
                </part>
-               <part id="au-3_tx_smt.1.c" name="item">
+               <part name="item" id="au-3_tx_smt.1.c">
                   <prop name="label" value="c."/>
                   <p>type of event;</p>
                </part>
-               <part id="au-3_tx_smt.1.d" name="item">
+               <part name="item" id="au-3_tx_smt.1.d">
                   <prop name="label" value="d."/>
                   <p>user/subject identity; and</p>
                </part>
-               <part id="au-3_tx_smt.1.e" name="item">
+               <part name="item" id="au-3_tx_smt.1.e">
                   <prop name="label" value="e."/>
                   <p>the outcome (success or failure) of the event. NIST Special Publication 800-92 provides guidance on computer security log management.</p>
                </part>
@@ -8789,7 +8789,7 @@
             <label>organization-defined audit record storage requirements</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2016"/>
+         <prop name="required_by" value="2016-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="AU-4"/>
          <prop name="sort-id" value="au-04"/>
@@ -8909,7 +8909,7 @@
             <label>organization-defined actions to be taken (e.g., shut down information system, overwrite oldest audit records, stop generating audit records)</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2016"/>
+         <prop name="required_by" value="2016-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="AU-5"/>
          <prop name="sort-id" value="au-05"/>
@@ -9299,7 +9299,7 @@
             <label>organization-defined personnel or roles</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2016"/>
+         <prop name="required_by" value="2016-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="AU-6"/>
          <prop name="sort-id" value="au-06"/>
@@ -10060,7 +10060,7 @@
             <label>organization-defined granularity of time measurement</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2016"/>
+         <prop name="required_by" value="2016-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="AU-8"/>
          <prop name="sort-id" value="au-08"/>
@@ -10254,7 +10254,7 @@
       <control class="SP800-53" id="au-9">
          <title>Protection of Audit Information</title>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2016"/>
+         <prop name="required_by" value="2016-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="AU-9"/>
          <prop name="sort-id" value="au-09"/>
@@ -11025,7 +11025,7 @@
             <label>organization-defined time period consistent with records retention policy</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2017"/>
+         <prop name="required_by" value="2017-02-01"/>
          <prop name="priority" value="P3"/>
          <prop name="label" value="AU-11"/>
          <prop name="sort-id" value="au-11"/>
@@ -11144,7 +11144,7 @@
             <label>organization-defined personnel or roles</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2016"/>
+         <prop name="required_by" value="2016-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="AU-12"/>
          <prop name="sort-id" value="au-12"/>
@@ -11933,7 +11933,7 @@
             <label>organization-defined frequency</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2016"/>
+         <prop name="required_by" value="2016-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="CA-1"/>
          <prop name="sort-id" value="ca-01"/>
@@ -12088,7 +12088,7 @@
             <label>organization-defined individuals or roles</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2015"/>
+         <prop name="required_by" value="2015-02-01"/>
          <prop name="priority" value="P2"/>
          <prop name="label" value="CA-2"/>
          <prop name="sort-id" value="ca-02"/>
@@ -12438,7 +12438,7 @@
             <label>organization-defined frequency</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2016"/>
+         <prop name="required_by" value="2016-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="CA-3"/>
          <prop name="sort-id" value="ca-03"/>
@@ -12855,7 +12855,7 @@
             <label>organization-defined frequency</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2017"/>
+         <prop name="required_by" value="2017-02-01"/>
          <prop name="priority" value="P3"/>
          <prop name="label" value="CA-5"/>
          <prop name="sort-id" value="ca-05"/>
@@ -13001,7 +13001,7 @@
             <label>organization-defined frequency</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2017"/>
+         <prop name="required_by" value="2017-02-01"/>
          <prop name="priority" value="P2"/>
          <prop name="label" value="CA-6"/>
          <prop name="sort-id" value="ca-06"/>
@@ -13079,11 +13079,11 @@
             </part>
          </part>
          <part name="tx_implementation" id="ca-6_tx">
-            <part id="ca-6_tx_smt.1" name="item">
+            <part name="item" id="ca-6_tx_smt.1">
                <prop name="label" value="1."/>
                <p>The state organization authorizes the information system for processing before operations or when there is a significant change to the system.</p>
             </part>
-            <part id="ca-6_tx_smt.2" name="item">
+            <part name="item" id="ca-6_tx_smt.2">
                <prop name="label" value="2."/>
                <p>A senior organizational official signs and approves the security accreditation.</p>
             </part>
@@ -13107,7 +13107,7 @@
             <label>organization-defined frequency</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2017"/>
+         <prop name="required_by" value="2017-02-01"/>
          <prop name="priority" value="P2"/>
          <prop name="label" value="CA-7"/>
          <prop name="sort-id" value="ca-07"/>
@@ -13564,7 +13564,7 @@
             <label>organization-defined information system components or classes of components</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2017"/>
+         <prop name="required_by" value="2017-02-01"/>
          <prop name="priority" value="P2"/>
          <prop name="label" value="CA-9"/>
          <prop name="sort-id" value="ca-09"/>
@@ -13707,7 +13707,7 @@
             <label>organization-defined frequency</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2015"/>
+         <prop name="required_by" value="2015-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="CM-1"/>
          <prop name="sort-id" value="cm-01"/>
@@ -13855,7 +13855,7 @@
       <control class="SP800-53" id="cm-2">
          <title>Baseline Configuration</title>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2016"/>
+         <prop name="required_by" value="2016-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="CM-2"/>
          <prop name="sort-id" value="cm-02"/>
@@ -14426,33 +14426,33 @@
             </part>
          </part>
          <part name="tamus_implementation" id="cm-3_tamus">
-            <part id="cm-3_tamus_smt.1" name="item">
+            <part name="item" id="cm-3_tamus_smt.1">
                <p>The System member incorporates change management processes to ensure secure, reliable, and stable operations to which all offices that support information systems adhere. The change management process incorporates guidelines that address:</p>
-               <part id="cm-3_tamus_smt.1.a" name="item">
+               <part name="item" id="cm-3_tamus_smt.1.a">
                   <prop name="label" value="a."/>
                   <p>formally identifying, classifying, prioritizing, and requesting changes;</p>
                </part>
-               <part id="cm-3_tamus_smt.1.b" name="item">
+               <part name="item" id="cm-3_tamus_smt.1.b">
                   <prop name="label" value="b."/>
                   <p>identifying and deploying emergency changes;</p>
                </part>
-               <part id="cm-3_tamus_smt.1.c" name="item">
+               <part name="item" id="cm-3_tamus_smt.1.c">
                   <prop name="label" value="c."/>
                   <p>assessing potential impacts from changes;</p>
                </part>
-               <part id="cm-3_tamus_smt.1.d" name="item">
+               <part name="item" id="cm-3_tamus_smt.1.d">
                   <prop name="label" value="d."/>
                   <p>authorizing changes and exceptions;</p>
                </part>
-               <part id="cm-3_tamus_smt.1.e" name="item">
+               <part name="item" id="cm-3_tamus_smt.1.e">
                   <prop name="label" value="e."/>
                   <p>testing changes;</p>
                </part>
-               <part id="cm-3_tamus_smt.1.f" name="item">
+               <part name="item" id="cm-3_tamus_smt.1.f">
                   <prop name="label" value="f."/>
                   <p>implementing changes and planning for back-outs, and</p>
                </part>
-               <part id="cm-3_tamus_smt.1.g" name="item">
+               <part name="item" id="cm-3_tamus_smt.1.g">
                   <prop name="label" value="g."/>
                   <p>documenting and tracking changes.</p>
                </part>
@@ -14854,7 +14854,7 @@
       <control class="SP800-53" id="cm-4">
          <title>Security Impact Analysis</title>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2015"/>
+         <prop name="required_by" value="2015-02-01"/>
          <prop name="priority" value="P2"/>
          <prop name="label" value="CM-4"/>
          <prop name="sort-id" value="cm-04"/>
@@ -14904,11 +14904,11 @@
             </part>
          </part>
          <part name="tx_implementation" id="cm-4_tx">
-            <part id="cm-4_tx_smt.1" name="item">
+            <part name="item" id="cm-4_tx_smt.1">
                <prop name="label" value="1."/>
                <p>All security-related information resources changes shall be approved by the information owner through a change control process.</p>
             </part>
-            <part id="cm-4_tx_smt.2" name="item">
+            <part name="item" id="cm-4_tx_smt.2">
                <prop name="label" value="2."/>
                <p>Approval shall occur prior to implementation by the state organization or independent contractors.</p>
             </part>
@@ -15501,7 +15501,7 @@
             <label>organization-defined operational requirements</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2016"/>
+         <prop name="required_by" value="2016-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="CM-6"/>
          <prop name="sort-id" value="cm-06"/>
@@ -15655,21 +15655,21 @@
             </part>
          </part>
          <part name="tx_implementation" id="cm-6_tx">
-            <part id="cm-6_tx_smt.1" name="item">
+            <part name="item" id="cm-6_tx_smt.1">
                <p>The state organization:</p>
-               <part id="cm-6_tx_smt.1.a" name="item">
+               <part name="item" id="cm-6_tx_smt.1.a">
                   <prop name="label" value="a."/>
                   <p>establishes mandatory configuration settings for information technology products employed within the information system;</p>
                </part>
-               <part id="cm-6_tx_smt.1.b" name="item">
+               <part name="item" id="cm-6_tx_smt.1.b">
                   <prop name="label" value="b."/>
                   <p>configures the security settings of information technology products to the most restrictive mode consistent with operational requirements;</p>
                </part>
-               <part id="cm-6_tx_smt.1.c" name="item">
+               <part name="item" id="cm-6_tx_smt.1.c">
                   <prop name="label" value="c."/>
                   <p>documents the configuration settings; and</p>
                </part>
-               <part id="cm-6_tx_smt.1.d" name="item">
+               <part name="item" id="cm-6_tx_smt.1.d">
                   <prop name="label" value="d."/>
                   <p>enforces the configuration settings in all components of the information system.</p>
                </part>
@@ -15845,7 +15845,7 @@
             <label>organization-defined prohibited or restricted functions, ports, protocols, and/or services</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2016"/>
+         <prop name="required_by" value="2016-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="CM-7"/>
          <prop name="sort-id" value="cm-07"/>
@@ -16450,7 +16450,7 @@
             <label>organization-defined frequency</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2016"/>
+         <prop name="required_by" value="2016-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="CM-8"/>
          <prop name="sort-id" value="cm-08"/>
@@ -17272,7 +17272,7 @@
       <control class="SP800-53" id="cm-10">
          <title>Software Usage Restrictions</title>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2017"/>
+         <prop name="required_by" value="2017-02-01"/>
          <prop name="priority" value="P2"/>
          <prop name="label" value="CM-10"/>
          <prop name="sort-id" value="cm-10"/>
@@ -17345,17 +17345,17 @@
             </part>
          </part>
          <part name="tx_implementation" id="cm-10_tx">
-            <part id="cm-10_tx_smt.1" name="item">
+            <part name="item" id="cm-10_tx_smt.1">
                <p>The state organization:</p>
-               <part id="cm-10_tx_smt.1.a" name="item">
+               <part name="item" id="cm-10_tx_smt.1.a">
                   <prop name="label" value="a."/>
                   <p>uses software and associated documentation in accordance with contract agreements and copyright laws;</p>
                </part>
-               <part id="cm-10_tx_smt.1.b" name="item">
+               <part name="item" id="cm-10_tx_smt.1.b">
                   <prop name="label" value="b."/>
                   <p>tracks the use of software and associated documentation protected by quantity licenses to control copying and distribution; and</p>
                </part>
-               <part id="cm-10_tx_smt.1.c" name="item">
+               <part name="item" id="cm-10_tx_smt.1.c">
                   <prop name="label" value="c."/>
                   <p>controls and documents the use of peer-to-peer file sharing technology to ensure that this capability is not used for the unauthorized distribution, display, performance, or reproduction of copyrighted work.</p>
                </part>
@@ -17428,7 +17428,7 @@
             <label>organization-defined frequency</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2015"/>
+         <prop name="required_by" value="2015-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="CM-11"/>
          <prop name="sort-id" value="cm-11"/>
@@ -17645,7 +17645,7 @@
             <label>organization-defined frequency</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2016"/>
+         <prop name="required_by" value="2016-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="CP-1"/>
          <prop name="sort-id" value="cp-01"/>
@@ -17811,7 +17811,7 @@
             <label>organization-defined key contingency personnel (identified by name and/or by role) and organizational elements</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2015"/>
+         <prop name="required_by" value="2015-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="CP-2"/>
          <prop name="sort-id" value="cp-02"/>
@@ -18028,74 +18028,74 @@
             </part>
          </part>
          <part name="tx_implementation" id="cp-2_tx">
-            <part id="cp-2_tx_smt.1" name="item">
+            <part name="item" id="cp-2_tx_smt.1">
                <p>The plan shall be distributed to key personnel and a copy stored offsite. Elements of the plan for information resources shall include:</p>
-               <part id="cp-2_tx_smt.1.a" name="item">
+               <part name="item" id="cp-2_tx_smt.1.a">
                   <prop name="label" value="a."/>
                   <p>Business Impact Analysis to systematically assess the potential impacts of a loss of business functionality due to an interruption of computing and/or infrastructure support services resulting from various events or incidents. The analysis shall
                 identify the following elements:</p>
-                  <part id="cp-2_tx_smt.1.a.1" name="item">
+                  <part name="item" id="cp-2_tx_smt.1.a.1">
                      <prop name="label" value="(1)"/>
                      <p>Mission-Critical Information Resources (specific system resources required to perform critical functions) to include:</p>
-                     <part id="cp-2_tx_smt.1.a.1.a" name="item">
+                     <part name="item" id="cp-2_tx_smt.1.a.1.a">
                         <prop name="label" value="(a)"/>
                         <p>Internal and external points of contact for personnel that provide or receive data or support interconnected systems.</p>
                      </part>
-                     <part id="cp-2_tx_smt.1.a.1.b" name="item">
+                     <part name="item" id="cp-2_tx_smt.1.a.1.b">
                         <prop name="label" value="(b)"/>
                         <p>Supporting infrastructure such as electric power, telecommunications connections, and environmental controls.</p>
                      </part>
                   </part>
-                  <part id="cp-2_tx_smt.1.a.2" name="item">
+                  <part name="item" id="cp-2_tx_smt.1.a.2">
                      <prop name="label" value="(2)"/>
                      <p>Disruption impacts and allowable outage times to include:</p>
-                     <part id="cp-2_tx_smt.1.a.2.a" name="item">
+                     <part name="item" id="cp-2_tx_smt.1.a.2.a">
                         <prop name="label" value="(a)"/>
                         <p>Effects of an outage over time to assess the maximum allowable time that a resource may be denied before it prevents or inhibits the performance of an essential function.</p>
                      </part>
-                     <part id="cp-2_tx_smt.1.a.2.b" name="item">
+                     <part name="item" id="cp-2_tx_smt.1.a.2.b">
                         <prop name="label" value="(b)"/>
                         <p>Effects of an outage across related resources and dependent systems to assess cascading effects on associated systems or processes.</p>
                      </part>
                   </part>
-                  <part id="cp-2_tx_smt.1.a.3" name="item">
+                  <part name="item" id="cp-2_tx_smt.1.a.3">
                      <prop name="label" value="(3)"/>
                      <p>Recovery priorities that consider geographic areas, accessibility, security, environment, and cost and may include a combination of:</p>
-                     <part id="cp-2_tx_smt.1.a.3.a" name="item">
+                     <part name="item" id="cp-2_tx_smt.1.a.3.a">
                         <prop name="label" value="(a)"/>
                         <p>Preventive controls and processes such as backup power, excess capacity, environmental sensors and alarms.</p>
                      </part>
-                     <part id="cp-2_tx_smt.1.a.3.b" name="item">
+                     <part name="item" id="cp-2_tx_smt.1.a.3.b">
                         <prop name="label" value="(b)"/>
                         <p>Recovery techniques and technologies such as backup methodologies, alternate sites, software and hardware equipment replacement, implementation roles and responsibilities.</p>
                      </part>
                   </part>
                </part>
-               <part id="cp-2_tx_smt.1.b" name="item">
+               <part name="item" id="cp-2_tx_smt.1.b">
                   <prop name="label" value="b."/>
                   <p>Risk Assessment to weigh the cost of implementing preventative measures against the risk of loss from not taking action.</p>
                </part>
-               <part id="cp-2_tx_smt.1.c" name="item">
+               <part name="item" id="cp-2_tx_smt.1.c">
                   <prop name="label" value="c."/>
                   <p>Implementation, testing, and maintenance management program addressing the initial and ongoing testing and maintenance activities of the plan.</p>
                </part>
-               <part id="cp-2_tx_smt.1.d" name="item">
+               <part name="item" id="cp-2_tx_smt.1.d">
                   <prop name="label" value="d."/>
                   <p>Disaster Recovery Plan--Each state organization shall maintain a written disaster recovery plan for major or catastrophic events that deny access to information resources for an extended period. Information learned from tests conducted since the
                 plan was last updated will be used in updating the disaster recovery plan. The disaster recovery plan will:</p>
-                  <part id="cp-2_tx_smt.1.d.1" name="item">
+                  <part name="item" id="cp-2_tx_smt.1.d.1">
                      <prop name="label" value="(1)"/>
                      <p>Contain measures which address the impact and magnitude of loss or harm that will result from an interruption;</p>
                   </part>
-                  <part id="cp-2_tx_smt.1.d.2" name="item">
+                  <part name="item" id="cp-2_tx_smt.1.d.2">
                      <prop name="label" value="(2)"/>
                      <p>Identify recovery resources and a source for each;</p>
                   </part>
-                  <part id="cp-2_tx_smt.1.d.3" name="item">
+                  <part name="item" id="cp-2_tx_smt.1.d.3">
                      <prop name="label" value="(3)"/>
                      <p>Contain step-by-step implementation instructions;</p>
                   </part>
-                  <part id="cp-2_tx_smt.1.d.4" name="item">
+                  <part name="item" id="cp-2_tx_smt.1.d.4">
                      <prop name="label" value="(4)"/>
                      <p>Include provisions for annual testing.</p>
                   </part>
@@ -18470,7 +18470,7 @@
             <label>organization-defined frequency</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2017"/>
+         <prop name="required_by" value="2017-02-01"/>
          <prop name="priority" value="P2"/>
          <prop name="label" value="CP-3"/>
          <prop name="sort-id" value="cp-03"/>
@@ -18640,7 +18640,7 @@
             <label>organization-defined tests</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2015"/>
+         <prop name="required_by" value="2015-02-01"/>
          <prop name="priority" value="P2"/>
          <prop name="label" value="CP-4"/>
          <prop name="sort-id" value="cp-04"/>
@@ -18725,17 +18725,17 @@
             <p>Each state organization’s written disaster recovery plan will include provisions for annual testing.</p>
          </part>
          <part name="tamus_implementation" id="cp-4_tamus">
-            <part id="cp-4_tamus_smt.1" name="item">
+            <part name="item" id="cp-4_tamus_smt.1">
                <p>The System member:</p>
-               <part id="cp-4_tamus_smt.1.a" name="item">
+               <part name="item" id="cp-4_tamus_smt.1.a">
                   <prop name="label" value="a."/>
                   <p>tests the contingency plan at least annually through a tabletop exercise;</p>
                </part>
-               <part id="cp-4_tamus_smt.1.b" name="item">
+               <part name="item" id="cp-4_tamus_smt.1.b">
                   <prop name="label" value="b."/>
                   <p>tests the contingency plan at least every three years with a full interruption of high-impact, on-premise services, and</p>
                </part>
-               <part id="cp-4_tamus_smt.1.c" name="item">
+               <part name="item" id="cp-4_tamus_smt.1.c">
                   <prop name="label" value="c."/>
                   <p>includes information resources contingency plan testing in the member’s emergency management plan testing and exercises.</p>
                </part>
@@ -18945,7 +18945,7 @@
       <control class="SP800-53" id="cp-6">
          <title>Alternate Storage Site</title>
          <prop name="baseline" value="MOD, HIGH"/>
-         <prop name="required_by" value="February 2015"/>
+         <prop name="required_by" value="2015-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="CP-6"/>
          <prop name="sort-id" value="cp-06"/>
@@ -19741,7 +19741,7 @@
             <label>organization-defined frequency consistent with recovery time and recovery point objectives</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2016"/>
+         <prop name="required_by" value="2016-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="CP-9"/>
          <prop name="sort-id" value="cp-09"/>
@@ -20164,7 +20164,7 @@
       <control class="SP800-53" id="cp-10">
          <title>Information System Recovery and Reconstitution</title>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2016"/>
+         <prop name="required_by" value="2016-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="CP-10"/>
          <prop name="sort-id" value="cp-10"/>
@@ -20618,7 +20618,7 @@
             <label>organization-defined frequency</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2015"/>
+         <prop name="required_by" value="2015-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="IA-1"/>
          <prop name="sort-id" value="ia-01"/>
@@ -20770,7 +20770,7 @@
       <control class="SP800-53" id="ia-2">
          <title>Identification and Authentication (organizational Users)</title>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2015"/>
+         <prop name="required_by" value="2015-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="IA-2"/>
          <prop name="sort-id" value="ia-02"/>
@@ -21816,7 +21816,7 @@
             <label>organization-defined time period of inactivity</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2015"/>
+         <prop name="required_by" value="2015-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="IA-4"/>
          <prop name="sort-id" value="ia-04"/>
@@ -22294,7 +22294,7 @@
             <label>organization-defined time period by authenticator type</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2016"/>
+         <prop name="required_by" value="2016-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="IA-5"/>
          <prop name="sort-id" value="ia-05"/>
@@ -22498,17 +22498,17 @@
             </part>
          </part>
          <part name="tx_implementation" id="ia-5_tx">
-            <part id="ia-5_tx_smt.1" name="item">
+            <part name="item" id="ia-5_tx_smt.1">
                <p>The state organization manages information system authenticators by:</p>
-               <part id="ia-5_tx_smt.1.a" name="item">
+               <part name="item" id="ia-5_tx_smt.1.a">
                   <prop name="label" value="a."/>
                   <p>defining initial authenticator content;</p>
                </part>
-               <part id="ia-5_tx_smt.1.b" name="item">
+               <part name="item" id="ia-5_tx_smt.1.b">
                   <prop name="label" value="b."/>
                   <p>establishing administrative procedures for initial authenticator distribution, for lost/compromised, or damaged authenticators, and for revoking authenticators; and</p>
                </part>
-               <part id="ia-5_tx_smt.1.c" name="item">
+               <part name="item" id="ia-5_tx_smt.1.c">
                   <prop name="label" value="c."/>
                   <p>changing default authenticators upon information system installation.</p>
                </part>
@@ -23436,7 +23436,7 @@
       <control class="SP800-53" id="ia-6">
          <title>Authenticator Feedback</title>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2016"/>
+         <prop name="required_by" value="2016-02-01"/>
          <prop name="priority" value="P2"/>
          <prop name="label" value="IA-6"/>
          <prop name="sort-id" value="ia-06"/>
@@ -23482,7 +23482,7 @@
       <control class="SP800-53" id="ia-7">
          <title>Cryptographic Module Authentication</title>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2016"/>
+         <prop name="required_by" value="2016-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="IA-7"/>
          <prop name="sort-id" value="ia-07"/>
@@ -23532,7 +23532,7 @@
       <control class="SP800-53" id="ia-8">
          <title>Identification and Authentication (non-organizational Users)</title>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2016"/>
+         <prop name="required_by" value="2016-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="IA-8"/>
          <prop name="sort-id" value="ia-08"/>
@@ -24168,7 +24168,7 @@
             <label>organization-defined frequency</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2015"/>
+         <prop name="required_by" value="2015-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="IR-1"/>
          <prop name="sort-id" value="ir-01"/>
@@ -24324,7 +24324,7 @@
             <label>organization-defined frequency</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2017"/>
+         <prop name="required_by" value="2017-02-01"/>
          <prop name="priority" value="P2"/>
          <prop name="label" value="IR-2"/>
          <prop name="sort-id" value="ir-02"/>
@@ -24629,7 +24629,7 @@
       <control class="SP800-53" id="ir-4">
          <title>Incident Handling</title>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2016"/>
+         <prop name="required_by" value="2016-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="IR-4"/>
          <prop name="sort-id" value="ir-04"/>
@@ -25258,7 +25258,7 @@
       <control class="SP800-53" id="ir-5">
          <title>Incident Monitoring</title>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2016"/>
+         <prop name="required_by" value="2016-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="IR-5"/>
          <prop name="sort-id" value="ir-05"/>
@@ -25381,7 +25381,7 @@
             <label>organization-defined authorities</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2015"/>
+         <prop name="required_by" value="2015-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="IR-6"/>
          <prop name="sort-id" value="ir-06"/>
@@ -25457,34 +25457,34 @@
             </part>
          </part>
          <part name="tx_implementation" id="ir-6_tx">
-            <part id="ir-6_tx_smt.1.a" name="item">
+            <part name="item" id="ir-6_tx_smt.1.a">
                <prop name="label" value="a."/>
                <p>Security incidents shall be promptly reported to immediate supervisors and the state organization Information Security Officer. Security incidents that require timely reporting to the department include those events that are assessed to:</p>
-               <part id="ir-6_tx_smt.1.a.1" name="item">
+               <part name="item" id="ir-6_tx_smt.1.a.1">
                   <prop name="label" value="(1)"/>
                   <p>Propagate to other state systems;</p>
                </part>
-               <part id="ir-6_tx_smt.1.a.2" name="item">
+               <part name="item" id="ir-6_tx_smt.1.a.2">
                   <prop name="label" value="(2)"/>
                   <p>Result in criminal violations that shall be reported to law enforcement; or</p>
                </part>
-               <part id="ir-6_tx_smt.1.a.3" name="item">
+               <part name="item" id="ir-6_tx_smt.1.a.3">
                   <prop name="label" value="(3)"/>
                   <p>Involve the unauthorized disclosure or modification of confidential information, e.g., sensitive personal information as defined in §521.002(a)(2), Business and Commerce Code, and other applicable laws that may require public notification.</p>
                </part>
             </part>
-            <part id="ir-6_tx_smt.1.b" name="item">
+            <part name="item" id="ir-6_tx_smt.1.b">
                <prop name="label" value="b."/>
                <p>If the security incident is assessed to involve suspected criminal activity (e.g., violations of Chapters 33, Penal Code (Computer Crimes) or Chapter 33A, Penal Code (Telecommunications Crimes)), the security incident shall be investigated,
               reported, and documented in a manner that restores operation promptly while meeting the legal requirements for handling of evidence.</p>
             </part>
-            <part id="ir-6_tx_smt.1.c" name="item">
+            <part name="item" id="ir-6_tx_smt.1.c">
                <prop name="label" value="c."/>
                <p>Depending on the criticality of the incident, it will not always be feasible to gather all the information prior to reporting. In such cases, incident response teams should continue to report information to the department as it is collected. The
               department shall instruct state organizations as to the manner in which they shall report such information to the department. Supporting vendors or other third parties that report security incident information to a state organization shall submit
               such reports to the state organization in the form and manner specified by the department, unless otherwise directed by the state organization.</p>
             </part>
-            <part id="ir-6_tx_smt.1.d" name="item">
+            <part name="item" id="ir-6_tx_smt.1.d">
                <prop name="label" value="d."/>
                <p>Summary reports of security-related events shall be sent to the department on a monthly basis no later than nine (9) calendar days after the end of the month. Organizations shall submit summary security incident reports in the form and manner
               specified by the department. Supporting vendors or other third parties that report security incident information to a state organization shall submit such reports to the state organization in the form and manner specified by the department, unless
@@ -25492,8 +25492,16 @@
             </part>
          </part>
          <part name="tamus_implementation" id="ir-6_tamus">
-            <p>The System member reports information security incidents where the confidentiality, integrity, or availability of a major System-owned or -managed information system, or a system processing confidential information, is potentially compromised to
-            the System Office of Cybersecurity within four hours of being identified by the member or the Security Operations Center (SOC), following the Incident Notifation Guidelines published at https://cyber-standards.tamus.edu/incident-notification.</p>
+            <p>The System member reports information security incidents where:</p>
+            <part name="item" id="ir-6_tamus_smt.a">
+               <prop name="label" value="a."/>
+               <p>the confidentiality, integrity, or availability of a major System-owned or -managed information system, or</p>
+            </part>
+            <part name="item" id="ir-6_tamus_smt.b">
+               <prop name="label" value="b."/>
+               <p>a system processing confidential information,</p>
+            </part>
+            <p>is potentially compromised to the System Office of Cybersecurity within four hours of being identified by the member or the Security Operations Center (SOC), following the Incident Notifation Guidelines published at https://cyber-standards.tamus.edu/incident-notification.</p>
          </part>
          <control class="SP800-53-enhancement" id="ir-6.1">
             <title>Automated Reporting</title>
@@ -25631,7 +25639,7 @@
       <control class="SP800-53" id="ir-7">
          <title>Incident Response Assistance</title>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2017"/>
+         <prop name="required_by" value="2017-02-01"/>
          <prop name="priority" value="P2"/>
          <prop name="label" value="IR-7"/>
          <prop name="sort-id" value="ir-07"/>
@@ -25794,7 +25802,7 @@
             <label>organization-defined incident response personnel (identified by name and/or by role) and organizational elements</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2016"/>
+         <prop name="required_by" value="2016-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="IR-8"/>
          <prop name="sort-id" value="ir-08"/>
@@ -26355,7 +26363,7 @@
             <label>organization-defined frequency</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2016"/>
+         <prop name="required_by" value="2016-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="MA-1"/>
          <prop name="sort-id" value="ma-01"/>
@@ -26508,7 +26516,7 @@
             <label>organization-defined maintenance-related information</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2017"/>
+         <prop name="required_by" value="2017-02-01"/>
          <prop name="priority" value="P2"/>
          <prop name="label" value="MA-2"/>
          <prop name="sort-id" value="ma-02"/>
@@ -27044,7 +27052,7 @@
       <control class="SP800-53" id="ma-4">
          <title>Nonlocal Maintenance</title>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2017"/>
+         <prop name="required_by" value="2017-02-01"/>
          <prop name="priority" value="P2"/>
          <prop name="label" value="MA-4"/>
          <prop name="sort-id" value="ma-04"/>
@@ -27627,7 +27635,7 @@
       <control class="SP800-53" id="ma-5">
          <title>Maintenance Personnel</title>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2017"/>
+         <prop name="required_by" value="2017-02-01"/>
          <prop name="priority" value="P2"/>
          <prop name="label" value="MA-5"/>
          <prop name="sort-id" value="ma-05"/>
@@ -28268,7 +28276,7 @@
             <label>organization-defined frequency</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2016"/>
+         <prop name="required_by" value="2016-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="MP-1"/>
          <prop name="sort-id" value="mp-01"/>
@@ -28421,7 +28429,7 @@
             <label>organization-defined personnel or roles</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2016"/>
+         <prop name="required_by" value="2016-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="MP-2"/>
          <prop name="sort-id" value="mp-02"/>
@@ -28950,7 +28958,7 @@
             <label>organization-defined sanitization techniques and procedures</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2015"/>
+         <prop name="required_by" value="2015-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="MP-6"/>
          <prop name="sort-id" value="mp-06"/>
@@ -29051,40 +29059,40 @@
             </part>
          </part>
          <part name="tx_implementation" id="mp-6_tx">
-            <part id="mp-6_tx_smt.1" name="item">
+            <part name="item" id="mp-6_tx_smt.1">
                <prop name="label" value="1."/>
                <p>Prior to the sale or transfer of data processing equipment, to other than another Texas state agency or agent of the state, state agencies shall assess whether to remove data from any associated storage device.</p>
             </part>
-            <part id="mp-6_tx_smt.2" name="item">
+            <part name="item" id="mp-6_tx_smt.2">
                <prop name="label" value="2."/>
                <p>Electronic state records shall be destroyed in accordance with §441.185, Government Code. If the record retention period applicable for an electronic state record has not expired at the time the record is removed from data process equipment, the
               state agency shall retain a hard copy or other electronic copy of the record for the required retention period.</p>
             </part>
-            <part id="mp-6_tx_smt.3" name="item">
+            <part name="item" id="mp-6_tx_smt.3">
                <prop name="label" value="3."/>
                <p>If it is possible that restricted personal information, confidential information, mission critical information, intellectual property, or licensed software is contained on the storage device, the storage device should be sanitized or the storage
               device should be removed and destroyed. Additional information on sanitization tools and methods of destruction (that comply with the Department of Defense 5220.22-M standard) are provided in the “Sale or Transfer of Computers and Software”
               guidelines available at http://www.dir.texas.gov.</p>
             </part>
-            <part id="mp-6_tx_smt.4" name="item">
+            <part name="item" id="mp-6_tx_smt.4">
                <p>State agencies shall keep a record/form (electronic or hard copy) documenting the removal and completion of the process with the following information:</p>
-               <part id="mp-6_tx_smt.4.a" name="item">
+               <part name="item" id="mp-6_tx_smt.4.a">
                   <prop name="label" value="a."/>
                   <p>date;</p>
                </part>
-               <part id="mp-6_tx_smt.4.b" name="item">
+               <part name="item" id="mp-6_tx_smt.4.b">
                   <prop name="label" value="b."/>
                   <p>description of the item(s) and serial number(s);</p>
                </part>
-               <part id="mp-6_tx_smt.4.c" name="item">
+               <part name="item" id="mp-6_tx_smt.4.c">
                   <prop name="label" value="c."/>
                   <p>inventory number(s);</p>
                </part>
-               <part id="mp-6_tx_smt.4.d" name="item">
+               <part name="item" id="mp-6_tx_smt.4.d">
                   <prop name="label" value="d."/>
                   <p>the process and sanitization tools used to remove the data or method of destruction; and</p>
                </part>
-               <part id="mp-6_tx_smt.4.e" name="item">
+               <part name="item" id="mp-6_tx_smt.4.e">
                   <prop name="label" value="e."/>
                   <p>the name and address of the organization the equipment was transferred to.</p>
                </part>
@@ -29417,7 +29425,7 @@
             <label>organization-defined security safeguards</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2016"/>
+         <prop name="required_by" value="2016-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="MP-7"/>
          <prop name="sort-id" value="mp-07"/>
@@ -29886,7 +29894,7 @@
             <label>organization-defined frequency</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2015"/>
+         <prop name="required_by" value="2015-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="PE-1"/>
          <prop name="sort-id" value="pe-01"/>
@@ -30037,7 +30045,7 @@
             <label>organization-defined frequency</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2016"/>
+         <prop name="required_by" value="2016-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="PE-2"/>
          <prop name="sort-id" value="pe-02"/>
@@ -30349,7 +30357,7 @@
             <label>organization-defined frequency</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2016"/>
+         <prop name="required_by" value="2016-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="PE-3"/>
          <prop name="sort-id" value="pe-03"/>
@@ -31238,7 +31246,7 @@
             <label>organization-defined events or potential indications of events</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2016"/>
+         <prop name="required_by" value="2016-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="PE-6"/>
          <prop name="sort-id" value="pe-06"/>
@@ -31559,7 +31567,7 @@
             <label>organization-defined frequency</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2017"/>
+         <prop name="required_by" value="2017-02-01"/>
          <prop name="priority" value="P3"/>
          <prop name="label" value="PE-8"/>
          <prop name="sort-id" value="pe-08"/>
@@ -32067,7 +32075,7 @@
       <control class="SP800-53" id="pe-12">
          <title>Emergency Lighting</title>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2016"/>
+         <prop name="required_by" value="2016-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="PE-12"/>
          <prop name="sort-id" value="pe-12"/>
@@ -32157,7 +32165,7 @@
       <control class="SP800-53" id="pe-13">
          <title>Fire Protection</title>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2015"/>
+         <prop name="required_by" value="2015-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="PE-13"/>
          <prop name="sort-id" value="pe-13"/>
@@ -32448,7 +32456,7 @@
             <label>organization-defined frequency</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2016"/>
+         <prop name="required_by" value="2016-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="PE-14"/>
          <prop name="sort-id" value="pe-14"/>
@@ -32636,7 +32644,7 @@
       <control class="SP800-53" id="pe-15">
          <title>Water Damage Protection</title>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2016"/>
+         <prop name="required_by" value="2016-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="PE-15"/>
          <prop name="sort-id" value="pe-15"/>
@@ -32752,7 +32760,7 @@
             <label>organization-defined types of information system components</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2017"/>
+         <prop name="required_by" value="2017-02-01"/>
          <prop name="priority" value="P2"/>
          <prop name="label" value="PE-16"/>
          <prop name="sort-id" value="pe-16"/>
@@ -33212,7 +33220,7 @@
             <label>organization-defined frequency</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2016"/>
+         <prop name="required_by" value="2016-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="PL-1"/>
          <prop name="sort-id" value="pl-01"/>
@@ -33366,7 +33374,7 @@
             <label>organization-defined frequency</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2015"/>
+         <prop name="required_by" value="2015-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="PL-2"/>
          <prop name="sort-id" value="pl-02"/>
@@ -33656,7 +33664,7 @@
             <label>organization-defined frequency</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2017"/>
+         <prop name="required_by" value="2017-02-01"/>
          <prop name="priority" value="P2"/>
          <prop name="label" value="PL-4"/>
          <prop name="sort-id" value="pl-04"/>
@@ -33766,22 +33774,22 @@
             <p>The state organization defines scope, behavior, and practices; compliance monitoring pertaining to users of information resources.</p>
          </part>
          <part name="tamus_implementation" id="pl-4_tamus">
-            <part id="pl-4_tamus_smt.1" name="item">
+            <part name="item" id="pl-4_tamus_smt.1">
                <p>The System member:</p>
-               <part id="pl-4_tamus_smt.1.a" name="item">
+               <part name="item" id="pl-4_tamus_smt.1.a">
                   <prop name="label" value="a."/>
                   <p>documents acceptable use guidelines;</p>
                </part>
-               <part id="pl-4_tamus_smt.1.b" name="item">
+               <part name="item" id="pl-4_tamus_smt.1.b">
                   <prop name="label" value="b."/>
                   <p>ensures users formally acknowledge, agree to abide by, and adhere to prudent and responsible Internet use practices (including reasonable personal use) outlined in Texas A&amp;M System Policy 33.04, Use of System Resources [TAMUS 33.04], and the
                 member’s acceptable use guidelines;</p>
                </part>
-               <part id="pl-4_tamus_smt.1.c" name="item">
+               <part name="item" id="pl-4_tamus_smt.1.c">
                   <prop name="label" value="c."/>
                   <p>establishes a documented process for authorization to monitor member information resources, and</p>
                </part>
-               <part id="pl-4_tamus_smt.1.d" name="item">
+               <part name="item" id="pl-4_tamus_smt.1.d">
                   <prop name="label" value="d."/>
                   <p>monitors information resources in accordance with Texas A&amp;M System Policy 29.01, Information Resources [TAMUS 29.01].</p>
                </part>
@@ -34241,7 +34249,7 @@
             <label>organization-defined frequency</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2016"/>
+         <prop name="required_by" value="2016-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="PS-1"/>
          <prop name="sort-id" value="ps-01"/>
@@ -34391,7 +34399,7 @@
             <label>organization-defined frequency</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2015"/>
+         <prop name="required_by" value="2015-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="PS-2"/>
          <prop name="sort-id" value="ps-02"/>
@@ -34477,7 +34485,7 @@
             <label>organization-defined conditions requiring rescreening and, where rescreening is so indicated, the frequency of such rescreening</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2016"/>
+         <prop name="required_by" value="2016-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="PS-3"/>
          <prop name="sort-id" value="ps-03"/>
@@ -34721,7 +34729,7 @@
             <label>organization-defined time period</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2016"/>
+         <prop name="required_by" value="2016-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="PS-4"/>
          <prop name="sort-id" value="ps-04"/>
@@ -34967,7 +34975,7 @@
             <label>organization-defined time period</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2017"/>
+         <prop name="required_by" value="2017-02-01"/>
          <prop name="priority" value="P2"/>
          <prop name="label" value="PS-5"/>
          <prop name="sort-id" value="ps-05"/>
@@ -35086,7 +35094,7 @@
             <label>organization-defined frequency</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2017"/>
+         <prop name="required_by" value="2017-02-01"/>
          <prop name="priority" value="P3"/>
          <prop name="label" value="PS-6"/>
          <prop name="sort-id" value="ps-06"/>
@@ -35328,7 +35336,7 @@
             <label>organization-defined time period</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2016"/>
+         <prop name="required_by" value="2016-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="PS-7"/>
          <prop name="sort-id" value="ps-07"/>
@@ -35442,7 +35450,7 @@
             <label>organization-defined time period</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2017"/>
+         <prop name="required_by" value="2017-02-01"/>
          <prop name="priority" value="P3"/>
          <prop name="label" value="PS-8"/>
          <prop name="sort-id" value="ps-08"/>
@@ -35527,7 +35535,7 @@
             <label>organization-defined frequency</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2016"/>
+         <prop name="required_by" value="2016-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="RA-1"/>
          <prop name="sort-id" value="ra-01"/>
@@ -35676,7 +35684,7 @@
       <control class="SP800-53" id="ra-2">
          <title>Security Categorization</title>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2015"/>
+         <prop name="required_by" value="2015-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="RA-2"/>
          <prop name="sort-id" value="ra-02"/>
@@ -35749,13 +35757,13 @@
             <p>State organizations are responsible for defining all information classification categories except the Confidential Information category, which is defined in Subchapter A of this chapter, and establishing the appropriate controls for each.</p>
          </part>
          <part name="tamus_implementation" id="ra-2_tamus">
-            <part id="ra-2_tamus_smt.1" name="item">
+            <part name="item" id="ra-2_tamus_smt.1">
                <p>The System member:</p>
-               <part id="ra-2_tamus_smt.1.a" name="item">
+               <part name="item" id="ra-2_tamus_smt.1.a">
                   <prop name="label" value="a."/>
                   <p>categorizes information and information systems owned or managed by the member using a data categorization structure that incorporates the guidance provided in Appendix D: Data Categorization, at a minimum, and</p>
                </part>
-               <part id="ra-2_tamus_smt.1.b" name="item">
+               <part name="item" id="ra-2_tamus_smt.1.b">
                   <prop name="label" value="b."/>
                   <p>reduces, and eliminates where possible, the collection and/or use of sensitive personal information [TxBCC 521.002] in information resources under the control of the member.</p>
                </part>
@@ -35786,7 +35794,7 @@
             <label>organization-defined frequency</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2015"/>
+         <prop name="required_by" value="2015-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="RA-3"/>
          <prop name="sort-id" value="ra-03"/>
@@ -35934,12 +35942,12 @@
             </part>
          </part>
          <part name="tx_implementation" id="ra-3_tx">
-            <part id="ra-3_tx_smt.1" name="item">
+            <part name="item" id="ra-3_tx_smt.1">
                <prop name="label" value="1."/>
                <p>A risk assessment of information resources shall be performed and documented. The risk assessment shall be updated based on the inherent risk. The inherent risk and frequency of the risk assessment will be ranked, at a minimum, as either “High,”
               “Moderate,” or “Low.”</p>
             </part>
-            <part id="ra-3_tx_smt.2" name="item">
+            <part name="item" id="ra-3_tx_smt.2">
                <prop name="label" value="2."/>
                <p>Risk assessment results, vulnerability reports, and similar information shall be documented and presented to the state organization head or his or her designated representative(s). The state organization head or his or her designated
               representative(s) shall make the final risk management decisions to either accept exposures or protect the data according to its value/sensitivity. The state organization head or his or her designated representative(s) shall approve the security risk
@@ -35966,7 +35974,7 @@
             <label>organization-defined personnel or roles</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2016"/>
+         <prop name="required_by" value="2016-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="RA-5"/>
          <prop name="sort-id" value="ra-05"/>
@@ -36705,7 +36713,7 @@
             <label>organization-defined frequency</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2016"/>
+         <prop name="required_by" value="2016-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="SA-1"/>
          <prop name="sort-id" value="sa-01"/>
@@ -36852,7 +36860,7 @@
       <control class="SP800-53" id="sa-2">
          <title>Allocation of Resources</title>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2016"/>
+         <prop name="required_by" value="2016-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="SA-2"/>
          <prop name="sort-id" value="sa-02"/>
@@ -36940,7 +36948,7 @@
             <label>organization-defined system development life cycle</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2015"/>
+         <prop name="required_by" value="2015-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="SA-3"/>
          <prop name="sort-id" value="sa-03"/>
@@ -37034,7 +37042,7 @@
       <control class="SP800-53" id="sa-4">
          <title>Acquisition Process</title>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2015"/>
+         <prop name="required_by" value="2015-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="SA-4"/>
          <prop name="sort-id" value="sa-04"/>
@@ -37165,20 +37173,20 @@
             <p>The state organization includes security requirements and/or security specifications, either explicitly or by reference, in information system acquisition contracts based on an assessment of risk and in accordance with applicable laws and standards.</p>
          </part>
          <part name="tamus_implementation" id="sa-4_tamus">
-            <part id="sa-4_tamus_smt.1" name="item">
+            <part name="item" id="sa-4_tamus_smt.1">
                <p>The System member Information Security Officer (ISO):</p>
-               <part id="sa-4_tamus_smt.1.a" name="item">
+               <part name="item" id="sa-4_tamus_smt.1.a">
                   <prop name="label" value="a."/>
                   <p>reviews and approves the security requirements in acquisition contracts of any new information system that processes and/or stores sensitive or high-impact information prior to the member procuring the system or service, and</p>
                </part>
-               <part id="sa-4_tamus_smt.1.b" name="item">
+               <part name="item" id="sa-4_tamus_smt.1.b">
                   <prop name="label" value="b."/>
                   <p>ensures acquisition contracts for information systems, system components, or information system services address information security, backup, and privacy requirements.</p>
-                  <part id="sa-4_tamus_smt.1.b.1" name="item">
+                  <part name="item" id="sa-4_tamus_smt.1.b.1">
                      <prop name="label" value="(1)"/>
                      <p>Such contracts should include right-to-audit and other provisions to provide appropriate assurance that applications and information are adequately protected.</p>
                   </part>
-                  <part id="sa-4_tamus_smt.1.b.2" name="item">
+                  <part name="item" id="sa-4_tamus_smt.1.b.2">
                      <prop name="label" value="(2)"/>
                      <p>Vendors and third parties adhere to all state and Federal laws and System policies pertaining to the protection of information resources and privacy of sensitive information.</p>
                   </part>
@@ -37778,7 +37786,7 @@
             <label>organization-defined personnel or roles</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2017"/>
+         <prop name="required_by" value="2017-02-01"/>
          <prop name="priority" value="P2"/>
          <prop name="label" value="SA-5"/>
          <prop name="sort-id" value="sa-05"/>
@@ -38092,7 +38100,7 @@
             <label>organization-defined processes, methods, and techniques</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2016"/>
+         <prop name="required_by" value="2016-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="SA-9"/>
          <prop name="sort-id" value="sa-09"/>
@@ -38547,7 +38555,7 @@
             <label>organization-defined personnel</label>
          </param>
          <prop name="baseline" value="MOD, HIGH"/>
-         <prop name="required_by" value="February 2015"/>
+         <prop name="required_by" value="2015-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="SA-10"/>
          <prop name="sort-id" value="sa-10"/>
@@ -42824,7 +42832,7 @@
             <label>organization-defined frequency</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2016"/>
+         <prop name="required_by" value="2016-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="SC-1"/>
          <prop name="sort-id" value="sc-01"/>
@@ -42965,13 +42973,13 @@
             </part>
          </part>
          <part name="tx_implementation" id="sc-1_tx">
-            <part id="sc-1_tx_smt.1" name="item">
+            <part name="item" id="sc-1_tx_smt.1">
                <p>The state organization develops, disseminates, and periodically reviews/updates:</p>
-               <part id="sc-1_tx_smt.1.a" name="item">
+               <part name="item" id="sc-1_tx_smt.1.a">
                   <prop name="label" value="a."/>
                   <p>a formal, documented, system and communications protection policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and</p>
                </part>
-               <part id="sc-1_tx_smt.1.b" name="item">
+               <part name="item" id="sc-1_tx_smt.1.b">
                   <prop name="label" value="b."/>
                   <p>formal, documented procedures to facilitate the implementation of the system and communications protection policy and associated system and communications protection controls.</p>
                </part>
@@ -43452,7 +43460,7 @@
             <label>organization-defined security safeguards</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2015"/>
+         <prop name="required_by" value="2015-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="SC-5"/>
          <prop name="sort-id" value="sc-05"/>
@@ -43509,11 +43517,11 @@
             </part>
          </part>
          <part name="tx_implementation" id="sc-5_tx">
-            <part id="sc-5_tx_smt.1" name="item">
+            <part name="item" id="sc-5_tx_smt.1">
                <prop name="label" value="1."/>
                <p>Each state organization head or his/her designated representative and information security officer shall establish a security strategy that includes perimeter protection.</p>
             </part>
-            <part id="sc-5_tx_smt.2" name="item">
+            <part name="item" id="sc-5_tx_smt.2">
                <prop name="label" value="2."/>
                <p>The department will provide security information management services to include external network monitoring, scanning, and alerting for state organizations that utilize state information resources as specified in Chapters 2054 and 2059, Government
               Code. Perimeter security controls may include some or all of the following components: DMZ, firewall, intrusion detection or prevention system, or router.</p>
@@ -43793,7 +43801,7 @@
             </select>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2016"/>
+         <prop name="required_by" value="2016-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="SC-7"/>
          <prop name="sort-id" value="sc-07"/>
@@ -45024,7 +45032,7 @@
             </select>
          </param>
          <prop name="baseline" value="MOD, HIGH"/>
-         <prop name="required_by" value="February 2015"/>
+         <prop name="required_by" value="2015-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="SC-8"/>
          <prop name="sort-id" value="sc-08"/>
@@ -45499,7 +45507,7 @@
             <label>organization-defined requirements for key generation, distribution, storage, access, and destruction</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2016"/>
+         <prop name="required_by" value="2016-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="SC-12"/>
          <prop name="sort-id" value="sc-12"/>
@@ -45745,7 +45753,7 @@
             <label>organization-defined cryptographic uses and type of cryptography required for each use</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2015"/>
+         <prop name="required_by" value="2015-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="SC-13"/>
          <prop name="sort-id" value="sc-13"/>
@@ -45823,28 +45831,28 @@
             </part>
          </part>
          <part name="tx_implementation" id="sc-13_tx">
-            <part id="sc-13_tx_smt.1" name="item">
+            <part name="item" id="sc-13_tx_smt.1">
                <prop name="label" value="1."/>
                <p>Encryption requirements for information storage devices and data transmissions, as well as specific requirements for portable devices, removable media, and encryption key standards and management, shall be based on documented state organization
               risk management decisions.</p>
             </part>
-            <part id="sc-13_tx_smt.2" name="item">
+            <part name="item" id="sc-13_tx_smt.2">
                <prop name="label" value="2."/>
                <p>Confidential information that is transmitted over a public network (e.g., the Internet) must be encrypted.</p>
             </part>
-            <part id="sc-13_tx_smt.3" name="item">
+            <part name="item" id="sc-13_tx_smt.3">
                <prop name="label" value="3."/>
                <p>Confidential information stored in a public location that is directly accessible without compensating controls in place (e.g., FTP without access control) must be encrypted.</p>
             </part>
-            <part id="sc-13_tx_smt.4" name="item">
+            <part name="item" id="sc-13_tx_smt.4">
                <prop name="label" value="4."/>
                <p>Storing confidential information on portable devices is discouraged. Confidential information must be encrypted if copied to, or stored on, a portable computing device, removable media, or a non-state organization owned computing device.</p>
             </part>
-            <part id="sc-13_tx_smt.5" name="item">
+            <part name="item" id="sc-13_tx_smt.5">
                <prop name="label" value="5."/>
                <p>The minimum algorithm strength for protecting confidential information is a 128-bit encryption algorithm, subject to state organization risk management decisions justified and documented in accordance with TAC 202.21/71(c) and TAC 202.25/75.</p>
             </part>
-            <part id="sc-13_tx_smt.6" name="item">
+            <part name="item" id="sc-13_tx_smt.6">
                <prop name="label" value="6."/>
                <p>A state organization may also choose to implement additional protections, which may include encryption, for other data classifications.</p>
             </part>
@@ -45902,7 +45910,7 @@
             <label>organization-defined exceptions where remote activation is to be allowed</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2016"/>
+         <prop name="required_by" value="2016-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="SC-15"/>
          <prop name="sort-id" value="sc-15"/>
@@ -46777,7 +46785,7 @@
       <control class="SP800-53" id="sc-20">
          <title>Secure Name / Address Resolution Service (authoritative Source)</title>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2016"/>
+         <prop name="required_by" value="2016-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="SC-20"/>
          <prop name="sort-id" value="sc-20"/>
@@ -46896,7 +46904,7 @@
       <control class="SP800-53" id="sc-21">
          <title>Secure Name / Address Resolution Service (recursive or Caching Resolver)</title>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2016"/>
+         <prop name="required_by" value="2016-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="SC-21"/>
          <prop name="sort-id" value="sc-21"/>
@@ -46968,7 +46976,7 @@
       <control class="SP800-53" id="sc-22">
          <title>Architecture and Provisioning for Name / Address Resolution Service</title>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2016"/>
+         <prop name="required_by" value="2016-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="SC-22"/>
          <prop name="sort-id" value="sc-22"/>
@@ -49056,7 +49064,7 @@
       <control class="SP800-53" id="sc-39">
          <title>Process Isolation</title>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2016"/>
+         <prop name="required_by" value="2016-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="SC-39"/>
          <prop name="sort-id" value="sc-39"/>
@@ -49970,7 +49978,7 @@
             <label>organization-defined frequency</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2016"/>
+         <prop name="required_by" value="2016-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="SI-1"/>
          <prop name="sort-id" value="si-01"/>
@@ -50120,7 +50128,7 @@
             <label>organization-defined time period</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2016"/>
+         <prop name="required_by" value="2016-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="SI-2"/>
          <prop name="sort-id" value="si-02"/>
@@ -50592,7 +50600,7 @@
             <label>organization-defined action</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2015"/>
+         <prop name="required_by" value="2015-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="SI-3"/>
          <prop name="sort-id" value="si-03"/>
@@ -50755,13 +50763,13 @@
             <p>The information system implements malicious code protection.</p>
          </part>
          <part name="tamus_implementation" id="si-3_tamus">
-            <part id="si-3_tamus_smt.1" name="item">
+            <part name="item" id="si-3_tamus_smt.1">
                <p>The System member:</p>
-               <part id="si-3_tamus_smt.1.a" name="item">
+               <part name="item" id="si-3_tamus_smt.1.a">
                   <prop name="label" value="a."/>
                   <p>ensures all System-owned or -managed information systems that connect to a member network employ endpoint protection software and any other protective measures required by applicable policies or guidelines, and</p>
                </part>
-               <part id="si-3_tamus_smt.1.b" name="item">
+               <part name="item" id="si-3_tamus_smt.1.b">
                   <prop name="label" value="b."/>
                   <p>ensures personally owned devices that connect to networks within the same boundary as confidential or high-impact information systems employ endpoint protection software or suitable compensating controls, based on assessed risk.</p>
                </part>
@@ -51288,7 +51296,7 @@
             <label>organization-defined frequency</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2015"/>
+         <prop name="required_by" value="2015-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="SI-4"/>
          <prop name="sort-id" value="si-04"/>
@@ -51512,11 +51520,11 @@
             </part>
          </part>
          <part name="tx_implementation" id="si-4_tx">
-            <part id="si-4_tx_smt.1" name="item">
+            <part name="item" id="si-4_tx_smt.1">
                <prop name="label" value="1."/>
                <p>Each state organization head or his/her designated representative and information security officer shall establish a security strategy that includes perimeter protection.</p>
             </part>
-            <part id="si-4_tx_smt.2" name="item">
+            <part name="item" id="si-4_tx_smt.2">
                <prop name="label" value="2."/>
                <p>The department will provide security information management services to include external network monitoring, scanning, and alerting for state organizations that utilize State information resources as specified in Chapters 2054 and 2059, Government
               Code. Perimeter security controls may include some or all of the following components: DMZ, firewall, intrusion detection or prevention system, or router.</p>
@@ -52883,7 +52891,7 @@
             <label>organization-defined external organizations</label>
          </param>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2016"/>
+         <prop name="required_by" value="2016-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="SI-5"/>
          <prop name="sort-id" value="si-05"/>
@@ -55043,7 +55051,7 @@
       <control class="SP800-53" id="si-12">
          <title>Information Handling and Retention</title>
          <prop name="baseline" value="LOW, MOD, HIGH"/>
-         <prop name="required_by" value="February 2017"/>
+         <prop name="required_by" value="2017-02-01"/>
          <prop name="priority" value="P2"/>
          <prop name="label" value="SI-12"/>
          <prop name="sort-id" value="si-12"/>
@@ -55775,7 +55783,7 @@
          <param id="pm-1_prm_1">
             <label>organization-defined frequency</label>
          </param>
-         <prop name="required_by" value="February 2015"/>
+         <prop name="required_by" value="2015-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="PM-1"/>
          <prop name="sort-id" value="pm-01"/>
@@ -55951,7 +55959,7 @@
       </control>
       <control class="SP800-53" id="pm-2">
          <title>Senior Information Security Officer</title>
-         <prop name="required_by" value="February 2015"/>
+         <prop name="required_by" value="2015-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="PM-2"/>
          <prop name="sort-id" value="pm-02"/>
@@ -56004,7 +56012,7 @@
       </control>
       <control class="SP800-53" id="pm-3">
          <title>Information Security Resources</title>
-         <prop name="required_by" value="February 2015"/>
+         <prop name="required_by" value="2015-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="PM-3"/>
          <prop name="sort-id" value="pm-03"/>
@@ -56085,7 +56093,7 @@
       </control>
       <control class="SP800-53" id="pm-4">
          <title>Plan of Action and Milestones Process</title>
-         <prop name="required_by" value="February 2016"/>
+         <prop name="required_by" value="2016-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="PM-4"/>
          <prop name="sort-id" value="pm-04"/>
@@ -56190,7 +56198,7 @@
       </control>
       <control class="SP800-53" id="pm-5">
          <title>Information System Inventory</title>
-         <prop name="required_by" value="February 2016"/>
+         <prop name="required_by" value="2016-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="PM-5"/>
          <prop name="sort-id" value="pm-05"/>
@@ -56243,17 +56251,17 @@
             <p>The state organization develops and maintains an inventory of its information systems.</p>
          </part>
          <part name="tamus_implementation" id="pm-5_tamus">
-            <part id="pm-5_tamus_smt.1" name="item">
+            <part name="item" id="pm-5_tamus_smt.1">
                <p>The System member:</p>
-               <part id="pm-5_tamus_smt.1.a" name="item">
+               <part name="item" id="pm-5_tamus_smt.1.a">
                   <prop name="label" value="a."/>
                   <p>designates a single system of record for inventory of all information systems [SP 800-171r2] and network-attached operational technology [SP 800-37r2] owned or managed by the member;</p>
                </part>
-               <part id="pm-5_tamus_smt.1.b" name="item">
+               <part name="item" id="pm-5_tamus_smt.1.b">
                   <prop name="label" value="b."/>
                   <p>includes any cloud computing services [SP 800-145] operated by the member in its inventory of information systems, and</p>
                </part>
-               <part id="pm-5_tamus_smt.1.c" name="item">
+               <part name="item" id="pm-5_tamus_smt.1.c">
                   <prop name="label" value="c."/>
                   <p>designates which data regarding an information system to record in the inventory of information systems. At a minimum, the data includes a unique identifier (e.g., serial number or system name), owner, custodian, description of the information
                 sytem's function or major application, and highest level of data categorization stored/processed on the information system.</p>
@@ -56263,7 +56271,7 @@
       </control>
       <control class="SP800-53" id="pm-6">
          <title>Information Security Measures of Performance</title>
-         <prop name="required_by" value="February 2016"/>
+         <prop name="required_by" value="2016-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="PM-6"/>
          <prop name="sort-id" value="pm-06"/>
@@ -56319,7 +56327,7 @@
       </control>
       <control class="SP800-53" id="pm-7">
          <title>Enterprise Architecture</title>
-         <prop name="required_by" value="February 2016"/>
+         <prop name="required_by" value="2016-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="PM-7"/>
          <prop name="sort-id" value="pm-07"/>
@@ -56934,7 +56942,7 @@
       </control>
       <control class="SP800-53" id="pm-16">
          <title>Threat Awareness Program</title>
-         <prop name="required_by" value="February 2016"/>
+         <prop name="required_by" value="2016-02-01"/>
          <prop name="priority" value="P1"/>
          <prop name="label" value="PM-16"/>
          <prop name="sort-id" value="pm-16"/>

@@ -85,33 +85,33 @@
     <alter control-id="cm-3">
       <add position="ending" id-ref="cm-3_smt">
         <part name="tamus_implementation" id="cm-3_tamus">
-          <part id="cm-3_tamus_smt.1" name="item">
+          <part name="item" id="cm-3_tamus_smt.1">
             <p>The System member incorporates change management processes to ensure secure, reliable, and stable operations to which all offices that support information systems adhere. The change management process incorporates guidelines that address:</p>
-            <part id="cm-3_tamus_smt.1.a" name="item">
+            <part name="item" id="cm-3_tamus_smt.1.a">
               <prop name="label" value="a."/>
               <p>formally identifying, classifying, prioritizing, and requesting changes;</p>
             </part>
-            <part id="cm-3_tamus_smt.1.b" name="item">
+            <part name="item" id="cm-3_tamus_smt.1.b">
               <prop name="label" value="b."/>
               <p>identifying and deploying emergency changes;</p>
             </part>
-            <part id="cm-3_tamus_smt.1.c" name="item">
+            <part name="item" id="cm-3_tamus_smt.1.c">
               <prop name="label" value="c."/>
               <p>assessing potential impacts from changes;</p>
             </part>
-            <part id="cm-3_tamus_smt.1.d" name="item">
+            <part name="item" id="cm-3_tamus_smt.1.d">
               <prop name="label" value="d."/>
               <p>authorizing changes and exceptions;</p>
             </part>
-            <part id="cm-3_tamus_smt.1.e" name="item">
+            <part name="item" id="cm-3_tamus_smt.1.e">
               <prop name="label" value="e."/>
               <p>testing changes;</p>
             </part>
-            <part id="cm-3_tamus_smt.1.f" name="item">
+            <part name="item" id="cm-3_tamus_smt.1.f">
               <prop name="label" value="f."/>
               <p>implementing changes and planning for back-outs, and</p>
             </part>
-            <part id="cm-3_tamus_smt.1.g" name="item">
+            <part name="item" id="cm-3_tamus_smt.1.g">
               <prop name="label" value="g."/>
               <p>documenting and tracking changes.</p>
             </part>
@@ -152,17 +152,17 @@
     <alter control-id="cp-4">
       <add position="ending" id-ref="cp-4_smt">
         <part name="tamus_implementation" id="cp-4_tamus">
-          <part id="cp-4_tamus_smt.1" name="item">
+          <part name="item" id="cp-4_tamus_smt.1">
             <p>The System member:</p>
-            <part id="cp-4_tamus_smt.1.a" name="item">
+            <part name="item" id="cp-4_tamus_smt.1.a">
               <prop name="label" value="a."/>
               <p>tests the contingency plan at least annually through a tabletop exercise;</p>
             </part>
-            <part id="cp-4_tamus_smt.1.b" name="item">
+            <part name="item" id="cp-4_tamus_smt.1.b">
               <prop name="label" value="b."/>
               <p>tests the contingency plan at least every three years with a full interruption of high-impact, on-premise services, and</p>
             </part>
-            <part id="cp-4_tamus_smt.1.c" name="item">
+            <part name="item" id="cp-4_tamus_smt.1.c">
               <prop name="label" value="c."/>
               <p>includes information resources contingency plan testing in the member’s emergency management plan testing and exercises.</p>
             </part>
@@ -190,8 +190,16 @@
     <alter control-id="ir-6">
       <add position="ending" id-ref="ir-6_smt">
         <part name="tamus_implementation" id="ir-6_tamus">
-          <p>The System member reports information security incidents where the confidentiality, integrity, or availability of a major System-owned or -managed information system, or a system processing confidential information, is potentially compromised to
-            the System Office of Cybersecurity within four hours of being identified by the member or the Security Operations Center (SOC), following the Incident Notifation Guidelines published at https://cyber-standards.tamus.edu/incident-notification.</p>
+          <p>The System member reports information security incidents where:</p>
+          <part name="item" id="ir-6_tamus_smt.a">
+            <prop name="label" value="a."/>
+            <p>the confidentiality, integrity, or availability of a major System-owned or -managed information system, or</p>
+          </part>
+          <part name="item" id="ir-6_tamus_smt.b">
+            <prop name="label" value="b."/>
+            <p>a system processing confidential information,</p>
+          </part>
+          <p>is potentially compromised to the System Office of Cybersecurity within four hours of being identified by the member or the Security Operations Center (SOC), following the Incident Notifation Guidelines published at https://cyber-standards.tamus.edu/incident-notification.</p>
         </part>
       </add>
     </alter>
@@ -221,22 +229,22 @@
       </add>
       <add position="ending" id-ref="pl-4_smt">
         <part name="tamus_implementation" id="pl-4_tamus">
-          <part id="pl-4_tamus_smt.1" name="item">
+          <part name="item" id="pl-4_tamus_smt.1">
             <p>The System member:</p>
-            <part id="pl-4_tamus_smt.1.a" name="item">
+            <part name="item" id="pl-4_tamus_smt.1.a">
               <prop name="label" value="a."/>
               <p>documents acceptable use guidelines;</p>
             </part>
-            <part id="pl-4_tamus_smt.1.b" name="item">
+            <part name="item" id="pl-4_tamus_smt.1.b">
               <prop name="label" value="b."/>
               <p>ensures users formally acknowledge, agree to abide by, and adhere to prudent and responsible Internet use practices (including reasonable personal use) outlined in Texas A&amp;M System Policy 33.04, Use of System Resources [TAMUS 33.04], and the
                 member’s acceptable use guidelines;</p>
             </part>
-            <part id="pl-4_tamus_smt.1.c" name="item">
+            <part name="item" id="pl-4_tamus_smt.1.c">
               <prop name="label" value="c."/>
               <p>establishes a documented process for authorization to monitor member information resources, and</p>
             </part>
-            <part id="pl-4_tamus_smt.1.d" name="item">
+            <part name="item" id="pl-4_tamus_smt.1.d">
               <prop name="label" value="d."/>
               <p>monitors information resources in accordance with Texas A&amp;M System Policy 29.01, Information Resources [TAMUS 29.01].</p>
             </part>
@@ -251,17 +259,17 @@
       </add>
       <add position="ending" id-ref="pm-5_smt">
         <part name="tamus_implementation" id="pm-5_tamus">
-          <part id="pm-5_tamus_smt.1" name="item">
+          <part name="item" id="pm-5_tamus_smt.1">
             <p>The System member:</p>
-            <part id="pm-5_tamus_smt.1.a" name="item">
+            <part name="item" id="pm-5_tamus_smt.1.a">
               <prop name="label" value="a."/>
               <p>designates a single system of record for inventory of all information systems [SP 800-171r2] and network-attached operational technology [SP 800-37r2] owned or managed by the member;</p>
             </part>
-            <part id="pm-5_tamus_smt.1.b" name="item">
+            <part name="item" id="pm-5_tamus_smt.1.b">
               <prop name="label" value="b."/>
               <p>includes any cloud computing services [SP 800-145] operated by the member in its inventory of information systems, and</p>
             </part>
-            <part id="pm-5_tamus_smt.1.c" name="item">
+            <part name="item" id="pm-5_tamus_smt.1.c">
               <prop name="label" value="c."/>
               <p>designates which data regarding an information system to record in the inventory of information systems. At a minimum, the data includes a unique identifier (e.g., serial number or system name), owner, custodian, description of the information
                 sytem's function or major application, and highest level of data categorization stored/processed on the information system.</p>
@@ -280,13 +288,13 @@
     <alter control-id="ra-2">
       <add position="ending" id-ref="ra-2_smt">
         <part name="tamus_implementation" id="ra-2_tamus">
-          <part id="ra-2_tamus_smt.1" name="item">
+          <part name="item" id="ra-2_tamus_smt.1">
             <p>The System member:</p>
-            <part id="ra-2_tamus_smt.1.a" name="item">
+            <part name="item" id="ra-2_tamus_smt.1.a">
               <prop name="label" value="a."/>
               <p>categorizes information and information systems owned or managed by the member using a data categorization structure that incorporates the guidance provided in Appendix D: Data Categorization, at a minimum, and</p>
             </part>
-            <part id="ra-2_tamus_smt.1.b" name="item">
+            <part name="item" id="ra-2_tamus_smt.1.b">
               <prop name="label" value="b."/>
               <p>reduces, and eliminates where possible, the collection and/or use of sensitive personal information [TxBCC 521.002] in information resources under the control of the member.</p>
             </part>
@@ -304,20 +312,20 @@
     <alter control-id="sa-4">
       <add position="ending" id-ref="sa-4_smt">
         <part name="tamus_implementation" id="sa-4_tamus">
-          <part id="sa-4_tamus_smt.1" name="item">
+          <part name="item" id="sa-4_tamus_smt.1">
             <p>The System member Information Security Officer (ISO):</p>
-            <part id="sa-4_tamus_smt.1.a" name="item">
+            <part name="item" id="sa-4_tamus_smt.1.a">
               <prop name="label" value="a."/>
               <p>reviews and approves the security requirements in acquisition contracts of any new information system that processes and/or stores sensitive or high-impact information prior to the member procuring the system or service, and</p>
             </part>
-            <part id="sa-4_tamus_smt.1.b" name="item">
+            <part name="item" id="sa-4_tamus_smt.1.b">
               <prop name="label" value="b."/>
               <p>ensures acquisition contracts for information systems, system components, or information system services address information security, backup, and privacy requirements.</p>
-              <part id="sa-4_tamus_smt.1.b.1" name="item">
+              <part name="item" id="sa-4_tamus_smt.1.b.1">
                 <prop name="label" value="(1)"/>
                 <p>Such contracts should include right-to-audit and other provisions to provide appropriate assurance that applications and information are adequately protected.</p>
               </part>
-              <part id="sa-4_tamus_smt.1.b.2" name="item">
+              <part name="item" id="sa-4_tamus_smt.1.b.2">
                 <prop name="label" value="(2)"/>
                 <p>Vendors and third parties adhere to all state and Federal laws and System policies pertaining to the protection of information resources and privacy of sensitive information.</p>
               </part>
@@ -339,13 +347,13 @@
     <alter control-id="si-3">
       <add position="ending" id-ref="si-3_smt">
         <part name="tamus_implementation" id="si-3_tamus">
-          <part id="si-3_tamus_smt.1" name="item">
+          <part name="item" id="si-3_tamus_smt.1">
             <p>The System member:</p>
-            <part id="si-3_tamus_smt.1.a" name="item">
+            <part name="item" id="si-3_tamus_smt.1.a">
               <prop name="label" value="a."/>
               <p>ensures all System-owned or -managed information systems that connect to a member network employ endpoint protection software and any other protective measures required by applicable policies or guidelines, and</p>
             </part>
-            <part id="si-3_tamus_smt.1.b" name="item">
+            <part name="item" id="si-3_tamus_smt.1.b">
               <prop name="label" value="b."/>
               <p>ensures personally owned devices that connect to networks within the same boundary as confidential or high-impact information systems employ endpoint protection software or suitable compensating controls, based on assessed risk.</p>
             </part>

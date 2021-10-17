@@ -5,6 +5,8 @@ header_title: Texas A&M System Cybersecurity Control Standards Catalog
 header_description: >
   Recently updated Texas A&M System required controls
 updated_controls:
+  - id: ir-6
+    revised: Revised 2021-10-15
   - id: ac-8
     revised: Moved from TR-1, 2021-09-04
   - id: ra-2
@@ -15,10 +17,10 @@ updated_controls:
 <h1>Texas A&M System Cybersecurity Control Standards Catalog</h1>
 
 <div class="catalog">
-  {% assign groups = site.data.tamus_catalog.catalog.groups | sort: "id" %}
-  {% for group in groups %}
-    {% for control in group.controls %}
-      {% for updated_control in page.updated_controls %}
+  {% assign groups = site.data.tamus_catalog.catalog.groups %}
+  {% for updated_control in page.updated_controls %}
+    {% for group in groups %}
+      {% for control in group.controls %}
         {% if updated_control.id == control.id %}
           <ul>
             {% include control.html revised=updated_control.revised %}

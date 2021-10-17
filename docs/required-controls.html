@@ -15,14 +15,9 @@ header_description: >
   <summary><strong>{{ group.id | upcase }} - {{ group.title }}</strong></summary>
     <ul>
       {% for control in group.controls %}
-        {% for part in control.parts %}
-          {% assign parts = control.parts | where: "name", "statement" %}
-          {% capture tx_id %}{{ control.id }}_tx{% endcapture %}
-          {% capture tamus_id %}{{ control.id }}_tamus{% endcapture %}
-          {% assign tx_required_by = parts[0].parts | where: "id", tx_id %}
-          {% assign tamus_required_by = parts[0].parts | where: "id", tamus_id %}
-        {% endfor %}
-        {% if tx_required_by[0] or tamus_required_by[0] %}
+        {% assign tx_required = control.props | where: "name", "required_by" %}
+        {% assign tamus_required = control.parts | where: "name", "tamus_implementation" %}
+        {% if tx_required[0] or tamus_required[0] %}
           {% include control.html %}
         {% endif %}
       {% endfor %}

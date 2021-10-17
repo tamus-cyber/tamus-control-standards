@@ -5,7 +5,7 @@
     {{ id[0].value }} {{ control.title }}
     {% if include.revised %} ({{ include.revised }}){% endif %}
   </strong>
-  <a class="control-link" href="{{ page.id }}#{{ control.id }}"><i class="fas fa-link"></i></a>
+  <a class="control-link" href="/control-catalog#{{ control.id }}"><i class="fas fa-link"></i></a>
 </summary>
     <dl>
       {% assign baseline = control.props | where: "name", "baseline" %}

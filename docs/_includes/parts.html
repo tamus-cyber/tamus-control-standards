@@ -2,14 +2,27 @@
 <ul>
 {% if part.title %}<strong>{{ part.title }}</strong>{% endif %}
 <li>
-  {% assign label = part.properties | where: "name", "label" %}
+  {% assign label = part.props | where: "name", "label" %}
   {% assign prose = part.prose %}
-  {% for param in control.parameters %}
-    {% assign prose = prose | replace: param.id, param.label %}
-    {% assign prose = prose | replace: "{{ ", "<em>[" %}
-    {% assign prose = prose | replace: " }}", "]</em>" %}
+  {% for param in control.params %}
+    {% if param.label %}
+      {% capture tag %} insert: param, {{ param.id }} {% endcapture %}
+      {% capture new_param %}<em>[{{ param.label }}]</em>{% endcapture %}
+      {% assign prose = prose | replace: tag, new_param %}
+    {% endif %}
+    {% if param.select %}
+      {% capture tag %} insert: param, {{ param.id }} {% endcapture %}
+      {% assign how-many = param.select.how-many | replace: "-", " " %}
+      {% assign choices = param.select.choice | join: ", " %}
+      {% capture new_param %}<em>[Select {{ how-many }}: {{ choices }}]</em>{% endcapture %}
+      {% assign prose = prose | replace: tag, new_param %}
+    {% endif %}
   {% endfor %}
-  {{ label[0].value }} {{ prose }}
+  {% assign prose = prose | replace: "{{", "" %}
+  {% assign prose = prose | replace: "}}", "" %}
+  {% capture prose_text %}{{ prose | markdownify }}{% endcapture %}
+  {% assign label_tag = "<p>" | append: label[0].value | append: " " %}
+  {{ prose_text | replace: "<p>", label_tag }}
   {% if part.parts %}
     {% assign parts = part.parts %}
     {% include parts.html %}

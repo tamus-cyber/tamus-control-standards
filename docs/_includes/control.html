@@ -1,36 +1,128 @@
 <details class="control-item" id="{{ control.id }}">
 <summary>
   <strong>
-    {{ control.id | upcase }} {{ control.title }}
+    {% assign id = control.props | where: "name", "label" %}
+    {{ id[0].value }} {{ control.title }}
     {% if include.revised %} ({{ include.revised }}){% endif %}
   </strong>
   <a class="control-link" href="{{ page.id }}#{{ control.id }}"><i class="fas fa-link"></i></a>
 </summary>
     <dl>
-      {% assign baseline = control.properties | where: "name", "baseline" %}
-      {% assign priority = control.properties | where: "name", "priority" %}
-      <dt>Baseline</dt>
-      <dd>{{ baseline[0].value | default: "None" }}</dd>
-      <dt>Priority</dt>
-      <dd>{{ priority[0].value | default: "P0" }}</dd>
-      <dt>Control Description</dt>
+      {% assign baseline = control.props | where: "name", "baseline" %}
+      {% assign required_by = control.props | where: "name", "required_by" %}
+      {% if baseline[0] %}
+        <dt>NIST Baseline</dt>
+        <dd>{{ baseline[0].value | default: "None" }}</dd>
+      {% endif %}
+      {% if required_by[0] %}
+        <dt>Required By</dt>
+        <dd>{{ required_by[0].value | default: "None" }}</dd>
+      {% endif %}
+      <dt>Control</dt>
+      {% assign withdrawn = control.props | where: "name", "status" %}
+      {% if withdrawn[0].value == "withdrawn" %}
+        <dd><ul><li><em>Control Withdrawn</em></li></ul></dd>
+      {% endif %}
       <dd>
         {% assign parts = control.parts | where: "name", "statement" %}
         {% include parts.html %}
       </dd>
-      <dt>Supplemental Guidance</dt>
-      <dd>
-        {% assign parts = control.parts | where: "name", "guidance" %}
-        {% include parts.html %}
-      </dd>
-      {% if control.links %}
+      {% assign parts = control.parts | where: "name", "tx_implementation" %}
+      {% if parts[0] %}
+        <dt>State Implementation Details</dt>
+        <dd>
+          {% include parts.html %}
+        </dd>
+      {% endif %}
+      {% assign parts = control.parts | where: "name", "tamus_implementation" %}
+      {% if parts[0] %}
+        <dt>TAMUS Implementation Details</dt>
+        <dd>
+          {% include parts.html %}
+        </dd>
+      {% endif %}
+      {% assign parts = control.parts | where: "name", "guidance" %}
+      {% if parts[0] %}
+        <dt>Supplemental Guidance</dt>
+        <dd>
+          {% include parts.html %}
+        </dd>
+      {% endif %}
+      {% assign references = control.links | where: "rel", "reference" %}
+      {% if references[0] %}
         <dt>References</dt>
         <dd>
           <ul>
-            {% for link in control.links %}
-              <li>{{ link.text }}</li>
+            {% assign resources = site.data.tamus_catalog.catalog.back-matter.resources %}
+            {% for link in references %}
+              {% assign uuid = link.href | replace: "#", "" %}
+              {% assign resource = resources | where: "uuid", uuid %}
+              <li><a href="{{ resource[0].rlinks[0].href }}">{{ resource[0].title }}</a></li>
             {% endfor %}
           </ul>
+        </dd>
+      {% endif %}
+      {% assign related = control.links | where: "rel", "related" %}
+      {% if related[0] %}
+        <dt>Related Controls</dt>
+        <dd>
+          {% assign related_controls = related | map: "href" %}
+          {{ related_controls | join: ", " | upcase | replace: "#", "" }}
+        </dd>
+      {% endif %}
+      {% assign incorporated_into = control.links | where: "rel", "incorporated-into" %}
+      {% if incorporated_into[0] %}
+        <dt>Incorporated Into</dt>
+        <dd>
+          <ul>
+            {% for link in incorporated_into %}
+              <li><a href="{{ link.href }}">{{ link.href | replace: "#", "" | upcase }}</a></li>
+            {% endfor %}
+          </ul>
+        </dd>
+      {% endif %}
+      {% assign enhancements = control.controls %}
+      {% for control in enhancements %}
+        {% assign tx_required = control.props | where: "name", "required_by" %}
+        {% assign tamus_required = control.parts | where: "name", "tamus_implementation" %}
+        {% if page.controls == "required-controls" and tx_required[0] or tamus_required[0] %}
+          {% assign enhancements_exist = true %}
+        {% endif %}
+        {% if page.controls == "tamus-required-controls" and tamus_required[0] %}
+          {% assign enhancements_exist = true %}
+        {% endif %}
+        {% unless page.controls %}
+          {% if enhancements[0] %}
+            {% assign enhancements_exist = true %}
+          {% endif %}
+        {% endunless %}
+      {% endfor %}
+      {% if enhancements_exist %}
+        <dt>Control Enhancements</dt>
+        {% assign enhancements_exist = false %}
+        <dd>
+          {% if page.controls == "required-controls" %}
+            {% for control in enhancements %}
+              {% assign tx_required = control.props | where: "name", "required_by" %}
+              {% assign tamus_required = control.parts | where: "name", "tamus_implementation" %}
+              {% if tx_required[0] or tamus_required[0] %}
+                {% include control.html %}
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+          {% if page.controls == "tamus-required-controls" %}
+            {% for control in enhancements %}
+              {% assign tamus_required = control.parts | where: "name", "tamus_implementation" %}
+              {% if tamus_required[0] %}
+                {% include control.html %}
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+          {% unless page.controls %}
+            {% for control in enhancements %}
+              {% include control.html %}
+            {% endfor %}
+          {% endunless %}
         </dd>
       {% endif %}
     </dl>

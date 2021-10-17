@@ -190,16 +190,20 @@
     <alter control-id="ir-6">
       <add position="ending" id-ref="ir-6_smt">
         <part name="tamus_implementation" id="ir-6_tamus">
-          <p>The System member reports information security incidents where:</p>
-          <part name="item" id="ir-6_tamus_smt.a">
-            <prop name="label" value="a."/>
-            <p>the confidentiality, integrity, or availability of a major System-owned or -managed information system, or</p>
+          <part name="item" id="ir-6_tamus_smt.1">
+            <p>The System member reports information security incidents where:</p>
+            <part name="item" id="ir-6_tamus_smt.1.a">
+              <prop name="label" value="a."/>
+              <p>the confidentiality, integrity, or availability of a major System-owned or -managed information system, or</p>
+            </part>
+            <part name="item" id="ir-6_tamus_smt.1.b">
+              <prop name="label" value="b."/>
+              <p>a system processing confidential information,</p>
+            </part>
           </part>
-          <part name="item" id="ir-6_tamus_smt.b">
-            <prop name="label" value="b."/>
-            <p>a system processing confidential information,</p>
+          <part name="item" id="ir-6_tamus_smt.2">
+            <p>is potentially compromised to the System Office of Cybersecurity within four hours of being identified by the member or the Security Operations Center (SOC), following the Incident Notifation Guidelines published at https://cyber-standards.tamus.edu/incident-notification.</p>
           </part>
-          <p>is potentially compromised to the System Office of Cybersecurity within four hours of being identified by the member or the Security Operations Center (SOC), following the Incident Notifation Guidelines published at https://cyber-standards.tamus.edu/incident-notification.</p>
         </part>
       </add>
     </alter>

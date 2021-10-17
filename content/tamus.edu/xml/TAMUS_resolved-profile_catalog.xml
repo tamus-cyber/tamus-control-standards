@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0"
-         uuid="f0bfc169-2050-477e-9e3c-ed937193f886">
+         uuid="7e1db7e0-1933-4ffd-b104-372a2e32d2cf">
    <metadata>
       <title>Texas A&amp;M University System Cybersecurity Control Standards</title>
       <published>2020-08-18T18:17:00Z</published>
-      <last-modified>2021-10-17T10:28:54.604-05:00</last-modified>
+      <last-modified>2021-10-17T10:35:20.689-05:00</last-modified>
       <version>1.2.1</version>
       <oscal-version>1.0.0-milestone3</oscal-version>
       <link rel="resolution-source" href="TAMUS_profile.xml"/>
@@ -25492,16 +25492,20 @@
             </part>
          </part>
          <part name="tamus_implementation" id="ir-6_tamus">
-            <p>The System member reports information security incidents where:</p>
-            <part name="item" id="ir-6_tamus_smt.a">
-               <prop name="label" value="a."/>
-               <p>the confidentiality, integrity, or availability of a major System-owned or -managed information system, or</p>
+            <part name="item" id="ir-6_tamus_smt.1">
+               <p>The System member reports information security incidents where:</p>
+               <part name="item" id="ir-6_tamus_smt.1.a">
+                  <prop name="label" value="a."/>
+                  <p>the confidentiality, integrity, or availability of a major System-owned or -managed information system, or</p>
+               </part>
+               <part name="item" id="ir-6_tamus_smt.1.b">
+                  <prop name="label" value="b."/>
+                  <p>a system processing confidential information,</p>
+               </part>
             </part>
-            <part name="item" id="ir-6_tamus_smt.b">
-               <prop name="label" value="b."/>
-               <p>a system processing confidential information,</p>
+            <part name="item" id="ir-6_tamus_smt.2">
+               <p>is potentially compromised to the System Office of Cybersecurity within four hours of being identified by the member or the Security Operations Center (SOC), following the Incident Notifation Guidelines published at https://cyber-standards.tamus.edu/incident-notification.</p>
             </part>
-            <p>is potentially compromised to the System Office of Cybersecurity within four hours of being identified by the member or the Security Operations Center (SOC), following the Incident Notifation Guidelines published at https://cyber-standards.tamus.edu/incident-notification.</p>
          </part>
          <control class="SP800-53-enhancement" id="ir-6.1">
             <title>Automated Reporting</title>

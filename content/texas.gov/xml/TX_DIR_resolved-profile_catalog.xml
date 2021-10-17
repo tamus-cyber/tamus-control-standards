@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0"
-         uuid="9803bcf0-e3f6-47fd-b581-b05142e2842a">
+         uuid="929433b2-c2e2-4720-87b4-5e2e96cd1748">
    <metadata>
       <title>Texas Security Control Standards Catalog Profile</title>
       <published>2020-07-07T12:55:52Z</published>
-      <last-modified>2021-10-17T10:28:49.046-05:00</last-modified>
+      <last-modified>2021-10-17T10:35:14.962-05:00</last-modified>
       <version>1.3</version>
       <oscal-version>1.0.0-milestone3</oscal-version>
       <link rel="resolution-source" href="TX_DIR_profile.xml"/>

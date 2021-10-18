@@ -11,13 +11,11 @@ nav:
   - Reporting Contact Information
   - References
 ---
-# Texas A&M University System Incident Notification Guidelines
-
 **These guidelines are effective October 15, 2021.**
 
 This document provides guidance to Texas A&M University System institutions and agencies for submitting incident notifications to the Texas A&M System Office of Cybersecurity.
 
-Title 1 Texas Administrative Code §202.1 defines "security incident" as "an event which results in the accidental or deliberate unauthorized access, loss, disclosure, modification, disruption, or destruction of information or information resources." [[1]] Texas A&M System cybersecurity control standard IR-6 [[2]] requires system members to notify and consult with the System Chief Information Security Officer regarding information security incidents involving their information and information systems, whether managed by the agency/institution, contractor, or other source. This includes incidents involving industrial control systems.
+Title 1 Texas Administrative Code §202.1 defines "security incident" as "an event which results in the accidental or deliberate unauthorized access, loss, disclosure, modification, disruption, or destruction of information or information resources." [[1]] Texas A&M System cybersecurity control standard IR-6 [[2]] requires system members to notify the System Office of Cybersecurity and consult with the System Chief Information Security Officer regarding information security incidents involving their information and information systems, whether managed by the agency/institution, contractor, or other source. This includes privacy incidents that do not impact information systems and any incidents involving industrial control systems or operational technology.
 
 These guidelines support the Texas A&M System Office of Cybersecurity in executing its mission objectives and provide the following benefits:
 
@@ -69,4 +67,4 @@ The table below defines each impact category description and its associated seve
 [2] [TAMUS Cybersecurity Control Standard IR-6] [2]
 
 [1]: https://texreg.sos.state.tx.us/public/readtac$ext.TacPage?sl=R&app=9&p_dir=&p_rloc=&p_tloc=&p_ploc=&pg=1&p_tac=&ti=1&pt=10&ch=202&rl=1 "1 TAC §202.1"
-[2]: https://cyber-standards.tamus.edu/control-catalog#ir-6 "TAMUS Cybersecurity Control Standard IR-6"
+[2]: https://cyber-standards.tamus.edu/control-catalog/ir#ir-6 "TAMUS Cybersecurity Control Standard IR-6"

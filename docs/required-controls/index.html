@@ -5,10 +5,9 @@ header_title: Texas A&M System Cybersecurity Control Standards Catalog
 header_description: >
   Texas DIR and Texas A&M System required controls
   from NIST SP 800-53 Revision 4 control catalog
+breadcrumb_text: State/TAMUS Required Control Standards Catalog
 controls: required-controls
 ---
-<h1>Texas A&M System Cybersecurity Control Standards Catalog</h1>
-
 <div class="catalog">
   {% assign groups = site.data.tamus_catalog.catalog.groups | sort: "id" %}
   {% for group in groups %}
@@ -16,23 +15,15 @@ controls: required-controls
     {% for control in group.controls %}
       {% assign tx_required = control.props | where: "name", "required_by" %}
       {% assign tamus_required = control.parts | where: "name", "tamus_implementation" %}
-      {% if tx_required[0] or tamus_required[0] and required_group == false %}
+      {% if required_group == false and page.controls == "required-controls" and tx_required[0] or tamus_required[0] %}
+        {% assign required_group = true %}
+      {% endif %}
+      {% if required_group == false and page.controls == "tamus-required-controls" and tamus_required[0] %}
         {% assign required_group = true %}
       {% endif %}
     {% endfor %}
     {% if required_group == true %}
-      <details>
-      <summary><strong>{{ group.id | upcase }} - {{ group.title }}</strong></summary>
-        <ul>
-          {% for control in group.controls %}
-            {% assign tx_required = control.props | where: "name", "required_by" %}
-            {% assign tamus_required = control.parts | where: "name", "tamus_implementation" %}
-            {% if tx_required[0] or tamus_required[0] %}
-              {% include control.html %}
-            {% endif %}
-          {% endfor %}
-        </ul>
-      </details>
+      <h4><a href="{{ group.id }}">{{ group.id | upcase }} - {{ group.title }}</a></h4>
     {% endif %}
   {% endfor %}
 </div>

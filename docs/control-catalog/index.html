@@ -1,0 +1,13 @@
+---
+layout: main
+title: Texas A&M System Cybersecurity Control Standards Catalog
+header_title: Texas A&M System Cybersecurity Control Standards Catalog
+header_description: Complete NIST SP 800-53 Revision 4 control catalog
+breadcrumb_text: Control Standards Catalog
+---
+<div class="catalog">
+  {% assign groups = site.data.tamus_catalog.catalog.groups | sort: "id" %}
+  {% for group in groups %}
+    <h4><a href="{{ group.id }}">{{ group.id | upcase }} - {{ group.title }}</a></h4>
+  {% endfor %}
+</div>

@@ -1,0 +1,28 @@
+---
+layout: main
+title: Texas A&M System Cybersecurity Control Standards Catalog
+header_title: Texas A&M System Cybersecurity Control Standards Catalog
+header_description: >
+  Texas A&M System required controls from NIST SP 800-53 Revision 4 control catalog
+breadcrumb_text: TAMUS Required Control Standards Catalog
+controls: tamus-required-controls
+---
+<div class="catalog">
+  {% assign groups = site.data.tamus_catalog.catalog.groups | sort: "id" %}
+  {% for group in groups %}
+    {% assign required_group = false %}
+    {% for control in group.controls %}
+      {% assign tx_required = control.props | where: "name", "required_by" %}
+      {% assign tamus_required = control.parts | where: "name", "tamus_implementation" %}
+      {% if required_group == false and page.controls == "required-controls" and tx_required[0] or tamus_required[0] %}
+        {% assign required_group = true %}
+      {% endif %}
+      {% if required_group == false and page.controls == "tamus-required-controls" and tamus_required[0] %}
+        {% assign required_group = true %}
+      {% endif %}
+    {% endfor %}
+    {% if required_group == true %}
+      <h4><a href="{{ group.id }}">{{ group.id | upcase }} - {{ group.title }}</a></h4>
+    {% endif %}
+  {% endfor %}
+</div>

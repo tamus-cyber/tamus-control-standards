@@ -1,0 +1,36 @@
+---
+layout: main
+title: Awareness and Training
+header_title: Texas A&M System Cybersecurity Control Standards Catalog
+header_description: Complete NIST SP 800-53 Revision 4 control catalog
+---
+<div class="catalog">
+  {% assign family = page.name | remove: ".html" %}
+  {% assign groups = site.data.tamus_catalog.catalog.groups | where: "id", family %}
+  <ul>
+    {% for control in groups[0].controls %}
+      {% include control.html %}
+    {% endfor %}
+  </ul>
+</div>
+<script lang="javascript" type="text/javascript">
+  if (window.location.hash) {
+    let controlHash = location.hash.match(/^#([a-z]{2}-\d+)(\.\d+)*$/);
+
+    if (controlHash) {
+      let control = document.getElementById(controlHash[1]);
+
+      if (control) {
+        control.closest('details').open = true;
+      }
+
+      let enhancement = document.getElementById(controlHash[1] + controlHash[2]);
+
+      if (enhancement) {
+        enhancement.closest('details').open = true;
+      }
+
+      location.href = hash[0]
+    }
+  }
+</script>

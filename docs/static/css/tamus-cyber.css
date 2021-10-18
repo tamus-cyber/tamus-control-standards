@@ -35,6 +35,10 @@ ol li {
   list-style-type: decimal;
 }
 
+nav {
+  font-size: 0.8em;
+}
+
 ul li {
   list-style-type: disc;
 }

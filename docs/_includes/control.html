@@ -5,7 +5,7 @@
     {{ id[0].value }} {{ control.title }}
     {% if include.revised %} ({{ include.revised }}){% endif %}
   </strong>
-  <a class="control-link" href="/control-catalog#{{ control.id }}"><i class="fas fa-link"></i></a>
+  <a class="control-link" href="/control-catalog/{{ control.id | slice: 0, 2 }}#{{ control.id }}"><i class="fas fa-link"></i></a>
 </summary>
     <dl>
       {% assign baseline = control.props | where: "name", "baseline" %}
@@ -85,44 +85,33 @@
       {% for control in enhancements %}
         {% assign tx_required = control.props | where: "name", "required_by" %}
         {% assign tamus_required = control.parts | where: "name", "tamus_implementation" %}
-        {% if page.controls == "required-controls" and tx_required[0] or tamus_required[0] %}
+        {% if page.dir == "/required-controls/" and tx_required[0] or tamus_required[0] %}
           {% assign enhancements_exist = true %}
         {% endif %}
-        {% if page.controls == "tamus-required-controls" and tamus_required[0] %}
+        {% if page.dir == "/tamus-required-controls/" and tamus_required[0] %}
           {% assign enhancements_exist = true %}
         {% endif %}
-        {% unless page.controls %}
-          {% if enhancements[0] %}
-            {% assign enhancements_exist = true %}
-          {% endif %}
-        {% endunless %}
+        {% if page.dir == "/control-catalog/" %}
+          {% assign enhancements_exist = true %}
+        {% endif %}
       {% endfor %}
       {% if enhancements_exist %}
         <dt>Control Enhancements</dt>
         {% assign enhancements_exist = false %}
         <dd>
-          {% if page.controls == "required-controls" %}
-            {% for control in enhancements %}
-              {% assign tx_required = control.props | where: "name", "required_by" %}
-              {% assign tamus_required = control.parts | where: "name", "tamus_implementation" %}
-              {% if tx_required[0] or tamus_required[0] %}
-                {% include control.html %}
-              {% endif %}
-            {% endfor %}
-          {% endif %}
-          {% if page.controls == "tamus-required-controls" %}
-            {% for control in enhancements %}
-              {% assign tamus_required = control.parts | where: "name", "tamus_implementation" %}
-              {% if tamus_required[0] %}
-                {% include control.html %}
-              {% endif %}
-            {% endfor %}
-          {% endif %}
-          {% unless page.controls %}
-            {% for control in enhancements %}
+          {% for control in enhancements %}
+            {% assign tx_required = control.props | where: "name", "required_by" %}
+            {% assign tamus_required = control.parts | where: "name", "tamus_implementation" %}
+            {% if page.dir == "/required-controls/" and tx_required[0] or tamus_required[0] %}
               {% include control.html %}
-            {% endfor %}
-          {% endunless %}
+            {% endif %}
+            {% if page.dir == "/tamus-required-controls/" and tamus_required[0] %}
+              {% include control.html %}
+            {% endif %}
+            {% if page.dir == "/control-catalog/" %}
+              {% include control.html %}
+            {% endif %}
+          {% endfor %}
         </dd>
       {% endif %}
     </dl>

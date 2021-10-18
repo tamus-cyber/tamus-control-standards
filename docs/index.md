@@ -1,20 +1,19 @@
 ---
 layout: main
-title: Cybersecurity Control Standards
+title: Texas A&M University System Cybersecurity Standards
 header_title: Cybersecurity
 header_description: >
   Cybersecurity at the A&M System is an individual and collective efforts of our members. It is necessary for us to work together, sharing resources and information assets.
+breadcrumb_text: Home
 nav:
   - About
   - Lifecycle
   - Control Catalog
-  - References
-  - Identity Role Examples
   - Incident Notification
+  - Identity Role Examples
   - Data Categorization
+  - References
 ---
-# Texas A&M University System Cybersecurity Control Standards
-
 {% include on-this-page.html %}
 
 # Release History
@@ -27,7 +26,7 @@ Last Revised: {{ site.time | date_to_rfc822 }}
 
 Texas A&M University System members publish a security control catalog to implement organizational information security controls in a format that aligns with the Texas Security Control Standards Catalog, prescribed by Title 1 Texas Administrative Code §202.76, Security Control Standards Catalog \[[1 TAC 202.76]\].
 
-Texas A&M System Cybersecurity Control Standards provide system members with additional guidance that enhances State-level requirements for implementing security controls.  These standards are prescribed by Texas A&M System Regulation 29.01.03, Information Security \[[TAMUS 29.01.03]\], paragraph 1.2(c).
+Texas A&M System Cybersecurity Standards provide system members with guidance that enhances State-level requirements for implementing security controls.  These standards are prescribed by Texas A&M System Regulation 29.01.03, Information Security \[[TAMUS 29.01.03]\], paragraph 1.2(c).
 
 This document is intended to be used as a supplement to Texas Security Control Standards Catalog Version 1.3, updated February 26, 2016 \[[TxDIR Catalog]\].
 
@@ -35,7 +34,7 @@ This document is intended to be used as a supplement to Texas Security Control S
 
 The Texas A&M University System Office of Cybersecurity will review control standards each even-numbered year, following the Texas Department of Information Resources’ publishing of new statewide security control standards.
 
-Prior to publishing new or revised standards, the Office of Cybersecurity will solicit comments on new control standards from Chief Information Officers and (Chief) Information Security Officers at system members.
+Prior to publishing new or revised standards, the System Office of Cybersecurity will solicit comments on new control standards from Chief Information Officers and (Chief) Information Security Officers at system members.
 
 # Control Catalog
 
@@ -51,9 +50,17 @@ Prior to publishing new or revised standards, the Office of Cybersecurity will s
 - [Only recently updated Texas A&M System required controls](/recent-updated-controls)
   - _**Ideal for:** someone who wants to check for new additions/updates to TAMUS-specific required controls_
 
-# References
+# Incident Notification
 
-{% include_relative catalog-references.md %}
+[View the Incident Notification Guidelines](/incident-notification)
+
+<!-- TODO: Complete Incident Response Guidelines
+
+# Incident Response
+
+[View the Incident Response Guidelines](/incident-response)
+
+-->
 
 # Identity Role Examples
 
@@ -117,10 +124,6 @@ Visiting Professor
 Visiting Research Professional
 : personnel who are not system employees, faculty or researchers, but who have an official system research sponsor who is either doing direct or assistive work with system research
 
-# Incident Notification
-
-[View the Incident Notification Guidelines](/incident-notification)
-
 # Data Categorization
 
 Texas A&M University System (A&M System) data categorization consists of a minimum of three specific categories based on access restrictions and risk. These categories apply to all members and may be expanded upon as required by the member. While the categorization applicable to specific information may change based on circumstances, the intent of this document is to define the appropriate categories for different types of information. These three categories are:
@@ -154,5 +157,9 @@ Texas A&M University System (A&M System) data categorization consists of a minim
 Using the table above, any set of information can be assigned three security ratings: one for Confidentiality (LOW, MODERATE or HIGH), another for Integrity (LOW, MODERATE or HIGH), and a third for Availability (LOW, MODERATE or HIGH). This is useful for defining security controls in cases where, for example, a set of information may have a low need for confidentiality (LOW impact) but require HIGH availability. In this example, encryption may not be appropriate, but redundancy may be a requirement.
 
 Most breaches that cause HIGH impact are a result of unauthorized access to Confidential information. Therefore, this document and System member assignment of categorization places prime importance on the level of Confidentiality required of the information.
+
+# References
+
+{% include_relative catalog-references.md %}
 
 {% include references.md %}

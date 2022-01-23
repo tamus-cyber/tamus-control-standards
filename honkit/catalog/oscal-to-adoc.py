@@ -3,9 +3,10 @@ import re
 import xml.etree.ElementTree as ET
 
 parser = ET.XMLParser(encoding="ascii")
-tree = ET.parse('TAMUS_2.0_resolved-profile_catalog.xml', parser=parser)
+tree = ET.parse('../../content/tamus.edu/xml/TAMUS_2.0_resolved-profile_catalog.xml', parser=parser)
 root = tree.getroot()
 
+# Take a link element, format into an ASCIIdoc cross-reference, and output
 def transformInsideLink(links):
     linksList = []
     for link in links:
@@ -18,6 +19,7 @@ def transformInsideLink(links):
 
     return ", ".join(linksList)
 
+# Take a link element, retrieve the href from the resources dictionary, format into ASCIIdoc, and output
 def transformReferences(links):
     linksList = []
     for link in links:
@@ -32,77 +34,75 @@ def transformReferences(links):
 
     return ", ".join(linksList)
 
+# Replace . in a string with - ; intended for custom attributes and <a> id tags
 def transformParam(param):
     str = re.sub("\.", "-", param)
 
     return str
 
-def printPart(parts, params, links, props):
-    string = ""
+# Each part of a control statement iterates through this function
+def printPart(parts, links, props):
+    string = "" # Initialize the string to be returned
 
+    # Iterate the part elements and format/output
     for part in parts:
+        # If the element is the last child, output the contents of the p tag
         if (part.tag == "{http://csrc.nist.gov/ns/oscal/1.0}p"):
             string = string + part.text.lstrip() + "\n"
 
+        # If the element is an item part, output the label and re-iterate child elements
         if (part.get('name') == "item"):
-#            item_p = part.find('{http://csrc.nist.gov/ns/oscal/1.0}p')
-
             for item_prop in part.findall('{http://csrc.nist.gov/ns/oscal/1.0}prop'):
                 if (item_prop.get('name') == "label"):
                     string = string + item_prop.get('value') + " "
 
-#            if (item_p is not None):
-#                string = string + item_p.text.lstrip() + "\n"
-
             if (part.findall('{http://csrc.nist.gov/ns/oscal/1.0}part') is not None):
-                string = string + printPart(part, params, links, props)
+                string = string + printPart(part, links, props)
 
     return string
 
+# Each catalog item (family, control or enhancement) iterates through this function
 def printCatalogItem(element):
-    string = ""
+    string = "" # Initialize the string to be returned
 
-    title = element.find('{http://csrc.nist.gov/ns/oscal/1.0}title').text
+    title = element.find('{http://csrc.nist.gov/ns/oscal/1.0}title').text   # Catalog item's title
 
+    # If the catalog item is the control family, only output the title and return
     if (element.get('class') == "family"):
         string = string + ("= %s\n" % (title))
 
+    # If the catalog item is a control or enhancement, follow this logic
     if (element.get('class') == "SP800-53" or element.get('class') == "SP800-53-enhancement"):
+        # Control headers start at level 2
         if (element.get('class') == "SP800-53"):
             indent = 2
 
+        # Enhancement headers start at level 4
         if (element.get('class') == "SP800-53-enhancement"):
             indent = 4
 
-        params = {}
-        for param in element.findall('{http://csrc.nist.gov/ns/oscal/1.0}param'):
-            if (param.find('{http://csrc.nist.gov/ns/oscal/1.0}label') is not None):
-                if (param.get('id') not in params):
-                    params[param.get('id')] = []
-                params[param.get('id')] = param.find('{http://csrc.nist.gov/ns/oscal/1.0}label').text
-            if (param.find('{http://csrc.nist.gov/ns/oscal/1.0}select/choice') is not None):
-                for param_item in param.findall('{http://csrc.nist.gov/ns/oscal/1.0}select/choice'):
-                    params[param.get('id')].append(param_item.text)
-
+        # Iterate the link elements and set links as a dictionary
         links = {}
         for link in element.findall('{http://csrc.nist.gov/ns/oscal/1.0}link'):
-            i = 0
             if (link.get('rel') not in links):
                 links[link.get('rel')] = []
             links[link.get('rel')].append(link.get('href'))
-            i+=1
 
+        # Iterate the part elements and set parts as a dictionary
         parts = {}
         for part in element.findall('{http://csrc.nist.gov/ns/oscal/1.0}part'):
             parts[part.get('name')] = part
 
+        # Iterate the prop elements and set props as a dictionary
         props = {}
         for prop in element.findall('{http://csrc.nist.gov/ns/oscal/1.0}prop'):
             props[prop.get('name')] = prop.get('value')
 
+        # Output the ASCIIdoc for the title
         string = string + ("%s %s %s[[%s]]\n" % ("="*indent, props['label'], title, \
             transformParam(element.get('id'))))
 
+        # Create a table with the baseline/required by info
         if (props.get('baseline') or props.get('required_by') or props.get('status')):
             string = string + "\n[width=50\%]\n|===\n"
 
@@ -122,55 +122,72 @@ def printCatalogItem(element):
 
             string = string + "\n|===\n"
 
+        # Output the control status (used for inactive controls)
         if (props.get('status')):
             string = string + ("\nStatus:: %s\n" % (props.get('status').capitalize()))
 
+        # Output the Incorporated Into link (used for inactive controls)
         if ('incorporated-into' in links):
             string = string + ("\nIncorporated Into:: %s\n" % (transformInsideLink(links['incorporated-into'])))
 
+        # Output the Moved To link (used for inactive controls)
         if ('moved-to' in links):
             string = string + ("\nMoved To:: %s\n" % (transformInsideLink(links['moved-to'])))
 
+        # Output the control statement
         if ('statement' in parts):
             string = string + ("\n%s= Control\n" % ("="*indent))
-            string = string + printPart(parts['statement'], params, links, props)
+            string = string + printPart(parts['statement'], links, props)
 
+        # Output the Texas control implementation statement
         if ('tx_implementation' in parts):
             string = string + ("\n%s= State Implementation Details\n" % ("="*indent))
-            string = string + printPart(parts['tx_implementation'], params, links, props)
+            string = string + printPart(parts['tx_implementation'], links, props)
 
+        # Output the TAMUS control implementation statement
         if ('tamus_implementation' in parts):
             string = string + ("\n%s= TAMUS Implementation Details\n" % ("="*indent))
-            string = string + printPart(parts['tamus_implementation'], params, links, props)
+            string = string + printPart(parts['tamus_implementation'], links, props)
 
+        # Output the supplemental guidance
         if ('guidance' in parts):
             string = string + ("\n%s= Supplemental Guidance\n" % ("="*indent))
-            string = string + printPart(parts['guidance'], params, links, props)
+            string = string + printPart(parts['guidance'], links, props)
 
+        # Output the reference links
         if ('reference' in links):
             string = string + ("\n%s= References\n" % ("="*indent))
             string = string + transformReferences(links['reference'])
 
     return string
 
-resources = {}
+### Start the script here
+
+resources = {}  # Initialize resources dictionary
+
+# Iterate the back-matter section of the XML and set resources as a dictionary
 for back_matter in root.findall('{http://csrc.nist.gov/ns/oscal/1.0}back-matter'):
     for resource in back_matter.findall('{http://csrc.nist.gov/ns/oscal/1.0}resource'):
         uuid = resource.get('uuid')
         resources[uuid] = resource
 
+# Iterate the group sections of the XML and generate one ASCIIdoc page per control family
 for family in root.findall('{http://csrc.nist.gov/ns/oscal/1.0}group'):
     if (family.get('class') == "family"):
-        params = {}
-        family_file = open(family.get('id') + ".adoc", "w")
-        family_file.write(printCatalogItem(family) + "")
-        family_file.write(":toc:\n:toclevels: 1\n")
+        params = {} # Initialize params dictionary
+        family_file = open(family.get('id') + ".adoc", "w") # Create new ASCIIdoc page
+        family_file.write(printCatalogItem(family) + "") # Output page title
+        family_file.write(":toc:\n:toclevels: 1\n") # Output page table of contents
+
+        # Iterate the family elements and set params as a dictionary
         for param in family.iter('{http://csrc.nist.gov/ns/oscal/1.0}param'):
             param_id = transformParam(param.get('id'))
 
+            # If the param is a label, just grab the text of the label
             if (param.findall('{http://csrc.nist.gov/ns/oscal/1.0}label')):
                 params[param_id] = param.find('{http://csrc.nist.gov/ns/oscal/1.0}label').text
 
+            # If the param is a choice, determine if it's a any/one-or-more and grab the choices
             if (param.findall('{http://csrc.nist.gov/ns/oscal/1.0}select')):
                 assignment_tag = ""
                 if (param.find('{http://csrc.nist.gov/ns/oscal/1.0}select').get('how-many') is not None):
@@ -182,6 +199,7 @@ for family in root.findall('{http://csrc.nist.gov/ns/oscal/1.0}group'):
 
                 params[param_id] = "%s%s" % (assignment_tag, ", ".join(choices))
 
+        # Iterate the params dictionary and output as ASCIIdoc custom attributes
         for key, value in params.items():
             param_row = ":%s: %s\n" % (key, value)
             param_row = param_row.format(**params)
@@ -189,10 +207,12 @@ for family in root.findall('{http://csrc.nist.gov/ns/oscal/1.0}group'):
 
         family_file.write("\n")
 
+        # Iterate the control elements and output as ASCIIdoc
         for control in family.findall('{http://csrc.nist.gov/ns/oscal/1.0}control'):
             family_file.write(printCatalogItem(control) + "\n\n")
             if (control.findall('{http://csrc.nist.gov/ns/oscal/1.0}control')):
                 family_file.write("=== Control Enhancements\n")
                 for enhancement in control.findall('{http://csrc.nist.gov/ns/oscal/1.0}control'):
                     family_file.write(printCatalogItem(enhancement) + "\n")
-        family_file.close()
+
+        family_file.close() # Close the ASCIIdoc page

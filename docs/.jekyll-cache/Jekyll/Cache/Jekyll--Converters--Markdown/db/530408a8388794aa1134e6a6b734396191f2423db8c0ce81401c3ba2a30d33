@@ -1,0 +1,2 @@
+I"<p>The implementation of layered structures with minimized interactions among security functions and non-looping layers (i.e., lower-layer functions do not depend on higher-layer functions) enables the isolation of security functions and the management of complexity.</p>
+:ET

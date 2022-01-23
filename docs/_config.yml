@@ -1,8 +1,0 @@
-# Site settings
-title: Texas A&M University System Cybersecurity Control Standards
-description:
-
-github:
-  repo: tamuscyber/tamus-control-standards
-  branch: main
-  baseurl: /docs

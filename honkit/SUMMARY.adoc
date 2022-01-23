@@ -23,6 +23,7 @@
 ** link:catalog/sc.adoc[SC - System and Communications Protection]
 ** link:catalog/si.adoc[SI - System and Information Integrity]
 ** link:catalog/sr.adoc[SR - Supply Chain Risk Management]
+** link:catalog/required-controls.adoc[Required Security Controls]
 * link:incident-notification.adoc[Incident Notification]
 * link:incident-response.adoc[Incident Response]
 * link:identity-roles.adoc[Identity Roles]

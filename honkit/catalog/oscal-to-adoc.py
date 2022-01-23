@@ -161,7 +161,11 @@ def printCatalogItem(element):
 
     return string
 
+############################################################
 ### Start the script here
+############################################################
+
+### This section creates the family ASCIIdoc files
 
 resources = {}  # Initialize resources dictionary
 
@@ -216,3 +220,45 @@ for family in root.findall('{http://csrc.nist.gov/ns/oscal/1.0}group'):
                     family_file.write(printCatalogItem(enhancement) + "\n")
 
         family_file.close() # Close the ASCIIdoc page
+
+
+### This section creates the required controls ASCIIdoc files
+
+# Created required controls index page
+required_controls_file = open("required-controls.adoc", "w") # Create new ASCIIdoc page
+
+string = "# Texas DIR and Texas A&M System Required Controls\n\n"
+
+string = string + "[cols=\"15%,60%,25%\"]\n"
+string = string + "|===\n"
+string = string + "|Control ID |Title |Required By\n\n"
+
+# Iterate the control families, find ones with a required date, and output as ASCIIdoc
+for family in root.findall('{http://csrc.nist.gov/ns/oscal/1.0}group'):
+    title = family.find('{http://csrc.nist.gov/ns/oscal/1.0}title').text   # Control family title
+    string = string + ("3+h|%s\n" % (title))
+
+    i = 0
+
+    for control in family.iter('{http://csrc.nist.gov/ns/oscal/1.0}control'):
+        props = {}
+        for prop in control.findall('{http://csrc.nist.gov/ns/oscal/1.0}prop'):
+            props[prop.get('name')] = prop.get('value')
+
+        if ('required_by' in props):
+            i += 1
+            title = control.find('{http://csrc.nist.gov/ns/oscal/1.0}title').text   # Catalog item's title
+            family = control.get('id')[0:2]
+
+            string = string + ("|xref:%s.adoc#%s[%s] " % (family, control.get('id'), props['label']))
+            string = string + ("|%s " % (title))
+            string = string + ("|%s " % (props['required_by']))
+            string = string + "\n"
+
+    if (i == 0):
+        string = string + "3+|_No required controls in this family_\n"
+
+string = string + "|===\n"
+
+required_controls_file.write(string)
+required_controls_file.close()

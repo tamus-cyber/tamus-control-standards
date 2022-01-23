@@ -1,0 +1,37 @@
+= Texas A&M University System Cybersecurity Standards
+:doctype: book
+include::ref-footnotes.adoc[]
+
+== Release History
+
+Last Revised: {{ honkit.time }}
+
+link:https://github.com/tamuscyber/tamus-control-standards/releases[View this document's release history in GitHub.]
+
+== About
+
+Texas A&M University System members publish a security control catalog to implement organizational information security controls in a format that aligns with the Texas Security Control Standards Catalog, prescribed by Title 1 Texas Administrative Code § 202.76, Security Control Standards Catalog.{fn-tac-202_76}
+
+Texas A&M System Cybersecurity Standards provide system members with guidance that enhances State-level requirements for implementing security controls. These standards are prescribed by Texas A&M System Regulation 29.01.03, Information Security, paragraph 1.2.{fn-tamus-29_01_03}
+
+This document is intended to be used as a supplement to Texas Security Control Standards Catalog Version 1.3, updated February 26, 2016.{fn-dir-catalog}
+
+== Lifecycle
+
+The Texas A&M University System Office of Cybersecurity will review control standards each even-numbered year, following the Texas Department of Information Resources’ publishing of new statewide security control standards.
+
+Prior to publishing new or revised standards, the System Office of Cybersecurity will solicit comments on new control standards from Chief Information Officers and (Chief) Information Security Officers at system members.
+
+== Control Standards Catalog
+
+* link:/catalog[All controls presented in the Texas Security Control Standards Catalog]
+** _**Ideal for:** someone who knows exactly which control they want to reference_
+
+* link:/catalog/required-controls[Only controls from the Texas Security Control Standards Catalog required by Texas DIR or the Texas A&M System]
+** _**Ideal for:** someone who wants to review all of the required controls that must be implemented, whether by DIR or TAMUS_
+
+* link:/catalog/tamus-required-controls[Only controls from the Texas Security Control Standards Catalog required by the Texas A&M System]
+** _**Ideal for:** someone who has already gone through the DIR catalog and implemented all of their required controls but needs a reference to those TAMUS-specific required controls_
+
+* link:/catalog/recent-updated-controls[Only recently updated Texas A&M System required controls]
+** _**Ideal for:** someone who wants to check for new additions/updates to TAMUS-specific required controls_

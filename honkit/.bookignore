@@ -1,0 +1,3 @@
+catalog/*.xml
+catalog/*.py
+catalog/*.sh

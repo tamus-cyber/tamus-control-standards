@@ -1,0 +1,269 @@
+= Personally Identifiable Information Processing and Transparency
+:toc:
+:toclevels: 1
+:pt-1_prm_1: organization-defined personnel or roles
+:pt-1_prm_2: one-or-more: Organization-level, Mission/business process-level, System-level
+:pt-1_prm_3: organization-defined official
+:pt-1_prm_4: organization-defined frequency
+:pt-1_prm_5: organization-defined events
+:pt-1_prm_6: organization-defined frequency
+:pt-1_prm_7: organization-defined events
+:pt-2_prm_1: organization-defined authority
+:pt-2_prm_2: organization-defined processing
+:pt-2_prm_3: organization-defined processing
+:pt-2-1_prm_1: organization-defined authorized processing
+:pt-2-1_prm_2: organization-defined elements of personally identifiable information
+:pt-2-2_prm_1: organization-defined automated mechanisms
+:pt-3_prm_1: organization-defined purpose(s)
+:pt-3_prm_2: organization-defined processing
+:pt-3_prm_3: organization-defined mechanisms
+:pt-3_prm_4: organization-defined requirements
+:pt-3-1_prm_1: organization-defined elements of personally identifiable information
+:pt-3-1_prm_2: organization-defined processing purposes
+:pt-3-2_prm_1: organization-defined automated mechanisms
+:pt-4_prm_1: organization-defined tools or mechanisms
+:pt-4-1_prm_1: organization-defined mechanisms
+:pt-4-2_prm_1: organization-defined consent mechanisms
+:pt-4-2_prm_2: organization-defined frequency
+:pt-4-2_prm_3: organization-defined personally identifiable information processing
+:pt-4-3_prm_1: organization-defined tools or mechanisms
+:pt-5_prm_1: organization-defined frequency
+:pt-5_prm_2: organization-defined information
+:pt-5-1_prm_1: organization-defined frequency
+:pt-6-1_prm_1: organization-defined frequency
+:pt-6-2_prm_1: organization-defined frequency
+:pt-7_prm_1: organization-defined processing conditions
+
+== PT-1 Policy and Procedures[[pt-1]]
+
+=== Control
+a. Develop, document, and disseminate to _[Assignment: {pt-1_prm_1}]_:
+1. _[Assignment: {pt-1_prm_2}]_ personally identifiable information processing and transparency policy that:
+(a) Addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and
+(b) Is consistent with applicable laws, executive orders, directives, regulations, policies, standards, and guidelines; and
+2. Procedures to facilitate the implementation of the personally identifiable information processing and transparency policy and the associated personally identifiable information processing and transparency controls;
+b. Designate an _[Assignment: {pt-1_prm_3}]_ to manage the development, documentation, and dissemination of the personally identifiable information processing and transparency policy and procedures; and
+c. Review and update the current personally identifiable information processing and transparency:
+1. Policy _[Assignment: {pt-1_prm_4}]_ and following _[Assignment: {pt-1_prm_5}]_; and
+2. Procedures _[Assignment: {pt-1_prm_6}]_ and following _[Assignment: {pt-1_prm_7}]_.
+
+=== Supplemental Guidance
+Personally identifiable information processing and transparency policy and procedures address the controls in the PT family that are implemented within systems and organizations. The risk management strategy is an important factor in establishing such policies and procedures. Policies and procedures contribute to security and privacy assurance. Therefore, it is important that security and privacy programs collaborate on the development of personally identifiable information processing and transparency policy and procedures. Security and privacy program policies and procedures at the organization level are preferable, in general, and may obviate the need for mission- or system-specific policies and procedures. The policy can be included as part of the general security and privacy policy or be represented by multiple policies that reflect the complex nature of organizations. Procedures can be established for security and privacy programs, for mission or business processes, and for systems, if needed. Procedures describe how the policies or controls are implemented and can be directed at the individual or role that is the object of the procedure. Procedures can be documented in system security and privacy plans or in one or more separate documents. Events that may precipitate an update to personally identifiable information processing and transparency policy and procedures include assessment or audit findings, breaches, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines. Simply restating controls does not constitute an organizational policy or procedure.
+
+=== References
+https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/circulars/A130/a130revised.pdf[OMB A-130]
+
+== PT-2 Authority to Process Personally Identifiable Information[[pt-2]]
+
+=== Control
+a. Determine and document the _[Assignment: {pt-2_prm_1}]_ that permits the _[Assignment: {pt-2_prm_2}]_ of personally identifiable information; and
+b. Restrict the _[Assignment: {pt-2_prm_3}]_ of personally identifiable information to only that which is authorized.
+
+=== Supplemental Guidance
+The processing of personally identifiable information is an operation or set of operations that the information system or organization performs with respect to personally identifiable information across the information life cycle. Processing includes but is not limited to creation, collection, use, processing, storage, maintenance, dissemination, disclosure, and disposal. Processing operations also include logging, generation, and transformation, as well as analysis techniques, such as data mining.
+Organizations may be subject to laws, executive orders, directives, regulations, or policies that establish the organization's authority and thereby limit certain types of processing of personally identifiable information or establish other requirements related to the processing. Organizational personnel consult with the senior agency official for privacy and legal counsel regarding such authority, particularly if the organization is subject to multiple jurisdictions or sources of authority. For organizations whose processing is not determined according to legal authorities, the organization's policies and determinations govern how they process personally identifiable information. While processing of personally identifiable information may be legally permissible, privacy risks may still arise. Privacy risk assessments can identify the privacy risks associated with the authorized processing of personally identifiable information and support solutions to manage such risks.
+Organizations consider applicable requirements and organizational policies to determine how to document this authority. For federal agencies, the authority to process personally identifiable information is documented in privacy policies and notices, system of records notices, privacy impact assessments, 
+Organizations take steps to ensure that personally identifiable information is only processed for authorized purposes, including training organizational personnel on the authorized processing of personally identifiable information and monitoring and auditing organizational use of personally identifiable information.
+
+=== References
+https://www.govinfo.gov/content/pkg/STATUTE-88/pdf/STATUTE-88-Pg1896.pdf[PRIVACT], https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/circulars/A130/a130revised.pdf[OMB A-130], https://doi.org/10.6028/NIST.IR.8112[IR 8112]
+
+=== Control Enhancements
+==== PT-2(1) Data Tagging[[pt-2-1]]
+
+===== Control
+Attach data tags containing _[Assignment: {pt-2-1_prm_1}]_ to _[Assignment: {pt-2-1_prm_2}]_.
+
+===== Supplemental Guidance
+Data tags support the tracking and enforcement of authorized processing by conveying the types of processing that are authorized along with the relevant elements of personally identifiable information throughout the system. Data tags may also support the use of automated tools.
+
+==== PT-2(2) Automation[[pt-2-2]]
+
+===== Control
+Manage enforcement of the authorized processing of personally identifiable information using _[Assignment: {pt-2-2_prm_1}]_.
+
+===== Supplemental Guidance
+Automated mechanisms augment verification that only authorized processing is occurring.
+
+== PT-3 Personally Identifiable Information Processing Purposes[[pt-3]]
+
+=== Control
+a. Identify and document the _[Assignment: {pt-3_prm_1}]_ for processing personally identifiable information;
+b. Describe the purpose(s) in the public privacy notices and policies of the organization;
+c. Restrict the _[Assignment: {pt-3_prm_2}]_ of personally identifiable information to only that which is compatible with the identified purpose(s); and
+d. Monitor changes in processing personally identifiable information and implement _[Assignment: {pt-3_prm_3}]_ to ensure that any changes are made in accordance with _[Assignment: {pt-3_prm_4}]_.
+
+=== Supplemental Guidance
+Identifying and documenting the purpose for processing provides organizations with a basis for understanding why personally identifiable information may be processed. The term 
+Organizations take steps to help ensure that personally identifiable information is processed only for identified purposes, including training organizational personnel and monitoring and auditing organizational processing of personally identifiable information.
+Organizations monitor for changes in personally identifiable information processing. Organizational personnel consult with the senior agency official for privacy and legal counsel to ensure that any new purposes that arise from changes in processing are compatible with the purpose for which the information was collected, or if the new purpose is not compatible, implement mechanisms in accordance with defined requirements to allow for the new processing, if appropriate. Mechanisms may include obtaining consent from individuals, revising privacy policies, or other measures to manage privacy risks that arise from changes in personally identifiable information processing purposes.
+
+=== References
+https://www.govinfo.gov/content/pkg/STATUTE-88/pdf/STATUTE-88-Pg1896.pdf[PRIVACT], https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/circulars/A130/a130revised.pdf[OMB A-130], https://doi.org/10.6028/NIST.IR.8112[IR 8112]
+
+=== Control Enhancements
+==== PT-3(1) Data Tagging[[pt-3-1]]
+
+===== Control
+Attach data tags containing the following purposes to _[Assignment: {pt-3-1_prm_1}]_: _[Assignment: {pt-3-1_prm_2}]_.
+
+===== Supplemental Guidance
+Data tags support the tracking of processing purposes by conveying the purposes along with the relevant elements of personally identifiable information throughout the system. By conveying the processing purposes in a data tag along with the personally identifiable information as the information transits a system, a system owner or operator can identify whether a change in processing would be compatible with the identified and documented purposes. Data tags may also support the use of automated tools.
+
+==== PT-3(2) Automation[[pt-3-2]]
+
+===== Control
+Track processing purposes of personally identifiable information using _[Assignment: {pt-3-2_prm_1}]_.
+
+===== Supplemental Guidance
+Automated mechanisms augment tracking of the processing purposes.
+
+== PT-4 Consent[[pt-4]]
+
+=== Control
+Implement _[Assignment: {pt-4_prm_1}]_ for individuals to consent to the processing of their personally identifiable information prior to its collection that facilitate individuals' informed decision-making.
+
+=== Supplemental Guidance
+Consent allows individuals to participate in making decisions about the processing of their information and transfers some of the risk that arises from the processing of personally identifiable information from the organization to an individual. Consent may be required by applicable laws, executive orders, directives, regulations, policies, standards, or guidelines. Otherwise, when selecting consent as a control, organizations consider whether individuals can be reasonably expected to understand and accept the privacy risks that arise from their authorization. Organizations consider whether other controls may more effectively mitigate privacy risk either alone or in conjunction with consent. Organizations also consider any demographic or contextual factors that may influence the understanding or behavior of individuals with respect to the processing carried out by the system or organization. When soliciting consent from individuals, organizations consider the appropriate mechanism for obtaining consent, including the type of consent (e.g., opt-in, opt-out), how to properly authenticate and identity proof individuals and how to obtain consent through electronic means. In addition, organizations consider providing a mechanism for individuals to revoke consent once it has been provided, as appropriate. Finally, organizations consider usability factors to help individuals understand the risks being accepted when providing consent, including the use of plain language and avoiding technical jargon.
+
+=== References
+https://www.govinfo.gov/content/pkg/STATUTE-88/pdf/STATUTE-88-Pg1896.pdf[PRIVACT], https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/circulars/A130/a130revised.pdf[OMB A-130], https://doi.org/10.6028/NIST.SP.800-63-3[SP 800-63-3]
+
+=== Control Enhancements
+==== PT-4(1) Tailored Consent[[pt-4-1]]
+
+===== Control
+Provide _[Assignment: {pt-4-1_prm_1}]_ to allow individuals to tailor processing permissions to selected elements of personally identifiable information.
+
+===== Supplemental Guidance
+While some processing may be necessary for the basic functionality of the product or service, other processing may not. In these circumstances, organizations allow individuals to select how specific personally identifiable information elements may be processed. More tailored consent may help reduce privacy risk, increase individual satisfaction, and avoid adverse behaviors, such as abandonment of the product or service.
+
+==== PT-4(2) Just-in-time Consent[[pt-4-2]]
+
+===== Control
+Present _[Assignment: {pt-4-2_prm_1}]_ to individuals at _[Assignment: {pt-4-2_prm_2}]_ and in conjunction with _[Assignment: {pt-4-2_prm_3}]_.
+
+===== Supplemental Guidance
+Just-in-time consent enables individuals to participate in how their personally identifiable information is being processed at the time or in conjunction with specific types of data processing when such participation may be most useful to the individual. Individual assumptions about how personally identifiable information is being processed might not be accurate or reliable if time has passed since the individual last gave consent or the type of processing creates significant privacy risk. Organizations use discretion to determine when to use just-in-time consent and may use supporting information on demographics, focus groups, or surveys to learn more about individuals' privacy interests and concerns.
+
+==== PT-4(3) Revocation[[pt-4-3]]
+
+===== Control
+Implement _[Assignment: {pt-4-3_prm_1}]_ for individuals to revoke consent to the processing of their personally identifiable information.
+
+===== Supplemental Guidance
+Revocation of consent enables individuals to exercise control over their initial consent decision when circumstances change. Organizations consider usability factors in enabling easy-to-use revocation capabilities.
+
+== PT-5 Privacy Notice[[pt-5]]
+
+=== Control
+Provide notice to individuals about the processing of personally identifiable information that:
+a. Is available to individuals upon first interacting with an organization, and subsequently at _[Assignment: {pt-5_prm_1}]_;
+b. Is clear and easy-to-understand, expressing information about personally identifiable information processing in plain language;
+c. Identifies the authority that authorizes the processing of personally identifiable information;
+d. Identifies the purposes for which personally identifiable information is to be processed; and
+e. Includes _[Assignment: {pt-5_prm_2}]_.
+
+=== Supplemental Guidance
+Privacy notices help inform individuals about how their personally identifiable information is being processed by the system or organization. Organizations use privacy notices to inform individuals about how, under what authority, and for what purpose their personally identifiable information is processed, as well as other information such as choices individuals might have with respect to that processing and other parties with whom information is shared. Laws, executive orders, directives, regulations, or policies may require that privacy notices include specific elements or be provided in specific formats. Federal agency personnel consult with the senior agency official for privacy and legal counsel regarding when and where to provide privacy notices, as well as elements to include in privacy notices and required formats. In circumstances where laws or government-wide policies do not require privacy notices, organizational policies and determinations may require privacy notices and may serve as a source of the elements to include in privacy notices.
+Privacy risk assessments identify the privacy risks associated with the processing of personally identifiable information and may help organizations determine appropriate elements to include in a privacy notice to manage such risks. To help individuals understand how their information is being processed, organizations write materials in plain language and avoid technical jargon.
+
+=== References
+https://www.govinfo.gov/content/pkg/STATUTE-88/pdf/STATUTE-88-Pg1896.pdf[PRIVACT], https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/circulars/A130/a130revised.pdf[OMB A-130], https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/circulars/A108/omb_circular_a-108.pdf[OMB A-108]
+
+=== Control Enhancements
+==== PT-5(1) Just-in-time Notice[[pt-5-1]]
+
+===== Control
+Present notice of personally identifiable information processing to individuals at a time and location where the individual provides personally identifiable information or in conjunction with a data action, or _[Assignment: {pt-5-1_prm_1}]_.
+
+===== Supplemental Guidance
+Just-in-time notices inform individuals of how organizations process their personally identifiable information at a time when such notices may be most useful to the individuals. Individual assumptions about how personally identifiable information will be processed might not be accurate or reliable if time has passed since the organization last presented notice or the circumstances under which the individual was last provided notice have changed. A just-in-time notice can explain data actions that organizations have identified as potentially giving rise to greater privacy risk for individuals. Organizations can use a just-in-time notice to update or remind individuals about specific data actions as they occur or highlight specific changes that occurred since last presenting notice. A just-in-time notice can be used in conjunction with just-in-time consent to explain what will occur if consent is declined. Organizations use discretion to determine when to use a just-in-time notice and may use supporting information on user demographics, focus groups, or surveys to learn about users' privacy interests and concerns.
+
+==== PT-5(2) Privacy Act Statements[[pt-5-2]]
+
+===== Control
+Include Privacy Act statements on forms that collect information that will be maintained in a Privacy Act system of records, or provide Privacy Act statements on separate forms that can be retained by individuals.
+
+===== Supplemental Guidance
+If a federal agency asks individuals to supply information that will become part of a system of records, the agency is required to provide a 
+
+
+== PT-6 System of Records Notice[[pt-6]]
+
+=== Control
+For systems that process information that will be maintained in a Privacy Act system of records:
+a. Draft system of records notices in accordance with OMB guidance and submit new and significantly modified system of records notices to the OMB and appropriate congressional committees for advance review;
+b. Publish system of records notices in the Federal Register; and
+c. Keep system of records notices accurate, up-to-date, and scoped in accordance with policy.
+
+=== Supplemental Guidance
+The 
+
+=== References
+https://www.govinfo.gov/content/pkg/STATUTE-88/pdf/STATUTE-88-Pg1896.pdf[PRIVACT], https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/circulars/A108/omb_circular_a-108.pdf[OMB A-108]
+
+=== Control Enhancements
+==== PT-6(1) Routine Uses[[pt-6-1]]
+
+===== Control
+Review all routine uses published in the system of records notice at _[Assignment: {pt-6-1_prm_1}]_ to ensure continued accuracy, and to ensure that routine uses continue to be compatible with the purpose for which the information was collected.
+
+===== Supplemental Guidance
+A 
+
+==== PT-6(2) Exemption Rules[[pt-6-2]]
+
+===== Control
+Review all Privacy Act exemptions claimed for the system of records at _[Assignment: {pt-6-2_prm_1}]_ to ensure they remain appropriate and necessary in accordance with law, that they have been promulgated as regulations, and that they are accurately described in the system of records notice.
+
+===== Supplemental Guidance
+The 
+
+== PT-7 Specific Categories of Personally Identifiable Information[[pt-7]]
+
+=== Control
+Apply _[Assignment: {pt-7_prm_1}]_ for specific categories of personally identifiable information.
+
+=== Supplemental Guidance
+Organizations apply any conditions or protections that may be necessary for specific categories of personally identifiable information. These conditions may be required by laws, executive orders, directives, regulations, policies, standards, or guidelines. The requirements may also come from the results of privacy risk assessments that factor in contextual changes that may result in an organizational determination that a particular category of personally identifiable information is particularly sensitive or raises particular privacy risks. Organizations consult with the senior agency official for privacy and legal counsel regarding any protections that may be necessary.
+
+=== References
+https://www.govinfo.gov/content/pkg/STATUTE-88/pdf/STATUTE-88-Pg1896.pdf[PRIVACT], https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/circulars/A130/a130revised.pdf[OMB A-130], https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/circulars/A108/omb_circular_a-108.pdf[OMB A-108], https://www.archives.gov/cui[NARA CUI]
+
+=== Control Enhancements
+==== PT-7(1) Social Security Numbers[[pt-7-1]]
+
+===== Control
+When a system processes Social Security numbers:
+(a) Eliminate unnecessary collection, maintenance, and use of Social Security numbers, and explore alternatives to their use as a personal identifier;
+(b) Do not deny any individual any right, benefit, or privilege provided by law because of such individual's refusal to disclose his or her Social Security number; and
+(c) Inform any individual who is asked to disclose his or her Social Security number whether that disclosure is mandatory or voluntary, by what statutory or other authority such number is solicited, and what uses will be made of it.
+
+===== Supplemental Guidance
+Federal law and policy establish specific requirements for organizations' processing of Social Security numbers. Organizations take steps to eliminate unnecessary uses of Social Security numbers and other sensitive information and observe any particular requirements that apply.
+
+==== PT-7(2) First Amendment Information[[pt-7-2]]
+
+===== Control
+Prohibit the processing of information describing how any individual exercises rights guaranteed by the First Amendment unless expressly authorized by statute or by the individual or unless pertinent to and within the scope of an authorized law enforcement activity.
+
+===== Supplemental Guidance
+The 
+
+== PT-8 Computer Matching Requirements[[pt-8]]
+
+=== Control
+When a system or organization processes information for the purpose of conducting a matching program:
+a. Obtain approval from the Data Integrity Board to conduct the matching program;
+b. Develop and enter into a computer matching agreement;
+c. Publish a matching notice in the Federal Register;
+d. Independently verify the information produced by the matching program before taking adverse action against an individual, if required; and
+e. Provide individuals with notice and an opportunity to contest the findings before taking adverse action against an individual.
+
+=== Supplemental Guidance
+The 
+
+=== References
+https://www.govinfo.gov/content/pkg/STATUTE-88/pdf/STATUTE-88-Pg1896.pdf[PRIVACT], https://www.govinfo.gov/content/pkg/STATUTE-102/pdf/STATUTE-102-Pg2507.pdf[CMPPA], https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/circulars/A130/a130revised.pdf[OMB A-130], https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/circulars/A108/omb_circular_a-108.pdf[OMB A-108]
+

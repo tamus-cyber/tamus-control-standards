@@ -1,0 +1,33 @@
+== FIPS 199 Impact Table
+:doctype: book
+include::ref-footnotes.adoc[]
+
+|===
+|Security Objective |LOW |MODERATE |HIGH
+
+|***Confidentiality***
+
+Preserving authorized restriction on information access and disclosure including means for protecting personal privacy and proprietary information.
+|The unauthorized disclosure of information could be expected to have a **limited** adverse effect on organizational operations, organizational assets, or individuals.
+|The unauthorized disclosure of information could be expected to have a **serious** adverse effect on organizational operations, organizational assets, or individuals.
+|The unauthorized disclosure of information could be expected to have a **severe or catastrophic** adverse effect on organizational operations, organizational assets, or individuals.
+
+|***Integrity***
+
+Guarding against improper information modification or destruction, and includes ensuring information non-repudiation and authenticity.
+|The unauthorized modification or destruction of information could be expected to have a **limited** adverse effect on organizational operations, organizational assets, or individuals.
+|The unauthorized modification or destruction of information could be expected to have a **serious** adverse effect on organizational operations, organizational assets, or individuals.
+|The unauthorized modification or destruction of information could be expected to have a **severe or catastrophic** adverse effect on organizational operations, organizational assets, or individuals.
+
+|***Availability***
+
+Ensuring timely and reliable access to and use of information.
+|The disruption of access to or use of information or an information system could be expected to have a **limited** adverse effect on organizational operations, organizational assets, or individuals.
+|The disruption of access to or use of information or an information system could be expected to have a **serious** adverse effect on organizational operations, organizational assets, or individuals.
+|The disruption of access to or use of information or an information system could be expected to have a **severe or catastrophic** adverse effect on organizational operations, organizational assets, or individuals.
+|===
+{fn-fips-199}
+
+Using the table above, any set of information can be assigned three security ratings: one for Confidentiality (LOW, MODERATE or HIGH), another for Integrity (LOW, MODERATE or HIGH), and a third for Availability (LOW, MODERATE or HIGH). This is useful for defining security controls in cases where, for example, a set of information may have a low need for confidentiality (LOW impact) but require HIGH availability. In this example, encryption may not be appropriate, but redundancy may be a requirement.
+
+Most breaches that cause HIGH impact are a result of unauthorized access to Confidential information. Therefore, this document and System member assignment of categorization places prime importance on the level of Confidentiality required of the information.

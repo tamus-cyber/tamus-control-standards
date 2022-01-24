@@ -3,17 +3,19 @@ import re
 import xml.etree.ElementTree as ET
 
 parser = ET.XMLParser(encoding="ascii")
-tree = ET.parse('../../content/tamus.edu/xml/TAMUS_2.0_resolved-profile_catalog.xml', parser=parser)
+tree = ET.parse('TAMUS_2.0_resolved-profile_catalog.xml', parser=parser)
 root = tree.getroot()
 
 # Take a link element, format into an ASCIIdoc cross-reference, and output
-def transformInsideLink(links):
+def transformInsideLinks(links):
     linksList = []
     for link in links:
         str = ""
-        href = link
+        label = re.sub("(.*)_smt\.(.*)", "\\1(\\2)", link)
+        label = re.sub(link[1:3], link[1:3].upper(), label)
+        href = re.sub("(.*)_smt\.(.*)", "\\1", link)
 
-        str = ("xref:%s.adoc%s[%s]") % (href[1:3], transformParam(href), href[1:].upper())
+        str = ("xref:%s.adoc%s[%s]") % (href[1:3], transformParam(href), label[1:])
 
         linksList.append(str)
 
@@ -48,16 +50,16 @@ def printPart(parts, links, props):
     for part in parts:
         # If the element is the last child, output the contents of the p tag
         if (part.tag == "{http://csrc.nist.gov/ns/oscal/1.0}p"):
-            string = string + part.text.lstrip() + "\n"
+            string += part.text.lstrip() + "\n"
 
         # If the element is an item part, output the label and re-iterate child elements
         if (part.get('name') == "item"):
             for item_prop in part.findall('{http://csrc.nist.gov/ns/oscal/1.0}prop'):
                 if (item_prop.get('name') == "label"):
-                    string = string + item_prop.get('value') + " "
+                    string += item_prop.get('value') + " "
 
             if (part.findall('{http://csrc.nist.gov/ns/oscal/1.0}part') is not None):
-                string = string + printPart(part, links, props)
+                string += printPart(part, links, props)
 
     return string
 
@@ -69,7 +71,7 @@ def printCatalogItem(element):
 
     # If the catalog item is the control family, only output the title and return
     if (element.get('class') == "family"):
-        string = string + ("= %s\n" % (title))
+        string += ("= %s\n" % (title))
 
     # If the catalog item is a control or enhancement, follow this logic
     if (element.get('class') == "SP800-53" or element.get('class') == "SP800-53-enhancement"):
@@ -99,65 +101,59 @@ def printCatalogItem(element):
             props[prop.get('name')] = prop.get('value')
 
         # Output the ASCIIdoc for the title
-        string = string + ("%s %s %s[[%s]]\n" % ("="*indent, props['label'], title, \
+        string += ("%s %s %s[[%s]]\n" % ("="*indent, props['label'], title, \
             transformParam(element.get('id'))))
 
-        # Create a table with the baseline/required by info
-        if (props.get('baseline') or props.get('required_by') or props.get('status')):
-            string = string + "\n[width=50\%]\n|===\n"
+        # Output the NIST baseline (if exists)
+        if (props.get('baseline')):
+            string += ("NIST Baseline:: %s\n" % (props.get('baseline')))
 
-            if (props.get('baseline')):
-                string = string + "|NIST Baseline "
-
-            if (props.get('required_by')):
-                string = string + "|Required By "
-
-            string = string + "\n\n"
-
-            if (props.get('baseline')):
-                string = string + ("|%s\n" % (props.get('baseline', '')))
-
-            if (props.get('required_by')):
-                string = string + ("|%s\n" % (props.get('required_by', '')))
-
-            string = string + "\n|===\n"
+        # Output the Required By date (if exists)
+        if (props.get('required_by')):
+            string += ("Required By:: %s\n" % (props.get('required_by')))
 
         # Output the control status (used for inactive controls)
         if (props.get('status')):
-            string = string + ("\nStatus:: %s\n" % (props.get('status').capitalize()))
+            string += ("%s: " % (props.get('status').capitalize()))
 
         # Output the Incorporated Into link (used for inactive controls)
         if ('incorporated-into' in links):
-            string = string + ("\nIncorporated Into:: %s\n" % (transformInsideLink(links['incorporated-into'])))
+            string += ("Incorporated into %s\n" % (transformInsideLinks(links['incorporated-into'])))
 
         # Output the Moved To link (used for inactive controls)
         if ('moved-to' in links):
-            string = string + ("\nMoved To:: %s\n" % (transformInsideLink(links['moved-to'])))
+            string += ("Moved to %s\n" % (transformInsideLinks(links['moved-to'])))
 
         # Output the control statement
         if ('statement' in parts):
-            string = string + ("\n%s= Control\n" % ("="*indent))
-            string = string + printPart(parts['statement'], links, props)
+            string += ("\n%s= Control\n" % ("="*indent))
+            string += printPart(parts['statement'], links, props)
 
         # Output the Texas control implementation statement
         if ('tx_implementation' in parts):
-            string = string + ("\n%s= State Implementation Details\n" % ("="*indent))
-            string = string + printPart(parts['tx_implementation'], links, props)
+            string += ("\n%s= State Implementation Details\n" % ("="*indent))
+            string += printPart(parts['tx_implementation'], links, props)
 
         # Output the TAMUS control implementation statement
         if ('tamus_implementation' in parts):
-            string = string + ("\n%s= TAMUS Implementation Details\n" % ("="*indent))
-            string = string + printPart(parts['tamus_implementation'], links, props)
+            string += ("\n%s= TAMUS Implementation Details\n" % ("="*indent))
+            string += printPart(parts['tamus_implementation'], links, props)
 
         # Output the supplemental guidance
         if ('guidance' in parts):
-            string = string + ("\n%s= Supplemental Guidance\n" % ("="*indent))
-            string = string + printPart(parts['guidance'], links, props)
+            string += ("\n%s= Discussion\n" % ("="*indent))
+            string += printPart(parts['guidance'], links, props)
+
+        # Output the related controls links
+        if ('related' in links):
+            string += ("\n%s= Related Controls\n" % ("="*indent))
+            string += transformInsideLinks(links['related'])
+            string += "\n"
 
         # Output the reference links
         if ('reference' in links):
-            string = string + ("\n%s= References\n" % ("="*indent))
-            string = string + transformReferences(links['reference'])
+            string += ("\n%s= References\n" % ("="*indent))
+            string += transformReferences(links['reference'])
 
     return string
 
@@ -186,22 +182,25 @@ for family in root.findall('{http://csrc.nist.gov/ns/oscal/1.0}group'):
         # Iterate the family elements and set params as a dictionary
         for param in family.iter('{http://csrc.nist.gov/ns/oscal/1.0}param'):
             param_id = transformParam(param.get('id'))
+            assignment_tag = ""
 
             # If the param is a label, just grab the text of the label
             if (param.findall('{http://csrc.nist.gov/ns/oscal/1.0}label')):
-                params[param_id] = param.find('{http://csrc.nist.gov/ns/oscal/1.0}label').text
+                assignment_tag = "Assignment"
+                params[param_id] = ("%s: %s" % (assignment_tag, param.find('{http://csrc.nist.gov/ns/oscal/1.0}label').text))
 
             # If the param is a choice, determine if it's a any/one-or-more and grab the choices
             if (param.findall('{http://csrc.nist.gov/ns/oscal/1.0}select')):
-                assignment_tag = ""
+                assignment_tag = "Selection"
                 if (param.find('{http://csrc.nist.gov/ns/oscal/1.0}select').get('how-many') is not None):
-                    assignment_tag = param.find('{http://csrc.nist.gov/ns/oscal/1.0}select').get('how-many') + ": "
+                    assignment_tag += " (" + param.find('{http://csrc.nist.gov/ns/oscal/1.0}select').get('how-many') + ")"
+                    assignment_tag = assignment_tag.replace("-", " ")
 
                 choices = []
                 for choice in param.iter('{http://csrc.nist.gov/ns/oscal/1.0}choice'):
                     choices.append(choice.text.strip().replace("\n", ""))
 
-                params[param_id] = "%s%s" % (assignment_tag, ", ".join(choices))
+                params[param_id] = "%s: %s" % (assignment_tag, "; ".join(choices))
 
         # Iterate the params dictionary and output as ASCIIdoc custom attributes
         for key, value in params.items():
@@ -229,14 +228,14 @@ required_controls_file = open("required-controls.adoc", "w") # Create new ASCIId
 
 string = "# Texas DIR and Texas A&M System Required Controls\n\n"
 
-string = string + "[cols=\"15%,60%,25%\"]\n"
-string = string + "|===\n"
-string = string + "|Control ID |Title |Required By\n\n"
+string += "[cols=\"15%,60%,25%\"]\n"
+string += "|===\n"
+string += "|Control ID |Title |Required By\n\n"
 
 # Iterate the control families, find ones with a required date, and output as ASCIIdoc
 for family in root.findall('{http://csrc.nist.gov/ns/oscal/1.0}group'):
     title = family.find('{http://csrc.nist.gov/ns/oscal/1.0}title').text   # Control family title
-    string = string + ("3+h|%s\n" % (title))
+    string += ("3+h|%s\n" % (title))
 
     i = 0
 
@@ -250,15 +249,15 @@ for family in root.findall('{http://csrc.nist.gov/ns/oscal/1.0}group'):
             title = control.find('{http://csrc.nist.gov/ns/oscal/1.0}title').text   # Catalog item's title
             family = control.get('id')[0:2]
 
-            string = string + ("|xref:%s.adoc#%s[%s] " % (family, control.get('id'), props['label']))
-            string = string + ("|%s " % (title))
-            string = string + ("|%s " % (props['required_by']))
-            string = string + "\n"
+            string += ("|xref:%s.adoc#%s[%s] " % (family, control.get('id'), props['label']))
+            string += ("|%s " % (title))
+            string += ("|%s " % (props['required_by']))
+            string += "\n"
 
     if (i == 0):
-        string = string + "3+|_No required controls in this family_\n"
+        string += "3+|_No required controls in this family_\n"
 
-string = string + "|===\n"
+string += "|===\n"
 
 required_controls_file.write(string)
 required_controls_file.close()

@@ -7,7 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="HonKit 3.6.23">
-        
+        <meta name="author" content="Nicholas McLarty">
         
         
     
@@ -32,6 +32,8 @@
     
 
     
+        
+        <link rel="stylesheet" href="../styles/website.css">
         
     
         
@@ -554,24 +556,18 @@
 <div class="sect1">
 <h2 id="_au_1_policy_and_procedures">AU-1 Policy and Procedures<a id="au-1"></a></h2>
 <div class="sectionbody">
-<table class="tableblock frame-all grid-all" style="width: 50%;">
-<colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">NIST Baseline</th>
-<th class="tableblock halign-left valign-top">Required By</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">LOW</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2023-05-01</p></td>
-</tr>
-</tbody>
-</table>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">NIST Baseline</dt>
+<dd>
+<p>LOW</p>
+</dd>
+<dt class="hdlist1">Required By</dt>
+<dd>
+<p>2023-05-01</p>
+</dd>
+</dl>
+</div>
 <div class="sect2">
 <h3 id="_control">Control</h3>
 <div class="olist loweralpha">
@@ -581,7 +577,7 @@
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p><em>[Assignment: one-or-more: Organization-level, Mission/business process-level, System-level]</em> audit and accountability policy that:
+<p><em>[Selection (one or more): Organization-level; Mission/business process-level; System-level]</em> audit and accountability policy that:
 (a) Addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and
 (b) Is consistent with applicable laws, executive orders, directives, regulations, policies, standards, and guidelines; and</p>
 </li>
@@ -611,9 +607,15 @@
 </div>
 </div>
 <div class="sect2">
-<h3 id="_supplemental_guidance">Supplemental Guidance</h3>
+<h3 id="_discussion">Discussion</h3>
 <div class="paragraph">
 <p>Audit and accountability policy and procedures address the controls in the AU family that are implemented within systems and organizations. The risk management strategy is an important factor in establishing such policies and procedures. Policies and procedures contribute to security and privacy assurance. Therefore, it is important that security and privacy programs collaborate on the development of audit and accountability policy and procedures. Security and privacy program policies and procedures at the organization level are preferable, in general, and may obviate the need for mission- or system-specific policies and procedures. The policy can be included as part of the general security and privacy policy or be represented by multiple policies that reflect the complex nature of organizations. Procedures can be established for security and privacy programs, for mission or business processes, and for systems, if needed. Procedures describe how the policies or controls are implemented and can be directed at the individual or role that is the object of the procedure. Procedures can be documented in system security and privacy plans or in one or more separate documents. Events that may precipitate an update to audit and accountability policy and procedures include assessment or audit findings, security incidents or breaches, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines. Simply restating controls does not constitute an organizational policy or procedure.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_related_controls">Related Controls</h3>
+<div class="paragraph">
+<p><a href="pm.html#pm-9">PM-9</a>, <a href="ps.html#ps-8">PS-8</a>, <a href="si.html#si-12">SI-12</a></p>
 </div>
 </div>
 <div class="sect2">
@@ -627,24 +629,18 @@
 <div class="sect1">
 <h2 id="_au_2_event_logging">AU-2 Event Logging<a id="au-2"></a></h2>
 <div class="sectionbody">
-<table class="tableblock frame-all grid-all" style="width: 50%;">
-<colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">NIST Baseline</th>
-<th class="tableblock halign-left valign-top">Required By</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">LOW</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2023-05-01</p></td>
-</tr>
-</tbody>
-</table>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">NIST Baseline</dt>
+<dd>
+<p>LOW</p>
+</dd>
+<dt class="hdlist1">Required By</dt>
+<dd>
+<p>2023-05-01</p>
+</dd>
+</dl>
+</div>
 <div class="sect2">
 <h3 id="_control_2">Control</h3>
 <div class="olist loweralpha">
@@ -685,11 +681,17 @@ release of confidential information.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_supplemental_guidance_2">Supplemental Guidance</h3>
+<h3 id="_discussion_2">Discussion</h3>
 <div class="paragraph">
 <p>An event is an observable occurrence in a system. The types of events that require logging are those events that are significant and relevant to the security of systems and the privacy of individuals. Event logging also supports specific monitoring and auditing needs. Event types include password changes, failed logons or failed accesses related to systems, security or privacy attribute changes, administrative privilege usage, PIV credential usage, data action changes, query parameters, or external credential usage. In determining the set of event types that require logging, organizations consider the monitoring and auditing appropriate for each of the controls to be implemented. For completeness, event logging includes all protocols that are operational and supported by the system.
 To balance monitoring and auditing requirements with other system needs, event logging requires identifying the subset of event types that are logged at a given point in time. For example, organizations may determine that systems need the capability to log every file access successful and unsuccessful, but not activate that capability except for specific circumstances due to the potential burden on system performance. The types of events that organizations desire to be logged may change. Reviewing and updating the set of logged events is necessary to help ensure that the events remain relevant and continue to support the needs of the organization. Organizations consider how the types of logging events can reveal information about individuals that may give rise to privacy risk and how best to mitigate such risks. For example, there is the potential to reveal personally identifiable information in the audit trail, especially if the logging event is based on patterns or time of usage.
 Event logging requirements, including the need to log specific event types, may be referenced in other controls and control enhancements. These include</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_related_controls_2">Related Controls</h3>
+<div class="paragraph">
+<p><a href="ac.html#ac-2">AC-2</a>, <a href="ac.html#ac-3">AC-3</a>, <a href="ac.html#ac-6">AC-6</a>, <a href="ac.html#ac-7">AC-7</a>, <a href="ac.html#ac-8">AC-8</a>, <a href="ac.html#ac-16">AC-16</a>, <a href="ac.html#ac-17">AC-17</a>, <a href="au.html#au-3">AU-3</a>, <a href="au.html#au-4">AU-4</a>, <a href="au.html#au-5">AU-5</a>, <a href="au.html#au-6">AU-6</a>, <a href="au.html#au-7">AU-7</a>, <a href="au.html#au-11">AU-11</a>, <a href="au.html#au-12">AU-12</a>, <a href="cm.html#cm-3">CM-3</a>, <a href="cm.html#cm-5">CM-5</a>, <a href="cm.html#cm-6">CM-6</a>, <a href="cm.html#cm-13">CM-13</a>, <a href="ia.html#ia-3">IA-3</a>, <a href="ma.html#ma-4">MA-4</a>, <a href="mp.html#mp-4">MP-4</a>, <a href="pe.html#pe-3">PE-3</a>, <a href="pm.html#pm-21">PM-21</a>, <a href="pt.html#pt-2">PT-2</a>, <a href="pt.html#pt-7">PT-7</a>, <a href="ra.html#ra-8">RA-8</a>, <a href="sa.html#sa-8">SA-8</a>, <a href="sc.html#sc-7">SC-7</a>, <a href="sc.html#sc-18">SC-18</a>, <a href="si.html#si-3">SI-3</a>, <a href="si.html#si-4">SI-4</a>, <a href="si.html#si-7">SI-7</a>, <a href="si.html#si-10">SI-10</a>, <a href="si.html#si-11">SI-11</a></p>
 </div>
 </div>
 <div class="sect2">
@@ -702,70 +704,26 @@ Event logging requirements, including the need to log specific event types, may 
 <h3 id="_control_enhancements">Control Enhancements</h3>
 <div class="sect3">
 <h4 id="_au_21_compilation_of_audit_records_from_multiple_sources">AU-2(1) Compilation of Audit Records from Multiple Sources<a id="au-2-1"></a></h4>
-<table class="tableblock frame-all grid-all" style="width: 50%;">
-</table>
-<div class="dlist">
-<dl>
-<dt class="hdlist1">Status</dt>
-<dd>
-<p>Withdrawn</p>
-</dd>
-<dt class="hdlist1">Incorporated Into</dt>
-<dd>
-<p><a href="au.html#au-12">AU-12</a></p>
-</dd>
-</dl>
+<div class="paragraph">
+<p>Withdrawn: Incorporated into <a href="au.html#au-12">AU-12</a></p>
 </div>
 </div>
 <div class="sect3">
 <h4 id="_au_22_selection_of_audit_events_by_component">AU-2(2) Selection of Audit Events by Component<a id="au-2-2"></a></h4>
-<table class="tableblock frame-all grid-all" style="width: 50%;">
-</table>
-<div class="dlist">
-<dl>
-<dt class="hdlist1">Status</dt>
-<dd>
-<p>Withdrawn</p>
-</dd>
-<dt class="hdlist1">Incorporated Into</dt>
-<dd>
-<p><a href="au.html#au-12">AU-12</a></p>
-</dd>
-</dl>
+<div class="paragraph">
+<p>Withdrawn: Incorporated into <a href="au.html#au-12">AU-12</a></p>
 </div>
 </div>
 <div class="sect3">
 <h4 id="_au_23_reviews_and_updates">AU-2(3) Reviews and Updates<a id="au-2-3"></a></h4>
-<table class="tableblock frame-all grid-all" style="width: 50%;">
-</table>
-<div class="dlist">
-<dl>
-<dt class="hdlist1">Status</dt>
-<dd>
-<p>Withdrawn</p>
-</dd>
-<dt class="hdlist1">Incorporated Into</dt>
-<dd>
-<p><a href="au.html#au-2">AU-2</a></p>
-</dd>
-</dl>
+<div class="paragraph">
+<p>Withdrawn: Incorporated into <a href="au.html#au-2">AU-2</a></p>
 </div>
 </div>
 <div class="sect3">
 <h4 id="_au_24_privileged_functions">AU-2(4) Privileged Functions<a id="au-2-4"></a></h4>
-<table class="tableblock frame-all grid-all" style="width: 50%;">
-</table>
-<div class="dlist">
-<dl>
-<dt class="hdlist1">Status</dt>
-<dd>
-<p>Withdrawn</p>
-</dd>
-<dt class="hdlist1">Incorporated Into</dt>
-<dd>
-<p><a href="ac.html#ac-6-9">AC-6.9</a></p>
-</dd>
-</dl>
+<div class="paragraph">
+<p>Withdrawn: Incorporated into <a href="ac.html#ac-6-9">AC-6.9</a></p>
 </div>
 </div>
 </div>
@@ -774,24 +732,18 @@ Event logging requirements, including the need to log specific event types, may 
 <div class="sect1">
 <h2 id="_au_3_content_of_audit_records">AU-3 Content of Audit Records<a id="au-3"></a></h2>
 <div class="sectionbody">
-<table class="tableblock frame-all grid-all" style="width: 50%;">
-<colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">NIST Baseline</th>
-<th class="tableblock halign-left valign-top">Required By</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">LOW</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2022-11-01</p></td>
-</tr>
-</tbody>
-</table>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">NIST Baseline</dt>
+<dd>
+<p>LOW</p>
+</dd>
+<dt class="hdlist1">Required By</dt>
+<dd>
+<p>2022-11-01</p>
+</dd>
+</dl>
+</div>
 <div class="sect2">
 <h3 id="_control_3">Control</h3>
 <div class="paragraph">
@@ -805,9 +757,15 @@ f. Identity of any individuals, subjects, or objects/entities associated with th
 </div>
 </div>
 <div class="sect2">
-<h3 id="_supplemental_guidance_3">Supplemental Guidance</h3>
+<h3 id="_discussion_3">Discussion</h3>
 <div class="paragraph">
 <p>Audit record content that may be necessary to support the auditing function includes event descriptions (item a), time stamps (item b), source and destination addresses (item c), user or process identifiers (items d and f), success or fail indications (item e), and filenames involved (items a, c, e, and f) . Event outcomes include indicators of event success or failure and event-specific results, such as the system security and privacy posture after the event occurred. Organizations consider how audit records can reveal information about individuals that may give rise to privacy risks and how best to mitigate such risks. For example, there is the potential to reveal personally identifiable information in the audit trail, especially if the trail records inputs or is based on patterns or time of usage.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_related_controls_3">Related Controls</h3>
+<div class="paragraph">
+<p><a href="au.html#au-2">AU-2</a>, <a href="au.html#au-8">AU-8</a>, <a href="au.html#au-12">AU-12</a>, <a href="au.html#au-14">AU-14</a>, <a href="ma.html#ma-4">MA-4</a>, <a href="pl.html#pl-9">PL-9</a>, <a href="sa.html#sa-8">SA-8</a>, <a href="si.html#si-7">SI-7</a>, <a href="si.html#si-11">SI-11</a></p>
 </div>
 </div>
 <div class="sect2">
@@ -827,7 +785,7 @@ f. Identity of any individuals, subjects, or objects/entities associated with th
 </div>
 </div>
 <div class="sect4">
-<h5 id="_supplemental_guidance_4">Supplemental Guidance</h5>
+<h5 id="_discussion_4">Discussion</h5>
 <div class="paragraph">
 <p>The ability to add information generated in audit records is dependent on system functionality to configure the audit record content. Organizations may consider additional information in audit records including, but not limited to, access control or flow control rules invoked and individual identities of group account users. Organizations may also consider limiting additional audit record information to only information that is explicitly needed for audit requirements. This facilitates the use of audit trails and audit logs by not including information in audit records that could potentially be misleading, make it more difficult to locate information of interest, or increase the risk to individuals&apos; privacy.</p>
 </div>
@@ -835,19 +793,8 @@ f. Identity of any individuals, subjects, or objects/entities associated with th
 </div>
 <div class="sect3">
 <h4 id="_au_32_centralized_management_of_planned_audit_record_content">AU-3(2) Centralized Management of Planned Audit Record Content<a id="au-3-2"></a></h4>
-<table class="tableblock frame-all grid-all" style="width: 50%;">
-</table>
-<div class="dlist">
-<dl>
-<dt class="hdlist1">Status</dt>
-<dd>
-<p>Withdrawn</p>
-</dd>
-<dt class="hdlist1">Incorporated Into</dt>
-<dd>
-<p><a href="pl.html#pl-9">PL-9</a></p>
-</dd>
-</dl>
+<div class="paragraph">
+<p>Withdrawn: Incorporated into <a href="pl.html#pl-9">PL-9</a></p>
 </div>
 </div>
 <div class="sect3">
@@ -859,9 +806,15 @@ f. Identity of any individuals, subjects, or objects/entities associated with th
 </div>
 </div>
 <div class="sect4">
-<h5 id="_supplemental_guidance_5">Supplemental Guidance</h5>
+<h5 id="_discussion_5">Discussion</h5>
 <div class="paragraph">
 <p>Limiting personally identifiable information in audit records when such information is not needed for operational purposes helps reduce the level of privacy risk created by a system.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_related_controls_4">Related Controls</h5>
+<div class="paragraph">
+<p><a href="ra.html#ra-3">RA-3</a></p>
 </div>
 </div>
 </div>
@@ -871,24 +824,18 @@ f. Identity of any individuals, subjects, or objects/entities associated with th
 <div class="sect1">
 <h2 id="_au_4_audit_log_storage_capacity">AU-4 Audit Log Storage Capacity<a id="au-4"></a></h2>
 <div class="sectionbody">
-<table class="tableblock frame-all grid-all" style="width: 50%;">
-<colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">NIST Baseline</th>
-<th class="tableblock halign-left valign-top">Required By</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">LOW</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2023-05-01</p></td>
-</tr>
-</tbody>
-</table>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">NIST Baseline</dt>
+<dd>
+<p>LOW</p>
+</dd>
+<dt class="hdlist1">Required By</dt>
+<dd>
+<p>2023-05-01</p>
+</dd>
+</dl>
+</div>
 <div class="sect2">
 <h3 id="_control_6">Control</h3>
 <div class="paragraph">
@@ -896,9 +843,15 @@ f. Identity of any individuals, subjects, or objects/entities associated with th
 </div>
 </div>
 <div class="sect2">
-<h3 id="_supplemental_guidance_6">Supplemental Guidance</h3>
+<h3 id="_discussion_6">Discussion</h3>
 <div class="paragraph">
 <p>Organizations consider the types of audit logging to be performed and the audit log processing requirements when allocating audit log storage capacity. Allocating sufficient audit log storage capacity reduces the likelihood of such capacity being exceeded and resulting in the potential loss or reduction of audit logging capability.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_related_controls_5">Related Controls</h3>
+<div class="paragraph">
+<p><a href="au.html#au-2">AU-2</a>, <a href="au.html#au-5">AU-5</a>, <a href="au.html#au-6">AU-6</a>, <a href="au.html#au-7">AU-7</a>, <a href="au.html#au-9">AU-9</a>, <a href="au.html#au-11">AU-11</a>, <a href="au.html#au-12">AU-12</a>, <a href="au.html#au-14">AU-14</a>, <a href="si.html#si-4">SI-4</a></p>
 </div>
 </div>
 <div class="sect2">
@@ -912,7 +865,7 @@ f. Identity of any individuals, subjects, or objects/entities associated with th
 </div>
 </div>
 <div class="sect4">
-<h5 id="_supplemental_guidance_7">Supplemental Guidance</h5>
+<h5 id="_discussion_7">Discussion</h5>
 <div class="paragraph">
 <p>Audit log transfer, also known as off-loading, is a common process in systems with limited audit log storage capacity and thus supports availability of the audit logs. The initial audit log storage is only used in a transitory fashion until the system can communicate with the secondary or alternate system allocated to audit log storage, at which point the audit logs are transferred. Transferring audit logs to alternate storage is similar to</p>
 </div>
@@ -924,24 +877,18 @@ f. Identity of any individuals, subjects, or objects/entities associated with th
 <div class="sect1">
 <h2 id="_au_5_response_to_audit_logging_process_failures">AU-5 Response to Audit Logging Process Failures<a id="au-5"></a></h2>
 <div class="sectionbody">
-<table class="tableblock frame-all grid-all" style="width: 50%;">
-<colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">NIST Baseline</th>
-<th class="tableblock halign-left valign-top">Required By</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">LOW</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2023-05-01</p></td>
-</tr>
-</tbody>
-</table>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">NIST Baseline</dt>
+<dd>
+<p>LOW</p>
+</dd>
+<dt class="hdlist1">Required By</dt>
+<dd>
+<p>2023-05-01</p>
+</dd>
+</dl>
+</div>
 <div class="sect2">
 <h3 id="_control_8">Control</h3>
 <div class="olist loweralpha">
@@ -956,9 +903,15 @@ f. Identity of any individuals, subjects, or objects/entities associated with th
 </div>
 </div>
 <div class="sect2">
-<h3 id="_supplemental_guidance_8">Supplemental Guidance</h3>
+<h3 id="_discussion_8">Discussion</h3>
 <div class="paragraph">
 <p>Audit logging process failures include software and hardware errors, failures in audit log capturing mechanisms, and reaching or exceeding audit log storage capacity. Organization-defined actions include overwriting oldest audit records, shutting down the system, and stopping the generation of audit records. Organizations may choose to define additional actions for audit logging process failures based on the type of failure, the location of the failure, the severity of the failure, or a combination of such factors. When the audit logging process failure is related to storage, the response is carried out for the audit log storage repository (i.e., the distinct system component where the audit logs are stored), the system on which the audit logs reside, the total audit log storage capacity of the organization (i.e., all audit log storage repositories combined), or all three. Organizations may decide to take no additional actions after alerting designated roles or personnel.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_related_controls_6">Related Controls</h3>
+<div class="paragraph">
+<p><a href="au.html#au-2">AU-2</a>, <a href="au.html#au-4">AU-4</a>, <a href="au.html#au-7">AU-7</a>, <a href="au.html#au-9">AU-9</a>, <a href="au.html#au-11">AU-11</a>, <a href="au.html#au-12">AU-12</a>, <a href="au.html#au-14">AU-14</a>, <a href="si.html#si-4">SI-4</a>, <a href="si.html#si-12">SI-12</a></p>
 </div>
 </div>
 <div class="sect2">
@@ -972,7 +925,7 @@ f. Identity of any individuals, subjects, or objects/entities associated with th
 </div>
 </div>
 <div class="sect4">
-<h5 id="_supplemental_guidance_9">Supplemental Guidance</h5>
+<h5 id="_discussion_9">Discussion</h5>
 <div class="paragraph">
 <p>Organizations may have multiple audit log storage repositories distributed across multiple system components with each repository having different storage volume capacities.</p>
 </div>
@@ -987,7 +940,7 @@ f. Identity of any individuals, subjects, or objects/entities associated with th
 </div>
 </div>
 <div class="sect4">
-<h5 id="_supplemental_guidance_10">Supplemental Guidance</h5>
+<h5 id="_discussion_10">Discussion</h5>
 <div class="paragraph">
 <p>Alerts provide organizations with urgent messages. Real-time alerts provide these messages at information technology speed (i.e., the time from event detection to alert occurs in seconds or less).</p>
 </div>
@@ -998,11 +951,11 @@ f. Identity of any individuals, subjects, or objects/entities associated with th
 <div class="sect4">
 <h5 id="_control_11">Control</h5>
 <div class="paragraph">
-<p>Enforce configurable network communications traffic volume thresholds reflecting limits on audit log storage capacity and <em>[Assignment: reject, delay]</em> network traffic above those thresholds.</p>
+<p>Enforce configurable network communications traffic volume thresholds reflecting limits on audit log storage capacity and <em>[Selection: reject; delay]</em> network traffic above those thresholds.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="_supplemental_guidance_11">Supplemental Guidance</h5>
+<h5 id="_discussion_11">Discussion</h5>
 <div class="paragraph">
 <p>Organizations have the capability to reject or delay the processing of network communications traffic if audit logging information about such traffic is determined to exceed the storage capacity of the system audit logging function. The rejection or delay response is triggered by the established organizational traffic volume thresholds that can be adjusted based on changes to audit log storage capacity.</p>
 </div>
@@ -1013,13 +966,19 @@ f. Identity of any individuals, subjects, or objects/entities associated with th
 <div class="sect4">
 <h5 id="_control_12">Control</h5>
 <div class="paragraph">
-<p>Invoke a <em>[Assignment: full system shutdown, partial system shutdown, degraded operational mode with limited mission or business functionality available]</em> in the event of <em>[Assignment: organization-defined audit logging failures]</em>, unless an alternate audit logging capability exists.</p>
+<p>Invoke a <em>[Selection: full system shutdown; partial system shutdown; degraded operational mode with limited mission or business functionality available]</em> in the event of <em>[Assignment: organization-defined audit logging failures]</em>, unless an alternate audit logging capability exists.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="_supplemental_guidance_12">Supplemental Guidance</h5>
+<h5 id="_discussion_12">Discussion</h5>
 <div class="paragraph">
 <p>Organizations determine the types of audit logging failures that can trigger automatic system shutdowns or degraded operations. Because of the importance of ensuring mission and business continuity, organizations may determine that the nature of the audit logging failure is not so severe that it warrants a complete shutdown of the system supporting the core organizational mission and business functions. In those instances, partial system shutdowns or operating in a degraded mode with reduced capability may be viable alternatives.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_related_controls_7">Related Controls</h5>
+<div class="paragraph">
+<p><a href="au.html#au-15">AU-15</a></p>
 </div>
 </div>
 </div>
@@ -1032,9 +991,15 @@ f. Identity of any individuals, subjects, or objects/entities associated with th
 </div>
 </div>
 <div class="sect4">
-<h5 id="_supplemental_guidance_13">Supplemental Guidance</h5>
+<h5 id="_discussion_13">Discussion</h5>
 <div class="paragraph">
 <p>Since an alternate audit logging capability may be a short-term protection solution employed until the failure in the primary audit logging capability is corrected, organizations may determine that the alternate audit logging capability need only provide a subset of the primary audit logging functionality that is impacted by the failure.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_related_controls_8">Related Controls</h5>
+<div class="paragraph">
+<p><a href="au.html#au-9">AU-9</a></p>
 </div>
 </div>
 </div>
@@ -1044,24 +1009,18 @@ f. Identity of any individuals, subjects, or objects/entities associated with th
 <div class="sect1">
 <h2 id="_au_6_audit_record_review_analysis_and_reporting">AU-6 Audit Record Review, Analysis, and Reporting<a id="au-6"></a></h2>
 <div class="sectionbody">
-<table class="tableblock frame-all grid-all" style="width: 50%;">
-<colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">NIST Baseline</th>
-<th class="tableblock halign-left valign-top">Required By</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">LOW</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2023-05-01</p></td>
-</tr>
-</tbody>
-</table>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">NIST Baseline</dt>
+<dd>
+<p>LOW</p>
+</dd>
+<dt class="hdlist1">Required By</dt>
+<dd>
+<p>2023-05-01</p>
+</dd>
+</dl>
+</div>
 <div class="sect2">
 <h3 id="_control_14">Control</h3>
 <div class="olist loweralpha">
@@ -1079,9 +1038,15 @@ f. Identity of any individuals, subjects, or objects/entities associated with th
 </div>
 </div>
 <div class="sect2">
-<h3 id="_supplemental_guidance_14">Supplemental Guidance</h3>
+<h3 id="_discussion_14">Discussion</h3>
 <div class="paragraph">
 <p>Audit record review, analysis, and reporting covers information security- and privacy-related logging performed by organizations, including logging that results from the monitoring of account usage, remote access, wireless connectivity, mobile device connection, configuration settings, system component inventory, use of maintenance tools and non-local maintenance, physical access, temperature and humidity, equipment delivery and removal, communications at system interfaces, and use of mobile code or Voice over Internet Protocol (VoIP). Findings can be reported to organizational entities that include the incident response team, help desk, and security or privacy offices. If organizations are prohibited from reviewing and analyzing audit records or unable to conduct such activities, the review or analysis may be carried out by other organizations granted such authority. The frequency, scope, and/or depth of the audit record review, analysis, and reporting may be adjusted to meet organizational needs based on new information received.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_related_controls_9">Related Controls</h3>
+<div class="paragraph">
+<p><a href="ac.html#ac-2">AC-2</a>, <a href="ac.html#ac-3">AC-3</a>, <a href="ac.html#ac-5">AC-5</a>, <a href="ac.html#ac-6">AC-6</a>, <a href="ac.html#ac-7">AC-7</a>, <a href="ac.html#ac-17">AC-17</a>, <a href="au.html#au-7">AU-7</a>, <a href="au.html#au-16">AU-16</a>, <a href="ca.html#ca-2">CA-2</a>, <a href="ca.html#ca-7">CA-7</a>, <a href="cm.html#cm-2">CM-2</a>, <a href="cm.html#cm-5">CM-5</a>, <a href="cm.html#cm-6">CM-6</a>, <a href="cm.html#cm-10">CM-10</a>, <a href="cm.html#cm-11">CM-11</a>, <a href="ia.html#ia-2">IA-2</a>, <a href="ia.html#ia-3">IA-3</a>, <a href="ia.html#ia-5">IA-5</a>, <a href="ia.html#ia-8">IA-8</a>, <a href="ir.html#ir-5">IR-5</a>, <a href="ma.html#ma-4">MA-4</a>, <a href="mp.html#mp-4">MP-4</a>, <a href="pe.html#pe-3">PE-3</a>, <a href="pe.html#pe-6">PE-6</a>, <a href="ra.html#ra-5">RA-5</a>, <a href="sa.html#sa-8">SA-8</a>, <a href="sc.html#sc-7">SC-7</a>, <a href="si.html#si-3">SI-3</a>, <a href="si.html#si-4">SI-4</a>, <a href="si.html#si-7">SI-7</a></p>
 </div>
 </div>
 <div class="sect2">
@@ -1101,27 +1066,22 @@ f. Identity of any individuals, subjects, or objects/entities associated with th
 </div>
 </div>
 <div class="sect4">
-<h5 id="_supplemental_guidance_15">Supplemental Guidance</h5>
+<h5 id="_discussion_15">Discussion</h5>
 <div class="paragraph">
 <p>Organizational processes that benefit from integrated audit record review, analysis, and reporting include incident response, continuous monitoring, contingency planning, investigation and response to suspicious activities, and Inspector General audits.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_related_controls_10">Related Controls</h5>
+<div class="paragraph">
+<p><a href="pm.html#pm-7">PM-7</a></p>
 </div>
 </div>
 </div>
 <div class="sect3">
 <h4 id="_au_62_automated_security_alerts">AU-6(2) Automated Security Alerts<a id="au-6-2"></a></h4>
-<table class="tableblock frame-all grid-all" style="width: 50%;">
-</table>
-<div class="dlist">
-<dl>
-<dt class="hdlist1">Status</dt>
-<dd>
-<p>Withdrawn</p>
-</dd>
-<dt class="hdlist1">Incorporated Into</dt>
-<dd>
-<p><a href="si.html#si-4">SI-4</a></p>
-</dd>
-</dl>
+<div class="paragraph">
+<p>Withdrawn: Incorporated into <a href="si.html#si-4">SI-4</a></p>
 </div>
 </div>
 <div class="sect3">
@@ -1133,9 +1093,15 @@ f. Identity of any individuals, subjects, or objects/entities associated with th
 </div>
 </div>
 <div class="sect4">
-<h5 id="_supplemental_guidance_16">Supplemental Guidance</h5>
+<h5 id="_discussion_16">Discussion</h5>
 <div class="paragraph">
 <p>Organization-wide situational awareness includes awareness across all three levels of risk management (i.e., organizational level, mission/business process level, and information system level) and supports cross-organization awareness.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_related_controls_11">Related Controls</h5>
+<div class="paragraph">
+<p><a href="au.html#au-12">AU-12</a>, <a href="ir.html#ir-4">IR-4</a></p>
 </div>
 </div>
 </div>
@@ -1148,9 +1114,15 @@ f. Identity of any individuals, subjects, or objects/entities associated with th
 </div>
 </div>
 <div class="sect4">
-<h5 id="_supplemental_guidance_17">Supplemental Guidance</h5>
+<h5 id="_discussion_17">Discussion</h5>
 <div class="paragraph">
 <p>Automated mechanisms for centralized reviews and analyses include Security Information and Event Management products.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_related_controls_12">Related Controls</h5>
+<div class="paragraph">
+<p><a href="au.html#au-2">AU-2</a>, <a href="au.html#au-12">AU-12</a></p>
 </div>
 </div>
 </div>
@@ -1159,13 +1131,19 @@ f. Identity of any individuals, subjects, or objects/entities associated with th
 <div class="sect4">
 <h5 id="_control_18">Control</h5>
 <div class="paragraph">
-<p>Integrate analysis of audit records with analysis of <em>[Assignment: one-or-more: vulnerability scanning information, performance data, system monitoring information, _[Assignment: organization-defined data/information collected from other sources]_]</em> to further enhance the ability to identify inappropriate or unusual activity.</p>
+<p>Integrate analysis of audit records with analysis of <em>[Selection (one or more): vulnerability scanning information; performance data; system monitoring information; _[Assignment: organization-defined data/information collected from other sources]_]</em> to further enhance the ability to identify inappropriate or unusual activity.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="_supplemental_guidance_18">Supplemental Guidance</h5>
+<h5 id="_discussion_18">Discussion</h5>
 <div class="paragraph">
 <p>Integrated analysis of audit records does not require vulnerability scanning, the generation of performance data, or system monitoring. Rather, integrated analysis requires that the analysis of information generated by scanning, monitoring, or other data collection activities is integrated with the analysis of audit record information. Security Information and Event Management tools can facilitate audit record aggregation or consolidation from multiple system components as well as audit record correlation and analysis. The use of standardized audit record analysis scripts developed by organizations (with localized script adjustments, as necessary) provides more cost-effective approaches for analyzing audit record information collected. The correlation of audit record information with vulnerability scanning information is important in determining the veracity of vulnerability scans of the system and in correlating attack detection events with scanning results. Correlation with performance data can uncover denial-of-service attacks or other types of attacks that result in the unauthorized use of resources. Correlation with system monitoring information can assist in uncovering attacks and in better relating audit information to operational situations.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_related_controls_13">Related Controls</h5>
+<div class="paragraph">
+<p><a href="au.html#au-12">AU-12</a>, <a href="ir.html#ir-4">IR-4</a></p>
 </div>
 </div>
 </div>
@@ -1178,7 +1156,7 @@ f. Identity of any individuals, subjects, or objects/entities associated with th
 </div>
 </div>
 <div class="sect4">
-<h5 id="_supplemental_guidance_19">Supplemental Guidance</h5>
+<h5 id="_discussion_19">Discussion</h5>
 <div class="paragraph">
 <p>The correlation of physical audit record information and the audit records from systems may assist organizations in identifying suspicious behavior or supporting evidence of such behavior. For example, the correlation of an individual’s identity for logical access to certain systems with the additional physical security information that the individual was present at the facility when the logical access occurred may be useful in investigations.</p>
 </div>
@@ -1189,11 +1167,11 @@ f. Identity of any individuals, subjects, or objects/entities associated with th
 <div class="sect4">
 <h5 id="_control_20">Control</h5>
 <div class="paragraph">
-<p>Specify the permitted actions for each <em>[Assignment: one-or-more: system process, role, user]</em> associated with the review, analysis, and reporting of audit record information.</p>
+<p>Specify the permitted actions for each <em>[Selection (one or more): system process; role; user]</em> associated with the review, analysis, and reporting of audit record information.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="_supplemental_guidance_20">Supplemental Guidance</h5>
+<h5 id="_discussion_20">Discussion</h5>
 <div class="paragraph">
 <p>Organizations specify permitted actions for system processes, roles, and users associated with the review, analysis, and reporting of audit records through system account management activities. Specifying permitted actions on audit record information is a way to enforce the principle of least privilege. Permitted actions are enforced by the system and include read, write, execute, append, and delete.</p>
 </div>
@@ -1208,9 +1186,15 @@ f. Identity of any individuals, subjects, or objects/entities associated with th
 </div>
 </div>
 <div class="sect4">
-<h5 id="_supplemental_guidance_21">Supplemental Guidance</h5>
+<h5 id="_discussion_21">Discussion</h5>
 <div class="paragraph">
 <p>Full text analysis of privileged commands requires a distinct environment for the analysis of audit record information related to privileged users without compromising such information on the system where the users have elevated privileges, including the capability to execute privileged commands. Full text analysis refers to analysis that considers the full text of privileged commands (i.e., commands and parameters) as opposed to analysis that considers only the name of the command. Full text analysis includes the use of pattern matching and heuristics.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_related_controls_14">Related Controls</h5>
+<div class="paragraph">
+<p><a href="au.html#au-3">AU-3</a>, <a href="au.html#au-9">AU-9</a>, <a href="au.html#au-11">AU-11</a>, <a href="au.html#au-12">AU-12</a></p>
 </div>
 </div>
 </div>
@@ -1223,27 +1207,22 @@ f. Identity of any individuals, subjects, or objects/entities associated with th
 </div>
 </div>
 <div class="sect4">
-<h5 id="_supplemental_guidance_22">Supplemental Guidance</h5>
+<h5 id="_discussion_22">Discussion</h5>
 <div class="paragraph">
 <p>Nontechnical sources include records that document organizational policy violations related to harassment incidents and the improper use of information assets. Such information can lead to a directed analytical effort to detect potential malicious insider activity. Organizations limit access to information that is available from nontechnical sources due to its sensitive nature. Limited access minimizes the potential for inadvertent release of privacy-related information to individuals who do not have a need to know. The correlation of information from nontechnical sources with audit record information generally occurs only when individuals are suspected of being involved in an incident. Organizations obtain legal advice prior to initiating such actions.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_related_controls_15">Related Controls</h5>
+<div class="paragraph">
+<p><a href="pm.html#pm-12">PM-12</a></p>
 </div>
 </div>
 </div>
 <div class="sect3">
 <h4 id="_au_610_audit_level_adjustment">AU-6(10) Audit Level Adjustment<a id="au-6-10"></a></h4>
-<table class="tableblock frame-all grid-all" style="width: 50%;">
-</table>
-<div class="dlist">
-<dl>
-<dt class="hdlist1">Status</dt>
-<dd>
-<p>Withdrawn</p>
-</dd>
-<dt class="hdlist1">Incorporated Into</dt>
-<dd>
-<p><a href="au.html#au-6">AU-6</a></p>
-</dd>
-</dl>
+<div class="paragraph">
+<p>Withdrawn: Incorporated into <a href="au.html#au-6">AU-6</a></p>
 </div>
 </div>
 </div>
@@ -1261,9 +1240,15 @@ b. Does not alter the original content or time ordering of audit records.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_supplemental_guidance_23">Supplemental Guidance</h3>
+<h3 id="_discussion_23">Discussion</h3>
 <div class="paragraph">
 <p>Audit record reduction is a process that manipulates collected audit log information and organizes it into a summary format that is more meaningful to analysts. Audit record reduction and report generation capabilities do not always emanate from the same system or from the same organizational entities that conduct audit logging activities. The audit record reduction capability includes modern data mining techniques with advanced data filters to identify anomalous behavior in audit records. The report generation capability provided by the system can generate customizable reports. Time ordering of audit records can be an issue if the granularity of the timestamp in the record is insufficient.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_related_controls_16">Related Controls</h3>
+<div class="paragraph">
+<p><a href="ac.html#ac-2">AC-2</a>, <a href="au.html#au-2">AU-2</a>, <a href="au.html#au-3">AU-3</a>, <a href="au.html#au-4">AU-4</a>, <a href="au.html#au-5">AU-5</a>, <a href="au.html#au-6">AU-6</a>, <a href="au.html#au-12">AU-12</a>, <a href="au.html#au-16">AU-16</a>, <a href="cm.html#cm-5">CM-5</a>, <a href="ia.html#ia-5">IA-5</a>, <a href="ir.html#ir-4">IR-4</a>, <a href="pm.html#pm-12">PM-12</a>, <a href="si.html#si-4">SI-4</a></p>
 </div>
 </div>
 <div class="sect2">
@@ -1277,7 +1262,7 @@ b. Does not alter the original content or time ordering of audit records.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="_supplemental_guidance_24">Supplemental Guidance</h5>
+<h5 id="_discussion_24">Discussion</h5>
 <div class="paragraph">
 <p>Events of interest can be identified by the content of audit records, including system resources involved, information objects accessed, identities of individuals, event types, event locations, event dates and times, Internet Protocol addresses involved, or event success or failure. Organizations may define event criteria to any degree of granularity required, such as locations selectable by a general networking location or by specific system component.</p>
 </div>
@@ -1285,19 +1270,8 @@ b. Does not alter the original content or time ordering of audit records.</p>
 </div>
 <div class="sect3">
 <h4 id="_au_72_automatic_sort_and_search">AU-7(2) Automatic Sort and Search<a id="au-7-2"></a></h4>
-<table class="tableblock frame-all grid-all" style="width: 50%;">
-</table>
-<div class="dlist">
-<dl>
-<dt class="hdlist1">Status</dt>
-<dd>
-<p>Withdrawn</p>
-</dd>
-<dt class="hdlist1">Incorporated Into</dt>
-<dd>
-<p><a href="au.html#au-7-1">AU-7.1</a></p>
-</dd>
-</dl>
+<div class="paragraph">
+<p>Withdrawn: Incorporated into <a href="au.html#au-7-1">AU-7.1</a></p>
 </div>
 </div>
 </div>
@@ -1306,24 +1280,18 @@ b. Does not alter the original content or time ordering of audit records.</p>
 <div class="sect1">
 <h2 id="_au_8_time_stamps">AU-8 Time Stamps<a id="au-8"></a></h2>
 <div class="sectionbody">
-<table class="tableblock frame-all grid-all" style="width: 50%;">
-<colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">NIST Baseline</th>
-<th class="tableblock halign-left valign-top">Required By</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">LOW</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2022-11-01</p></td>
-</tr>
-</tbody>
-</table>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">NIST Baseline</dt>
+<dd>
+<p>LOW</p>
+</dd>
+<dt class="hdlist1">Required By</dt>
+<dd>
+<p>2022-11-01</p>
+</dd>
+</dl>
+</div>
 <div class="sect2">
 <h3 id="_control_25">Control</h3>
 <div class="olist loweralpha">
@@ -1338,45 +1306,29 @@ b. Does not alter the original content or time ordering of audit records.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_supplemental_guidance_25">Supplemental Guidance</h3>
+<h3 id="_discussion_25">Discussion</h3>
 <div class="paragraph">
 <p>Time stamps generated by the system include date and time. Time is commonly expressed in Coordinated Universal Time (UTC), a modern continuation of Greenwich Mean Time (GMT), or local time with an offset from UTC. Granularity of time measurements refers to the degree of synchronization between system clocks and reference clocks (e.g., clocks synchronizing within hundreds of milliseconds or tens of milliseconds). Organizations may define different time granularities for different system components. Time service can be critical to other security capabilities such as access control and identification and authentication, depending on the nature of the mechanisms used to support those capabilities.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_related_controls_17">Related Controls</h3>
+<div class="paragraph">
+<p><a href="au.html#au-3">AU-3</a>, <a href="au.html#au-12">AU-12</a>, <a href="au.html#au-14">AU-14</a>, <a href="sc.html#sc-45">SC-45</a></p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_control_enhancements_7">Control Enhancements</h3>
 <div class="sect3">
 <h4 id="_au_81_synchronization_with_authoritative_time_source">AU-8(1) Synchronization with Authoritative Time Source<a id="au-8-1"></a></h4>
-<table class="tableblock frame-all grid-all" style="width: 50%;">
-</table>
-<div class="dlist">
-<dl>
-<dt class="hdlist1">Status</dt>
-<dd>
-<p>Withdrawn</p>
-</dd>
-<dt class="hdlist1">Moved To</dt>
-<dd>
-<p><a href="sc.html#sc-45-1">SC-45.1</a></p>
-</dd>
-</dl>
+<div class="paragraph">
+<p>Withdrawn: Moved to <a href="sc.html#sc-45-1">SC-45.1</a></p>
 </div>
 </div>
 <div class="sect3">
 <h4 id="_au_82_secondary_authoritative_time_source">AU-8(2) Secondary Authoritative Time Source<a id="au-8-2"></a></h4>
-<table class="tableblock frame-all grid-all" style="width: 50%;">
-</table>
-<div class="dlist">
-<dl>
-<dt class="hdlist1">Status</dt>
-<dd>
-<p>Withdrawn</p>
-</dd>
-<dt class="hdlist1">Moved To</dt>
-<dd>
-<p><a href="sc.html#sc-45-2">SC-45.2</a></p>
-</dd>
-</dl>
+<div class="paragraph">
+<p>Withdrawn: Moved to <a href="sc.html#sc-45-2">SC-45.2</a></p>
 </div>
 </div>
 </div>
@@ -1385,24 +1337,18 @@ b. Does not alter the original content or time ordering of audit records.</p>
 <div class="sect1">
 <h2 id="_au_9_protection_of_audit_information">AU-9 Protection of Audit Information<a id="au-9"></a></h2>
 <div class="sectionbody">
-<table class="tableblock frame-all grid-all" style="width: 50%;">
-<colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">NIST Baseline</th>
-<th class="tableblock halign-left valign-top">Required By</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">LOW</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2023-05-01</p></td>
-</tr>
-</tbody>
-</table>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">NIST Baseline</dt>
+<dd>
+<p>LOW</p>
+</dd>
+<dt class="hdlist1">Required By</dt>
+<dd>
+<p>2023-05-01</p>
+</dd>
+</dl>
+</div>
 <div class="sect2">
 <h3 id="_control_26">Control</h3>
 <div class="olist loweralpha">
@@ -1417,9 +1363,15 @@ b. Does not alter the original content or time ordering of audit records.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_supplemental_guidance_26">Supplemental Guidance</h3>
+<h3 id="_discussion_26">Discussion</h3>
 <div class="paragraph">
 <p>Audit information includes all information needed to successfully audit system activity, such as audit records, audit log settings, audit reports, and personally identifiable information. Audit logging tools are those programs and devices used to conduct system audit and logging activities. Protection of audit information focuses on technical protection and limits the ability to access and execute audit logging tools to authorized individuals. Physical protection of audit information is addressed by both media protection controls and physical and environmental protection controls.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_related_controls_18">Related Controls</h3>
+<div class="paragraph">
+<p><a href="ac.html#ac-3">AC-3</a>, <a href="ac.html#ac-6">AC-6</a>, <a href="au.html#au-6">AU-6</a>, <a href="au.html#au-11">AU-11</a>, <a href="au.html#au-14">AU-14</a>, <a href="au.html#au-15">AU-15</a>, <a href="mp.html#mp-2">MP-2</a>, <a href="mp.html#mp-4">MP-4</a>, <a href="pe.html#pe-2">PE-2</a>, <a href="pe.html#pe-3">PE-3</a>, <a href="pe.html#pe-6">PE-6</a>, <a href="sa.html#sa-8">SA-8</a>, <a href="sc.html#sc-8">SC-8</a>, <a href="si.html#si-4">SI-4</a></p>
 </div>
 </div>
 <div class="sect2">
@@ -1439,9 +1391,15 @@ b. Does not alter the original content or time ordering of audit records.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="_supplemental_guidance_27">Supplemental Guidance</h5>
+<h5 id="_discussion_27">Discussion</h5>
 <div class="paragraph">
 <p>Writing audit trails to hardware-enforced, write-once media applies to the initial generation of audit trails (i.e., the collection of audit records that represents the information to be used for detection, analysis, and reporting purposes) and to the backup of those audit trails. Writing audit trails to hardware-enforced, write-once media does not apply to the initial generation of audit records prior to being written to an audit trail. Write-once, read-many (WORM) media includes Compact Disc-Recordable (CD-R), Blu-Ray Disc Recordable (BD-R), and Digital Versatile Disc-Recordable (DVD-R). In contrast, the use of switchable write-protection media, such as tape cartridges, Universal Serial Bus (USB) drives, Compact Disc Re-Writeable (CD-RW), and Digital Versatile Disc-Read Write (DVD-RW) results in write-protected but not write-once media.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_related_controls_19">Related Controls</h5>
+<div class="paragraph">
+<p><a href="au.html#au-4">AU-4</a>, <a href="au.html#au-5">AU-5</a></p>
 </div>
 </div>
 </div>
@@ -1454,9 +1412,15 @@ b. Does not alter the original content or time ordering of audit records.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="_supplemental_guidance_28">Supplemental Guidance</h5>
+<h5 id="_discussion_28">Discussion</h5>
 <div class="paragraph">
 <p>Storing audit records in a repository separate from the audited system or system component helps to ensure that a compromise of the system being audited does not also result in a compromise of the audit records. Storing audit records on separate physical systems or components also preserves the confidentiality and integrity of audit records and facilitates the management of audit records as an organization-wide activity. Storing audit records on separate systems or components applies to initial generation as well as backup or long-term storage of audit records.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_related_controls_20">Related Controls</h5>
+<div class="paragraph">
+<p><a href="au.html#au-4">AU-4</a>, <a href="au.html#au-5">AU-5</a></p>
 </div>
 </div>
 </div>
@@ -1469,9 +1433,15 @@ b. Does not alter the original content or time ordering of audit records.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="_supplemental_guidance_29">Supplemental Guidance</h5>
+<h5 id="_discussion_29">Discussion</h5>
 <div class="paragraph">
 <p>Cryptographic mechanisms used for protecting the integrity of audit information include signed hash functions using asymmetric cryptography. This enables the distribution of the public key to verify the hash information while maintaining the confidentiality of the secret key used to generate the hash.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_related_controls_21">Related Controls</h5>
+<div class="paragraph">
+<p><a href="au.html#au-10">AU-10</a>, <a href="sc.html#sc-12">SC-12</a>, <a href="sc.html#sc-13">SC-13</a></p>
 </div>
 </div>
 </div>
@@ -1484,9 +1454,15 @@ b. Does not alter the original content or time ordering of audit records.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="_supplemental_guidance_30">Supplemental Guidance</h5>
+<h5 id="_discussion_30">Discussion</h5>
 <div class="paragraph">
 <p>Individuals or roles with privileged access to a system and who are also the subject of an audit by that system may affect the reliability of the audit information by inhibiting audit activities or modifying audit records. Requiring privileged access to be further defined between audit-related privileges and other privileges limits the number of users or roles with audit-related privileges.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_related_controls_22">Related Controls</h5>
+<div class="paragraph">
+<p><a href="ac.html#ac-5">AC-5</a></p>
 </div>
 </div>
 </div>
@@ -1495,13 +1471,19 @@ b. Does not alter the original content or time ordering of audit records.</p>
 <div class="sect4">
 <h5 id="_control_31">Control</h5>
 <div class="paragraph">
-<p>Enforce dual authorization for <em>[Assignment: one-or-more: movement, deletion]</em> of <em>[Assignment: organization-defined audit information]</em>.</p>
+<p>Enforce dual authorization for <em>[Selection (one or more): movement; deletion]</em> of <em>[Assignment: organization-defined audit information]</em>.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="_supplemental_guidance_31">Supplemental Guidance</h5>
+<h5 id="_discussion_31">Discussion</h5>
 <div class="paragraph">
 <p>Organizations may choose different selection options for different types of audit information. Dual authorization mechanisms (also known as two-person control) require the approval of two authorized individuals to execute audit functions. To reduce the risk of collusion, organizations consider rotating dual authorization duties to other individuals. Organizations do not require dual authorization mechanisms when immediate responses are necessary to ensure public and environmental safety.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_related_controls_23">Related Controls</h5>
+<div class="paragraph">
+<p><a href="ac.html#ac-3">AC-3</a></p>
 </div>
 </div>
 </div>
@@ -1514,7 +1496,7 @@ b. Does not alter the original content or time ordering of audit records.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="_supplemental_guidance_32">Supplemental Guidance</h5>
+<h5 id="_discussion_32">Discussion</h5>
 <div class="paragraph">
 <p>Restricting privileged user or role authorizations to read-only helps to limit the potential damage to organizations that could be initiated by such users or roles, such as deleting audit records to cover up malicious activity.</p>
 </div>
@@ -1529,9 +1511,15 @@ b. Does not alter the original content or time ordering of audit records.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="_supplemental_guidance_33">Supplemental Guidance</h5>
+<h5 id="_discussion_33">Discussion</h5>
 <div class="paragraph">
 <p>Storing auditing information on a system component running a different operating system reduces the risk of a vulnerability specific to the system, resulting in a compromise of the audit records.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_related_controls_24">Related Controls</h5>
+<div class="paragraph">
+<p><a href="au.html#au-4">AU-4</a>, <a href="au.html#au-5">AU-5</a>, <a href="au.html#au-11">AU-11</a>, <a href="sc.html#sc-29">SC-29</a></p>
 </div>
 </div>
 </div>
@@ -1548,9 +1536,15 @@ b. Does not alter the original content or time ordering of audit records.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_supplemental_guidance_34">Supplemental Guidance</h3>
+<h3 id="_discussion_34">Discussion</h3>
 <div class="paragraph">
 <p>Types of individual actions covered by non-repudiation include creating information, sending and receiving messages, and approving information. Non-repudiation protects against claims by authors of not having authored certain documents, senders of not having transmitted messages, receivers of not having received messages, and signatories of not having signed documents. Non-repudiation services can be used to determine if information originated from an individual or if an individual took specific actions (e.g., sending an email, signing a contract, approving a procurement request, or receiving specific information). Organizations obtain non-repudiation services by employing various techniques or mechanisms, including digital signatures and digital message receipts.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_related_controls_25">Related Controls</h3>
+<div class="paragraph">
+<p><a href="au.html#au-9">AU-9</a>, <a href="pm.html#pm-12">PM-12</a>, <a href="sa.html#sa-8">SA-8</a>, <a href="sc.html#sc-8">SC-8</a>, <a href="sc.html#sc-12">SC-12</a>, <a href="sc.html#sc-13">SC-13</a>, <a href="sc.html#sc-16">SC-16</a>, <a href="sc.html#sc-17">SC-17</a>, <a href="sc.html#sc-23">SC-23</a></p>
 </div>
 </div>
 <div class="sect2">
@@ -1571,9 +1565,15 @@ b. Does not alter the original content or time ordering of audit records.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="_supplemental_guidance_35">Supplemental Guidance</h5>
+<h5 id="_discussion_35">Discussion</h5>
 <div class="paragraph">
 <p>Binding identities to the information supports audit requirements that provide organizational personnel with the means to identify who produced specific information in the event of an information transfer. Organizations determine and approve the strength of attribute binding between the information producer and the information based on the security category of the information and other relevant risk factors.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_related_controls_26">Related Controls</h5>
+<div class="paragraph">
+<p><a href="ac.html#ac-4">AC-4</a>, <a href="ac.html#ac-16">AC-16</a></p>
 </div>
 </div>
 </div>
@@ -1587,9 +1587,15 @@ b. Does not alter the original content or time ordering of audit records.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="_supplemental_guidance_36">Supplemental Guidance</h5>
+<h5 id="_discussion_36">Discussion</h5>
 <div class="paragraph">
 <p>Validating the binding of the information producer identity to the information prevents the modification of information between production and review. The validation of bindings can be achieved by, for example, using cryptographic checksums. Organizations determine if validations are in response to user requests or generated automatically.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_related_controls_27">Related Controls</h5>
+<div class="paragraph">
+<p><a href="ac.html#ac-3">AC-3</a>, <a href="ac.html#ac-4">AC-4</a>, <a href="ac.html#ac-16">AC-16</a></p>
 </div>
 </div>
 </div>
@@ -1602,9 +1608,15 @@ b. Does not alter the original content or time ordering of audit records.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="_supplemental_guidance_37">Supplemental Guidance</h5>
+<h5 id="_discussion_37">Discussion</h5>
 <div class="paragraph">
 <p>Chain of custody is a process that tracks the movement of evidence through its collection, safeguarding, and analysis life cycle by documenting each individual who handled the evidence, the date and time the evidence was collected or transferred, and the purpose for the transfer. If the reviewer is a human or if the review function is automated but separate from the release or transfer function, the system associates the identity of the reviewer of the information to be released with the information and the information label. In the case of human reviews, maintaining the credentials of reviewers or releasers provides the organization with the means to identify who reviewed and released the information. In the case of automated reviews, it ensures that only approved review functions are used.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_related_controls_28">Related Controls</h5>
+<div class="paragraph">
+<p><a href="ac.html#ac-4">AC-4</a>, <a href="ac.html#ac-16">AC-16</a></p>
 </div>
 </div>
 </div>
@@ -1618,27 +1630,22 @@ b. Does not alter the original content or time ordering of audit records.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="_supplemental_guidance_38">Supplemental Guidance</h5>
+<h5 id="_discussion_38">Discussion</h5>
 <div class="paragraph">
 <p>Validating the binding of the information reviewer identity to the information at transfer or release points prevents the unauthorized modification of information between review and the transfer or release. The validation of bindings can be achieved by using cryptographic checksums. Organizations determine if validations are in response to user requests or generated automatically.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_related_controls_29">Related Controls</h5>
+<div class="paragraph">
+<p><a href="ac.html#ac-4">AC-4</a>, <a href="ac.html#ac-16">AC-16</a></p>
 </div>
 </div>
 </div>
 <div class="sect3">
 <h4 id="_au_105_digital_signatures">AU-10(5) Digital Signatures<a id="au-10-5"></a></h4>
-<table class="tableblock frame-all grid-all" style="width: 50%;">
-</table>
-<div class="dlist">
-<dl>
-<dt class="hdlist1">Status</dt>
-<dd>
-<p>Withdrawn</p>
-</dd>
-<dt class="hdlist1">Incorporated Into</dt>
-<dd>
-<p><a href="si.html#si-7">SI-7</a></p>
-</dd>
-</dl>
+<div class="paragraph">
+<p>Withdrawn: Incorporated into <a href="si.html#si-7">SI-7</a></p>
 </div>
 </div>
 </div>
@@ -1647,24 +1654,18 @@ b. Does not alter the original content or time ordering of audit records.</p>
 <div class="sect1">
 <h2 id="_au_11_audit_record_retention">AU-11 Audit Record Retention<a id="au-11"></a></h2>
 <div class="sectionbody">
-<table class="tableblock frame-all grid-all" style="width: 50%;">
-<colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">NIST Baseline</th>
-<th class="tableblock halign-left valign-top">Required By</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">LOW</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2023-05-01</p></td>
-</tr>
-</tbody>
-</table>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">NIST Baseline</dt>
+<dd>
+<p>LOW</p>
+</dd>
+<dt class="hdlist1">Required By</dt>
+<dd>
+<p>2023-05-01</p>
+</dd>
+</dl>
+</div>
 <div class="sect2">
 <h3 id="_control_39">Control</h3>
 <div class="paragraph">
@@ -1672,9 +1673,15 @@ b. Does not alter the original content or time ordering of audit records.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_supplemental_guidance_39">Supplemental Guidance</h3>
+<h3 id="_discussion_39">Discussion</h3>
 <div class="paragraph">
 <p>Organizations retain audit records until it is determined that the records are no longer needed for administrative, legal, audit, or other operational purposes. This includes the retention and availability of audit records relative to Freedom of Information Act (FOIA) requests, subpoenas, and law enforcement actions. Organizations develop standard categories of audit records relative to such types of actions and standard response processes for each type of action. The National Archives and Records Administration (NARA) General Records Schedules provide federal policy on records retention.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_related_controls_30">Related Controls</h3>
+<div class="paragraph">
+<p><a href="au.html#au-2">AU-2</a>, <a href="au.html#au-4">AU-4</a>, <a href="au.html#au-5">AU-5</a>, <a href="au.html#au-6">AU-6</a>, <a href="au.html#au-9">AU-9</a>, <a href="au.html#au-14">AU-14</a>, <a href="mp.html#mp-6">MP-6</a>, <a href="ra.html#ra-5">RA-5</a>, <a href="si.html#si-12">SI-12</a></p>
 </div>
 </div>
 <div class="sect2">
@@ -1694,7 +1701,7 @@ b. Does not alter the original content or time ordering of audit records.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="_supplemental_guidance_40">Supplemental Guidance</h5>
+<h5 id="_discussion_40">Discussion</h5>
 <div class="paragraph">
 <p>Organizations need to access and read audit records requiring long-term storage (on the order of years). Measures employed to help facilitate the retrieval of audit records include converting records to newer formats, retaining equipment capable of reading the records, and retaining the necessary documentation to help personnel understand how to interpret the records.</p>
 </div>
@@ -1706,24 +1713,18 @@ b. Does not alter the original content or time ordering of audit records.</p>
 <div class="sect1">
 <h2 id="_au_12_audit_record_generation">AU-12 Audit Record Generation<a id="au-12"></a></h2>
 <div class="sectionbody">
-<table class="tableblock frame-all grid-all" style="width: 50%;">
-<colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">NIST Baseline</th>
-<th class="tableblock halign-left valign-top">Required By</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">LOW</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2023-05-01</p></td>
-</tr>
-</tbody>
-</table>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">NIST Baseline</dt>
+<dd>
+<p>LOW</p>
+</dd>
+<dt class="hdlist1">Required By</dt>
+<dd>
+<p>2023-05-01</p>
+</dd>
+</dl>
+</div>
 <div class="sect2">
 <h3 id="_control_41">Control</h3>
 <div class="olist loweralpha">
@@ -1741,9 +1742,15 @@ b. Does not alter the original content or time ordering of audit records.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_supplemental_guidance_41">Supplemental Guidance</h3>
+<h3 id="_discussion_41">Discussion</h3>
 <div class="paragraph">
 <p>Audit records can be generated from many different system components. The event types specified in</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_related_controls_31">Related Controls</h3>
+<div class="paragraph">
+<p><a href="ac.html#ac-6">AC-6</a>, <a href="ac.html#ac-17">AC-17</a>, <a href="au.html#au-2">AU-2</a>, <a href="au.html#au-3">AU-3</a>, <a href="au.html#au-4">AU-4</a>, <a href="au.html#au-5">AU-5</a>, <a href="au.html#au-6">AU-6</a>, <a href="au.html#au-7">AU-7</a>, <a href="au.html#au-14">AU-14</a>, <a href="cm.html#cm-5">CM-5</a>, <a href="ma.html#ma-4">MA-4</a>, <a href="mp.html#mp-4">MP-4</a>, <a href="pm.html#pm-12">PM-12</a>, <a href="sa.html#sa-8">SA-8</a>, <a href="sc.html#sc-18">SC-18</a>, <a href="si.html#si-3">SI-3</a>, <a href="si.html#si-4">SI-4</a>, <a href="si.html#si-7">SI-7</a>, <a href="si.html#si-10">SI-10</a></p>
 </div>
 </div>
 <div class="sect2">
@@ -1757,9 +1764,15 @@ b. Does not alter the original content or time ordering of audit records.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="_supplemental_guidance_42">Supplemental Guidance</h5>
+<h5 id="_discussion_42">Discussion</h5>
 <div class="paragraph">
 <p>Audit trails are time-correlated if the time stamps in the individual audit records can be reliably related to the time stamps in other audit records to achieve a time ordering of the records within organizational tolerances.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_related_controls_32">Related Controls</h5>
+<div class="paragraph">
+<p><a href="au.html#au-8">AU-8</a>, <a href="sc.html#sc-45">SC-45</a></p>
 </div>
 </div>
 </div>
@@ -1772,7 +1785,7 @@ b. Does not alter the original content or time ordering of audit records.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="_supplemental_guidance_43">Supplemental Guidance</h5>
+<h5 id="_discussion_43">Discussion</h5>
 <div class="paragraph">
 <p>Audit records that follow common standards promote interoperability and information exchange between devices and systems. Promoting interoperability and information exchange facilitates the production of event information that can be readily analyzed and correlated. If logging mechanisms do not conform to standardized formats, systems may convert individual audit records into standardized formats when compiling system-wide audit trails.</p>
 </div>
@@ -1787,9 +1800,15 @@ b. Does not alter the original content or time ordering of audit records.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="_supplemental_guidance_44">Supplemental Guidance</h5>
+<h5 id="_discussion_44">Discussion</h5>
 <div class="paragraph">
 <p>Permitting authorized individuals to make changes to system logging enables organizations to extend or limit logging as necessary to meet organizational requirements. Logging that is limited to conserve system resources may be extended (either temporarily or permanently) to address certain threat situations. In addition, logging may be limited to a specific set of event types to facilitate audit reduction, analysis, and reporting. Organizations can establish time thresholds in which logging actions are changed (e.g., near real-time, within minutes, or within hours).</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_related_controls_33">Related Controls</h5>
+<div class="paragraph">
+<p><a href="ac.html#ac-3">AC-3</a></p>
 </div>
 </div>
 </div>
@@ -1802,7 +1821,7 @@ b. Does not alter the original content or time ordering of audit records.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="_supplemental_guidance_45">Supplemental Guidance</h5>
+<h5 id="_discussion_45">Discussion</h5>
 <div class="paragraph">
 <p>Query parameters are explicit criteria that an individual or automated system submits to a system to retrieve data. Auditing of query parameters for datasets that contain personally identifiable information augments the capability of an organization to track and understand the access, usage, or sharing of personally identifiable information by authorized personnel.</p>
 </div>
@@ -1839,9 +1858,15 @@ b. Does not alter the original content or time ordering of audit records.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_supplemental_guidance_46">Supplemental Guidance</h3>
+<h3 id="_discussion_46">Discussion</h3>
 <div class="paragraph">
 <p>Unauthorized disclosure of information is a form of data leakage. Open-source information includes social networking sites and code-sharing platforms and repositories. Examples of organizational information include personally identifiable information retained by the organization or proprietary information generated by the organization.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_related_controls_34">Related Controls</h3>
+<div class="paragraph">
+<p><a href="ac.html#ac-22">AC-22</a>, <a href="pe.html#pe-3">PE-3</a>, <a href="pm.html#pm-12">PM-12</a>, <a href="ra.html#ra-5">RA-5</a>, <a href="sc.html#sc-7">SC-7</a>, <a href="si.html#si-20">SI-20</a></p>
 </div>
 </div>
 <div class="sect2">
@@ -1855,7 +1880,7 @@ b. Does not alter the original content or time ordering of audit records.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="_supplemental_guidance_47">Supplemental Guidance</h5>
+<h5 id="_discussion_47">Discussion</h5>
 <div class="paragraph">
 <p>Automated mechanisms include commercial services that provide notifications and alerts to organizations and automated scripts to monitor new posts on websites.</p>
 </div>
@@ -1870,7 +1895,7 @@ b. Does not alter the original content or time ordering of audit records.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="_supplemental_guidance_48">Supplemental Guidance</h5>
+<h5 id="_discussion_48">Discussion</h5>
 <div class="paragraph">
 <p>Reviewing the current list of open-source information sites being monitored on a regular basis helps to ensure that the selected sites remain relevant. The review also provides the opportunity to add new open-source information sites with the potential to provide evidence of unauthorized disclosure of organizational information. The list of sites monitored can be guided and informed by threat intelligence of other credible sources of information.</p>
 </div>
@@ -1885,7 +1910,7 @@ b. Does not alter the original content or time ordering of audit records.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="_supplemental_guidance_49">Supplemental Guidance</h5>
+<h5 id="_discussion_49">Discussion</h5>
 <div class="paragraph">
 <p>The unauthorized use or replication of organizational information by external entities can cause adverse impacts on organizational operations and assets, including damage to reputation. Such activity can include the replication of an organizational website by an adversary or hostile threat actor who attempts to impersonate the web-hosting organization. Discovery tools, techniques, and processes used to determine if external entities are replicating organizational information in an unauthorized manner include scanning external websites, monitoring social media, and training staff to recognize the unauthorized use of organizational information.</p>
 </div>
@@ -1902,7 +1927,7 @@ b. Does not alter the original content or time ordering of audit records.</p>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
-<p>Provide and implement the capability for <em>[Assignment: organization-defined users or roles]</em> to <em>[Assignment: one-or-more: record, view, hear, log]</em> the content of a user session under <em>[Assignment: organization-defined circumstances]</em>; and</p>
+<p>Provide and implement the capability for <em>[Assignment: organization-defined users or roles]</em> to <em>[Selection (one or more): record; view; hear; log]</em> the content of a user session under <em>[Assignment: organization-defined circumstances]</em>; and</p>
 </li>
 <li>
 <p>Develop, integrate, and use session auditing activities in consultation with legal counsel and in accordance with applicable laws, executive orders, directives, regulations, policies, standards, and guidelines.</p>
@@ -1911,9 +1936,15 @@ b. Does not alter the original content or time ordering of audit records.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_supplemental_guidance_50">Supplemental Guidance</h3>
+<h3 id="_discussion_50">Discussion</h3>
 <div class="paragraph">
 <p>Session audits can include monitoring keystrokes, tracking websites visited, and recording information and/or file transfers. Session audit capability is implemented in addition to event logging and may involve implementation of specialized session capture technology. Organizations consider how session auditing can reveal information about individuals that may give rise to privacy risk as well as how to mitigate those risks. Because session auditing can impact system and network performance, organizations activate the capability under well-defined situations (e.g., the organization is suspicious of a specific individual). Organizations consult with legal counsel, civil liberties officials, and privacy officials to ensure that any legal, privacy, civil rights, or civil liberties issues, including the use of personally identifiable information, are appropriately addressed.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_related_controls_35">Related Controls</h3>
+<div class="paragraph">
+<p><a href="ac.html#ac-3">AC-3</a>, <a href="ac.html#ac-8">AC-8</a>, <a href="au.html#au-2">AU-2</a>, <a href="au.html#au-3">AU-3</a>, <a href="au.html#au-4">AU-4</a>, <a href="au.html#au-5">AU-5</a>, <a href="au.html#au-8">AU-8</a>, <a href="au.html#au-9">AU-9</a>, <a href="au.html#au-11">AU-11</a>, <a href="au.html#au-12">AU-12</a></p>
 </div>
 </div>
 <div class="sect2">
@@ -1927,7 +1958,7 @@ b. Does not alter the original content or time ordering of audit records.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="_supplemental_guidance_51">Supplemental Guidance</h5>
+<h5 id="_discussion_51">Discussion</h5>
 <div class="paragraph">
 <p>The automatic initiation of session audits at startup helps to ensure that the information being captured on selected individuals is complete and not subject to compromise through tampering by malicious threat actors.</p>
 </div>
@@ -1935,19 +1966,8 @@ b. Does not alter the original content or time ordering of audit records.</p>
 </div>
 <div class="sect3">
 <h4 id="_au_142_capture_and_record_content">AU-14(2) Capture and Record Content<a id="au-14-2"></a></h4>
-<table class="tableblock frame-all grid-all" style="width: 50%;">
-</table>
-<div class="dlist">
-<dl>
-<dt class="hdlist1">Status</dt>
-<dd>
-<p>Withdrawn</p>
-</dd>
-<dt class="hdlist1">Incorporated Into</dt>
-<dd>
-<p><a href="au.html#au-14">AU-14</a></p>
-</dd>
-</dl>
+<div class="paragraph">
+<p>Withdrawn: Incorporated into <a href="au.html#au-14">AU-14</a></p>
 </div>
 </div>
 <div class="sect3">
@@ -1959,9 +1979,15 @@ b. Does not alter the original content or time ordering of audit records.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="_supplemental_guidance_52">Supplemental Guidance</h5>
+<h5 id="_discussion_52">Discussion</h5>
 <div class="paragraph">
 <p>None.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_related_controls_36">Related Controls</h5>
+<div class="paragraph">
+<p><a href="ac.html#ac-17">AC-17</a></p>
 </div>
 </div>
 </div>
@@ -1971,19 +1997,8 @@ b. Does not alter the original content or time ordering of audit records.</p>
 <div class="sect1">
 <h2 id="_au_15_alternate_audit_logging_capability">AU-15 Alternate Audit Logging Capability<a id="au-15"></a></h2>
 <div class="sectionbody">
-<table class="tableblock frame-all grid-all" style="width: 50%;">
-</table>
-<div class="dlist">
-<dl>
-<dt class="hdlist1">Status</dt>
-<dd>
-<p>Withdrawn</p>
-</dd>
-<dt class="hdlist1">Moved To</dt>
-<dd>
-<p><a href="au.html#au-5-5">AU-5.5</a></p>
-</dd>
-</dl>
+<div class="paragraph">
+<p>Withdrawn: Moved to <a href="au.html#au-5-5">AU-5.5</a></p>
 </div>
 </div>
 </div>
@@ -1997,9 +2012,15 @@ b. Does not alter the original content or time ordering of audit records.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_supplemental_guidance_53">Supplemental Guidance</h3>
+<h3 id="_discussion_53">Discussion</h3>
 <div class="paragraph">
 <p>When organizations use systems or services of external organizations, the audit logging capability necessitates a coordinated, cross-organization approach. For example, maintaining the identity of individuals who request specific services across organizational boundaries may often be difficult, and doing so may prove to have significant performance and privacy ramifications. Therefore, it is often the case that cross-organizational audit logging simply captures the identity of individuals who issue requests at the initial system, and subsequent systems record that the requests originated from authorized individuals. Organizations consider including processes for coordinating audit information requirements and protection of audit information in information exchange agreements.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_related_controls_37">Related Controls</h3>
+<div class="paragraph">
+<p><a href="au.html#au-3">AU-3</a>, <a href="au.html#au-6">AU-6</a>, <a href="au.html#au-7">AU-7</a>, <a href="ca.html#ca-3">CA-3</a>, <a href="pt.html#pt-7">PT-7</a></p>
 </div>
 </div>
 <div class="sect2">
@@ -2013,9 +2034,15 @@ b. Does not alter the original content or time ordering of audit records.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="_supplemental_guidance_54">Supplemental Guidance</h5>
+<h5 id="_discussion_54">Discussion</h5>
 <div class="paragraph">
 <p>Identity preservation is applied when there is a need to be able to trace actions that are performed across organizational boundaries to a specific individual.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_related_controls_38">Related Controls</h5>
+<div class="paragraph">
+<p><a href="ia.html#ia-2">IA-2</a>, <a href="ia.html#ia-4">IA-4</a>, <a href="ia.html#ia-5">IA-5</a>, <a href="ia.html#ia-8">IA-8</a></p>
 </div>
 </div>
 </div>
@@ -2028,9 +2055,15 @@ b. Does not alter the original content or time ordering of audit records.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="_supplemental_guidance_55">Supplemental Guidance</h5>
+<h5 id="_discussion_55">Discussion</h5>
 <div class="paragraph">
 <p>Due to the distributed nature of the audit information, cross-organization sharing of audit information may be essential for effective analysis of the auditing being performed. For example, the audit records of one organization may not provide sufficient information to determine the appropriate or inappropriate use of organizational information resources by individuals in other organizations. In some instances, only individuals&apos; home organizations have the appropriate knowledge to make such determinations, thus requiring the sharing of audit information among organizations.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_related_controls_39">Related Controls</h5>
+<div class="paragraph">
+<p><a href="ir.html#ir-4">IR-4</a>, <a href="si.html#si-4">SI-4</a></p>
 </div>
 </div>
 </div>
@@ -2043,7 +2076,7 @@ b. Does not alter the original content or time ordering of audit records.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="_supplemental_guidance_56">Supplemental Guidance</h5>
+<h5 id="_discussion_56">Discussion</h5>
 <div class="paragraph">
 <p>Preserving identities in audit trails could have privacy ramifications, such as enabling the tracking and profiling of individuals, but may not be operationally necessary. These risks could be further amplified when transmitting information across organizational boundaries. Implementing privacy-enhancing cryptographic techniques can disassociate individuals from audit information and reduce privacy risk while maintaining accountability.</p>
 </div>
@@ -2094,7 +2127,7 @@ b. Does not alter the original content or time ordering of audit records.</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"AU - Audit and Accountability","level":"1.2.3","depth":2,"next":{"title":"CA - Assessment, Authorization, and Monitoring","level":"1.2.4","depth":2,"path":"catalog/ca.adoc","ref":"catalog/ca.adoc","articles":[]},"previous":{"title":"AT - Awareness and Training","level":"1.2.2","depth":2,"path":"catalog/at.adoc","ref":"catalog/at.adoc","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Texas A&M University System Cybersecurity Standards","gitbook":"*"},"file":{"path":"catalog/au.adoc","mtime":"2022-01-23T22:23:09.052Z","type":"asciidoc"},"gitbook":{"version":"3.6.23","time":"2022-01-24T03:12:00.423Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"AU - Audit and Accountability","level":"1.2.3","depth":2,"next":{"title":"CA - Assessment, Authorization, and Monitoring","level":"1.2.4","depth":2,"path":"catalog/ca.adoc","ref":"catalog/ca.adoc","articles":[]},"previous":{"title":"AT - Awareness and Training","level":"1.2.2","depth":2,"path":"catalog/at.adoc","ref":"catalog/at.adoc","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Nicholas McLarty","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Texas A&M University System Cybersecurity Standards","gitbook":"*","description":"Texas A&M System Cybersecurity Standards provide system members with guidance that enhances State-level requirements for implementing security controls."},"file":{"path":"catalog/au.adoc","mtime":"2022-01-24T21:53:20.435Z","type":"asciidoc"},"gitbook":{"version":"3.6.23","time":"2022-01-24T21:53:47.650Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -2146,10 +2179,6 @@ b. Does not alter the original content or time ordering of audit records.</p>
     </script>
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
-    
-        
-        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
-        
     
         
         <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>

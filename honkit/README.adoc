@@ -14,6 +14,7 @@ Texas A&M University System members publish a security control catalog to implem
 
 Texas A&M System Cybersecurity Standards provide system members with guidance that enhances State-level requirements for implementing security controls. These standards are prescribed by Texas A&M System Regulation 29.01.03, Information Security, paragraph 1.2.{fn-tamus-29_01_03}
 
+[.Changed]
 This document is intended to be used as a supplement to Texas Security Control Standards Catalog Version 2.0, updated January 2022.{fn-dir-catalog} It is recommended that system members read the Texas Security Control Standards Catalog and NIST Special Publication 800-53, Revision 5{fn-sp-800_53r5}, in their entirety to understand the control selection and specification process.
 
 == Lifecycle
@@ -24,6 +25,8 @@ Prior to publishing new or revised standards, the System Office of Cybersecurity
 
 == Control Standards Catalog
 
+[.Changed]
 Security and privacy control standards described in this control standards catalog have a well-defined organization and structure. For ease of use in the security and privacy control selection and specification process, controls are organized into families (listed in the navigation menu to the left). Each family contains controls that are related to the specific topic of the family. A two-character identifier uniquely identifies each control family (e.g., PS for Personnel Security). Security and privacy controls may involve aspects of policy, oversight, supervision, manual processes, and automated mechanisms that are implemented by systems or actions by individuals.
 
+[.Changed]
 To simplify the review of security control standards that are required by Texas DIR or the Texas A&M System, an abbreviated list of xref:catalog/required-controls.adoc[Required Security Controls] is provided along with the required implementation date established by Texas DIR.

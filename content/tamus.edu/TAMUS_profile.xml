@@ -141,7 +141,8 @@
       <add position="ending">
         <prop name="tamus_required_by" value="2022-08-01"/>
         <part name="tamus_implementation" id="cm-10_tamus">
-          <p>Ensure users understand that unauthorized or unlicensed use of software is regarded as a serious matter subject to disciplinary action.</p>
+          <prop name="changed" value="true"/>
+          <p>Inform users that unauthorized or unlicensed use of software is regarded as a serious matter subject to disciplinary action.</p>
         </part>
       </add>
     </alter>
@@ -310,7 +311,7 @@
       <add position="ending">
         <prop name="tamus_required_by" value="2022-08-01"/>
         <part name="tamus_implementation" id="ra-2_tamus">
-          <p>Categorize information and information systems owned or managed by the organization using a data categorization structure that incorporates the guidance provided in xref:/data-categorization.adoc[Data Categorization], at a minimum, and</p>
+          <p>Categorize information and information systems owned or managed by the organization using a data categorization structure that incorporates the guidance provided in xref:/data-categorization.adoc[Data Categorization], at a minimum.</p>
         </part>
       </add>
     </alter>
@@ -373,11 +374,6 @@
             <p>Ensure personally owned devices that connect to networks within the same boundary as confidential or high-impact information systems employ endpoint protection software or suitable compensating controls, based on assessed risk.</p>
           </part>
         </part>
-      </add>
-    </alter>
-    <alter control-id="si-4">
-      <add position="ending">
-        <prop name="tamus_required_by" value="2022-08-01"/>
       </add>
     </alter>
   </modify>

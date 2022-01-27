@@ -3,7 +3,7 @@ import re
 import xml.etree.ElementTree as ET
 
 parser = ET.XMLParser(encoding="ascii")
-tree = ET.parse('TAMUS_2.0_resolved-profile_catalog.xml', parser=parser)
+tree = ET.parse('TAMUS_resolved-profile_catalog.xml', parser=parser)
 root = tree.getroot()
 
 # Take a link element, format into an ASCIIdoc cross-reference, and output
@@ -11,6 +11,7 @@ def transformInsideLinks(links):
     linksList = []
     for link in links:
         str = ""
+
         label = re.sub("(.*)_smt\.(.*)", "\\1(\\2)", link)
         label = re.sub(link[1:3], link[1:3].upper(), label)
         href = re.sub("(.*)_smt\.(.*)", "\\1", link)
@@ -42,21 +43,38 @@ def transformParam(param):
 
     return str
 
+# Custom function for printPart() to format the output of an cross-reference link
+def printPartFormatXref(x):
+    if (x.group(3)):
+        return ("xref:%s.adoc#%s-%s-%s[%s-%s(%s)]" % (x.group(1), x.group(1), x.group(2), x.group(3), x.group(1).upper(), x.group(2).upper(), x.group(3)))
+    else:
+        return ("xref:%s.adoc#%s-%s[%s-%s]" % (x.group(1), x.group(1), x.group(2), x.group(1).upper(), x.group(2).upper()))
+
 # Each part of a control statement iterates through this function
 def printPart(parts, links, props):
     string = "" # Initialize the string to be returned
 
+    # Re-iterate prop elements
+    part_props = {}
+    for part_prop in parts.findall('{http://csrc.nist.gov/ns/oscal/1.0}prop'):
+        if (part_prop.get('class') != "sp800-53a"):
+            part_props[part_prop.get('name')] = part_prop.get('value')
+
+    # If the element is the last child, output the contents of the p tag
+    if ('changed' in part_props):
+        string += "[.Changed]\n"
+
     # Iterate the part elements and format/output
     for part in parts:
-        # If the element is the last child, output the contents of the p tag
+
         if (part.tag == "{http://csrc.nist.gov/ns/oscal/1.0}p"):
-            string += part.text.lstrip() + "\n"
+            str = re.sub("{#([a-z]{2})-(\d{1,2})-?([a-z0-9]*)}", printPartFormatXref, part.text.lstrip())
+            string += str + "\n"
 
         # If the element is an item part, output the label and re-iterate child elements
-        if (part.get('name') == "item"):
-            for item_prop in part.findall('{http://csrc.nist.gov/ns/oscal/1.0}prop'):
-                if (item_prop.get('name') == "label"):
-                    string += item_prop.get('value') + " "
+        for item_prop in part.findall('{http://csrc.nist.gov/ns/oscal/1.0}prop'):
+            if (item_prop.get('name') == "label"):
+                string += item_prop.get('value') + " "
 
             if (part.findall('{http://csrc.nist.gov/ns/oscal/1.0}part') is not None):
                 string += printPart(part, links, props)
@@ -98,7 +116,8 @@ def printCatalogItem(element):
         # Iterate the prop elements and set props as a dictionary
         props = {}
         for prop in element.findall('{http://csrc.nist.gov/ns/oscal/1.0}prop'):
-            props[prop.get('name')] = prop.get('value')
+            if (prop.get('class') != "sp800-53a"):
+                props[prop.get('name')] = prop.get('value')
 
         # Output the ASCIIdoc for the title
         string += ("%s %s %s[[%s]]\n" % ("="*indent, props['label'], title, \
@@ -108,9 +127,13 @@ def printCatalogItem(element):
         if (props.get('baseline')):
             string += ("NIST Baseline:: %s\n" % (props.get('baseline')))
 
-        # Output the Required By date (if exists)
-        if (props.get('required_by')):
-            string += ("Required By:: %s\n" % (props.get('required_by')))
+        # Output the TxDIR Required By date (if exists)
+        if (props.get('tx_required_by')):
+            string += ("TxDIR Required By:: %s\n" % (props.get('tx_required_by')))
+
+        # Output the TAMUS Required By date (if exists)
+        if (props.get('tamus_required_by')):
+            string += ("TAMUS Required By:: %s\n" % (props.get('tamus_required_by')))
 
         # Output the control status (used for inactive controls)
         if (props.get('status')):
@@ -228,34 +251,42 @@ required_controls_file = open("required-controls.adoc", "w") # Create new ASCIId
 
 string = "# Texas DIR and Texas A&M System Required Controls\n\n"
 
-string += "[cols=\"15%,60%,25%\"]\n"
+string += "[cols=\"15%,45%,20%,20%\"]\n"
 string += "|===\n"
-string += "|Control ID |Title |Required By\n\n"
+string += "|Control ID |Title |TxDIR Required By |TAMUS Required By\n\n"
 
 # Iterate the control families, find ones with a required date, and output as ASCIIdoc
 for family in root.findall('{http://csrc.nist.gov/ns/oscal/1.0}group'):
     title = family.find('{http://csrc.nist.gov/ns/oscal/1.0}title').text   # Control family title
-    string += ("3+h|%s\n" % (title))
+    string += ("4+h|%s\n" % (title))
 
     i = 0
 
     for control in family.iter('{http://csrc.nist.gov/ns/oscal/1.0}control'):
         props = {}
         for prop in control.findall('{http://csrc.nist.gov/ns/oscal/1.0}prop'):
-            props[prop.get('name')] = prop.get('value')
+            if (prop.get('class') != "sp800-53a"):
+                props[prop.get('name')] = prop.get('value')
 
-        if ('required_by' in props):
+        if ('tx_required_by' in props or 'tamus_required_by' in props):
             i += 1
             title = control.find('{http://csrc.nist.gov/ns/oscal/1.0}title').text   # Catalog item's title
             family = control.get('id')[0:2]
 
-            string += ("|xref:%s.adoc#%s[%s] " % (family, control.get('id'), props['label']))
+            string += ("|xref:%s.adoc#%s[%s] " % (family, transformParam(control.get('id')), props['label']))
             string += ("|%s " % (title))
-            string += ("|%s " % (props['required_by']))
+            if ('tx_required_by' in props):
+                string += ("|%s " % (props['tx_required_by'] or ""))
+            else:
+                string += "| "
+            if ('tamus_required_by' in props):
+                string += ("|%s " % (props['tamus_required_by'] or ""))
+            else:
+                string += "| "
             string += "\n"
 
     if (i == 0):
-        string += "3+|_No required controls in this family_\n"
+        string += "4+|_No required controls in this family_\n"
 
 string += "|===\n"
 

@@ -562,7 +562,7 @@
 <dd>
 <p>LOW</p>
 </dd>
-<dt class="hdlist1">Required By</dt>
+<dt class="hdlist1">TxDIR Required By</dt>
 <dd>
 <p>2023-05-01</p>
 </dd>
@@ -573,11 +573,11 @@
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
-<p>Develop, document, and disseminate to <em>[Assignment: organization-defined personnel or roles]</em>:</p>
+<p>Develop, document, and disseminate to  <em>[Assignment: organization-defined personnel or roles]</em>:</p>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p><em>[Selection (one or more): Organization-level; Mission/business process-level; System-level]</em> audit and accountability policy that:
+<p><em>[Selection (one or more): organization-level; mission/business process-level; system-level]</em>  audit and accountability policy that:
 (a) Addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and
 (b) Is consistent with applicable laws, executive orders, directives, regulations, policies, standards, and guidelines; and</p>
 </li>
@@ -588,17 +588,17 @@
 </div>
 </li>
 <li>
-<p>Designate an <em>[Assignment: organization-defined official]</em> to manage the development, documentation, and dissemination of the audit and accountability policy and procedures; and</p>
+<p>Designate an  <em>[Assignment: official]</em>  to manage the development, documentation, and dissemination of the audit and accountability policy and procedures; and</p>
 </li>
 <li>
 <p>Review and update the current audit and accountability:</p>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Policy <em>[Assignment: organization-defined frequency]</em> and following <em>[Assignment: organization-defined events]</em>; and</p>
+<p>Policy  <em>[Assignment: frequency]</em>  and following  <em>[Assignment: events]</em> ; and</p>
 </li>
 <li>
-<p>Procedures <em>[Assignment: organization-defined frequency]</em> and following <em>[Assignment: organization-defined events]</em>.</p>
+<p>Procedures  <em>[Assignment: frequency]</em>  and following  <em>[Assignment: events]</em>.</p>
 </li>
 </ol>
 </div>
@@ -635,7 +635,7 @@
 <dd>
 <p>LOW</p>
 </dd>
-<dt class="hdlist1">Required By</dt>
+<dt class="hdlist1">TxDIR Required By</dt>
 <dd>
 <p>2023-05-01</p>
 </dd>
@@ -646,27 +646,27 @@
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
-<p>Identify the types of events that the system is capable of logging in support of the audit function: <em>[Assignment: organization-defined event types that the system is capable of logging]</em>;</p>
+<p>Identify the types of events that the system is capable of logging in support of the audit function:  <em>[Assignment: event types]</em>;</p>
 </li>
 <li>
 <p>Coordinate the event logging function with other organizational entities requiring audit-related information to guide and inform the selection criteria for events to be logged;</p>
 </li>
 <li>
-<p>Specify the following event types for logging within the system: <em>[Assignment: organization-defined event types (subset of the event types defined in]</em>;</p>
+<p>Specify the following event types for logging within the system:  <em>[Assignment: organization-defined event types (subset of the event types defined in]</em>;</p>
 </li>
 <li>
 <p>Provide a rationale for why the event types selected for logging are deemed to be adequate to support after-the-fact investigations of incidents; and</p>
 </li>
 <li>
-<p>Review and update the event types selected for logging <em>[Assignment: organization-defined frequency]</em>.</p>
+<p>Review and update the event types selected for logging  <em>[Assignment: frequency]</em>.</p>
 </li>
 </ol>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_state_implementation_details">State Implementation Details</h3>
-<div class="olist arabic">
-<ol class="arabic">
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
 <li>
 <p>Information resources systems shall provide the means whereby authorized personnel have the ability to audit and establish individual accountability for any action that can potentially cause access to, generation of, modification of, or affect the
 release of confidential information.</p>
@@ -685,7 +685,7 @@ release of confidential information.</p>
 <div class="paragraph">
 <p>An event is an observable occurrence in a system. The types of events that require logging are those events that are significant and relevant to the security of systems and the privacy of individuals. Event logging also supports specific monitoring and auditing needs. Event types include password changes, failed logons or failed accesses related to systems, security or privacy attribute changes, administrative privilege usage, PIV credential usage, data action changes, query parameters, or external credential usage. In determining the set of event types that require logging, organizations consider the monitoring and auditing appropriate for each of the controls to be implemented. For completeness, event logging includes all protocols that are operational and supported by the system.
 To balance monitoring and auditing requirements with other system needs, event logging requires identifying the subset of event types that are logged at a given point in time. For example, organizations may determine that systems need the capability to log every file access successful and unsuccessful, but not activate that capability except for specific circumstances due to the potential burden on system performance. The types of events that organizations desire to be logged may change. Reviewing and updating the set of logged events is necessary to help ensure that the events remain relevant and continue to support the needs of the organization. Organizations consider how the types of logging events can reveal information about individuals that may give rise to privacy risk and how best to mitigate such risks. For example, there is the potential to reveal personally identifiable information in the audit trail, especially if the logging event is based on patterns or time of usage.
-Event logging requirements, including the need to log specific event types, may be referenced in other controls and control enhancements. These include</p>
+Event logging requirements, including the need to log specific event types, may be referenced in other controls and control enhancements. These include  <a href="ac.html#ac-2-4">AC-2(4)</a>,  <a href="ac.html#ac-3-10">AC-3(10)</a>,  <a href="ac.html#ac-6-9">AC-6(9)</a>,  <a href="ac.html#ac-17-1">AC-17(1)</a>,</p>
 </div>
 </div>
 <div class="sect2">
@@ -738,7 +738,7 @@ Event logging requirements, including the need to log specific event types, may 
 <dd>
 <p>LOW</p>
 </dd>
-<dt class="hdlist1">Required By</dt>
+<dt class="hdlist1">TxDIR Required By</dt>
 <dd>
 <p>2022-11-01</p>
 </dd>
@@ -781,7 +781,7 @@ f. Identity of any individuals, subjects, or objects/entities associated with th
 <div class="sect4">
 <h5 id="_control_4">Control</h5>
 <div class="paragraph">
-<p>Generate audit records containing the following additional information: <em>[Assignment: organization-defined additional information]</em>.</p>
+<p>Generate audit records containing the following additional information:  <em>[Assignment: additional information]</em>.</p>
 </div>
 </div>
 <div class="sect4">
@@ -802,7 +802,7 @@ f. Identity of any individuals, subjects, or objects/entities associated with th
 <div class="sect4">
 <h5 id="_control_5">Control</h5>
 <div class="paragraph">
-<p>Limit personally identifiable information contained in audit records to the following elements identified in the privacy risk assessment: <em>[Assignment: organization-defined elements]</em>.</p>
+<p>Limit personally identifiable information contained in audit records to the following elements identified in the privacy risk assessment:  <em>[Assignment: elements]</em>.</p>
 </div>
 </div>
 <div class="sect4">
@@ -830,7 +830,7 @@ f. Identity of any individuals, subjects, or objects/entities associated with th
 <dd>
 <p>LOW</p>
 </dd>
-<dt class="hdlist1">Required By</dt>
+<dt class="hdlist1">TxDIR Required By</dt>
 <dd>
 <p>2023-05-01</p>
 </dd>
@@ -839,7 +839,7 @@ f. Identity of any individuals, subjects, or objects/entities associated with th
 <div class="sect2">
 <h3 id="_control_6">Control</h3>
 <div class="paragraph">
-<p>Allocate audit log storage capacity to accommodate <em>[Assignment: organization-defined audit log retention requirements]</em>.</p>
+<p>Allocate audit log storage capacity to accommodate  <em>[Assignment: audit log retention requirements]</em>.</p>
 </div>
 </div>
 <div class="sect2">
@@ -861,13 +861,13 @@ f. Identity of any individuals, subjects, or objects/entities associated with th
 <div class="sect4">
 <h5 id="_control_7">Control</h5>
 <div class="paragraph">
-<p>Transfer audit logs <em>[Assignment: organization-defined frequency]</em> to a different system, system component, or media other than the system or system component conducting the logging.</p>
+<p>Transfer audit logs  <em>[Assignment: frequency]</em>  to a different system, system component, or media other than the system or system component conducting the logging.</p>
 </div>
 </div>
 <div class="sect4">
 <h5 id="_discussion_7">Discussion</h5>
 <div class="paragraph">
-<p>Audit log transfer, also known as off-loading, is a common process in systems with limited audit log storage capacity and thus supports availability of the audit logs. The initial audit log storage is only used in a transitory fashion until the system can communicate with the secondary or alternate system allocated to audit log storage, at which point the audit logs are transferred. Transferring audit logs to alternate storage is similar to</p>
+<p>Audit log transfer, also known as off-loading, is a common process in systems with limited audit log storage capacity and thus supports availability of the audit logs. The initial audit log storage is only used in a transitory fashion until the system can communicate with the secondary or alternate system allocated to audit log storage, at which point the audit logs are transferred. Transferring audit logs to alternate storage is similar to  <a href="au.html#au-9-2">AU-9(2)</a>  in that audit logs are transferred to a different entity. However, the purpose of selecting  <a href="au.html#au-9-2">AU-9(2)</a>  is to protect the confidentiality and integrity of audit records. Organizations can select either control enhancement to obtain the benefit of increased audit log storage capacity and preserving the confidentiality, integrity, and availability of audit records and logs.</p>
 </div>
 </div>
 </div>
@@ -883,7 +883,7 @@ f. Identity of any individuals, subjects, or objects/entities associated with th
 <dd>
 <p>LOW</p>
 </dd>
-<dt class="hdlist1">Required By</dt>
+<dt class="hdlist1">TxDIR Required By</dt>
 <dd>
 <p>2023-05-01</p>
 </dd>
@@ -894,10 +894,10 @@ f. Identity of any individuals, subjects, or objects/entities associated with th
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
-<p>Alert <em>[Assignment: organization-defined personnel or roles]</em> within <em>[Assignment: organization-defined time period]</em> in the event of an audit logging process failure; and</p>
+<p>Alert  <em>[Assignment: personnel or roles]</em>  within  <em>[Assignment: time period]</em>  in the event of an audit logging process failure; and</p>
 </li>
 <li>
-<p>Take the following additional actions: <em>[Assignment: organization-defined additional actions]</em>.</p>
+<p>Take the following additional actions:  <em>[Assignment: additional actions]</em>.</p>
 </li>
 </ol>
 </div>
@@ -921,7 +921,7 @@ f. Identity of any individuals, subjects, or objects/entities associated with th
 <div class="sect4">
 <h5 id="_control_9">Control</h5>
 <div class="paragraph">
-<p>Provide a warning to <em>[Assignment: organization-defined personnel, roles, and/or locations]</em> within <em>[Assignment: organization-defined time period]</em> when allocated audit log storage volume reaches <em>[Assignment: organization-defined percentage]</em> of repository maximum audit log storage capacity.</p>
+<p>Provide a warning to  <em>[Assignment: personnel, roles, and/or locations]</em>  within  <em>[Assignment: time period]</em>  when allocated audit log storage volume reaches  <em>[Assignment: percentage]</em>  of repository maximum audit log storage capacity.</p>
 </div>
 </div>
 <div class="sect4">
@@ -936,7 +936,7 @@ f. Identity of any individuals, subjects, or objects/entities associated with th
 <div class="sect4">
 <h5 id="_control_10">Control</h5>
 <div class="paragraph">
-<p>Provide an alert within <em>[Assignment: organization-defined real-time period]</em> to <em>[Assignment: organization-defined personnel, roles, and/or locations]</em> when the following audit failure events occur: <em>[Assignment: organization-defined audit logging failure events requiring real-time alerts]</em>.</p>
+<p>Provide an alert within  <em>[Assignment: real-time period]</em>  to  <em>[Assignment: personnel, roles, and/or locations]</em>  when the following audit failure events occur:  <em>[Assignment: audit logging failure events requiring real-time alerts]</em>.</p>
 </div>
 </div>
 <div class="sect4">
@@ -951,7 +951,7 @@ f. Identity of any individuals, subjects, or objects/entities associated with th
 <div class="sect4">
 <h5 id="_control_11">Control</h5>
 <div class="paragraph">
-<p>Enforce configurable network communications traffic volume thresholds reflecting limits on audit log storage capacity and <em>[Selection: reject; delay]</em> network traffic above those thresholds.</p>
+<p>Enforce configurable network communications traffic volume thresholds reflecting limits on audit log storage capacity and  <em>[Selection (one or more): reject; delay]</em>  network traffic above those thresholds.</p>
 </div>
 </div>
 <div class="sect4">
@@ -966,7 +966,7 @@ f. Identity of any individuals, subjects, or objects/entities associated with th
 <div class="sect4">
 <h5 id="_control_12">Control</h5>
 <div class="paragraph">
-<p>Invoke a <em>[Selection: full system shutdown; partial system shutdown; degraded operational mode with limited mission or business functionality available]</em> in the event of <em>[Assignment: organization-defined audit logging failures]</em>, unless an alternate audit logging capability exists.</p>
+<p>Invoke a  <em>[Selection (one or more): full system shutdown; partial system shutdown; degraded operational mode with limited mission or business functionality available]</em>  in the event of  <em>[Assignment: audit logging failures]</em> , unless an alternate audit logging capability exists.</p>
 </div>
 </div>
 <div class="sect4">
@@ -987,7 +987,7 @@ f. Identity of any individuals, subjects, or objects/entities associated with th
 <div class="sect4">
 <h5 id="_control_13">Control</h5>
 <div class="paragraph">
-<p>Provide an alternate audit logging capability in the event of a failure in primary audit logging capability that implements <em>[Assignment: organization-defined alternate audit logging functionality]</em>.</p>
+<p>Provide an alternate audit logging capability in the event of a failure in primary audit logging capability that implements  <em>[Assignment: alternate audit logging functionality]</em>.</p>
 </div>
 </div>
 <div class="sect4">
@@ -1015,7 +1015,7 @@ f. Identity of any individuals, subjects, or objects/entities associated with th
 <dd>
 <p>LOW</p>
 </dd>
-<dt class="hdlist1">Required By</dt>
+<dt class="hdlist1">TxDIR Required By</dt>
 <dd>
 <p>2023-05-01</p>
 </dd>
@@ -1026,10 +1026,10 @@ f. Identity of any individuals, subjects, or objects/entities associated with th
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
-<p>Review and analyze system audit records <em>[Assignment: organization-defined frequency]</em> for indications of <em>[Assignment: organization-defined inappropriate or unusual activity]</em> and the potential impact of the inappropriate or unusual activity;</p>
+<p>Review and analyze system audit records  <em>[Assignment: frequency]</em>  for indications of  <em>[Assignment: inappropriate or unusual activity]</em>  and the potential impact of the inappropriate or unusual activity;</p>
 </li>
 <li>
-<p>Report findings to <em>[Assignment: organization-defined personnel or roles]</em>; and</p>
+<p>Report findings to  <em>[Assignment: personnel or roles]</em> ; and</p>
 </li>
 <li>
 <p>Adjust the level of audit record review, analysis, and reporting within the system when there is a change in risk based on law enforcement information, intelligence information, or other credible sources of information.</p>
@@ -1062,7 +1062,7 @@ f. Identity of any individuals, subjects, or objects/entities associated with th
 <div class="sect4">
 <h5 id="_control_15">Control</h5>
 <div class="paragraph">
-<p>Integrate audit record review, analysis, and reporting processes using <em>[Assignment: organization-defined automated mechanisms]</em>.</p>
+<p>Integrate audit record review, analysis, and reporting processes using  <em>[Assignment: automated mechanisms]</em>.</p>
 </div>
 </div>
 <div class="sect4">
@@ -1131,7 +1131,7 @@ f. Identity of any individuals, subjects, or objects/entities associated with th
 <div class="sect4">
 <h5 id="_control_18">Control</h5>
 <div class="paragraph">
-<p>Integrate analysis of audit records with analysis of <em>[Selection (one or more): vulnerability scanning information; performance data; system monitoring information; _[Assignment: organization-defined data/information collected from other sources]_]</em> to further enhance the ability to identify inappropriate or unusual activity.</p>
+<p>Integrate analysis of audit records with analysis of  <em>[Selection (one or more): vulnerability scanning information; performance data; system monitoring information; _[Assignment: data/information collected from other sources]_]</em>  to further enhance the ability to identify inappropriate or unusual activity.</p>
 </div>
 </div>
 <div class="sect4">
@@ -1167,7 +1167,7 @@ f. Identity of any individuals, subjects, or objects/entities associated with th
 <div class="sect4">
 <h5 id="_control_20">Control</h5>
 <div class="paragraph">
-<p>Specify the permitted actions for each <em>[Selection (one or more): system process; role; user]</em> associated with the review, analysis, and reporting of audit record information.</p>
+<p>Specify the permitted actions for each  <em>[Selection (one or more): system process; role; user]</em>  associated with the review, analysis, and reporting of audit record information.</p>
 </div>
 </div>
 <div class="sect4">
@@ -1258,7 +1258,7 @@ b. Does not alter the original content or time ordering of audit records.</p>
 <div class="sect4">
 <h5 id="_control_24">Control</h5>
 <div class="paragraph">
-<p>Provide and implement the capability to process, sort, and search audit records for events of interest based on the following content: <em>[Assignment: organization-defined fields within audit records]</em>.</p>
+<p>Provide and implement the capability to process, sort, and search audit records for events of interest based on the following content:  <em>[Assignment: fields within audit records]</em>.</p>
 </div>
 </div>
 <div class="sect4">
@@ -1286,7 +1286,7 @@ b. Does not alter the original content or time ordering of audit records.</p>
 <dd>
 <p>LOW</p>
 </dd>
-<dt class="hdlist1">Required By</dt>
+<dt class="hdlist1">TxDIR Required By</dt>
 <dd>
 <p>2022-11-01</p>
 </dd>
@@ -1300,7 +1300,7 @@ b. Does not alter the original content or time ordering of audit records.</p>
 <p>Use internal system clocks to generate time stamps for audit records; and</p>
 </li>
 <li>
-<p>Record time stamps for audit records that meet <em>[Assignment: organization-defined granularity of time measurement]</em> and that use Coordinated Universal Time, have a fixed local time offset from Coordinated Universal Time, or that include the local time offset as part of the time stamp.</p>
+<p>Record time stamps for audit records that meet  <em>[Assignment: granularity of time measurement]</em>  and that use Coordinated Universal Time, have a fixed local time offset from Coordinated Universal Time, or that include the local time offset as part of the time stamp.</p>
 </li>
 </ol>
 </div>
@@ -1343,7 +1343,7 @@ b. Does not alter the original content or time ordering of audit records.</p>
 <dd>
 <p>LOW</p>
 </dd>
-<dt class="hdlist1">Required By</dt>
+<dt class="hdlist1">TxDIR Required By</dt>
 <dd>
 <p>2023-05-01</p>
 </dd>
@@ -1357,7 +1357,7 @@ b. Does not alter the original content or time ordering of audit records.</p>
 <p>Protect audit information and audit logging tools from unauthorized access, modification, and deletion; and</p>
 </li>
 <li>
-<p>Alert <em>[Assignment: organization-defined personnel or roles]</em> upon detection of unauthorized access, modification, or deletion of audit information.</p>
+<p>Alert  <em>[Assignment: personnel or roles]</em>  upon detection of unauthorized access, modification, or deletion of audit information.</p>
 </li>
 </ol>
 </div>
@@ -1408,7 +1408,7 @@ b. Does not alter the original content or time ordering of audit records.</p>
 <div class="sect4">
 <h5 id="_control_28">Control</h5>
 <div class="paragraph">
-<p>Store audit records <em>[Assignment: organization-defined frequency]</em> in a repository that is part of a physically different system or system component than the system or component being audited.</p>
+<p>Store audit records  <em>[Assignment: frequency]</em>  in a repository that is part of a physically different system or system component than the system or component being audited.</p>
 </div>
 </div>
 <div class="sect4">
@@ -1450,7 +1450,7 @@ b. Does not alter the original content or time ordering of audit records.</p>
 <div class="sect4">
 <h5 id="_control_30">Control</h5>
 <div class="paragraph">
-<p>Authorize access to management of audit logging functionality to only <em>[Assignment: organization-defined subset of privileged users or roles]</em>.</p>
+<p>Authorize access to management of audit logging functionality to only  <em>[Assignment: subset of privileged users or roles]</em>.</p>
 </div>
 </div>
 <div class="sect4">
@@ -1471,7 +1471,7 @@ b. Does not alter the original content or time ordering of audit records.</p>
 <div class="sect4">
 <h5 id="_control_31">Control</h5>
 <div class="paragraph">
-<p>Enforce dual authorization for <em>[Selection (one or more): movement; deletion]</em> of <em>[Assignment: organization-defined audit information]</em>.</p>
+<p>Enforce dual authorization for  <em>[Selection (one or more): movement; deletion]</em>  of  <em>[Assignment: audit information]</em>.</p>
 </div>
 </div>
 <div class="sect4">
@@ -1492,7 +1492,7 @@ b. Does not alter the original content or time ordering of audit records.</p>
 <div class="sect4">
 <h5 id="_control_32">Control</h5>
 <div class="paragraph">
-<p>Authorize read-only access to audit information to <em>[Assignment: organization-defined subset of privileged users or roles]</em>.</p>
+<p>Authorize read-only access to audit information to  <em>[Assignment: subset of privileged users or roles]</em>.</p>
 </div>
 </div>
 <div class="sect4">
@@ -1532,7 +1532,7 @@ b. Does not alter the original content or time ordering of audit records.</p>
 <div class="sect2">
 <h3 id="_control_34">Control</h3>
 <div class="paragraph">
-<p>Provide irrefutable evidence that an individual (or process acting on behalf of an individual) has performed <em>[Assignment: organization-defined actions to be covered by non-repudiation]</em>.</p>
+<p>Provide irrefutable evidence that an individual (or process acting on behalf of an individual) has performed  <em>[Assignment: actions]</em>.</p>
 </div>
 </div>
 <div class="sect2">
@@ -1560,7 +1560,7 @@ b. Does not alter the original content or time ordering of audit records.</p>
 <div class="sect4">
 <h5 id="_control_35">Control</h5>
 <div class="paragraph">
-<p>(a) Bind the identity of the information producer with the information to <em>[Assignment: organization-defined strength of binding]</em>; and
+<p>(a) Bind the identity of the information producer with the information to  <em>[Assignment: strength of binding]</em> ; and
 (b) Provide the means for authorized individuals to determine the identity of the producer of the information.</p>
 </div>
 </div>
@@ -1582,8 +1582,8 @@ b. Does not alter the original content or time ordering of audit records.</p>
 <div class="sect4">
 <h5 id="_control_36">Control</h5>
 <div class="paragraph">
-<p>(a) Validate the binding of the information producer identity to the information at <em>[Assignment: organization-defined frequency]</em>; and
-(b) Perform <em>[Assignment: organization-defined actions]</em> in the event of a validation error.</p>
+<p>(a) Validate the binding of the information producer identity to the information at  <em>[Assignment: frequency]</em> ; and
+(b) Perform  <em>[Assignment: actions]</em>  in the event of a validation error.</p>
 </div>
 </div>
 <div class="sect4">
@@ -1625,8 +1625,8 @@ b. Does not alter the original content or time ordering of audit records.</p>
 <div class="sect4">
 <h5 id="_control_38">Control</h5>
 <div class="paragraph">
-<p>(a) Validate the binding of the information reviewer identity to the information at the transfer or release points prior to release or transfer between <em>[Assignment: organization-defined security domains]</em>; and
-(b) Perform <em>[Assignment: organization-defined actions]</em> in the event of a validation error.</p>
+<p>(a) Validate the binding of the information reviewer identity to the information at the transfer or release points prior to release or transfer between  <em>[Assignment: security domains]</em> ; and
+(b) Perform  <em>[Assignment: actions]</em>  in the event of a validation error.</p>
 </div>
 </div>
 <div class="sect4">
@@ -1660,7 +1660,7 @@ b. Does not alter the original content or time ordering of audit records.</p>
 <dd>
 <p>LOW</p>
 </dd>
-<dt class="hdlist1">Required By</dt>
+<dt class="hdlist1">TxDIR Required By</dt>
 <dd>
 <p>2023-05-01</p>
 </dd>
@@ -1669,7 +1669,7 @@ b. Does not alter the original content or time ordering of audit records.</p>
 <div class="sect2">
 <h3 id="_control_39">Control</h3>
 <div class="paragraph">
-<p>Retain audit records for <em>[Assignment: organization-defined time period consistent with records retention policy]</em> to provide support for after-the-fact investigations of incidents and to meet regulatory and organizational information retention requirements.</p>
+<p>Retain audit records for  <em>[Assignment: time period]</em>  to provide support for after-the-fact investigations of incidents and to meet regulatory and organizational information retention requirements.</p>
 </div>
 </div>
 <div class="sect2">
@@ -1697,7 +1697,7 @@ b. Does not alter the original content or time ordering of audit records.</p>
 <div class="sect4">
 <h5 id="_control_40">Control</h5>
 <div class="paragraph">
-<p>Employ <em>[Assignment: organization-defined measures]</em> to ensure that long-term audit records generated by the system can be retrieved.</p>
+<p>Employ  <em>[Assignment: measures]</em>  to ensure that long-term audit records generated by the system can be retrieved.</p>
 </div>
 </div>
 <div class="sect4">
@@ -1719,7 +1719,7 @@ b. Does not alter the original content or time ordering of audit records.</p>
 <dd>
 <p>LOW</p>
 </dd>
-<dt class="hdlist1">Required By</dt>
+<dt class="hdlist1">TxDIR Required By</dt>
 <dd>
 <p>2023-05-01</p>
 </dd>
@@ -1733,7 +1733,7 @@ b. Does not alter the original content or time ordering of audit records.</p>
 <p>Provide audit record generation capability for the event types the system is capable of auditing as defined in</p>
 </li>
 <li>
-<p>Allow <em>[Assignment: organization-defined personnel or roles]</em> to select the event types that are to be logged by specific components of the system; and</p>
+<p>Allow  <em>[Assignment: personnel or roles]</em>  to select the event types that are to be logged by specific components of the system; and</p>
 </li>
 <li>
 <p>Generate audit records for the event types defined in</p>
@@ -1760,7 +1760,7 @@ b. Does not alter the original content or time ordering of audit records.</p>
 <div class="sect4">
 <h5 id="_control_42">Control</h5>
 <div class="paragraph">
-<p>Compile audit records from <em>[Assignment: organization-defined system components]</em> into a system-wide (logical or physical) audit trail that is time-correlated to within <em>[Assignment: organization-defined level of tolerance for the relationship between time stamps of individual records in the audit trail]</em>.</p>
+<p>Compile audit records from  <em>[Assignment: system components]</em>  into a system-wide (logical or physical) audit trail that is time-correlated to within  <em>[Assignment: level of tolerance]</em>.</p>
 </div>
 </div>
 <div class="sect4">
@@ -1796,7 +1796,7 @@ b. Does not alter the original content or time ordering of audit records.</p>
 <div class="sect4">
 <h5 id="_control_44">Control</h5>
 <div class="paragraph">
-<p>Provide and implement the capability for <em>[Assignment: organization-defined individuals or roles]</em> to change the logging to be performed on <em>[Assignment: organization-defined system components]</em> based on <em>[Assignment: organization-defined selectable event criteria]</em> within <em>[Assignment: organization-defined time thresholds]</em>.</p>
+<p>Provide and implement the capability for  <em>[Assignment: individuals or roles]</em>  to change the logging to be performed on  <em>[Assignment: system components]</em>  based on  <em>[Assignment: selectable event criteria]</em>  within  <em>[Assignment: time thresholds]</em>.</p>
 </div>
 </div>
 <div class="sect4">
@@ -1838,18 +1838,18 @@ b. Does not alter the original content or time ordering of audit records.</p>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
-<p>Monitor <em>[Assignment: organization-defined open-source information and/or information sites]</em>
-<em>[Assignment: organization-defined frequency]</em> for evidence of unauthorized disclosure of organizational information; and</p>
+<p>Monitor  <em>[Assignment: open-source information and/or information sites]</em>
+<em>[Assignment: frequency]</em>  for evidence of unauthorized disclosure of organizational information; and</p>
 </li>
 <li>
 <p>If an information disclosure is discovered:</p>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Notify <em>[Assignment: organization-defined personnel or roles]</em>; and</p>
+<p>Notify  <em>[Assignment: personnel or roles]</em> ; and</p>
 </li>
 <li>
-<p>Take the following additional actions: <em>[Assignment: organization-defined additional actions]</em>.</p>
+<p>Take the following additional actions:  <em>[Assignment: additional actions]</em>.</p>
 </li>
 </ol>
 </div>
@@ -1876,7 +1876,7 @@ b. Does not alter the original content or time ordering of audit records.</p>
 <div class="sect4">
 <h5 id="_control_47">Control</h5>
 <div class="paragraph">
-<p>Monitor open-source information and information sites using <em>[Assignment: organization-defined automated mechanisms]</em>.</p>
+<p>Monitor open-source information and information sites using  <em>[Assignment: automated mechanisms]</em>.</p>
 </div>
 </div>
 <div class="sect4">
@@ -1891,7 +1891,7 @@ b. Does not alter the original content or time ordering of audit records.</p>
 <div class="sect4">
 <h5 id="_control_48">Control</h5>
 <div class="paragraph">
-<p>Review the list of open-source information sites being monitored <em>[Assignment: organization-defined frequency]</em>.</p>
+<p>Review the list of open-source information sites being monitored  <em>[Assignment: frequency]</em>.</p>
 </div>
 </div>
 <div class="sect4">
@@ -1927,7 +1927,7 @@ b. Does not alter the original content or time ordering of audit records.</p>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
-<p>Provide and implement the capability for <em>[Assignment: organization-defined users or roles]</em> to <em>[Selection (one or more): record; view; hear; log]</em> the content of a user session under <em>[Assignment: organization-defined circumstances]</em>; and</p>
+<p>Provide and implement the capability for  <em>[Assignment: users or roles]</em>  to  <em>[Selection (one or more): record; view; hear; log]</em>  the content of a user session under  <em>[Assignment: circumstances]</em> ; and</p>
 </li>
 <li>
 <p>Develop, integrate, and use session auditing activities in consultation with legal counsel and in accordance with applicable laws, executive orders, directives, regulations, policies, standards, and guidelines.</p>
@@ -2008,7 +2008,7 @@ b. Does not alter the original content or time ordering of audit records.</p>
 <div class="sect2">
 <h3 id="_control_53">Control</h3>
 <div class="paragraph">
-<p>Employ <em>[Assignment: organization-defined methods]</em> for coordinating <em>[Assignment: organization-defined audit information]</em> among external organizations when audit information is transmitted across organizational boundaries.</p>
+<p>Employ  <em>[Assignment: methods]</em>  for coordinating  <em>[Assignment: audit information]</em>  among external organizations when audit information is transmitted across organizational boundaries.</p>
 </div>
 </div>
 <div class="sect2">
@@ -2051,7 +2051,7 @@ b. Does not alter the original content or time ordering of audit records.</p>
 <div class="sect4">
 <h5 id="_control_55">Control</h5>
 <div class="paragraph">
-<p>Provide cross-organizational audit information to <em>[Assignment: organization-defined organizations]</em> based on <em>[Assignment: organization-defined cross-organizational sharing agreements]</em>.</p>
+<p>Provide cross-organizational audit information to  <em>[Assignment: organizations]</em>  based on  <em>[Assignment: cross-organizational sharing agreements]</em>.</p>
 </div>
 </div>
 <div class="sect4">
@@ -2072,7 +2072,7 @@ b. Does not alter the original content or time ordering of audit records.</p>
 <div class="sect4">
 <h5 id="_control_56">Control</h5>
 <div class="paragraph">
-<p>Implement <em>[Assignment: organization-defined measures]</em> to disassociate individuals from audit information transmitted across organizational boundaries.</p>
+<p>Implement  <em>[Assignment: measures]</em>  to disassociate individuals from audit information transmitted across organizational boundaries.</p>
 </div>
 </div>
 <div class="sect4">
@@ -2127,7 +2127,7 @@ b. Does not alter the original content or time ordering of audit records.</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"AU - Audit and Accountability","level":"1.2.3","depth":2,"next":{"title":"CA - Assessment, Authorization, and Monitoring","level":"1.2.4","depth":2,"path":"catalog/ca.adoc","ref":"catalog/ca.adoc","articles":[]},"previous":{"title":"AT - Awareness and Training","level":"1.2.2","depth":2,"path":"catalog/at.adoc","ref":"catalog/at.adoc","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Nicholas McLarty","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Texas A&M University System Cybersecurity Standards","gitbook":"*","description":"Texas A&M System Cybersecurity Standards provide system members with guidance that enhances State-level requirements for implementing security controls."},"file":{"path":"catalog/au.adoc","mtime":"2022-01-24T21:53:20.435Z","type":"asciidoc"},"gitbook":{"version":"3.6.23","time":"2022-01-24T21:53:47.650Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"AU - Audit and Accountability","level":"1.2.3","depth":2,"next":{"title":"CA - Assessment, Authorization, and Monitoring","level":"1.2.4","depth":2,"path":"catalog/ca.adoc","ref":"catalog/ca.adoc","articles":[]},"previous":{"title":"AT - Awareness and Training","level":"1.2.2","depth":2,"path":"catalog/at.adoc","ref":"catalog/at.adoc","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Nicholas McLarty","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Texas A&M University System Cybersecurity Standards","gitbook":"*","description":"Texas A&M System Cybersecurity Standards provide system members with guidance that enhances State-level requirements for implementing security controls."},"file":{"path":"catalog/au.adoc","mtime":"2022-01-27T04:09:17.774Z","type":"asciidoc"},"gitbook":{"version":"3.6.23","time":"2022-01-27T04:09:27.161Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

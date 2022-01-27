@@ -1,0 +1,1383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This catalog profile is maintained by the Texas A&M University System for
+the purpose of populating Texas A&M System Cybersecurity Control Standards.
+The Texas A&M University System is not liable for the currency or accuracy of
+the profile's content; users are advised to consult the current version of the
+Texas Security Control Standards Catalog before utilizing this profile -->
+<profile xmlns="http://csrc.nist.gov/ns/oscal/1.0" uuid="7727fe69-f2b8-494a-9e94-8d1e2ff6e68e">
+  <metadata>
+    <title>Texas Security Control Standards Catalog Profile</title>
+    <published>2020-07-07T12:55:52Z</published>
+    <last-modified>2020-07-07T12:55:52Z</last-modified>
+    <version>2.0</version>
+    <oscal-version>1.0.0</oscal-version>
+    <role id="prpared-by">
+      <title>Document creator</title>
+    </role>
+    <party uuid="c741791a-26d6-404d-848f-ed5c50509f3f" type="organization">
+      <name>Texas Department of Information Resources</name>
+      <short-name>TXDIR</short-name>
+      <link href="https://dir.texas.gov" rel="homepage"/>
+      <email-address>ociso@dir.texas.gov</email-address>
+      <address type="work">
+        <addr-line>300 W. 15th Street, Suite 1300</addr-line>
+        <city>Austin</city>
+        <state>TX</state>
+        <postal-code>78701</postal-code>
+        <country>US</country>
+      </address>
+    </party>
+    <responsible-party role-id="prepared-by">
+      <party-uuid>c741791a-26d6-404d-848f-ed5c50509f3f</party-uuid>
+    </responsible-party>
+  </metadata>
+  <import href="https://raw.githubusercontent.com/usnistgov/oscal-content/master/nist.gov/SP800-53/rev5/xml/NIST_SP-800-53_rev5_catalog.xml">
+    <include-all/>
+  </import>
+  <merge>
+    <as-is>true</as-is>
+  </merge>
+  <modify>
+    <!-- LOW Baseline Controls -->
+    <alter control-id="ac-1">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="ac-2">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+      <add position="ending">
+        <part name="tx_implementation" id="ac-2_tx">
+          <p>Confidential information shall be accessible only to authorized users. An information file or record containing any confidential information shall be identified, documented, and protected in its entirety. Information resources assigned from one state organization to another or from a state organization to a contractor or other third party, at a minimum, shall be protected in accordance with the conditions imposed by the providing state organization.</p>
+        </part>
+      </add>
+    </alter>
+    <alter control-id="ac-3">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2022-11-01"/>
+      </add>
+      <add position="ending">
+        <part name="tx_implementation" id="ac-3_tx">
+          <part name="item" id="ac-3_tx_smt.a">
+            <prop name="label" value="a."/>
+            <p>Access to state information resources shall be appropriately managed.</p>
+          </part>
+          <part name="item" id="ac-3_tx_smt.b">
+            <prop name="label" value="b."/>
+            <p>Each user of information resources shall be assigned a unique identifier except for situations where risk analysis demonstrates no need for individual accountability of users. User identification shall be authenticated before the information
+              resources system may grant that user access.</p>
+          </part>
+        </part>
+      </add>
+    </alter>
+    <alter control-id="ac-7">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+      <add position="ending">
+        <part name="tx_implementation" id="ac-7_tx">
+          <part name="item" id="ac-7_tx_smt.a">
+            <prop name="label" value="a."/>
+            <p>As technology permits, state organizations should enforce account lockouts after no more than 10 failed attempts. This threshold may be lowered for Moderate or High risk systems.</p>
+          </part>
+          <part name="item" id="ac-7_tx_smt.b">
+            <prop name="label" value="b."/>
+            <p>Accounts locked out due to multiple incorrect logon attempts should stay locked out for a minimum of 15 minutes. Accounts for Moderate or High risk systems should remain locked until reset by an administrator.</p>
+          </part>
+        </part>
+      </add>
+    </alter>
+    <alter control-id="ac-8">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2022-11-01"/>
+      </add>
+      <add position="ending">
+        <part name="tx_implementation" id="ac-8_tx">
+          <p>System identification/logon banners shall have warning statements that include the following topics: (a) Unauthorized use is prohibited; (b) Usage may be subject to security testing and monitoring; (c) Misuse is subject to criminal prosecution; and (d) Users have no expectation of privacy except as otherwise provided by applicable privacy laws.</p>
+        </part>
+      </add>
+    </alter>
+    <alter control-id="ac-14">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2022-11-01"/>
+      </add>
+    </alter>
+    <alter control-id="ac-17">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="ac-18">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+      <add position="ending">
+        <part name="tx_implementation" id="ac-18_tx">
+          <part name="item" id="ac-18_tx_smt.a">
+            <p>a. State organizations shall establish the requirements and security restrictions for installing or providing access to the state organization information resources systems. The wireless policy shall address the following topic areas:</p>
+            <part name="item" id="ac-18_tx_smt.a.1">
+              <prop name="label" value="1."/>
+              <p>Wireless Local Area Networks. Ensure that Service Set Identifiers (SSID) values are changed from the manufacturer default setting. Some networks should not include organizational or location information in the SSID. Additional equipment
+                configuration recommendations are included in the Wireless Security Guidelines.</p>
+            </part>
+            <part name="item" id="ac-18_tx_smt.a.2">
+              <prop name="label" value="2."/>
+              <p>Types of information that may be transmitted via wireless networks and devices with or without encryption including mission critical information or sensitive personal information.</p>
+              <p>State organizations shall not transmit confidential information via a wireless connection to, or from a portable computing device unless encryption methods, such as a Virtual Private Network (VPN), Wi-Fi Protected Access, or other secure encryption protocols that meet appropriate protection or certification
+                standards, are used to protect the information.</p>
+            </part>
+            <part name="item" id="ac-18_tx_smt.a.3">
+              <prop name="label" value="3."/>
+              <p>Prohibit and periodically monitor any unauthorized installation or use of Wireless Personal Area Networks on state organizational IT systems by individuals without the approval of the state organization information resources manager.</p>
+            </part>
+          </part>
+        </part>
+      </add>
+    </alter>
+    <alter control-id="ac-19">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="ac-20">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="ac-22">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2022-11-01"/>
+      </add>
+    </alter>
+    <alter control-id="at-1">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="at-2">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="at-3">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="at-4">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="au-1">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="au-2">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+      <add position="ending">
+        <part name="tx_implementation" id="au-2_tx">
+          <part name="item" id="au-2_tx_smt.a">
+            <prop name="label" value="a."/>
+            <p>Information resources systems shall provide the means whereby authorized personnel have the ability to audit and establish individual accountability for any action that can potentially cause access to, generation of, modification of, or affect the
+              release of confidential information.</p>
+          </part>
+          <part name="item" id="au-2_tx_smt.b">
+            <prop name="label" value="b."/>
+            <p>Appropriate audit trails shall be maintained to provide accountability for updates to mission critical information, hardware and software and for all changes to automated security or access rules.</p>
+          </part>
+          <part name="item" id="au-2_tx_smt.c">
+            <prop name="label" value="c."/>
+            <p>Based on the risk assessment, a sufficiently complete history of transactions shall be maintained to permit an audit of the information resources system by logging and tracing the activities of individuals through the system.</p>
+          </part>
+        </part>
+      </add>
+    </alter>
+    <alter control-id="au-3">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2022-11-01"/>
+      </add>
+    </alter>
+    <alter control-id="au-4">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="au-5">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="au-6">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="au-8">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2022-11-01"/>
+      </add>
+    </alter>
+    <alter control-id="au-9">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="au-11">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="au-12">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="ca-1">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="ca-2">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+      <add position="ending">
+        <part name="tx_implementation" id="ca-2_tx">
+          <p>A review of the state organization’s information security program for compliance with these standards will be performed at least annually, based on business risk management decisions, by individual(s) independent of the information security program and designated by the state organization head or his or her designated representative(s).</p>
+        </part>
+      </add>
+    </alter>
+    <alter control-id="ca-3">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="ca-5">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2022-11-01"/>
+      </add>
+    </alter>
+    <alter control-id="ca-6">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="ca-7">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="ca-7.4">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="ca-9">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="cm-1">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="cm-2">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="cm-4">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+      <add position="ending">
+        <part name="tx_implementation" id="cm-4_tx">
+          <part name="item" id="cm-4_tx_smt.a">
+            <prop name="label" value="a."/>
+            <p>All security-related information resources changes shall be approved by the information owner through a change control process.</p>
+          </part>
+          <part name="item" id="cm-4_tx_smt.b">
+            <prop name="label" value="b."/>
+            <p>Approval shall occur prior to implementation by the state organization or independent contractors.</p>
+          </part>
+        </part>
+      </add>
+    </alter>
+    <alter control-id="cm-5">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="cm-6">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="cm-7">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="cm-8">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="cm-10">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2022-11-01"/>
+      </add>
+    </alter>
+    <alter control-id="cm-11">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2022-11-01"/>
+      </add>
+    </alter>
+    <alter control-id="cp-1">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+      <add position="ending">
+        <part name="tx_implementation" id="cp-1_tx">
+          <p>State organizations shall maintain written Continuity of Operations Plans that address information resources so that the effects of a disaster will be minimized, and the state organization will be able either to maintain or quickly resume mission-critical functions.</p>
+        </part>
+      </add>
+    </alter>
+    <alter control-id="cp-2">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+      <add position="ending">
+        <part name="tx_implementation" id="cp-2_tx">
+          <part name="item" id="cp-2_tx_smt.a">
+            <prop name="label" value="a."/>
+            <p>The plan shall be distributed to key personnel and a copy stored offsite. Elements of the plan for information resources shall include:</p>
+            <part name="item" id="cp-2_tx_smt.a.1">
+              <prop name="label" value="1."/>
+              <p>Business Impact Analysis to systematically assess the potential impacts of a loss of business functionality due to an interruption of computing and/or infrastructure support services resulting from various events or incidents. The analysis shall
+                identify the following elements:</p>
+              <part name="item" id="cp-2_tx_smt.a.1.a">
+                <prop name="label" value="(a)"/>
+                <p>Mission-Critical Information Resources (specific system resources required to perform critical functions) to include:</p>
+                <part name="item" id="cp-2_tx_smt.a.1.a.1">
+                  <prop name="label" value="(1)"/>
+                  <p>Internal and external points of contact for personnel that provide or receive data or support interconnected systems.</p>
+                </part>
+                <part name="item" id="cp-2_tx_smt.a.1.a.2">
+                  <prop name="label" value="(2)"/>
+                  <p>Supporting infrastructure such as electric power, telecommunications connections, and environmental controls.</p>
+                </part>
+              </part>
+              <part name="item" id="cp-2_tx_smt.a.1.b">
+                <prop name="label" value="(b)"/>
+                <p>Disruption impacts and allowable outage times to include:</p>
+                <part name="item" id="cp-2_tx_smt.a.1.b.1">
+                  <prop name="label" value="(1)"/>
+                  <p>Effects of an outage over time to assess the maximum allowable time that a resource may be denied before it prevents or inhibits the performance of an essential function.</p>
+                </part>
+                <part name="item" id="cp-2_tx_smt.a.1.b.2">
+                  <prop name="label" value="(2)"/>
+                  <p>Effects of an outage across related resources and dependent systems to assess cascading effects on associated systems or processes.</p>
+                </part>
+              </part>
+              <part name="item" id="cp-2_tx_smt.a.1.c">
+                <prop name="label" value="(c)"/>
+                <p>Recovery priorities that consider geographic areas, accessibility, security, environment, and cost and may include a combination of:</p>
+                <part name="item" id="cp-2_tx_smt.a.1.c.1">
+                  <prop name="label" value="(1)"/>
+                  <p>Preventive controls and processes such as backup power, excess capacity, environmental sensors and alarms.</p>
+                </part>
+                <part name="item" id="cp-2_tx_smt.a.1.c.2">
+                  <prop name="label" value="(2)"/>
+                  <p>Recovery techniques and technologies such as backup methodologies, alternate sites, software and hardware equipment replacement, implementation roles and responsibilities.</p>
+                </part>
+              </part>
+            </part>
+            <part name="item" id="cp-2_tx_smt.a.2">
+              <prop name="label" value="2."/>
+              <p>Risk Assessment to weigh the cost of implementing preventative measures against the risk of loss from not taking action.</p>
+            </part>
+            <part name="item" id="cp-2_tx_smt.a.3">
+              <prop name="label" value="3."/>
+              <p>Implementation, testing, and maintenance management program addressing the initial and ongoing testing and maintenance activities of the plan.</p>
+            </part>
+            <part name="item" id="cp-2_tx_smt.a.4">
+              <prop name="label" value="4."/>
+              <p>Disaster Recovery Plan--Each state organization shall maintain a written disaster recovery plan for major or catastrophic events that deny access to information resources for an extended period. Information learned from tests conducted since the
+                plan was last updated will be used in updating the disaster recovery plan. The disaster recovery plan will:</p>
+              <part name="item" id="cp-2_tx_smt.a.4.a">
+                <prop name="label" value="(a)"/>
+                <p>Contain measures which address the impact and magnitude of loss or harm that will result from an interruption;</p>
+              </part>
+              <part name="item" id="cp-2_tx_smt.a.4.b">
+                <prop name="label" value="(b)"/>
+                <p>Identify recovery resources and a source for each;</p>
+              </part>
+              <part name="item" id="cp-2_tx_smt.a.4.c">
+                <prop name="label" value="(c)"/>
+                <p>Contain step-by-step implementation instructions;</p>
+              </part>
+              <part name="item" id="cp-2_tx_smt.a.4.d">
+                <prop name="label" value="(d)"/>
+                <p>Include provisions for annual testing.</p>
+              </part>
+            </part>
+          </part>
+        </part>
+      </add>
+    </alter>
+    <alter control-id="cp-3">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="cp-4">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2022-11-01"/>
+      </add>
+      <add position="ending">
+        <part name="tx_implementation" id="cp-4_tx">
+          <p>Each state organization’s written disaster recovery plan will include provisions for annual testing.</p>
+        </part>
+      </add>
+    </alter>
+    <alter control-id="cp-9">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="cp-10">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="cp-11">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="ia-1">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="ia-2">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2022-11-01"/>
+      </add>
+    </alter>
+    <alter control-id="ia-2.1">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="ia-2.2">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="ia-4">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+      <add position="ending">
+        <part name="tx_implementation" id="ia-4_tx">
+          <p>A user’s access authorization shall be appropriately modified or removed when the user’s employment or job responsibilities within the state organization change.</p>
+        </part>
+      </add>
+    </alter>
+    <alter control-id="ia-5">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="ia-6">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2022-11-01"/>
+      </add>
+    </alter>
+    <alter control-id="ia-7">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2022-11-01"/>
+      </add>
+    </alter>
+    <alter control-id="ia-8">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2022-11-01"/>
+      </add>
+    </alter>
+    <alter control-id="ia-11">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="ir-1">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+      <add position="ending">
+        <part name="tx_implementation" id="ir-1_tx">
+          <p>State organizations shall assess the significance of a security incident based on the business impact on the affected resources and the current and potential technical effect of the incident, e.g., loss of revenue, productivity, access to services, reputation, unauthorized disclosure of confidential information, or propagation to other networks.</p>
+        </part>
+      </add>
+    </alter>
+    <alter control-id="ir-2">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+      <add position="ending">
+        <part name="tx_implementation" id="ir-2_tx">
+          <p>The state organization trains personnel in their incident response roles and responsibilities with respect to the information system and provides refresher training at least annually.</p>
+        </part>
+      </add>
+    </alter>
+    <alter control-id="ir-4">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="ir-5">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="ir-6">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+      <add position="ending">
+        <part name="tx_implementation" id="ir-6_tx">
+          <part name="item" id="ir-6_tx_smt.a">
+            <prop name="label" value="a."/>
+            <p>Security incidents shall be promptly reported to immediate supervisors and the state organization Information Security Officer. Security incidents that require timely reporting to the department include those events that are assessed to:</p>
+            <part name="item" id="ir-6_tx_smt.a.1">
+              <prop name="label" value="1."/>
+              <p>Propagate to other state systems;</p>
+            </part>
+            <part name="item" id="ir-6_tx_smt.a.2">
+              <prop name="label" value="2."/>
+              <p>Result in criminal violations that shall be reported to law enforcement; or</p>
+            </part>
+            <part name="item" id="ir-6_tx_smt.a.3">
+              <prop name="label" value="3."/>
+              <p>Involve the unauthorized disclosure or modification of confidential information, e.g., sensitive personal information as defined in §521.002(a)(2), Business and Commerce Code, and other applicable laws that may require public notification.</p>
+            </part>
+          </part>
+          <part name="item" id="ir-6_tx_smt.b">
+            <prop name="label" value="b."/>
+            <p>If the security incident is assessed to involve suspected criminal activity (e.g., violations of Chapters 33, Penal Code (Computer Crimes) or Chapter 33A, Penal Code (Telecommunications Crimes)), the security incident shall be investigated,
+              reported, and documented in a manner that restores operation promptly while meeting the legal requirements for handling of evidence.</p>
+          </part>
+          <part name="item" id="ir-6_tx_smt.c">
+            <prop name="label" value="c."/>
+            <p>Depending on the criticality of the incident, it will not always be feasible to gather all the information prior to reporting. In such cases, incident response teams should continue to report information to the department as it is collected. The
+              department shall instruct state organizations as to the manner in which they shall report such information to the department. Supporting vendors or other third parties that report security incident information to a state organization shall submit
+              such reports to the state organization in the form and manner specified by the department, unless otherwise directed by the state organization.</p>
+          </part>
+          <part name="item" id="ir-6_tx_smt.d">
+            <prop name="label" value="d."/>
+            <p>Summary reports of security-related events shall be sent to the department on a monthly basis no later than nine (9) calendar days after the end of the month. Organizations shall submit summary security incident reports in the form and manner
+              specified by the department. Supporting vendors or other third parties that report security incident information to a state organization shall submit such reports to the state organization in the form and manner specified by the department, unless
+              otherwise directed by the state organization.</p>
+          </part>
+        </part>
+      </add>
+    </alter>
+    <alter control-id="ir-7">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+      <add position="ending">
+        <part name="tx_implementation" id="ir-7_tx">
+          <p>The state organization provides an incident response support resource that offers advice and assistance to users of the information system for the handling and reporting of security incidents. The support resource is an integral part of the organization’s incident response capability.</p>
+        </part>
+      </add>
+    </alter>
+    <alter control-id="ir-8">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="ir-9">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="ma-1">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="ma-2">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="ma-4">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2022-11-01"/>
+      </add>
+    </alter>
+    <alter control-id="ma-5">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2022-11-01"/>
+      </add>
+    </alter>
+    <alter control-id="mp-1">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="mp-2">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2022-11-01"/>
+      </add>
+    </alter>
+    <alter control-id="mp-6">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+      <add position="ending">
+        <part name="tx_implementation" id="mp-6_tx">
+          <part name="item" id="mp-6_tx_smt.a">
+            <prop name="label" value="a."/>
+            <p>Prior to the sale or transfer of data processing equipment, to other than another Texas state agency or agent of the state, state agencies shall assess whether to remove data from any associated storage device.</p>
+          </part>
+          <part name="item" id="mp-6_tx_smt.b">
+            <prop name="label" value="b."/>
+            <p>Electronic state records shall be destroyed in accordance with §441.185, Government Code. If the record retention period applicable for an electronic state record has not expired at the time the record is removed from data process equipment, the
+              state agency shall retain a hard copy or other electronic copy of the record for the required retention period.</p>
+          </part>
+          <part name="item" id="mp-6_tx_smt.c">
+            <prop name="label" value="c."/>
+            <p>If it is possible that restricted personal information, confidential information, mission critical information, intellectual property, or licensed software is contained on the storage device, the storage device should be sanitized or the storage
+              device should be removed and destroyed. Additional information on sanitization tools and methods of destruction (that comply with the Department of Defense 5220.22-M standard) are provided in the “Sale or Transfer of Computers and Software”
+              guidelines available at http://www.dir.texas.gov.</p>
+          </part>
+          <part name="item" id="mp-6_tx_smt.d">
+            <prop name="label" value="d."/>
+            <p>State agencies shall keep a record/form (electronic or hard copy) documenting the removal and completion of the process with the following information:</p>
+            <part name="item" id="mp-6_tx_smt.d.1">
+              <prop name="label" value="1."/>
+              <p>date;</p>
+            </part>
+            <part name="item" id="mp-6_tx_smt.d.2">
+              <prop name="label" value="2."/>
+              <p>description of the item(s) and serial number(s);</p>
+            </part>
+            <part name="item" id="mp-6_tx_smt.d.3">
+              <prop name="label" value="3."/>
+              <p>inventory number(s);</p>
+            </part>
+            <part name="item" id="mp-6_tx_smt.d.4">
+              <prop name="label" value="4."/>
+              <p>the process and sanitization tools used to remove the data or method of destruction; and</p>
+            </part>
+            <part name="item" id="mp-6_tx_smt.d.5">
+              <prop name="label" value="5."/>
+              <p>the name and address of the organization the equipment was transferred to.</p>
+            </part>
+          </part>
+        </part>
+      </add>
+    </alter>
+    <alter control-id="mp-7">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="pe-1">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="pe-2">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2022-11-01"/>
+      </add>
+    </alter>
+    <alter control-id="pe-3">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="pe-6">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2022-11-01"/>
+      </add>
+    </alter>
+    <alter control-id="pe-8">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="pe-12">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2022-11-01"/>
+      </add>
+    </alter>
+    <alter control-id="pe-13">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2022-11-01"/>
+      </add>
+      <add position="ending">
+        <part name="tx_implementation" id="pe-13_tx">
+          <p>Information resources shall be protected from environmental hazards. Designated employees shall be trained to monitor environmental control procedures and equipment and shall be trained in desired response in case of emergencies or equipment problems.</p>
+        </part>
+      </add>
+    </alter>
+    <alter control-id="pe-14">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="pe-15">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2022-11-01"/>
+      </add>
+    </alter>
+    <alter control-id="pe-16">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="pl-1">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+      <add position="ending">
+        <part name="tx_implementation" id="pl-1_tx">
+          <p>As required by TAC 202.23/73(a), the state organization delivers, at least annually, to the organization head a report on state organization information security program.</p>
+        </part>
+      </add>
+    </alter>
+    <alter control-id="pl-2">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="pl-4">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="pm-1">
+      <add position="starting">
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="pm-2">
+      <add position="starting">
+        <prop name="tx_required_by" value="2022-11-01"/>
+      </add>
+    </alter>
+    <alter control-id="pm-3">
+      <add position="starting">
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+      <add position="ending">
+        <part name="tx_implementation" id="pm-3_tx">
+          <p>State implementation of this standard is incorporated into TAC 202.</p>
+        </part>
+      </add>
+    </alter>
+    <alter control-id="pm-4">
+      <add position="starting">
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="pm-5">
+      <add position="starting">
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="pm-6">
+      <add position="starting">
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="pm-7">
+      <add position="starting">
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+      <add position="ending">
+        <part name="tx_implementation" id="pm-7_tx">
+          <p>State implementation of this standard is an outcome of TAC 202 implementation.</p>
+        </part>
+      </add>
+    </alter>
+    <alter control-id="pm-9">
+      <add position="starting">
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+      <add position="ending">
+        <part name="tx_implementation" id="pm-9_tx">
+          <p>State implementation of this standard is incorporated into TAC 202.</p>
+        </part>
+      </add>
+    </alter>
+    <alter control-id="pm-10">
+      <add position="starting">
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+      <add position="ending">
+        <part name="tx_implementation" id="pm-10_tx">
+          <p>State implementation of this standard is incorporated into TAC 202.</p>
+        </part>
+      </add>
+    </alter>
+    <alter control-id="pm-14">
+      <add position="starting">
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+      <add position="ending">
+        <part name="tx_implementation" id="pm-14_tx">
+          <p>State implementation of this standard is incorporated into TAC 202.</p>
+        </part>
+      </add>
+    </alter>
+    <alter control-id="pm-15">
+      <add position="starting">
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+      <add position="ending">
+        <part name="tx_implementation" id="pm-15_tx">
+          <p>State implementation of this standard is incorporated into TAC 202.</p>
+        </part>
+      </add>
+    </alter>
+    <alter control-id="pm-16">
+      <add position="starting">
+        <prop name="tx_required_by" value="2022-11-01"/>
+      </add>
+      <add position="ending">
+        <part name="tx_implementation" id="pm-16_tx">
+          <p>State implementation of this standard is incorporated into TAC 202.</p>
+        </part>
+      </add>
+    </alter>
+    <alter control-id="ps-1">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="ps-2">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2022-11-01"/>
+      </add>
+      <add position="ending">
+        <part name="tx_implementation" id="ps-2_tx">
+          <p>All authorized users (including, but not limited to, state organization personnel, temporary employees, and employees of independent contractors) of the state organization’s information resources, shall formally acknowledge that they will comply with the security policies and procedures of the state organization or they shall not be granted access to information resources. The state organization head or his or her designated representative will determine the method of acknowledgement and how often this acknowledgement must be re-executed by the user to maintain access to state organization information resources.</p>
+        </part>
+      </add>
+    </alter>
+    <alter control-id="ps-3">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2022-11-01"/>
+      </add>
+    </alter>
+    <alter control-id="ps-4">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="ps-5">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2022-11-01"/>
+      </add>
+    </alter>
+    <alter control-id="ps-6">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2022-11-01"/>
+      </add>
+    </alter>
+    <alter control-id="ps-7">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2022-11-01"/>
+      </add>
+    </alter>
+    <alter control-id="ps-8">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2022-11-01"/>
+      </add>
+    </alter>
+    <alter control-id="ra-1">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="ra-2">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+      <add position="ending">
+        <part name="tx_implementation" id="ra-2_tx">
+          <p>State organizations are responsible for defining all information classification categories except the Confidential Information category, which is defined in Subchapter A of this chapter, and establishing the appropriate controls for each.</p>
+        </part>
+      </add>
+    </alter>
+    <alter control-id="ra-3">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+      <add position="ending">
+        <part name="tx_implementation" id="ra-3_tx">
+          <part name="item" id="ra-3_tx_smt.a">
+            <prop name="label" value="a."/>
+            <p>A risk assessment of information resources shall be performed and documented. The risk assessment shall be updated based on the inherent risk. The inherent risk and frequency of the risk assessment will be ranked, at a minimum, as either “High,”
+              “Moderate,” or “Low.”</p>
+          </part>
+          <part name="item" id="ra-3_tx_smt.b">
+            <prop name="label" value="b."/>
+            <p>Risk assessment results, vulnerability reports, and similar information shall be documented and presented to the state organization head or his or her designated representative(s). The state organization head or his or her designated
+              representative(s) shall make the final risk management decisions to either accept exposures or protect the data according to its value/sensitivity. The state organization head or his or her designated representative(s) shall approve the security risk
+              management plan. This information may be exempt from disclosure under §2054.077(c), Government Code.</p>
+          </part>
+        </part>
+      </add>
+    </alter>
+    <alter control-id="ra-3.1">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="ra-5">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+      <add position="ending">
+        <part name="tx_implementation" id="ra-5_tx">
+          <p>The state organization scans for vulnerabilities in the information system at least annually or when significant new vulnerabilities potentially affecting the system are identified and reported.</p>
+        </part>
+      </add>
+    </alter>
+    <alter control-id="ra-7">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="sa-1">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="sa-2">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="sa-3">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+      <add position="ending">
+        <part name="tx_implementation" id="sa-3_tx">
+          <p>Information security, security testing, and audit controls shall be included in all phases of the system development lifecycle or acquisition process.</p>
+        </part>
+      </add>
+    </alter>
+    <alter control-id="sa-4">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="sa-5">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="sa-8">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="sa-9">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="sa-22">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="sc-1">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="sc-5">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="sc-7">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="sc-12">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2022-11-01"/>
+      </add>
+    </alter>
+    <alter control-id="sc-13">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+      <add position="ending">
+        <part name="tx_implementation" id="sc-13_tx">
+          <part name="item" id="sc-13_tx_smt.a">
+            <prop name="label" value="a."/>
+            <p>Encryption requirements for information storage devices and data transmissions, as well as specific requirements for portable devices, removable media, and encryption key standards and management, shall be based on documented state organization
+              risk management decisions.</p>
+          </part>
+          <part name="item" id="sc-13_tx_smt.b">
+            <prop name="label" value="b."/>
+            <p>Confidential information that is transmitted over a public network (e.g., the Internet) must be encrypted.</p>
+          </part>
+          <part name="item" id="sc-13_tx_smt.c">
+            <prop name="label" value="c."/>
+            <p>Confidential information stored in a public location that is directly accessible without compensating controls in place (e.g., FTP without access control) must be encrypted.</p>
+          </part>
+          <part name="item" id="sc-13_tx_smt.d">
+            <prop name="label" value="d."/>
+            <p>Storing confidential information on portable devices is discouraged. Confidential information must be encrypted if copied to, or stored on, a portable computing device, removable media, or a non-state organization owned computing device.</p>
+          </part>
+          <part name="item" id="sc-13_tx_smt.e">
+            <prop name="label" value="e."/>
+            <p>The minimum algorithm strength for protecting confidential information is a 128-bit encryption algorithm, subject to state organization risk management decisions justified and documented in accordance with TAC 202.21/71(c) and TAC 202.25/75.</p>
+          </part>
+          <part name="item" id="sc-13_tx_smt.f">
+            <prop name="label" value="f."/>
+            <p>A state organization may also choose to implement additional protections, which may include encryption, for other data classifications.</p>
+          </part>
+        </part>
+      </add>
+    </alter>
+    <alter control-id="sc-15">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="sc-20">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2022-11-01"/>
+      </add>
+    </alter>
+    <alter control-id="sc-21">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2022-11-01"/>
+      </add>
+    </alter>
+    <alter control-id="sc-22">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2022-11-01"/>
+      </add>
+    </alter>
+    <alter control-id="sc-39">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2022-11-01"/>
+      </add>
+    </alter>
+    <alter control-id="si-1">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="si-2">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2022-11-01"/>
+      </add>
+      <add position="ending">
+        <part name="tx_implementation" id="si-2_tx">
+          <p>The state organization identifies, reports, and corrects information system flaws.</p>
+        </part>
+      </add>
+    </alter>
+    <alter control-id="si-3">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="si-4">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+      <add position="ending">
+        <part name="tx_implementation" id="si-4_tx">
+          <part name="item" id="si-4_tx_smt.a">
+            <prop name="label" value="a."/>
+            <p>Each state organization head or his/her designated representative and information security officer shall establish a security strategy that includes perimeter protection.</p>
+          </part>
+          <part name="item" id="si-4_tx_smt.b">
+            <prop name="label" value="b."/>
+            <p>The department will provide security information management services to include external network monitoring, scanning, and alerting for state organizations that utilize State information resources as specified in Chapters 2054 and 2059, Government
+              Code. Perimeter security controls may include some or all of the following components: DMZ, firewall, intrusion detection or prevention system, or router.</p>
+          </part>
+        </part>
+      </add>
+    </alter>
+    <alter control-id="si-5">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2022-11-01"/>
+      </add>
+    </alter>
+    <alter control-id="si-12">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="sr-1">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="sr-2">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="sr-3">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="sr-5">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="sr-8">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="sr-12">
+      <add position="starting">
+        <prop name="baseline" value="LOW"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <!-- MODERATE Baseline Controls -->
+    <alter control-id="ac-5">
+      <add position="starting">
+        <prop name="baseline" value="MODERATE"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="ac-6">
+      <add position="starting">
+        <prop name="baseline" value="MODERATE"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="cp-6">
+      <add position="starting">
+        <prop name="baseline" value="MODERATE"/>
+        <prop name="tx_required_by" value="2022-11-01"/>
+      </add>
+      <add position="ending">
+        <part name="tx_implementation" id="cp-6_tx">
+          <p>Mission-critical information shall be backed up on a scheduled basis and stored off site in a secure, environmentally safe, locked facility accessible only to authorized state organization representatives.</p>
+        </part>
+      </add>
+    </alter>
+    <alter control-id="ir-3">
+      <add position="starting">
+        <prop name="baseline" value="MODERATE"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="pe-17">
+      <add position="starting">
+        <prop name="baseline" value="MODERATE"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="sa-10">
+      <add position="starting">
+        <prop name="baseline" value="MODERATE"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+      <add position="ending">
+        <part name="tx_implementation" id="sa-10_tx">
+          <p>All security-related information resources changes shall be approved by the information owner through a change control process. Approval shall occur prior to implementation by the state organization or independent contractors.</p>
+        </part>
+      </add>
+    </alter>
+    <alter control-id="sa-11">
+      <add position="starting">
+        <prop name="baseline" value="MODERATE"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <alter control-id="sc-8">
+      <add position="starting">
+        <prop name="baseline" value="MODERATE"/>
+        <prop name="tx_required_by" value="2022-11-01"/>
+      </add>
+      <add position="ending">
+        <part name="tx_implementation" id="sc-8_tx">
+          <p>Confidential information that is transmitted over a public network (e.g.: the Internet) must be encrypted with, at minimum a 128-bit encryption algorithm. An organization may also choose to implement encryption for other data classifications.</p>
+        </part>
+      </add>
+    </alter>
+    <alter control-id="si-10">
+      <add position="starting">
+        <prop name="baseline" value="MODERATE"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+    </alter>
+    <!-- HIGH Baseline Controls -->
+    <alter control-id="ca-8">
+      <add position="starting">
+        <prop name="baseline" value="HIGH"/>
+        <prop name="tx_required_by" value="2023-05-01"/>
+      </add>
+      <add position="ending">
+        <part name="tx_implementation" id="ca-8_tx">
+          <p>Sec. 2054.516(a)(2), Government Code, requires each state agency implementing an Internet website or mobile application that processes any sensitive personal or personally identifiable information or confidential information to subject the website or application to a vulnerability and penetration test and address any vulnerability identified in the test.</p>
+        </part>
+      </add>
+    </alter>
+  </modify>
+</profile>

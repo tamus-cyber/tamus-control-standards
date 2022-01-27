@@ -574,7 +574,7 @@
 <div class="sectionbody">
 <div class="dlist">
 <dl>
-<dt class="hdlist1">Required By</dt>
+<dt class="hdlist1">TxDIR Required By</dt>
 <dd>
 <p>2023-05-01</p>
 </dd>
@@ -604,7 +604,7 @@
 </div>
 </li>
 <li>
-<p>Review and update the organization-wide information security program plan <em>[Assignment: organization-defined frequency]</em> and following <em>[Assignment: organization-defined events]</em>; and</p>
+<p>Review and update the organization-wide information security program plan  <em>[Assignment: frequency]</em>  and following  <em>[Assignment: events]</em> ; and</p>
 </li>
 <li>
 <p>Protect the information security program plan from unauthorized disclosure and modification.</p>
@@ -615,7 +615,7 @@
 <div class="sect2">
 <h3 id="_discussion">Discussion</h3>
 <div class="paragraph">
-<p>An information security program plan is a formal document that provides an overview of the security requirements for an organization-wide information security program and describes the program management controls and common controls in place or planned for meeting those requirements. An information security program plan can be represented in a single document or compilations of documents. Privacy program plans and supply chain risk management plans are addressed separately in
+<p>An information security program plan is a formal document that provides an overview of the security requirements for an organization-wide information security program and describes the program management controls and common controls in place or planned for meeting those requirements. An information security program plan can be represented in a single document or compilations of documents. Privacy program plans and supply chain risk management plans are addressed separately in  <a href="pm.html#pm-18">PM-18</a>  and  <a href="sr.html#sr-2">SR-2</a> , respectively.
 An information security program plan documents implementation details about program management and common controls. The plan provides sufficient information about the controls (including specification of parameters for assignment and selection operations, explicitly or by reference) to enable implementations that are unambiguously compliant with the intent of the plan and a determination of the risk to be incurred if the plan is implemented as intended. Updates to information security program plans include organizational changes and problems identified during plan implementation or control assessments.
 Program management controls may be implemented at the organization level or the mission or business process level, and are essential for managing the organization’s information security program. Program management controls are distinct from common, system-specific, and hybrid controls because program management controls are independent of any particular system. Together, the individual system security plans and the organization-wide information security program plan provide complete coverage for the security controls employed within the organization.
 Common controls available for inheritance by organizational systems are documented in an appendix to the organization’s information security program plan unless the controls are included in a separate security plan for a system. The organization-wide information security program plan indicates which separate security plans contain descriptions of common controls.
@@ -641,7 +641,7 @@ Events that may precipitate an update to the information security program plan i
 <div class="sectionbody">
 <div class="dlist">
 <dl>
-<dt class="hdlist1">Required By</dt>
+<dt class="hdlist1">TxDIR Required By</dt>
 <dd>
 <p>2022-11-01</p>
 </dd>
@@ -672,7 +672,7 @@ Events that may precipitate an update to the information security program plan i
 <div class="sectionbody">
 <div class="dlist">
 <dl>
-<dt class="hdlist1">Required By</dt>
+<dt class="hdlist1">TxDIR Required By</dt>
 <dd>
 <p>2023-05-01</p>
 </dd>
@@ -725,7 +725,7 @@ Events that may precipitate an update to the information security program plan i
 <div class="sectionbody">
 <div class="dlist">
 <dl>
-<dt class="hdlist1">Required By</dt>
+<dt class="hdlist1">TxDIR Required By</dt>
 <dd>
 <p>2023-05-01</p>
 </dd>
@@ -760,7 +760,7 @@ Events that may precipitate an update to the information security program plan i
 <div class="sect2">
 <h3 id="_discussion_4">Discussion</h3>
 <div class="paragraph">
-<p>The plan of action and milestones is a key organizational document and is subject to reporting requirements established by the Office of Management and Budget. Organizations develop plans of action and milestones with an organization-wide perspective, prioritizing risk response actions and ensuring consistency with the goals and objectives of the organization. Plan of action and milestones updates are based on findings from control assessments and continuous monitoring activities. There can be multiple plans of action and milestones corresponding to the information system level, mission/business process level, and organizational/governance level. While plans of action and milestones are required for federal organizations, other types of organizations can help reduce risk by documenting and tracking planned remediations. Specific guidance on plans of action and milestones at the system level is provided in</p>
+<p>The plan of action and milestones is a key organizational document and is subject to reporting requirements established by the Office of Management and Budget. Organizations develop plans of action and milestones with an organization-wide perspective, prioritizing risk response actions and ensuring consistency with the goals and objectives of the organization. Plan of action and milestones updates are based on findings from control assessments and continuous monitoring activities. There can be multiple plans of action and milestones corresponding to the information system level, mission/business process level, and organizational/governance level. While plans of action and milestones are required for federal organizations, other types of organizations can help reduce risk by documenting and tracking planned remediations. Specific guidance on plans of action and milestones at the system level is provided in  <a href="ca.html#ca-5">CA-5</a>.</p>
 </div>
 </div>
 <div class="sect2">
@@ -782,26 +782,37 @@ Events that may precipitate an update to the information security program plan i
 <div class="sectionbody">
 <div class="dlist">
 <dl>
-<dt class="hdlist1">Required By</dt>
+<dt class="hdlist1">TxDIR Required By</dt>
 <dd>
 <p>2023-05-01</p>
+</dd>
+<dt class="hdlist1">TAMUS Required By</dt>
+<dd>
+<p>2022-08-01</p>
 </dd>
 </dl>
 </div>
 <div class="sect2">
 <h3 id="_control_5">Control</h3>
 <div class="paragraph">
-<p>Develop and update <em>[Assignment: organization-defined frequency]</em> an inventory of organizational systems.</p>
+<p>Develop and update  <em>[Assignment: frequency]</em>  an inventory of organizational systems.</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_tamus_implementation_details">TAMUS Implementation Details</h3>
-<div class="paragraph">
-<p>The System member:
-a. designates a single system of record for inventory of all information systems [SP 800-171r2](#edeba4a2-6aec-49c5-9763-207a3970a366) and network-attached operational technology [SP 800-37r2](#482e4c99-9dc4-41ad-bba8-0f3f0032c1f8) owned or managed by the member;
-b. includes any cloud computing services [SP 800-145](#1d635223-295d-4ac9-a117-9c7558cb9ea3) operated by the member in its inventory of information systems, and
-c. designates which data regarding an information system to record in the inventory of information systems. At a minimum, the data includes a unique identifier (e.g., serial number or system name), owner, custodian, description of the
-                information sytem’s function or major application, and highest level of data categorization stored/processed on the information system.</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Designate a single system of record for inventory of all information systems [SP 800-171] and network-attached operational technology [SP 800-37] owned or managed by the member;</p>
+</li>
+<li>
+<p>Include any cloud computing services [SP 800-145] operated by the member in the inventory of information systems, and</p>
+</li>
+<li>
+<p>Designate which data regarding an information system to record in the inventory of information systems. At a minimum, the data includes a unique identifier (e.g., serial number or system name), owner, custodian, description of the information
+sytem’s function or major application, and highest level of data categorization stored/processed on the information system.</p>
+</li>
+</ol>
 </div>
 </div>
 <div class="sect2">
@@ -811,7 +822,7 @@ c. designates which data regarding an information system to record in the invent
 <div class="sect2">
 <h3 id="_references_5">References</h3>
 <div class="paragraph">
-<p><a href="https://doi.org/10.6028/NIST.SP.800-145" target="_blank">NIST Special Publication 800-145</a>, <a href="https://doi.org/10.6028/NIST.SP.800-171r2" target="_blank">NIST Special Publication 800-171 Rev. 2</a>, <a href="https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/circulars/A130/a130revised.pdf" target="_blank">OMB A-130</a>, <a href="https://doi.org/10.6028/NIST.IR.8062" target="_blank">IR 8062</a></p>
+<p><a href="https://doi.org/10.6028/NIST.SP.800-37r2" target="_blank">SP 800-37</a>, <a href="https://doi.org/10.6028/NIST.SP.800-145" target="_blank">SP 800-145</a>, <a href="https://doi.org/10.6028/NIST.SP.800-171r2" target="_blank">SP 800-171</a>, <a href="https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/circulars/A130/a130revised.pdf" target="_blank">OMB A-130</a>, <a href="https://doi.org/10.6028/NIST.IR.8062" target="_blank">IR 8062</a></p>
 </div>
 </div>
 <div class="sect2">
@@ -821,7 +832,7 @@ c. designates which data regarding an information system to record in the invent
 <div class="sect4">
 <h5 id="_control_6">Control</h5>
 <div class="paragraph">
-<p>Establish, maintain, and update <em>[Assignment: organization-defined frequency]</em> an inventory of all systems, applications, and projects that process personally identifiable information.</p>
+<p>Establish, maintain, and update  <em>[Assignment: frequency]</em>  an inventory of all systems, applications, and projects that process personally identifiable information.</p>
 </div>
 </div>
 <div class="sect4">
@@ -845,7 +856,7 @@ c. designates which data regarding an information system to record in the invent
 <div class="sectionbody">
 <div class="dlist">
 <dl>
-<dt class="hdlist1">Required By</dt>
+<dt class="hdlist1">TxDIR Required By</dt>
 <dd>
 <p>2023-05-01</p>
 </dd>
@@ -882,7 +893,7 @@ c. designates which data regarding an information system to record in the invent
 <div class="sectionbody">
 <div class="dlist">
 <dl>
-<dt class="hdlist1">Required By</dt>
+<dt class="hdlist1">TxDIR Required By</dt>
 <dd>
 <p>2023-05-01</p>
 </dd>
@@ -903,7 +914,7 @@ c. designates which data regarding an information system to record in the invent
 <div class="sect2">
 <h3 id="_discussion_8">Discussion</h3>
 <div class="paragraph">
-<p>The integration of security and privacy requirements and controls into the enterprise architecture helps to ensure that security and privacy considerations are addressed throughout the system development life cycle and are explicitly related to the organization’s mission and business processes. The process of security and privacy requirements integration also embeds into the enterprise architecture and the organization’s security and privacy architectures consistent with the organizational risk management strategy. For PM-7, security and privacy architectures are developed at a system-of-systems level, representing all organizational systems. For</p>
+<p>The integration of security and privacy requirements and controls into the enterprise architecture helps to ensure that security and privacy considerations are addressed throughout the system development life cycle and are explicitly related to the organization’s mission and business processes. The process of security and privacy requirements integration also embeds into the enterprise architecture and the organization’s security and privacy architectures consistent with the organizational risk management strategy. For PM-7, security and privacy architectures are developed at a system-of-systems level, representing all organizational systems. For  <a href="pl.html#pl-8">PL-8</a> , the security and privacy architectures are developed at a level that represents an individual system. The system-level architectures are consistent with the security and privacy architectures defined for the organization. Security and privacy requirements and control integration are most effectively accomplished through the rigorous application of the Risk Management Framework</p>
 </div>
 </div>
 <div class="sect2">
@@ -925,7 +936,7 @@ c. designates which data regarding an information system to record in the invent
 <div class="sect4">
 <h5 id="_control_9">Control</h5>
 <div class="paragraph">
-<p>Offload <em>[Assignment: organization-defined non-essential functions or services]</em> to other systems, system components, or an external provider.</p>
+<p>Offload  <em>[Assignment: non-essential functions or services]</em>  to other systems, system components, or an external provider.</p>
 </div>
 </div>
 <div class="sect4">
@@ -978,7 +989,7 @@ c. designates which data regarding an information system to record in the invent
 <div class="sectionbody">
 <div class="dlist">
 <dl>
-<dt class="hdlist1">Required By</dt>
+<dt class="hdlist1">TxDIR Required By</dt>
 <dd>
 <p>2023-05-01</p>
 </dd>
@@ -1005,7 +1016,7 @@ c. designates which data regarding an information system to record in the invent
 <p>Implement the risk management strategy consistently across the organization; and</p>
 </li>
 <li>
-<p>Review and update the risk management strategy <em>[Assignment: organization-defined frequency]</em> or as required, to address organizational changes.</p>
+<p>Review and update the risk management strategy  <em>[Assignment: frequency]</em>  or as required, to address organizational changes.</p>
 </li>
 </ol>
 </div>
@@ -1019,7 +1030,7 @@ c. designates which data regarding an information system to record in the invent
 <div class="sect2">
 <h3 id="_discussion_11">Discussion</h3>
 <div class="paragraph">
-<p>An organization-wide risk management strategy includes an expression of the security and privacy risk tolerance for the organization, security and privacy risk mitigation strategies, acceptable risk assessment methodologies, a process for evaluating security and privacy risk across the organization with respect to the organization’s risk tolerance, and approaches for monitoring risk over time. The senior accountable official for risk management (agency head or designated official) aligns information security management processes with strategic, operational, and budgetary planning processes. The risk executive function, led by the senior accountable official for risk management, can facilitate consistent application of the risk management strategy organization-wide. The risk management strategy can be informed by security and privacy risk-related inputs from other sources, both internal and external to the organization, to ensure that the strategy is broad-based and comprehensive. The supply chain risk management strategy described in</p>
+<p>An organization-wide risk management strategy includes an expression of the security and privacy risk tolerance for the organization, security and privacy risk mitigation strategies, acceptable risk assessment methodologies, a process for evaluating security and privacy risk across the organization with respect to the organization’s risk tolerance, and approaches for monitoring risk over time. The senior accountable official for risk management (agency head or designated official) aligns information security management processes with strategic, operational, and budgetary planning processes. The risk executive function, led by the senior accountable official for risk management, can facilitate consistent application of the risk management strategy organization-wide. The risk management strategy can be informed by security and privacy risk-related inputs from other sources, both internal and external to the organization, to ensure that the strategy is broad-based and comprehensive. The supply chain risk management strategy described in  <a href="pm.html#pm-30">PM-30</a>  can also provide useful inputs to the organization-wide risk management strategy.</p>
 </div>
 </div>
 <div class="sect2">
@@ -1041,7 +1052,7 @@ c. designates which data regarding an information system to record in the invent
 <div class="sectionbody">
 <div class="dlist">
 <dl>
-<dt class="hdlist1">Required By</dt>
+<dt class="hdlist1">TxDIR Required By</dt>
 <dd>
 <p>2023-05-01</p>
 </dd>
@@ -1103,7 +1114,7 @@ c. designates which data regarding an information system to record in the invent
 <p>Determine information protection and personally identifiable information processing needs arising from the defined mission and business processes; and</p>
 </li>
 <li>
-<p>Review and revise the mission and business processes <em>[Assignment: organization-defined frequency]</em>.</p>
+<p>Review and revise the mission and business processes  <em>[Assignment: frequency]</em>.</p>
 </li>
 </ol>
 </div>
@@ -1192,9 +1203,13 @@ Insider threat programs can leverage the existence of incident handling teams th
 <div class="sectionbody">
 <div class="dlist">
 <dl>
-<dt class="hdlist1">Required By</dt>
+<dt class="hdlist1">TxDIR Required By</dt>
 <dd>
 <p>2023-05-01</p>
+</dd>
+<dt class="hdlist1">TAMUS Required By</dt>
+<dd>
+<p>2022-08-01</p>
 </dd>
 </dl>
 </div>
@@ -1230,7 +1245,7 @@ Insider threat programs can leverage the existence of incident handling teams th
 <div class="sect2">
 <h3 id="_tamus_implementation_details_2">TAMUS Implementation Details</h3>
 <div class="paragraph">
-<p>The System member ensures an IT organization is designated to provide security monitoring for all information systems, in both centralized and decentralized IT environments, owned or managed by the member.</p>
+<p>Ensure an IT organization is designated to provide security monitoring for all information systems, in both centralized and decentralized IT environments, owned or managed by the organization.</p>
 </div>
 </div>
 <div class="sect2">
@@ -1258,7 +1273,7 @@ Insider threat programs can leverage the existence of incident handling teams th
 <div class="sectionbody">
 <div class="dlist">
 <dl>
-<dt class="hdlist1">Required By</dt>
+<dt class="hdlist1">TxDIR Required By</dt>
 <dd>
 <p>2023-05-01</p>
 </dd>
@@ -1304,7 +1319,7 @@ c. To share current security and privacy information, including threats, vulnera
 <div class="sectionbody">
 <div class="dlist">
 <dl>
-<dt class="hdlist1">Required By</dt>
+<dt class="hdlist1">TxDIR Required By</dt>
 <dd>
 <p>2022-11-01</p>
 </dd>
@@ -1365,7 +1380,7 @@ c. To share current security and privacy information, including threats, vulnera
 <p>Establish policy and procedures to ensure that requirements for the protection of controlled unclassified information that is processed, stored or transmitted on external systems, are implemented in accordance with applicable laws, executive orders, directives, policies, regulations, and standards; and</p>
 </li>
 <li>
-<p>Review and update the policy and procedures <em>[Assignment: organization-defined frequency]</em>.</p>
+<p>Review and update the policy and procedures  <em>[Assignment: organization-defined frequency]</em>.</p>
 </li>
 </ol>
 </div>
@@ -1423,7 +1438,7 @@ c. To share current security and privacy information, including threats, vulnera
 </div>
 </li>
 <li>
-<p>Update the plan <em>[Assignment: organization-defined frequency]</em> and to address changes in federal privacy laws and policy and organizational changes and problems identified during plan implementation or privacy control assessments.</p>
+<p>Update the plan  <em>[Assignment: frequency]</em>  and to address changes in federal privacy laws and policy and organizational changes and problems identified during plan implementation or privacy control assessments.</p>
 </li>
 </ol>
 </div>
@@ -1463,7 +1478,7 @@ Common controls are documented in an appendix to the organization’s privacy pr
 <div class="sect2">
 <h3 id="_discussion_22">Discussion</h3>
 <div class="paragraph">
-<p>The privacy officer is an organizational official. For federal agencies-as defined by applicable laws, executive orders, directives, regulations, policies, standards, and guidelines-this official is designated as the senior agency official for privacy. Organizations may also refer to this official as the chief privacy officer. The senior agency official for privacy also has roles on the data management board (see</p>
+<p>The privacy officer is an organizational official. For federal agencies-as defined by applicable laws, executive orders, directives, regulations, policies, standards, and guidelines-this official is designated as the senior agency official for privacy. Organizations may also refer to this official as the chief privacy officer. The senior agency official for privacy also has roles on the data management board (see  <a href="pm.html#pm-23">PM-23</a> ) and the data integrity board (see  <a href="pm.html#pm-24">PM-24</a>).</p>
 </div>
 </div>
 <div class="sect2">
@@ -1495,7 +1510,7 @@ c. Employs publicly facing email addresses and/or phone lines to enable the publ
 <div class="sect2">
 <h3 id="_discussion_23">Discussion</h3>
 <div class="paragraph">
-<p>For federal agencies, the webpage is located at www.[agency].gov/privacy. Federal agencies include public privacy impact assessments, system of records notices, computer matching notices and agreements,</p>
+<p>For federal agencies, the webpage is located at www.[agency].gov/privacy. Federal agencies include public privacy impact assessments, system of records notices, computer matching notices and agreements,  {#18e71fec-c6fd-475a-925a-5d8495cf8455}  exemption and implementation rules, privacy reports, privacy policies, instructions for individuals making an access or amendment request, email addresses for questions/complaints, blogs, and periodic publications.</p>
 </div>
 </div>
 <div class="sect2">
@@ -1565,7 +1580,7 @@ c. Employs publicly facing email addresses and/or phone lines to enable the publ
 <div class="sect2">
 <h3 id="_discussion_25">Discussion</h3>
 <div class="paragraph">
-<p>The purpose of accounting of disclosures is to allow individuals to learn to whom their personally identifiable information has been disclosed, to provide a basis for subsequently advising recipients of any corrected or disputed personally identifiable information, and to provide an audit trail for subsequent reviews of organizational compliance with conditions for disclosures. For federal agencies, keeping an accounting of disclosures is required by the
+<p>The purpose of accounting of disclosures is to allow individuals to learn to whom their personally identifiable information has been disclosed, to provide a basis for subsequently advising recipients of any corrected or disputed personally identifiable information, and to provide an audit trail for subsequent reviews of organizational compliance with conditions for disclosures. For federal agencies, keeping an accounting of disclosures is required by the  {#18e71fec-c6fd-475a-925a-5d8495cf8455} ; agencies should consult with their senior agency official for privacy and legal counsel on this requirement and be aware of the statutory exceptions and OMB guidance relating to the provision.
 Organizations can use any system for keeping notations of disclosures, if it can construct from such a system, a document listing of all disclosures along with the required information. Automated mechanisms can be used by organizations to determine when personally identifiable information is disclosed, including commercial services that provide notifications and alerts. Accounting of disclosures may also be used to help organizations verify compliance with applicable privacy statutes and policies governing the disclosure or dissemination of information and dissemination restrictions.</p>
 </div>
 </div>
@@ -1624,13 +1639,13 @@ Organizations notify individuals or their designated representatives when their 
 <div class="sect2">
 <h3 id="_control_27">Control</h3>
 <div class="paragraph">
-<p>Establish a Data Governance Body consisting of <em>[Assignment: organization-defined roles]</em> with <em>[Assignment: organization-defined responsibilities]</em>.</p>
+<p>Establish a Data Governance Body consisting of  <em>[Assignment: roles]</em>  with  <em>[Assignment: responsibilities]</em>.</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_discussion_27">Discussion</h3>
 <div class="paragraph">
-<p>A Data Governance Body can help ensure that the organization has coherent policies and the ability to balance the utility of data with security and privacy requirements. The Data Governance Body establishes policies, procedures, and standards that facilitate data governance so that data, including personally identifiable information, is effectively managed and maintained in accordance with applicable laws, executive orders, directives, regulations, policies, standards, and guidance. Responsibilities can include developing and implementing guidelines that support data modeling, quality, integrity, and the de-identification needs of personally identifiable information across the information life cycle as well as reviewing and approving applications to release data outside of the organization, archiving the applications and the released data, and performing post-release monitoring to ensure that the assumptions made as part of the data release continue to be valid. Members include the chief information officer, senior agency information security officer, and senior agency official for privacy. Federal agencies are required to establish a Data Governance Body with specific roles and responsibilities in accordance with the</p>
+<p>A Data Governance Body can help ensure that the organization has coherent policies and the ability to balance the utility of data with security and privacy requirements. The Data Governance Body establishes policies, procedures, and standards that facilitate data governance so that data, including personally identifiable information, is effectively managed and maintained in accordance with applicable laws, executive orders, directives, regulations, policies, standards, and guidance. Responsibilities can include developing and implementing guidelines that support data modeling, quality, integrity, and the de-identification needs of personally identifiable information across the information life cycle as well as reviewing and approving applications to release data outside of the organization, archiving the applications and the released data, and performing post-release monitoring to ensure that the assumptions made as part of the data release continue to be valid. Members include the chief information officer, senior agency information security officer, and senior agency official for privacy. Federal agencies are required to establish a Data Governance Body with specific roles and responsibilities in accordance with the  {#511da9ca-604d-43f7-be41-b862085420a9}  and policies set forth under</p>
 </div>
 </div>
 <div class="sect2">
@@ -1661,7 +1676,7 @@ b. Conduct an annual review of all matching programs in which the agency has par
 <div class="sect2">
 <h3 id="_discussion_28">Discussion</h3>
 <div class="paragraph">
-<p>A Data Integrity Board is the board of senior officials designated by the head of a federal agency and is responsible for, among other things, reviewing the agency’s proposals to conduct or participate in a matching program and conducting an annual review of all matching programs in which the agency has participated. As a general matter, a matching program is a computerized comparison of records from two or more automated</p>
+<p>A Data Integrity Board is the board of senior officials designated by the head of a federal agency and is responsible for, among other things, reviewing the agency’s proposals to conduct or participate in a matching program and conducting an annual review of all matching programs in which the agency has participated. As a general matter, a matching program is a computerized comparison of records from two or more automated  {#18e71fec-c6fd-475a-925a-5d8495cf8455}  systems of records or an automated system of records and automated records maintained by a non-federal agency (or agent thereof). A matching program either pertains to Federal benefit programs or Federal personnel or payroll records. At a minimum, the Data Integrity Board includes the Inspector General of the agency, if any, and the senior agency official for privacy.</p>
 </div>
 </div>
 <div class="sect2">
@@ -1695,7 +1710,7 @@ b. Conduct an annual review of all matching programs in which the agency has par
 <p>Authorize the use of personally identifiable information when such information is required for internal testing, training, and research; and</p>
 </li>
 <li>
-<p>Review and update policies and procedures <em>[Assignment: organization-defined frequency]</em>.</p>
+<p>Review and update policies and procedures  <em>[Assignment: organization-defined frequency]</em>.</p>
 </li>
 </ol>
 </div>
@@ -1729,9 +1744,9 @@ b. Conduct an annual review of all matching programs in which the agency has par
 <p>Implement a process for receiving and responding to complaints, concerns, or questions from individuals about the organizational security and privacy practices that includes:
 a. Mechanisms that are easy to use and readily accessible by the public;
 b. All information necessary for successfully filing complaints;
-c. Tracking mechanisms to ensure all complaints received are reviewed and addressed within <em>[Assignment: organization-defined time period]</em>;
-d. Acknowledgement of receipt of complaints, concerns, or questions from individuals within <em>[Assignment: organization-defined time period]</em>; and
-e. Response to complaints, concerns, or questions from individuals within <em>[Assignment: organization-defined time period]</em>.</p>
+c. Tracking mechanisms to ensure all complaints received are reviewed and addressed within  <em>[Assignment: organization-defined time period]</em>;
+d. Acknowledgement of receipt of complaints, concerns, or questions from individuals within  <em>[Assignment: time period]</em> ; and
+e. Response to complaints, concerns, or questions from individuals within  <em>[Assignment: time period]</em>.</p>
 </div>
 </div>
 <div class="sect2">
@@ -1762,20 +1777,20 @@ e. Response to complaints, concerns, or questions from individuals within <em>[A
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
-<p>Develop <em>[Assignment: organization-defined privacy reports]</em> and disseminate to:</p>
+<p>Develop  <em>[Assignment: privacy reports]</em>  and disseminate to:</p>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p><em>[Assignment: organization-defined oversight bodies]</em> to demonstrate accountability with statutory, regulatory, and policy privacy mandates; and</p>
+<p><em>[Assignment: oversight bodies]</em>  to demonstrate accountability with statutory, regulatory, and policy privacy mandates; and</p>
 </li>
 <li>
-<p><em>[Assignment: organization-defined officials]</em> and other personnel with responsibility for monitoring privacy program compliance; and</p>
+<p><em>[Assignment: officials]</em>  and other personnel with responsibility for monitoring privacy program compliance; and</p>
 </li>
 </ol>
 </div>
 </li>
 <li>
-<p>Review and update privacy reports <em>[Assignment: organization-defined frequency]</em>.</p>
+<p>Review and update privacy reports  <em>[Assignment: frequency]</em>.</p>
 </li>
 </ol>
 </div>
@@ -1827,10 +1842,10 @@ e. Response to complaints, concerns, or questions from individuals within <em>[A
 </div>
 </li>
 <li>
-<p>Distribute the results of risk framing activities to <em>[Assignment: organization-defined personnel]</em>; and</p>
+<p>Distribute the results of risk framing activities to  <em>[Assignment: personnel]</em> ; and</p>
 </li>
 <li>
-<p>Review and update risk framing considerations <em>[Assignment: organization-defined frequency]</em>.</p>
+<p>Review and update risk framing considerations  <em>[Assignment: frequency]</em>.</p>
 </li>
 </ol>
 </div>
@@ -1905,7 +1920,7 @@ e. Response to complaints, concerns, or questions from individuals within <em>[A
 <p>Implement the supply chain risk management strategy consistently across the organization; and</p>
 </li>
 <li>
-<p>Review and update the supply chain risk management strategy on <em>[Assignment: organization-defined frequency]</em> or as required, to address organizational changes.</p>
+<p>Review and update the supply chain risk management strategy on  <em>[Assignment: frequency]</em>  or as required, to address organizational changes.</p>
 </li>
 </ol>
 </div>
@@ -1913,7 +1928,7 @@ e. Response to complaints, concerns, or questions from individuals within <em>[A
 <div class="sect2">
 <h3 id="_discussion_34">Discussion</h3>
 <div class="paragraph">
-<p>An organization-wide supply chain risk management strategy includes an unambiguous expression of the supply chain risk appetite and tolerance for the organization, acceptable supply chain risk mitigation strategies or controls, a process for consistently evaluating and monitoring supply chain risk, approaches for implementing and communicating the supply chain risk management strategy, and the associated roles and responsibilities. Supply chain risk management includes considerations of the security and privacy risks associated with the development, acquisition, maintenance, and disposal of systems, system components, and system services. The supply chain risk management strategy can be incorporated into the organization’s overarching risk management strategy and can guide and inform supply chain policies and system-level supply chain risk management plans. In addition, the use of a risk executive function can facilitate a consistent, organization-wide application of the supply chain risk management strategy. The supply chain risk management strategy is implemented at the organization and mission/business levels, whereas the supply chain risk management plan (see</p>
+<p>An organization-wide supply chain risk management strategy includes an unambiguous expression of the supply chain risk appetite and tolerance for the organization, acceptable supply chain risk mitigation strategies or controls, a process for consistently evaluating and monitoring supply chain risk, approaches for implementing and communicating the supply chain risk management strategy, and the associated roles and responsibilities. Supply chain risk management includes considerations of the security and privacy risks associated with the development, acquisition, maintenance, and disposal of systems, system components, and system services. The supply chain risk management strategy can be incorporated into the organization’s overarching risk management strategy and can guide and inform supply chain policies and system-level supply chain risk management plans. In addition, the use of a risk executive function can facilitate a consistent, organization-wide application of the supply chain risk management strategy. The supply chain risk management strategy is implemented at the organization and mission/business levels, whereas the supply chain risk management plan (see  <a href="sr.html#sr-2">SR-2</a> ) is implemented at the system level.</p>
 </div>
 </div>
 <div class="sect2">
@@ -1941,7 +1956,7 @@ e. Response to complaints, concerns, or questions from individuals within <em>[A
 <div class="sect4">
 <h5 id="_discussion_35">Discussion</h5>
 <div class="paragraph">
-<p>The identification and prioritization of suppliers of critical or mission-essential technologies, products, and services is paramount to the mission/business success of organizations. The assessment of suppliers is conducted using supplier reviews (see</p>
+<p>The identification and prioritization of suppliers of critical or mission-essential technologies, products, and services is paramount to the mission/business success of organizations. The assessment of suppliers is conducted using supplier reviews (see  <a href="sr.html#sr-6">SR-6</a> ) and supply chain risk assessment processes (see  <a href="ra.html#ra-3-1">RA-3(1)</a> ). An analysis of supply chain risk can help an organization identify systems or components for which additional supply chain risk mitigations are required.</p>
 </div>
 </div>
 <div class="sect4">
@@ -1961,12 +1976,12 @@ e. Response to complaints, concerns, or questions from individuals within <em>[A
 <h3 id="_control_36">Control</h3>
 <div class="paragraph">
 <p>Develop an organization-wide continuous monitoring strategy and implement continuous monitoring programs that include:
-a. Establishing the following organization-wide metrics to be monitored: <em>[Assignment: organization-defined metrics]</em>;
-b. Establishing <em>[Assignment: organization-defined frequencies]</em> for monitoring and <em>[Assignment: organization-defined frequencies]</em> for assessment of control effectiveness;
+a. Establishing the following organization-wide metrics to be monitored:  <em>[Assignment: metrics]</em>;
+b. Establishing  <em>[Assignment: frequency]</em>  for monitoring and  <em>[Assignment: frequency]</em>  for assessment of control effectiveness;
 c. Ongoing monitoring of organizationally-defined metrics in accordance with the continuous monitoring strategy;
 d. Correlation and analysis of information generated by control assessments and monitoring;
 e. Response actions to address results of the analysis of control assessment and monitoring information; and
-f. Reporting the security and privacy status of organizational systems to <em>[Assignment: organization-defined personnel or roles]</em>
+f. Reporting the security and privacy status of organizational systems to  <em>[Assignment: organization-defined personnel or roles]</em>
                   <em>[Assignment: organization-defined frequency]</em>.</p>
 </div>
 </div>
@@ -1996,7 +2011,7 @@ f. Reporting the security and privacy status of organizational systems to <em>[A
 <div class="sect2">
 <h3 id="_control_37">Control</h3>
 <div class="paragraph">
-<p>Analyze <em>[Assignment: organization-defined systems or systems components]</em> supporting mission essential services or functions to ensure that the information resources are being used consistent with their intended purpose.</p>
+<p>Analyze  <em>[Assignment: systems or system components]</em>  supporting mission essential services or functions to ensure that the information resources are being used consistent with their intended purpose.</p>
 </div>
 </div>
 <div class="sect2">
@@ -2061,7 +2076,7 @@ f. Reporting the security and privacy status of organizational systems to <em>[A
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"PM - Program Management","level":"1.2.13","depth":2,"next":{"title":"PS - Personnel Security","level":"1.2.14","depth":2,"path":"catalog/ps.adoc","ref":"catalog/ps.adoc","articles":[]},"previous":{"title":"PL - Planning","level":"1.2.12","depth":2,"path":"catalog/pl.adoc","ref":"catalog/pl.adoc","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Nicholas McLarty","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Texas A&M University System Cybersecurity Standards","gitbook":"*","description":"Texas A&M System Cybersecurity Standards provide system members with guidance that enhances State-level requirements for implementing security controls."},"file":{"path":"catalog/pm.adoc","mtime":"2022-01-24T21:53:20.447Z","type":"asciidoc"},"gitbook":{"version":"3.6.23","time":"2022-01-24T21:53:47.650Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"PM - Program Management","level":"1.2.13","depth":2,"next":{"title":"PS - Personnel Security","level":"1.2.14","depth":2,"path":"catalog/ps.adoc","ref":"catalog/ps.adoc","articles":[]},"previous":{"title":"PL - Planning","level":"1.2.12","depth":2,"path":"catalog/pl.adoc","ref":"catalog/pl.adoc","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Nicholas McLarty","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Texas A&M University System Cybersecurity Standards","gitbook":"*","description":"Texas A&M System Cybersecurity Standards provide system members with guidance that enhances State-level requirements for implementing security controls."},"file":{"path":"catalog/pm.adoc","mtime":"2022-01-27T04:09:17.790Z","type":"asciidoc"},"gitbook":{"version":"3.6.23","time":"2022-01-27T04:09:27.161Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

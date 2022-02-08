@@ -123,9 +123,17 @@ def printCatalogItem(element):
         string += ("%s %s %s[[%s]]\n" % ("="*indent, props['label'], title, \
             transformParam(element.get('id'))))
 
+        # Output the Texas baseline (if exists)
+        if (props.get('tx_baseline')):
+            string += ("Texas DIR Baseline:: %s\n" % (props.get('tx_baseline')))
+
+        # Output the TAMUS baseline (if exists)
+        if (props.get('tamus_baseline')):
+            string += ("TAMUS Baseline:: %s\n" % (props.get('tamus_baseline')))
+
         # Output the NIST baseline (if exists)
-        if (props.get('baseline')):
-            string += ("NIST Baseline:: %s\n" % (props.get('baseline')))
+        if (props.get('tx_privacy_baseline') or props.get('tamus_privacy_baseline')):
+            string += ("Privacy Baseline:: Yes\n")
 
         # Output the TxDIR Required By date (if exists)
         if (props.get('tx_required_by')):
@@ -292,3 +300,50 @@ string += "|===\n"
 
 required_controls_file.write(string)
 required_controls_file.close()
+
+# Created new controls index page
+new_controls_file = open("new-controls.adoc", "w") # Create new ASCIIdoc page
+
+string = "# Texas DIR and Texas A&M System New Required Controls\n\n"
+
+string += "[cols=\"15%,45%,20%,20%\"]\n"
+string += "|===\n"
+string += "|Control ID |Title |TxDIR Required By |TAMUS Required By\n\n"
+
+# Iterate the control families, find ones with a required date, and output as ASCIIdoc
+for family in root.findall('{http://csrc.nist.gov/ns/oscal/1.0}group'):
+    title = family.find('{http://csrc.nist.gov/ns/oscal/1.0}title').text   # Control family title
+    string += ("4+h|%s\n" % (title))
+
+    i = 0
+
+    for control in family.iter('{http://csrc.nist.gov/ns/oscal/1.0}control'):
+        props = {}
+        for prop in control.findall('{http://csrc.nist.gov/ns/oscal/1.0}prop'):
+            if (prop.get('class') != "sp800-53a"):
+                props[prop.get('name')] = prop.get('value')
+
+        if ('tx_new_requirement' in props or 'tamus_new_requirement' in props):
+            i += 1
+            title = control.find('{http://csrc.nist.gov/ns/oscal/1.0}title').text   # Catalog item's title
+            family = control.get('id')[0:2]
+
+            string += ("|xref:%s.adoc#%s[%s] " % (family, transformParam(control.get('id')), props['label']))
+            string += ("|%s " % (title))
+            if ('tx_required_by' in props):
+                string += ("|%s " % (props['tx_required_by'] or ""))
+            else:
+                string += "| "
+            if ('tamus_required_by' in props):
+                string += ("|%s " % (props['tamus_required_by'] or ""))
+            else:
+                string += "| "
+            string += "\n"
+
+    if (i == 0):
+        string += "4+|_No new required controls in this family_\n"
+
+string += "|===\n"
+
+new_controls_file.write(string)
+new_controls_file.close()

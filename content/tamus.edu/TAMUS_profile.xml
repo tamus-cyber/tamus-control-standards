@@ -3,14 +3,13 @@
 
   <metadata>
     <title>Texas A&amp;M University System Cybersecurity Control Standards</title>
-    <published>2020-08-18T18:17:00Z</published>
-    <last-modified>2022-01-25T18:00:00Z</last-modified>
+    <published>2022-02-08T12:00:00-0600</published>
+    <last-modified>2022-02-08T12:00:00-0600</last-modified>
     <version>2.0</version>
-    <oscal-version>1.0.0-milestone3</oscal-version>
+    <oscal-version>1.0.0</oscal-version>
     <role id="prepared-by">
       <title>Document creator</title>
     </role>
-
     <party uuid="00cd4c91-5db6-45f4-8c15-343baed5fdf8" type="organization">
       <name>Texas A&amp;M University System Office of Cybersecurity</name>
       <short-name>TAMUS Cybersecurity</short-name>
@@ -25,7 +24,6 @@
         <country>US</country>
       </address>
     </party>
-
     <responsible-party role-id="prepared-by">
       <party-uuid>00cd4c91-5db6-45f4-8c15-343baed5fdf8</party-uuid>
     </responsible-party>
@@ -83,6 +81,7 @@
     </alter>
     <alter control-id="cm-3">
       <add position="ending">
+        <prop name="tamus_baseline" value="MODERATE"/>
         <prop name="tamus_required_by" value="2022-08-01"/>
         <part name="tamus_implementation" id="cm-3_tamus">
           <part name="item" id="cm-3_tamus_smt.a">

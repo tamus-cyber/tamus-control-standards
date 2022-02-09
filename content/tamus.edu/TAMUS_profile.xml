@@ -40,6 +40,7 @@
       <add position="ending">
         <prop name="tamus_required_by" value="2022-08-01"/>
         <part name="tamus_implementation" id="ac-2.7_tamus">
+          <prop name="changed" value="true"/>
           <p>Ensure users with privileged (also known as administrative or special access) accounts are aware of the extraordinary responsibilities associated with the use of privileged accounts.</p>
         </part>
       </add>
@@ -51,6 +52,7 @@
       <add position="ending">
         <prop name="tamus_required_by" value="2022-08-01"/>
         <part name="tamus_implementation" id="ac-3.7_tamus">
+          <prop name="changed" value="true"/>
           <p>Implement role-based (e.g., students, employees, third parties, guests) access control or adopt an InCommon Federation assurance profile roles, where possible.</p>
         </part>
       </add>
@@ -101,19 +103,11 @@
             </part>
             <part name="item" id="cm-3_tamus_smt.a.4">
               <prop name="label" value="4."/>
-              <p>authorizing changes and exceptions;</p>
+              <p>authorizing changes and exceptions, and</p>
             </part>
             <part name="item" id="cm-3_tamus_smt.a.5">
               <prop name="label" value="5."/>
-              <p>testing changes;</p>
-            </part>
-            <part name="item" id="cm-3_tamus_smt.a.6">
-              <prop name="label" value="6."/>
-              <p>implementing changes and planning for back-outs, and</p>
-            </part>
-            <part name="item" id="cm-3_tamus_smt.a.7">
-              <prop name="label" value="7."/>
-              <p>documenting and tracking changes.</p>
+              <p>implementing changes and planning for back-outs.</p>
             </part>
           </part>
         </part>

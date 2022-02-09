@@ -2,6 +2,8 @@
 = Terminology
 :doctype: book
 
+This glossary supplements the https://csrc.nist.gov/glossary[NIST Computer Security Resource Center Glossary].
+
 [glossary]
 DIR:: Texas Department of Information Resources
 FERPA:: Family Educational Rights and Privacy Act of 1974

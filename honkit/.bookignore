@@ -5,3 +5,4 @@ ref-footnotes.adoc
 catalog/*.xml
 catalog/*.py
 catalog/*.sh
+*.sh

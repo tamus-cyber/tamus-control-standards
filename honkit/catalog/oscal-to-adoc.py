@@ -320,7 +320,7 @@ string += "[cols=\"15%,45%,20%,20%\"]\n"
 string += "|===\n"
 string += "|Control ID |Title |TxDIR Required By |TAMUS Required By\n\n"
 
-# Iterate the control families, find ones with a required date, and output as ASCIIdoc
+# Iterate the control families, find ones with a new required control, and output as ASCIIdoc
 for family in root.findall('{http://csrc.nist.gov/ns/oscal/1.0}group'):
     title = family.find('{http://csrc.nist.gov/ns/oscal/1.0}title').text   # Control family title
     string += ("4+h|%s\n" % (title))

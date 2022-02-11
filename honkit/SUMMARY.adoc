@@ -26,7 +26,7 @@
 ** link:catalog/required-controls.adoc[Required Security Controls]
 ** link:catalog/new-controls.adoc[New Required Controls]
 * link:incident-notification.adoc[Incident Notification]
-* link:incident-response.adoc[Incident Response]
+# * link:incident-response.adoc[Incident Response]
 * link:identity-roles.adoc[Identity Roles]
 * link:data-categorization.adoc[Data Categorization]
 * link:impact-table.adoc[FIPS 199 Impact Table]

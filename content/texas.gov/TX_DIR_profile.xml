@@ -35,7 +35,6 @@ content; users are advised to consult the current version of the Texas Security 
     <as-is>true</as-is>
   </merge>
   <modify>
-    <!-- LOW Baseline Controls -->
     <alter control-id="ac-1">
       <add position="starting">
         <prop name="tx_baseline" value="LOW"/>
@@ -50,8 +49,7 @@ content; users are advised to consult the current version of the Texas Security 
       </add>
       <add position="ending">
         <part name="tx_implementation" id="ac-2_tx">
-          <p>Confidential information shall be accessible only to authorized users. An information file or record containing any confidential information shall be identified, documented, and protected in its entirety. Information resources assigned from or
-            shared between one state agency to another or from or between a state agency to a contractor or other third party shall be protected in accordance with the conditions imposed by the providing state agency at a minimum.</p>
+          <p>Confidential information shall be accessible only to authorized users. An information file or record containing any confidential information shall be identified, documented, and protected in its entirety. Information resources assigned from or shared between one state agency to another or from or between a state agency to a contractor or other third party shall be protected in accordance with the conditions imposed by the providing state agency at a minimum.</p>
         </part>
       </add>
     </alter>
@@ -68,10 +66,22 @@ content; users are advised to consult the current version of the Texas Security 
           </part>
           <part name="item" id="ac-3_tx_smt.b">
             <prop name="label" value="b."/>
-            <p>Each user of information resources shall be assigned a unique identifier except for situations where risk analysis demonstrates no need for individual accountability of users. User identification shall be authenticated before the information
-              resources system may grant that user access.</p>
+            <p>Each user of information resources shall be assigned a unique identifier except for situations where risk analysis demonstrates no need for individual accountability of users. User identification shall be authenticated before the information resources system may grant that user access.</p>
           </part>
         </part>
+      </add>
+    </alter>
+    <alter control-id="ac-5">
+      <add position="starting">
+        <prop name="tx_baseline" value="MODERATE"/>
+        <prop name="tx_required_by" value="2023-07-20"/>
+      </add>
+    </alter>
+    <alter control-id="ac-6">
+      <add position="starting">
+        <prop name="tx_baseline" value="MODERATE"/>
+        <prop name="tx_new_requirement" value="true"/>
+        <prop name="tx_required_by" value="2023-07-20"/>
       </add>
     </alter>
     <alter control-id="ac-7">
@@ -99,8 +109,7 @@ content; users are advised to consult the current version of the Texas Security 
       </add>
       <add position="ending">
         <part name="tx_implementation" id="ac-8_tx">
-          <p>System identification/logon banners shall have warning statements that include the following topics: (a) Unauthorized use is prohibited; (b) Usage may be subject to security testing and monitoring; (c) Misuse is subject to criminal prosecution;
-            and (d) Users have no expectation of privacy except as otherwise provided by applicable privacy laws.</p>
+          <p>System identification/logon banners shall have warning statements that include the following topics: (a) Unauthorized use is prohibited; (b) Usage may be subject to security testing and monitoring; (c) Misuse is subject to criminal prosecution; and (d) Users have no expectation of privacy except as otherwise provided by applicable privacy laws.</p>
         </part>
       </add>
     </alter>
@@ -132,13 +141,11 @@ content; users are advised to consult the current version of the Texas Security 
             <part name="item" id="ac-18_tx_smt.a.2">
               <prop name="label" value="2."/>
               <p>Transmitting and Encrypting Information. Types of information that may be transmitted via wireless networks and devices with or without encryption including mission critical information or sensitive personal information.</p>
-              <p>State agencies shall not transmit confidential information via a wireless connection to or from a portable computing device unless encryption methods, such as a Virtual Private Network (VPN), Wi-Fi Protected Access, or other secure encryption
-                protocols that meet appropriate protection or certification standards as detailed within this Security Control Standards Catalog, are used to protect the information.</p>
+              <p>State agencies shall not transmit confidential information via a wireless connection to or from a portable computing device unless encryption methods, such as a Virtual Private Network (VPN), Wi-Fi Protected Access, or other secure encryption protocols that meet appropriate protection or certification standards as detailed within this Security Control Standards Catalog, are used to protect the information.</p>
             </part>
             <part name="item" id="ac-18_tx_smt.a.3">
               <prop name="label" value="3."/>
-              <p>Installation or Use of Wireless Personal Area Networks. Prohibit and periodically monitor any unauthorized installation or use of Wireless Personal Area Networks on state agency IT systems by individuals without the approval of the state agency
-                information resources manager.</p>
+              <p>Installation or Use of Wireless Personal Area Networks. Prohibit and periodically monitor any unauthorized installation or use of Wireless Personal Area Networks on state agency IT systems by individuals without the approval of the state agency information resources manager.</p>
             </part>
           </part>
         </part>
@@ -170,6 +177,7 @@ content; users are advised to consult the current version of the Texas Security 
       </add>
       <add position="ending">
         <part name="tx_implementation" id="at-1_tx">
+          <prop name="tx_changed" value="true"/>
           <p>Security awareness training shall be delivered in accordance with Texas Government Code § 2054.519.</p>
         </part>
       </add>
@@ -182,6 +190,7 @@ content; users are advised to consult the current version of the Texas Security 
       </add>
       <add position="ending">
         <part name="tx_implementation" id="at-2_tx">
+          <prop name="tx_changed" value="true"/>
           <p>Security awareness training shall be delivered in accordance with Texas Government Code § 2054.519.</p>
         </part>
       </add>
@@ -194,6 +203,7 @@ content; users are advised to consult the current version of the Texas Security 
       </add>
       <add position="ending">
         <part name="tx_implementation" id="at-3_tx">
+          <prop name="tx_changed" value="true"/>
           <p>Security awareness training shall be delivered in accordance with Texas Government Code § 2054.519.</p>
         </part>
       </add>
@@ -206,6 +216,7 @@ content; users are advised to consult the current version of the Texas Security 
       </add>
       <add position="ending">
         <part name="tx_implementation" id="at-4_tx">
+          <prop name="tx_changed" value="true"/>
           <p>Security awareness training shall be delivered in accordance with Texas Government Code § 2054.519.</p>
         </part>
       </add>
@@ -227,8 +238,7 @@ content; users are advised to consult the current version of the Texas Security 
         <part name="tx_implementation" id="au-2_tx">
           <part name="item" id="au-2_tx_smt.a">
             <prop name="label" value="a."/>
-            <p>Information resources systems shall provide the means whereby authorized personnel have the ability to audit and establish individual accountability for any action that can potentially cause access to, generation or modification of, or affect the
-              release of confidential information.</p>
+            <p>Information resources systems shall provide the means whereby authorized personnel have the ability to audit and establish individual accountability for any action that can potentially cause access to, generation or modification of, or affect the release of confidential information.</p>
           </part>
           <part name="item" id="au-2_tx_smt.b">
             <prop name="label" value="b."/>
@@ -236,8 +246,7 @@ content; users are advised to consult the current version of the Texas Security 
           </part>
           <part name="item" id="au-2_tx_smt.c">
             <prop name="label" value="c."/>
-            <p>Based upon a state agency’s assessment of the risk, the state agency shall maintain a sufficiently complete history of transactions to permit an audit of the information resources system by logging and tracing the activities of individuals through
-              the system.</p>
+            <p>Based upon a state agency’s assessment of the risk, the state agency shall maintain a sufficiently complete history of transactions to permit an audit of the information resources system by logging and tracing the activities of individuals through the system.</p>
           </part>
         </part>
       </add>
@@ -306,8 +315,8 @@ content; users are advised to consult the current version of the Texas Security 
       </add>
       <add position="ending">
         <part name="tx_implementation" id="ca-2_tx">
-          <p>A review of the agency's information security program for compliance with these standards will be performed at least biennially, based on business risk management decisions, by individual(s) independent of the information security program and
-            designated by the agency head or his or her designated representative(s).</p>
+          <prop name="tx_changed" value="true"/>
+          <p>A review of the agency's information security program for compliance with these standards will be performed at least biennially, based on business risk management decisions, by individual(s) independent of the information security program and designated by the agency head or his or her designated representative(s).</p>
         </part>
       </add>
     </alter>
@@ -344,6 +353,18 @@ content; users are advised to consult the current version of the Texas Security 
         <prop name="tx_privacy_baseline" value="true"/>
         <prop name="tx_new_requirement" value="true"/>
         <prop name="tx_required_by" value="2023-07-20"/>
+      </add>
+    </alter>
+    <alter control-id="ca-8">
+      <add position="starting">
+        <prop name="tx_baseline" value="HIGH"/>
+        <prop name="tx_new_requirement" value="true"/>
+        <prop name="tx_required_by" value="2023-07-20"/>
+      </add>
+      <add position="ending">
+        <part name="tx_implementation" id="ca-8_tx">
+          <p>Texas Government Code § 2054.516(a)(2) requires each state agency implementing an Internet website or mobile application that processes any sensitive personal or personally identifiable information or confidential information to subject the website or application to a vulnerability and penetration test and address any vulnerability identified in the test.</p>
+        </part>
       </add>
     </alter>
     <alter control-id="ca-9">
@@ -428,8 +449,7 @@ content; users are advised to consult the current version of the Texas Security 
       </add>
       <add position="ending">
         <part name="tx_implementation" id="cp-1_tx">
-          <p>State agencies shall maintain written Continuity of Operations Plans in compliance with Texas Labor Code § 412.054 that address information resources so that the effects of a disaster will be minimized and the state agency will be able either to
-            maintain or quickly resume mission-critical functions.</p>
+          <p>State agencies shall maintain written Continuity of Operations Plans in compliance with Texas Labor Code § 412.054 that address information resources so that the effects of a disaster will be minimized and the state agency will be able either to maintain or quickly resume mission-critical functions.</p>
         </part>
       </add>
     </alter>
@@ -445,8 +465,7 @@ content; users are advised to consult the current version of the Texas Security 
             <p>The plan shall be distributed to key personnel and a copy stored offsite. Elements of the plan for information resources shall include:</p>
             <part name="item" id="cp-2_tx_smt.a.1">
               <prop name="label" value="1."/>
-              <p>Business Impact Analysis to systematically assess the potential impacts of a loss of business functionality due to an interruption of computing and/or infrastructure support services resulting from various events or incidents. The analysis shall
-                identify the following elements:</p>
+              <p>Business Impact Analysis to systematically assess the potential impacts of a loss of business functionality due to an interruption of computing and/or infrastructure support services resulting from various events or incidents. The analysis shall identify the following elements:</p>
               <part name="item" id="cp-2_tx_smt.a.1.a">
                 <prop name="label" value="(a)"/>
                 <p>Mission-Critical Information Resources (specific system resources required to perform critical functions) to include:</p>
@@ -494,8 +513,7 @@ content; users are advised to consult the current version of the Texas Security 
             </part>
             <part name="item" id="cp-2_tx_smt.a.4">
               <prop name="label" value="4."/>
-              <p>Disaster Recovery Plan--Each state agency shall maintain a written disaster recovery plan for major or catastrophic events that deny access to information resources for an extended period. Information learned from tests conducted since the plan
-                was last updated will be used in updating the disaster recovery plan. The disaster recovery plan will:</p>
+              <p>Disaster Recovery Plan--Each state agency shall maintain a written disaster recovery plan for major or catastrophic events that deny access to information resources for an extended period. Information learned from tests conducted since the plan was last updated will be used in updating the disaster recovery plan. The disaster recovery plan will:</p>
               <part name="item" id="cp-2_tx_smt.a.4.a">
                 <prop name="label" value="(a)"/>
                 <p>Contain measures which address the impact and magnitude of loss or harm that will result from an interruption;</p>
@@ -534,6 +552,17 @@ content; users are advised to consult the current version of the Texas Security 
         </part>
       </add>
     </alter>
+    <alter control-id="cp-6">
+      <add position="starting">
+        <prop name="tx_baseline" value="MODERATE"/>
+        <prop name="tx_required_by" value="2023-01-20"/>
+      </add>
+      <add position="ending">
+        <part name="tx_implementation" id="cp-6_tx">
+          <p>Mission-critical information shall be backed up on a scheduled basis and stored off site in a secure, environmentally safe, locked facility accessible only to authorized state agency representatives.</p>
+        </part>
+      </add>
+    </alter>
     <alter control-id="cp-9">
       <add position="starting">
         <prop name="tx_baseline" value="LOW"/>
@@ -565,8 +594,7 @@ content; users are advised to consult the current version of the Texas Security 
       </add>
       <add position="ending">
         <part name="tx_implementation" id="ia-2_tx">
-          <p>Each user of information resources shall be assigned a unique identifier except for situations where risk analysis demonstrates no need for individual accountability of users. User identification shall be authenticated before the information
-            resources system may grant that user access.</p>
+          <p>Each user of information resources shall be assigned a unique identifier except for situations where risk analysis demonstrates no need for individual accountability of users. User identification shall be authenticated before the information resources system may grant that user access.</p>
         </part>
       </add>
     </alter>
@@ -634,8 +662,7 @@ content; users are advised to consult the current version of the Texas Security 
       </add>
       <add position="ending">
         <part name="tx_implementation" id="ir-1_tx">
-          <p>State agencies shall assess the significance of a security incident based upon the business impact on the affected resources and the current and potential technical effect of the incident, e.g., loss of revenue, productivity, access to services,
-            reputation, unauthorized disclosure of confidential information, or propagation to other networks.</p>
+          <p>State agencies shall assess the significance of a security incident based upon the business impact on the affected resources and the current and potential technical effect of the incident, e.g., loss of revenue, productivity, access to services, reputation, unauthorized disclosure of confidential information, or propagation to other networks.</p>
         </part>
       </add>
     </alter>
@@ -649,6 +676,14 @@ content; users are advised to consult the current version of the Texas Security 
         <part name="tx_implementation" id="ir-2_tx">
           <p>The state agency trains personnel in their incident response roles and responsibilities with respect to the information system and provides refresher training at least annually.</p>
         </part>
+      </add>
+    </alter>
+    <alter control-id="ir-3">
+      <add position="starting">
+        <prop name="tx_baseline" value="MODERATE"/>
+        <prop name="tx_privacy_baseline" value="true"/>
+        <prop name="tx_new_requirement" value="true"/>
+        <prop name="tx_required_by" value="2023-07-20"/>
       </add>
     </alter>
     <alter control-id="ir-4">
@@ -673,7 +708,8 @@ content; users are advised to consult the current version of the Texas Security 
       </add>
       <add position="ending">
         <part name="tx_implementation" id="ir-6_tx">
-          <p>Reporting of security incidents and the investigation and restoration of operations following a security incident assessed to involve suspected criminal activity shall comply with 1 Texas Administrative Code § 202.23(b).</p>
+          <prop name="tx_changed" value="true"/>
+          <p>Reporting of security incidents and the investigation and restoration of operations following a security incident assessed to involve suspected criminal activity shall comply with 1 Texas Administrative Code § 202.23(b), 202.73(b).</p>
         </part>
       </add>
     </alter>
@@ -685,8 +721,7 @@ content; users are advised to consult the current version of the Texas Security 
       </add>
       <add position="ending">
         <part name="tx_implementation" id="ir-7_tx">
-          <p>The state agency provides an incident response support resource that offers advice and assistance to users of the information system for the handling and reporting of security incidents. The support resource is an integral part of the agency’s
-            incident response capability.</p>
+          <p>The state agency provides an incident response support resource that offers advice and assistance to users of the information system for the handling and reporting of security incidents. The support resource is an integral part of the agency’s incident response capability.</p>
         </part>
       </add>
     </alter>
@@ -754,14 +789,12 @@ content; users are advised to consult the current version of the Texas Security 
           </part>
           <part name="item" id="mp-6_tx_smt.b">
             <prop name="label" value="b."/>
-            <p>Electronic state records shall be destroyed in accordance with Texas Government Code § 441.185 and in compliance with the state agency’s records retention schedule. If the record retention period applicable for an electronic state record has not
-              expired at the time the record is removed from data process equipment, the state agency shall retain a hard copy or other electronic copy of the record for the required retention period.</p>
+            <p>Electronic state records shall be destroyed in accordance with Texas Government Code § 441.185 and in compliance with the state agency’s records retention schedule. If the record retention period applicable for an electronic state record has not expired at the time the record is removed from data process equipment, the state agency shall retain a hard copy or other electronic copy of the record for the required retention period.</p>
           </part>
           <part name="item" id="mp-6_tx_smt.c">
             <prop name="label" value="c."/>
-            <p>If it is possible that restricted personal information, confidential information, mission critical information, intellectual property, or licensed software is contained on the storage device, the storage device should be sanitized or the storage
-              device should be removed and destroyed. Additional information on sanitization tools and methods of destruction (that comply with the Department of Defense 5220.22-M standard) are provided in the “Sale or Transfer of Computers and Software”
-              guidelines available at https://dir.texas.gov/resource-library-item/sale-or-transfer- computers-and-software.</p>
+            <prop name="tx_changed" value="true"/>
+            <p>If it is possible that restricted personal information, confidential information, mission critical information, intellectual property, or licensed software is contained on the storage device, the storage device should be sanitized or the storage device should be removed and destroyed. Additional information on sanitization tools and methods of destruction (that comply with the Department of Defense 5220.22-M standard) are provided in the “Sale or Transfer of Computers and Software” guidelines available at https://dir.texas.gov/resource-library-item/sale-or-transfer-computers-and-software.</p>
           </part>
           <part name="item" id="mp-6_tx_smt.d">
             <prop name="label" value="d."/>
@@ -839,8 +872,7 @@ content; users are advised to consult the current version of the Texas Security 
       </add>
       <add position="ending">
         <part name="tx_implementation" id="pe-13_tx">
-          <p>Information resources shall be protected from environmental hazards. Designated employees shall be trained to monitor environmental control procedures and equipment and shall be trained in desired response in case of emergencies or equipment
-            problems.</p>
+          <p>Information resources shall be protected from environmental hazards. Designated employees shall be trained to monitor environmental control procedures and equipment and shall be trained in desired response in case of emergencies or equipment problems.</p>
         </part>
       </add>
     </alter>
@@ -862,6 +894,13 @@ content; users are advised to consult the current version of the Texas Security 
         <prop name="tx_required_by" value="2023-07-20"/>
       </add>
     </alter>
+    <alter control-id="pe-17">
+      <add position="starting">
+        <prop name="tx_baseline" value="MODERATE"/>
+        <prop name="tx_new_requirement" value="true"/>
+        <prop name="tx_required_by" value="2023-07-20"/>
+      </add>
+    </alter>
     <alter control-id="pl-1">
       <add position="starting">
         <prop name="tx_baseline" value="LOW"/>
@@ -870,6 +909,7 @@ content; users are advised to consult the current version of the Texas Security 
       </add>
       <add position="ending">
         <part name="tx_implementation" id="pl-1_tx">
+          <prop name="tx_changed" value="true"/>
           <p>The state agency information security officer reports annually on state agency information security program in compliance with 1 Texas Administrative Code §§ 202.23(a), 202.73(a).</p>
         </part>
       </add>
@@ -899,7 +939,8 @@ content; users are advised to consult the current version of the Texas Security 
       </add>
       <add position="ending">
         <part name="tx_implementation" id="pm-2_tx">
-          <p>The Information Security Officer is charged with the responsibilities enumerated at Texas Government Code § 2054.136 and 1 Texas Administrative Code § 202.21/71.</p>
+          <prop name="tx_changed" value="true"/>
+          <p>The Information Security Officer is charged with the responsibilities enumerated at Texas Government Code § 2054.136 and 1 Texas Administrative Code § 202.21, 202.71.</p>
         </part>
       </add>
     </alter>
@@ -935,23 +976,27 @@ content; users are advised to consult the current version of the Texas Security 
     <alter control-id="pm-9">
       <add position="starting">
         <prop name="tx_privacy_baseline" value="true"/>
+        <prop name="tx_new_requirement" value="true"/>
         <prop name="tx_required_by" value="2023-07-20"/>
       </add>
     </alter>
     <alter control-id="pm-10">
       <add position="starting">
         <prop name="tx_privacy_baseline" value="true"/>
+        <prop name="tx_new_requirement" value="true"/>
         <prop name="tx_required_by" value="2023-07-20"/>
       </add>
     </alter>
     <alter control-id="pm-14">
       <add position="starting">
         <prop name="tx_privacy_baseline" value="true"/>
+        <prop name="tx_new_requirement" value="true"/>
         <prop name="tx_required_by" value="2023-07-20"/>
       </add>
     </alter>
     <alter control-id="pm-15">
       <add position="starting">
+        <prop name="tx_new_requirement" value="true"/>
         <prop name="tx_required_by" value="2023-07-20"/>
       </add>
     </alter>
@@ -973,9 +1018,7 @@ content; users are advised to consult the current version of the Texas Security 
       </add>
       <add position="ending">
         <part name="tx_implementation" id="ps-2_tx">
-          <p>All authorized users (including, but not limited to, state agency personnel, temporary employees, and employees of independent contractors) of the state agency’s information resources shall formally acknowledge that they will comply with the
-            security policies and procedures of the state agency or they shall not be granted access to information resources. The state agency head or their designated representative will determine the method of acknowledgement and how often this
-            acknowledgement must be reexecuted by the user to maintain access to state agency information resources.</p>
+          <p>All authorized users (including, but not limited to, state agency personnel, temporary employees, and employees of independent contractors) of the state agency’s information resources shall formally acknowledge that they will comply with the security policies and procedures of the state agency or they shall not be granted access to information resources. The state agency head or their designated representative will determine the method of acknowledgement and how often this acknowledgement must be reexecuted by the user to maintain access to state agency information resources.</p>
         </part>
       </add>
     </alter>
@@ -1030,8 +1073,7 @@ content; users are advised to consult the current version of the Texas Security 
       </add>
       <add position="ending">
         <part name="tx_implementation" id="ra-2_tx">
-          <p>State agencies are responsible for identifying and defining all information classification categories except the Confidential Information category, as defined by 1 Texas Administrative Code Chapter 202, Subchapter A, and establishing the
-            appropriate controls for each.</p>
+          <p>State agencies are responsible for identifying and defining all information classification categories except the Confidential Information category, as defined by 1 Texas Administrative Code Chapter 202, Subchapter A, and establishing the appropriate controls for each.</p>
         </part>
       </add>
     </alter>
@@ -1043,8 +1085,8 @@ content; users are advised to consult the current version of the Texas Security 
       </add>
       <add position="ending">
         <part name="tx_implementation" id="ra-3_tx">
-          <p>The state agency shall perform and document risk assessments and make and document risk management decisions in compliance with 1 Texas Administrative Code §§ 202.25, 202.27. A state agency’s security risk management plan may be excepted from
-            disclosure under Texas Government Code § 2054.077(c) or Texas Government Code § 552.139</p>
+          <prop name="tx_changed" value="true"/>
+          <p>The state agency shall perform and document risk assessments and make and document risk management decisions in compliance with 1 Texas Administrative Code §§ 202.25, 202.75, 202.27, 202.77. A state agency’s security risk management plan may be excepted from disclosure under Texas Government Code § 2054.077(c) or Texas Government Code § 552.139</p>
         </part>
       </add>
     </alter>
@@ -1127,6 +1169,25 @@ content; users are advised to consult the current version of the Texas Security 
         <prop name="tx_required_by" value="2023-07-20"/>
       </add>
     </alter>
+    <alter control-id="sa-10">
+      <add position="starting">
+        <prop name="tx_baseline" value="MODERATE"/>
+        <prop name="tx_required_by" value="2023-07-20"/>
+      </add>
+      <add position="ending">
+        <part name="tx_implementation" id="sa-10_tx">
+          <p>The information owner shall approve all security-related information resources changes through a change control process. Approval shall occur prior to implementation by the state agency or independent contractors.</p>
+        </part>
+      </add>
+    </alter>
+    <alter control-id="sa-11">
+      <add position="starting">
+        <prop name="tx_baseline" value="MODERATE"/>
+        <prop name="tx_privacy_baseline" value="true"/>
+        <prop name="tx_new_requirement" value="true"/>
+        <prop name="tx_required_by" value="2023-07-20"/>
+      </add>
+    </alter>
     <alter control-id="sa-22">
       <add position="starting">
         <prop name="tx_baseline" value="LOW"/>
@@ -1152,6 +1213,17 @@ content; users are advised to consult the current version of the Texas Security 
         <prop name="tx_required_by" value="2023-07-20"/>
       </add>
     </alter>
+    <alter control-id="sc-8">
+      <add position="starting">
+        <prop name="tx_baseline" value="MODERATE"/>
+        <prop name="tx_required_by" value="2023-01-20"/>
+      </add>
+      <add position="ending">
+        <part name="tx_implementation" id="sc-8_tx">
+          <p>Confidential information that is transmitted over a public network (e.g., the Internet) must be encrypted with, at minimum, a 128-bit encryption algorithm. A state agency may also choose to implement encryption for other data classifications.</p>
+        </part>
+      </add>
+    </alter>
     <alter control-id="sc-12">
       <add position="starting">
         <prop name="tx_baseline" value="LOW"/>
@@ -1167,10 +1239,10 @@ content; users are advised to consult the current version of the Texas Security 
         <part name="tx_implementation" id="sc-13_tx">
           <part name="item" id="sc-13_tx_smt.a">
             <prop name="label" value="a."/>
-            <p>Encryption requirements for information storage devices and data transmissions, as well as specific requirements for portable devices, removable media, and encryption key standards and management shall be based on documented state agency risk
-              management decisions.</p>
+            <p>Encryption requirements for information storage devices and data transmissions, as well as specific requirements for portable devices, removable media, and encryption key standards and management shall be based on documented state agency risk management decisions.</p>
           </part>
           <part name="item" id="sc-13_tx_smt.b">
+            <prop name="tx_changed" value="true"/>
             <prop name="label" value="b."/>
             <p>Confidential information that is transmitted over a public network (e.g., the Internet) must be encrypted as described by SC-8.</p>
           </part>
@@ -1184,8 +1256,8 @@ content; users are advised to consult the current version of the Texas Security 
           </part>
           <part name="item" id="sc-13_tx_smt.e">
             <prop name="label" value="e."/>
-            <p>The minimum algorithm strength for protecting confidential information is a 128-bit encryption algorithm, subject to state agency risk management decisions justified and documented in accordance with 1 Texas Administrative Code §§
-              202.21,202.71(c), 202.25, 202.75.</p>
+            <p>The minimum algorithm strength for protecting confidential information is a 128-bit encryption algorithm, subject to state agency risk management decisions justified and documented in accordance with 1 Texas Administrative Code §§ 202.21(c),
+              202.71(c), 202.25, 202.75.</p>
           </part>
           <part name="item" id="sc-13_tx_smt.f">
             <prop name="label" value="f."/>
@@ -1261,8 +1333,7 @@ content; users are advised to consult the current version of the Texas Security 
           </part>
           <part name="item" id="si-4_tx_smt.b">
             <prop name="label" value="b."/>
-            <p>The department will provide security information management services to include external network monitoring, scanning, and alerting for state agencies that utilize State information resources as specified in Texas Government Code Chapters 2054 and
-              2059. Perimeter security controls may include some or all of the following components: Demilitarized Zone (DMZ), firewall, intrusion detection or prevention system, or router.</p>
+            <p>The department will provide security information management services to include external network monitoring, scanning, and alerting for state agencies that utilize State information resources as specified in Texas Government Code Chapters 2054 and 2059. Perimeter security controls may include some or all of the following components: Demilitarized Zone (DMZ), firewall, intrusion detection or prevention system, or router.</p>
           </part>
         </part>
       </add>
@@ -1271,6 +1342,13 @@ content; users are advised to consult the current version of the Texas Security 
       <add position="starting">
         <prop name="tx_baseline" value="LOW"/>
         <prop name="tx_required_by" value="2023-01-20"/>
+      </add>
+    </alter>
+    <alter control-id="si-10">
+      <add position="starting">
+        <prop name="tx_baseline" value="MODERATE"/>
+        <prop name="tx_new_requirement" value="true"/>
+        <prop name="tx_required_by" value="2023-07-20"/>
       </add>
     </alter>
     <alter control-id="si-12">
@@ -1320,97 +1398,6 @@ content; users are advised to consult the current version of the Texas Security 
         <prop name="tx_baseline" value="LOW"/>
         <prop name="tx_new_requirement" value="true"/>
         <prop name="tx_required_by" value="2023-07-20"/>
-      </add>
-    </alter>
-    <!-- MODERATE Baseline Controls -->
-    <alter control-id="ac-5">
-      <add position="starting">
-        <prop name="tx_baseline" value="MODERATE"/>
-        <prop name="tx_required_by" value="2023-07-20"/>
-      </add>
-    </alter>
-    <alter control-id="ac-6">
-      <add position="starting">
-        <prop name="tx_baseline" value="MODERATE"/>
-        <prop name="tx_new_requirement" value="true"/>
-        <prop name="tx_required_by" value="2023-07-20"/>
-      </add>
-    </alter>
-    <alter control-id="cp-6">
-      <add position="starting">
-        <prop name="tx_baseline" value="MODERATE"/>
-        <prop name="tx_required_by" value="2023-01-20"/>
-      </add>
-      <add position="ending">
-        <part name="tx_implementation" id="cp-6_tx">
-          <p>Mission-critical information shall be backed up on a scheduled basis and stored off site in a secure, environmentally safe, locked facility accessible only to authorized state agency representatives.</p>
-        </part>
-      </add>
-    </alter>
-    <alter control-id="ir-3">
-      <add position="starting">
-        <prop name="tx_baseline" value="MODERATE"/>
-        <prop name="tx_privacy_baseline" value="true"/>
-        <prop name="tx_new_requirement" value="true"/>
-        <prop name="tx_required_by" value="2023-07-20"/>
-      </add>
-    </alter>
-    <alter control-id="pe-17">
-      <add position="starting">
-        <prop name="tx_baseline" value="MODERATE"/>
-        <prop name="tx_new_requirement" value="true"/>
-        <prop name="tx_required_by" value="2023-07-20"/>
-      </add>
-    </alter>
-    <alter control-id="sa-10">
-      <add position="starting">
-        <prop name="tx_baseline" value="MODERATE"/>
-        <prop name="tx_required_by" value="2023-07-20"/>
-      </add>
-      <add position="ending">
-        <part name="tx_implementation" id="sa-10_tx">
-          <p>The information owner shall approve all security-related information resources changes through a change control process. Approval shall occur prior to implementation by the state agency or independent contractors.</p>
-        </part>
-      </add>
-    </alter>
-    <alter control-id="sa-11">
-      <add position="starting">
-        <prop name="tx_baseline" value="MODERATE"/>
-        <prop name="tx_privacy_baseline" value="true"/>
-        <prop name="tx_new_requirement" value="true"/>
-        <prop name="tx_required_by" value="2023-07-20"/>
-      </add>
-    </alter>
-    <alter control-id="sc-8">
-      <add position="starting">
-        <prop name="tx_baseline" value="MODERATE"/>
-        <prop name="tx_required_by" value="2023-01-20"/>
-      </add>
-      <add position="ending">
-        <part name="tx_implementation" id="sc-8_tx">
-          <p>Confidential information that is transmitted over a public network (e.g., the Internet) must be encrypted with, at minimum, a 128-bit encryption algorithm. A state agency may also choose to implement encryption for other data classifications.</p>
-        </part>
-      </add>
-    </alter>
-    <alter control-id="si-10">
-      <add position="starting">
-        <prop name="tx_baseline" value="MODERATE"/>
-        <prop name="tx_new_requirement" value="true"/>
-        <prop name="tx_required_by" value="2023-07-20"/>
-      </add>
-    </alter>
-    <!-- HIGH Baseline Controls -->
-    <alter control-id="ca-8">
-      <add position="starting">
-        <prop name="tx_baseline" value="HIGH"/>
-        <prop name="tx_new_requirement" value="true"/>
-        <prop name="tx_required_by" value="2023-07-20"/>
-      </add>
-      <add position="ending">
-        <part name="tx_implementation" id="ca-8_tx">
-          <p>Texas Government Code § 2054.516(a)(2) requires each state agency implementing an Internet website or mobile application that processes any sensitive personal or personally identifiable information or confidential information to subject the
-            website or application to a vulnerability and penetration test and address any vulnerability identified in the test.</p>
-        </part>
       </add>
     </alter>
   </modify>

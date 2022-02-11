@@ -38,9 +38,9 @@
   <modify>
     <alter control-id="ac-2.7">
       <add position="ending">
+        <prop name="tamus_changed" value="true"/>
         <prop name="tamus_required_by" value="2022-08-01"/>
         <part name="tamus_implementation" id="ac-2.7_tamus">
-          <prop name="changed" value="true"/>
           <p>Ensure users with privileged (also known as administrative or special access) accounts are aware of the extraordinary responsibilities associated with the use of privileged accounts.</p>
         </part>
       </add>
@@ -50,9 +50,9 @@
         <link rel="reference" href="#8bbc6ce8-5f6b-4117-80d8-6a4274928090"/>
       </add>
       <add position="ending">
+        <prop name="tamus_changed" value="true"/>
         <prop name="tamus_required_by" value="2022-08-01"/>
         <part name="tamus_implementation" id="ac-3.7_tamus">
-          <prop name="changed" value="true"/>
           <p>Implement role-based (e.g., students, employees, third parties, guests) access control or adopt an InCommon Federation assurance profile roles, where possible.</p>
         </part>
       </add>
@@ -115,6 +115,7 @@
     </alter>
     <alter control-id="cm-3.2">
       <add position="ending">
+        <prop name="tamus_changed" value="true"/>
         <prop name="tamus_required_by" value="2022-08-01"/>
       </add>
     </alter>
@@ -134,7 +135,7 @@
       <add position="ending">
         <prop name="tamus_required_by" value="2022-08-01"/>
         <part name="tamus_implementation" id="cm-10_tamus">
-          <prop name="changed" value="true"/>
+          <prop name="tamus_changed" value="true"/>
           <p>Inform users that unauthorized or unlicensed use of software is regarded as a serious matter subject to disciplinary action.</p>
         </part>
       </add>
@@ -171,9 +172,9 @@
     </alter>
     <alter control-id="cp-9.3">
       <add position="ending">
+        <prop name="tamus_changed" value="true"/>
         <prop name="tamus_required_by" value="2022-08-01"/>
         <part name="tamus_implementation" id="cp-9.3_tamus">
-          <prop name="changed" value="true"/>
           <p>Protect <insert type="param" id-ref="cp-09.03_odp"/> with a backup strategy which uses immutable backup storage and/or an out-of-band backup process that prevents direct access to backup storage from the organization's production networks.</p>
         </part>
       </add>
@@ -197,6 +198,7 @@
         <link rel="reference" href="#8bbc6ce8-5f6b-4117-80d8-6a4274928090"/>
       </add>
       <add position="starting">
+        <prop name="tamus_changed" value="true"/>
         <prop name="tamus_required_by" value="2022-08-01"/>
       </add>
     </alter>
@@ -241,8 +243,7 @@
           </part>
           <part name="item" id="pl-4_tamus_smt.b">
             <prop name="label" value="b."/>
-            <p>Ensure users formally acknowledge, agree to abide by, and adhere to prudent and responsible Internet use practices (including reasonable personal use) outlined in Texas A&amp;M System Policy 33.04, Use of System Resources, and the organization's
-              acceptable use guidelines;</p>
+            <p>Ensure users formally acknowledge, agree to abide by, and adhere to prudent and responsible Internet use practices (including reasonable personal use) outlined in Texas A&amp;M System Policy 33.04, Use of System Resources, and the organization's acceptable use guidelines;</p>
           </part>
           <part name="item" id="pl-4_tamus_smt.c">
             <prop name="label" value="c."/>
@@ -274,8 +275,7 @@
           </part>
           <part name="item" id="pm-5_tamus_smt.c">
             <prop name="label" value="c."/>
-            <p>Designate which data regarding an information system to record in the inventory of information systems. At a minimum, the data includes a unique identifier (e.g., serial number or system name), owner, custodian, description of the information
-              sytem's function or major application, and highest level of data categorization stored/processed on the information system.</p>
+            <p>Designate which data regarding an information system to record in the inventory of information systems. At a minimum, the data includes a unique identifier (e.g., serial number or system name), owner, custodian, description of the information sytem's function or major application, and highest level of data categorization stored/processed on the information system.</p>
           </part>
         </part>
       </add>
@@ -293,9 +293,9 @@
         <link rel="reference" href="#5b23f2c5-4c42-4b0e-a75b-34af3bcafb10"/>
       </add>
       <add position="ending">
+        <prop name="tamus_changed" value="true"/>
         <prop name="tamus_required_by" value="2022-08-01"/>
         <part name="tamus_implementation" id="pt-3_tamus">
-          <prop name="changed" value="true"/>
           <p>Reduce, and eliminate where possible, the collection and/or use of sensitive personal information [TxBCC 521.002] in information resources under the control of the organization.</p>
         </part>
       </add>
@@ -304,6 +304,7 @@
       <add position="ending">
         <prop name="tamus_required_by" value="2022-08-01"/>
         <part name="tamus_implementation" id="ra-2_tamus">
+          <prop name="tamus_changed" value="true"/>
           <p>Categorize information and information systems owned or managed by the organization using a data categorization structure that incorporates the guidance provided in xref:/data-categorization.adoc[Data Categorization], at a minimum.</p>
         </part>
       </add>

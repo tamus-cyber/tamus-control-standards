@@ -60,8 +60,8 @@ def printPart(parts, links, props):
         if (part_prop.get('class') != "sp800-53a"):
             part_props[part_prop.get('name')] = part_prop.get('value')
 
-    # If the element is the last child, output the contents of the p tag
-    if ('changed' in part_props):
+    # If the element is changed, add the Changed role tag
+    if ('tx_changed' in part_props or 'tamus_changed' in part_props):
         string += "[.Changed]\n"
 
     # Iterate the part elements and format/output
@@ -123,6 +123,10 @@ def printCatalogItem(element):
         string += ("%s %s %s[[%s]]\n" % ("="*indent, props['label'], title, \
             transformParam(element.get('id'))))
 
+        # Add change bar (if set)
+        if ('tx_changed' in props or 'tamus_changed' in props or 'tx_new_requirement' in props or 'tamus_new_requirement' in props):
+            string += "[.Changed]\n"
+
         # Output the Texas baseline (if exists)
         if (props.get('tx_baseline')):
             string += ("Texas DIR Baseline:: %s\n" % (props.get('tx_baseline')))
@@ -163,11 +167,17 @@ def printCatalogItem(element):
         # Output the Texas control implementation statement
         if ('tx_implementation' in parts):
             string += ("\n%s= State Implementation Details\n" % ("="*indent))
+            # If the control is changed/new, add the Changed role tag
+            if ('tx_changed' in props or 'tx_new_requirement' in props):
+                string += "[.Changed]\n"
             string += printPart(parts['tx_implementation'], links, props)
 
         # Output the TAMUS control implementation statement
         if ('tamus_implementation' in parts):
             string += ("\n%s= TAMUS Implementation Details\n" % ("="*indent))
+            # If the control is changed/new, add the Changed role tag
+            if ('tamus_changed' in props or 'tamus_new_requirement' in props):
+                string += "[.Changed]\n"
             string += printPart(parts['tamus_implementation'], links, props)
 
         # Output the supplemental guidance

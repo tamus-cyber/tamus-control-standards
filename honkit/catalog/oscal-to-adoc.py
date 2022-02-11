@@ -264,10 +264,10 @@ for family in root.findall('{http://csrc.nist.gov/ns/oscal/1.0}group'):
 
 ### This section creates the required controls ASCIIdoc files
 
-# Created required controls index page
+# Create required controls index page
 required_controls_file = open("required-controls.adoc", "w") # Create new ASCIIdoc page
 
-string = "# Texas DIR and Texas A&M System Required Controls\n\n"
+string = "= Texas DIR and Texas A&M System Required Controls\n\n"
 
 string += "[cols=\"15%,45%,20%,20%\"]\n"
 string += "|===\n"
@@ -311,10 +311,10 @@ string += "|===\n"
 required_controls_file.write(string)
 required_controls_file.close()
 
-# Created new controls index page
+# Create new controls index page
 new_controls_file = open("new-controls.adoc", "w") # Create new ASCIIdoc page
 
-string = "# Texas DIR and Texas A&M System New Required Controls\n\n"
+string = "= Texas DIR and Texas A&M System New Required Controls\n\n"
 
 string += "[cols=\"15%,45%,20%,20%\"]\n"
 string += "|===\n"
@@ -357,3 +357,21 @@ string += "|===\n"
 
 new_controls_file.write(string)
 new_controls_file.close()
+
+# Create index page
+index_file = open("README.adoc", "w") # Create new ASCIIdoc page
+
+string = "= Control Standards Catalog\n:table-caption!:\n\n"
+
+string += "Security and privacy control standards described in this control standards catalog have a well-defined organization and structure. For ease of use in the security and privacy control selection and specification process, controls are organized into families (listed below and in the navigation menu to the left). Each family contains controls that are related to the specific topic of the family. A two-character identifier uniquely identifies each control family (e.g., PS for Personnel Security). Security and privacy controls may involve aspects of policy, oversight, supervision, manual processes, and automated mechanisms that are implemented by systems or actions by individuals.\n\n"
+
+string += ".Control Families\n[cols=\"1,1\"]\n|===\n"
+
+for family in root.findall('{http://csrc.nist.gov/ns/oscal/1.0}group'):
+    title = family.find('{http://csrc.nist.gov/ns/oscal/1.0}title').text   # Control family title
+    string += ("|xref:%s.adoc[%s - %s]\n" % (family.get('id'), family.get('id').upper(), title))
+
+string += "|==="
+
+index_file.write(string)
+index_file.close()

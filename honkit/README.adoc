@@ -1,6 +1,7 @@
-= Texas A&M University System Cybersecurity Standards - DRAFT 2.0
 :doctype: book
 include::ref-footnotes.adoc[]
+
+image::assets/banner.png[Cybersecurity Control Standards - The Texas A&M University System]
 
 == Release History
 

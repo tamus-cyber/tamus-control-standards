@@ -27,7 +27,7 @@ rm TAMUS_resolved-profile_catalog.xml
 echo "Building HonKit site..."
 
 cd ..
-honkit build
+npx honkit build
 
 echo "Moving _book directory to docs..."
 

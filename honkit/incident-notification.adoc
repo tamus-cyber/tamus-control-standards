@@ -2,7 +2,7 @@
 :doctype: book
 include::ref-footnotes.adoc[]
 
-*These guidelines are effective October 15, 2021.*
+*These guidelines are effective April 15, 2022.*
 
 This document provides guidance to Texas A&M University System institutions and agencies for submitting incident notifications to the Texas A&M System Office of Cybersecurity.
 
@@ -16,7 +16,19 @@ These guidelines support the Texas A&M System Office of Cybersecurity in executi
 
 == Notification Requirement
 
-System members must report information security incidents where the confidentiality, integrity, or availability of a major system-owned or -managed information system, or a system processing confidential information, is potentially compromised to the System Office of Cybersecurity with the required data elements, as well as any other available information, within **four hours** of being identified by the member or the Security Operations Center (SOC).
+System members must report information security incidents where the confidentiality, integrity, or availability of a major system-owned or -managed information system, or a system processing confidential information, is potentially compromised.
+
+System members shall notify the System Office of Cybersecurity with the required data elements, as well as any other available information, within **12 hours** of being identified by the member or the Security Operations Center (SOC).
+
+System members determine which officials of the member institution are to be notified of an incident, but must include the following notifications within **24 hours** of being identified by the member or the Security Operations Center (SOC):
+
+1. Agency Director/University President or designee
+2. Chief Information Officer (CIO) / Information Resources Manager (IRM)
+3. Chief Information Security Officer (CISO) / Information Security Officer (ISO)
+4. Chief Research Officer (CRO) _(when the compromised/potentially compromised information includes research data)_
+5. Department Head / Information Resources Custodian of affected information resources
+
+Notifications to affected third parties (e.g., vendors, partners) and affected individuals shall be made in accordance with Tex. Bus. & Comm. Code § 521.002{fn-txbcc-521_002} and guidance provided by the System Office of General Counsel.
 
 In some cases, it may not be feasible to have complete and validated information for <<_submitting_incident_notifications>> prior to reporting. System members should provide their best estimate at the time of notification and report updated information as it becomes available. Events that have been found by the reporting system member not to impact confidentiality, integrity or availability may be reported voluntarily.
 
@@ -29,7 +41,8 @@ The information elements described in steps 1-5 below are required when notifyin
 3. Estimate the scope of time and resources needed to recover from the incident (Recoverability)
 4. Identify when the activity was first detected
 5. Identify point of contact information for additional follow-up
-6. Submit the notification to the System Office of Cybersecurity via the Information Security Incident Reporting Portal at https://cyber-infosharing.tamus.edu
+
+Submit the notification to the System Office of Cybersecurity via the Information Security Incident Reporting Portal at https://cyber-infosharing.tamus.edu
 
 == Impact Category Descriptions
 

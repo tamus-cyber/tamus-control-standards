@@ -1037,7 +1037,7 @@
 <div class="sect2">
 <h3 id="_discussion_18">Discussion</h3>
 <div class="paragraph">
-<p>Managed interfaces include gateways, routers, firewalls, guards, network-based malicious code analysis, virtualization systems, or encrypted tunnels implemented within a security architecture. Subnetworks that are physically or logically separated from internal networks are referred to as demilitarized zones or DMZs. Restricting or prohibiting interfaces within organizational systems includes restricting external web traffic to designated web servers within managed interfaces, prohibiting external traffic that appears to be spoofing internal addresses, and prohibiting internal traffic that appears to be spoofing external addresses.</p>
+<p>Managed interfaces include gateways, routers, firewalls, guards, network-based malicious code analysis, virtualization systems, or encrypted tunnels implemented within a security architecture. Subnetworks that are physically or logically separated from internal networks are referred to as demilitarized zones or DMZs. Restricting or prohibiting interfaces within organizational systems includes restricting external web traffic to designated web servers within managed interfaces, prohibiting external traffic that appears to be spoofing internal addresses, and prohibiting internal traffic that appears to be spoofing external addresses.  <a href="https://doi.org/10.6028/NIST.SP.800-189" target="_blank">SP 800-189</a>  provides additional information on source address validation techniques to prevent ingress and egress of traffic with spoofed addresses. Commercial telecommunications services are provided by network components and consolidated management systems shared by customers. These services may also include third party-provided access lines and other service elements. Such services may represent sources of increased risk despite contract security provisions. Boundary protection may be implemented as a common control for all or part of an organizational network such that the boundary to be protected is greater than a system-specific boundary (i.e., an authorization boundary).</p>
 </div>
 </div>
 <div class="sect2">
@@ -1077,7 +1077,7 @@
 <div class="sect4">
 <h5 id="_discussion_19">Discussion</h5>
 <div class="paragraph">
-<p>Limiting the number of external network connections facilitates monitoring of inbound and outbound communications traffic. The Trusted Internet Connection</p>
+<p>Limiting the number of external network connections facilitates monitoring of inbound and outbound communications traffic. The Trusted Internet Connection  <a href="https://www.dhs.gov/trusted-internet-connections" target="_blank">DHS TIC</a>  initiative is an example of a federal guideline that requires limits on the number of external network connections. Limiting the number of external network connections to the system is  important during transition periods from older to newer technologies (e.g., transitioning from IPv4 to IPv6 network protocols). Such transitions may require implementing the older and newer technologies simultaneously during the transition period and thus increase the number of access points to the system.</p>
 </div>
 </div>
 </div>
@@ -1099,7 +1099,7 @@
 <div class="sect4">
 <h5 id="_discussion_20">Discussion</h5>
 <div class="paragraph">
-<p>External telecommunications services can provide data and/or voice communications services. Examples of control plane traffic include Border Gateway Protocol (BGP) routing, Domain Name System (DNS), and management protocols. See</p>
+<p>External telecommunications services can provide data and/or voice communications services. Examples of control plane traffic include Border Gateway Protocol (BGP) routing, Domain Name System (DNS), and management protocols. See  <a href="https://doi.org/10.6028/NIST.SP.800-189" target="_blank">SP 800-189</a>  for additional information on the use of the resource public key infrastructure (RPKI) to protect BGP routes and detect unauthorized BGP announcements.</p>
 </div>
 </div>
 <div class="sect4">
@@ -1156,7 +1156,7 @@
 <div class="sect4">
 <h5 id="_discussion_23">Discussion</h5>
 <div class="paragraph">
-<p>External networks are networks outside of organizational control. A proxy server is a server (i.e., system or application) that acts as an intermediary for clients requesting system resources from non-organizational or other organizational servers. System resources that may be requested include files, connections, web pages, or services. Client requests established through a connection to a proxy server are assessed to manage complexity and provide additional protection by limiting direct connectivity. Web content filtering devices are one of the most common proxy servers that provide access to the Internet. Proxy servers can support the logging of Transmission Control Protocol sessions and the blocking of specific Uniform Resource Locators, Internet Protocol addresses, and domain names. Web proxies can be configured with organization-defined lists of authorized and unauthorized websites. Note that proxy servers may inhibit the use of virtual private networks (VPNs) and create the potential for</p>
+<p>External networks are networks outside of organizational control. A proxy server is a server (i.e., system or application) that acts as an intermediary for clients requesting system resources from non-organizational or other organizational servers. System resources that may be requested include files, connections, web pages, or services. Client requests established through a connection to a proxy server are assessed to manage complexity and provide additional protection by limiting direct connectivity. Web content filtering devices are one of the most common proxy servers that provide access to the Internet. Proxy servers can support the logging of Transmission Control Protocol sessions and the blocking of specific Uniform Resource Locators, Internet Protocol addresses, and domain names. Web proxies can be configured with organization-defined lists of authorized and unauthorized websites. Note that proxy servers may inhibit the use of virtual private networks (VPNs) and create the potential for  <code>man-in-the-middle</code>  attacks (depending on the implementation).</p>
 </div>
 </div>
 <div class="sect4">
@@ -1804,7 +1804,7 @@ Organizations that rely on commercial providers who offer transmission services 
 <div class="sect2">
 <h3 id="_discussion_54">Discussion</h3>
 <div class="paragraph">
-<p>Cryptographic key management and establishment can be performed using manual procedures or automated mechanisms with supporting manual procedures. Organizations define key management requirements in accordance with applicable laws, executive orders, directives, regulations, policies, standards, and guidelines and specify appropriate options, parameters, and levels. Organizations manage trust stores to ensure that only approved trust anchors are part of such trust stores. This includes certificates with visibility external to organizational systems and certificates related to the internal operations of systems.</p>
+<p>Cryptographic key management and establishment can be performed using manual procedures or automated mechanisms with supporting manual procedures. Organizations define key management requirements in accordance with applicable laws, executive orders, directives, regulations, policies, standards, and guidelines and specify appropriate options, parameters, and levels. Organizations manage trust stores to ensure that only approved trust anchors are part of such trust stores. This includes certificates with visibility external to organizational systems and certificates related to the internal operations of systems.  <a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program" target="_blank">NIST CMVP</a>  and  <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program" target="_blank">NIST CAVP</a>  provide additional information on validated cryptographic modules and algorithms that can be used in cryptographic key management and establishment.</p>
 </div>
 </div>
 <div class="sect2">
@@ -1846,7 +1846,9 @@ Organizations that rely on commercial providers who offer transmission services 
 </div>
 <div class="sect4">
 <h5 id="_discussion_56">Discussion</h5>
-
+<div class="paragraph">
+<p><a href="https://doi.org/10.6028/NIST.SP.800-56Ar3" target="_blank">SP 800-56A</a>,  <a href="https://doi.org/10.6028/NIST.SP.800-56Br2" target="_blank">SP 800-56B</a> , and  <a href="https://doi.org/10.6028/NIST.SP.800-56Cr2" target="_blank">SP 800-56C</a>  provide guidance on cryptographic key establishment schemes and key derivation methods.  <a href="https://doi.org/10.6028/NIST.SP.800-57pt1r5" target="_blank">SP 800-57-1</a>,  <a href="https://doi.org/10.6028/NIST.SP.800-57pt2r1" target="_blank">SP 800-57-2</a> , and  <a href="https://doi.org/10.6028/NIST.SP.800-57pt3r1" target="_blank">SP 800-57-3</a>  provide guidance on cryptographic key management.</p>
+</div>
 </div>
 </div>
 <div class="sect3">
@@ -1859,7 +1861,9 @@ Organizations that rely on commercial providers who offer transmission services 
 </div>
 <div class="sect4">
 <h5 id="_discussion_57">Discussion</h5>
-
+<div class="paragraph">
+<p><a href="https://doi.org/10.6028/NIST.SP.800-56Ar3" target="_blank">SP 800-56A</a>,  <a href="https://doi.org/10.6028/NIST.SP.800-56Br2" target="_blank">SP 800-56B</a> , and  <a href="https://doi.org/10.6028/NIST.SP.800-56Cr2" target="_blank">SP 800-56C</a>  provide guidance on cryptographic key establishment schemes and key derivation methods.  <a href="https://doi.org/10.6028/NIST.SP.800-57pt1r5" target="_blank">SP 800-57-1</a>,  <a href="https://doi.org/10.6028/NIST.SP.800-57pt2r1" target="_blank">SP 800-57-2</a> , and  <a href="https://doi.org/10.6028/NIST.SP.800-57pt3r1" target="_blank">SP 800-57-3</a>  provide guidance on cryptographic key management.</p>
+</div>
 </div>
 </div>
 <div class="sect3">
@@ -2545,7 +2549,7 @@ Technology-specific; addressed as any other technology or protocol.</p>
 <div class="sect2">
 <h3 id="_discussion_79">Discussion</h3>
 <div class="paragraph">
-<p>Protecting session authenticity addresses communications protection at the session level, not at the packet level. Such protection establishes grounds for confidence at both ends of communications sessions in the ongoing identities of other parties and the validity of transmitted information. Authenticity protection includes protecting against</p>
+<p>Protecting session authenticity addresses communications protection at the session level, not at the packet level. Such protection establishes grounds for confidence at both ends of communications sessions in the ongoing identities of other parties and the validity of transmitted information. Authenticity protection includes protecting against  <code>man-in-the-middle</code>  attacks, session hijacking, and the insertion of false information into sessions.</p>
 </div>
 </div>
 <div class="sect2">
@@ -3806,7 +3810,7 @@ b. The following applications from hardware-enforced, read-only media:  <em>[Ass
 <div class="sect2">
 <h3 id="_discussion_133">Discussion</h3>
 <div class="paragraph">
-<p>For logical policy enforcement mechanisms, organizations avoid creating a logical path between interfaces to prevent the ability to bypass the policy enforcement mechanism. For physical policy enforcement mechanisms, the robustness of physical isolation afforded by the physical implementation of policy enforcement to preclude the presence of logical covert channels penetrating the security domain may be needed. Contact</p>
+<p>For logical policy enforcement mechanisms, organizations avoid creating a logical path between interfaces to prevent the ability to bypass the policy enforcement mechanism. For physical policy enforcement mechanisms, the robustness of physical isolation afforded by the physical implementation of policy enforcement to preclude the presence of logical covert channels penetrating the security domain may be needed. Contact  <a href="mailto:ncdsmo@nsa.gov" target="_blank">ncdsmo@nsa.gov</a>  for more information.</p>
 </div>
 </div>
 <div class="sect2">
@@ -4023,7 +4027,7 @@ b. The following applications from hardware-enforced, read-only media:  <em>[Ass
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"SC - System and Communications Protection","level":"1.2.18","depth":2,"next":{"title":"SI - System and Information Integrity","level":"1.2.19","depth":2,"path":"catalog/si.adoc","ref":"catalog/si.adoc","articles":[]},"previous":{"title":"SA - System and Services Acquisition","level":"1.2.17","depth":2,"path":"catalog/sa.adoc","ref":"catalog/sa.adoc","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Nicholas McLarty","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Texas A&M University System Cybersecurity Standards","gitbook":"*","description":"Texas A&M System Cybersecurity Standards provide system members with guidance that enhances State-level requirements for implementing security controls."},"file":{"path":"catalog/sc.adoc","mtime":"2022-06-26T16:33:06.828Z","type":"asciidoc"},"gitbook":{"version":"3.7.4","time":"2022-06-26T16:33:09.455Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"SC - System and Communications Protection","level":"1.2.18","depth":2,"next":{"title":"SI - System and Information Integrity","level":"1.2.19","depth":2,"path":"catalog/si.adoc","ref":"catalog/si.adoc","articles":[]},"previous":{"title":"SA - System and Services Acquisition","level":"1.2.17","depth":2,"path":"catalog/sa.adoc","ref":"catalog/sa.adoc","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Nicholas McLarty","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Texas A&M University System Cybersecurity Standards","gitbook":"*","description":"Texas A&M System Cybersecurity Standards provide system members with guidance that enhances State-level requirements for implementing security controls."},"file":{"path":"catalog/sc.adoc","mtime":"2022-06-28T03:53:46.214Z","type":"asciidoc"},"gitbook":{"version":"3.7.4","time":"2022-06-28T03:53:47.324Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

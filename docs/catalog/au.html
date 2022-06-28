@@ -692,7 +692,7 @@
 <div class="paragraph">
 <p>An event is an observable occurrence in a system. The types of events that require logging are those events that are significant and relevant to the security of systems and the privacy of individuals. Event logging also supports specific monitoring and auditing needs. Event types include password changes, failed logons or failed accesses related to systems, security or privacy attribute changes, administrative privilege usage, PIV credential usage, data action changes, query parameters, or external credential usage. In determining the set of event types that require logging, organizations consider the monitoring and auditing appropriate for each of the controls to be implemented. For completeness, event logging includes all protocols that are operational and supported by the system.
 To balance monitoring and auditing requirements with other system needs, event logging requires identifying the subset of event types that are logged at a given point in time. For example, organizations may determine that systems need the capability to log every file access successful and unsuccessful, but not activate that capability except for specific circumstances due to the potential burden on system performance. The types of events that organizations desire to be logged may change. Reviewing and updating the set of logged events is necessary to help ensure that the events remain relevant and continue to support the needs of the organization. Organizations consider how the types of logging events can reveal information about individuals that may give rise to privacy risk and how best to mitigate such risks. For example, there is the potential to reveal personally identifiable information in the audit trail, especially if the logging event is based on patterns or time of usage.
-Event logging requirements, including the need to log specific event types, may be referenced in other controls and control enhancements. These include  <a href="ac.html#ac-2-4">AC-2(4)</a>,  <a href="ac.html#ac-3-10">AC-3(10)</a>,  <a href="ac.html#ac-6-9">AC-6(9)</a>,  <a href="ac.html#ac-17-1">AC-17(1)</a>,</p>
+Event logging requirements, including the need to log specific event types, may be referenced in other controls and control enhancements. These include  <a href="ac.html#ac-2-4">AC-2(4)</a>,  <a href="ac.html#ac-3-10">AC-3(10)</a>,  <a href="ac.html#ac-6-9">AC-6(9)</a>,  <a href="ac.html#ac-17-1">AC-17(1)</a>,  <a href="cm.html#cm-3">CM-3</a>,  <a href="cm.html#cm-5-1">CM-5(1)</a>,</p>
 </div>
 </div>
 <div class="sect2">
@@ -1741,13 +1741,13 @@ b. Does not alter the original content or time ordering of audit records.</p>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
-<p>Provide audit record generation capability for the event types the system is capable of auditing as defined in</p>
+<p>Provide audit record generation capability for the event types the system is capable of auditing as defined in  <a href="au.html#au-2">AU-2</a>  on  <em>[Assignment: system components]</em>;</p>
 </li>
 <li>
 <p>Allow  <em>[Assignment: personnel or roles]</em>  to select the event types that are to be logged by specific components of the system; and</p>
 </li>
 <li>
-<p>Generate audit records for the event types defined in</p>
+<p>Generate audit records for the event types defined in  <a href="au.html#au-2">AU-2</a>  that include the audit record content defined in  <a href="au.html#au-3">AU-3</a>.</p>
 </li>
 </ol>
 </div>
@@ -1755,7 +1755,7 @@ b. Does not alter the original content or time ordering of audit records.</p>
 <div class="sect2">
 <h3 id="_discussion_41">Discussion</h3>
 <div class="paragraph">
-<p>Audit records can be generated from many different system components. The event types specified in</p>
+<p>Audit records can be generated from many different system components. The event types specified in  <a href="au.html#au-2">AU-2</a>  are the event types for which audit logs are to be generated and are a subset of all event types for which the system can generate audit records.</p>
 </div>
 </div>
 <div class="sect2">
@@ -2138,7 +2138,7 @@ b. Does not alter the original content or time ordering of audit records.</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"AU - Audit and Accountability","level":"1.2.3","depth":2,"next":{"title":"CA - Assessment, Authorization, and Monitoring","level":"1.2.4","depth":2,"path":"catalog/ca.adoc","ref":"catalog/ca.adoc","articles":[]},"previous":{"title":"AT - Awareness and Training","level":"1.2.2","depth":2,"path":"catalog/at.adoc","ref":"catalog/at.adoc","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Nicholas McLarty","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Texas A&M University System Cybersecurity Standards","gitbook":"*","description":"Texas A&M System Cybersecurity Standards provide system members with guidance that enhances State-level requirements for implementing security controls."},"file":{"path":"catalog/au.adoc","mtime":"2022-06-26T16:33:06.805Z","type":"asciidoc"},"gitbook":{"version":"3.7.4","time":"2022-06-26T16:33:09.455Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"AU - Audit and Accountability","level":"1.2.3","depth":2,"next":{"title":"CA - Assessment, Authorization, and Monitoring","level":"1.2.4","depth":2,"path":"catalog/ca.adoc","ref":"catalog/ca.adoc","articles":[]},"previous":{"title":"AT - Awareness and Training","level":"1.2.2","depth":2,"path":"catalog/at.adoc","ref":"catalog/at.adoc","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Nicholas McLarty","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Texas A&M University System Cybersecurity Standards","gitbook":"*","description":"Texas A&M System Cybersecurity Standards provide system members with guidance that enhances State-level requirements for implementing security controls."},"file":{"path":"catalog/au.adoc","mtime":"2022-06-28T03:53:46.172Z","type":"asciidoc"},"gitbook":{"version":"3.7.4","time":"2022-06-28T03:53:47.324Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

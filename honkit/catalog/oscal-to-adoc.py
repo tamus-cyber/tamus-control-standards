@@ -197,6 +197,7 @@ def printCatalogItem(element):
         if ('reference' in links):
             string += ("\n%s= References\n" % ("="*indent))
             string += transformReferences(links['reference'])
+            string += "\n"
 
     return string
 

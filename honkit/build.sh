@@ -16,6 +16,7 @@ sed -i '' 's/<insert type="param" id-ref="\([a-z0-9._-]*\)"\/>/_[{\1}]_/g' catal
 sed -i '' 's/<a href="\(#[a-z0-9.-]*\)_smt\.[a-z]">[a-zA-Z0-9-]*<\/a>/{\1}/g' catalog.tmp
 sed -i '' 's/<a href="\(#[a-z0-9._-]*\)">[A-Z0-9\(\)_-]*<\/a>/{\1}/g' catalog.tmp
 sed -i '' 's/<a href="\(#[0-9a-fA-F]\{8\}-\([0-9a-fA-F]\{4\}-\)\{3\}[0-9a-fA-F]\{12\}\)">[^\/]*<\/a>/{\1}/g' catalog.tmp
+sed -i '' 's/<a href="\(mailto:[^\/]*\)">\([^\/]*\)<\/a>/\1[\2]/g' catalog.tmp
 sed -i '' 's/{\([a-z0-9#_-]*\)\.\([a-z0-9_-]*\)\.\([a-z0-9_-]*\)}/{\1-\2-\3}/g' catalog.tmp
 sed -i '' 's/{\([a-z0-9#_-]*\)\.\([a-z0-9_-]*\)}/{\1-\2}/g' catalog.tmp
 sed -E -i '' 's/<\/?em>/_/g' catalog.tmp

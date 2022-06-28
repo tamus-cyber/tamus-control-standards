@@ -43,6 +43,16 @@ def transformParam(param):
 
     return str
 
+# Custom function for printPart() to format the output of an external reference link
+def printPartFormatExtRef(x):
+    resource = resources[x.group(1)]
+    title = resource.find('{http://csrc.nist.gov/ns/oscal/1.0}title').text
+    if (resource.find('{http://csrc.nist.gov/ns/oscal/1.0}rlink') is not None):
+        href = resource.find('{http://csrc.nist.gov/ns/oscal/1.0}rlink').get('href')
+        return ("%s[%s]" % (href, title))
+    else:
+        return title
+
 # Custom function for printPart() to format the output of an cross-reference link
 def printPartFormatXref(x):
     if (x.group(3)):
@@ -71,6 +81,7 @@ def printPart(parts, links, props):
 
         if (part.tag == "{http://csrc.nist.gov/ns/oscal/1.0}p"):
             str = re.sub("{#([a-z]{2})-?(\d{0,2})-?([a-z0-9]*)}", printPartFormatXref, part.text.lstrip())
+            str = re.sub("{#([0-9a-fA-F]{8}-([0-9a-fA-F]{4}-){3}[0-9a-fA-F]{12})}", printPartFormatExtRef, str)
             string += str + "\n"
 
         # If the element is an item part, output the label and re-iterate child elements

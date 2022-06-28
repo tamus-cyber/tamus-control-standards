@@ -47,8 +47,10 @@ def transformParam(param):
 def printPartFormatXref(x):
     if (x.group(3)):
         return ("xref:%s.adoc#%s-%s-%s[%s-%s(%s)]" % (x.group(1), x.group(1), x.group(2), x.group(3), x.group(1).upper(), x.group(2).upper(), x.group(3)))
-    else:
+    elif (x.group(2)):
         return ("xref:%s.adoc#%s-%s[%s-%s]" % (x.group(1), x.group(1), x.group(2), x.group(1).upper(), x.group(2).upper()))
+    else:
+        return ("xref:%s.adoc[%s]" % (x.group(1), x.group(1).upper()))
 
 # Each part of a control statement iterates through this function
 def printPart(parts, links, props):
@@ -68,7 +70,7 @@ def printPart(parts, links, props):
     for part in parts:
 
         if (part.tag == "{http://csrc.nist.gov/ns/oscal/1.0}p"):
-            str = re.sub("{#([a-z]{2})-(\d{1,2})-?([a-z0-9]*)}", printPartFormatXref, part.text.lstrip())
+            str = re.sub("{#([a-z]{2})-?(\d{0,2})-?([a-z0-9]*)}", printPartFormatXref, part.text.lstrip())
             string += str + "\n"
 
         # If the element is an item part, output the label and re-iterate child elements

@@ -7,7 +7,7 @@ image::assets/banner.png[Cybersecurity Control Standards - The Texas A&M Univers
 
 Last Revised: {{ honkit.time }}
 
-link:https://github.com/tamuscyber/tamus-control-standards/releases[View this document's release history in GitHub.]
+link:https://github.com/tamus-cyber/tamus-control-standards/releases[View this document's release history in GitHub.]
 
 == About
 

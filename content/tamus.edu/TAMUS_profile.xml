@@ -200,7 +200,7 @@
       <add position="ending">
         <prop name="tamus_required_by" value="2022-08-01"/>
         <part name="tamus_implementation" id="ir-6_tamus">
-          <p>Report information security incidents where the confidentiality, integrity, or availability of a major organization-owned or -operated information system, or a system processing confidential information, is potentially compromised to the Texas A&amp;M University System Security Operations Center using the guidance in the xref:/incident-notification.adoc[Incident Notification Process], unless a law enforcement agency determines such a notification will impede a criminal investigation.</p>
+          <p>Report information security incidents where the confidentiality, integrity, or availability of a moderate or high-impact organization-owned or -operated information system, or a system processing confidential information, is potentially compromised to the Texas A&amp;M University System Security Operations Center using the guidance in the xref:/incident-notification.adoc[Incident Notification Process], unless a law enforcement agency determines such a notification will impede a criminal investigation.</p>
         </part>
       </add>
     </alter>

@@ -255,6 +255,41 @@
         </part>
       </add>
     </alter>
+    <alter control-id="pe-18">
+      <add position="ending">
+        <link rel="related" href="#cp-8"/>
+        <link rel="related" href="#pe-11"/>
+        <link rel="related" href="#pe-14"/>
+        <prop name="tamus_changed" value="true"/>
+        <prop name="tamus_required_by" value="2021-09-13"/>
+        <part name="tamus_implementation" id="pe-18_tamus">
+          <part name="item" id="pe-18_tamus_smt.a">
+            <prop name="label" value="a."/>
+              <p>Consolidate all significant IT equipment into centralized member data center(s) or approved commercial data center.</p>
+          </part>
+          <part name="item" id="pe-18_tamus_smt.b">
+            <prop name="label" value="b."/>
+              <p>The data center must have, at a minimum:</p>
+              <part name="item" id="pe-18_tamus_smt.b.1">
+                <prop name="label" value="1."/>
+                  <p>redundant power delivery as specified in <a href="#pe-11">PE-11</a>;</p>
+              </part>
+              <part name="item" id="pe-18_tamus_smt.b.2">
+                <prop name="label" value="2."/>
+                  <p>redundant networks as specified in <a href="#cp-8">CP-8</a>;</p>
+              </part>
+              <part name="item" id="pe-18_tamus_smt.b.3">
+                <prop name="label" value="3."/>
+                  <p>redundant cooling as specified in <a href="#pe-14">PE-14</a>, and</p>
+              </part>
+              <part name="item" id="pe-18_tamus_smt.b.4">
+                <prop name="label" value="4."/>
+                  <p>adequate physical and cybersecurity as specified in the PE and SC families.</p>
+              </part>
+          </part>
+        </part>
+      </add>
+    </alter>
     <alter control-id="pl-4">
       <add position="starting">
         <link rel="reference" href="#ac9542bc-0446-48f5-b565-a888d6b043a7"/>

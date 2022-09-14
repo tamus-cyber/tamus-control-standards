@@ -38,7 +38,6 @@
   <modify>
     <alter control-id="ac-2.7">
       <add position="ending">
-        <prop name="tamus_changed" value="true"/>
         <prop name="tamus_required_by" value="2022-08-01"/>
         <part name="tamus_implementation" id="ac-2.7_tamus">
           <p>Ensure users with privileged (also known as administrative or special access) accounts are aware of the extraordinary responsibilities associated with the use of privileged accounts.</p>
@@ -50,7 +49,6 @@
         <link rel="reference" href="#8bbc6ce8-5f6b-4117-80d8-6a4274928090"/>
       </add>
       <add position="ending">
-        <prop name="tamus_changed" value="true"/>
         <prop name="tamus_required_by" value="2022-08-01"/>
         <part name="tamus_implementation" id="ac-3.7_tamus">
           <p>Implement role-based (e.g., students, employees, third parties, guests) access control or adopt an InCommon Federation assurance profile roles, where possible.</p>
@@ -115,7 +113,6 @@
     </alter>
     <alter control-id="cm-3.2">
       <add position="ending">
-        <prop name="tamus_changed" value="true"/>
         <prop name="tamus_required_by" value="2022-08-01"/>
       </add>
     </alter>
@@ -135,7 +132,6 @@
       <add position="ending">
         <prop name="tamus_required_by" value="2022-08-01"/>
         <part name="tamus_implementation" id="cm-10_tamus">
-          <prop name="tamus_changed" value="true"/>
           <p>Inform users that unauthorized or unlicensed use of software is regarded as a serious matter subject to disciplinary action.</p>
         </part>
       </add>
@@ -172,7 +168,6 @@
     </alter>
     <alter control-id="cp-9.3">
       <add position="ending">
-        <prop name="tamus_changed" value="true"/>
         <prop name="tamus_required_by" value="2022-08-01"/>
         <part name="tamus_implementation" id="cp-9.3_tamus">
           <p>Protect <insert type="param" id-ref="cp-09.03_odp"/> with a backup strategy which uses immutable backup storage and/or an out-of-band backup process that prevents direct access to backup storage from the organization's production networks.</p>
@@ -198,7 +193,6 @@
         <link rel="reference" href="#8bbc6ce8-5f6b-4117-80d8-6a4274928090"/>
       </add>
       <add position="starting">
-        <prop name="tamus_changed" value="true"/>
         <prop name="tamus_required_by" value="2022-08-01"/>
       </add>
     </alter>
@@ -293,7 +287,6 @@
         <link rel="reference" href="#5b23f2c5-4c42-4b0e-a75b-34af3bcafb10"/>
       </add>
       <add position="ending">
-        <prop name="tamus_changed" value="true"/>
         <prop name="tamus_required_by" value="2022-08-01"/>
         <part name="tamus_implementation" id="pt-3_tamus">
           <p>Reduce, and eliminate where possible, the collection and/or use of sensitive personal information [TxBCC 521.002] in information resources under the control of the organization.</p>
@@ -304,7 +297,6 @@
       <add position="ending">
         <prop name="tamus_required_by" value="2022-08-01"/>
         <part name="tamus_implementation" id="ra-2_tamus">
-          <prop name="tamus_changed" value="true"/>
           <p>Categorize information and information systems owned or managed by the organization using a data categorization structure that incorporates the guidance provided in xref:/data-categorization.adoc[Data Categorization], at a minimum.</p>
         </part>
       </add>

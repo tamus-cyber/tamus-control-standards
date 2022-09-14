@@ -177,6 +177,38 @@
     <set-parameter param-id="cp-09.03_odp">
       <label>information systems that process and/or store sensitive or high-impact information</label>
     </set-parameter>
+    <alter control-id="ia-2.1">
+      <add position="ending">
+        <prop name="tamus_changed" value="true"/>
+        <prop name="tamus_required_by" value="2021-09-13"/>
+        <part name="tamus_implementation" id="ia-2.1_tamus">
+          <part name="item" id="ia-2.1_tamus_smt.a">
+            <prop name="label" value="a."/>
+              <p>Employ the use of multi-factor authentication on information resources containing information categorized as Confidential under A&amp;M System Catalog control RA-2 to ensure that only appropriate individuals have access to confidential information, and</p>
+          </part>
+          <part name="item" id="ia-2.1_tamus_smt.b">
+            <prop name="label" value="b."/>
+              <p>Approve requests for exceptions in advance and report exceptions to the SCISO annually.</p>
+          </part>
+        </part>
+      </add>
+    </alter>
+    <alter control-id="ia-2.2">
+      <add position="ending">
+        <prop name="tamus_changed" value="true"/>
+        <prop name="tamus_required_by" value="2021-09-13"/>
+        <part name="tamus_implementation" id="ia-2.2_tamus">
+          <part name="item" id="ia-2.2_tamus_smt.a">
+            <prop name="label" value="a."/>
+              <p>Employ the use of multi-factor authentication on information resources containing information categorized as Confidential under A&amp;M System Catalog control RA-2 to ensure that only appropriate individuals have access to confidential information, and</p>
+          </part>
+          <part name="item" id="ia-2.2_tamus_smt.b">
+            <prop name="label" value="b."/>
+              <p>Approve requests for exceptions in advance and report exceptions to the SCISO annually.</p>
+          </part>
+        </part>
+      </add>
+    </alter>
     <alter control-id="ia-11">
       <add position="starting">
         <prop name="tamus_required_by" value="2022-08-01"/>

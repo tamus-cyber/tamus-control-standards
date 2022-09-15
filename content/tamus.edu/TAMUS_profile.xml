@@ -184,7 +184,7 @@
         <part name="tamus_implementation" id="ia-2.1_tamus">
           <part name="item" id="ia-2.1_tamus_smt.a">
             <prop name="label" value="a."/>
-              <p>Employ the use of multi-factor authentication on information resources containing information categorized as Confidential under A&amp;M System Catalog control RA-2 to ensure that only appropriate individuals have access to confidential information, and</p>
+              <p>Employ the use of multi-factor authentication on information resources containing information categorized as Confidential under A&amp;M System Catalog control <a href="#ra-2">RA-2</a> to ensure that only appropriate individuals have access to confidential information, and</p>
           </part>
           <part name="item" id="ia-2.1_tamus_smt.b">
             <prop name="label" value="b."/>
@@ -200,7 +200,7 @@
         <part name="tamus_implementation" id="ia-2.2_tamus">
           <part name="item" id="ia-2.2_tamus_smt.a">
             <prop name="label" value="a."/>
-              <p>Employ the use of multi-factor authentication on information resources containing information categorized as Confidential under A&amp;M System Catalog control RA-2 to ensure that only appropriate individuals have access to confidential information, and</p>
+              <p>Employ the use of multi-factor authentication on information resources containing information categorized as Confidential under A&amp;M System Catalog control <a href="#ra-2">RA-2</a> to ensure that only appropriate individuals have access to confidential information, and</p>
           </part>
           <part name="item" id="ia-2.2_tamus_smt.b">
             <prop name="label" value="b."/>

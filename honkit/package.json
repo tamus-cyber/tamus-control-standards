@@ -1,5 +1,5 @@
 {
-  "dependencies": {
-    "honkit": "^3.7.4"
+  "devDependencies": {
+    "honkit": "^4.0.4"
   }
 }

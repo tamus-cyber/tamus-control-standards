@@ -1,0 +1,240 @@
+--- publish/mvn-make-800-53-catalog-html.sh 2023-07-05 20:56:12
++++ publish/mvn-make-800-53-catalog-html.sh 2023-07-05 20:55:58
+@@ -42,7 +42,7 @@
+     -f "$POM_FILE" \
+     exec:java \
+     -Dexec.mainClass="$MAIN_CLASS" \
+-    -Dexec.args="-xsl:nist-emulation/sp800-53A-catalog_html.xsl -s:\"$CATALOG_XML\" -o:\"$RESULT_HTML\" $ADDITIONAL_ARGS"
++    -Dexec.args="-xsl:nist-emulation/sp800-53-catalog_html.xsl -s:\"$CATALOG_XML\" -o:\"$RESULT_HTML\" $ADDITIONAL_ARGS"
+ 
+ if [ -e "$RESULT_HTML" ]
+ then 
+--- publish/mvn-make-800-53-catalog-pdf.sh  2023-07-05 20:56:12
++++ publish/mvn-make-800-53-catalog-pdf.sh  2023-07-05 20:56:06
+@@ -31,7 +31,7 @@
+ 
+ MAIN_CLASS="com.xmlcalabash.drivers.Main" # XML Calabash
+ 
+-PIPELINE="render-oscal-catalog.xpl"
++PIPELINE="render-800-53-catalog.xpl"
+ 
+ 
+ if [ -e "$RESULT_PDF" ]
+--- publish/render-800-53-catalog.xpl   2023-06-27 16:42:45
++++ publish/render-800-53-catalog.xpl   2023-07-03 15:29:07
+@@ -42,7 +42,7 @@
+   
+   <p:xslt name="make-html">
+     <p:input port="stylesheet">
+-      <p:document href="nist-emulation/sp800-53A-catalog_html.xsl"/>
++      <p:document href="nist-emulation/sp800-53-catalog_html.xsl"/>
+     </p:input>
+   </p:xslt>
+   
+\ No newline at end of file
+--- publish/nist-emulation/oscal_sp800-53-emulator_fo.xsl	2023-07-05 21:33:37
++++ publish/nist-emulation/oscal_sp800-53-emulator_fo.xsl	2023-07-03 15:22:47
+@@ -677,7 +677,7 @@
+   <xsl:template priority="5" mode="control-contents" match="div[contains-token(@class,'control')]">
+     <xsl:apply-templates/>
+   </xsl:template>
+-  
++
+ <!--
+   <xsl:template priority="50" mode="control-contents" match="div[contains-token(@class,'control')]//div[contains-token(@class,'control')]">
+     <xsl:apply-templates/>
+@@ -915,6 +915,24 @@
+     <xsl:attribute name="border-width">0.5pt</xsl:attribute>
+   </xsl:template>
+   
++  <!-- TAMUS ADDED CONTENT BELOW HERE -->
++
++  <xsl:template priority="5" match="div[contains-token(@class,'control')]//div[contains-token(@class,'control')]//div[contains-token(@class,'tx_implementation')]">
++    <fo:block font-weight="normal" text-decoration="underline" space-before="1em" keep-with-next="always">
++      <xsl:text>Texas DIR Implementation Statement: </xsl:text>
++    </fo:block>
++    <fo:block font-weight="bold" keep-with-next="always">
++      <xsl:apply-templates/>
++    </fo:block>
++  </xsl:template>
+   
++  <xsl:template priority="5" match="div[contains-token(@class,'control')]//div[contains-token(@class,'control')]//div[contains-token(@class,'tamus_implementation')]">
++    <fo:block font-weight="normal" text-decoration="underline" space-before="1em" keep-with-next="always">
++      <xsl:text>Texas A&amp;M System Implementation Statement: </xsl:text>
++    </fo:block>
++    <fo:block font-weight="bold" keep-with-next="always">
++      <xsl:apply-templates/>
++    </fo:block>
++  </xsl:template>  
+ 
+ </xsl:stylesheet>
+\ No newline at end of file
+--- publish/nist-emulation/sp800-53A-catalog_html.xsl	2023-07-05 21:33:37
++++ publish/nist-emulation/sp800-53A-catalog_html.xsl	2023-07-03 11:31:36
+@@ -181,7 +181,7 @@
+          <xsl:apply-templates/>
+       </div>
+    </xsl:template>
+-   
++
+ <!-- Statements of withdrawn controls are picked up with the 'withdrawn' prop below. -->
+    <xsl:template  priority="5" match="control[matches(prop[@name='status'][1]/@value,'Withdrawn','i')]/part[@name='statement']"/>
+    
+@@ -197,7 +197,7 @@
+          </xsl:otherwise>
+       </xsl:choose>
+    </xsl:template>
+-   
++
+    <xsl:template match="part">
+       <div class="part {@name}">
+          <xsl:copy-of select="@id"/>
+@@ -205,7 +205,7 @@
+          <xsl:apply-templates/>
+       </div>
+    </xsl:template>
+-   
++ 
+    <xsl:template match="part[@name=('assessment','assessment-method')]/prop[@name='method']"/>   
+    
+    <xsl:template match="part[@name=('assessment','assessment-objects')]/p">
+@@ -386,7 +386,7 @@
+          <xsl:variable name="withdrawn-to" select="../link[@rel = ('moved-to', 'incorporated-into')]"/>
+          <xsl:variable name="link-label">
+             <xsl:choose>
+-               <xsl:when test="empty($withdrawn-to)">. </xsl:when>
++               <xsl:when test="empty($withdrawn-to)">.</xsl:when>
+                <xsl:when test="$withdrawn-to/@rel = 'incorporated-into'">: Incorporated into </xsl:when>
+                <xsl:otherwise>: Moved to </xsl:otherwise>
+             </xsl:choose>
+@@ -609,6 +609,129 @@
+       <a href="#{@id}">
+          <xsl:value-of select="prop[@name='label']/@value"/>
+       </a>
++   </xsl:template>
++
++<!-- TAMUS ADDED CONTENT BELOW HERE -->
++
++   <xsl:template priority="3" match="control/prop[@name='tx_baseline']">
++      <xsl:copy-of select="@id"/>
++      <p><span class="inline-head">Texas DIR Baseline</span>
++         <xsl:text>: </xsl:text>
++         <xsl:value-of select="@value"/>
++      </p>
++   </xsl:template>
++
++   <xsl:template priority="3" match="control/prop[@name='tx_privacy_baseline']">
++      <xsl:copy-of select="@id"/>
++      <p><span class="inline-head">Texas DIR Privacy Baseline</span>
++         <xsl:text>: </xsl:text>
++         <xsl:choose>
++            <xsl:when test="@value eq 'true'">Yes</xsl:when>
++            <xsl:otherwise>No</xsl:otherwise>
++         </xsl:choose>
++      </p>
++   </xsl:template>
++
++   <xsl:template priority="3" match="control/prop[@name='tamus_baseline']">
++      <xsl:copy-of select="@id"/>
++      <p><span class="inline-head">Texas A&amp;M System Baseline</span>
++         <xsl:text>: </xsl:text>
++         <xsl:value-of select="@value"/>
++      </p>
++   </xsl:template>
++
++   <xsl:template priority="3" match="control/prop[@name='tx_new_requirement']">
++      <xsl:copy-of select="@id"/>
++      <p><span class="inline-head">Texas DIR New Requirement</span>
++         <xsl:text>: </xsl:text>
++         <xsl:choose>
++            <xsl:when test="@value eq 'true'">Yes</xsl:when>
++            <xsl:otherwise>No</xsl:otherwise>
++         </xsl:choose>
++      </p>
++   </xsl:template>
++
++   <xsl:template priority="3" match="control/prop[@name='tamus_new_requirement']">
++      <xsl:copy-of select="@id"/>
++      <p><span class="inline-head">Texas A&amp;M System New Requirement</span>
++         <xsl:text>: </xsl:text>
++         <xsl:choose>
++            <xsl:when test="@value eq 'true'">Yes</xsl:when>
++            <xsl:otherwise>No</xsl:otherwise>
++         </xsl:choose>
++      </p>
++   </xsl:template>
++
++   <xsl:template priority="3" match="control/prop[@name='tx_required_by']">
++      <xsl:copy-of select="@id"/>
++      <p><span class="inline-head">Texas DIR Required By</span>
++         <xsl:text>: </xsl:text>
++         <xsl:value-of select="@value"/>
++      </p>
++   </xsl:template>
++
++   <xsl:template priority="3" match="control/prop[@name='tamus_required_by']">
++      <xsl:copy-of select="@id"/>
++      <p><span class="inline-head">Texas A&amp;M System Required By</span>
++         <xsl:text>: </xsl:text>
++         <xsl:value-of select="@value"/>
++      </p>
++   </xsl:template>
++   
++   <xsl:template match="control/part[@name='tx_implementation']" priority="2">
++      <div class="part statement {@name}">
++         <xsl:copy-of select="@id"/>
++            <xsl:apply-templates/>
++       </div>
++   </xsl:template>
++
++   <xsl:template match="control/part[@name='tamus_implementation']" priority="2">
++      <div class="part statement {@name}">
++         <xsl:copy-of select="@id"/>
++            <xsl:apply-templates/>
++       </div>
++   </xsl:template>
++
++   <xsl:template priority="3" match="control/part[@name='tx_implementation'][empty(child::p)]">
++      <div class="part statement {@name}">
++         <xsl:copy-of select="@id"/>
++         <p><span class="inline-head">Texas DIR Implementation Statement</span>:</p>
++         <xsl:apply-templates/>
++      </div>
++   </xsl:template>
++   
++   <xsl:template priority="3" match="control/part[@name='tamus_implementation'][empty(child::p)]">
++      <div class="part statement {@name}">
++         <xsl:copy-of select="@id"/>
++         <p><span class="inline-head">Texas A&amp;M System Implementation Statement</span>:</p>
++         <xsl:apply-templates/>
++      </div>
++   </xsl:template>
++   
++   <xsl:template match="control/part[@name='tx_implementation']/p">
++      <xsl:choose>
++         <xsl:when test=". is ancestor::part[@name='tx_implementation']/child::p[1]">
++            <p><span class="inline-head">Texas DIR Implementation Statement</span>
++               <xsl:text>: </xsl:text>
++               <xsl:apply-templates/></p>
++         </xsl:when>
++         <xsl:otherwise>
++            <xsl:next-match/>
++         </xsl:otherwise>
++      </xsl:choose>
++   </xsl:template>
++   
++   <xsl:template match="control/part[@name='tamus_implementation']/p">
++      <xsl:choose>
++         <xsl:when test=". is ancestor::part[@name='tamus_implementation']/child::p[1]">
++            <p><span class="inline-head">Texas A&amp;M System Implementation Statement</span>
++               <xsl:text>: </xsl:text>
++               <xsl:apply-templates/></p>
++         </xsl:when>
++         <xsl:otherwise>
++            <xsl:next-match/>
++         </xsl:otherwise>
++      </xsl:choose>
+    </xsl:template>
+    
+ </xsl:stylesheet>
+ \ No newline at end of file

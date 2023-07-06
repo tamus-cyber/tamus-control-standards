@@ -6,7 +6,7 @@ nav-items:
     url: /catalog
     id: catalog-dropdown
     subfolderitems:
-      - page: Required Security Controls
+      - page: Required Security Control Standards
         url: /catalog/required-controls
   - title: Guidelines
     id: guidelines-dropdown

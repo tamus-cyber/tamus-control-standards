@@ -1,0 +1,15 @@
+---
+template-name: catalog
+---
+{% include header.html %}
+
+  <div class="site-inner">
+    <div class="content">
+      <main class="content" id="genesis-content">
+        {% include breadcrumbs.html %}
+        {{ content }}
+      </main>
+    </div>
+  </div>
+
+{% include footer.html %}

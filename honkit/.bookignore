@@ -1,8 +1,0 @@
-.bookignore
-package.json
-package-lock.json
-ref-footnotes.adoc
-catalog/*.xml
-catalog/*.py
-catalog/*.sh
-*.sh

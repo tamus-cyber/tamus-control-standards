@@ -1,0 +1,26 @@
+nav-items:
+  - title: Home
+    url: /
+    id: home-link
+  - title: Control Standards Catalog
+    url: /catalog
+    id: catalog-dropdown
+    subfolderitems:
+      - page: Required Security Controls
+        url: /catalog/required-controls
+  - title: Guidelines
+    id: guidelines-dropdown
+    subfolderitems:
+      - page: Incident Notification
+        url: /incident-notification
+      - page: Data Categorization
+        url: /data-categorization
+  - title: Resources
+    id: resources-dropdown
+    subfolderitems:
+      - page: FIPS 199 Impact Table
+        url: https://doi.org/10.6028/NIST.FIPS.199
+      - page: Identity Role Examples
+        url: /identity-roles
+      - page: Terminology Glossary
+        url: /glossary

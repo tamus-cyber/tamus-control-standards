@@ -1,0 +1,384 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="Created" property="dc:created" content="2020-10-07" />
+  <meta name="Last-Modified" property="dc:modified" content="2022-10-27" />
+  <title>Incident Notification Guidelines</title>
+  
+
+  <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+
+  <link rel="stylesheet" type="text/css" media="all" href="/assets/css/tamus-main.css" />
+  <link rel="stylesheet" type="text/css" media="all"
+    href="https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C400i%2C600%2C700%2C800&#038;display=swap&#038;ver=2.2.0" />
+
+  
+
+  <script src="/assets/js/jquery.min.js"></script>
+  <script src="/assets/js/jquery-migrate.min.js"></script>
+
+  <!-- Google Analytics -->
+  <script>
+    window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) }; ga.l = +new Date;
+    ga('create', 'UA-142977406-2', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  <link rel="icon" href="/favicon.ico" />
+</head>
+
+
+
+
+<body class="page-template full-width-content" itemscope itemtype="https://schema.org/WebPage">
+  <div class="site-container">
+    <header class="site-header" itemscope="" itemtype="https://schema.org/WPHeader">
+      <div class="wrap">
+        <div class="tamus-wrap-title-and-logo">
+          <div class="title-area">
+            <ul class="genesis-skip-link">
+              <li><a href="#genesis-nav-primary" class="screen-reader-shortcut"> Skip to primary navigation</a></li>
+              <li><a href="#genesis-content" class="screen-reader-shortcut"> Skip to main content</a></li>
+            </ul>
+            <div class="site-title" itemprop="headline"><a href="/">Cybersecurity Control Standards</a>
+            </div>
+          </div>
+          <div class="widget-area header-widget-area"> <a href="https://cyber.tamus.edu" id="tamus-oit-logo">
+              <img
+                src="/assets/images/logos/cyber-logo.svg"
+                alt="Logo, Texas A&amp;M University System Cybersecurity">
+            </a>
+          </div>
+        </div>
+
+        <nav class="nav-primary genesis-responsive-menu" aria-label="Main Site Navigation" itemscope=""
+          itemtype="https://schema.org/SiteNavigationElement" id="genesis-nav-primary">
+          <div class="wrap">
+            <ul id="menu-header-global-navigation"
+              class="menu genesis-nav-menu menu-primary js-superfish sf-js-enabled sf-arrows"
+              style="touch-action: pan-y;">
+              
+              
+
+              
+                
+                  
+                  <li id="home-link" class="menu-item">
+                    <a href="/" itemprop="url" class="sf-with-ul">
+                      <span itemprop="name">Home</span>
+                    </a>
+                    
+                  </li>
+                
+                  
+                  <li id="catalog-dropdown" class="menu-item">
+                    <a href="/catalog" itemprop="url" class="sf-with-ul">
+                      <span itemprop="name">Control Standards Catalog</span>
+                    </a>
+                    
+                      <button class="sub-menu-toggle dashicons-before dashicons-arrow-down-alt2" aria-expanded="false" aria-pressed="false">
+                        <span class="screen-reader-text">Submenu</span>
+                      </button>
+                      <ul class="sub-menu" style="display: none;">
+                        
+                        <li class="menu-item">
+                          <a href="/catalog/required-controls" itemprop="url">
+                          <span itemprop="name">Required Security Controls</span>
+                          </a>
+                        </li>
+                        
+                      </ul>
+                    
+                  </li>
+                
+                  
+                  <li id="guidelines-dropdown" class="menu-item">
+                    <a href="" itemprop="url" class="sf-with-ul">
+                      <span itemprop="name">Guidelines</span>
+                    </a>
+                    
+                      <button class="sub-menu-toggle dashicons-before dashicons-arrow-down-alt2" aria-expanded="false" aria-pressed="false">
+                        <span class="screen-reader-text">Submenu</span>
+                      </button>
+                      <ul class="sub-menu" style="display: none;">
+                        
+                        <li class="menu-item">
+                          <a href="/incident-notification" itemprop="url">
+                          <span itemprop="name">Incident Notification</span>
+                          </a>
+                        </li>
+                        
+                        <li class="menu-item">
+                          <a href="/data-categorization" itemprop="url">
+                          <span itemprop="name">Data Categorization</span>
+                          </a>
+                        </li>
+                        
+                      </ul>
+                    
+                  </li>
+                
+                  
+                  <li id="resources-dropdown" class="menu-item">
+                    <a href="" itemprop="url" class="sf-with-ul">
+                      <span itemprop="name">Resources</span>
+                    </a>
+                    
+                      <button class="sub-menu-toggle dashicons-before dashicons-arrow-down-alt2" aria-expanded="false" aria-pressed="false">
+                        <span class="screen-reader-text">Submenu</span>
+                      </button>
+                      <ul class="sub-menu" style="display: none;">
+                        
+                        <li class="menu-item">
+                          <a href="https://doi.org/10.6028/NIST.FIPS.199" itemprop="url">
+                          <span itemprop="name">FIPS 199 Impact Table</span>
+                          </a>
+                        </li>
+                        
+                        <li class="menu-item">
+                          <a href="/identity-roles" itemprop="url">
+                          <span itemprop="name">Identity Role Examples</span>
+                          </a>
+                        </li>
+                        
+                        <li class="menu-item">
+                          <a href="/glossary" itemprop="url">
+                          <span itemprop="name">Terminology Glossary</span>
+                          </a>
+                        </li>
+                        
+                      </ul>
+                    
+                  </li>
+                
+              
+              
+              <li class="menu-item search-form-wrapper">
+                <form method="get" name="search" class="search-form" role="search"
+                  action="https://it.tamus.edu/">
+                  <label class="search-form-label screen-reader-text" for="header-search-input">Search</label>
+                  <input type="text" value="" class="search-field" name="s" id="header-search-input"
+                    placeholder="Search" itemprop="query-input">
+                  <label for="header-search-button">Search</label>
+                  <input type="submit" class="search-button" id="header-search-button" value="Submit search">
+                  <meta content="https://it.tamus.edu/?s={s}" itemprop="target">
+                </form>
+              </li>
+              
+              
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+  <div class="site-inner">
+    <div class="content">
+      <main class="content" id="genesis-content">
+        
+          
+
+
+
+
+  
+<div class="breadcrumb">
+  
+  <a href="/"><span class="breadcrumb-link-text-wrap">Home</span></a>
+  
+    
+      <span aria-label="breadcrumb separator">/</span>
+      Incident Notification Guidelines
+    
+  
+</div>
+
+
+          <h1>Incident Notification Guidelines</h1>
+        
+        <p><strong>These guidelines are effective April 15, 2022.</strong></p>
+
+<p>This document provides guidance to Texas A&amp;M University System institutions and agencies for submitting incident notifications to the Texas A&amp;M System Office of Cybersecurity.</p>
+
+<p>Title 1 Texas Administrative Code §202.1 defines “security incident” as “an event which results in the accidental or deliberate unauthorized access, loss, disclosure, modification, disruption, or destruction of information or information resources.<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>” Texas A&amp;M System cyber security control standard IR-6 requires system members to notify the System Office of Cybersecurity and consult with the System Chief Information Security Officer regarding information security incidents involving their information and information systems, whether managed by the agency/institution, contractor, or other source. This includes privacy incidents that do not impact information systems and any incidents involving industrial control systems or operational technology.</p>
+
+<p>These guidelines support the Texas A&amp;M System Office of Cybersecurity in executing its mission objectives and provide the following benefits:</p>
+
+<ul>
+  <li>
+    <p><strong>Greater quality of information</strong> – Alignment with incident reporting and handling guidance from NIST 800-61 Revision 2 <sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup> to introduce functional, informational, and recoverability impact classifications</p>
+  </li>
+  <li>
+    <p><strong>Improved information sharing and situational awareness</strong> – Establishing a 4-hour notification time frame for all incidents to improve the System Office of Cybersecurity’s ability to understand cybersecurity events affecting the system and make timely required notifications to other system offices</p>
+  </li>
+  <li>
+    <p><strong>Faster incident response times</strong> – Moving cause analysis to the closing phase of the incident handling process to expedite initial notification</p>
+  </li>
+</ul>
+
+<h1 id="notification-requirement">Notification Requirement</h1>
+
+<p>System members must report information security incidents where the confidentiality, integrity, or availability of a major system-owned or -managed information system, or a system processing confidential information, is potentially compromised.</p>
+
+<p>System members shall notify the System Office of Cybersecurity with the required data elements, as well as any other available information, within <strong>12 hours</strong> of being identified by the member or the Security Operations Center (SOC).</p>
+
+<p>System members determine which officials of the member institution are to be notified of an incident, but must include the following notifications within <strong>24 hours</strong> of being identified by the member or the Security Operations Center (SOC):</p>
+
+<ol>
+  <li>
+    <p>Agency Director/University President or designee</p>
+  </li>
+  <li>
+    <p>Chief Information Officer (CIO) / Information Resources Manager (IRM)</p>
+  </li>
+  <li>
+    <p>Chief Information Security Officer (CISO) / Information Security Officer (ISO)</p>
+  </li>
+  <li>
+    <p>Chief Research Officer (CRO) <em>(when the compromised/potentially compromised information includes research data)</em></p>
+  </li>
+  <li>
+    <p>Department Head / Information Resources Custodian of affected information resources</p>
+  </li>
+</ol>
+
+<p>Notifications to affected third parties (e.g., vendors, partners) and affected individuals shall be made in accordance with Tex. Bus. &amp; Comm. Code § 521.002 <sup id="fnref:3" role="doc-noteref"><a href="#fn:3" class="footnote" rel="footnote">3</a></sup> and guidance provided by the System Office of General Counsel.</p>
+
+<p>In some cases, it may not be feasible to have complete and validated information for <a href="#submitting-incident-notifications">Submitting Incident Notifications</a> prior to reporting. System members should provide their best estimate at the time of notification and report updated information as it becomes available. Events that have been found by the reporting system member not to impact confidentiality, integrity or availability may be reported voluntarily.</p>
+
+<h1 id="submitting-incident-notifications">Submitting Incident Notifications</h1>
+
+<p>The information elements described in steps 1-5 below are required when notifying the System Office of Cybersecurity of an incident:</p>
+
+<ol>
+  <li>
+    <p>Identify the current level of impact on system member functions or services (Functional Impact)</p>
+  </li>
+  <li>
+    <p>Identify the type of information lost, compromised, or corrupted (Information Impact)</p>
+  </li>
+  <li>
+    <p>Estimate the scope of time and resources needed to recover from the incident (Recoverability)</p>
+  </li>
+  <li>
+    <p>Identify when the activity was first detected</p>
+  </li>
+  <li>
+    <p>Identify point of contact information for additional follow-up</p>
+  </li>
+</ol>
+
+<p>Submit the notification to the System Office of Cybersecurity via the <a href="https://cyber-infosharing.tamus.edu">Information Security Incident Reporting Portal</a>.</p>
+
+<h1 id="impact-category-descriptions">Impact Category Descriptions</h1>
+
+<p>The table below defines each impact category description and its associated severity levels. Use the tables below to identify impact levels and incident details.</p>
+
+<p><strong>Note:</strong> Incidents may affect multiple types of data; therefore, system members may select multiple options when identifying the information impact. The security categorization of information and information systems must be determined in accordance with Federal Information Processing Standards (FIPS) Publication 199.<sup id="fnref:4" role="doc-noteref"><a href="#fn:4" class="footnote" rel="footnote">4</a></sup> Specific thresholds for loss-of-service availability (e.g., all, subset, loss of efficiency) must be defined by the reporting organization. Contact the System Research Security Office for guidance on responding to classified data spillage.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Impact Category</strong></th>
+      <th><strong>Category Severity Levels</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Functional Impact</strong> - A measure of the impact to business functionality or ability to provide the services</td>
+      <td>NO IMPACT - Event has no impact<br /> NO IMPACT TO SERVICES - Event has no impact to any business or Industrial Control Systems (ICS) services or delivery to entity customers<br /> MINIMAL IMPACT TO NON-CRITICAL SERVICES – Some small level of impact to non-critical systems and services<br /> MINIMAL IMPACT TO CRITICAL SERVICES –Minimal impact but to a critical system or service, such as email or active directory<br /> SIGNIFICANT IMPACT TO NON-CRITICAL SERVICES – A non-critical service or system has a significant impact<br /> DENIAL OF NON-CRITICAL SERVICES – A non-critical system is denied or destroyed<br /> SIGNIFICANT IMPACT TO CRITICAL SERVICES – A critical system has a significant impact, such as local administrative account compromise<br /> DENIAL OF CRITICAL SERVICES/LOSS OF CONTROL – A critical system has been rendered unavailable</td>
+    </tr>
+    <tr>
+      <td><strong>Information Impact</strong> – Describes the type of information lost, compromised, or corrupted</td>
+      <td>NO IMPACT – No known data impact<br />SUSPECTED BUT NOT IDENTIFIED – A data loss or impact to availability is suspected, but no direct confirmation exists<br />PRIVACY DATA BREACH – The confidentiality of personally identifiable information (PII) or sensitive personal information (SPI) was compromised<br />PROPRIETARY INFORMATION BREACH – The confidentiality of unclassified proprietary information, such as protected critical infrastructure information (PCII), intellectual property, or trade secrets was compromised<br />DESTRUCTION OF NON-CRITICAL SYSTEMS – Destructive techniques, such as master boot record (MBR) overwrite; have been used against a non-critical system<br />CRITICAL SYSTEMS DATA BREACH - Data pertaining to a critical system has been exfiltrated<br />CORE CREDENTIAL COMPROMISE – Core system credentials (such as domain or enterprise administrative credentials) or credentials for critical systems have been exfiltrated<br />DESTRUCTION OF CRITICAL SYSTEM – Destructive techniques, such as MBR overwrite; have been used against a critical system</td>
+    </tr>
+    <tr>
+      <td><strong>Recoverability</strong> – Identifies the scope of resources needed to recover from the incident</td>
+      <td>REGULAR – Time to recovery is predictable with existing resources<br />SUPPLEMENTED – Time to recovery is predictable with additional resources<br />EXTENDED – Time to recovery is unpredictable; additional resources and outside help are needed<br />NOT RECOVERABLE – Recovery from the incident is not possible (e.g., sensitive data exfiltrated and posted publicly)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="reporting-contact-information">Reporting Contact Information</h1>
+
+<ul>
+  <li>
+    <p><a href="https://cyber-infosharing.tamus.edu">Information Security Incident Reporting Portal</a></p>
+  </li>
+  <li>
+    <p>Supplemental Info / Indicators of Compromise: <a href="mailto:contact@cyber.tamus.edu">contact@cyber.tamus.edu</a> (<a href="https://it.tamus.edu/cybersecurity/soc/contact">PGP/GPG Key for Encrypted Email</a>)</p>
+  </li>
+  <li>
+    <p>Cybersecurity Operations Service Desk: (979) 234-0030 Opt. 5</p>
+  </li>
+</ul>
+
+<h1 id="footnotes">Footnotes</h1>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p><a href="https://www.sos.texas.gov/tac/index.shtml">Title 1 Texas Administrative Code § 202.76, Security Control Standards Catalog</a>. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2" role="doc-endnote">
+      <p><a href="https://doi.org/10.6028/NIST.SP.800-61r2">NIST Special Publication 800-61 Rev 2, Computer Security Incident Handling Guide, August 2012</a>. <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:3" role="doc-endnote">
+      <p><a href="https://statutes.capitol.texas.gov/Docs/BC/htm/BC.521.htm">Texas Business and Commerce Code § 521.002, Unauthorized Use of Identifying Information</a>. <a href="#fnref:3" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:4" role="doc-endnote">
+      <p><a href="https://doi.org/10.6028/NIST.FIPS.199">Federal Information Processing Standard Publication 199, Standards for Security Categorization of Federal Information and Information Systems</a>. <a href="#fnref:4" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+      </main>
+    </div>
+  </div>
+    <footer class="site-footer" itemscope itemtype="https://schema.org/WPFooter">
+      <div class="wrap">
+        <div class="footer-links">
+          <p class="copyright">Copyright &copy; <span id="year"></span> Texas A&amp;M University System All rights reserved.</p>
+          <p>
+            1370 TAMU, College Station, TX 77843-1370 | Phone: (979) 234-0030 | email: <a href="mailto:contact@cyber.tamus.edu">contact@cyber.tamus.edu</a>
+            <br>
+            <a href="https://www.texas.gov/" target="_blank">State of Texas</a> |
+            <a href="https://gov.texas.gov/organization/hsgd" target="_blank">Texas Homeland Security</a> |
+            <a href="https://veterans.portal.texas.gov/" target="_blank">Texas Veterans Portal</a> |
+            <a href="https://www.tsl.state.tx.us/trail/index.html" target="_blank">Statewide Search</a> |
+            <a href="https://secure.ethicspoint.com/domain/media/en/gui/19681/index.html" target="_blank">Risk, Fraud
+              &amp; Misconduct Hotline</a> |
+            <a href="https://www.tamus.edu/marcomm/reports/privacy/">Privacy</a> |
+            <a href="https://www.tamus.edu/marcomm/reports/accessibility/">Web Accessibility</a> |
+            <a
+              href="https://dir.texas.gov/resource-library-item/state-website-linking-privacy-policy">State
+              Link Policy</a> |
+            <a href="https://www.tamus.edu/system/campus-carry-rules/" rel="publisher">Campus Carry</a>
+          </p>
+        </div>
+        <div class="tamus-logo">
+          <a href="https://www.tamus.edu/">
+            <img src="/assets/images/logos/tamus-primary-logo-white.webp"
+              alt="Texas A&amp;M University System"></a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="/assets/js/hoverIntent.min.js"></script>
+  <script src="/assets/js/superfish.args.min.js"></script>
+  <script src="/assets/js/superfish.min.js"></script>
+  <script src="/assets/js/skip-links.min.js"></script>
+  <script src="/assets/js/bootstrap.bundle.min.js"></script>
+  <script src="/assets/js/responsive-menus.min.js"></script>
+  <script src="/assets/js/oit.js"></script>
+</body>
+</html>

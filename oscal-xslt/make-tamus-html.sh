@@ -27,7 +27,7 @@ mv catalog.html ../../tamus-control-standards/docs/catalog/index.html
 
 sh mvn-make-required-controls-html.sh ../../tamus-control-standards/content/tamus.edu/TAMUS_resolved-profile_catalog.xml temp css-path=/dev/null
 
-{ echo '---\nlayout: catalog\ntitle: Required Controls Listing\n---\n'; cat temp; } > required-controls.html
+{ echo '---\nlayout: full-width\ntitle: Required Control Standards Listing\ncustom-css: required-controls.css\n---\n'; cat temp; } > required-controls.html
 
 rm temp
 

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="Created" property="dc:created" content="2020-10-07" />
+  <meta name="Last-Modified" property="dc:modified" content="2022-10-27" />
+  <title>{{ page.title }}</title>
+  {% if page.description %}
+  <meta name="description" content="{{ page.description }}" />
+  {% endif %}
+
+  <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+
+  <link rel="stylesheet" type="text/css" media="all" href="/assets/css/tamus-main.css" />
+  <link rel="stylesheet" type="text/css" media="all"
+    href="https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C400i%2C600%2C700%2C800&#038;display=swap&#038;ver=2.2.0" />
+
+  {% if page.custom-css %}
+    <link rel="stylesheet" type="text/css" href="/assets/css/{{ page.custom-css }}">
+  {% endif %}
+
+  <script src="/assets/js/jquery.min.js"></script>
+  <script src="/assets/js/jquery-migrate.min.js"></script>
+  <script src="https://cloud.google.com/ai/gen-app-builder/client"></script>
+
+  <!-- Google Analytics -->
+  <script>
+    window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) }; ga.l = +new Date;
+    ga('create', 'UA-142977406-2', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  <link rel="icon" href="/favicon.ico" />
+</head>
+
+{% assign body_class = 'content-sidebar' %}
+{% if page.layout == 'full-width' %}
+  {% assign body_class = 'full-width-content' %}
+{% endif %}
+
+<body class="page-template {{ body_class }}" itemscope itemtype="https://schema.org/WebPage">
+  <div class="site-container">
+    <header class="site-header" itemscope="" itemtype="https://schema.org/WPHeader">
+      <div class="wrap">
+        <div class="tamus-wrap-title-and-logo">
+          <div class="title-area">
+            <ul class="genesis-skip-link">
+              <li><a href="#genesis-nav-primary" class="screen-reader-shortcut"> Skip to primary navigation</a></li>
+              <li><a href="#genesis-content" class="screen-reader-shortcut"> Skip to main content</a></li>
+            </ul>
+            <div class="site-title" itemprop="headline"><a href="/">{{ site.title }}</a>
+            </div>
+          </div>
+          <div class="widget-area header-widget-area"> <a href="{{ site.logolinkurl }}" id="tamus-oit-logo">
+              <img
+                src="/assets/images/logos/cyber-logo.svg"
+                alt="Logo, Texas A&amp;M University System Cybersecurity">
+            </a>
+          </div>
+        </div>
+
+        <nav class="nav-primary genesis-responsive-menu" aria-label="Main Site Navigation" itemscope=""
+          itemtype="https://schema.org/SiteNavigationElement" id="genesis-nav-primary">
+          <div class="wrap">
+            <ul id="menu-header-global-navigation"
+              class="menu genesis-nav-menu menu-primary js-superfish sf-js-enabled sf-arrows"
+              style="touch-action: pan-y;">
+              {% comment %} Pull list from _data/header-nav {% endcomment %}
+              {% assign nav_size = site.data.header-nav.nav-items | size %}
+
+              {% if nav_size > 0 %}
+                {% for item in site.data.header-nav.nav-items %}
+                  {% assign subfolder_size = item.subfolderitems | size %}
+                  <li id="{{ item.id }}" class="menu-item">
+                    <a href="{{ item.url }}" itemprop="url" class="sf-with-ul">
+                      <span itemprop="name">{{ item.title }}</span>
+                    </a>
+                    {% if subfolder_size > 0 %}
+                      <button class="sub-menu-toggle dashicons-before dashicons-arrow-down-alt2" aria-expanded="false" aria-pressed="false">
+                        <span class="screen-reader-text">Submenu</span>
+                      </button>
+                      <ul class="sub-menu" style="display: none;">
+                        {% for entry in item.subfolderitems %}
+                        <li class="menu-item">
+                          <a href="{{ entry.url }}" itemprop="url">
+                          <span itemprop="name">{{ entry.page }}</span>
+                          </a>
+                        </li>
+                        {% endfor %}
+                      </ul>
+                    {% endif %}
+                  </li>
+                {% endfor %}
+              {% endif %}
+              {% if site.search == true %}
+              <li class="menu-item search-form-wrapper">
+                <!-- Search widget element is not visible by default -->
+                <gen-search-widget
+                  configId="aace9e3e-b6aa-4681-bb58-5b0e0f830a9f"
+                  triggerId="searchWidgetTrigger">
+                </gen-search-widget>
+
+                <!-- Element that opens the widget on click. It does not have to be an input -->
+                <form class="search-form">
+                  <input class="search-field" placeholder="Search here" id="searchWidgetTrigger"/>
+                </form>
+              </li>
+              {% endif %}
+              {% if site.show_oit_site_menu == true %}
+              <li id="oit-site-menu" class="d-lg-none">
+                <a id="oit-link" href="/" itemprop="url" class="sf-with-ul">
+                  <span itemprop="name">Office of Cybersecurity</span>
+                </a>
+              </li>
+              {% endif %}
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>

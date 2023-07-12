@@ -1,30 +1,5 @@
 jQuery(document).ready(function($) {
 
-	// ------------------------------------------
-	// Search -----------------------------------
-	// ------------------------------------------
-	var searchbutton = $('.nav-primary li.search');
-	var searchformarea = $('.search-form-area');
-
-	searchbutton.on( 'click', function() {
-		searchformarea.slideToggle('fast');
-	});
-
-  const searchform = document.getElementsByName('search')[0];
-  const searchquery = document.getElementById('header-search-input');
-  const google = 'https://www.google.com/search?q=site%3A';
-  const site = 'cyber-standards.tamus.edu';
-
-  function search_submitted(event) {
-    event.preventDefault();
-    const url = google + site + '+' + searchquery.value;
-    const win = window.open(url, '_blank');
-    win.focus();
-  }
-
-  searchform.addEventListener('submit', search_submitted);
-
-
   // ------------------------------------------
   // Header scroll ----------------------------
   // ------------------------------------------

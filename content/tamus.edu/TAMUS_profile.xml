@@ -70,6 +70,7 @@
     <alter control-id="ac-11">
       <add position="ending">
         <prop name="tamus_required_by" value="2024-02-01"/>
+        <prop name="tamus_new_requirement" value="true"/>
       </add>
     </alter>
     <alter control-id="ac-19">
@@ -165,6 +166,7 @@
     <alter control-id="cm-11">
       <add position="ending">
         <prop name="tamus_required_by" value="2024-02-01"/>
+        <prop name="tamus_new_requirement" value="true"/>
       </add>
       <add position="after" by-id="cm-11_smt">
         <part name="tamus_implementation" id="cm-11_tamus_smt">

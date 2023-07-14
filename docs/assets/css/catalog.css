@@ -241,3 +241,5 @@ tr.resource:nth-child(odd) { background-color: gainsboro }
 table { width: inherit; }
 
 tbody { border: 0; }
+
+.tx_implementation p.link, .tamus_implementation p.link { display: none; }

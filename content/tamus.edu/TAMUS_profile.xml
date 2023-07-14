@@ -67,6 +67,11 @@
         </part>
       </add>
     </alter>
+    <alter control-id="ac-11">
+      <add position="ending">
+        <prop name="tamus_required_by" value="2024-02-01"/>
+      </add>
+    </alter>
     <alter control-id="ac-19">
       <add position="ending">
         <prop name="tamus_required_by" value="2022-12-19"/>
@@ -154,6 +159,35 @@
       <add position="after" by-id="cm-10_smt">
         <part name="tamus_implementation" id="cm-10_tamus_smt">
           <p>Inform users that unauthorized or unlicensed use of software is regarded as a serious matter subject to disciplinary action.</p>
+        </part>
+      </add>
+    </alter>
+    <alter control-id="cm-11">
+      <add position="ending">
+        <prop name="tamus_required_by" value="2024-02-01"/>
+      </add>
+      <add position="after" by-id="cm-11_smt">
+        <part name="tamus_implementation" id="cm-11_tamus_smt">
+          <part name="item" id="cm-11_tamus_smt.a">
+            <prop name="label" value="a."/>
+            <p>Users may not install applications which capture indiscriminate input from a human interface device such as a keyboard.</p>
+          </part>
+          <part name="item" id="cm-11_tamus_smt.b">
+            <prop name="label" value="b."/>
+            <p>Applications designed to capture discriminate input are not in scope of this control standard if the application meets the following criteria:</p>
+            <part name="item" id="cm-11_tamus_smt.b.1">
+              <prop name="label" value="1."/>
+              <p>The application behavior is explicitly approved by the user on a per-application basis;</p>
+            </part>
+            <part name="item" id="cm-11_tamus_smt.b.2">
+              <prop name="label" value="2."/>
+              <p>The application does not run at the operating system level, and</p>
+            </part>
+            <part name="item" id="cm-11_tamus_smt.b.3">
+              <prop name="label" value="3."/>
+              <p>The application does not capture indiscriminate input from a web browser.</p>
+            </part>
+          </part>
         </part>
       </add>
     </alter>
@@ -259,7 +293,7 @@
       </add>
       <add position="after" by-id="ir-6_tx_smt">
         <part name="tamus_implementation" id="ir-6_tamus_smt">
-          <p>Report information security incidents where the confidentiality, integrity, or availability of a moderate or high-impact organization-owned or -operated information system, or a system processing confidential information, is potentially compromised to the Texas A&amp;M University System Security Operations Center using the guidance in the <a href="https://cyber.tamus.edu/incident-notification">Incident Notification Process</a>, unless a law enforcement agency determines such a notification will impede a criminal investigation.</p>
+          <p>Report information security incidents where the confidentiality, integrity, or availability of a moderate or high-impact organization-owned or -operated information system, or a system processing confidential information, is potentially compromised to the Texas A&amp;M University System Cybersecurity Operations Center using the guidance in the <a href="https://cyber-standards.tamus.edu/incident-notification">Incident Notification Process</a>, unless a law enforcement agency determines such a notification will impede a criminal investigation.</p>
         </part>
       </add>
     </alter>
@@ -327,7 +361,7 @@
       </add>
       <add position="after" by-id="pl-4_tx_smt">
         <part name="tamus_implementation" id="pl-4_tamus_smt">
-          <p>Ensure rules of behavior incorporate Texas A&amp;M System Policy 33.04, Use of System Resources, and the organization's acceptable use guidelines;</p>
+          <p>Ensure rules of behavior incorporate Texas A&amp;M System Policy 33.04, Use of System Resources, and the organization's acceptable use guidelines.</p>
         </part>
       </add>
     </alter>

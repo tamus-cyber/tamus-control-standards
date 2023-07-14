@@ -25,4 +25,5 @@ patch -i $SCRIPT_DIR/sp800-53-catalog_html.xsl.patch
 
 cp $SCRIPT_DIR/make-tamus-html.sh publish
 cp $SCRIPT_DIR/mvn-make-required-controls-html.sh publish
-cp $SCRIPT_DIR/tamus-required-controls-catalog.xsl publish
+cp $SCRIPT_DIR/tamus-required-controls-html.xsl publish
+cp $SCRIPT_DIR/tamus-required-controls-pdf.xsl publish

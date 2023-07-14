@@ -41,7 +41,7 @@ mvn \
     -f "$POM_FILE" \
     exec:java \
     -Dexec.mainClass="$MAIN_CLASS" \
-    -Dexec.args="-xsl:tamus-required-controls-catalog.xsl -s:\"$CATALOG_XML\" -o:\"$RESULT_HTML\" $ADDITIONAL_ARGS"
+    -Dexec.args="-xsl:tamus-required-controls-html.xsl -s:\"$CATALOG_XML\" -o:\"$RESULT_HTML\" $ADDITIONAL_ARGS"
 
 if [ -e "$RESULT_HTML" ]
 then 

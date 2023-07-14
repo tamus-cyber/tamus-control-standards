@@ -21,6 +21,10 @@ sh mvn-make-800-53-catalog-html.sh ../../tamus-control-standards/content/tamus.e
 
 rm temp
 
+sed -i -- '/dev\/null/d' catalog.html
+
+rm catalog.html--
+
 mv catalog.html ../../tamus-control-standards/docs/catalog/index.html
 
 # Generate required controls listing

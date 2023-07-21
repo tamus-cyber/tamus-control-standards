@@ -17,7 +17,7 @@ These guidelines support the Texas A&M System Office of Cybersecurity in executi
 
 * **Faster incident response times** – Moving cause analysis to the closing phase of the incident handling process to expedite initial notification
 
-# Notification Requirement
+## Notification Requirement
 
 System members must report information security incidents where the confidentiality, integrity, or availability of a major system-owned or -managed information system, or a system processing confidential information, is potentially compromised.
 
@@ -39,7 +39,7 @@ Notifications to affected third parties (e.g., vendors, partners) and affected i
 
 In some cases, it may not be feasible to have complete and validated information for [Submitting Incident Notifications](#submitting-incident-notifications) prior to reporting. System members should provide their best estimate at the time of notification and report updated information as it becomes available. Events that have been found by the reporting system member not to impact confidentiality, integrity or availability may be reported voluntarily.
 
-# Submitting Incident Notifications
+## Submitting Incident Notifications
 
 The information elements described in steps 1-5 below are required when notifying the System Office of Cybersecurity of an incident:
 
@@ -55,7 +55,7 @@ The information elements described in steps 1-5 below are required when notifyin
 
 Submit the notification to the System Office of Cybersecurity via the [Information Security Incident Reporting Portal](https://cyber-infosharing.tamus.edu).
 
-# Impact Category Descriptions
+## Impact Category Descriptions
 
 The table below defines each impact category description and its associated severity levels. Use the tables below to identify impact levels and incident details.
 
@@ -67,7 +67,7 @@ The table below defines each impact category description and its associated seve
 | **Information Impact** – Describes the type of information lost, compromised, or corrupted | NO IMPACT – No known data impact<br>SUSPECTED BUT NOT IDENTIFIED – A data loss or impact to availability is suspected, but no direct confirmation exists<br>PRIVACY DATA BREACH – The confidentiality of personally identifiable information (PII) or sensitive personal information (SPI) was compromised<br>PROPRIETARY INFORMATION BREACH – The confidentiality of unclassified proprietary information, such as protected critical infrastructure information (PCII), intellectual property, or trade secrets was compromised<br>DESTRUCTION OF NON-CRITICAL SYSTEMS – Destructive techniques, such as master boot record (MBR) overwrite; have been used against a non-critical system<br>CRITICAL SYSTEMS DATA BREACH - Data pertaining to a critical system has been exfiltrated<br>CORE CREDENTIAL COMPROMISE – Core system credentials (such as domain or enterprise administrative credentials) or credentials for critical systems have been exfiltrated<br>DESTRUCTION OF CRITICAL SYSTEM – Destructive techniques, such as MBR overwrite; have been used against a critical system |
 | **Recoverability** – Identifies the scope of resources needed to recover from the incident | REGULAR – Time to recovery is predictable with existing resources<br>SUPPLEMENTED – Time to recovery is predictable with additional resources<br>EXTENDED – Time to recovery is unpredictable; additional resources and outside help are needed<br>NOT RECOVERABLE – Recovery from the incident is not possible (e.g., sensitive data exfiltrated and posted publicly) |
 
-# Reporting Contact Information
+## Reporting Contact Information
 
 * [Information Security Incident Reporting Portal](https://cyber-infosharing.tamus.edu)
 
@@ -75,7 +75,7 @@ The table below defines each impact category description and its associated seve
 
 * Cybersecurity Operations Service Desk: (979) 234-0030 Opt. 5
 
-# Footnotes
+## Footnotes
 
 [^1]: [Title 1 Texas Administrative Code § 202.76, Security Control Standards Catalog](https://www.sos.texas.gov/tac/index.shtml).
 [^2]: [NIST Special Publication 800-61 Rev 2, Computer Security Incident Handling Guide, August 2012](https://doi.org/10.6028/NIST.SP.800-61r2).

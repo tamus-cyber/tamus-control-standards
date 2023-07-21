@@ -1,6 +1,6 @@
-# Texas A&M University System Cybersecurity Control Standards
+# Texas A&M University System Cybersecurity Standards
 
-Texas A&M System Cybersecurity Control Standards provide system members with additional guidance that enhances State-level requirements for implementing security controls.
+Texas A&M System Cybersecurity Standards provide system members with additional guidance that enhances State-level requirements for implementing security controls.
 
 The `tamus-cyber/tamus-control-standards` project repository is organized as follows:
 

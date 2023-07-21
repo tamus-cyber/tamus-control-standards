@@ -13,13 +13,13 @@ Texas A&M University System (A&M System) data categorization consists of a minim
 | **Internal Use** | Information that is not generally created for or made available for public consumption but that may or may not be subject to public disclosure through the Texas Public Information Act [^3] or similar laws | Consult the Office of General Counsel regarding internal use information requested through open records, subpoena, or other legal process.
 | **Public Information** | Public information includes all information made available to the public through posting to public websites, distribution through email, or social media, print publications or other media, and information for which public disclosure is intended or required | Each member will use this categorization criteria as their baseline standard. If a member requires a more restrictive categorization for a class of data due to state, federal or other agreements, the more restrictive categorization will apply.<br /><br />Information can migrate from one categorization to another based on information lifecycle. For example, a draft policy document would fit the criteria of “Internal Use” until being published upon which it would become “Public Information”.
 
-# Security Control Tailoring Guidance
+## Security Control Tailoring Guidance
 
 When determining security controls to use for a given set of information, Information Owners and Custodians should also assess whether special requirements exist regarding importance of information availability and integrity and rate the need as LOW, MODERATE, or HIGH for both availability and integrity. The needs regarding availability and integrity may impact security control decisions but are not used for purposes of assigning a categorization label of Confidential, Internal Use, or Public Information (see FIPS 199 [^4] for additional details).
 
 Some classes of information may have attributes such as “mission critical” or “business critical”. These classes of information should be assessed for designation as high-impact information resources.
 
-# Footnotes
+## Footnotes
 
 [^1]: [Title 1 Texas Administrative Code § 202.74, Institution Information Security Program](https://www.sos.texas.gov/tac/index.shtml).
 [^2]: [Title 1 Texas Administrative Code § 202.1, Definitions](https://www.sos.texas.gov/tac/index.shtml).

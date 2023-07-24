@@ -3,9 +3,9 @@
 
   <metadata>
     <title>Texas A&amp;M University System Cybersecurity Control Standards</title>
-    <published>2023-07-24T11:00:00-0500</published>
-    <last-modified>2023-07-24T11:00:00-0500</last-modified>
-    <version>2.1.0</version>
+    <published>2023-07-24T11:45:00-0500</published>
+    <last-modified>2023-07-24T11:45:00-0500</last-modified>
+    <version>2.1.1</version>
     <oscal-version>1.0.0</oscal-version>
     <role id="prepared-by">
       <title>Document creator</title>
@@ -84,9 +84,6 @@
       </add>
     </alter>
     <alter control-id="ac-22">
-      <add position="ending">
-        <prop name="tamus_required_by" value="2022-08-01"/>
-      </add>
       <add position="after" by-id="ac-22_smt">
         <part name="tamus_implementation" id="ac-22_tamus_smt">
           <prop name="status" value="withdrawn"/>
@@ -95,12 +92,9 @@
       </add>
     </alter>
     <alter control-id="cm-2">
-      <add position="ending">
-        <prop name="tamus_required_by" value="2022-08-01"/>
-      </add>
       <add position="after" by-id="cm-2_smt">
         <part name="tamus_implementation" id="cm-2_tamus_smt">
-          <p>Ensure all servers on organization-owned or -managed networks conform to a baseline security configuration and are security-hardened based on risk.</p>
+          <prop name="status" value="withdrawn"/>
         </part>
       </add>
     </alter>
@@ -194,13 +188,21 @@
       </add>
     </alter>
     <alter control-id="cp-1">
+      <add position="after" by-id="cp-1_tx_smt">
+        <part name="tamus_implementation" id="cp-1_tamus_smt">
+          <prop name="status" value="withdrawn"/>
+          <link rel="moved-to" href="#cp-2.1"/>
+        </part>
+      </add>
+    </alter>
+    <alter control-id="cp-2.1">
       <add position="ending">
         <prop name="tamus_required_by" value="2022-08-01"/>
         <link rel="reference" href="#28edd686-b17c-47ca-aba4-4c7de11e82f5"/>
       </add>
-      <add position="after" by-id="cp-1_tx_smt">
-        <part name="tamus_implementation" id="cp-1_tamus_smt">
-          <p>Develop information resources contingency planning policy and procedures that align with the member’s emergency management plan as required by Texas A&amp;M System Regulation 34.07.01, Emergency Management.</p>
+      <add position="after" by-id="cp-2.1_tx_smt">
+        <part name="tamus_implementation" id="cp-2.1_tamus_smt">
+          <p>Develop information resources contingency plans that align with the member’s emergency management plan as required by Texas A&amp;M System Regulation 34.07.01, Emergency Management.</p>
         </part>
       </add>
     </alter>
@@ -212,16 +214,27 @@
         <part name="tamus_implementation" id="cp-4_tamus_smt">
           <part name="item" id="cp-4_tamus_smt.a">
             <prop name="label" value="a."/>
-            <p>Test the contingency plan at least annually through a tabletop exercise;</p>
+            <p>Test the contingency plan at least annually through a tabletop exercise, and</p>
           </part>
           <part name="item" id="cp-4_tamus_smt.b">
             <prop name="label" value="b."/>
-            <p>Test the contingency plan at least every three years with a full interruption of high-impact, on-premise services, and</p>
+            <p>Test the contingency plan at least every three years with a full interruption of high-impact, on-premise services.</p>
           </part>
           <part name="item" id="cp-4_tamus_smt.c">
             <prop name="label" value="c."/>
-            <p>Include information resources contingency plan testing in the member’s emergency management plan testing and exercises.</p>
+            <prop name="status" value="withdrawn"/>
+            <link rel="moved-to" href="#cp-4.1"/>
           </part>
+        </part>
+      </add>
+    </alter>
+    <alter control-id="cp-4.1">
+      <add position="ending">
+        <prop name="tamus_required_by" value="2022-08-01"/>
+      </add>
+      <add position="after" by-id="cp-4.1_tx_smt">
+        <part name="tamus_implementation" id="cp-4_tamus_smt">
+          <p>Include information resources contingency plan testing in the member’s emergency management plan testing and exercises.</p>
         </part>
       </add>
     </alter>
@@ -256,19 +269,9 @@
       </add>
     </alter>
     <alter control-id="ia-2.2">
-      <add position="ending">
-        <prop name="tamus_required_by" value="2021-09-13"/>
-      </add>
       <add position="after" by-id="ia-2.2_smt">
         <part name="tamus_implementation" id="ia-2.2_tamus_smt">
-          <part name="item" id="ia-2.2_tamus_smt.a">
-            <prop name="label" value="a."/>
-              <p>Employ the use of multi-factor authentication on information resources containing information categorized as Confidential under A&amp;M System Catalog control <a href="#ra-2">RA-2</a> to ensure that only appropriate individuals have access to confidential information, and</p>
-          </part>
-          <part name="item" id="ia-2.2_tamus_smt.b">
-            <prop name="label" value="b."/>
-              <p>Approve requests for exceptions in advance and report exceptions to the SCISO annually.</p>
-          </part>
+          <prop name="status" value="withdrawn"/>
         </part>
       </add>
     </alter>
@@ -311,11 +314,19 @@
       </add>
     </alter>
     <alter control-id="pe-6">
+      <add position="after" by-id="pe-6_smt">
+        <part name="tamus_implementation" id="pe-6_tamus_smt">
+          <prop name="status" value="withdrawn"/>
+          <link rel="moved-to" href="#pe-6.3"/>
+        </part>
+      </add>
+    </alter>
+    <alter control-id="pe-6.3">
       <add position="ending">
         <prop name="tamus_required_by" value="2022-08-01"/>
       </add>
-      <add position="after" by-id="pe-6_smt">
-        <part name="tamus_implementation" id="pe-6_tamus_smt">
+      <add position="after" by-id="pe-6.3_smt">
+        <part name="tamus_implementation" id="pe-6.3_tamus_smt">
           <p>Ensure audio-visual surveillance technology used to monitor physical access to information systems is used responsibly and within the intended scope of the purpose for such deployment, and transparent processes and controls are implemented for the use of such technology and any resulting recorded material.</p>
         </part>
       </add>
@@ -459,39 +470,23 @@
       </add>
     </alter>
     <alter control-id="sc-13">
-      <add position="ending">
-        <prop name="tamus_required_by" value="2022-08-01"/>
-      </add>
       <add position="after" by-id="sc-13_tx_smt">
         <part name="tamus_implementation" id="sc-13_tamus_smt">
-          <p>Ensure that information systems owned or operated by the member implement FIPS-validated cryptography [FIPS 140-3].</p>
+          <prop name="status" value="withdrawn"/>
         </part>
       </add>
     </alter>
     <alter control-id="sc-21">
-      <add position="ending">
-        <prop name="tamus_required_by" value="2022-12-19"/>
-      </add>
       <add position="after" by-id="sc-21_smt">
         <part name="tamus_implementation" id="sc-21_tamus_smt">
-          <p>Require the implementation of a client-based secure domain name service (DNS) resolution client on all organization-controlled user endpoints.</p>
+          <prop name="status" value="withdrawn"/>
         </part>
       </add>
     </alter>
     <alter control-id="si-3">
-      <add position="ending">
-        <prop name="tamus_required_by" value="2022-08-01"/>
-      </add>
       <add position="after" by-id="si-3_smt">
         <part name="tamus_implementation" id="si-3_tamus_smt">
-          <part name="item" id="si-3_tamus_smt.a">
-            <prop name="label" value="a."/>
-            <p>Ensure all organization-owned or -managed information systems that connect to a system member network employ endpoint protection software and any other protective measures required by applicable policies or guidelines, and</p>
-          </part>
-          <part name="item" id="si-3_tamus_smt.b">
-            <prop name="label" value="b."/>
-            <p>Ensure personally owned devices that connect to networks within the same boundary as confidential or high-impact information systems employ endpoint protection software or suitable compensating controls, based on assessed risk.</p>
-          </part>
+          <prop name="status" value="withdrawn"/>
         </part>
       </add>
     </alter>

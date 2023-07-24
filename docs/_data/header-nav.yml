@@ -11,10 +11,10 @@ nav-items:
   - title: Guidelines
     id: guidelines-dropdown
     subfolderitems:
-      - page: Incident Notification
-        url: /incident-notification
       - page: Data Categorization
         url: /data-categorization
+      - page: Incident Notification
+        url: /incident-notification
   - title: Resources
     id: resources-dropdown
     subfolderitems:
@@ -22,5 +22,7 @@ nav-items:
         url: https://doi.org/10.6028/NIST.FIPS.199
       - page: Identity Role Examples
         url: /identity-roles
+      - page: Online Privacy Standard
+        url: /privacy-standard
       - page: Terminology Glossary
         url: /glossary

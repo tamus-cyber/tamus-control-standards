@@ -5,7 +5,7 @@
     <title>Texas A&amp;M University System Cybersecurity Control Standards</title>
     <published>2022-09-14T22:15:00-0500</published>
     <last-modified>2022-12-12T16:00:00-0600</last-modified>
-    <version>2.2.0</version>
+    <version>2.1.0 draft 2</version>
     <oscal-version>1.0.0</oscal-version>
     <role id="prepared-by">
       <title>Document creator</title>
@@ -13,14 +13,14 @@
     <party uuid="00cd4c91-5db6-45f4-8c15-343baed5fdf8" type="organization">
       <name>Texas A&amp;M University System Office of Cybersecurity</name>
       <short-name>TAMUS Cybersecurity</short-name>
-      <link href="https://it.tamus.edu/cybersecurity" rel="homepage"/>
-      <email-address>sciso@tamus.edu</email-address>
+      <link href="https://cyber.tamus.edu" rel="homepage"/>
+      <email-address>contact@cyber.tamus.edu</email-address>
       <address type="work">
-        <addr-line>301 Tarrow St</addr-line>
+        <addr-line>1370 TAMU</addr-line>
         <addr-line/>
         <city>College Station</city>
         <state>TX</state>
-        <postal-code>77840</postal-code>
+        <postal-code>77843-1370</postal-code>
         <country>US</country>
       </address>
     </party>
@@ -39,18 +39,20 @@
     <alter control-id="ac-2.7">
       <add position="ending">
         <prop name="tamus_required_by" value="2022-08-01"/>
-        <part name="tamus_implementation" id="ac-2.7_tamus">
+      </add>
+      <add position="after" by-id="ac-2.7_smt">
+        <part name="tamus_implementation" id="ac-2.7_tamus_smt">
           <p>Ensure users with privileged (also known as administrative or special access) accounts are aware of the extraordinary responsibilities associated with the use of privileged accounts.</p>
         </part>
       </add>
     </alter>
     <alter control-id="ac-3.7">
-      <add position="starting">
-        <link rel="reference" href="#8bbc6ce8-5f6b-4117-80d8-6a4274928090"/>
-      </add>
       <add position="ending">
         <prop name="tamus_required_by" value="2022-08-01"/>
-        <part name="tamus_implementation" id="ac-3.7_tamus">
+        <link rel="reference" href="#8bbc6ce8-5f6b-4117-80d8-6a4274928090"/>
+      </add>
+      <add position="after" by-id="ac-3.7_smt">
+        <part name="tamus_implementation" id="ac-3.7_tamus_smt">
           <p>Implement role-based (e.g., students, employees, third parties, guests) access control or adopt an InCommon Federation assurance profile roles, where possible.</p>
         </part>
       </add>
@@ -58,17 +60,25 @@
     <alter control-id="ac-8">
       <add position="ending">
         <prop name="tamus_required_by" value="2022-08-01"/>
-        <part name="tamus_implementation" id="ac-8_tamus">
-          <p>Publish a privacy notice on websites owned by the organization which contains, at a minimum, the content contained on the Texas A&amp;M University System website at https://www.tamus.edu/marcomm/reports/privacy.</p>
+      </add>
+      <add position="after" by-id="ac-8_tx_smt">
+        <part name="tamus_implementation" id="ac-8_tamus_smt">
+          <p>Publish a privacy notice on websites owned by the organization which contains, at a minimum, the content contained on the Texas A&amp;M University System website at <a href="https://www.tamus.edu/marcomm/reports/privacy">https://www.tamus.edu/marcomm/reports/privacy</a>.</p>
         </part>
+      </add>
+    </alter>
+    <alter control-id="ac-11">
+      <add position="ending">
+        <prop name="tamus_required_by" value="2024-02-01"/>
+        <prop name="tamus_new_requirement" value="true"/>
       </add>
     </alter>
     <alter control-id="ac-19">
       <add position="ending">
-        <prop name="tamus_changed" value="true"/>
-        <prop name="tamus_new_requirement" value="true"/>
         <prop name="tamus_required_by" value="2022-12-19"/>
-        <part name="tamus_implementation" id="ac-19_tamus">
+      </add>
+      <add position="after" by-id="ac-19_tx_smt">
+        <part name="tamus_implementation" id="ac-19_tamus_smt">
           <p>Require the implementation of a mobile device management (MDM) product on all organization-controlled mobile devices.</p>
         </part>
       </add>
@@ -76,45 +86,50 @@
     <alter control-id="ac-22">
       <add position="ending">
         <prop name="tamus_required_by" value="2022-08-01"/>
-        <part name="tamus_implementation" id="ac-22_tamus">
-          <p>Ensure organizational security controls are applied to official social media use by the organization.</p>
+      </add>
+      <add position="after" by-id="ac-22_smt">
+        <part name="tamus_implementation" id="ac-22_tamus_smt">
+          <prop name="status" value="withdrawn"/>
+          <link rel="incorporated-into" href="#pl-4.1"/>
         </part>
       </add>
     </alter>
     <alter control-id="cm-2">
       <add position="ending">
         <prop name="tamus_required_by" value="2022-08-01"/>
-        <part name="tamus_implementation" id="cm-2_tamus">
+      </add>
+      <add position="after" by-id="cm-2_smt">
+        <part name="tamus_implementation" id="cm-2_tamus_smt">
           <p>Ensure all servers on organization-owned or -managed networks conform to a baseline security configuration and are security-hardened based on risk.</p>
         </part>
       </add>
     </alter>
     <alter control-id="cm-3">
       <add position="ending">
-        <prop name="tamus_baseline" value="MODERATE"/>
         <prop name="tamus_required_by" value="2022-08-01"/>
-        <part name="tamus_implementation" id="cm-3_tamus">
-          <part name="item" id="cm-3_tamus_smt.a">
-            <prop name="label" value="a."/>
+      </add>
+      <add position="after" by-id="cm-3_tx_smt">
+        <part name="tamus_implementation" id="cm-3_tamus_smt">
+          <part name="item" id="cm-3_tamus_smt">
             <p>Incorporate change management processes to ensure secure, reliable, and stable operations to which all offices that support information systems adhere. Ensure the change management process incorporates guidelines that address:</p>
-            <part name="item" id="cm-3_tamus_smt.a.1">
-              <prop name="label" value="1."/>
+            <part name="item" id="cm-3_tamus_smt.a">
+              <prop name="label" value="a."/>
               <p>formally identifying, classifying, prioritizing, and requesting changes;</p>
             </part>
-            <part name="item" id="cm-3_tamus_smt.a.2">
-              <prop name="label" value="2."/>
+            <part name="item" id="cm-3_tamus_smt.b">
+              <prop name="label" value="b."/>
               <p>identifying and deploying emergency changes;</p>
             </part>
-            <part name="item" id="cm-3_tamus_smt.a.3">
-              <prop name="label" value="3."/>
+            <part name="item" id="cm-3_tamus_smt.c">
+              <prop name="label" value="c."/>
               <p>assessing potential impacts from changes;</p>
             </part>
-            <part name="item" id="cm-3_tamus_smt.a.4">
-              <prop name="label" value="4."/>
+            <part name="item" id="cm-3_tamus_smt.d">
+              <prop name="label" value="d."/>
               <p>authorizing changes and exceptions, and</p>
             </part>
-            <part name="item" id="cm-3_tamus_smt.a.5">
-              <prop name="label" value="5."/>
+            <part name="item" id="cm-3_tamus_smt.e">
+              <prop name="label" value="e."/>
               <p>implementing changes and planning for back-outs.</p>
             </part>
           </part>
@@ -127,13 +142,13 @@
       </add>
     </alter>
     <alter control-id="cm-6">
-      <add position="starting">
+      <add position="ending">
+        <prop name="tamus_required_by" value="2022-08-01"/>
         <link rel="reference" href="#eedcbb1f-0f8e-4efc-a02b-74c9fb8438cc"/>
         <link rel="reference" href="#997c9abf-6669-4196-89fd-68fce5f21b74"/>
       </add>
-      <add position="ending">
-        <prop name="tamus_required_by" value="2022-08-01"/>
-        <part name="tamus_implementation" id="cm-6_tamus">
+      <add position="after" by-id="cm-6_smt">
+        <part name="tamus_implementation" id="cm-6_tamus_smt">
           <p>Adopt baseline security configuration checklists that meet or exceed published industry best practice sources (e.g., Center for Internet Security Benchmarks [CIS Benchmarks], NIST National Checklist Program [NCP]) when available, or locally develop security configuration checklists otherwise, for all organization-owned or -managed major and high-impact information systems, and systems processing confidential information.</p>
         </part>
       </add>
@@ -141,18 +156,50 @@
     <alter control-id="cm-10">
       <add position="ending">
         <prop name="tamus_required_by" value="2022-08-01"/>
-        <part name="tamus_implementation" id="cm-10_tamus">
+      </add>
+      <add position="after" by-id="cm-10_smt">
+        <part name="tamus_implementation" id="cm-10_tamus_smt">
           <p>Inform users that unauthorized or unlicensed use of software is regarded as a serious matter subject to disciplinary action.</p>
         </part>
       </add>
     </alter>
-    <alter control-id="cp-1">
-      <add position="starting">
-        <link rel="reference" href="#28edd686-b17c-47ca-aba4-4c7de11e82f5"/>
+    <alter control-id="cm-11">
+      <add position="ending">
+        <prop name="tamus_required_by" value="2024-02-01"/>
+        <prop name="tamus_new_requirement" value="true"/>
       </add>
+      <add position="after" by-id="cm-11_smt">
+        <part name="tamus_implementation" id="cm-11_tamus_smt">
+          <part name="item" id="cm-11_tamus_smt.a">
+            <prop name="label" value="a."/>
+            <p>Users may not install applications which capture indiscriminate input from a human interface device such as a keyboard.</p>
+          </part>
+          <part name="item" id="cm-11_tamus_smt.b">
+            <prop name="label" value="b."/>
+            <p>Applications designed to capture discriminate input are not in scope of this control standard if the application meets the following criteria:</p>
+            <part name="item" id="cm-11_tamus_smt.b.1">
+              <prop name="label" value="1."/>
+              <p>The application behavior is explicitly approved by the user on a per-application basis;</p>
+            </part>
+            <part name="item" id="cm-11_tamus_smt.b.2">
+              <prop name="label" value="2."/>
+              <p>The application does not run at the operating system level, and</p>
+            </part>
+            <part name="item" id="cm-11_tamus_smt.b.3">
+              <prop name="label" value="3."/>
+              <p>The application does not capture indiscriminate input from a web browser.</p>
+            </part>
+          </part>
+        </part>
+      </add>
+    </alter>
+    <alter control-id="cp-1">
       <add position="ending">
         <prop name="tamus_required_by" value="2022-08-01"/>
-        <part name="tamus_implementation" id="cp-1_tamus">
+        <link rel="reference" href="#28edd686-b17c-47ca-aba4-4c7de11e82f5"/>
+      </add>
+      <add position="after" by-id="cp-1_tx_smt">
+        <part name="tamus_implementation" id="cp-1_tamus_smt">
           <p>Develop information resources contingency planning policy and procedures that align with the member’s emergency management plan as required by Texas A&amp;M System Regulation 34.07.01, Emergency Management.</p>
         </part>
       </add>
@@ -160,7 +207,9 @@
     <alter control-id="cp-4">
       <add position="ending">
         <prop name="tamus_required_by" value="2022-08-01"/>
-        <part name="tamus_implementation" id="cp-4_tamus">
+      </add>
+      <add position="after" by-id="cp-4_tx_smt">
+        <part name="tamus_implementation" id="cp-4_tamus_smt">
           <part name="item" id="cp-4_tamus_smt.a">
             <prop name="label" value="a."/>
             <p>Test the contingency plan at least annually through a tabletop exercise;</p>
@@ -176,22 +225,25 @@
         </part>
       </add>
     </alter>
+    <set-parameter param-id="cp-09.03_odp">
+      <label>information systems that process and/or store sensitive or high-impact information</label>
+    </set-parameter>
     <alter control-id="cp-9.3">
       <add position="ending">
         <prop name="tamus_required_by" value="2022-08-01"/>
-        <part name="tamus_implementation" id="cp-9.3_tamus">
+      </add>
+      <add position="after" by-id="cp-9.3_smt">
+        <part name="tamus_implementation" id="cp-9.3_tamus_smt">
           <p>Protect <insert type="param" id-ref="cp-09.03_odp"/> with a backup strategy which uses immutable backup storage and/or an out-of-band backup process that prevents direct access to backup storage from the organization's production networks.</p>
         </part>
       </add>
     </alter>
-    <set-parameter param-id="cp-09.03_odp">
-      <label>information systems that process and/or store sensitive or high-impact information</label>
-    </set-parameter>
     <alter control-id="ia-2.1">
       <add position="ending">
-        <prop name="tamus_changed" value="true"/>
         <prop name="tamus_required_by" value="2021-09-13"/>
-        <part name="tamus_implementation" id="ia-2.1_tamus">
+      </add>
+      <add position="after" by-id="ia-2.1_smt">
+        <part name="tamus_implementation" id="ia-2.1_tamus_smt">
           <part name="item" id="ia-2.1_tamus_smt.a">
             <prop name="label" value="a."/>
               <p>Employ the use of multi-factor authentication on information resources containing information categorized as Confidential under A&amp;M System Catalog control <a href="#ra-2">RA-2</a> to ensure that only appropriate individuals have access to confidential information, and</p>
@@ -205,9 +257,10 @@
     </alter>
     <alter control-id="ia-2.2">
       <add position="ending">
-        <prop name="tamus_changed" value="true"/>
         <prop name="tamus_required_by" value="2021-09-13"/>
-        <part name="tamus_implementation" id="ia-2.2_tamus">
+      </add>
+      <add position="after" by-id="ia-2.2_smt">
+        <part name="tamus_implementation" id="ia-2.2_tamus_smt">
           <part name="item" id="ia-2.2_tamus_smt.a">
             <prop name="label" value="a."/>
               <p>Employ the use of multi-factor authentication on information resources containing information categorized as Confidential under A&amp;M System Catalog control <a href="#ra-2">RA-2</a> to ensure that only appropriate individuals have access to confidential information, and</p>
@@ -220,39 +273,39 @@
       </add>
     </alter>
     <alter control-id="ia-11">
-      <add position="starting">
+      <add position="ending">
         <prop name="tamus_required_by" value="2022-08-01"/>
         <link rel="reference" href="#e59c5a7c-8b1f-49ca-8de0-6ee0882180ce"/>
       </add>
-      <add position="ending">
-        <part name="tamus_implementation" id="ia-11_tamus">
+      <add position="after" by-id="ia-11_smt">
+        <part name="tamus_implementation" id="ia-11_tamus_smt">
           <p>Limit the lifetime of browser cookies used for binding authenticated sessions to organization-owned or -managed information systems to no more than five (5) days.</p>
         </part>
       </add>
     </alter>
     <alter control-id="ia-12">
-      <add position="starting">
-        <link rel="reference" href="#8bbc6ce8-5f6b-4117-80d8-6a4274928090"/>
-      </add>
-      <add position="starting">
+      <add position="ending">
         <prop name="tamus_required_by" value="2022-08-01"/>
+        <link rel="reference" href="#8bbc6ce8-5f6b-4117-80d8-6a4274928090"/>
       </add>
     </alter>
     <alter control-id="ir-6">
       <add position="ending">
         <prop name="tamus_required_by" value="2022-08-01"/>
-        <part name="tamus_implementation" id="ir-6_tamus">
-          <p>Report information security incidents where the confidentiality, integrity, or availability of a moderate or high-impact organization-owned or -operated information system, or a system processing confidential information, is potentially compromised to the Texas A&amp;M University System Security Operations Center using the guidance in the xref:/incident-notification.adoc[Incident Notification Process], unless a law enforcement agency determines such a notification will impede a criminal investigation.</p>
+      </add>
+      <add position="after" by-id="ir-6_tx_smt">
+        <part name="tamus_implementation" id="ir-6_tamus_smt">
+          <p>Report information security incidents where the confidentiality, integrity, or availability of a moderate or high-impact organization-owned or -operated information system, or a system processing confidential information, is potentially compromised to the Texas A&amp;M University System Cybersecurity Operations Center using the guidance in the <a href="https://cyber-standards.tamus.edu/incident-notification">Incident Notification Process</a>, unless a law enforcement agency determines such a notification will impede a criminal investigation.</p>
         </part>
       </add>
     </alter>
     <alter control-id="mp-3">
-      <add position="starting">
-        <link rel="reference" href="#5b23f2c5-4c42-4b0e-a75b-34af3bcafb10"/>
-      </add>
       <add position="ending">
         <prop name="tamus_required_by" value="2022-08-01"/>
-        <part name="tamus_implementation" id="mp-3_tamus">
+        <link rel="reference" href="#5b23f2c5-4c42-4b0e-a75b-34af3bcafb10"/>
+      </add>
+      <add position="after" by-id="mp-3_smt">
+        <part name="tamus_implementation" id="mp-3_tamus_smt">
           <p>Mark, physically or electronically, removable electronic media and information resources output containing sensitive personal information [TxBCC 521.002] by indicating the ownership, distribution limitations, handling caveats, and applicable data categorizations.</p>
         </part>
       </add>
@@ -260,19 +313,22 @@
     <alter control-id="pe-6">
       <add position="ending">
         <prop name="tamus_required_by" value="2022-08-01"/>
-        <part name="tamus_implementation" id="pe-6_tamus">
+      </add>
+      <add position="after" by-id="pe-6_smt">
+        <part name="tamus_implementation" id="pe-6_tamus_smt">
           <p>Ensure audio-visual surveillance technology used to monitor physical access to information systems is used responsibly and within the intended scope of the purpose for such deployment, and transparent processes and controls are implemented for the use of such technology and any resulting recorded material.</p>
         </part>
       </add>
     </alter>
     <alter control-id="pe-18">
       <add position="ending">
+        <prop name="tamus_required_by" value="2021-09-13"/>
         <link rel="related" href="#cp-8"/>
         <link rel="related" href="#pe-11"/>
         <link rel="related" href="#pe-14"/>
-        <prop name="tamus_changed" value="true"/>
-        <prop name="tamus_required_by" value="2021-09-13"/>
-        <part name="tamus_implementation" id="pe-18_tamus">
+      </add>
+      <add position="after" by-id="pe-18_smt">
+        <part name="tamus_implementation" id="pe-18_tamus_smt">
           <part name="item" id="pe-18_tamus_smt.a">
             <prop name="label" value="a."/>
               <p>Consolidate all significant IT equipment into centralized member data center(s) or approved commercial data center.</p>
@@ -301,48 +357,32 @@
       </add>
     </alter>
     <alter control-id="pl-4">
-      <add position="starting">
-        <link rel="reference" href="#ac9542bc-0446-48f5-b565-a888d6b043a7"/>
-        <link rel="reference" href="#a444439a-d0c7-4d93-b98d-3eeb506f2a1e"/>
-      </add>
       <add position="ending">
         <prop name="tamus_required_by" value="2022-08-01"/>
-        <part name="tamus_implementation" id="pl-4_tamus">
-          <part name="item" id="pl-4_tamus_smt.a">
-            <prop name="label" value="a."/>
-            <p>Document acceptable use guidelines;</p>
-          </part>
-          <part name="item" id="pl-4_tamus_smt.b">
-            <prop name="label" value="b."/>
-            <p>Ensure users formally acknowledge, agree to abide by, and adhere to prudent and responsible Internet use practices (including reasonable personal use) outlined in Texas A&amp;M System Policy 33.04, Use of System Resources, and the organization's acceptable use guidelines;</p>
-          </part>
-          <part name="item" id="pl-4_tamus_smt.c">
-            <prop name="label" value="c."/>
-            <p>Establish a documented process for authorization to monitor member information resources, and</p>
-          </part>
-          <part name="item" id="pl-4_tamus_smt.d">
-            <prop name="label" value="d."/>
-            <p>Monitor information resources in accordance with Texas A&amp;M System Policy 29.01, Information Resources.</p>
-          </part>
+        <link rel="reference" href="#a444439a-d0c7-4d93-b98d-3eeb506f2a1e"/>
+      </add>
+      <add position="after" by-id="pl-4_tx_smt">
+        <part name="tamus_implementation" id="pl-4_tamus_smt">
+          <p>Ensure rules of behavior incorporate Texas A&amp;M System Policy 33.04, Use of System Resources, and the organization's acceptable use guidelines.</p>
         </part>
       </add>
     </alter>
     <alter control-id="pm-5">
-      <add position="starting">
+      <add position="ending">
+        <prop name="tamus_required_by" value="2022-08-01"/>
         <link rel="reference" href="#482e4c99-9dc4-41ad-bba8-0f3f0032c1f8"/>
         <link rel="reference" href="#1d635223-295d-4ac9-a117-9c7558cb9ea3"/>
         <link rel="reference" href="#7dbd6d9f-29d6-4d1d-9766-f2d77ff3c849"/>
       </add>
-      <add position="ending">
-        <prop name="tamus_required_by" value="2022-08-01"/>
-        <part name="tamus_implementation" id="pm-5_tamus">
+      <add position="after" by-id="pm-5_tx_smt">
+        <part name="tamus_implementation" id="pm-5_tamus_smt">
           <part name="item" id="pm-5_tamus_smt.a">
             <prop name="label" value="a."/>
             <p>Designate a single system of record for inventory of all information systems [SP 800-171] and network-attached operational technology [SP 800-37] owned or managed by the member;</p>
           </part>
           <part name="item" id="pm-5_tamus_smt.b">
             <prop name="label" value="b."/>
-            <p>Include any cloud computing services [SP 800-145] operated by the member in the inventory of information systems, and</p>
+            <p>Include any cloud computing services [SP 800-145] operated by the member in the inventory of organizational systems, and</p>
           </part>
           <part name="item" id="pm-5_tamus_smt.c">
             <prop name="label" value="c."/>
@@ -354,18 +394,20 @@
     <alter control-id="pm-14">
       <add position="ending">
         <prop name="tamus_required_by" value="2022-08-01"/>
-        <part name="tamus_implementation" id="pm-14_tamus">
+      </add>
+      <add position="after" by-id="pm-14_smt">
+        <part name="tamus_implementation" id="pm-14_tamus_smt">
           <p>Ensure an IT organization is designated to provide security monitoring for all information systems, in both centralized and decentralized IT environments, owned or managed by the organization.</p>
         </part>
       </add>
     </alter>
     <alter control-id="pt-3">
-      <add position="starting">
-        <link rel="reference" href="#5b23f2c5-4c42-4b0e-a75b-34af3bcafb10"/>
-      </add>
       <add position="ending">
         <prop name="tamus_required_by" value="2022-08-01"/>
-        <part name="tamus_implementation" id="pt-3_tamus">
+        <link rel="reference" href="#5b23f2c5-4c42-4b0e-a75b-34af3bcafb10"/>
+      </add>
+      <add position="after" by-id="pt-3_smt">
+        <part name="tamus_implementation" id="pt-3_tamus_smt">
           <p>Reduce, and eliminate where possible, the collection and/or use of sensitive personal information [TxBCC 521.002] in information resources under the control of the organization.</p>
         </part>
       </add>
@@ -373,15 +415,19 @@
     <alter control-id="ra-2">
       <add position="ending">
         <prop name="tamus_required_by" value="2022-08-01"/>
-        <part name="tamus_implementation" id="ra-2_tamus">
-          <p>Categorize information and information systems owned or managed by the organization using a data categorization structure that incorporates the guidance provided in xref:/data-categorization.adoc[Data Categorization], at a minimum.</p>
+      </add>
+      <add position="after" by-id="ra-2_tx_smt">
+        <part name="tamus_implementation" id="ra-2_tamus_smt">
+          <p>Categorize information and information systems owned or managed by the organization using a data categorization structure that incorporates the guidance provided in the Texas A&amp;M System <a href="https://cyber.tamus.edu/data-categorization">Data Categorization Standard</a>, at a minimum.</p>
         </part>
       </add>
     </alter>
     <alter control-id="sa-3">
       <add position="ending">
         <prop name="tamus_required_by" value="2022-08-01"/>
-        <part name="tamus_implementation" id="sa-3_tamus">
+      </add>
+      <add position="after" by-id="sa-3_tx_smt">
+        <part name="tamus_implementation" id="sa-3_tamus_smt">
           <p>The member information security officer reviews the data security requirements and specifications of any new information systems or services that process and/or store sensitive or high-impact information.</p>
         </part>
       </add>
@@ -389,47 +435,45 @@
     <alter control-id="sa-4">
       <add position="ending">
         <prop name="tamus_required_by" value="2022-08-01"/>
-        <part name="tamus_implementation" id="sa-4_tamus">
+      </add>
+      <add position="after" by-id="sa-4_tx_smt">
+        <part name="tamus_implementation" id="sa-4_tamus_smt">
+          <p>The member information security officer:</p>
           <part name="item" id="sa-4_tamus_smt.a">
-            <part name="label" value="a."/>
-            <p>The member information security officer:</p>
-            <part name="item" id="sa-4_tamus_smt.a.1">
+            <prop name="label" value="a."/>
+            <p>Reviews and approves the security requirements in acquisition contracts of any new information system that processes and/or stores sensitive or high-impact information prior to the member procuring the system or service, and</p>
+          </part>
+          <part name="item" id="sa-4_tamus_smt.b">
+            <prop name="label" value="b."/>
+            <p>Ensures acquisition contracts for information systems, system components, or information system services address information security, backup, and privacy requirements.</p>
+            <part name="item" id="sa-4_tamus_smt.b.1">
               <prop name="label" value="1."/>
-              <p>Reviews and approves the security requirements in acquisition contracts of any new information system that processes and/or stores sensitive or high-impact information prior to the member procuring the system or service, and</p>
+              <p>Such contracts should include right-to-audit and other provisions to provide appropriate assurance that applications and information are adequately protected.</p>
             </part>
-            <part name="item" id="sa-4_tamus_smt.a.2">
+            <part name="item" id="sa-4_tamus_smt.b.2">
               <prop name="label" value="2."/>
-              <p>Ensures acquisition contracts for information systems, system components, or information system services address information security, backup, and privacy requirements.</p>
-              <part name="item" id="sa-4_tamus_smt.a.2.a">
-                <prop name="label" value="(a)"/>
-                <p>Such contracts should include right-to-audit and other provisions to provide appropriate assurance that applications and information are adequately protected.</p>
-              </part>
-              <part name="item" id="sa-4_tamus_smt.a.2.b">
-                <prop name="label" value="(b)"/>
-                <p>Vendors and third parties adhere to all state and Federal laws and System policies pertaining to the protection of information resources and privacy of sensitive information.</p>
-              </part>
+              <p>Vendors and third parties adhere to all state and Federal laws and System policies pertaining to the protection of information resources and privacy of sensitive information.</p>
             </part>
           </part>
         </part>
       </add>
     </alter>
     <alter control-id="sc-13">
-      <add position="starting">
-        <link rel="reference" href="#678e3d6c-150b-4393-aec5-6e3481eb1e00"/>
-      </add>
       <add position="ending">
         <prop name="tamus_required_by" value="2022-08-01"/>
-        <part name="tamus_implementation" id="sc-13_tamus">
+      </add>
+      <add position="after" by-id="sc-13_tx_smt">
+        <part name="tamus_implementation" id="sc-13_tamus_smt">
           <p>Ensure that information systems owned or operated by the member implement FIPS-validated cryptography [FIPS 140-3].</p>
         </part>
       </add>
     </alter>
     <alter control-id="sc-21">
       <add position="ending">
-        <prop name="tamus_changed" value="true"/>
-        <prop name="tamus_new_requirement" value="true"/>
         <prop name="tamus_required_by" value="2022-12-19"/>
-        <part name="tamus_implementation" id="sc-21_tamus">
+      </add>
+      <add position="after" by-id="sc-21_smt">
+        <part name="tamus_implementation" id="sc-21_tamus_smt">
           <p>Require the implementation of a client-based secure domain name service (DNS) resolution client on all organization-controlled user endpoints.</p>
         </part>
       </add>
@@ -437,7 +481,9 @@
     <alter control-id="si-3">
       <add position="ending">
         <prop name="tamus_required_by" value="2022-08-01"/>
-        <part name="tamus_implementation" id="si-3_tamus">
+      </add>
+      <add position="after" by-id="si-3_smt">
+        <part name="tamus_implementation" id="si-3_tamus_smt">
           <part name="item" id="si-3_tamus_smt.a">
             <prop name="label" value="a."/>
             <p>Ensure all organization-owned or -managed information systems that connect to a system member network employ endpoint protection software and any other protective measures required by applicable policies or guidelines, and</p>
@@ -449,15 +495,19 @@
         </part>
       </add>
     </alter>
+    <alter control-id="si-4">
+      <add position="ending">
+        <prop name="tamus_required_by" value="2022-08-01"/>
+        <link rel="reference" href="#ac9542bc-0446-48f5-b565-a888d6b043a7"/>
+      </add>
+      <add position="after" by-id="si-4_tx_smt">
+        <part name="tamus_implementation" id="si-4_tamus_smt">
+          <p>Monitor information resources in accordance with Texas A&amp;M System Policy 29.01, Information Resources.</p>
+        </part>
+      </add>
+    </alter>
   </modify>
   <back-matter>
-    <resource uuid="f1093641-01d8-4436-b069-8d4807af95b4">
-      <title>1 TAC &#167; 202.76</title>
-      <citation>
-        <text>Title 1 Texas Administrative Code &#167; 202.76, Security Control Standards Catalog</text>
-      </citation>
-      <rlink href="https://texreg.sos.state.tx.us/public/readtac$ext.TacPage?sl=R&amp;app=9&amp;p_dir=&amp;p_rloc=&amp;p_tloc=&amp;p_ploc=&amp;pg=1&amp;p_tac=&amp;ti=1&amp;pt=10&amp;ch=202&amp;rl=76"/>
-    </resource>
     <resource uuid="eedcbb1f-0f8e-4efc-a02b-74c9fb8438cc">
       <title>CIS Benchmarks</title>
       <citation>
@@ -480,18 +530,18 @@
       <rlink href="https://nvd.nist.gov/ncp/repository"/>
     </resource>
     <resource uuid="5b23f2c5-4c42-4b0e-a75b-34af3bcafb10">
-      <title>Tx. Bus. &amp; Comm. Code &#167; 521.002</title>
+      <title>Tx. Bus. &amp; Comm. Code Sec. 521.002</title>
       <citation>
-        <text>Texas Business and Commerce Code &#167; 521.002, Unauthorized Use of Identifying Information: Definitions</text>
+        <text>Texas Business and Commerce Code Section 521.002, Unauthorized Use of Identifying Information: Definitions</text>
       </citation>
-      <rlink href="https://statutes.capitol.texas.gov/Docs/BC/htm/BC.521.htm"/>
+      <rlink href="https://statutes.capitol.texas.gov/Docs/BC/htm/BC.521.htm#521.002"/>
     </resource>
     <resource uuid="7b94d5e7-3a09-4790-8d5e-d50eefa003cc">
-      <title>Texas Security Control Standards Catalog</title>
+      <title>DIRCATALOG</title>
       <citation>
-        <text>Texas Security Control Standards Catalog, Version 2.0</text>
+        <text>Texas Security Control Standards Catalog, Version 2.1</text>
       </citation>
-      <prop name="version" ns="https://fedramp.gov/ns/oscal">Version 2.0</prop>
+      <prop name="version" ns="https://fedramp.gov/ns/oscal">Version 2.1</prop>
       <rlink href="https://dir.texas.gov/resource-library-item/security-control-standards-catalog"/>
     </resource>
     <resource uuid="ac9542bc-0446-48f5-b565-a888d6b043a7">

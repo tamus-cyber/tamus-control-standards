@@ -1013,6 +1013,7 @@ content; users are advised to consult the current version of the Texas Security 
         <prop name="tx_required_by" value="2023-07-20"/>
         <link rel="reference" href="#cc2b2eb0-aab0-4398-a8d6-ea7ba4533e60"/>
         <link rel="reference" href="#fb6e0926-a42a-4558-8067-b4095284bea8"/>
+        <link rel="reference" href="#83ae6cdf-d10a-445a-bf7e-120a7d95bc2e"/>
       </add>
       <add position="after" by-id="pl-4_smt">
         <part name="tx_implementation" id="pl-4_tx_smt">
@@ -1026,7 +1027,6 @@ content; users are advised to consult the current version of the Texas Security 
         <prop name="tx_privacy_baseline" value="true"/>
         <prop name="tx_new_requirement" value="true"/>
         <prop name="tx_required_by" value="2024-11-18"/>
-        <link rel="reference" href="#83ae6cdf-d10a-445a-bf7e-120a7d95bc2e"/>
       </add>
     </alter>
     <alter control-id="pl-10">
@@ -1287,6 +1287,7 @@ content; users are advised to consult the current version of the Texas Security 
         <prop name="tx_baseline" value="LOW"/>
         <prop name="tx_required_by" value="2023-07-20"/>
         <link rel="reference" href="#93e79b7a-bea9-4b7b-ba90-389e0a5215e3"/>
+        <link rel="reference" href="#93e79b7a-bea9-4b7b-ba90-389e0a5215e3"/>
       </add>
       <add position="after" by-id="ra-5_smt">
         <part name="tx_implementation" id="ra-5_tx_smt">
@@ -1299,7 +1300,6 @@ content; users are advised to consult the current version of the Texas Security 
         <prop name="tx_baseline" value="LOW"/>
         <prop name="tx_new_requirement" value="true"/>
         <prop name="tx_required_by" value="2024-11-18"/>
-        <link rel="reference" href="#93e79b7a-bea9-4b7b-ba90-389e0a5215e3"/>
       </add>
     </alter>
     <alter control-id="ra-5.11">

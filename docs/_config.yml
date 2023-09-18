@@ -29,7 +29,7 @@ logolinkurl: "https://cyber.tamus.edu" # the a link for the logo image
 #search: true
 
 # Build settings
-# theme: minima
+# theme: tamus-cyber-theme
 remote_theme: tamus-cyber/tamus-cyber-theme
 plugins:
   - jekyll-feed

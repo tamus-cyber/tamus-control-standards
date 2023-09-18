@@ -24,7 +24,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Texas A&M System Cybersecurity Standards provide system members with additional 
   guidance that enhances State-level requirements for implementing security controls.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://cyber-standards.tamus.edu" # the base hostname & protocol for your site, e.g. http://example.com
 logolinkurl: "https://cyber.tamus.edu" # the a link for the logo image
 #search: true
 

@@ -26,7 +26,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://cyber-standards.tamus.edu" # the base hostname & protocol for your site, e.g. http://example.com
 logolinkurl: "https://cyber.tamus.edu" # the a link for the logo image
-#search: true
+search: true
 
 # Build settings
 # theme: tamus-cyber-theme

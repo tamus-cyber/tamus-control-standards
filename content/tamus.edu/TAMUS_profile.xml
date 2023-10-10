@@ -3,9 +3,9 @@
 
   <metadata>
     <title>Texas A&amp;M University System Cybersecurity Control Standards</title>
-    <published>2023-07-24T11:45:00-0500</published>
-    <last-modified>2023-07-24T11:45:00-0500</last-modified>
-    <version>2.1.1</version>
+    <published>2023-10-10T08:30:00-0500</published>
+    <last-modified>2023-10-10T08:30:00-0500</last-modified>
+    <version>2.1.2</version>
     <oscal-version>1.0.0</oscal-version>
     <role id="prepared-by">
       <title>Document creator</title>
@@ -67,7 +67,7 @@
       </add>
       <add position="after" by-id="ac-8_tx_smt">
         <part name="tamus_implementation" id="ac-8_tamus_smt">
-          <p>Publish a privacy notice on websites owned by the organization which contains, at a minimum, the content contained on the Texas A&amp;M University System website at <a href="https://www.tamus.edu/marcomm/reports/privacy">https://www.tamus.edu/marcomm/reports/privacy</a>.</p>
+          <p>Publish a privacy notice on websites owned by the organization which contains, at a minimum, the content contained on or a link to the Texas A&amp;M University System online privacy standard at <a href="https://cyber-standards.tamus.edu/privacy-standard">https://cyber-standards.tamus.edu/privacy-standard</a>.</p>
         </part>
       </add>
     </alter>

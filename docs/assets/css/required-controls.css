@@ -24,6 +24,7 @@ h4 {
   text-decoration: none;
 }
 
-.required-controls .required-date {
+.required-controls .required-date,
+.required-controls .implementation-level {
   text-align: center;
 }

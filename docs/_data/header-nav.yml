@@ -8,6 +8,10 @@ nav-items:
     subfolderitems:
       - page: Required Control Standards Listing
         url: /catalog/required-controls
+      - page: Operational Technology Controls Listing
+        url: /catalog/ot-controls
+      - page: Control Standards Assessment Catalog
+        url: /catalog/audit-catalog
   - title: Guidelines
     id: guidelines-dropdown
     subfolderitems:

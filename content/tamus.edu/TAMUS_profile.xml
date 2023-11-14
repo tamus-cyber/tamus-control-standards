@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <profile xmlns="http://csrc.nist.gov/ns/oscal/1.0" uuid="9df8d574-aa73-4471-9639-d940aa9f2894">
-
   <metadata>
     <title>Texas A&amp;M University System Cybersecurity Control Standards</title>
     <published>2023-10-10T08:30:00-0500</published>
@@ -28,7 +27,7 @@
       <party-uuid>00cd4c91-5db6-45f4-8c15-343baed5fdf8</party-uuid>
     </responsible-party>
   </metadata>
-  <import href="#c66eb40a-ec3b-48f3-820f-7ab0506976eb">
+  <import href="#cbfa3b6d-3ecd-41a3-b33a-b26c33c0852d">
     <include-all/>
   </import>
   <merge>
@@ -583,10 +582,10 @@
       <doc-id type="doi">10.6028/NIST.SP.800-145</doc-id>
       <rlink href="https://doi.org/10.6028/NIST.SP.800-145"/>
     </resource>
-    <resource uuid="c66eb40a-ec3b-48f3-820f-7ab0506976eb">
-      <title>Texas Security Control Standards Catalog Profile</title>
+    <resource uuid="cbfa3b6d-3ecd-41a3-b33a-b26c33c0852d">
+      <title>Texas A&amp;M University System Operational Technology Security Control Standards Catalog Profile</title>
       <prop name="keep" value="always"/>
-      <rlink media-type="application/xml" href="../texas.gov/TX_DIR_resolved-profile_catalog.xml"/>
+      <rlink media-type="application/xml" href="./TAMUS_OT_resolved-profile_catalog.xml"/>
     </resource>
   </back-matter>
 </profile>

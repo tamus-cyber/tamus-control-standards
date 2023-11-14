@@ -31,6 +31,18 @@ mvn -f $POM_FILE \
 
 mvn -f $POM_FILE \
 	exec:java -Dexec.mainClass="$MAIN_CLASS" \
+	-Dexec.args="-t -s:tamus.edu/TAMUS_OT_profile.xml \
+-xsl:../../OSCAL/src/utils/util/resolver-pipeline/oscal-profile-RESOLVE.xsl \
+-o:tamus.edu/TAMUS_OT_resolved-profile_catalog.xml"
+
+mvn -f $POM_FILE \
+	exec:java -Dexec.mainClass="$MAIN_CLASS" \
 	-Dexec.args="-t -s:tamus.edu/TAMUS_profile.xml \
 -xsl:../../OSCAL/src/utils/util/resolver-pipeline/oscal-profile-RESOLVE.xsl \
 -o:tamus.edu/TAMUS_resolved-profile_catalog.xml"
+
+mvn -f $POM_FILE \
+	exec:java -Dexec.mainClass="$MAIN_CLASS" \
+	-Dexec.args="-t -s:tamus.edu/TAMUS_OT_baseline.xml \
+-xsl:../../OSCAL/src/utils/util/resolver-pipeline/oscal-profile-RESOLVE.xsl \
+-o:tamus.edu/TAMUS_OT_baseline_resolved-profile_catalog.xml"

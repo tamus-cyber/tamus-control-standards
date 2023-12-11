@@ -13,9 +13,9 @@ EOF
 
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd)"
 
-# Generate 800-53 Catalog
+# Generate 800-53A Catalog
 
-sh mvn-make-800-53-catalog-html.sh ../../tamus-control-standards/content/tamus.edu/TAMUS_resolved-profile_catalog.xml temp css-path=/dev/null
+sh mvn-make-catalog-html.sh ../../tamus-control-standards/content/tamus.edu/TAMUS_resolved-profile_catalog.xml temp css-path=/dev/null
 
 { echo '---\nlayout: catalog\ntitle: Cybersecurity Control Standards Catalog\ncustom-css: catalog.css\nredirect_from:\n  - /catalog/ac\n  - /catalog/at\n  - /catalog/au\n  - /catalog/ca\n  - /catalog/cm\n  - /catalog/cp\n  - /catalog/ia\n  - /catalog/ir\n  - /catalog/ma\n  - /catalog/mp\n  - /catalog/pe\n  - /catalog/pl\n  - /catalog/pm\n  - /catalog/ps\n  - /catalog/pt\n  - /catalog/ra\n  - /catalog/sa\n  - /catalog/sc\n  - /catalog/si\n  - /catalog/sr\n---\n'; cat temp; } > catalog.html
 
@@ -27,20 +27,6 @@ rm catalog.html--
 
 mv catalog.html ../../tamus-control-standards/docs/catalog/index.html
 
-# Generate 800-53A Catalog
-
-sh mvn-make-800-53A-catalog-html.sh ../../tamus-control-standards/content/tamus.edu/TAMUS_resolved-profile_catalog.xml temp css-path=/dev/null
-
-{ echo '---\nlayout: catalog\ntitle: Cybersecurity Control Standards Assessment Catalog\ncustom-css: catalog.css\nredirect_from:\n  - /catalog/ac\n  - /catalog/at\n  - /catalog/au\n  - /catalog/ca\n  - /catalog/cm\n  - /catalog/cp\n  - /catalog/ia\n  - /catalog/ir\n  - /catalog/ma\n  - /catalog/mp\n  - /catalog/pe\n  - /catalog/pl\n  - /catalog/pm\n  - /catalog/ps\n  - /catalog/pt\n  - /catalog/ra\n  - /catalog/sa\n  - /catalog/sc\n  - /catalog/si\n  - /catalog/sr\n---\n'; cat temp; } > catalog.html
-
-rm temp
-
-sed -i -- '/dev\/null/d' catalog.html
-
-rm catalog.html--
-
-mv catalog.html ../../tamus-control-standards/docs/catalog/audit-catalog.html
-
 # Generate required controls listing
 
 sh mvn-make-required-controls-html.sh ../../tamus-control-standards/content/tamus.edu/TAMUS_resolved-profile_catalog.xml temp css-path=/dev/null
@@ -50,13 +36,3 @@ sh mvn-make-required-controls-html.sh ../../tamus-control-standards/content/tamu
 rm temp
 
 mv required-controls.html ../../tamus-control-standards/docs/catalog
-
-# Generate OT controls listing
-
-sh mvn-make-ot-controls-html.sh ../../tamus-control-standards/content/tamus.edu/TAMUS_OT_baseline_resolved-profile_catalog.xml temp css-path=/dev/null
-
-{ echo '---\nlayout: full-width\ntitle: Operational Technology Control Standards Listing\ncustom-css: required-controls.css\n---\n'; cat temp; } > ot-controls.html
-
-rm temp
-
-mv ot-controls.html ../../tamus-control-standards/docs/catalog

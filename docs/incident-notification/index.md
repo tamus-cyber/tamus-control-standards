@@ -3,17 +3,17 @@ layout: full-width
 title: Incident Notification Guidelines
 ---
 
-**These guidelines are effective April 15, 2022.**
+**These guidelines are effective January 9, 2024.**
 
-This document provides guidance to Texas A&M University System institutions and agencies for submitting incident notifications to the Texas A&M System Office of Cybersecurity.
+This document provides guidance to Texas A&M University System members for submitting incident notifications to Texas A&M System Cybersecurity.
 
-Title 1 Texas Administrative Code §202.1 defines "security incident" as "an event which results in the accidental or deliberate unauthorized access, loss, disclosure, modification, disruption, or destruction of information or information resources.[^1]" Texas A&M System cyber security control standard IR-6 requires system members to notify the System Office of Cybersecurity and consult with the System Chief Information Security Officer regarding information security incidents involving their information and information systems, whether managed by the agency/institution, contractor, or other source. This includes privacy incidents that do not impact information systems and any incidents involving industrial control systems or operational technology.
+Title 1 Texas Administrative Code §202.1 defines "security incident" as "an event which results in the accidental or deliberate unauthorized access, loss, disclosure, modification, disruption, or destruction of information or information resources.[^1]" Texas A&M System cybersecurity control standard IR-6 requires system members to notify Texas A&M System Cybersecurity and consult with the System Chief Information Security Officer regarding information security incidents involving their information and information systems, whether managed by the member, contractor, or other source. This includes privacy incidents that do not impact information systems and any incidents involving industrial control systems or operational technology.
 
-These guidelines support the Texas A&M System Office of Cybersecurity in executing its mission objectives and provide the following benefits:
+These guidelines support Texas A&M System Cybersecurity in executing its mission objectives and provide the following benefits:
 
 * **Greater quality of information** – Alignment with incident reporting and handling guidance from NIST 800-61 Revision 2 [^2] to introduce functional, informational, and recoverability impact classifications
 
-* **Improved information sharing and situational awareness** – Establishing a 4-hour notification time frame for all incidents to improve the System Office of Cybersecurity’s ability to understand cybersecurity events affecting the system and make timely required notifications to other system offices
+* **Improved information sharing and situational awareness** – Establishing an 12-hour notification timeframe for all incidents to improve Texas A&M System Cybersecurity’s ability to understand cybersecurity events affecting the system and make timely required notifications to other system offices
 
 * **Faster incident response times** – Moving cause analysis to the closing phase of the incident handling process to expedite initial notification
 
@@ -21,9 +21,9 @@ These guidelines support the Texas A&M System Office of Cybersecurity in executi
 
 System members must report information security incidents where the confidentiality, integrity, or availability of a major system-owned or -managed information system, or a system processing confidential information, is potentially compromised.
 
-System members shall notify the System Office of Cybersecurity with the required data elements, as well as any other available information, within **12 hours** of being identified by the member or the Security Operations Center (SOC).
+System members shall notify Texas A&M System Cybersecurity with the required data elements, as well as any other available information, within **12 hours** of being identified by the member or Texas A&M System Cyber Operations.
 
-System members determine which officials of the member institution are to be notified of an incident, but must include the following notifications within **24 hours** of being identified by the member or the Security Operations Center (SOC):
+System members determine which officials of the member institution are to be notified of an incident, but must include the following notifications within **24 hours** of being identified by the member or Texas A&M System Cyber Operations:
 
 1. Agency Director/University President or designee
 
@@ -41,7 +41,7 @@ In some cases, it may not be feasible to have complete and validated information
 
 ## Submitting Incident Notifications
 
-The information elements described in steps 1-5 below are required when notifying the System Office of Cybersecurity of an incident:
+The information elements described in steps 1-6 below are required when notifying Texas A&M System Cybersecurity of an incident:
 
 1. Identify the current level of impact on system member functions or services (Functional Impact)
 
@@ -49,11 +49,15 @@ The information elements described in steps 1-5 below are required when notifyin
 
 3. Estimate the scope of time and resources needed to recover from the incident (Recoverability)
 
-4. Identify when the activity was first detected
+4. Identify when the activity was first detected (Date of Detection)
 
-5. Identify point of contact information for additional follow-up
+5. Identify the number of systems, records, and users impacted (Number of Systems Affected)
 
-Submit the notification to the System Office of Cybersecurity via the [Information Security Incident Reporting Portal](https://cyber-infosharing.tamus.edu).
+6. Identify the location(s) (campus, building, room, logical network, etc.) impacted (Location)
+
+7. Provide any threat indicators, including signatures, IPs, emails, domains, etc. developed in relationship to the incident (Threat Indicators)
+
+Submit the notification to Texas A&M System Cybersecurity via the [TAMUS ISAO Portal](https://portal.cyber.tamus.edu). Detailed instructions are provided on the [How to Submit an Incident](/incident-notification/submit-incident) page. Once the incident report is reviewed, you will either receive via the TAMUS ISAO Portal a Request for Information alert if more information is needed or a Messenger message acknowledging receipt of the incident report.
 
 ## Impact Category Descriptions
 
@@ -69,11 +73,11 @@ The table below defines each impact category description and its associated seve
 
 ## Reporting Contact Information
 
-* [Information Security Incident Reporting Portal](https://cyber-infosharing.tamus.edu)
+* [TAMUS ISAO Portal](https://portal.cyber.tamus.edu)
 
-* Supplemental Info / Indicators of Compromise: [contact@cyber.tamus.edu](mailto:contact@cyber.tamus.edu) ([PGP/GPG Key for Encrypted Email](https://it.tamus.edu/cybersecurity/soc/contact))
+* Supplemental Info / Indicators of Compromise: [contact@cyber.tamus.edu](mailto:contact@cyber.tamus.edu) ([PGP/GPG Key for Encrypted Email](https://cyber.tamus.edu/contact))
 
-* Cybersecurity Operations Service Desk: (979) 234-0030 Opt. 5
+* Cyber Operations Watch Officer: (979) 234-0030 Opt. 3
 
 ## Footnotes
 

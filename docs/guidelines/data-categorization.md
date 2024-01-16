@@ -1,6 +1,7 @@
 ---
 layout: full-width
 title: Data Categorization
+redirect_from: /data-categorization
 ---
 
 _“State institutions of higher education are responsible for defining all information classification categories except the Confidential Information category, which is defined in Subchapter A of this chapter, and establishing the controls for each” (1 Tex. Admin. Code § 202.74(b)(1)).[^1]_

@@ -11,10 +11,12 @@ nav-items:
   - title: Guidelines
     id: guidelines-dropdown
     subfolderitems:
+      - page: Artificial Intelligence
+        url: /guidelines/ai
       - page: Data Categorization
-        url: /data-categorization
+        url: /guidelines/data-categorization
       - page: Incident Notification
-        url: /incident-notification
+        url: /guidelines/incident-notification
   - title: Resources
     id: resources-dropdown
     subfolderitems:

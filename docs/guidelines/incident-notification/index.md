@@ -1,6 +1,7 @@
 ---
 layout: full-width
 title: Incident Notification Guidelines
+redirect_from: /incident-notification
 ---
 
 **These guidelines are effective January 9, 2024.**

@@ -1,6 +1,7 @@
 ---
 layout: full-width
 title: How to Submit an Incident
+redirect_from: incident-notification/submit-incident
 ---
 
 1. Log into the TAMUS ISAO Portal at https://portal.cyber.tamus.edu.

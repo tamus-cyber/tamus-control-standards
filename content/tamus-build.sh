@@ -26,11 +26,11 @@ MAIN_CLASS="net.sf.saxon.Transform" # Saxon defined in pom.xml
 mvn -f $POM_FILE \
 	exec:java -Dexec.mainClass="$MAIN_CLASS" \
 	-Dexec.args="-t -s:texas.gov/TX_DIR_profile.xml \
--xsl:../../OSCAL/src/utils/util/resolver-pipeline/oscal-profile-RESOLVE.xsl \
+-xsl:../../OSCAL/src/utils/resolver-pipeline/oscal-profile-RESOLVE.xsl \
 -o:texas.gov/TX_DIR_resolved-profile_catalog.xml"
 
 mvn -f $POM_FILE \
 	exec:java -Dexec.mainClass="$MAIN_CLASS" \
 	-Dexec.args="-t -s:tamus.edu/TAMUS_profile.xml \
--xsl:../../OSCAL/src/utils/util/resolver-pipeline/oscal-profile-RESOLVE.xsl \
+-xsl:../../OSCAL/src/utils/resolver-pipeline/oscal-profile-RESOLVE.xsl \
 -o:tamus.edu/TAMUS_resolved-profile_catalog.xml"

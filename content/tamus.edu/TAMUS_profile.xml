@@ -2,11 +2,11 @@
 <profile xmlns="http://csrc.nist.gov/ns/oscal/1.0" uuid="9df8d574-aa73-4471-9639-d940aa9f2894">
 
   <metadata>
-    <title>Texas A&amp;M University System Cybersecurity Control Standards</title>
+    <title>Texas A&amp;M University System Security Control Standards Catalog</title>
     <published>2023-10-10T08:30:00-0500</published>
     <last-modified>2023-10-10T08:30:00-0500</last-modified>
     <version>2.1.2</version>
-    <oscal-version>1.0.0</oscal-version>
+    <oscal-version>1.1.1</oscal-version>
     <role id="prepared-by">
       <title>Document creator</title>
     </role>

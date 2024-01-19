@@ -37,7 +37,7 @@
       <tr>
         <td class="{ $controlClass }">
           <a class="control-title" href="/catalog#{ $controlId }">
-            <xsl:value-of select="prop[@name='label'][1]/@value"/><xsl:text> </xsl:text><xsl:value-of select="title"/>
+            <xsl:value-of select="prop[@name='alt-identifier'][@class='sp800-53a']/@value"/><xsl:text> </xsl:text><xsl:value-of select="title"/>
           </a>
         </td>
         <td class="required-date { $txNewRequirementClass }">

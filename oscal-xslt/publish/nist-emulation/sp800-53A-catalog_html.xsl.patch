@@ -1,5 +1,5 @@
 diff --git a/publish/nist-emulation/sp800-53A-catalog_html.xsl b/publish/nist-emulation/sp800-53A-catalog_html.xsl
-index 1b7dfe9..b2fbfdf 100644
+index 1b7dfe9..0b9a8b1 100644
 --- a/publish/nist-emulation/sp800-53A-catalog_html.xsl
 +++ b/publish/nist-emulation/sp800-53A-catalog_html.xsl
 @@ -93,7 +93,7 @@
@@ -38,7 +38,27 @@ index 1b7dfe9..b2fbfdf 100644
                 <xsl:when test="$withdrawn-to/@rel = 'incorporated-into'">: Incorporated into </xsl:when>
                 <xsl:otherwise>: Moved to </xsl:otherwise>
              </xsl:choose>
-@@ -607,8 +609,150 @@
+@@ -495,8 +497,17 @@
+    
+    <xsl:template match="param/label">
+       <span class="unassigned">
+-         <xsl:text>[Assignment: </xsl:text>
+-         <xsl:apply-templates/>
++         <xsl:text>[</xsl:text>
++         <xsl:choose>
++            <xsl:when test="exists(../constraint)">
++               <xsl:text>TAMUS Assignment: </xsl:text>
++               <xsl:value-of select="../constraint/description/p"/>
++            </xsl:when>
++            <xsl:otherwise>
++               <xsl:text>Assignment: </xsl:text>
++               <xsl:apply-templates/>
++            </xsl:otherwise>
++         </xsl:choose>
+          <xsl:text>]</xsl:text>
+       </span>
+    </xsl:template>
+@@ -607,8 +618,150 @@
     
     <xsl:template match="control" mode="link">
        <a href="#{@id}">

@@ -1,63 +1,53 @@
 diff --git a/publish/nist-emulation/sp800-53A-catalog_html.xsl b/publish/nist-emulation/sp800-53A-catalog_html.xsl
-index 1b7dfe9..529d908 100644
+index 1b7dfe9..b2fbfdf 100644
 --- a/publish/nist-emulation/sp800-53A-catalog_html.xsl
 +++ b/publish/nist-emulation/sp800-53A-catalog_html.xsl
-@@ -610,5 +610,197 @@
-          <xsl:value-of select="prop[@name='label']/@value"/>
+@@ -93,7 +93,7 @@
+    
+    <xsl:template name="control-label">
+       <span class="label">
+-         <xsl:apply-templates mode="part-number" select="prop[@name = 'label'][1]"/>
++         <xsl:apply-templates mode="part-number" select="prop[@name='alt-identifier'][@class='sp800-53a']/@value"/>
+       </span>
+    </xsl:template>
+    
+@@ -136,7 +136,7 @@
+    <xsl:template match="control/title"/>
+    
+    <!-- Pulled into title -->
+-   <xsl:template match="control/prop[@name='label']"/>
++   <xsl:template match="control/prop[@name='alt-identifier']"/>
+    
+    <xsl:template name="make-title">
+       <xsl:param name="runins" select="/text()"/>
+@@ -208,6 +208,8 @@
+    
+    <xsl:template match="part[@name=('assessment','assessment-method')]/prop[@name='method']"/>   
+    
++   <xsl:template match="part[@name=('assessment-objective','assessment-method')]/prop[@name='alt-identifier']"/>   
++
+    <xsl:template match="part[@name=('assessment','assessment-objects')]/p">
+       <p>
+          <xsl:copy-of select="@*"/>
+@@ -386,7 +388,7 @@
+          <xsl:variable name="withdrawn-to" select="../link[@rel = ('moved-to', 'incorporated-into')]"/>
+          <xsl:variable name="link-label">
+             <xsl:choose>
+-               <xsl:when test="empty($withdrawn-to)">. </xsl:when>
++               <xsl:when test="empty($withdrawn-to)">.</xsl:when>
+                <xsl:when test="$withdrawn-to/@rel = 'incorporated-into'">: Incorporated into </xsl:when>
+                <xsl:otherwise>: Moved to </xsl:otherwise>
+             </xsl:choose>
+@@ -607,8 +609,150 @@
+    
+    <xsl:template match="control" mode="link">
+       <a href="#{@id}">
+-         <xsl:value-of select="prop[@name='label']/@value"/>
++         <xsl:value-of select="prop[@name='alt-identifier'][@class='sp800-53a']/@value"/>
        </a>
     </xsl:template>
 +
 +<!-- TAMUS ADDED CONTENT BELOW HERE -->
-+
-+  <xsl:template priority="1" match="metadata" mode="metadata">
-+      <section class="metadata">
-+         <details>
-+            <summary><span class="lbl">OSCAL Catalog Metadata</span></summary>
-+            <xsl:apply-templates select="published, last-modified, version, oscal-version, doc-id, prop, link"/>
-+            <!--
-+            <xsl:for-each-group select="role" group-by="true()">
-+               <div class="block roles">
-+                  <xsl:apply-templates select="current-group()"/>
-+               </div>
-+            </xsl:for-each-group>
-+            <xsl:for-each-group select="party" group-by="true()">
-+               <div class="block parties">
-+                  <xsl:apply-templates select="current-group()"/>
-+               </div>
-+            </xsl:for-each-group>
-+            -->
-+            <!-- responsibile-parties elements bind parties to roles, handled with parties -->
-+            <xsl:apply-templates select="remarks"/>
-+         </details>
-+      </section>
-+   </xsl:template>
-+
-+   <xsl:template priority="1" match="published">
-+      <p><span class="inline-head">Published Date</span>
-+         <xsl:text>: </xsl:text>
-+         <xsl:value-of select="."/>
-+      </p>
-+   </xsl:template>
-+
-+   <xsl:template priority="1" match="last-modified">
-+      <p><span class="inline-head">Last Substantively Modified Date</span>
-+         <xsl:text>: </xsl:text>
-+         <xsl:value-of select="."/>
-+      </p>
-+   </xsl:template>
-+
-+   <xsl:template priority="1" match="version">
-+      <p><span class="inline-head">Version</span>
-+         <xsl:text>: </xsl:text>
-+         <xsl:value-of select="."/>
-+      </p>
-+   </xsl:template>
-+
-+   <xsl:template priority="1" match="oscal-version"/>
-+
-+   <xsl:template priority="1" match="role"/>
-+
-+   <xsl:template priority="1" match="party"/>
 +
 +   <xsl:template priority="3" match="control/prop[@name='implementation-level']">
 +      <xsl:copy-of select="@id"/>

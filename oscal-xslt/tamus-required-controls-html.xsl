@@ -54,9 +54,6 @@
         <td class="implementation-level">
           <xsl:value-of select="substring(prop[@name='tx_baseline']/@value,1,1)"/>
         </td>
-        <td class="implementation-level">
-          <xsl:value-of select="substring(prop[@name='tamus_baseline']/@value,1,1)"/>
-        </td>
       </tr>
     </xsl:if>
   </xsl:template>
@@ -70,7 +67,6 @@
         <th class="required-date">TAMUS Required By</th>
         <th class="implementation-level">Org/System Control</th>
         <th class="implementation-level">DIR Baseline</th>
-        <th class="implementation-level">TAMUS Baseline</th>
       </tr>
       <xsl:for-each select="catalog/group">
         <xsl:variable name="familyId" select="@id"/>

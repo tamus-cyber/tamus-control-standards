@@ -371,8 +371,29 @@
                 <prop name="label" value="4."/>
                   <p>adequate physical and cybersecurity as specified in the PE and SC families.</p>
               </part>
+              <p>and may also provide:</p>
+              <part name="item" id="pe-18_tamus_smt.c.1">
+                <prop name="label" value="1."/>
+                  <p>operating system setup and administration (including virtualized);</p>
+              </part>
+              <part name="item" id="pe-18_tamus_smt.c.2">
+                <prop name="label" value="2."/>
+                  <p>backup and recovery;</p>
+              </part>
+              <part name="item" id="pe-18_tamus_smt.c.3">
+                <prop name="label" value="3."/>
+                  <p>storage management;</p>
+              </part>
+              <part name="item" id="pe-18_tamus_smt.c.4">
+                <prop name="label" value="4."/>
+                  <p>configuration and patch management, and</p>
+              </part>
+              <part name="item" id="pe-18_tamus_smt.c.3">
+                <prop name="label" value="3."/>
+                  <p>other managed services.</p>
+              </part>
+            </part>
           </part>
-        </part>
       </add>
     </alter>
     <alter control-id="pl-4">

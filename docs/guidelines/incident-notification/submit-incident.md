@@ -36,7 +36,7 @@ redirect_from: incident-notification/submit-incident
 
 	k. Threat Indicators: Provide any threat indicators, including signatures, IPs, emails, domains, etc. developed in relationship to the incident
 
-	l. Would you like to provide attribution for this form: Leave this box unchecked
+	l. Would you like to provide attribution for this form: **Check this box** (this enables TAMUS Cyber analysts to identify who submitted the incident)
 
 5. Enter the following additional information (if known) and click **Next**:
 

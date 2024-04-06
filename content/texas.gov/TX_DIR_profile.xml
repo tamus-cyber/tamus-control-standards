@@ -7,7 +7,7 @@ content; users are advised to consult the current version of the Texas Security 
     <published>2023-05-18T00:00:00-0600</published>
     <last-modified>2023-06-26T00:00:00-0600</last-modified>
     <version>2.1</version>
-    <oscal-version>1.1.1</oscal-version>
+    <oscal-version>1.1.2</oscal-version>
     <role id="prpared-by">
       <title>Document creator</title>
     </role>

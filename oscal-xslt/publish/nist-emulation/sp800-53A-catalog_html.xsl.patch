@@ -1,8 +1,27 @@
 diff --git a/publish/nist-emulation/sp800-53A-catalog_html.xsl b/publish/nist-emulation/sp800-53A-catalog_html.xsl
-index 1b7dfe9..299bd83 100644
+index 1b7dfe9..f334665 100644
 --- a/publish/nist-emulation/sp800-53A-catalog_html.xsl
 +++ b/publish/nist-emulation/sp800-53A-catalog_html.xsl
-@@ -93,7 +93,7 @@
+@@ -40,7 +40,17 @@
+    
+    <xsl:template match="control">
+       <xsl:variable name="withdrawn" select="some $p in (prop[@name='status']) satisfies matches($p/@value,'Withdrawn','i')"/>
+-      <div class="control{ $withdrawn[boolean(.)] ! ' withdrawn' }">
++      <xsl:variable name="required">
++         <xsl:choose>
++            <xsl:when test="exists(prop[@name = 'tx_required_by']) or exists(prop[@name = 'tamus_required_by'])">
++               <xsl:text>required</xsl:text>
++            </xsl:when>
++            <xsl:otherwise>
++               <xsl:text>not_required</xsl:text>
++            </xsl:otherwise>
++         </xsl:choose>
++      </xsl:variable>
++      <div class="control{ $withdrawn[boolean(.)] ! ' withdrawn' } { $required }">
+          <xsl:copy-of select="@id"/>
+          <details>
+             <!-- Keeping control enhancements closed -->
+@@ -93,7 +103,7 @@
     
     <xsl:template name="control-label">
        <span class="label">
@@ -11,7 +30,17 @@ index 1b7dfe9..299bd83 100644
        </span>
     </xsl:template>
     
-@@ -386,7 +386,7 @@
+@@ -118,9 +128,6 @@
+                   select="if ($count-of-things = 1) then $sg else $pl"/>
+             </span>
+             <xsl:text> </xsl:text>
+-            <span class="count">
+-               <xsl:value-of select="if ($count-of-things eq 0) then ' None' else $count-of-things"/>
+-            </span>
+          </summary>
+          <xsl:apply-templates select="$things"/>
+       </details>
+@@ -386,7 +393,7 @@
           <xsl:variable name="withdrawn-to" select="../link[@rel = ('moved-to', 'incorporated-into')]"/>
           <xsl:variable name="link-label">
              <xsl:choose>
@@ -20,7 +49,7 @@ index 1b7dfe9..299bd83 100644
                 <xsl:when test="$withdrawn-to/@rel = 'incorporated-into'">: Incorporated into </xsl:when>
                 <xsl:otherwise>: Moved to </xsl:otherwise>
              </xsl:choose>
-@@ -611,4 +611,151 @@
+@@ -611,4 +618,151 @@
        </a>
     </xsl:template>
     

@@ -24,6 +24,8 @@ nav-items:
         url: https://doi.org/10.6028/NIST.FIPS.199
       - page: Identity Role Examples
         url: /identity-roles
+      - page: Impact Calculator
+        url: https://it.tamu.edu/community/tools/impact-calculator.php
       - page: Online Privacy Standard
         url: /privacy-standard
       - page: Terminology Glossary

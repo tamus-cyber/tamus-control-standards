@@ -28,5 +28,7 @@ nav-items:
         url: https://it.tamu.edu/community/tools/impact-calculator.php
       - page: Online Privacy Standard
         url: /privacy-standard
+      - page: Prohibited Technologies
+        url: /prohibited-technologies
       - page: Terminology Glossary
         url: /glossary

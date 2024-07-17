@@ -4,15 +4,14 @@ title: How to Submit an Incident
 redirect_from: incident-notification/submit-incident
 ---
 
-1. Log into the TAMUS ISAO Portal at https://portal.cyber.tamus.edu.
+{% include important.html content="This content is updated as of July 17, 2024." %}
 
-2. Click **+ New** and select **Share Threat Intel**.
+1. Log into the TAMUS ISAO Portal at [https://portal.cyber.tamus.edu](https://portal.cyber.tamus.edu).
+
+2. Click **+ New** and select **Submit Incident Report**.
 ![Step 1](/assets/images/submit-incident/step-1.png)
 
-3. Select **TAMUS Cyber Incident Report** from the Category drop-down and click **Next**.
-![Step 2](/assets/images/submit-incident/step-2.png)
-
-4. Enter the following basic details for the incident and click **Next**:
+3. Enter the following basic details for the incident and click **Next**:
 
 	a. Title: A short title that identifies the nature of the incident
 
@@ -20,46 +19,28 @@ redirect_from: incident-notification/submit-incident
 
 	c. TLP: Designate the incident TLP:RED unless instructed otherwise
 
-	d. Affected Member(s): Select the affected system member(s)
+4. Enter the following additional information and click **Next**:
 
-	e. Functional Impact: Identify the current level of impact on system member functions or services; refer to the chart on the [Incident Notification Guidelines](/incident-notification) page for a detailed explanation of the options
+	a. Affected Member(s): Select the affected system member(s)
 
-	f. Information Impact: Identify the type of information lost, compromised, or corrupted; refer to the chart on the [Incident Notification Guidelines](/incident-notification) page for a detailed explanation of the options
+	b. Functional Impact: Identify the current level of impact on system member functions or services; refer to the chart on the [Incident Notification Guidelines](/incident-notification) page for a detailed explanation of the options
 
-	g. Recoverability: Estimate the scope of time and resources needed to recover from the incident; refer to the chart on the [Incident Notification Guidelines](/incident-notification) page for a detailed explanation of the options
+	c. Information Impact: Identify the type of information lost, compromised, or corrupted; refer to the chart on the [Incident Notification Guidelines](/incident-notification) page for a detailed explanation of the options
 
-	h. Date of Detection: The date/time the activity was first detected
+	d. Recoverability: Estimate the scope of time and resources needed to recover from the incident; refer to the chart on the [Incident Notification Guidelines](/incident-notification) page for a detailed explanation of the options
 
-	i. Number of Systems Affected: Identify the number of systems, records, and users impacted
+	e. Attack Vector(s): Any known method(s) used by the threat actor to effect the incident
 
-	j. Location: Identify the location(s) (campus, building, room, logical network, etc.) impacted
+	f. Risk to Research Activities or Data: Check this box if any research activities or data were impacted due to the incident
 
-	k. Threat Indicators: Provide any threat indicators, including signatures, IPs, emails, domains, etc. developed in relationship to the incident
+	g. Date of Detection: The date/time the activity was first detected
 
-	l. Would you like to provide attribution for this form: **Check this box** (this enables TAMUS Cyber analysts to identify who submitted the incident)
+	h. Number of Systems Affected: Identify the number of systems, records, and users impacted
 
-5. Enter the following additional information (if known) and click **Next**:
+	i. Location: Identify the location(s) (campus, building, room, logical network, etc.) impacted
 
-	a. Additional Info: Provide any additional information not already provided in the Description field; this may be in-depth technical information or other data not needed in the incident narrative
+	j. Threat Indicators: Provide any threat indicators, including signatures, IPs, emails, domains, etc. developed in relationship to the incident
 
-	b. Attack Vector(s): Any known method(s) used by the threat actor to effect the incident
+5. Attach any supporting documents/images and click **Next**.
 
-	c. Risk to Research Activities or Data: Check this box if any research activities or data were impacted due to the incident
-
-	d. Incident Date: The original incident start date/time, if known
-
-	e. Root Cause: Any known root cause(s) that enabled the attack
-
-	f. Threat Actor: Any known classifications of the threat actor
-
-	g. Detection Method: Method(s) by which the attack was detected
-
-	h. Products: Affected hardware/software/cloud products impacted by the incident
-
-	i. Ports/Services Attacked: Any known ports or services used by the threat actor to gain access to impacted systems
-
-	j. Response Action: Actions taken by the member to contain, erradicate and recover from the incident
-
-6. Attach any supporting documents/images and click **Next**.
-
-7. Preview the information to be submitted in the incident report and click **Submit**.
+6. Preview the information to be submitted in the incident report and click **Submit**.

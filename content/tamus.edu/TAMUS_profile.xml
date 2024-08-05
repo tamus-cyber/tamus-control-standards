@@ -67,7 +67,7 @@
       </add>
       <add position="after" by-id="ac-8_tx_smt">
         <part name="tamus_implementation" id="ac-8_tamus_smt">
-          <p>Publish a privacy notice on websites owned by the organization which contains, at a minimum, the content contained on or a link to the Texas A&amp;M University System online privacy standard at <a href="https://cyber-standards.tamus.edu/privacy-standard/">https://cyber-standards.tamus.edu/privacy-standard</a>.</p>
+          <p>Publish a privacy notice on websites owned by the organization which contains, at a minimum, the content contained on or a link to the Texas A&amp;M University System online privacy standard at <a href="https://cyber.tamus.edu/policy/resources/privacy-standard/">https://cyber.tamus.edu/policy/resources/privacy-standard</a>.</p>
         </part>
       </add>
     </alter>
@@ -306,7 +306,7 @@
       </add>
       <add position="after" by-id="ir-6_tx_smt">
         <part name="tamus_implementation" id="ir-6_tamus_smt">
-          <p>Report information security incidents where the confidentiality, integrity, or availability of a moderate or high-impact organization-owned or -operated information system, or a system processing confidential information, is potentially compromised to the Texas A&amp;M University System Cybersecurity Operations Center using the guidance in the <a href="https://cyber-standards.tamus.edu/incident-notification/">Incident Notification Process</a>, unless a law enforcement agency determines such a notification will impede a criminal investigation.</p>
+          <p>Report information security incidents where the confidentiality, integrity, or availability of a moderate or high-impact organization-owned or -operated information system, or a system processing confidential information, is potentially compromised to the Texas A&amp;M University System Cybersecurity Operations Center using the guidance in the <a href="https://cyber.tamus.edu/policy/guidelines/incident-notification/">Incident Notification Process</a>, unless a law enforcement agency determines such a notification will impede a criminal investigation.</p>
         </part>
       </add>
     </alter>
@@ -458,7 +458,7 @@
       </add>
       <add position="after" by-id="ra-2_tx_smt">
         <part name="tamus_implementation" id="ra-2_tamus_smt">
-          <p>Categorize information and information systems owned or managed by the organization using a data categorization structure that incorporates the guidance provided in the Texas A&amp;M System <a href="https://cyber-standards.tamus.edu/data-categorization/">Data Categorization Standard</a>, at a minimum.</p>
+          <p>Categorize information and information systems owned or managed by the organization using a data categorization structure that incorporates the guidance provided in the Texas A&amp;M System <a href="https://cyber.tamus.edu/policy/guidelines/data-categorization/">Data Categorization Standard</a>, at a minimum.</p>
         </part>
       </add>
     </alter>

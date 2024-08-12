@@ -316,7 +316,7 @@
       </add>
       <add position="after" by-id="ia-12.2_smt">
         <part name="tamus_implementation" id="ia-12.2_tamus_smt">
-          <p>Identity evidence shall be an identification card containing the bearer’s photograph, issued by a federal or state government authority of the United States, to include members of the Texas A&M University System; a visa issued by the U.S. Department of State, or a foreign passport issued by a Visa Waiver Program participating country.</p>
+          <p>Identity evidence shall be an identification card containing the bearer’s photograph, issued by a federal or state government authority of the United States, to include members of the Texas A&amp;M University System; a visa issued by the U.S. Department of State, or a foreign passport issued by a Visa Waiver Program participating country.</p>
         </part>
       </add>
     </alter>

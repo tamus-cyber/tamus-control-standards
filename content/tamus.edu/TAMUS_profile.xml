@@ -55,11 +55,6 @@
       <add position="ending">
         <prop name="tamus_required_by" value="2022-08-01"/>
       </add>
-      <add position="after" by-id="ac-3.7_smt">
-        <part name="tamus_implementation" id="ac-3.7_tamus_smt">
-          <p>Implement role-based (e.g., students, employees, third parties, guests) access control or adopt an InCommon Federation assurance profile roles, where possible.</p>
-        </part>
-      </add>
     </alter>
     <alter control-id="ac-8">
       <add position="ending">

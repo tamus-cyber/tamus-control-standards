@@ -284,6 +284,7 @@
     <alter control-id="ia-5.9">
       <add position="ending">
         <prop name="tamus_required_by" value="2025-01-01"/>
+        <prop name="tamus_new_requirement" value="true"/>
       </add>
       <add position="after" by-id="ia-5.9_smt">
         <part name="tamus_implementation" id="ia-5.9_tamus_smt">
@@ -311,6 +312,7 @@
     <alter control-id="ia-12.2">
       <add position="ending">
         <prop name="tamus_required_by" value="2024-09-01"/>
+        <prop name="tamus_new_requirement" value="true"/>
       </add>
       <add position="after" by-id="ia-12.2_smt">
         <part name="tamus_implementation" id="ia-12.2_tamus_smt">
@@ -321,6 +323,7 @@
     <alter control-id="ia-12.3">
       <add position="ending">
         <prop name="tamus_required_by" value="2024-09-01"/>
+        <prop name="tamus_new_requirement" value="true"/>
       </add>
       <add position="after" by-id="ia-12.3_smt">
         <part name="tamus_implementation" id="ia-12.3_tamus_smt">

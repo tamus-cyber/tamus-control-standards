@@ -54,6 +54,9 @@
     <alter control-id="ac-3.7">
       <add position="ending">
         <prop name="tamus_required_by" value="2022-08-01"/>
+        <part name="tamus_implementation" id="ac-3.7_tamus_smt">
+          <prop name="status" value="withdrawn"/>
+        </part>
       </add>
     </alter>
     <alter control-id="ac-8">

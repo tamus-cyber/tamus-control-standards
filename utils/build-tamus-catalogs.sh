@@ -7,7 +7,7 @@ Help()
 {
 	echo "Build the DIR and TAMUS OSCAL catalogs using OSCAL profiles"
 	echo
-	echo "Syntax: build-tamus-catalogs [Path to POM] [Path to OSCAL library] [Path to OSCAL content]"
+	echo "Syntax: build-tamus-catalogs [Path to OSCAL library] [Path to OSCAL content]"
 	echo
 }
 
@@ -19,14 +19,14 @@ fi
 MAIN_CLASS="net.sf.saxon.Transform" # Saxon defined in pom.xml
 
 # Resolve XML profiles to catalogs
-mvn -f $1/pom.xml \
+mvn -f $1/build/pom.xml \
 	exec:java -Dexec.mainClass="net.sf.saxon.Transform" \
-	-Dexec.args="-t -s:$3/texas.gov/TX_DIR_profile.xml \
--xsl:$2/src/utils/resolver-pipeline/oscal-profile-RESOLVE.xsl \
--o:$3/texas.gov/TX_DIR_resolved-profile_catalog.xml"
+	-Dexec.args="-t -s:$2/texas.gov/TX_DIR_profile.xml \
+-xsl:$1/src/utils/resolver-pipeline/oscal-profile-RESOLVE.xsl \
+-o:$2/texas.gov/TX_DIR_resolved-profile_catalog.xml"
 
-mvn -f $1/pom.xml \
+mvn -f $1/build/pom.xml \
 	exec:java -Dexec.mainClass="net.sf.saxon.Transform" \
-	-Dexec.args="-t -s:$3/tamus.edu/TAMUS_profile.xml \
--xsl:$2/src/utils/resolver-pipeline/oscal-profile-RESOLVE.xsl \
--o:$3/tamus.edu/TAMUS_resolved-profile_catalog.xml"
+	-Dexec.args="-t -s:$2/tamus.edu/TAMUS_profile.xml \
+-xsl:$1/src/utils/resolver-pipeline/oscal-profile-RESOLVE.xsl \
+-o:$2/tamus.edu/TAMUS_resolved-profile_catalog.xml"

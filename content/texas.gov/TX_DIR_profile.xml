@@ -871,7 +871,7 @@ content; users are advised to consult the current version of the Texas Security 
           </part>
           <part name="item" id="mp-6.1_tx_smt.c">
             <prop name="label" value="c."/>
-            <p>If it is possible that restricted personal information, confidential information, mission critical information, intellectual property, or licensed software is contained on the storage device, the storage device should be sanitized or the storage device should be removed and destroyed. Additional information on sanitization tools and methods of destruction (that comply with the Department of Defense 5220.22-M standard) are provided in the “Sale or Transfer of Computers and Software” guidelines available at https://dir.texas.gov/resource-library-item/sale-or-transfer-computers-and-software.</p>
+            <p>If it is possible that restricted personal information, confidential information, mission critical information, intellectual property, or licensed software is contained on the storage device, the storage device should be sanitized or the storage device should be removed and destroyed. Additional information on sanitization tools and methods of destruction (that comply with the Department of Defense 5220.22-M standard) are provided in the “Sale or Transfer of Computers and Software” guidelines available at https://dir.texas.gov/resource-library-item/sale-or-transfer-computers-and-software/.</p>
           </part>
           <part name="item" id="mp-6.1_tx_smt.d">
             <prop name="label" value="d."/>

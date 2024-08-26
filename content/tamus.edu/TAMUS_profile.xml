@@ -327,7 +327,7 @@
       </add>
       <add position="after" by-id="ia-12.3_smt">
         <part name="tamus_implementation" id="ia-12.3_tamus_smt">
-          <p>Members shall require in-person or remote visual confirmation of the requestor's identity against identity evidence specified in <a href="#ia-12.2">IA-12(2)</a> prior to any changes of Identity Assurance Level (IAL) 2 user accounts (e.g., faculty, staff, students).  Visual confirmation may be accomplished through in-person verification or a live video conference session with the registration authority.</p>
+          <p>Members shall require in-person or remote visual confirmation of the requestor's identity against identity evidence specified in <a href="#ia-12.2">IA-12(2)</a> prior to any changes (including, but not limited to, password reset, change of MFA phone number or device, or recovery email address) of Identity Assurance Level (IAL) 2 user accounts (e.g., faculty, staff, students).  Visual confirmation may be accomplished through in-person verification or a live video conference session with the registration authority.</p>
         </part>
       </add>
     </alter>

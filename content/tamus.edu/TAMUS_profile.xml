@@ -419,8 +419,8 @@
                 <prop name="label" value="4."/>
                   <p>configuration and patch management, and</p>
               </part>
-              <part name="item" id="pe-18_tamus_smt.c.3">
-                <prop name="label" value="3."/>
+              <part name="item" id="pe-18_tamus_smt.c.5">
+                <prop name="label" value="5."/>
                   <p>other managed services.</p>
               </part>
             </part>

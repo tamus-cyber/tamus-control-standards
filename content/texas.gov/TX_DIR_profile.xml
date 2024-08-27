@@ -4,8 +4,7 @@ content; users are advised to consult the current version of the Texas Security 
 <profile xmlns="http://csrc.nist.gov/ns/oscal/1.0" uuid="7727fe69-f2b8-494a-9e94-8d1e2ff6e68e">
   <metadata>
     <title>Texas Security Control Standards Catalog Profile</title>
-    <published>2023-05-18T00:00:00-0600</published>
-    <last-modified>2023-06-26T00:00:00-0600</last-modified>
+    <published>2023-05-18T00:00:00-06:00</published>
     <version>2.1</version>
     <oscal-version>1.1.2</oscal-version>
     <role id="prpared-by">

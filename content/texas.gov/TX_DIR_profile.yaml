@@ -214,7 +214,7 @@ profile:
                 value: "4."
               prose: >-
                 The ability to detect and mitigate the risk of other types of attacks focused on authentication
-                (e.g., \"account spraying\" attacks in which threat actors attempt to access multiple accounts from the
+                (e.g., "account spraying" attacks in which threat actors attempt to access multiple accounts from the
                 same IP address or set of IP addresses without causing many failed logon attempts against each
                 individual account targeted by the threat actors);
             - id: ac-7_tx_smt.c.5

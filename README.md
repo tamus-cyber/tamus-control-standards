@@ -26,7 +26,8 @@ Machine-readable formats compliant with the Open Security Controls Assessment La
 
 2.1. Make changes to `content/tamus.edu/TAMUS_profile.yaml` as needed
 
-## 3. COMPILE OSCAL CONTROLS CATALOG
+## 3. COMPILE OSCAL CONTROLS CATALOGS
 
-3.1. Run `oscal-cli profile resolve --to=yaml <path/to/tamus/profile> <path/to/tamus/catalog/output>` from the `content/tamus.edu` directory
+3.1. (As needed): Run `oscal-cli profile resolve --to=yaml <path/to/dir/profile> <path/to/dir/catalog/output>` from the `content/texas.gov` directory
 
+3.2. Run `oscal-cli profile resolve --to=yaml <path/to/tamus/profile> <path/to/tamus/catalog/output>` from the `content/tamus.edu` directory

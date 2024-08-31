@@ -1,0 +1,3164 @@
+---
+profile:
+  uuid: 7727fe69-f2b8-494a-9e94-8d1e2ff6e68e
+  metadata:
+    title: Texas Security Control Standards Catalog Profile
+    last-modified: 2023-05-18T00:00:00-06:00
+    version: "2.1"
+    oscal-version: 1.1.2
+    roles:
+    - id: prepared-by
+      title: Document creator
+    parties:
+    - uuid: c741791a-26d6-404d-848f-ed5c50509f3f
+      type: organization
+      name: Texas Department of Information Resources
+      short-name: TXDIR
+      links:
+      - href: https://dir.texas.gov
+        rel: homepage
+      email-addresses:
+      - ociso@dir.texas.gov
+      addresses:
+      - type: work
+        addr-lines:
+        - "300 W. 15th Street, Suite 1300"
+        city: Austin
+        state: TX
+        postal-code: "78701"
+        country: US
+    responsible-parties:
+    - role-id: prepared-by
+      party-uuids:
+      - c741791a-26d6-404d-848f-ed5c50509f3f
+  imports:
+  - href: https://raw.githubusercontent.com/usnistgov/oscal-content/master/nist.gov/SP800-53/rev5/xml/NIST_SP-800-53_rev5_catalog.xml
+    include-all: {}
+  merge:
+    as-is: true
+  modify:
+    alters:
+    - control-id: ac-1
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_privacy_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: "true"
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+        links:
+        - href: '#e329fade-69ad-441d-aff0-0821d5bb1f23'
+          rel: reference
+    - control-id: ac-2
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+      - position: after
+        by-id: ac-2_smt
+        parts:
+        - id: ac-2_tx_smt
+          name: tx_implementation
+          ns: "http://dir.texas.gov/ns/oscal"
+          props:
+          - name: status
+            ns: "http://dir.texas.gov/ns/oscal"
+            value: withdrawn
+          links:
+          - href: '#ac-6'
+            rel: moved-to
+    - control-id: ac-2.3
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: MODERATE
+        - name: tx_new_requirement
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: "true"
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2024-11-18
+    - control-id: ac-3
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-01-20
+      - position: after
+        by-id: ac-3_smt
+        parts:
+        - id: ac-3_tx_smt
+          name: tx_implementation
+          ns: "http://dir.texas.gov/ns/oscal"
+          props:
+          - name: status
+            ns: "http://dir.texas.gov/ns/oscal"
+            value: withdrawn
+    - control-id: ac-5
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: MODERATE
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+    - control-id: ac-6
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: MODERATE
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+      - position: after
+        by-id: ac-6_smt
+        parts:
+        - id: ac-6_tx_smt
+          name: tx_implementation
+          ns: "http://dir.texas.gov/ns/oscal"
+          prose: >-
+            Confidential information shall be accessible only to authorized users. An information file or record
+            containing any confidential information shall be identified, documented, and protected in its entirety.
+            Information resources assigned from one state organization to another or from a state organization to a
+            contractor or other third party, at a minimum, shall be protected in accordance with the conditions imposed
+            by the providing state organization.
+    - control-id: ac-7
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+      - position: after
+        by-id: ac-7_smt
+        parts:
+        - id: ac-7_tx_smt
+          name: tx_implementation
+          ns: "http://dir.texas.gov/ns/oscal"
+          parts:
+          - id: ac-7_tx_smt.a
+            name: item
+            props:
+            - name: label
+              value: a.
+            prose: >-
+              As technology permits, state agencies must designate at least one threshold activated by invalid logon
+              attempts (i.e., item a from the control description, an agency-defined number of invalid logon attempts
+              by a user account within an agency-defined time-period).
+          - id: ac-7_tx_smt.b
+            name: item
+            props:
+            - name: label
+              value: b.
+            prose: >-
+              As technology permits, state agencies must define, implement, and enforce at least one automatic action
+              that occurs when an agency-defined threshold for invalid logon attempts has been reached (i.e., item b
+              from the control description).
+          - id: ac-7_tx_smt.c
+            name: item
+            props:
+            - name: label
+              value: c.
+            prose: >-
+              In designing and implementing access controls for information systems, state agencies should apply a
+              risk-based approach that considers some or all of the following criteria:
+            parts:
+            - id: ac-7_tx_smt.c.1
+              name: item
+              props:
+              - name: label
+                value: "1."
+              prose: Capabilities and features of the system;
+            - id: ac-7_tx_smt.c.2
+              name: item
+              props:
+              - name: label
+                value: "2."
+              prose: The level of risk presented by the system;
+            - id: ac-7_tx_smt.c.3
+              name: item
+              props:
+              - name: label
+                value: "3."
+              prose: >-
+                Successful application and enforcement of other security controls, such as multifactor authentication,
+                password entropy, and maturity of other authenticator management practices relevant to the information
+                system;
+            - id: ac-7_tx_smt.c.4
+              name: item
+              props:
+              - name: label
+                value: "4."
+              prose: >-
+                The ability to detect and mitigate the risk of other types of attacks focused on authentication
+                (e.g., \"account spraying\" attacks in which threat actors attempt to access multiple accounts from the
+                same IP address or set of IP addresses without causing many failed logon attempts against each
+                individual account targeted by the threat actors);
+            - id: ac-7_tx_smt.c.5
+              name: item
+              props:
+              - name: label
+                value: "5."
+              prose: Whether the system is accessible from the Internet or other public or broadly accessible network(s);
+            - id: ac-7_tx_smt.c.6
+              name: item
+              props:
+              - name: label
+                value: "6."
+              prose: >-
+                Impacts to the agency’s users, operations, and support resources if automatic account lockout controls
+                are abused by threat actors to the determent of account or system availability; and
+            - id: ac-7_tx_smt.c.7
+              name: item
+              props:
+              - name: label
+                value: "7."
+              prose: >-
+                The application of more rigorous controls commensurate to the value and potential for abuse of a type of
+                account (e.g., applying additional controls, enhancements, or overlays to privileged accounts).
+    - control-id: ac-8
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-01-20
+      - position: after
+        by-id: ac-8_smt
+        parts:
+        - id: ac-8_tx_smt
+          name: tx_implementation
+          ns: "http://dir.texas.gov/ns/oscal"
+          props:
+          - name: status
+            ns: "http://dir.texas.gov/ns/oscal"
+            value: withdrawn
+    - control-id: ac-14
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-01-20
+    - control-id: ac-17
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+    - control-id: ac-18
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+      - position: after
+        by-id: ac-18_smt
+        parts:
+        - id: ac-18_tx_smt
+          name: tx_implementation
+          ns: "http://dir.texas.gov/ns/oscal"
+          parts:
+          - id: ac-18_tx_smt
+            name: item
+            prose: >-
+              State agencies shall establish the requirements and security restrictions for installing or providing
+              access to the state agency's information resources systems. The wireless policy shall address the
+              following topic areas:
+            parts:
+            - id: ac-18_tx_smt.a
+              name: item
+              props:
+              - name: label
+                value: a.
+              prose: Wireless Local Area Networks. Ensure that Service Set Identifiers (SSID) values are changed from the manufacturer default setting.
+            - id: ac-18_tx_smt.b
+              name: item
+              props:
+              - name: label
+                value: b.
+              prose: |-
+                Transmitting and Encrypting Information. Types of information that may be transmitted via wireless
+                networks and devices with or without encryption including mission critical information or sensitive
+                personal information.
+
+                State agencies shall not transmit confidential information via a wireless connection to or from a
+                portable computing device unless secure encryption protocols that meet appropriate protection or
+                certification standards as detailed within this Security Control Standards Catalog are used to protect
+                the information.
+            - id: ac-18_tx_smt.c
+              name: item
+              props:
+              - name: label
+                value: c.
+              prose: >-
+                Installation or Use of Wireless Personal Area Networks. Prohibit and periodically monitor any
+                unauthorized installation or use of Wireless Personal Area Networks on state agency IT systems by
+                individuals without the approval of the state agency information resources manager.
+    - control-id: ac-19
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+        links:
+        - href: '#83ae6cdf-d10a-445a-bf7e-120a7d95bc2e'
+          rel: reference
+      - position: after
+        by-id: ac-19_smt
+        parts:
+        - id: ac-19_tx_smt
+          name: tx_implementation
+          ns: "http://dir.texas.gov/ns/oscal"
+          prose: >-
+            State organizations shall establish usage restrictions, configuration requirements, connection requirements,
+            and implementation guidance for organization-controlled mobile devices, whether owned by the state
+            organization or the employee.
+    - control-id: ac-20
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+        links:
+        - href: '#2d72e3e7-9a4d-4438-afef-a1f941476164'
+          rel: reference
+      - position: after
+        by-id: ac-20_smt
+        parts:
+        - id: ac-20_tx_smt
+          name: tx_implementation
+          ns: "http://dir.texas.gov/ns/oscal"
+          prose: >-
+            Each state agency entering into or renewing a contract with a vendor authorized to access, transmit, use, or
+            store data for the agency shall include a provision in the contract requiring the vendor to meet the
+            security controls the agency determines are proportionate with the agency's risk under the contract based
+            on the sensitivity of the agency's data. A state agency must require the vendor to periodically provide
+            evidence to the agency that the vendor meets the security controls required under the contract.
+    - control-id: ac-22
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-01-20
+    - control-id: at-1
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_privacy_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: "true"
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+        links:
+        - href: '#4eccbedb-6b3b-459a-b274-c353490880a0'
+          rel: reference
+        - href: '#df55a68e-ee2f-46e5-9f42-1b5889a933ce'
+          rel: reference
+      - position: after
+        by-id: at-1_smt
+        parts:
+        - id: at-1_tx_smt
+          name: tx_implementation
+          ns: "http://dir.texas.gov/ns/oscal"
+          props:
+          - name: status
+            ns: "http://dir.texas.gov/ns/oscal"
+            value: withdrawn
+    - control-id: at-2
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_privacy_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: "true"
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+        links:
+        - href: '#4eccbedb-6b3b-459a-b274-c353490880a0'
+          rel: reference
+        - href: '#fb6e0926-a42a-4558-8067-b4095284bea8'
+          rel: reference
+        - href: '#61919092-3ef9-489b-b23e-277a0203df2f'
+          rel: reference
+      - position: after
+        by-id: at-2_smt
+        parts:
+        - id: at-2_tx_smt
+          name: tx_implementation
+          ns: "http://dir.texas.gov/ns/oscal"
+          prose: Security awareness training shall be delivered in accordance with Texas Government Code Section 2054.519.
+    - control-id: at-2.2
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_new_requirement
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: "true"
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2024-11-18
+    - control-id: at-3
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_privacy_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: "true"
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+        links:
+        - href: '#4eccbedb-6b3b-459a-b274-c353490880a0'
+          rel: reference
+        - href: '#fb6e0926-a42a-4558-8067-b4095284bea8'
+          rel: reference
+        - href: '#61919092-3ef9-489b-b23e-277a0203df2f'
+          rel: reference
+      - position: after
+        by-id: at-3_smt
+        parts:
+        - id: at-3_tx_smt
+          name: tx_implementation
+          ns: "http://dir.texas.gov/ns/oscal"
+          prose: Security awareness training shall be delivered in accordance with Texas Government Code Section 2054.519.
+    - control-id: at-4
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_privacy_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: "true"
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+        links:
+        - href: '#4eccbedb-6b3b-459a-b274-c353490880a0'
+          rel: reference
+        - href: '#fb6e0926-a42a-4558-8067-b4095284bea8'
+          rel: reference
+        - href: '#61919092-3ef9-489b-b23e-277a0203df2f'
+          rel: reference
+      - position: after
+        by-id: at-4_smt
+        parts:
+        - id: at-4_tx_smt
+          name: tx_implementation
+          ns: "http://dir.texas.gov/ns/oscal"
+          props:
+          - name: status
+            ns: "http://dir.texas.gov/ns/oscal"
+            value: withdrawn
+    - control-id: au-1
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_privacy_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: "true"
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+        links:
+        - href: '#e329fade-69ad-441d-aff0-0821d5bb1f23'
+          rel: reference
+    - control-id: au-2
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_privacy_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: "true"
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+        links:
+        - href: '#85f1b845-ba92-43aa-9fa7-8045b9fb0bfb'
+          rel: reference
+      - position: after
+        by-id: au-2_smt
+        parts:
+        - id: au-2_tx_smt
+          name: tx_implementation
+          ns: "http://dir.texas.gov/ns/oscal"
+          parts:
+          - id: au-2_tx_smt.a
+            name: item
+            props:
+            - name: label
+              value: a.
+            prose: >-
+              Information resources systems shall provide the means whereby authorized personnel have the ability to
+              audit and establish individual accountability for any action that can potentially cause access to,
+              generation of, modification of, or affect the release of confidential information.
+          - id: au-2_tx_smt.b
+            name: item
+            props:
+            - name: label
+              value: b.
+            prose: >-
+              Appropriate audit trails shall be maintained to provide accountability for updates to mission critical
+              information, hardware and software and for all changes to automated security or access rules.
+          - id: au-2_tx_smt.c
+            name: item
+            props:
+            - name: label
+              value: c.
+            prose: >-
+              Based on the risk assessment, a sufficiently complete history of transactions shall be maintained to
+              permit an audit of the information resources system by logging and tracing the activities of individuals
+              through the system.
+    - control-id: au-3
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-01-20
+    - control-id: au-4
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+    - control-id: au-5
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+    - control-id: au-6
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+    - control-id: au-8
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+    - control-id: au-9
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+    - control-id: au-11
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_privacy_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: "true"
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+        links:
+        - href: '#1d738b9b-931f-4c3a-a2d3-9f3715ad3a2f'
+          rel: reference
+    - control-id: au-12
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+    - control-id: ca-1
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_privacy_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: "true"
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+        links:
+        - href: '#e329fade-69ad-441d-aff0-0821d5bb1f23'
+          rel: reference
+    - control-id: ca-2
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_privacy_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: "true"
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+        links:
+        - href: '#26250e8b-9588-4b08-b539-9d440d9489d1'
+          rel: reference
+      - position: after
+        by-id: ca-2_smt
+        parts:
+        - id: ca-2_tx_smt
+          name: tx_implementation
+          ns: "http://dir.texas.gov/ns/oscal"
+          prose: Control assessments shall be conducted at least biennially.
+    - control-id: ca-3
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+      - position: after
+        by-id: ca-3_smt
+        parts:
+        - id: ca-3_tx_smt
+          name: tx_implementation
+          ns: "http://dir.texas.gov/ns/oscal"
+          prose: >-
+            Information resources assigned from or shared between one state agency to another or from or between a state
+            agency to a third-party shall be protected in accordance with the conditions imposed by the providing state
+            agency at a minimum.
+    - control-id: ca-5
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_privacy_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: "true"
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-01-20
+    - control-id: ca-6
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_privacy_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: "true"
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+      - position: after
+        by-id: ca-6_smt
+        parts:
+        - id: ca-6_tx_smt
+          name: tx_implementation
+          ns: "http://dir.texas.gov/ns/oscal"
+          prose: >-
+            The state organization authorizes the information system for processing before operations or when there is a
+            significant change to the system. A senior organizational official, or their delegate, approves the
+            authorization.
+    - control-id: ca-7
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_privacy_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: "true"
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+        links:
+        - href: '#a074f0c5-90ae-4a06-acdd-b1a06d33edd7'
+          rel: reference
+    - control-id: ca-7.4
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_privacy_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: "true"
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+    - control-id: ca-8
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: HIGH
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+        links:
+        - href: '#f339b850-c6a3-43c8-a679-9302482d63ce'
+          rel: reference
+      - position: after
+        by-id: ca-8_smt
+        parts:
+        - id: ca-8_tx_smt
+          name: tx_implementation
+          ns: "http://dir.texas.gov/ns/oscal"
+          parts:
+          - id: ca-8_tx_smt.a
+            name: item
+            props:
+            - name: label
+              value: a.
+            prose: >-
+              Section 2054.516(a)(2), Government Code, requires each state agency implementing an Internet website or
+              mobile application that processes any sensitive personal or personally identifiable information or
+              confidential information to subject the website or application to a vulnerability and penetration test
+              and address any vulnerability identified in the test.
+          - id: ca-8_tx_smt.b
+            name: item
+            props:
+            - name: label
+              value: b.
+            prose: "Agencies shall perform, or have performed, an external network penetration test every two years at minimum."
+    - control-id: ca-9
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+    - control-id: cm-1
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_privacy_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: "true"
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+        links:
+        - href: '#e329fade-69ad-441d-aff0-0821d5bb1f23'
+          rel: reference
+    - control-id: cm-2
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+    - control-id: cm-3
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: MODERATE
+        - name: tx_new_requirement
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: "true"
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2024-11-18
+      - position: after
+        by-id: cm-3_smt
+        parts:
+        - id: cm-3_tx_smt
+          name: tx_implementation
+          ns: "http://dir.texas.gov/ns/oscal"
+          prose: >-
+            All security-related information resources changes shall be approved by the information owner (or designee)
+            through a change control process.
+    - control-id: cm-4
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_privacy_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: "true"
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+        links:
+        - href: '#24b51e13-dd43-4116-a74f-534ac2ea6ff6'
+          rel: reference
+      - position: after
+        by-id: cm-4_smt
+        parts:
+        - id: cm-4_tx_smt
+          name: tx_implementation
+          ns: "http://dir.texas.gov/ns/oscal"
+          props:
+          - name: status
+            ns: "http://dir.texas.gov/ns/oscal"
+            value: withdrawn
+    - control-id: cm-5
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+    - control-id: cm-6
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+    - control-id: cm-7
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+    - control-id: cm-8
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+        links:
+        - href: '#95367016-533f-4a85-b5ee-6f9f6b381a97'
+          rel: reference
+    - control-id: cm-10
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-01-20
+        links:
+        - href: '#83ae6cdf-d10a-445a-bf7e-120a7d95bc2e'
+          rel: reference
+    - control-id: cm-11
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-01-20
+        links:
+        - href: '#cc2b2eb0-aab0-4398-a8d6-ea7ba4533e60'
+          rel: reference
+        - href: '#83ae6cdf-d10a-445a-bf7e-120a7d95bc2e'
+          rel: reference
+    - control-id: cp-1
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+        links:
+        - href: '#e329fade-69ad-441d-aff0-0821d5bb1f23'
+          rel: reference
+        - href: '#ad3fefd5-abc1-4e3c-9be3-9111cbe673d6'
+          rel: reference
+      - position: after
+        by-id: cp-1_smt
+        parts:
+        - id: cp-1_tx_smt
+          name: tx_implementation
+          ns: "http://dir.texas.gov/ns/oscal"
+          props:
+          - name: status
+            ns: "http://dir.texas.gov/ns/oscal"
+            value: withdrawn
+          links:
+          - href: '#cp-2'
+            rel: moved-to
+    - control-id: cp-2
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+        links:
+        - href: '#ad3fefd5-abc1-4e3c-9be3-9111cbe673d6'
+          rel: reference
+      - position: after
+        by-id: cp-2_smt
+        parts:
+        - id: cp-2_tx_smt
+          name: tx_implementation
+          ns: "http://dir.texas.gov/ns/oscal"
+          prose: >-
+            State agencies shall maintain written Continuity of Operations Plans in compliance with Section 412.054,
+            Labor Code that address information resources so that the effects of a disaster will be minimized and the
+            state agency will be able either to maintain or quickly resume mission-critical functions.
+    - control-id: cp-3
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+    - control-id: cp-4
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-01-20
+      - position: after
+        by-id: cp-4_smt
+        parts:
+        - id: cp-4_tx_smt
+          name: tx_implementation
+          ns: "http://dir.texas.gov/ns/oscal"
+          prose: Each state organization's written disaster recovery plan will include provisions for annual testing.
+    - control-id: cp-6
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: MODERATE
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-01-20
+      - position: after
+        by-id: cp-6_smt
+        parts:
+        - id: cp-6_tx_smt
+          name: tx_implementation
+          ns: "http://dir.texas.gov/ns/oscal"
+          prose: >-
+            Mission critical information shall be backed up on a scheduled basis consistent with agency recovery point
+            objectives and stored in a manner logically and physically segmented from the production environment
+            accessible only to authorized individuals.
+    - control-id: cp-8
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: MODERATE
+        - name: tx_new_requirement
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: "true"
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2024-11-18
+    - control-id: cp-9
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+    - control-id: cp-10
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+    - control-id: cp-11
+      adds:
+      - position: ending
+        props:
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+    - control-id: ia-1
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+        links:
+        - href: '#e329fade-69ad-441d-aff0-0821d5bb1f23'
+          rel: reference
+    - control-id: ia-2
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-01-20
+      - position: after
+        by-id: ia-2_smt
+        parts:
+        - id: ia-2_tx_smt
+          name: tx_implementation
+          ns: "http://dir.texas.gov/ns/oscal"
+          prose: >-
+            Each user of information resources shall be assigned a unique identifier except for situations where risk
+            analysis demonstrates no need for individual accountability of users. User identification shall be
+            authenticated before the information resources system may grant that user access.
+    - control-id: ia-2.1
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2024-11-18
+    - control-id: ia-2.2
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+    - control-id: ia-4
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+      - position: after
+        by-id: ia-4_smt
+        parts:
+        - id: ia-4_tx_smt
+          name: tx_implementation
+          ns: "http://dir.texas.gov/ns/oscal"
+          props:
+          - name: status
+            ns: "http://dir.texas.gov/ns/oscal"
+            value: withdrawn
+          links:
+          - href: '#ps-4'
+            rel: moved-to
+          - href: '#ps-5'
+            rel: moved-to
+    - control-id: ia-5
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+    - control-id: ia-5.1
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_new_requirement
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: "true"
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2024-11-18
+    - control-id: ia-6
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-01-20
+    - control-id: ia-7
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-01-20
+    - control-id: ia-8
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-01-20
+      - position: after
+        by-id: ia-8_smt
+        parts:
+        - id: ia-8_tx_smt
+          name: tx_implementation
+          ns: "http://dir.texas.gov/ns/oscal"
+          prose: >-
+            Each user of information resources shall be assigned a unique identifier except for situations where risk
+            analysis demonstrates no need for individual accountability of users. User identification shall be
+            authenticated before the information resources system may grant that user access.
+    - control-id: ia-11
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+    - control-id: ir-1
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_privacy_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: "true"
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+        links:
+        - href: '#e329fade-69ad-441d-aff0-0821d5bb1f23'
+          rel: reference
+      - position: after
+        by-id: ir-1_smt
+        parts:
+        - id: ir-1_tx_smt
+          name: tx_implementation
+          ns: "http://dir.texas.gov/ns/oscal"
+          prose: Incident response policies and procedures shall be reviewed and updated at least every two years.
+    - control-id: ir-2
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_privacy_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: "true"
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+      - position: after
+        by-id: ir-2_smt
+        parts:
+        - id: ir-2_tx_smt
+          name: tx_implementation
+          ns: "http://dir.texas.gov/ns/oscal"
+          prose: >-
+            The state agency shall train personnel in their incident response roles and responsibilities with respect to
+            the information system and provides training at least annually.
+    - control-id: ir-3
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: MODERATE
+        - name: tx_privacy_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: "true"
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+      - position: after
+        by-id: ir-3_smt
+        parts:
+        - id: ir-3_tx_smt
+          name: tx_implementation
+          ns: "http://dir.texas.gov/ns/oscal"
+          prose: |-
+            Testing includes, but is not limited to the use of checklists, walk-through or tabletop exercises, and
+            simulations (parallel or full interrupt). Incident response testing can include a determination of the
+            effects on organizational operations and assets and individuals due to incident response and the use of
+            qualitative and quantitative data aids in determining the effectiveness of incident response processes.
+
+            Incident response plans shall be exercised or tested at least annually.
+    - control-id: ir-4
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_privacy_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: "true"
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+        links:
+        - href: '#c82c8956-02d5-4166-834d-07d5b2ab93eb'
+          rel: reference
+        - href: '#081adb97-1cd6-4dd7-b572-d15101dd53ed'
+          rel: reference
+    - control-id: ir-5
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_privacy_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: "true"
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+        links:
+        - href: '#c82c8956-02d5-4166-834d-07d5b2ab93eb'
+          rel: reference
+        - href: '#081adb97-1cd6-4dd7-b572-d15101dd53ed'
+          rel: reference
+    - control-id: ir-6
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_privacy_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: "true"
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+        links:
+        - href: '#c82c8956-02d5-4166-834d-07d5b2ab93eb'
+          rel: reference
+        - href: '#081adb97-1cd6-4dd7-b572-d15101dd53ed'
+          rel: reference
+        - href: '#ac9a50f4-69d8-4309-9d60-f88cc6352970'
+          rel: reference
+      - position: after
+        by-id: ir-6_smt
+        parts:
+        - id: ir-6_tx_smt
+          name: tx_implementation
+          ns: "http://dir.texas.gov/ns/oscal"
+          prose: >-
+            Reporting of security incidents and the investigation and restoration of operations following a security
+            incident assessed to involve suspected criminal activity shall comply with 1 Texas Administrative Code
+            Section 202.73(b).
+    - control-id: ir-7
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_privacy_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: "true"
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+      - position: after
+        by-id: ir-7_smt
+        parts:
+        - id: ir-7_tx_smt
+          name: tx_implementation
+          ns: "http://dir.texas.gov/ns/oscal"
+          props:
+          - name: status
+            ns: "http://dir.texas.gov/ns/oscal"
+            value: withdrawn
+    - control-id: ir-8
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_privacy_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: "true"
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+        links:
+        - href: '#8bdfe234-14d2-4617-b080-549de88b5304'
+          rel: reference
+      - position: after
+        by-id: ir-8_smt
+        parts:
+        - id: ir-8_tx_smt
+          name: tx_implementation
+          ns: "http://dir.texas.gov/ns/oscal"
+          prose: >-
+            State agencies shall assess the significance of a security incident based upon the business impact on the
+            affected resources and the current and potential technical effect of the incident, e.g., loss of revenue,
+            productivity, access to services, reputation, unauthorized disclosure of confidential information, or
+            propagation to other networks. Incident response plans shall be reviewed every two years at a minimum.
+    - control-id: ir-9
+      adds:
+      - position: ending
+        props:
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+    - control-id: ma-1
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+        links:
+        - href: '#e329fade-69ad-441d-aff0-0821d5bb1f23'
+          rel: reference
+    - control-id: ma-2
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+    - control-id: ma-4
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+    - control-id: ma-5
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-01-20
+    - control-id: mp-1
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_privacy_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: "true"
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+        links:
+        - href: '#e329fade-69ad-441d-aff0-0821d5bb1f23'
+          rel: reference
+    - control-id: mp-2
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-01-20
+    - control-id: mp-6
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_privacy_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: "true"
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+      - position: after
+        by-id: mp-6_smt
+        parts:
+        - id: mp-6_tx_smt
+          name: tx_implementation
+          ns: "http://dir.texas.gov/ns/oscal"
+          props:
+          - name: status
+            ns: "http://dir.texas.gov/ns/oscal"
+            value: withdrawn
+          links:
+          - href: '#mp-6.1'
+            rel: incorporated-into
+    - control-id: mp-6.1
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: HIGH
+        - name: tx_new_requirement
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: "true"
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2024-11-18
+      - position: after
+        by-id: mp-6.1_smt
+        parts:
+        - id: mp-6.1_tx_smt
+          name: tx_implementation
+          ns: "http://dir.texas.gov/ns/oscal"
+          parts:
+          - id: mp-6.1_tx_smt.a
+            name: item
+            props:
+            - name: label
+              value: a.
+            prose: >-
+              Prior to the sale or transfer of data processing equipment, to other than another Texas state agency or
+              agent of the state, state agencies shall assess whether to remove data from any associated storage
+              device.
+          - id: mp-6.1_tx_smt.b
+            name: item
+            props:
+            - name: label
+              value: b.
+            prose: >-
+              Electronic state records shall be destroyed in accordance with Texas Government Code Section 441.185 and
+              in compliance with the state agency’s records retention schedule. If the record retention period
+              applicable for an electronic state record has not expired at the time the record is removed from data
+              process equipment, the state agency shall retain a hard copy or other electronic copy of the record for
+              the required retention period.
+          - id: mp-6.1_tx_smt.c
+            name: item
+            props:
+            - name: label
+              value: c.
+            prose: >-
+              If it is possible that restricted personal information, confidential information, mission critical
+              information, intellectual property, or licensed software is contained on the storage device, the storage
+              device should be sanitized or the storage device should be removed and destroyed. Additional information
+              on sanitization tools and methods of destruction (that comply with the Department of Defense 5220.22-M
+              standard) are provided in the "Sale or Transfer of Computers and Software" guidelines available at
+              https://dir.texas.gov/resource-library-item/sale-or-transfer-computers-and-software/.
+          - id: mp-6.1_tx_smt.d
+            name: item
+            props:
+            - name: label
+              value: d.
+            prose: >-
+              State agencies shall keep a record/form (electronic or hard copy) documenting the removal and completion
+              of the process with the following information:
+            parts:
+            - id: mp-6.1_tx_smt.d.1
+              name: item
+              props:
+              - name: label
+                value: "1."
+              prose: date;
+            - id: mp-6.1_tx_smt.d.2
+              name: item
+              props:
+              - name: label
+                value: "2."
+              prose: description of the item(s) and serial number(s);
+            - id: mp-6.1_tx_smt.d.3
+              name: item
+              props:
+              - name: label
+                value: "3."
+              prose: inventory number(s);
+            - id: mp-6.1_tx_smt.d.4
+              name: item
+              props:
+              - name: label
+                value: "4."
+              prose: the process and sanitization tools used to remove the data or method of destruction; and
+            - id: mp-6.1_tx_smt.d.5
+              name: item
+              props:
+              - name: label
+                value: "5."
+              prose: the name and address of the organization the equipment was transferred to.
+    - control-id: mp-7
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+    - control-id: pe-1
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+        links:
+        - href: '#e329fade-69ad-441d-aff0-0821d5bb1f23'
+          rel: reference
+      - position: after
+        by-id: pe-1_smt
+        parts:
+        - id: pe-1_tx_smt
+          name: tx_implementation
+          ns: "http://dir.texas.gov/ns/oscal"
+          prose: >-
+            The agency shall train designated employees on environmental control procedures, monitoring, and equipment in
+            case of emergencies or equipment problems.
+    - control-id: pe-2
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-01-20
+    - control-id: pe-3
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+    - control-id: pe-6
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-01-20
+    - control-id: pe-8
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+    - control-id: pe-12
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-01-20
+    - control-id: pe-13
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-01-20
+      - position: after
+        by-id: pe-13_smt
+        parts:
+        - id: pe-13_tx_smt
+          name: tx_implementation
+          ns: "http://dir.texas.gov/ns/oscal"
+          props:
+          - name: status
+            ns: "http://dir.texas.gov/ns/oscal"
+            value: withdrawn
+    - control-id: pe-14
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+    - control-id: pe-15
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-01-20
+    - control-id: pe-16
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+    - control-id: pe-17
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: MODERATE
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+    - control-id: pl-1
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_privacy_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: "true"
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+        links:
+        - href: '#8504278c-811f-4cb0-b602-bdd2002e01c3'
+          rel: reference
+        - href: '#e329fade-69ad-441d-aff0-0821d5bb1f23'
+          rel: reference
+      - position: after
+        by-id: pl-1_smt
+        parts:
+        - id: pl-1_tx_smt
+          name: tx_implementation
+          ns: "http://dir.texas.gov/ns/oscal"
+          prose: >-
+            The state agency information security officer reports annually on state agency information security program
+            in compliance with 1 Texas Administrative Code Section 202.73(a).
+    - control-id: pl-2
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_privacy_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: "true"
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+        links:
+        - href: '#a25a0efa-3d9f-4cce-9ab8-defe7ecad46a'
+          rel: reference
+        - href: '#c3690af5-3560-4152-9eeb-4df1918105a3'
+          rel: reference
+    - control-id: pl-4
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_privacy_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: "true"
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+        links:
+        - href: '#cc2b2eb0-aab0-4398-a8d6-ea7ba4533e60'
+          rel: reference
+        - href: '#fb6e0926-a42a-4558-8067-b4095284bea8'
+          rel: reference
+        - href: '#83ae6cdf-d10a-445a-bf7e-120a7d95bc2e'
+          rel: reference
+      - position: after
+        by-id: pl-4_smt
+        parts:
+        - id: pl-4_tx_smt
+          name: tx_implementation
+          ns: "http://dir.texas.gov/ns/oscal"
+          prose: >-
+            All authorized users (including, but not limited to, state agency personnel, temporary employees, and
+            employees of independent contractors) of the state agency’s information resources shall formally
+            acknowledge that they will comply with the security policies and procedures of the state agency or they
+            shall not be granted access to information resources. The state agency head or their designated
+            representative will determine the method of acknowledgement and how often this acknowledgement must be
+            reexecuted by the user to maintain access to state agency information resources.
+    - control-id: pl-4.1
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_privacy_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: "true"
+        - name: tx_new_requirement
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: "true"
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2024-11-18
+    - control-id: pl-10
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_new_requirement
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: "true"
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2024-11-18
+        links:
+        - href: '#c8126cdb-28a7-494a-a713-d8a04512537d'
+          rel: reference
+      - position: after
+        by-id: pl-10_smt
+        parts:
+        - id: pl-10_tx_smt
+          name: tx_implementation
+          ns: "http://dir.texas.gov/ns/oscal"
+          parts:
+          - id: pl-10_tx_smt.a
+            name: item
+            props:
+            - name: label
+              value: a.
+            prose: The default baseline for an information system shall be the controls contained in the Security Controls Catalog.
+          - id: pl-10_tx_smt.b
+            name: item
+            props:
+            - name: label
+              value: b.
+            prose: >-
+              The agency head may employ standards for the cost-effective information security of information,
+              information resources, and applications within or under the supervision of that state agency that are
+              more stringent than the standards the department prescribes under this section if the more stringent
+              standards:
+            parts:
+            - id: pl-10_tx_smt.b.1
+              name: item
+              props:
+              - name: label
+                value: "1."
+              prose: contain at least the applicable standards issued by the department; and/or
+            - id: pl-10_tx_smt.b.2
+              name: item
+              props:
+              - name: label
+                value: "2."
+              prose: >-
+                are consistent with applicable federal law, policies, and guidelines issued under state rule, industry
+                standards, best practices, or deemed necessary to adequately protect the information held by the state
+                agency.
+    - control-id: pl-11
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_new_requirement
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: "true"
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2024-11-18
+        links:
+        - href: '#c8126cdb-28a7-494a-a713-d8a04512537d'
+          rel: reference
+      - position: after
+        by-id: pl-11_smt
+        parts:
+        - id: pl-11_tx_smt
+          name: tx_implementation
+          ns: "http://dir.texas.gov/ns/oscal"
+          parts:
+          - id: pl-11_tx_smt.a
+            name: item
+            props:
+            - name: label
+              value: a.
+            prose: >-
+              The agency head may employ standards for the cost-effective information security of information,
+              information resources, and applications within or under the supervision of that state agency that are
+              more stringent than the standards the department prescribes under this section if the more stringent
+              standards:
+            parts:
+            - id: pl-11_tx_smt.a.1
+              name: item
+              props:
+              - name: label
+                value: "1."
+              prose: contain at least the applicable standards issued by the department; and/or
+            - id: pl-11_tx_smt.a.2
+              name: item
+              props:
+              - name: label
+                value: "2."
+              prose: >-
+                are consistent with applicable federal law, policies, and guidelines issued under state rule, industry
+                standards, best practices, or deemed necessary to adequately protect the information held by the state
+                agency.
+    - control-id: pm-1
+      adds:
+      - position: ending
+        props:
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+        links:
+        - href: '#df55a68e-ee2f-46e5-9f42-1b5889a933ce'
+          rel: reference
+        - href: '#c3690af5-3560-4152-9eeb-4df1918105a3'
+          rel: reference
+    - control-id: pm-2
+      adds:
+      - position: ending
+        props:
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+        links:
+        - href: '#5a33f129-3016-4a8e-9e0e-7ecdddfc2054'
+          rel: reference
+        - href: '#ac69799a-8a66-4ffd-b79f-5ef0c0732367'
+          rel: reference
+      - position: after
+        by-id: pm-2_smt
+        parts:
+        - id: pm-2_tx_smt
+          name: tx_implementation
+          ns: "http://dir.texas.gov/ns/oscal"
+          prose: >-
+            The Information Security Officer is charged with the responsibilities enumerated in Section 2054.136,
+            Government Code and 1 Texas Administrative Code Section 202.71.
+    - control-id: pm-3
+      adds:
+      - position: ending
+        props:
+        - name: tx_privacy_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: "true"
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+    - control-id: pm-4
+      adds:
+      - position: ending
+        props:
+        - name: tx_privacy_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: "true"
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+    - control-id: pm-5
+      adds:
+      - position: ending
+        props:
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+        links:
+        - href: '#95367016-533f-4a85-b5ee-6f9f6b381a97'
+          rel: reference
+      - position: after
+        by-id: pm-5_smt
+        parts:
+        - id: pm-5_tx_smt
+          name: tx_implementation
+          ns: "http://dir.texas.gov/ns/oscal"
+          prose: Agencies shall update system inventories at least every two years.
+    - control-id: pm-6
+      adds:
+      - position: ending
+        props:
+        - name: tx_privacy_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: "true"
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+    - control-id: pm-7
+      adds:
+      - position: ending
+        props:
+        - name: tx_privacy_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: "true"
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+    - control-id: pm-9
+      adds:
+      - position: ending
+        props:
+        - name: tx_privacy_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: "true"
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+        links:
+        - href: '#df55a68e-ee2f-46e5-9f42-1b5889a933ce'
+          rel: reference
+        - href: '#85f1b845-ba92-43aa-9fa7-8045b9fb0bfb'
+          rel: reference
+    - control-id: pm-10
+      adds:
+      - position: ending
+        props:
+        - name: tx_privacy_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: "true"
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+    - control-id: pm-14
+      adds:
+      - position: ending
+        props:
+        - name: tx_privacy_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: "true"
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+    - control-id: pm-15
+      adds:
+      - position: ending
+        props:
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+    - control-id: pm-16
+      adds:
+      - position: ending
+        props:
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+    - control-id: ps-1
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+        links:
+        - href: '#e329fade-69ad-441d-aff0-0821d5bb1f23'
+          rel: reference
+    - control-id: ps-2
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-01-20
+        links:
+        - href: '#85f1b845-ba92-43aa-9fa7-8045b9fb0bfb'
+          rel: reference
+      - position: after
+        by-id: ps-2_smt
+        parts:
+        - id: ps-2_tx_smt
+          name: tx_implementation
+          ns: "http://dir.texas.gov/ns/oscal"
+          props:
+          - name: status
+            ns: "http://dir.texas.gov/ns/oscal"
+            value: withdrawn
+          links:
+          - href: '#pl-4'
+            rel: moved-to
+    - control-id: ps-3
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-01-20
+    - control-id: ps-4
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+      - position: after
+        by-id: ps-4_smt
+        parts:
+        - id: ps-4_tx_smt
+          name: tx_implementation
+          ns: "http://dir.texas.gov/ns/oscal"
+          prose: >-
+            User access authorization shall be appropriately modified or removed when the user’s employment or job
+            responsibilities within the state agency change.
+    - control-id: ps-5
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-01-20
+      - position: after
+        by-id: ps-5_smt
+        parts:
+        - id: ps-5_tx_smt
+          name: tx_implementation
+          ns: "http://dir.texas.gov/ns/oscal"
+          prose: >-
+            User access authorization shall be appropriately modified or removed when the user’s employment or job
+            responsibilities within the state agency change.
+    - control-id: ps-6
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_privacy_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: "true"
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-01-20
+    - control-id: ps-7
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-01-20
+    - control-id: ps-8
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-01-20
+        links:
+        - href: '#cc2b2eb0-aab0-4398-a8d6-ea7ba4533e60'
+          rel: reference
+    - control-id: ps-9
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_new_requirement
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: "true"
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2024-11-18
+    - control-id: ra-1
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_privacy_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: "true"
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+        links:
+        - href: '#e329fade-69ad-441d-aff0-0821d5bb1f23'
+          rel: reference
+    - control-id: ra-2
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+        links:
+        - href: '#875b664a-8a0d-47b2-82db-3b5429936ad1'
+          rel: reference
+        - href: '#db21b779-8ca3-4952-8900-7446e9908e0a'
+          rel: reference
+        - href: '#d4ea7f48-95f0-4f6d-80e3-bb3c09a9bf64'
+          rel: reference
+      - position: after
+        by-id: ra-2_smt
+        parts:
+        - id: ra-2_tx_smt
+          name: tx_implementation
+          ns: "http://dir.texas.gov/ns/oscal"
+          prose: >-
+            State agencies are responsible for identifying and defining all information classification categories except
+            the Confidential Information category, as defined by 1 Texas Administrative Code Chapter 202, Subchapter A,
+            and establishing the appropriate controls for each.
+    - control-id: ra-3
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_privacy_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: "true"
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+        links:
+        - href: '#85f1b845-ba92-43aa-9fa7-8045b9fb0bfb'
+          rel: reference
+        - href: '#4b78cf60-7a15-4a9d-9fa5-f0a294f9d7a8'
+          rel: reference
+      - position: after
+        by-id: ra-3_smt
+        parts:
+        - id: ra-3_tx_smt
+          name: tx_implementation
+          ns: "http://dir.texas.gov/ns/oscal"
+          prose: >-
+            The state agency shall perform and document risk assessments and make and document risk management decisions
+            in compliance with 1 Texas Administrative Code Sections 202.75 and 202.77.
+    - control-id: ra-3.1
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+    - control-id: ra-5
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+        links:
+        - href: '#93e79b7a-bea9-4b7b-ba90-389e0a5215e3'
+          rel: reference
+        - href: '#93e79b7a-bea9-4b7b-ba90-389e0a5215e3'
+          rel: reference
+      - position: after
+        by-id: ra-5_smt
+        parts:
+        - id: ra-5_tx_smt
+          name: tx_implementation
+          ns: "http://dir.texas.gov/ns/oscal"
+          prose: >-
+            The state organization scans for vulnerabilities in the information system at least annually or when
+            significant new vulnerabilities potentially affecting the system are identified and reported.
+    - control-id: ra-5.2
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_new_requirement
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: "true"
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2024-11-18
+    - control-id: ra-5.11
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_new_requirement
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: "true"
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2024-11-18
+    - control-id: ra-7
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_privacy_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: "true"
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+        links:
+        - href: '#8761199b-f199-4e1f-a169-f1caaa40b8ac'
+          rel: reference
+    - control-id: sa-1
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_privacy_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: "true"
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+        links:
+        - href: '#e329fade-69ad-441d-aff0-0821d5bb1f23'
+          rel: reference
+    - control-id: sa-2
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_privacy_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: "true"
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+    - control-id: sa-3
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_privacy_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: "true"
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+      - position: after
+        by-id: sa-3_smt
+        parts:
+        - id: sa-3_tx_smt
+          name: tx_implementation
+          ns: "http://dir.texas.gov/ns/oscal"
+          props:
+          - name: status
+            ns: "http://dir.texas.gov/ns/oscal"
+            value: withdrawn
+    - control-id: sa-4
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_privacy_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: "true"
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+        links:
+        - href: '#2d72e3e7-9a4d-4438-afef-a1f941476164'
+          rel: reference
+        - href: '#4b78cf60-7a15-4a9d-9fa5-f0a294f9d7a8'
+          rel: reference
+      - position: after
+        by-id: sa-4_smt
+        parts:
+        - id: sa-4_tx_smt
+          name: tx_implementation
+          ns: "http://dir.texas.gov/ns/oscal"
+          prose: >-
+            Each state agency entering into or renewing a contract with a vendor authorized to access, transmit, use, or
+            store data for the agency shall include a provision in the contract requiring the vendor to meet the
+            security controls the agency determines are proportionate with the agency's risk under the contract based
+            on the sensitivity of the agency's data. The vendor must periodically provide to the agency evidence that
+            the vendor meets the security controls required under the contract.
+    - control-id: sa-5
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+    - control-id: sa-8
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+    - control-id: sa-9
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_privacy_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: "true"
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+      - position: after
+        by-id: sa-9_smt
+        parts:
+        - id: sa-9_tx_smt
+          name: tx_implementation
+          ns: "http://dir.texas.gov/ns/oscal"
+          prose: >-
+            Information resources assigned from or shared between one state agency to another or from or between a state
+            agency to a contractor or other third party shall be protected in accordance with the conditions imposed by
+            the providing state agency at a minimum.
+    - control-id: sa-10
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: MODERATE
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+      - position: after
+        by-id: sa-10_smt
+        parts:
+        - id: sa-10_tx_smt
+          name: tx_implementation
+          ns: "http://dir.texas.gov/ns/oscal"
+          props:
+          - name: status
+            ns: "http://dir.texas.gov/ns/oscal"
+            value: withdrawn
+    - control-id: sa-11
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: MODERATE
+        - name: tx_privacy_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: "true"
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+    - control-id: sa-22
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+    - control-id: sc-1
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+        links:
+        - href: '#e329fade-69ad-441d-aff0-0821d5bb1f23'
+          rel: reference
+    - control-id: sc-5
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+    - control-id: sc-7
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+    - control-id: sc-8
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: MODERATE
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-01-20
+      - position: after
+        by-id: sc-8_smt
+        parts:
+        - id: sc-8_tx_smt
+          name: tx_implementation
+          ns: "http://dir.texas.gov/ns/oscal"
+          prose: >-
+            Confidential information that is transmitted over a public network (e.g., the Internet) must be encrypted
+            with, at minimum a 128-bit encryption algorithm.
+    - control-id: sc-12
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-01-20
+    - control-id: sc-13
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+        links:
+        - href: '#afcf6fc3-0b84-486a-91e6-3fc7744af21c'
+          rel: reference
+        - href: '#85f1b845-ba92-43aa-9fa7-8045b9fb0bfb'
+          rel: reference
+      - position: after
+        by-id: sc-13_smt
+        parts:
+        - id: sc-13_tx_smt
+          name: tx_implementation
+          ns: "http://dir.texas.gov/ns/oscal"
+          parts:
+          - id: sc-13_tx_smt.a
+            name: item
+            props:
+            - name: label
+              value: a.
+            prose: >-
+              Encryption requirements for information storage devices and data transmissions, as well as specific
+              requirements for portable devices, removable media, and encryption key standards and management shall be
+              based on documented state organization risk management decisions.
+          - id: sc-13_tx_smt.b
+            name: item
+            props:
+            - name: label
+              value: b.
+            prose: >-
+              Confidential information that is transmitted over a public network (e.g., the Internet) must be encrypted.
+          - id: sc-13_tx_smt.c
+            name: item
+            props:
+            - name: label
+              value: c.
+            prose: >-
+              Confidential information stored in a public location that is directly accessible without compensating
+              controls in place (e.g., FTP without access control) must be encrypted.
+          - id: sc-13_tx_smt.d
+            name: item
+            props:
+            - name: label
+              value: d.
+            prose: >-
+              Confidential information must be encrypted if copied to, or stored on, a portable computing device,
+              removable media, or a non-state organization owned computing device.
+          - id: sc-13_tx_smt.e
+            name: item
+            props:
+            - name: label
+              value: e.
+            prose: >-
+              The minimum algorithm strength for protecting confidential information is a 128-bit encryption algorithm,
+              subject to state organization risk management decisions justified and documented in accordance with 1
+              Texas Administrative Code Sections 202.71(c) and 202.75.
+          - id: sc-13_tx_smt.f
+            name: item
+            props:
+            - name: label
+              value: f.
+            - name: status
+              ns: "http://dir.texas.gov/ns/oscal"
+              value: withdrawn
+    - control-id: sc-15
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+    - control-id: sc-20
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-01-20
+    - control-id: sc-21
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-01-20
+    - control-id: sc-22
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-01-20
+    - control-id: sc-39
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-01-20
+    - control-id: si-1
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_privacy_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: "true"
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+        links:
+        - href: '#e329fade-69ad-441d-aff0-0821d5bb1f23'
+          rel: reference
+    - control-id: si-2
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-01-20
+      - position: after
+        by-id: si-2_smt
+        parts:
+        - id: si-2_tx_smt
+          name: tx_implementation
+          ns: "http://dir.texas.gov/ns/oscal"
+          props:
+          - name: status
+            ns: "http://dir.texas.gov/ns/oscal"
+            value: withdrawn
+    - control-id: si-3
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+    - control-id: si-4
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+      - position: after
+        by-id: si-4_smt
+        parts:
+        - id: si-4_tx_smt
+          name: tx_implementation
+          ns: "http://dir.texas.gov/ns/oscal"
+          props:
+          - name: status
+            ns: "http://dir.texas.gov/ns/oscal"
+            value: withdrawn
+    - control-id: si-5
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-01-20
+        links:
+        - href: '#c82c8956-02d5-4166-834d-07d5b2ab93eb'
+          rel: reference
+        - href: '#081adb97-1cd6-4dd7-b572-d15101dd53ed'
+          rel: reference
+    - control-id: si-10
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: MODERATE
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+    - control-id: si-12
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_privacy_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: "true"
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+        links:
+        - href: '#1d738b9b-931f-4c3a-a2d3-9f3715ad3a2f'
+          rel: reference
+        - href: '#dfbe0163-1455-4c89-8fc6-868769d52ded'
+          rel: reference
+        - href: '#2b2a2593-2789-4d95-8ecf-4c004a295983'
+          rel: reference
+        - href: '#39996387-499b-403e-acf6-fd8aead87315'
+          rel: reference
+    - control-id: sr-1
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+        links:
+        - href: '#e329fade-69ad-441d-aff0-0821d5bb1f23'
+          rel: reference
+    - control-id: sr-2
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+    - control-id: sr-3
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+    - control-id: sr-5
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+    - control-id: sr-8
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+    - control-id: sr-12
+      adds:
+      - position: ending
+        props:
+        - name: tx_baseline
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: LOW
+        - name: tx_required_by
+          ns: "http://dir.texas.gov/ns/oscal"
+          value: 2023-07-20
+  back-matter:
+    resources:
+    - uuid: db21b779-8ca3-4952-8900-7446e9908e0a
+      title: 1 TAC 202 Subch. A
+      citation:
+        text: "Title 1 Texas Administrative Code Chapter 202 Subchapter A, Definitions"
+      rlinks:
+      - href: https://texreg.sos.state.tx.us/public/readtac$ext.ViewTAC?tac_view=5&ti=1&pt=10&ch=202&sch=A&rl=Y
+    - uuid: 5a33f129-3016-4a8e-9e0e-7ecdddfc2054
+      title: 1 TAC 202.71
+      citation:
+        text: "Title 1 Texas Administrative Code Section 202.71, Responsibilities of Information Security Officer"
+      rlinks:
+      - href: https://texreg.sos.state.tx.us/public/readtac$ext.TacPage?sl=R&app=9&p_dir=&p_rloc=&p_tloc=&p_ploc=&pg=1&p_tac=&ti=1&pt=10&ch=202&rl=71
+    - uuid: a25a0efa-3d9f-4cce-9ab8-defe7ecad46a
+      title: 1 TAC 202.71(b)(1)
+      citation:
+        text: "Title 1 Texas Administrative Code Section 202.71, Responsibilities of Information Security Officer"
+      rlinks:
+      - href: https://texreg.sos.state.tx.us/public/readtac$ext.TacPage?sl=R&app=9&p_dir=&p_rloc=&p_tloc=&p_ploc=&pg=1&p_tac=&ti=1&pt=10&ch=202&rl=71
+    - uuid: afcf6fc3-0b84-486a-91e6-3fc7744af21c
+      title: 1 TAC 202.71(c)
+      citation:
+        text: "Title 1 Texas Administrative Code Section 202.71, Responsibilities of Information Security Officer"
+      rlinks:
+      - href: https://texreg.sos.state.tx.us/public/readtac$ext.TacPage?sl=R&app=9&p_dir=&p_rloc=&p_tloc=&p_ploc=&pg=1&p_tac=&ti=1&pt=10&ch=202&rl=71
+    - uuid: 24b51e13-dd43-4116-a74f-534ac2ea6ff6
+      title: 1 TAC 202.72
+      citation:
+        text: "Title 1 Texas Administrative Code Section 202.72, Staff Responsibilities"
+      rlinks:
+      - href: https://texreg.sos.state.tx.us/public/readtac$ext.TacPage?sl=R&app=9&p_dir=&p_rloc=&p_tloc=&p_ploc=&pg=1&p_tac=&ti=1&pt=10&ch=202&rl=72
+    - uuid: cc2b2eb0-aab0-4398-a8d6-ea7ba4533e60
+      title: 1 TAC 202.72(a)(3)
+      citation:
+        text: "Title 1 Texas Administrative Code Section 202.72, Staff Responsibilities"
+      rlinks:
+      - href: https://texreg.sos.state.tx.us/public/readtac$ext.TacPage?sl=R&app=9&p_dir=&p_rloc=&p_tloc=&p_ploc=&pg=1&p_tac=&ti=1&pt=10&ch=202&rl=72
+    - uuid: 49ebbb5b-9b46-4c48-895c-4c8831ca5bfc
+      title: 1 TAC 202.73
+      citation:
+        text: "Title 1 Texas Administrative Code Section 202.73, Security Reporting"
+      rlinks:
+      - href: https://texreg.sos.state.tx.us/public/readtac$ext.TacPage?sl=R&app=9&p_dir=&p_rloc=&p_tloc=&p_ploc=&pg=1&p_tac=&ti=1&pt=10&ch=202&rl=72
+    - uuid: 8504278c-811f-4cb0-b602-bdd2002e01c3
+      title: 1 TAC 202.73(a)
+      citation:
+        text: "Title 1 Texas Administrative Code Section 202.73, Security Reporting"
+      rlinks:
+      - href: https://texreg.sos.state.tx.us/public/readtac$ext.TacPage?sl=R&app=9&p_dir=&p_rloc=&p_tloc=&p_ploc=&pg=1&p_tac=&ti=1&pt=10&ch=202&rl=72
+    - uuid: c82c8956-02d5-4166-834d-07d5b2ab93eb
+      title: 1 TAC 202.73(b)
+      citation:
+        text: "Title 1 Texas Administrative Code Section 202.73, Security Reporting"
+      rlinks:
+      - href: https://texreg.sos.state.tx.us/public/readtac$ext.TacPage?sl=R&app=9&p_dir=&p_rloc=&p_tloc=&p_ploc=&pg=1&p_tac=&ti=1&pt=10&ch=202&rl=72
+    - uuid: df55a68e-ee2f-46e5-9f42-1b5889a933ce
+      title: 1 TAC 202.74
+      citation:
+        text: "Title 1 Texas Administrative Code Section 202.74, Institution Information Security Program"
+      rlinks:
+      - href: https://texreg.sos.state.tx.us/public/readtac$ext.TacPage?sl=R&app=9&p_dir=&p_rloc=&p_tloc=&p_ploc=&pg=1&p_tac=&ti=1&pt=10&ch=202&rl=74
+    - uuid: e329fade-69ad-441d-aff0-0821d5bb1f23
+      title: 1 TAC 202.74(a)(2)
+      citation:
+        text: "Title 1 Texas Administrative Code Section 202.74, Institution Information Security Program"
+      rlinks:
+      - href: https://texreg.sos.state.tx.us/public/readtac$ext.TacPage?sl=R&app=9&p_dir=&p_rloc=&p_tloc=&p_ploc=&pg=1&p_tac=&ti=1&pt=10&ch=202&rl=74
+    - uuid: 875b664a-8a0d-47b2-82db-3b5429936ad1
+      title: 1 TAC 202.74(b)(1)
+      citation:
+        text: "Title 1 Texas Administrative Code Section 202.74, Institution Information Security Program"
+      rlinks:
+      - href: https://texreg.sos.state.tx.us/public/readtac$ext.TacPage?sl=R&app=9&p_dir=&p_rloc=&p_tloc=&p_ploc=&pg=1&p_tac=&ti=1&pt=10&ch=202&rl=74
+    - uuid: 85f1b845-ba92-43aa-9fa7-8045b9fb0bfb
+      title: 1 TAC 202.75
+      citation:
+        text: "Title 1 Texas Administrative Code Section 202.75, Managing Security Risks"
+      rlinks:
+      - href: https://texreg.sos.state.tx.us/public/readtac$ext.TacPage?sl=R&app=9&p_dir=&p_rloc=&p_tloc=&p_ploc=&pg=1&p_tac=&ti=1&pt=10&ch=202&rl=75
+    - uuid: 8761199b-f199-4e1f-a169-f1caaa40b8ac
+      title: 1 TAC 202.75(4)
+      citation:
+        text: "Title 1 Texas Administrative Code Section 202.75, Managing Security Risks"
+      rlinks:
+      - href: https://texreg.sos.state.tx.us/public/readtac$ext.TacPage?sl=R&app=9&p_dir=&p_rloc=&p_tloc=&p_ploc=&pg=1&p_tac=&ti=1&pt=10&ch=202&rl=75
+    - uuid: c8126cdb-28a7-494a-a713-d8a04512537d
+      title: 1 TAC 202.76
+      citation:
+        text: "Title 1 Texas Administrative Code Section 202.76, Security Control Standards Catalog"
+      rlinks:
+      - href: https://texreg.sos.state.tx.us/public/readtac$ext.TacPage?sl=R&app=9&p_dir=&p_rloc=&p_tloc=&p_ploc=&pg=1&p_tac=&ti=1&pt=10&ch=202&rl=76
+    - uuid: 26250e8b-9588-4b08-b539-9d440d9489d1
+      title: 1 TAC 202.76(c)
+      citation:
+        text: "Title 1 Texas Administrative Code Section 202.76, Security Control Standards Catalog"
+      rlinks:
+      - href: https://texreg.sos.state.tx.us/public/readtac$ext.TacPage?sl=R&app=9&p_dir=&p_rloc=&p_tloc=&p_ploc=&pg=1&p_tac=&ti=1&pt=10&ch=202&rl=76
+    - uuid: 4b78cf60-7a15-4a9d-9fa5-f0a294f9d7a8
+      title: 1 TAC 202.77
+      citation:
+        text: "Title 1 Texas Administrative Code Section 202.77, Texas Risk and Authorization Management Program for Institutions of Higher Education"
+      rlinks:
+      - href: https://texreg.sos.state.tx.us/public/readtac$ext.TacPage?sl=R&app=9&p_dir=&p_rloc=&p_tloc=&p_ploc=&pg=1&p_tac=&ti=1&pt=10&ch=202&rl=77
+    - uuid: a074f0c5-90ae-4a06-acdd-b1a06d33edd7
+      title: 1 TAC 202.77(c)(1)(B)
+      citation:
+        text: "Title 1 Texas Administrative Code Section 202.77, Texas Risk and Authorization Management Program for Institutions of Higher Education"
+      rlinks:
+      - href: https://texreg.sos.state.tx.us/public/readtac$ext.TacPage?sl=R&app=9&p_dir=&p_rloc=&p_tloc=&p_ploc=&pg=1&p_tac=&ti=1&pt=10&ch=202&rl=77
+    - uuid: dfbe0163-1455-4c89-8fc6-868769d52ded
+      title: 1 TAC Ch. 203
+      citation:
+        text: "Title 1 Texas Administrative Code Chapter 203, Management of Electronic Transactions and Signed Records"
+      rlinks:
+      - href: https://texreg.sos.state.tx.us/public/readtac$ext.ViewTAC?tac_view=4&ti=1&pt=10&ch=203
+    - uuid: 2b2a2593-2789-4d95-8ecf-4c004a295983
+      title: 13 TAC Ch. 6
+      citation:
+        text: "Title 13 Texas Administrative Code Chapter 6, State Records"
+      rlinks:
+      - href: https://texreg.sos.state.tx.us/public/readtac$ext.ViewTAC?tac_view=4&ti=13&pt=1&ch=6
+    - uuid: 95367016-533f-4a85-b5ee-6f9f6b381a97
+      title: Tex. Govt. Code Sec. 2054.068
+      citation:
+        text: "Texas Government Code Section 2054.068, Information Technology Infrastructure Report"
+      rlinks:
+      - href: https://statutes.capitol.texas.gov/Docs/GV/htm/GV.2054.htm#2054.068
+    - uuid: ac9a50f4-69d8-4309-9d60-f88cc6352970
+      title: Tex. Govt. Code Sec. 2054.1125
+      citation:
+        text: "Texas Government Code Section 2054.1125, Security Breach Notification by State Agency"
+      rlinks:
+      - href: https://statutes.capitol.texas.gov/Docs/GV/htm/GV.2054.htm#2054.1125
+    - uuid: c3690af5-3560-4152-9eeb-4df1918105a3
+      title: Tex. Govt. Code Sec. 2054.133
+      citation:
+        text: "Texas Government Code Section 2054.133, Information Security Plan"
+      rlinks:
+      - href: https://statutes.capitol.texas.gov/Docs/GV/htm/GV.2054.htm#2054.133
+    - uuid: ac69799a-8a66-4ffd-b79f-5ef0c0732367
+      title: Tex. Govt. Code Sec. 2054.136
+      citation:
+        text: "Texas Government Code Section 2054.136, Designated Information Security Officer"
+      rlinks:
+      - href: https://statutes.capitol.texas.gov/Docs/GV/htm/GV.2054.htm#2054.136
+    - uuid: 2d72e3e7-9a4d-4438-afef-a1f941476164
+      title: Tex. Govt. Code Sec. 2054.138
+      citation:
+        text: "Texas Government Code Section 2054.138, Security Controls for State Agency Data"
+      rlinks:
+      - href: https://statutes.capitol.texas.gov/Docs/GV/htm/GV.2054.htm#2054.138
+    - uuid: f339b850-c6a3-43c8-a679-9302482d63ce
+      title: Tex. Govt. Code Sec. 2054.516
+      citation:
+        text: "Texas Government Code Section 2054.516, Data Security Plan for Online and Mobile Applications"
+      rlinks:
+      - href: https://statutes.capitol.texas.gov/Docs/GV/htm/GV.2054.htm#2054.516
+    - uuid: 8bdfe234-14d2-4617-b080-549de88b5304
+      title: Tex. Govt. Code Sec. 2054.518
+      citation:
+        text: "Texas Government Code Section 2054.518, Cybersecurity Risks and Incidents"
+      rlinks:
+      - href: https://statutes.capitol.texas.gov/Docs/GV/htm/GV.2054.htm#2054.518
+    - uuid: fb6e0926-a42a-4558-8067-b4095284bea8
+      title: Tex. Govt. Code Sec. 2054.5191
+      citation:
+        text: "Texas Government Code Section 2054.5191, Cybersecurity Training Required: Certain Employees and Officials"
+      rlinks:
+      - href: https://statutes.capitol.texas.gov/Docs/GV/htm/GV.2054.htm#2054.5191
+    - uuid: 61919092-3ef9-489b-b23e-277a0203df2f
+      title: Tex. Govt. Code Sec. 2054.5192
+      citation:
+        text: "Texas Government Code Section 2054.5192, Cybersecurity Training Required: Certain State Contractors"
+      rlinks:
+      - href: https://statutes.capitol.texas.gov/Docs/GV/htm/GV.2054.htm#2054.5192
+    - uuid: 93e79b7a-bea9-4b7b-ba90-389e0a5215e3
+      title: Tex. Govt. Code Sec. 2054.077
+      citation:
+        text: "Texas Government Code Section 2054.077, Vulnerability Reports"
+      rlinks:
+      - href: https://statutes.capitol.texas.gov/Docs/GV/htm/GV.2054.htm#2054.077
+    - uuid: 4eccbedb-6b3b-459a-b274-c353490880a0
+      title: Tex. Govt. Code Sec. 2054.519
+      citation:
+        text: "Texas Government Code Section 2054.519, State Certified Cybersecurity Training Programs"
+      rlinks:
+      - href: https://statutes.capitol.texas.gov/Docs/GV/htm/GV.2054.htm#2054.519
+    - uuid: 1d738b9b-931f-4c3a-a2d3-9f3715ad3a2f
+      title: Tex. Govt. Code Sec. 441.185
+      citation:
+        text: "Texas Government Code Section 441.185, Record Retention Schedule"
+      rlinks:
+      - href: https://statutes.capitol.texas.gov/Docs/GV/htm/GV.441.htm#441.185
+    - uuid: 081adb97-1cd6-4dd7-b572-d15101dd53ed
+      title: Tex. Bus. \& Comm. Code Sec. 521.053
+      citation:
+        text: "Texas Business and Commerce Code Section 521.053, Notification Required Following Breach of Security of Computerized Data"
+      rlinks:
+      - href: https://statutes.capitol.texas.gov/Docs/BC/htm/BC.521.htm#521.053
+    - uuid: d4ea7f48-95f0-4f6d-80e3-bb3c09a9bf64
+      title: DIR Data Classification Guide
+      citation:
+        text: DIR Data Classification Guide
+      rlinks:
+      - href: https://dir.texas.gov/resource-library-item/data-classification-guide-v11
+    - uuid: ad3fefd5-abc1-4e3c-9be3-9111cbe673d6
+      title: Tex. Labor Code Sec. 412.054
+      citation:
+        text: "Texas Labor Code Section 412.054, Continuity of Operations Plan"
+      rlinks:
+      - href: https://statutes.capitol.texas.gov/Docs/LA/htm/LA.412.htm#412.054
+    - uuid: 83ae6cdf-d10a-445a-bf7e-120a7d95bc2e
+      title: MODELSECPLAN
+      citation:
+        text: Texas Department of Information Resources. Model Security Plan for Prohibited Technologies.
+      rlinks:
+      - href: https://dir.texas.gov/sites/default/files/2023-02/Statewide_Plan_for_Preventing_Use_of_Prohibited_Technology_in_State_Agencies_%28Final_OOG%29.pdf
+    - uuid: 39996387-499b-403e-acf6-fd8aead87315
+      title: RETSCHED
+      citation:
+        text: Texas State Library and Archives Commission. Retention Schedules for Texas State Agencies and Public Universities.
+      rlinks:
+      - href: https://www.tsl.texas.gov/slrm/rrs

@@ -6,7 +6,7 @@ The `tamus-cyber/tamus-control-standards` project repository is organized as fol
 
 | Directory | Description |
 |---|---|
-| content | Native OSCAL XML files that are used to build control catalogs, profiles, etc. |
+| content | Native OSCAL YAML files that are used to build control catalogs, profiles, etc. |
 
 Contributions and feedback for future control standards releases are welcome via GitHub. [Please open a new issue with your feedback](https://github.com/tamus-cyber/tamus-control-standards/issues).
 
@@ -16,18 +16,18 @@ Machine-readable formats compliant with the Open Security Controls Assessment La
 
 ## 0. SET UP PREREQUISITES
 
-0.1. Install Maven via Homebrew
-
-0.2. Create an OSCAL working directory near your home (~) directory
+0.1. Install the OSCAL CLI tool per the instructions at `https://github.com/usnistgov/oscal-cli`
 
 ## 1. SET UP REPOSITORIES
 
-1.1. Clone the `OSCAL` repository from `https://github.com/usnistgov/OSCAL.git` into working directory
-
-1.2. Clone the `tamus-control-standards` repository from `https://github.com/tamus-cyber/tamus-control-standards.git` into working directory
+1.1. Clone the `tamus-control-standards` repository from `https://github.com/tamus-cyber/tamus-control-standards.git` into a working directory
 
 ## 2. UPDATE CONTROLS CATALOG
 
-2.1. Go into `{WORKING_DIR}/tamus-control-standards/utils`
+2.1. Make changes to `content/tamus.edu/TAMUS_profile.yaml` as needed
 
-2.2. Run `sh build-tamus-catalogs.sh [Path to POM] [Path to OSCAL library] [Path to OSCAL content]`
+## 3. COMPILE OSCAL CONTROLS CATALOGS
+
+3.1. (As needed): Run `oscal-cli profile resolve --to=yaml <path/to/dir/profile> <path/to/dir/catalog/output>` from the `content/texas.gov` directory
+
+3.2. Run `oscal-cli profile resolve --to=yaml <path/to/tamus/profile> <path/to/tamus/catalog/output>` from the `content/tamus.edu` directory

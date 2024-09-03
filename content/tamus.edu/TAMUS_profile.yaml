@@ -1,0 +1,1025 @@
+---
+profile:
+  uuid: 33315829-b65d-4ee7-8b1a-6f292ca6445e
+  metadata:
+    title: Texas A&M University System Security Control Standards Catalog
+    last-modified: "2024-08-27T16:52:00-00:00"
+    version: 2.1.4
+    oscal-version: 1.1.2
+    roles:
+      - id: prepared-by
+        title: Document creator
+    parties:
+      - uuid: 00cd4c91-5db6-45f4-8c15-343baed5fdf8
+        type: organization
+        name: Texas A&M University System Office of Cybersecurity
+        short-name: TAMUS Cyber
+        links:
+          - href: https://cyber.tamus.edu
+            rel: homepage
+        email-addresses:
+          - contact@cyber.tamus.edu
+        addresses:
+          - type: work
+            addr-lines:
+              - 1370 TAMU
+            city: College Station
+            state: TX
+            postal-code: 77843-1370
+            country: US
+    responsible-parties:
+      - role-id: prepared-by
+        party-uuids:
+          - 00cd4c91-5db6-45f4-8c15-343baed5fdf8
+  imports:
+    - href: "../texas.gov/TX_DIR_resolved-profile_catalog.yaml"
+      include-all: {}
+  merge:
+    as-is: true
+  modify:
+    alters:
+      - control-id: ac-2.7
+        adds: 
+          - position: ending
+            props: 
+              - ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_required_by
+                value: 2022-08-01
+          - position: after
+            by-id: ac-2.7_smt
+            parts: 
+              - id: ac-2.7_tamus_smt
+                ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_implementation
+                prose: >-
+                  Ensure users with privileged (also known as administrative or special access) accounts are aware of
+                  the extraordinary responsibilities associated with the use of privileged accounts.
+      - control-id: ac-3
+        adds:
+          - position: ending
+            links: 
+              - href: "#8bbc6ce8-5f6b-4117-80d8-6a4274928090"
+                rel: reference
+      - control-id: ac-3.7
+        adds:
+          - position: ending
+            props:
+              - ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_required_by
+                value: 2022-08-01
+            parts:
+              - id: ac-3.7_tamus_smt
+                ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_implementation
+                props:
+                  - ns: "http://cyber.tamus.edu/ns/oscal"
+                    name: status
+                    value: withdrawn
+      - control-id: ac-8
+        adds:
+          - position: ending
+            props:
+              - ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_required_by
+                value: 2022-08-01
+          - position: after
+            by-id: ac-8_tx_smt
+            parts:
+              - id: ac-8_tamus_smt
+                ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_implementation
+                prose: >-
+                  Publish a privacy notice on websites owned by the organization which contains, at a minimum, the
+                  content contained on or a link to the Texas A&M University System online privacy standard at
+                  https://cyber.tamus.edu/policy/resources/privacy-standard.
+      - control-id: ac-11
+        adds:
+          - position: ending
+            props:
+              - ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_required_by
+                value: 2024-02-01
+              - ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_new_requirement
+                value: "true"
+      - control-id: ac-19
+        adds:
+          - position: ending
+            props:
+              - ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_required_by
+                value: 2022-12-19
+          - position: after
+            by-id: ac-19_tx_smt
+            parts:
+              - id: ac-19_tamus_smt
+                ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_implementation
+                prose: >-
+                  Require the implementation of a mobile device management (MDM) product on all organization-controlled
+                  mobile devices.
+      - control-id: ac-22
+        adds:
+          - position: after
+            by-id: ac-22_smt
+            parts:
+              - id: ac-22_tamus_smt
+                ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_implementation
+                props:
+                  - ns: "http://cyber.tamus.edu/ns/oscal"
+                    name: status
+                    value: withdrawn
+                links:
+                  - href: "#pl-4.1"
+                    rel: incorporated-into
+      - control-id: cm-2
+        adds:
+          - position: after
+            by-id: cm-2_smt
+            parts:
+              - id: cm-2_tamus_smt
+                ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_implementation
+                props:
+                  - ns: "http://cyber.tamus.edu/ns/oscal"
+                    name: status
+                    value: withdrawn
+      - control-id: cm-3
+        adds:
+          - position: ending
+            props:
+              - ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_required_by
+                value: 2022-08-01
+          - position: after
+            by-id: cm-3_tx_smt
+            parts:
+              - id: cm-3_tamus_smt
+                ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_implementation
+                parts:
+                  - id: cm-3_tamus_smt.1
+                    name: item
+                    prose: >-
+                      Incorporate change management processes to ensure secure, reliable, and stable operations to
+                      which all offices that support information systems adhere. Ensure the change management process
+                      incorporates guidelines that address:
+                    parts:
+                      - id: cm-3_tamus_smt.a
+                        name: item
+                        props:
+                          - name: label
+                            value: a.
+                        prose: formally identifying, classifying, prioritizing, and requesting changes;
+                      - id: cm-3_tamus_smt.b
+                        name: item
+                        props:
+                          - name: label
+                            value: b.
+                        prose: identifying and deploying emergency changes;
+                      - id: cm-3_tamus_smt.c
+                        name: item
+                        props:
+                          - name: label
+                            value: c.
+                        prose: assessing potential impacts from changes;
+                      - id: cm-3_tamus_smt.d
+                        name: item
+                        props:
+                          - name: label
+                            value: d.
+                        prose: authorizing changes and exceptions, and
+                      - id: cm-3_tamus_smt.e
+                        name: item
+                        props:
+                          - name: label
+                            value: e.
+                        prose: implementing changes and planning for back-outs.
+      - control-id: cm-3.2
+        adds:
+          - position: ending
+            props:
+              - ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_required_by
+                value: 2022-08-01
+      - control-id: cm-6
+        adds:
+          - position: ending
+            props:
+              - ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_required_by
+                value: 2022-08-01
+            links:
+              - href: "#eedcbb1f-0f8e-4efc-a02b-74c9fb8438cc"
+                rel: reference
+              - href: "#997c9abf-6669-4196-89fd-68fce5f21b74"
+                rel: reference
+          - position: after
+            by-id: cm-6_smt
+            parts:
+              - id: cm-6_tamus_smt
+                ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_implementation
+                prose: >-
+                  Adopt baseline security configuration checklists that meet or exceed published industry best practice
+                  sources (e.g., Center for Internet Security Benchmarks [CIS Benchmarks], NIST National Checklist
+                  Program [NCP]) when available, or locally develop security configuration checklists otherwise, for all
+                  organization-owned or -managed major and high-impact information systems, and systems processing
+                  confidential information.
+      - control-id: cm-10
+        adds:
+          - position: ending
+            props:
+              - ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_required_by
+                value: 2022-08-01
+          - position: after
+            by-id: cm-10_smt
+            parts:
+              - id: cm-10_tamus_smt
+                ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_implementation
+                prose: >-
+                  Inform users that unauthorized or unlicensed use of software is regarded as a serious matter subject
+                  to disciplinary action.
+      - control-id: cm-11
+        adds:
+          - position: ending
+            props:
+              - ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_required_by
+                value: 2024-02-01
+              - ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_new_requirement
+                value: "true"
+          - position: after
+            by-id: cm-11_smt
+            parts:
+              - id: cm-11_tamus_smt
+                ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_implementation
+                parts:
+                  - id: cm-11_tamus_smt.a
+                    name: item
+                    props:
+                      - name: label
+                        value: a.
+                    prose: >-
+                      Users may not install applications which capture indiscriminate input from a human interface
+                      device such as a keyboard.
+                  - id: cm-11_tamus_smt.b
+                    name: item
+                    props:
+                      - name: label
+                        value: b.
+                    prose: >-
+                      Applications designed to capture discriminate input are not in scope of this control standard if
+                      the application meets the following criteria:
+                    parts:
+                      - id: cm-11_tamus_smt.b.1
+                        name: item
+                        props:
+                          - name: label
+                            value: "1."
+                        prose: The application behavior is explicitly approved by the user on a per-application basis;
+                      - id: cm-11_tamus_smt.b.2
+                        name: item
+                        props:
+                          - name: label
+                            value: "2."
+                        prose: The application does not run at the operating system level, and
+                      - id: cm-11_tamus_smt.b.3
+                        name: item
+                        props:
+                          - name: label
+                            value: "3."
+                        prose: The application does not capture indiscriminate input from a web browser.
+      - control-id: cp-1
+        adds:
+          - position: after
+            by-id: cp-1_tx_smt
+            parts:
+              - id: cp-1_tamus_smt
+                ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_implementation
+                props:
+                  - ns: "http://cyber.tamus.edu/ns/oscal"
+                    name: status
+                    value: withdrawn
+                links:
+                  - href: "#cp-2.1"
+                    rel: moved-to
+      - control-id: cp-2
+        adds:
+          - position: ending
+            links:
+              - href: "#28edd686-b17c-47ca-aba4-4c7de11e82f5"
+                rel: reference
+      - control-id: cp-2.1
+        adds:
+          - position: ending
+            props:
+              - ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_required_by
+                value: 2022-08-01
+          - position: after
+            by-id: cp-2.1_smt
+            parts:
+              - id: cp-2.1_tamus_smt
+                ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_implementation
+                prose: >-
+                  Develop information resources contingency plans that align with the member’s emergency management
+                  plan as required by Texas A&M System Regulation 34.07.01, Emergency Management.
+      - control-id: cp-4
+        adds:
+          - position: ending
+            props:
+              - ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_required_by
+                value: 2022-08-01
+          - position: after
+            by-id: cp-4_tx_smt
+            parts:
+              - id: cp-4_tamus_smt
+                ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_implementation
+                parts:
+                  - id: cp-4_tamus_smt.a
+                    name: item
+                    props:
+                      - name: label
+                        value: a.
+                    prose: >-
+                      Test the contingency plan at least annually through a tabletop exercise, and
+                  - id: cp-4_tamus_smt.b
+                    name: item
+                    props:
+                      - name: label
+                        value: b.
+                    prose: >-
+                      Test the contingency plan at least every three years with a full interruption of high-impact,
+                      on-premise services.
+                  - id: cp-4_tamus_smt.c
+                    name: item
+                    props:
+                      - name: label
+                        value: c.
+                      - ns: "http://cyber.tamus.edu/ns/oscal"
+                        name: status
+                        value: withdrawn
+                    links:
+                      - href: "#cp-4.1"
+                        rel: moved-to
+      - control-id: cp-4.1
+        adds:
+          - position: ending
+            props:
+              - ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_required_by
+                value: 2022-08-01
+          - position: after
+            by-id: cp-4.1_smt
+            parts:
+              - id: cp-4_tamus_smt
+                ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_implementation
+                prose: >-
+                  Include information resources contingency plan testing in the member’s emergency management plan
+                  testing and exercises.
+      - control-id: cp-9.3
+        adds:
+          - position: starting
+            params:
+              - id: cp-09.03_tamus_odp.01
+                props:
+                  - name: label
+                    value: "CP-09.03_TAMUS_ODP[01]"
+                    class: sp800-53a
+                label: information systems that process and/or store sensitive or high-impact information
+                guidelines:
+                  - prose: the information systems to whom the control applies
+          - position: ending
+            props:
+              - ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_required_by
+                value: 2022-08-01
+          - position: after
+            by-id: cp-9.3_smt
+            parts:
+              - id: cp-9.3_tamus_smt
+                ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_implementation
+                prose: >-
+                  Protect {{ insert: param, cp-09.03_tamus_odp.01 }} with a backup strategy which uses immutable backup
+                  storage and/or an out-of-band backup process that prevents direct access to backup storage from the
+                  organization's production networks.
+      - control-id: ia-2.1
+        adds:
+          - position: ending
+            props:
+              - ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_required_by
+                value: 2021-09-13
+          - position: after
+            by-id: ia-2.1_smt
+            parts:
+              - id: ia-2.1_tamus_smt
+                ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_implementation
+                parts:
+                  - id: ia-2.1_tamus_smt.a
+                    name: item
+                    props:
+                      - name: label
+                        value: a.
+                    prose: >-
+                      Employ the use of multi-factor authentication on information resources containing information
+                      categorized as Confidential under A&M System Catalog control [RA-2](#ra-2) to ensure that only
+                      appropriate individuals have access to confidential information, and
+                  - id: ia-2.1_tamus_smt.b
+                    name: item
+                    props:
+                      - name: label
+                        value: b.
+                    prose: >-
+                      Approve requests for exceptions in advance and report exceptions to the SCISO annually.
+      - control-id: ia-2.2
+        adds:
+          - position: after
+            by-id: ia-2.2_smt
+            parts:
+              - id: ia-2.2_tamus_smt
+                ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_implementation
+                props:
+                  - ns: "http://cyber.tamus.edu/ns/oscal"
+                    name: status
+                    value: withdrawn
+      - control-id: ia-5.9
+        adds:
+          - position: ending
+            props:
+              - ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_required_by
+                value: 2025-01-01
+              - ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_new_requirement
+                value: "true"
+          - position: after
+            by-id: ia-5.9_smt
+            parts:
+              - id: ia-5.9_tamus_smt
+                ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_implementation
+                prose: >-
+                  Members shall federate local users to TAMUFederation and InCommon Federation, at a minimum.
+      - control-id: ia-11
+        adds:
+          - position: ending
+            props:
+              - ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_required_by
+                value: 2022-08-01
+          - position: after
+            by-id: ia-11_smt
+            parts:
+              - id: ia-11_tamus_smt
+                ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_implementation
+                prose: >-
+                  Limit the lifetime of browser cookies used for binding authenticated sessions to organization-owned
+                  or -managed information systems to no more than five (5) days.
+      - control-id: ia-12
+        adds:
+          - position: ending
+            props:
+              - ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_required_by
+                value: 2022-08-01
+            links:
+              - href: "#8bbc6ce8-5f6b-4117-80d8-6a4274928090"
+                rel: reference
+      - control-id: ia-12.2
+        adds:
+          - position: ending
+            props:
+              - ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_required_by
+                value: 2024-09-01
+              - ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_new_requirement
+                value: "true"
+          - position: after
+            by-id: ia-12.2_smt
+            parts:
+              - id: ia-12.2_tamus_smt
+                ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_implementation
+                prose: >-
+                  Identity evidence shall be an identification card containing the bearer’s photograph, issued by a
+                  federal or state government authority of the United States, to include members of the Texas A&M
+                  University System; a visa issued by the U.S. Department of State, or a foreign passport issued by a
+                  Visa Waiver Program participating country.
+      - control-id: ia-12.3
+        adds:
+          - position: ending
+            props:
+              - ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_required_by
+                value: 2024-09-01
+              - ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_new_requirement
+                value: "true"
+          - position: after
+            by-id: ia-12.3_smt
+            parts:
+              - id: ia-12.3_tamus_smt
+                ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_implementation
+                prose: >-
+                  Members shall require in-person or remote visual confirmation of the requestor's identity against
+                  identity evidence specified in [IA-12(2)](#ia-12.2) prior to information resource custodians
+                  performing any requested changes (including, but not limited to, password reset, change of MFA phone
+                  number or device, or change of recovery email address) of Identity Assurance Level (IAL) 2 user accounts
+                  (e.g., faculty, staff, students).  Visual confirmation may be accomplished through in-person verification
+                  or a live video conference session with the registration authority.  This control standard does not apply
+                  to automated systems such as self-service password reset or MFA device management.
+      - control-id: ir-6
+        adds:
+          - position: ending
+            props:
+              - ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_required_by
+                value: 2022-08-01
+          - position: after
+            by-id: ir-6_tx_smt
+            parts:
+              - id: ir-6_tamus_smt
+                ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_implementation
+                prose: >-
+                  Report information security incidents where the confidentiality, integrity, or availability of a moderate or
+                  high-impact organization-owned or -operated information system, or a system processing confidential information,
+                  is potentially compromised to Texas A&M University System Cyber Operations using the guidance in the
+                  [Incident Notification Guidelines](https://cyber.tamus.edu/policy/guidelines/incident-notification/), unless a
+                  law enforcement agency determines such a notification will impede a criminal investigation.
+      - control-id: mp-3
+        adds:
+          - position: ending
+            props:
+              - ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_required_by
+                value: 2022-08-01
+            links:
+              - href: "#5b23f2c5-4c42-4b0e-a75b-34af3bcafb10"
+                rel: reference
+          - position: after
+            by-id: mp-3_smt
+            parts:
+              - id: mp-3_tamus_smt
+                ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_implementation
+                prose: >-
+                  Mark, physically or electronically, removable electronic media and information resources output containing
+                  sensitive personal information [TxBCC 521.002] by indicating the ownership, distribution limitations,
+                  handling caveats, and applicable data categorizations.
+      - control-id: pe-6
+        adds:
+          - position: after
+            by-id: pe-6_smt
+            parts:
+              - id: pe-6_tamus_smt
+                ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_implementation
+                props:
+                  - ns: "http://cyber.tamus.edu/ns/oscal"
+                    name: status
+                    value: withdrawn
+                links:
+                  - href: "#pe-6.3"
+                    rel: moved-to
+      - control-id: pe-6.3
+        adds:
+          - position: ending
+            props:
+              - ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_required_by
+                value: 2022-08-01
+          - position: after
+            by-id: pe-6.3_smt
+            parts:
+              - id: pe-6.3_tamus_smt
+                ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_implementation
+                prose: >-
+                  Ensure audio-visual surveillance technology used to monitor physical access to information systems
+                  is used responsibly and within the intended scope of the purpose for such deployment, and transparent
+                  processes and controls are implemented for the use of such technology and any resulting recorded material.
+      - control-id: pe-18
+        adds:
+          - position: ending
+            props:
+              - ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_required_by
+                value: 2021-09-13
+            links:
+              - href: "#cp-8"
+                rel: related
+              - href: "#pe-11"
+                rel: related
+              - href: "#pe-14"
+                rel: related
+          - position: after
+            by-id: pe-18_smt
+            parts:
+              - id: pe-18_tamus_smt
+                ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_implementation
+                parts:
+                  - id: pe-18_tamus_smt.a
+                    name: item
+                    props:
+                      - name: label
+                        value: a.
+                    prose: >-
+                      Consolidate all significant IT equipment into centralized member data center(s) or approved
+                      commercial data center.
+                  - id: pe-18_tamus_smt.b
+                    name: item
+                    props:
+                      - name: label
+                        value: b.
+                    prose: >-
+                      The data center must have, at a minimum:
+                    parts:
+                      - id: pe-18_tamus_smt.b.1
+                        name: item
+                        props:
+                          - name: label
+                            value: "1."
+                        prose: "redundant power delivery as specified in [PE-11](#pe-11);"
+                      - id: pe-18_tamus_smt.b.2
+                        name: item
+                        props:
+                          - name: label
+                            value: "2."
+                        prose: "redundant networks as specified in [CP-8](#cp-8);"
+                      - id: pe-18_tamus_smt.b.3
+                        name: item
+                        props:
+                          - name: label
+                            value: "3."
+                        prose: "redundant cooling as specified in [PE-14](#pe-14), and"
+                      - id: pe-18_tamus_smt.b.4
+                        name: item
+                        props:
+                          - name: label
+                            value: "4."
+                        prose: "adequate physical and cybersecurity as specified in the PE and SC families."
+                  - id: pe-18_tamus_smt.c
+                    name: item
+                    props:
+                      - name: label
+                        value: c.
+                    prose: >-
+                      Data centers may also provide:
+                    parts:
+                      - id: pe-18_tamus_smt.c.1
+                        name: item
+                        props:
+                          - name: label
+                            value: "1."
+                        prose: "operating system setup and administration (including virtualized);"
+                      - id: pe-18_tamus_smt.c.2
+                        name: item
+                        props:
+                          - name: label
+                            value: "2."
+                        prose: "backup and recovery;"
+                      - id: pe-18_tamus_smt.c.3
+                        name: item
+                        props:
+                          - name: label
+                            value: "3."
+                        prose: "storage management;"
+                      - id: pe-18_tamus_smt.c.4
+                        name: item
+                        props:
+                          - name: label
+                            value: "4."
+                        prose: "configuration and patch management, and"
+                      - id: pe-18_tamus_smt.c.5
+                        name: item
+                        props:
+                          - name: label
+                            value: "5."
+                        prose: "other managed services."
+      - control-id: pl-4
+        adds:
+          - position: ending
+            props:
+              - ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_required_by
+                value: 2022-08-01
+            links:
+              - href: "#a444439a-d0c7-4d93-b98d-3eeb506f2a1e"
+                rel: reference
+          - position: after
+            by-id: pl-4_tx_smt
+            parts:
+              - id: pl-4_tamus_smt
+                ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_implementation
+                prose: >-
+                  Ensure rules of behavior incorporate Texas AM System Policy 33.04, Use of System Resources, and the
+                  organization's acceptable use guidelines.
+      - control-id: pm-5
+        adds:
+          - position: ending
+            props:
+              - ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_required_by
+                value: 2022-08-01
+            links:
+              - href: "#1d635223-295d-4ac9-a117-9c7558cb9ea3"
+                rel: reference
+          - position: after
+            by-id: pm-5_tx_smt
+            parts:
+              - id: pm-5_tamus_smt
+                ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_implementation
+                parts:
+                  - id: pm-5_tamus_smt.a
+                    name: item
+                    props:
+                      - name: label
+                        value: a.
+                    prose: >-
+                      Designate a single system of record for inventory of all information systems [SP 800-171] and
+                      network-attached operational technology [SP 800-37] owned or managed by the member;
+                  - id: pm-5_tamus_smt.b
+                    name: item
+                    props:
+                      - name: label
+                        value: b.
+                    prose: >-
+                      Include any cloud computing services [SP 800-145] operated by the member in the inventory of
+                      organizational systems, and
+                  - id: pm-5_tamus_smt.c
+                    name: item
+                    props:
+                      - name: label
+                        value: c.
+                    prose: >-
+                      Designate which data regarding an information system to record in the inventory of information
+                      systems. At a minimum, the data includes a unique identifier (e.g., serial number or system name),
+                      owner, custodian, description of the information system's function or major application, and
+                      highest level of data categorization stored/processed on the information system.
+      - control-id: pm-14
+        adds:
+          - position: ending
+            props:
+              - ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_required_by
+                value: 2022-08-01
+          - position: after
+            by-id: pm-14_smt
+            parts:
+              - id: pm-14_tamus_smt
+                ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_implementation
+                prose: >-
+                  Ensure an IT organization is designated to provide security monitoring for all information systems,
+                  in both centralized and decentralized IT environments, owned or managed by the organization.
+      - control-id: pt-3
+        adds:
+          - position: ending
+            props:
+              - ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_required_by
+                value: 2022-08-01
+            links:
+              - href: "#5b23f2c5-4c42-4b0e-a75b-34af3bcafb10"
+                rel: reference
+          - position: after
+            by-id: pt-3_smt
+            parts:
+              - id: pt-3_tamus_smt
+                ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_implementation
+                prose: >-
+                  Reduce, and eliminate where possible, the collection and/or use of sensitive personal information
+                  [TxBCC 521.002] in information resources under the control of the organization.
+      - control-id: ra-2
+        adds:
+          - position: ending
+            props:
+              - ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_required_by
+                value: 2022-08-01
+          - position: after
+            by-id: ra-2_tx_smt
+            parts:
+              - id: ra-2_tamus_smt
+                ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_implementation
+                prose: >-
+                  Categorize information and information systems owned or managed by the organization using a data
+                  categorization structure that incorporates the guidance provided in the Texas A&M System
+                  [Data Categorization Standard](https://cyber.tamus.edu/policy/guidelines/data-categorization/),
+                  at a minimum.
+      - control-id: sa-3
+        adds:
+          - position: ending
+            props:
+              - ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_required_by
+                value: 2022-08-01
+          - position: after
+            by-id: sa-3_tx_smt
+            parts:
+              - id: sa-3_tamus_smt
+                ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_implementation
+                prose: >-
+                  The member information security officer reviews the data security requirements and specifications
+                  of any new information systems or services that process and/or store sensitive or high-impact information.
+      - control-id: sa-4
+        adds:
+          - position: ending
+            props:
+              - ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_required_by
+                value: 2022-08-01
+          - position: after
+            by-id: sa-4_tx_smt
+            parts:
+              - id: sa-4_tamus_smt
+                ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_implementation
+                prose: >-
+                  The member information security officer:
+                parts:
+                  - id: sa-4_tamus_smt.a
+                    name: item
+                    props:
+                      - name: label
+                        value: a.
+                    prose: >-
+                      Reviews and approves the security requirements in acquisition contracts of any new information
+                      system that processes and/or stores sensitive or high-impact information prior to the member
+                      procuring the system or service, and
+                  - id: sa-4_tamus_smt.b
+                    name: item
+                    props:
+                      - name: label
+                        value: b.
+                    prose: >-
+                      Ensures acquisition contracts for information systems, system components, or information system
+                      services address information security, backup, and privacy requirements.
+                    parts:
+                      - id: sa-4_tamus_smt.b.1
+                        name: item
+                        props:
+                          - name: label
+                            value: "1."
+                        prose: >-
+                          Such contracts should include right-to-audit and other provisions to provide appropriate
+                          assurance that applications and information are adequately protected.
+                      - id: sa-4_tamus_smt.b.2
+                        name: item
+                        props:
+                          - name: label
+                            value: "2."
+                        prose: >-
+                          Vendors and third parties adhere to all state and Federal laws and System policies
+                          pertaining to the protection of information resources and privacy of sensitive information.
+      - control-id: sc-13
+        adds:
+          - position: after
+            by-id: sc-13_tx_smt
+            parts:
+              - id: sc-13_tamus_smt
+                ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_implementation
+                props:
+                  - ns: "http://cyber.tamus.edu/ns/oscal"
+                    name: status
+                    value: withdrawn
+      - control-id: sc-21
+        adds:
+          - position: after
+            by-id: sc-21_smt
+            parts:
+              - id: sc-21_tamus_smt
+                ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_implementation
+                props:
+                  - ns: "http://cyber.tamus.edu/ns/oscal"
+                    name: status
+                    value: withdrawn
+      - control-id: si-3
+        adds:
+          - position: after
+            by-id: si-3_smt
+            parts:
+              - id: si-3_tamus_smt
+                ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_implementation
+                props:
+                  - ns: "http://cyber.tamus.edu/ns/oscal"
+                    name: status
+                    value: withdrawn
+      - control-id: si-4
+        adds:
+          - position: ending
+            props:
+              - ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_required_by
+                value: 2022-08-01
+            links:
+              - href: "#ac9542bc-0446-48f5-b565-a888d6b043a7"
+                rel: reference
+          - position: after
+            by-id: si-4_tx_smt
+            parts:
+              - id: si-4_tamus_smt
+                ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_implementation
+                prose: >-
+                  Monitor information resources in accordance with Texas A&M System Policy 29.01, Information
+                  Resources.
+  back-matter:
+    resources:
+      - uuid: eedcbb1f-0f8e-4efc-a02b-74c9fb8438cc
+        title: CIS Benchmarks
+        citation:
+          text: CIS Benchmarks
+        rlinks:
+          - href: https://www.cisecurity.org/cis-benchmarks
+      - uuid: 8bbc6ce8-5f6b-4117-80d8-6a4274928090
+        title: InCommon Assurance Program
+        citation:
+          text: InCommon Assurance Program
+        rlinks:
+          - href: https://www.incommon.org/federation/incommon-assurance-program
+      - uuid: 997c9abf-6669-4196-89fd-68fce5f21b74
+        title: NCP
+        citation:
+          text: National Checklist Program Repository
+        rlinks:
+          - href: https://nvd.nist.gov/ncp/repository
+      - uuid: 5b23f2c5-4c42-4b0e-a75b-34af3bcafb10
+        title: Tx. Bus. & Comm. Code Sec. 521.002
+        citation:
+          text: "Texas Business and Commerce Code Section 521.002, Unauthorized Use of Identifying Information: Definitions"
+        rlinks:
+          - href: https://statutes.capitol.texas.gov/Docs/BC/htm/BC.521.htm#521.002
+      - uuid: 7b94d5e7-3a09-4790-8d5e-d50eefa003cc
+        title: DIRCATALOG
+        citation:
+          text: Texas Security Control Standards Catalog, Version 2.1
+        props:
+          - ns: "https://fedramp.gov/ns/oscal"
+            name: version
+            value: Version 2.1
+        rlinks:
+          - href: https://dir.texas.gov/resource-library-item/security-control-standards-catalog
+      - uuid: ac9542bc-0446-48f5-b565-a888d6b043a7
+        title: TAMUS Policy 29.01
+        citation:
+          text: Texas A&M University System Policy 29.01, Information Resources
+        rlinks:
+          - href: https://policies.tamus.edu/29-01.pdf
+      - uuid: 56ad2ecd-c959-4926-ad66-39b187d1103f
+        title: TAMUS Reg. 29.01.03
+        citation:
+          text: Texas A&M System Regulation 29.01.03, Information Security
+        rlinks:
+          - href: https://policies.tamus.edu/29-01-03.pdf
+      - uuid: a444439a-d0c7-4d93-b98d-3eeb506f2a1e
+        title: TAMUS Policy 33.04
+        citation:
+          text: Texas A&M University System Policy 33.04, Use of System Resources
+        rlinks:
+          - href: https://policies.tamus.edu/33-04.pdf
+      - uuid: 28edd686-b17c-47ca-aba4-4c7de11e82f5
+        title: TAMUS Reg. 34.07.01
+        citation:
+          text: Texas A&M System Regulation 34.07.01, Emergency Management Plans
+        rlinks:
+          - href: https://policies.tamus.edu/34-07.pdf
+      - uuid: 1d635223-295d-4ac9-a117-9c7558cb9ea3
+        title: SP 800-145
+        citation:
+          text: >-
+            "Mell P, Grance T (2011) The NIST Definition of Cloud Computing. (National Institute of Standards and
+            Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-145."
+        document-ids:
+          - scheme: http://www.doi.org/
+            identifier: 10.6028/NIST.SP.800-145
+        rlinks:
+          - href: https://doi.org/10.6028/NIST.SP.800-145

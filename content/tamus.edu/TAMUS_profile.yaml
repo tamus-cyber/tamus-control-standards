@@ -518,10 +518,10 @@ profile:
                 ns: "http://cyber.tamus.edu/ns/oscal"
                 name: tamus_implementation
                 prose: >-
-                  Identity evidence shall be an identification card containing the bearer’s photograph, issued by a
-                  federal or state government authority of the United States, to include members of the Texas A&M
-                  University System; a visa issued by the U.S. Department of State, or a foreign passport issued by a
-                  Visa Waiver Program participating country.
+                  Identity evidence shall be a physical or digital identification credential containing the bearer’s
+                  photograph, issued by a federal or state government authority of the United States, to include
+                  members of the Texas A&M University System; a visa issued by the U.S. Department of State, or
+                  a foreign passport issued by a Visa Waiver Program participating country.
       - control-id: ia-12.3
         adds:
           - position: ending
@@ -542,10 +542,11 @@ profile:
                   Members shall require in-person or remote visual confirmation of the requestor's identity against
                   identity evidence specified in [IA-12(2)](#ia-12.2) prior to information resource custodians
                   performing any requested changes (including, but not limited to, password reset, change of MFA phone
-                  number or device, or change of recovery email address) of Identity Assurance Level (IAL) 2 user accounts
-                  (e.g., faculty, staff, students).  Visual confirmation may be accomplished through in-person verification
-                  or a live video conference session with the registration authority.  This control standard does not apply
-                  to automated systems such as self-service password reset or MFA device management.
+                  number or device, or change of recovery email address) of Identity Assurance Level (IAL) 2 user accounts, 
+                  to include at a minimum, A&M System employees receiving payroll payments.  Visual confirmation may be
+                  accomplished through in-person verification or a live video conference session with the registration
+                  authority.  This control standard does not apply to automated systems such as self-service password
+                  reset or MFA device management.
       - control-id: ir-6
         adds:
           - position: ending

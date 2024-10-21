@@ -95,19 +95,20 @@ profile:
                 value: MODERATE
               - ns: "http://cyber.tamus.edu/ns/oscal"
                 name: tamus_required_by
-                value: 2024-08-28
-              - ns: "http://cyber.tamus.edu/ns/oscal"
-                name: tamus_new_requirement
-                value: "true"
+                value: 2022-08-01
           - position: after
             by-id: ac-2.7_smt
             parts: 
               - id: ac-2.7_tamus_smt
                 ns: "http://cyber.tamus.edu/ns/oscal"
                 name: tamus_implementation
-                prose: >-
-                  Deliver role-based training to privileged users commensurate with the risk presented by the
-                  privileged access.
+                props:
+                  - ns: "http://cyber.tamus.edu/ns/oscal"
+                    name: status
+                    value: withdrawn
+                links:
+                  - href: "#at-3"
+                    rel: incorporated-into
       - control-id: ac-2.13
         adds:
           - position: ending
@@ -506,6 +507,28 @@ profile:
                 prose: >-
                   The Texas A&M University System will incorporate social engineering training into TrainTraq Course 3001,
                   Information Security Awareness.
+      - control-id: at-3
+        adds:
+          - position: ending
+            props:
+              - ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_baseline
+                value: LOW
+              - ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_required_by
+                value: 2024-09-01
+              - ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_new_requirement
+                value: "true"
+          - position: after
+            by-id: at-3_tx_smt
+            parts: 
+              - id: at-3_tamus_smt
+                ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_implementation
+                prose: >-
+                  Deliver role-based training to privileged users commensurate with the risk presented by the
+                  privileged access.
       - control-id: at-4
         adds:
           - position: ending

@@ -259,9 +259,6 @@ profile:
               - ns: "http://cyber.tamus.edu/ns/oscal"
                 name: tamus_required_by
                 value: 2024-02-01
-              - ns: "http://cyber.tamus.edu/ns/oscal"
-                name: tamus_new_requirement
-                value: "true"
       - control-id: ac-11.1
         adds: 
           - position: ending
@@ -806,9 +803,6 @@ profile:
               - ns: "http://cyber.tamus.edu/ns/oscal"
                 name: tamus_required_by
                 value: 2024-02-01
-              - ns: "http://cyber.tamus.edu/ns/oscal"
-                name: tamus_new_requirement
-                value: "true"
           - position: after
             by-id: cm-11_smt
             parts:

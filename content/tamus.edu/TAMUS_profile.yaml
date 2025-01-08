@@ -557,8 +557,8 @@ profile:
                 ns: "http://cyber.tamus.edu/ns/oscal"
                 name: tamus_implementation
                 prose: >-
-                  Develop information resources contingency plans that align with the member’s emergency management
-                  plan as required by Texas A&M System Regulation 34.07.01, _Emergency Management_.
+                  Develop information resources contingency plans that align with the member’s emergency operations
+                  plan as required by Texas A&M System Regulation 34.07.01, _Emergency Operations Plans_.
       - control-id: cp-4
         adds:
           - position: ending
@@ -1387,9 +1387,9 @@ profile:
       - uuid: 28edd686-b17c-47ca-aba4-4c7de11e82f5
         title: TAMUS Reg. 34.07.01
         citation:
-          text: Texas A&M System Regulation 34.07.01, Emergency Management Plans
+          text: Texas A&M System Regulation 34.07.01, Emergency Operations Plans
         rlinks:
-          - href: https://policies.tamus.edu/34-07.pdf
+          - href: https://policies.tamus.edu/34-07-01.pdf
       - uuid: 1d635223-295d-4ac9-a117-9c7558cb9ea3
         title: SP 800-145
         citation:

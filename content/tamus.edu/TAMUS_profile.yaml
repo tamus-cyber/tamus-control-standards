@@ -95,8 +95,8 @@ profile:
               - ns: "http://cyber.tamus.edu/ns/oscal"
                 name: tamus_required_by
                 value: 2022-08-01
-          - position: after
-            by-id: ac-2.7_smt
+          - position: before
+            by-id: ac-2.7_gdn
             parts: 
               - id: ac-2.7_tamus_smt
                 ns: "http://cyber.tamus.edu/ns/oscal"
@@ -134,8 +134,8 @@ profile:
                     value: withdrawn
       - control-id: ac-8
         adds:
-          - position: after
-            by-id: ac-8_tx_smt
+          - position: before
+            by-id: ac-8_gdn
             parts:
               - id: ac-8_tamus_smt
                 ns: "http://cyber.tamus.edu/ns/oscal"
@@ -164,8 +164,8 @@ profile:
               - ns: "http://cyber.tamus.edu/ns/oscal"
                 name: tamus_required_by
                 value: 2022-12-19
-          - position: after
-            by-id: ac-19_tx_smt
+          - position: before
+            by-id: ac-19_gdn
             parts:
               - id: ac-19_tamus_smt
                 ns: "http://cyber.tamus.edu/ns/oscal"
@@ -175,8 +175,8 @@ profile:
                   mobile devices.
       - control-id: ac-22
         adds:
-          - position: after
-            by-id: ac-22_smt
+          - position: before
+            by-id: ac-22_gdn
             parts:
               - id: ac-22_tamus_smt
                 ns: "http://cyber.tamus.edu/ns/oscal"
@@ -204,8 +204,8 @@ profile:
               - ns: "http://cyber.tamus.edu/ns/oscal"
                 name: tamus_new_requirement
                 value: "true"
-          - position: after
-            by-id: at-1_tx_smt
+          - position: before
+            by-id: at-1_gdn
             parts:
               - id: ac-1_tamus_smt
                 ns: "http://cyber.tamus.edu/ns/oscal"
@@ -226,8 +226,8 @@ profile:
               - ns: "http://cyber.tamus.edu/ns/oscal"
                 name: tamus_new_requirement
                 value: "true"
-          - position: after
-            by-id: at-2_tx_smt
+          - position: before
+            by-id: at-2_gdn
             parts:
               - id: at-2_tamus_smt
                 ns: "http://cyber.tamus.edu/ns/oscal"
@@ -251,8 +251,8 @@ profile:
               - ns: "http://cyber.tamus.edu/ns/oscal"
                 name: tamus_new_requirement
                 value: "true"
-          - position: after
-            by-id: at-2.2_smt
+          - position: before
+            by-id: at-2.2_gdn
             parts:
               - id: at-2.2_tamus_smt
                 ns: "http://cyber.tamus.edu/ns/oscal"
@@ -273,8 +273,8 @@ profile:
               - ns: "http://cyber.tamus.edu/ns/oscal"
                 name: tamus_new_requirement
                 value: "true"
-          - position: after
-            by-id: at-2.3_smt
+          - position: before
+            by-id: at-2.3_gdn
             parts:
               - id: at-2.3_tamus_smt
                 ns: "http://cyber.tamus.edu/ns/oscal"
@@ -295,8 +295,8 @@ profile:
               - ns: "http://cyber.tamus.edu/ns/oscal"
                 name: tamus_new_requirement
                 value: "true"
-          - position: after
-            by-id: at-3_tx_smt
+          - position: before
+            by-id: at-3_gdn
             parts: 
               - id: at-3_tamus_smt
                 ns: "http://cyber.tamus.edu/ns/oscal"
@@ -317,8 +317,8 @@ profile:
               - ns: "http://cyber.tamus.edu/ns/oscal"
                 name: tamus_new_requirement
                 value: "true"
-          - position: after
-            by-id: at-4_tx_smt
+          - position: before
+            by-id: at-4_gdn
             parts:
               - id: at-4_tamus_smt
                 ns: "http://cyber.tamus.edu/ns/oscal"
@@ -336,8 +336,8 @@ profile:
               - ns: "http://cyber.tamus.edu/ns/oscal"
                 name: tamus_required_by
                 value: 2024-09-01
-          - position: after
-            by-id: ca-2.1_smt
+          - position: before
+            by-id: ca-2.1_gdn
             parts:
               - id: ca-2.1_tamus_smt
                 ns: "http://cyber.tamus.edu/ns/oscal"
@@ -347,8 +347,8 @@ profile:
                   and designated by the institution of higher education head or their designated representative(s).
       - control-id: cm-2
         adds:
-          - position: after
-            by-id: cm-2_smt
+          - position: before
+            by-id: cm-2_gdn
             parts:
               - id: cm-2_tamus_smt
                 ns: "http://cyber.tamus.edu/ns/oscal"
@@ -367,8 +367,8 @@ profile:
               - ns: "http://cyber.tamus.edu/ns/oscal"
                 name: tamus_required_by
                 value: 2022-08-01
-          - position: after
-            by-id: cm-3_tx_smt
+          - position: before
+            by-id: cm-3_gdn
             parts:
               - id: cm-3_tamus_smt
                 ns: "http://cyber.tamus.edu/ns/oscal"
@@ -436,18 +436,18 @@ profile:
                 rel: reference
               - href: "#997c9abf-6669-4196-89fd-68fce5f21b74"
                 rel: reference
-          - position: after
-            by-id: cm-6_smt
+          - position: before
+            by-id: cm-6_gdn
             parts:
               - id: cm-6_tamus_smt
                 ns: "http://cyber.tamus.edu/ns/oscal"
                 name: tamus_implementation
                 prose: >-
                   Adopt baseline security configuration checklists that meet or exceed published industry best practice
-                  sources (e.g., Center for Internet Security Benchmarks [CIS Benchmarks], NIST National Checklist
-                  Program [NCP]) when available, or locally develop security configuration checklists otherwise, for all
-                  organization-owned or -managed high-impact information systems, and systems processing confidential
-                  information.
+                  sources (e.g., Center for Internet Security Benchmarks [CIS Benchmarks](#eedcbb1f-0f8e-4efc-a02b-74c9fb8438cc),
+                  NIST National Checklist Program [NCP](#997c9abf-6669-4196-89fd-68fce5f21b74)) when available, or locally develop
+                  security configuration checklists otherwise, for all organization-owned or -managed high-impact information
+                  systems, and systems processing confidential information.
       - control-id: cm-10
         adds:
           - position: ending
@@ -458,8 +458,8 @@ profile:
               - ns: "http://cyber.tamus.edu/ns/oscal"
                 name: tamus_required_by
                 value: 2022-08-01
-          - position: after
-            by-id: cm-10_smt
+          - position: before
+            by-id: cm-10_gdn
             parts:
               - id: cm-10_tamus_smt
                 ns: "http://cyber.tamus.edu/ns/oscal"
@@ -477,8 +477,8 @@ profile:
               - ns: "http://cyber.tamus.edu/ns/oscal"
                 name: tamus_required_by
                 value: 2024-02-01
-          - position: after
-            by-id: cm-11_smt
+          - position: before
+            by-id: cm-11_gdn
             parts:
               - id: cm-11_tamus_smt
                 ns: "http://cyber.tamus.edu/ns/oscal"
@@ -521,8 +521,8 @@ profile:
                         prose: The application does not capture indiscriminate input from a web browser.
       - control-id: cp-1
         adds:
-          - position: after
-            by-id: cp-1_tx_smt
+          - position: before
+            by-id: cp-1_gdn
             parts:
               - id: cp-1_tamus_smt
                 ns: "http://cyber.tamus.edu/ns/oscal"
@@ -550,8 +550,8 @@ profile:
               - ns: "http://cyber.tamus.edu/ns/oscal"
                 name: tamus_required_by
                 value: 2022-08-01
-          - position: after
-            by-id: cp-2.1_smt
+          - position: before
+            by-id: cp-2.1_gdn
             parts:
               - id: cp-2.1_tamus_smt
                 ns: "http://cyber.tamus.edu/ns/oscal"
@@ -582,8 +582,8 @@ profile:
               - ns: "http://cyber.tamus.edu/ns/oscal"
                 name: tamus_required_by
                 value: 2022-08-01
-          - position: after
-            by-id: cp-4.1_smt
+          - position: before
+            by-id: cp-4.1_gdn
             parts:
               - id: cp-4_tamus_smt
                 ns: "http://cyber.tamus.edu/ns/oscal"
@@ -611,8 +611,8 @@ profile:
               - ns: "http://cyber.tamus.edu/ns/oscal"
                 name: tamus_required_by
                 value: 2022-08-01
-          - position: after
-            by-id: cp-9.3_smt
+          - position: before
+            by-id: cp-9.3_gdn
             parts:
               - id: cp-9.3_tamus_smt
                 ns: "http://cyber.tamus.edu/ns/oscal"
@@ -631,8 +631,8 @@ profile:
               - ns: "http://cyber.tamus.edu/ns/oscal"
                 name: tamus_required_by
                 value: 2021-09-13
-          - position: after
-            by-id: ia-2.1_smt
+          - position: before
+            by-id: ia-2.1_gdn
             parts:
               - id: ia-2.1_tamus_smt
                 ns: "http://cyber.tamus.edu/ns/oscal"
@@ -643,8 +643,8 @@ profile:
                     value: withdrawn
       - control-id: ia-2.2
         adds:
-          - position: after
-            by-id: ia-2.2_smt
+          - position: before
+            by-id: ia-2.2_gdn
             parts:
               - id: ia-2.2_tamus_smt
                 ns: "http://cyber.tamus.edu/ns/oscal"
@@ -676,8 +676,8 @@ profile:
               - ns: "http://cyber.tamus.edu/ns/oscal"
                 name: tamus_required_by
                 value: 2022-08-01
-          - position: after
-            by-id: ia-11_smt
+          - position: before
+            by-id: ia-11_gdn
             parts:
               - id: ia-11_tamus_smt
                 ns: "http://cyber.tamus.edu/ns/oscal"
@@ -711,8 +711,8 @@ profile:
               - ns: "http://cyber.tamus.edu/ns/oscal"
                 name: tamus_new_requirement
                 value: "true"
-          - position: after
-            by-id: ia-12.2_smt
+          - position: before
+            by-id: ia-12.2_gdn
             parts:
               - id: ia-12.2_tamus_smt
                 ns: "http://cyber.tamus.edu/ns/oscal"
@@ -735,8 +735,8 @@ profile:
               - ns: "http://cyber.tamus.edu/ns/oscal"
                 name: tamus_new_requirement
                 value: "true"
-          - position: after
-            by-id: ia-12.3_smt
+          - position: before
+            by-id: ia-12.3_gdn
             parts:
               - id: ia-12.3_tamus_smt
                 ns: "http://cyber.tamus.edu/ns/oscal"
@@ -763,8 +763,8 @@ profile:
               - ns: "http://cyber.tamus.edu/ns/oscal"
                 name: tamus_new_requirement
                 value: "true"
-          - position: after
-            by-id: ir-4_smt
+          - position: before
+            by-id: ir-4_gdn
             parts:
               - id: ir-4_tamus_smt
                 ns: "http://cyber.tamus.edu/ns/oscal"
@@ -801,8 +801,8 @@ profile:
               - ns: "http://cyber.tamus.edu/ns/oscal"
                 name: tamus_new_requirement
                 value: "true"
-          - position: after
-            by-id: ir-4.14_smt
+          - position: before
+            by-id: ir-4.14_gdn
             parts:
               - id: ir-4.14_tamus_smt
                 ns: "http://cyber.tamus.edu/ns/oscal"
@@ -821,8 +821,8 @@ profile:
               - ns: "http://cyber.tamus.edu/ns/oscal"
                 name: tamus_required_by
                 value: 2022-08-01
-          - position: after
-            by-id: ir-6_tx_smt
+          - position: before
+            by-id: ir-6_gdn
             parts:
               - id: ir-6_tamus_smt
                 ns: "http://cyber.tamus.edu/ns/oscal"
@@ -856,8 +856,8 @@ profile:
             links:
               - href: "#5b23f2c5-4c42-4b0e-a75b-34af3bcafb10"
                 rel: reference
-          - position: after
-            by-id: mp-3_smt
+          - position: before
+            by-id: mp-3_gdn
             parts:
               - id: mp-3_tamus_smt
                 ns: "http://cyber.tamus.edu/ns/oscal"
@@ -868,8 +868,8 @@ profile:
                     value: withdrawn
       - control-id: pe-6
         adds:
-          - position: after
-            by-id: pe-6_smt
+          - position: before
+            by-id: pe-6_gdn
             parts:
               - id: pe-6_tamus_smt
                 ns: "http://cyber.tamus.edu/ns/oscal"
@@ -891,8 +891,8 @@ profile:
               - ns: "http://cyber.tamus.edu/ns/oscal"
                 name: tamus_required_by
                 value: 2022-08-01
-          - position: after
-            by-id: pe-6.3_smt
+          - position: before
+            by-id: pe-6.3_gdn
             parts:
               - id: pe-6.3_tamus_smt
                 ns: "http://cyber.tamus.edu/ns/oscal"
@@ -918,8 +918,8 @@ profile:
                 rel: related
               - href: "#pe-14"
                 rel: related
-          - position: after
-            by-id: pe-18_smt
+          - position: before
+            by-id: pe-18_gdn
             parts:
               - id: pe-18_tamus_smt
                 ns: "http://cyber.tamus.edu/ns/oscal"
@@ -1016,8 +1016,8 @@ profile:
             links:
               - href: "#a444439a-d0c7-4d93-b98d-3eeb506f2a1e"
                 rel: reference
-          - position: after
-            by-id: pl-4_tx_smt
+          - position: before
+            by-id: pl-4_gdn
             parts:
               - id: pl-4_tamus_smt
                 ns: "http://cyber.tamus.edu/ns/oscal"
@@ -1038,8 +1038,8 @@ profile:
               - ns: "http://cyber.tamus.edu/ns/oscal"
                 name: tamus_new_requirement
                 value: "true"
-          - position: after
-            by-id: pl-10_tx_smt
+          - position: before
+            by-id: pl-10_gdn
             parts:
               - id: pl-10_tamus_smt
                 ns: "http://cyber.tamus.edu/ns/oscal"
@@ -1057,8 +1057,8 @@ profile:
             links:
               - href: "#1d635223-295d-4ac9-a117-9c7558cb9ea3"
                 rel: reference
-          - position: after
-            by-id: pm-5_tx_smt
+          - position: before
+            by-id: pm-5_gdn
             parts:
               - id: pm-5_tamus_smt
                 ns: "http://cyber.tamus.edu/ns/oscal"
@@ -1070,15 +1070,15 @@ profile:
                       - name: label
                         value: a.
                     prose: >-
-                      Designate a single system of record for inventory of all information systems [SP 800-171] and
-                      network-attached operational technology [SP 800-37] owned or managed by the member;
+                      Designate a single system of record for inventory of all information systems [SP 800-171](#7dbd6d9f-29d6-4d1d-9766-f2d77ff3c849)
+                      and network-attached operational technology [SP 800-37](#482e4c99-9dc4-41ad-bba8-0f3f0032c1f8) owned or managed by the member;
                   - id: pm-5_tamus_smt.b
                     name: item
                     props:
                       - name: label
                         value: b.
                     prose: >-
-                      Include any cloud computing services [SP 800-145] operated by the member in the inventory of
+                      Include any cloud computing services [SP 800-145](#1d635223-295d-4ac9-a117-9c7558cb9ea3) operated by the member in the inventory of
                       organizational systems, and
                   - id: pm-5_tamus_smt.c
                     name: item
@@ -1097,8 +1097,8 @@ profile:
               - ns: "http://cyber.tamus.edu/ns/oscal"
                 name: tamus_required_by
                 value: 2022-08-01
-          - position: after
-            by-id: pm-14_smt
+          - position: before
+            by-id: pm-14_gdn
             parts:
               - id: pm-14_tamus_smt
                 ns: "http://cyber.tamus.edu/ns/oscal"
@@ -1108,8 +1108,8 @@ profile:
                   in both centralized and decentralized IT environments, owned or managed by the organization.
       - control-id: pt-3
         adds:
-          - position: after
-            by-id: pt-3_smt
+          - position: before
+            by-id: pt-3_gdn
             parts:
               - id: pt-3_tamus_smt
                 ns: "http://cyber.tamus.edu/ns/oscal"
@@ -1131,8 +1131,8 @@ profile:
               - ns: "http://cyber.tamus.edu/ns/oscal"
                 name: tamus_required_by
                 value: 2022-08-01
-          - position: after
-            by-id: ra-2_tx_smt
+          - position: before
+            by-id: ra-2_gdn
             parts:
               - id: ra-2_tamus_smt
                 ns: "http://cyber.tamus.edu/ns/oscal"
@@ -1168,8 +1168,8 @@ profile:
               - ns: "http://cyber.tamus.edu/ns/oscal"
                 name: tamus_new_requirement
                 value: "true"
-          - position: after
-            by-id: ra-5.11_smt
+          - position: before
+            by-id: ra-5.11_gdn
             parts:
               - id: ra-5.11_tamus_smt
                 ns: "http://cyber.tamus.edu/ns/oscal"
@@ -1192,8 +1192,8 @@ profile:
               - ns: "http://cyber.tamus.edu/ns/oscal"
                 name: tamus_required_by
                 value: 2022-08-01
-          - position: after
-            by-id: sa-3_tx_smt
+          - position: before
+            by-id: sa-3_gdn
             parts:
               - id: sa-3_tamus_smt
                 ns: "http://cyber.tamus.edu/ns/oscal"
@@ -1211,8 +1211,8 @@ profile:
               - ns: "http://cyber.tamus.edu/ns/oscal"
                 name: tamus_required_by
                 value: 2022-08-01
-          - position: after
-            by-id: sa-4_tx_smt
+          - position: before
+            by-id: sa-4_gdn
             parts:
               - id: sa-4_tamus_smt
                 ns: "http://cyber.tamus.edu/ns/oscal"
@@ -1256,8 +1256,8 @@ profile:
                           pertaining to the protection of information resources and privacy of sensitive information.
       - control-id: sc-13
         adds:
-          - position: after
-            by-id: sc-13_tx_smt
+          - position: before
+            by-id: sc-13_gdn
             parts:
               - id: sc-13_tamus_smt
                 ns: "http://cyber.tamus.edu/ns/oscal"
@@ -1268,8 +1268,8 @@ profile:
                     value: withdrawn
       - control-id: sc-21
         adds:
-          - position: after
-            by-id: sc-21_smt
+          - position: before
+            by-id: sc-21_gdn
             parts:
               - id: sc-21_tamus_smt
                 ns: "http://cyber.tamus.edu/ns/oscal"
@@ -1280,8 +1280,8 @@ profile:
                     value: withdrawn
       - control-id: si-3
         adds:
-          - position: after
-            by-id: si-3_smt
+          - position: before
+            by-id: si-3_gdn
             parts:
               - id: si-3_tamus_smt
                 ns: "http://cyber.tamus.edu/ns/oscal"
@@ -1292,8 +1292,8 @@ profile:
                     value: withdrawn
       - control-id: si-4
         adds:
-          - position: after
-            by-id: si-4_tx_smt
+          - position: before
+            by-id: si-4_gdn
             parts:
               - id: si-4_tamus_smt
                 ns: "http://cyber.tamus.edu/ns/oscal"
@@ -1314,8 +1314,8 @@ profile:
                 value: 2022-08-01
       - control-id: sr-6
         adds:
-          - position: after
-            by-id: sr-6_smt
+          - position: before
+            by-id: sr-6_gdn
             parts:
               - id: sr-6_tamus_smt
                 ns: "http://cyber.tamus.edu/ns/oscal"

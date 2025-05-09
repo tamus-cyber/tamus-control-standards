@@ -1254,6 +1254,26 @@ profile:
                         prose: >-
                           Vendors and third parties adhere to all state and Federal laws and System policies
                           pertaining to the protection of information resources and privacy of sensitive information.
+      - control-id: sc-7.11
+        adds:
+          - position: ending
+            props:
+              - ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_baseline
+                value: LOW
+              - ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_required_by
+                value: 2025-05-31
+          - position: before
+            by-id: sc-7.11_gdn
+            parts:
+              - id: sc-7.11_tamus_smt
+                ns: "http://cyber.tamus.edu/ns/oscal"
+                name: tamus_implementation
+                prose: >-
+                  Use country-based or IP-based blocking to restrict incoming communications traffic to
+                  publicly-accessible system information resources from countries on the TAMUS Blocked
+                  Countries list available at https://sso.tamus.edu/BlockedCountries.aspx.
       - control-id: sc-13
         adds:
           - position: before

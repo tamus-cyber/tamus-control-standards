@@ -1271,9 +1271,9 @@ profile:
                 ns: "http://cyber.tamus.edu/ns/oscal"
                 name: tamus_implementation
                 prose: >-
-                  Use country-based or IP-based blocking to restrict incoming communications traffic to
-                  publicly-accessible system information resources from countries on the TAMUS Blocked
-                  Countries list available at https://sso.tamus.edu/BlockedCountries.aspx.
+                  Use country-based or IP-based blocking to restrict incoming communications
+                  traffic from countries on the TAMUS Blocked Countries list available at
+                  https://sso.tamus.edu/BlockedCountries.aspx.
       - control-id: sc-13
         adds:
           - position: before

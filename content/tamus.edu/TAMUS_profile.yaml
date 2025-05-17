@@ -3,8 +3,7 @@ profile:
   uuid: 33315829-b65d-4ee7-8b1a-6f292ca6445e
   metadata:
     title: Texas A&M University System Security Control Standards Catalog
-    last-modified: "2024-10-21T19:00:00-00:00"
-    version: 2.1.5
+    version: 2.1.6
     oscal-version: 1.1.2
     roles:
       - id: prepared-by

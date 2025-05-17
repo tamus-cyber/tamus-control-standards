@@ -15,7 +15,7 @@ profile:
         name: Texas A&M University System Office of Cybersecurity
         short-name: TAMUS Cyber
         links:
-          - href: https://cyber.tamus.edu
+          - href: https://www.cyber.tamus.edu
             rel: homepage
         email-addresses:
           - contact@cyber.tamus.edu
@@ -65,7 +65,7 @@ profile:
           - all cybersecurity-relevant data
       - param-id: ir-06_odp.02
         values:
-          - Texas A&M University System Cybersecurity and Texas Department of Information Resources, as specified by the [Incident Notification Guidelines](https://cyber.tamus.edu/policy/guidelines/incident-notification/)
+          - Texas A&M University System Cybersecurity and Texas Department of Information Resources, as specified by the [Incident Notification Guidelines](https://www.cyber.tamus.edu/policy/guidelines/incident-notification/)
       - param-id: ir-06.01_odp
         values:
           - TAMUS ISAO Portal for Texas A&M University System reporting and SPECTRIM for DIR reporting
@@ -1140,7 +1140,7 @@ profile:
                 prose: >-
                   Categorize information and information systems owned or managed by the organization using a data
                   categorization structure that incorporates the guidance provided in the Texas A&M System
-                  [Data Categorization Standard](https://cyber.tamus.edu/policy/guidelines/data-categorization/),
+                  [Data Categorization Standard](https://www.cyber.tamus.edu/policy/guidelines/data-categorization/),
                   at a minimum.
       - control-id: ra-3
         adds:

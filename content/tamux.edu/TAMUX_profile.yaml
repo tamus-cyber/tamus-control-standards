@@ -1,0 +1,42 @@
+---
+profile:
+  uuid: 4dfa5bfc-2c9e-4f5c-9d9f-2a2514f86063
+  metadata:
+    title: Texas A&M University - Xample Security Controls Catalog
+    version: 2.1.6
+    oscal-version: 1.1.2
+    roles:
+      - id: prepared-by
+        title: Document creator
+    parties:
+      - uuid: 6ce433ff-0f07-46a8-8dc0-0892708bd88d
+        type: organization
+        name: Texas A&M University - Xample Information Security Office
+        short-name: TAMUX ISO
+        links:
+          - href: https://www.tamux.edu
+            rel: homepage
+        email-addresses:
+          - iso@tamux.edu
+        addresses:
+          - type: work
+            addr-lines:
+              - 500 Main St
+            city: Xample
+            state: TX
+            postal-code: 77001-1234
+            country: US
+    responsible-parties:
+      - role-id: prepared-by
+        party-uuids:
+          - 6ce433ff-0f07-46a8-8dc0-0892708bd88d
+  imports:
+    - href: "https://raw.githubusercontent.com/tamus-cyber/tamus-control-standards/refs/heads/main/content/tamus.edu/TAMUS_resolved-profile_catalog.yaml"
+      include-all: {}
+  merge:
+    as-is: true
+  modify:
+    set-parameters:
+      - param-id: at-2_prm_1
+        values:
+          - 

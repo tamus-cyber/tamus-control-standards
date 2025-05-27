@@ -18,6 +18,8 @@ Machine-readable formats compliant with the Open Security Controls Assessment La
 
 0.1. Install the OSCAL CLI tool per the instructions at `https://github.com/usnistgov/oscal-cli`
 
+0.2. Install the `openjdk` Homebrew formula and follow the post-install instructions
+
 ## 1. SET UP REPOSITORIES
 
 1.1. Clone the `tamus-control-standards` repository from `https://github.com/tamus-cyber/tamus-control-standards.git` into a working directory

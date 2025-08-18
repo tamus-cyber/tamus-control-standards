@@ -39,17 +39,20 @@ profile:
     set-parameters:
       - param-id: at-2_prm_1
         constraints:
-          - description: organization-defined frequency (at least annually)
-      - param-id: at-02_odp.06
-        constraints:
           - description: at least annually
+      - param-id: at-02_odp.06
+        values:
+          - annually
+      - param-id: at-02_odp.07
+        values:
+          - new requirements introduced by the State of Texas
       - param-id: ca-02_odp.01
         constraints:
           - description: at least biennially
       - param-id: cp-04_odp.01
         constraints:
           - description: >
-              at least annually through a tabletop exercise;
+              at least annually through a tabletop exercise
               at least every three years with a full interruption of high-impact, on-premise services
       - param-id: ia-05.09_odp
         constraints:
@@ -63,12 +66,19 @@ profile:
       - param-id: ir-04.08_odp.02
         values:
           - all cybersecurity-relevant data
+      - param-id: ir-06_odp.01
+        values:
+          - twelve hours of detection
       - param-id: ir-06_odp.02
         values:
           - Texas A&M University System Cybersecurity and Texas Department of Information Resources, as specified by the [Incident Notification Guidelines](https://www.cyber.tamus.edu/policy/guidelines/incident-notification/)
       - param-id: ir-06.01_odp
         values:
           - TAMUS Incident Reporting Submission Form for Texas A&M University System reporting and SPECTRIM for DIR reporting
+      - param-id: pl-04_odp.02
+        values:
+          - {{ insert: param, pl-04_odp.03 }}
+          - when the rules are revised or updated
       - param-id: pl-04_odp.03
         values:
           - annually

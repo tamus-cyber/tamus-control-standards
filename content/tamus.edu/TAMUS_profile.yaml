@@ -89,7 +89,6 @@ profile:
         values:
           - annually, for high-impact information resources
           - biennially, for other information resources containing confidential information
-          - when significant changes occur for all remaining information resources
       - param-id: si-05.01_odp
         values:
           - TAMUS Cybersecurity GovDelivery for all intra-system communications

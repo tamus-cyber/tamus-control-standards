@@ -3,7 +3,7 @@ profile:
   uuid: 33315829-b65d-4ee7-8b1a-6f292ca6445e
   metadata:
     title: Texas A&M University System Security Control Standards Catalog
-    version: 2.1.6
+    version: 2.1.7
     oscal-version: 1.1.2
     roles:
       - id: prepared-by
@@ -38,21 +38,22 @@ profile:
   modify:
     set-parameters:
       - param-id: at-2_prm_1
-        values:
-          - organization-defined frequency (at least annually)
+        constraints:
+          - description: organization-defined frequency (at least annually)
       - param-id: at-02_odp.06
-        values:
-          - at least annually
+        constraints:
+          - description: at least annually
       - param-id: ca-02_odp.01
-        values:
-          - at least biennially
+        constraints:
+          - description: at least biennially
       - param-id: cp-04_odp.01
-        values:
-          - at least annually through a tabletop exercise
-          - at least every three years with a full interruption of high-impact, on-premise services
+        constraints:
+          - description: >
+              at least annually through a tabletop exercise;
+              at least every three years with a full interruption of high-impact, on-premise services
       - param-id: ia-05.09_odp
-        values:
-          - TAMUFederation and InCommon Federation, at a minimum
+        constraints:
+          - description: TAMUFederation and InCommon Federation, at a minimum
       - param-id: ir-04.01_odp
         values:
           - Texas A&M University System Cyber Operations-furnished tools
@@ -67,21 +68,21 @@ profile:
           - Texas A&M University System Cybersecurity and Texas Department of Information Resources, as specified by the [Incident Notification Guidelines](https://www.cyber.tamus.edu/policy/guidelines/incident-notification/)
       - param-id: ir-06.01_odp
         values:
-          - TAMUS ISAO Portal for Texas A&M University System reporting and SPECTRIM for DIR reporting
+          - TAMUS Incident Reporting Submission Form for Texas A&M University System reporting and SPECTRIM for DIR reporting
       - param-id: pl-04_odp.03
         values:
           - annually
       - param-id: pm-05_odp
-        values:
-          - at least annually
+        constraints:
+          - description: at least annually
       - param-id: ra-03_odp.05
         values:
           - annually, for high-impact information resources
-          - biennially, for other information systems containing confidential data
-          - triennially, for all remaining information systems
+          - biennially, for other information resources containing confidential information
+          - when significant changes occur for all remaining information resources
       - param-id: si-05.01_odp
         values:
-          - the TAMUS ISAO Portal for all intra-system communications
+          - TAMUS Cybersecurity GovDelivery for all intra-system communications
           - organization-defined automated mechanisms
     alters:
       - control-id: ac-2.7
@@ -123,6 +124,8 @@ profile:
               - ns: "http://cyber.tamus.edu/ns/oscal"
                 name: tamus_required_by
                 value: 2022-08-01
+          - position: before
+            by-id: ac-3.7_gdn
             parts:
               - id: ac-3.7_tamus_smt
                 ns: "http://cyber.tamus.edu/ns/oscal"
@@ -1340,8 +1343,8 @@ profile:
                 ns: "http://cyber.tamus.edu/ns/oscal"
                 name: tamus_implementation
                 prose: >-
-                  Texas A&M University System Cyber Shared Services performs supplier assessments and reviews of
-                  all system-wide procurement contracts, and provides assessments and reviews of other suppliers
+                  Texas A&M University System Cyber Operations performs supplier assessments and reviews of
+                  system-wide procurement contracts, and provides assessments and reviews of other suppliers
                   to system members upon request.
   back-matter:
     resources:

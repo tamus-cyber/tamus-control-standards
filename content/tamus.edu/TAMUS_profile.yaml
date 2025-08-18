@@ -77,7 +77,7 @@ profile:
           - TAMUS Incident Reporting Submission Form for Texas A&M University System reporting and SPECTRIM for DIR reporting
       - param-id: pl-04_odp.02
         values:
-          - {{ insert: param, pl-04_odp.03 }}
+          - "{{ insert: param, pl-04_odp.03 }}"
           - when the rules are revised or updated
       - param-id: pl-04_odp.03
         values:

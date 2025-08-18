@@ -6,7 +6,8 @@ The `tamus-cyber/tamus-control-standards` project repository is organized as fol
 
 | Directory | Description |
 |---|---|
-| content | Native OSCAL YAML files that are used to build control catalogs, profiles, etc. |
+| content | Native OSCAL YAML files that are used to build controls catalogs, profiles, etc. |
+| examples | Sample OSCAL files and XSLT transforms used to build member controls catalogs, etc. |
 
 Contributions and feedback for future control standards releases are welcome via GitHub. [Please open a new issue with your feedback](https://github.com/tamus-cyber/tamus-control-standards/issues).
 

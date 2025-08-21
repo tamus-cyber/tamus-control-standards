@@ -52,7 +52,7 @@ profile:
       - param-id: cp-04_odp.01
         constraints:
           - description: >
-              at least annually through a tabletop exercise
+              at least annually through a tabletop exercise;
               at least every three years with a full interruption of high-impact, on-premise services
       - param-id: ia-05.09_odp
         constraints:

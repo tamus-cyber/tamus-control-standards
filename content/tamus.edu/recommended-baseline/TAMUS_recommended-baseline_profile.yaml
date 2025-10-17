@@ -2,35 +2,17 @@
 profile:
   uuid: 72ff62c3-c3b8-4edf-a45d-6987866eabff
   metadata:
-    title: Texas A&M University - Xample Controls Catalog
+    title: Texas A&M University System Recommended Controls Catalog Baseline
     last-modified: 2021-11-29T00:00:00Z
     version: "0.1"
     oscal-version: 1.1.2
     roles:
     - id: prepared-by
       title: Document creator
-    parties:
-    - uuid: f9c4f6f0-b1c5-415b-a93a-169663a03fff
-      type: organization
-      name: Texas A&M University - Xample
-      short-name: TAMUX
-      links:
-      - href: https://www.tamux.edu/
-        rel: homepage
-      email-addresses:
-      - iso@tamux.edu
-      addresses:
-      - type: work
-        addr-lines:
-        - "123 Main St."
-        city: Xample
-        state: TX
-        postal-code: "78701"
-        country: US
     responsible-parties:
     - role-id: prepared-by
       party-uuids:
-      - f9c4f6f0-b1c5-415b-a93a-169663a03fff
+      - 00cd4c91-5db6-45f4-8c15-343baed5fdf8
   imports:
   - href: "#b4ea4687-8a52-4677-8473-49484b3b7f51"
     include-controls:
@@ -571,5 +553,5 @@ profile:
           - name: version
             value: "2.1.6"
         rlinks:
-          - href: https://raw.githubusercontent.com/tamus-cyber/tamus-control-standards/refs/heads/main/content/tamus.edu/TAMUS_resolved-profile_catalog.yaml
+          - href: https://www.cyber.tamus.edu/oscal/content/tamus.edu/TAMUS_resolved-profile_catalog.yaml
             media-type: application/oscal+yaml

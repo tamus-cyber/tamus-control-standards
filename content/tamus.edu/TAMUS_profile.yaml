@@ -31,7 +31,7 @@ profile:
         party-uuids:
           - 00cd4c91-5db6-45f4-8c15-343baed5fdf8
   imports:
-    - href: "../texas.gov/TX_DIR_resolved-profile_catalog.yaml"
+    - href: "../texas.gov/TX_DIR_profile.yaml"
       include-all: {}
   merge:
     as-is: true

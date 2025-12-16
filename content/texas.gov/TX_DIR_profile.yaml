@@ -3,8 +3,8 @@ profile:
   uuid: 7727fe69-f2b8-494a-9e94-8d1e2ff6e68e
   metadata:
     title: Texas Security Control Standards Catalog Profile
-    last-modified: 2024-09-19T18:30:00-04:00
-    version: "2.1"
+    last-modified: 2024-12-16T11:43:00-0500
+    version: "2.1.1"
     oscal-version: 1.1.2
     roles:
     - id: prepared-by
@@ -3026,73 +3026,73 @@ profile:
       rlinks:
       - href: https://texreg.sos.state.tx.us/public/readtac$ext.ViewTAC?tac_view=4&ti=13&pt=1&ch=6
     - uuid: 95367016-533f-4a85-b5ee-6f9f6b381a97
-      title: Tex. Govt. Code Sec. 2054.068
+      title: Tex. Gov't Code Sec. 2054.068
       citation:
         text: "Texas Government Code Section 2054.068, Information Technology Infrastructure Report"
       rlinks:
       - href: https://statutes.capitol.texas.gov/Docs/GV/htm/GV.2054.htm#2054.068
     - uuid: ac9a50f4-69d8-4309-9d60-f88cc6352970
-      title: Tex. Govt. Code Sec. 2054.1125
+      title: Tex. Gov't Code Sec. 2054.1125
       citation:
         text: "Texas Government Code Section 2054.1125, Security Breach Notification by State Agency"
       rlinks:
       - href: https://statutes.capitol.texas.gov/Docs/GV/htm/GV.2054.htm#2054.1125
     - uuid: c3690af5-3560-4152-9eeb-4df1918105a3
-      title: Tex. Govt. Code Sec. 2054.133
+      title: Tex. Gov't Code Sec. 2063.403
       citation:
-        text: "Texas Government Code Section 2054.133, Information Security Plan"
+        text: "Texas Government Code Section 2063.403, Information Security Plan"
       rlinks:
-      - href: https://statutes.capitol.texas.gov/Docs/GV/htm/GV.2054.htm#2054.133
+      - href: https://statutes.capitol.texas.gov/Docs/GV/htm/GV.2063.htm#2063.403
     - uuid: ac69799a-8a66-4ffd-b79f-5ef0c0732367
-      title: Tex. Govt. Code Sec. 2054.136
+      title: Tex. Gov't Code Sec. 2063.401
       citation:
-        text: "Texas Government Code Section 2054.136, Designated Information Security Officer"
+        text: "Texas Government Code Section 2063.401, Designated Information Security Officer"
       rlinks:
-      - href: https://statutes.capitol.texas.gov/Docs/GV/htm/GV.2054.htm#2054.136
+      - href: https://statutes.capitol.texas.gov/Docs/GV/htm/GV.2063.htm#2063.401
     - uuid: 2d72e3e7-9a4d-4438-afef-a1f941476164
-      title: Tex. Govt. Code Sec. 2054.138
+      title: Tex. Gov't Code Sec. 2054.138
       citation:
         text: "Texas Government Code Section 2054.138, Security Controls for State Agency Data"
       rlinks:
       - href: https://statutes.capitol.texas.gov/Docs/GV/htm/GV.2054.htm#2054.138
     - uuid: f339b850-c6a3-43c8-a679-9302482d63ce
-      title: Tex. Govt. Code Sec. 2054.516
+      title: Tex. Gov't Code Sec. 2063.405
       citation:
-        text: "Texas Government Code Section 2054.516, Data Security Plan for Online and Mobile Applications"
+        text: "Texas Government Code Section 2063.405, Data Security Plan for Online and Mobile Applications"
       rlinks:
-      - href: https://statutes.capitol.texas.gov/Docs/GV/htm/GV.2054.htm#2054.516
+      - href: https://statutes.capitol.texas.gov/Docs/GV/htm/GV.2063.htm#2063.405
     - uuid: 8bdfe234-14d2-4617-b080-549de88b5304
-      title: Tex. Govt. Code Sec. 2054.518
+      title: Tex. Gov't Code Sec. 2063.402
       citation:
-        text: "Texas Government Code Section 2054.518, Cybersecurity Risks and Incidents"
+        text: "Texas Government Code Section 2063.402, Cybersecurity Risks and Incidents"
       rlinks:
-      - href: https://statutes.capitol.texas.gov/Docs/GV/htm/GV.2054.htm#2054.518
+      - href: https://statutes.capitol.texas.gov/Docs/GV/htm/GV.2063.htm#2063.402
     - uuid: fb6e0926-a42a-4558-8067-b4095284bea8
-      title: Tex. Govt. Code Sec. 2054.5191
+      title: Tex. Gov't Code Sec. 2063.103
       citation:
-        text: "Texas Government Code Section 2054.5191, Cybersecurity Training Required: Certain Employees and Officials"
+        text: "Texas Government Code Section 2063.103, Cybersecurity Training Required"
       rlinks:
-      - href: https://statutes.capitol.texas.gov/Docs/GV/htm/GV.2054.htm#2054.5191
+      - href: https://statutes.capitol.texas.gov/Docs/GV/htm/GV.2063.htm#2063.103
     - uuid: 61919092-3ef9-489b-b23e-277a0203df2f
-      title: Tex. Govt. Code Sec. 2054.5192
+      title: Tex. Gov't Code Sec. 2063.104
       citation:
-        text: "Texas Government Code Section 2054.5192, Cybersecurity Training Required: Certain State Contractors"
+        text: "Texas Government Code Section 2063.104, Cybersecurity Training Required: Certain State Contractors"
       rlinks:
-      - href: https://statutes.capitol.texas.gov/Docs/GV/htm/GV.2054.htm#2054.5192
+      - href: https://statutes.capitol.texas.gov/Docs/GV/htm/GV.2063.htm#2063.104
     - uuid: 93e79b7a-bea9-4b7b-ba90-389e0a5215e3
-      title: Tex. Govt. Code Sec. 2054.077
+      title: Tex. Gov't Code Sec. 2063.303
       citation:
-        text: "Texas Government Code Section 2054.077, Vulnerability Reports"
+        text: "Texas Government Code Section 2063.303, Vulnerability Reports"
       rlinks:
-      - href: https://statutes.capitol.texas.gov/Docs/GV/htm/GV.2054.htm#2054.077
+      - href: https://statutes.capitol.texas.gov/Docs/GV/htm/GV.2063.htm#2063.303
     - uuid: 4eccbedb-6b3b-459a-b274-c353490880a0
-      title: Tex. Govt. Code Sec. 2054.519
+      title: Tex. Gov't Code Sec. 2063.102
       citation:
-        text: "Texas Government Code Section 2054.519, State Certified Cybersecurity Training Programs"
+        text: "Texas Government Code Section 2063.102, State Certified Cybersecurity Training Programs"
       rlinks:
-      - href: https://statutes.capitol.texas.gov/Docs/GV/htm/GV.2054.htm#2054.519
+      - href: https://statutes.capitol.texas.gov/Docs/GV/htm/GV.2063.htm#2063.102
     - uuid: 1d738b9b-931f-4c3a-a2d3-9f3715ad3a2f
-      title: Tex. Govt. Code Sec. 441.185
+      title: Tex. Gov't Code Sec. 441.185
       citation:
         text: "Texas Government Code Section 441.185, Record Retention Schedule"
       rlinks:

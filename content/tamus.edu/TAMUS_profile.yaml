@@ -3,7 +3,7 @@ profile:
   uuid: 33315829-b65d-4ee7-8b1a-6f292ca6445e
   metadata:
     title: Texas A&M University System Security Control Standards Catalog
-    version: 2.1.7
+    version: 2.1.8
     oscal-version: 1.1.2
     roles:
       - id: prepared-by
@@ -1407,7 +1407,7 @@ profile:
         rlinks:
           - href: https://policies.tamus.edu/33-04.pdf
       - uuid: 222e06f0-2123-491d-98ad-bedeae9e8f13
-        title: TAMUS Policy 33.05.02
+        title: TAMUS Reg. 33.05.02
         citation:
           text: Texas A&M University System Regulation 33.05.02, Required Employee Training
         rlinks:

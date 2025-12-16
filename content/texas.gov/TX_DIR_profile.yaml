@@ -440,7 +440,7 @@ profile:
         - id: at-2_tx_smt
           name: tx_implementation
           ns: "http://dir.texas.gov/ns/oscal"
-          prose: Security awareness training shall be delivered in accordance with Texas Government Code Section 2054.519.
+          prose: Security awareness training shall be delivered in accordance with Texas Government Code Section 2063.102.
     - control-id: at-2.2
       adds:
       - position: ending
@@ -480,7 +480,7 @@ profile:
         - id: at-3_tx_smt
           name: tx_implementation
           ns: "http://dir.texas.gov/ns/oscal"
-          prose: Security awareness training shall be delivered in accordance with Texas Government Code Section 2054.519.
+          prose: Security awareness training shall be delivered in accordance with Texas Government Code Section 2063.102.
     - control-id: at-4
       adds:
       - position: ending
@@ -812,7 +812,7 @@ profile:
             - name: label
               value: a.
             prose: >-
-              Section 2054.516(a)(2), Government Code, requires each state agency implementing an Internet website or
+              Section 2063.405(a)(2), Government Code, requires each state agency implementing an Internet website or
               mobile application that processes any sensitive personal or personally identifiable information or
               confidential information to subject the website or application to a vulnerability and penetration test
               and address any vulnerability identified in the test.
@@ -1985,7 +1985,7 @@ profile:
           name: tx_implementation
           ns: "http://dir.texas.gov/ns/oscal"
           prose: >-
-            The Information Security Officer is charged with the responsibilities enumerated in Section 2054.136,
+            The Information Security Officer is charged with the responsibilities enumerated in Section 2063.401,
             Government Code and 1 Texas Administrative Code Section 202.71.
     - control-id: pm-3
       adds:

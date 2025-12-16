@@ -3,7 +3,6 @@ profile:
   uuid: 7727fe69-f2b8-494a-9e94-8d1e2ff6e68e
   metadata:
     title: Texas Security Control Standards Catalog Profile
-    last-modified: 2024-12-16T11:43:00-0500
     version: "2.1.1"
     oscal-version: 1.1.2
     roles:

@@ -13,10 +13,9 @@ What it does:
 - Merges resources by UUID (resolved wins on conflicts by default)
 - Writes updated resolved catalog (YAML by default; JSON optional)
 
-Usage:
-  python merge_profile_back_matter.py TAMUS_profile.yaml TMAUS_resolved-profile_catalog.yaml -o fixed.yaml
-  python merge_profile_back_matter.py TAMUS_profile.yaml resolved.json -o fixed.json --out-format json
-  python merge_profile_back_matter.py TAMUS_profile.yaml resolved.yaml --inplace
+Usage (from the directory with the TAMUS profile and resolved catalog):
+  python3 ../../utils/merge_profile_back_matter.py ../texas.gov/TX_DIR_profile.yaml TAMUS_resolved-profile_catalog.yaml --inplace
+  python3 ../../utils/merge_profile_back_matter.py TAMUS_profile.yaml TAMUS_resolved-profile_catalog.yaml --inplace
 
 Notes:
 - Only merges back-matter.resources. (Easy to extend if you want rlinks, citations, etc.)

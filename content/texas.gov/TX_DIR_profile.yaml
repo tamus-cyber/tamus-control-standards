@@ -3,7 +3,7 @@ profile:
   uuid: 7727fe69-f2b8-494a-9e94-8d1e2ff6e68e
   metadata:
     title: Texas Security Control Standards Catalog Profile
-    version: "2.2"
+    version: "2.2.1"
     oscal-version: 1.1.2
     roles:
     - id: prepared-by
@@ -2715,121 +2715,121 @@ profile:
       citation:
         text: "Title 1 Texas Administrative Code Chapter 202 Subchapter A, Definitions"
       rlinks:
-      - href: https://texreg.sos.state.tx.us/public/readtac$ext.ViewTAC?tac_view=5&ti=1&pt=10&ch=202&sch=A&rl=Y
+      - href: https://texas-sos.appianportalsgov.com/rules-and-meetings?chapter=202&interface=VIEW_TAC&part=10&subchapter=A&title=1
     - uuid: 5a33f129-3016-4a8e-9e0e-7ecdddfc2054
       title: 1 TAC 202.71
       citation:
         text: "Title 1 Texas Administrative Code Section 202.71, Responsibilities of Information Security Officer"
       rlinks:
-      - href: https://texreg.sos.state.tx.us/public/readtac$ext.TacPage?sl=R&app=9&p_dir=&p_rloc=&p_tloc=&p_ploc=&pg=1&p_tac=&ti=1&pt=10&ch=202&rl=71
+      - href: https://texas-sos.appianportalsgov.com/rules-and-meetings?recordId=206713&interface=VIEW_TAC_SUMMARY&$locale=en_US
     - uuid: a25a0efa-3d9f-4cce-9ab8-defe7ecad46a
       title: 1 TAC 202.71(b)(1)
       citation:
         text: "Title 1 Texas Administrative Code Section 202.71, Responsibilities of Information Security Officer"
       rlinks:
-      - href: https://texreg.sos.state.tx.us/public/readtac$ext.TacPage?sl=R&app=9&p_dir=&p_rloc=&p_tloc=&p_ploc=&pg=1&p_tac=&ti=1&pt=10&ch=202&rl=71
+      - href: https://texas-sos.appianportalsgov.com/rules-and-meetings?recordId=206713&interface=VIEW_TAC_SUMMARY&$locale=en_US
     - uuid: afcf6fc3-0b84-486a-91e6-3fc7744af21c
       title: 1 TAC 202.71(c)
       citation:
         text: "Title 1 Texas Administrative Code Section 202.71, Responsibilities of Information Security Officer"
       rlinks:
-      - href: https://texreg.sos.state.tx.us/public/readtac$ext.TacPage?sl=R&app=9&p_dir=&p_rloc=&p_tloc=&p_ploc=&pg=1&p_tac=&ti=1&pt=10&ch=202&rl=71
+      - href: https://texas-sos.appianportalsgov.com/rules-and-meetings?recordId=206713&interface=VIEW_TAC_SUMMARY&$locale=en_US
     - uuid: 24b51e13-dd43-4116-a74f-534ac2ea6ff6
       title: 1 TAC 202.72
       citation:
         text: "Title 1 Texas Administrative Code Section 202.72, Staff Responsibilities"
       rlinks:
-      - href: https://texreg.sos.state.tx.us/public/readtac$ext.TacPage?sl=R&app=9&p_dir=&p_rloc=&p_tloc=&p_ploc=&pg=1&p_tac=&ti=1&pt=10&ch=202&rl=72
+      - href: https://texas-sos.appianportalsgov.com/rules-and-meetings?$locale=en_US&interface=VIEW_TAC_SUMMARY&recordId=206714
     - uuid: cc2b2eb0-aab0-4398-a8d6-ea7ba4533e60
       title: 1 TAC 202.72(a)(3)
       citation:
         text: "Title 1 Texas Administrative Code Section 202.72, Staff Responsibilities"
       rlinks:
-      - href: https://texreg.sos.state.tx.us/public/readtac$ext.TacPage?sl=R&app=9&p_dir=&p_rloc=&p_tloc=&p_ploc=&pg=1&p_tac=&ti=1&pt=10&ch=202&rl=72
+      - href: https://texas-sos.appianportalsgov.com/rules-and-meetings?$locale=en_US&interface=VIEW_TAC_SUMMARY&recordId=206714
     - uuid: 49ebbb5b-9b46-4c48-895c-4c8831ca5bfc
       title: 1 TAC 202.73
       citation:
         text: "Title 1 Texas Administrative Code Section 202.73, Security Reporting"
       rlinks:
-      - href: https://texreg.sos.state.tx.us/public/readtac$ext.TacPage?sl=R&app=9&p_dir=&p_rloc=&p_tloc=&p_ploc=&pg=1&p_tac=&ti=1&pt=10&ch=202&rl=72
+      - href: https://texas-sos.appianportalsgov.com/rules-and-meetings?$locale=en_US&interface=VIEW_TAC_SUMMARY&recordId=215516
     - uuid: 8504278c-811f-4cb0-b602-bdd2002e01c3
       title: 1 TAC 202.73(a)
       citation:
         text: "Title 1 Texas Administrative Code Section 202.73, Security Reporting"
       rlinks:
-      - href: https://texreg.sos.state.tx.us/public/readtac$ext.TacPage?sl=R&app=9&p_dir=&p_rloc=&p_tloc=&p_ploc=&pg=1&p_tac=&ti=1&pt=10&ch=202&rl=72
+      - href: https://texas-sos.appianportalsgov.com/rules-and-meetings?$locale=en_US&interface=VIEW_TAC_SUMMARY&recordId=215516
     - uuid: c82c8956-02d5-4166-834d-07d5b2ab93eb
       title: 1 TAC 202.73(b)
       citation:
         text: "Title 1 Texas Administrative Code Section 202.73, Security Reporting"
       rlinks:
-      - href: https://texreg.sos.state.tx.us/public/readtac$ext.TacPage?sl=R&app=9&p_dir=&p_rloc=&p_tloc=&p_ploc=&pg=1&p_tac=&ti=1&pt=10&ch=202&rl=72
+      - href: https://texas-sos.appianportalsgov.com/rules-and-meetings?$locale=en_US&interface=VIEW_TAC_SUMMARY&recordId=215516
     - uuid: df55a68e-ee2f-46e5-9f42-1b5889a933ce
       title: 1 TAC 202.74
       citation:
         text: "Title 1 Texas Administrative Code Section 202.74, Institution Information Security Program"
       rlinks:
-      - href: https://texreg.sos.state.tx.us/public/readtac$ext.TacPage?sl=R&app=9&p_dir=&p_rloc=&p_tloc=&p_ploc=&pg=1&p_tac=&ti=1&pt=10&ch=202&rl=74
+      - href: https://texas-sos.appianportalsgov.com/rules-and-meetings?$locale=en_US&interface=VIEW_TAC_SUMMARY&recordId=206716
     - uuid: e329fade-69ad-441d-aff0-0821d5bb1f23
       title: 1 TAC 202.74(a)(2)
       citation:
         text: "Title 1 Texas Administrative Code Section 202.74, Institution Information Security Program"
       rlinks:
-      - href: https://texreg.sos.state.tx.us/public/readtac$ext.TacPage?sl=R&app=9&p_dir=&p_rloc=&p_tloc=&p_ploc=&pg=1&p_tac=&ti=1&pt=10&ch=202&rl=74
+      - href: https://texas-sos.appianportalsgov.com/rules-and-meetings?$locale=en_US&interface=VIEW_TAC_SUMMARY&recordId=206716
     - uuid: 875b664a-8a0d-47b2-82db-3b5429936ad1
       title: 1 TAC 202.74(b)(1)
       citation:
         text: "Title 1 Texas Administrative Code Section 202.74, Institution Information Security Program"
       rlinks:
-      - href: https://texreg.sos.state.tx.us/public/readtac$ext.TacPage?sl=R&app=9&p_dir=&p_rloc=&p_tloc=&p_ploc=&pg=1&p_tac=&ti=1&pt=10&ch=202&rl=74
+      - href: https://texas-sos.appianportalsgov.com/rules-and-meetings?$locale=en_US&interface=VIEW_TAC_SUMMARY&recordId=206716
     - uuid: 85f1b845-ba92-43aa-9fa7-8045b9fb0bfb
       title: 1 TAC 202.75
       citation:
         text: "Title 1 Texas Administrative Code Section 202.75, Managing Security Risks"
       rlinks:
-      - href: https://texreg.sos.state.tx.us/public/readtac$ext.TacPage?sl=R&app=9&p_dir=&p_rloc=&p_tloc=&p_ploc=&pg=1&p_tac=&ti=1&pt=10&ch=202&rl=75
+      - href: https://texas-sos.appianportalsgov.com/rules-and-meetings?$locale=en_US&interface=VIEW_TAC_SUMMARY&recordId=206717
     - uuid: 8761199b-f199-4e1f-a169-f1caaa40b8ac
       title: 1 TAC 202.75(4)
       citation:
         text: "Title 1 Texas Administrative Code Section 202.75, Managing Security Risks"
       rlinks:
-      - href: https://texreg.sos.state.tx.us/public/readtac$ext.TacPage?sl=R&app=9&p_dir=&p_rloc=&p_tloc=&p_ploc=&pg=1&p_tac=&ti=1&pt=10&ch=202&rl=75
+      - href: https://texas-sos.appianportalsgov.com/rules-and-meetings?$locale=en_US&interface=VIEW_TAC_SUMMARY&recordId=206717
     - uuid: c8126cdb-28a7-494a-a713-d8a04512537d
       title: 1 TAC 202.76
       citation:
         text: "Title 1 Texas Administrative Code Section 202.76, Security Control Standards Catalog"
       rlinks:
-      - href: https://texreg.sos.state.tx.us/public/readtac$ext.TacPage?sl=R&app=9&p_dir=&p_rloc=&p_tloc=&p_ploc=&pg=1&p_tac=&ti=1&pt=10&ch=202&rl=76
+      - href: https://texas-sos.appianportalsgov.com/rules-and-meetings?$locale=en_US&interface=VIEW_TAC_SUMMARY&recordId=207719
     - uuid: 26250e8b-9588-4b08-b539-9d440d9489d1
       title: 1 TAC 202.76(c)
       citation:
         text: "Title 1 Texas Administrative Code Section 202.76, Security Control Standards Catalog"
       rlinks:
-      - href: https://texreg.sos.state.tx.us/public/readtac$ext.TacPage?sl=R&app=9&p_dir=&p_rloc=&p_tloc=&p_ploc=&pg=1&p_tac=&ti=1&pt=10&ch=202&rl=76
+      - href: https://texas-sos.appianportalsgov.com/rules-and-meetings?$locale=en_US&interface=VIEW_TAC_SUMMARY&recordId=207719
     - uuid: 4b78cf60-7a15-4a9d-9fa5-f0a294f9d7a8
       title: 1 TAC 202.77
       citation:
         text: "Title 1 Texas Administrative Code Section 202.77, Texas Risk and Authorization Management Program for Institutions of Higher Education"
       rlinks:
-      - href: https://texreg.sos.state.tx.us/public/readtac$ext.TacPage?sl=R&app=9&p_dir=&p_rloc=&p_tloc=&p_ploc=&pg=1&p_tac=&ti=1&pt=10&ch=202&rl=77
+      - href: https://texas-sos.appianportalsgov.com/rules-and-meetings?$locale=en_US&interface=VIEW_TAC_SUMMARY&recordId=215517
     - uuid: a074f0c5-90ae-4a06-acdd-b1a06d33edd7
       title: 1 TAC 202.77(c)(1)(B)
       citation:
         text: "Title 1 Texas Administrative Code Section 202.77, Texas Risk and Authorization Management Program for Institutions of Higher Education"
       rlinks:
-      - href: https://texreg.sos.state.tx.us/public/readtac$ext.TacPage?sl=R&app=9&p_dir=&p_rloc=&p_tloc=&p_ploc=&pg=1&p_tac=&ti=1&pt=10&ch=202&rl=77
+      - href: https://texas-sos.appianportalsgov.com/rules-and-meetings?$locale=en_US&interface=VIEW_TAC_SUMMARY&recordId=215517
     - uuid: dfbe0163-1455-4c89-8fc6-868769d52ded
       title: 1 TAC Ch. 203
       citation:
         text: "Title 1 Texas Administrative Code Chapter 203, Management of Electronic Transactions and Signed Records"
       rlinks:
-      - href: https://texreg.sos.state.tx.us/public/readtac$ext.ViewTAC?tac_view=4&ti=1&pt=10&ch=203
+      - href: https://texas-sos.appianportalsgov.com/rules-and-meetings?chapter=203&interface=VIEW_TAC&part=10&title=1
     - uuid: 2b2a2593-2789-4d95-8ecf-4c004a295983
       title: 13 TAC Ch. 6
       citation:
         text: "Title 13 Texas Administrative Code Chapter 6, State Records"
       rlinks:
-      - href: https://texreg.sos.state.tx.us/public/readtac$ext.ViewTAC?tac_view=4&ti=13&pt=1&ch=6
+      - href: https://texas-sos.appianportalsgov.com/rules-and-meetings?chapter=6&interface=VIEW_TAC&part=1&title=13
     - uuid: 95367016-533f-4a85-b5ee-6f9f6b381a97
       title: Tex. Gov't Code Sec. 2054.068
       citation:

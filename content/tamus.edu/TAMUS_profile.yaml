@@ -1,9 +1,8 @@
 ---
 profile:
-  uuid: 33315829-b65d-4ee7-8b1a-6f292ca6445e
   metadata:
     title: Texas A&M University System Security Control Standards Catalog
-    version: "2.2"
+    version: "2.3"
     oscal-version: 1.1.2
     roles:
       - id: prepared-by
@@ -37,7 +36,10 @@ profile:
     as-is: true
   modify:
     set-parameters:
-      - param-id: at-2_prm_1
+      - param-id: at-02_odp.01
+        constraints:
+          - description: at least annually
+      - param-id: at-02_odp.02
         constraints:
           - description: at least annually
       - param-id: at-02_odp.06
@@ -71,10 +73,10 @@ profile:
           - twelve hours of detection
       - param-id: ir-06_odp.02
         values:
-          - Texas A&M University System Cybersecurity and Texas Department of Information Resources, as specified by the [Incident Notification Guidelines](https://www.cyber.tamus.edu/policy/guidelines/incident-notification/)
+          - Texas A&M University System Cybersecurity and Texas Department of Information Resources, as specified by the TAMUS Incident Notification Guidelines
       - param-id: ir-06.01_odp
         values:
-          - TAMUS Incident Reporting Submission Form for Texas A&M University System reporting and SPECTRIM for DIR reporting
+          - TAMUS Incident Reporting Submission Form for Texas A&M University System reporting, and SPECTRIM for DIR/TXCC reporting
       - param-id: pl-04_odp.02
         values:
           - annually
@@ -91,7 +93,7 @@ profile:
           - biennially, for other information resources containing confidential information
       - param-id: si-05.01_odp
         values:
-          - TAMUS Cybersecurity GovDelivery for all intra-system communications
+          - TAMUS Cybersecurity distribution lists for all system-wide communications
           - organization-defined automated mechanisms
     alters:
       - control-id: ac-2.7
@@ -154,7 +156,7 @@ profile:
                 ns: "http://cyber.tamus.edu/ns/oscal"
                 name: tamus_implementation
                 prose: >-
-                  System Regulation 33.05.02, _Required Employee Training_, implements the awareness and training policy
+                  System Regulation 33.05.02, Required Employee Training, implements the awareness and training policy
                   for information security.
       - control-id: at-2
         adds:
@@ -166,7 +168,7 @@ profile:
                 name: tamus_implementation
                 prose: >-
                   The Texas A&M System will make literacy training and awareness available to system members via TrainTraq
-                  Course 3001, Information Security Awareness.  Texas A&M System Cybersecurity, in coordination with Texas
+                  Course 3001, Information Security Awareness. Texas A&M System Cybersecurity, in coordination with Texas
                   A&M University Technology Services and Division of Human Resources and Organizational Effectiveness,
                   will update TrainTraq Course 3001 content annually as part of the Texas DIR Certified Cybersecurity
                   Training program.
@@ -310,8 +312,8 @@ profile:
                 name: tamus_implementation
                 prose: >-
                   Adopt baseline security configuration checklists that meet or exceed published industry best practice
-                  sources (e.g., Center for Internet Security Benchmarks [CIS Benchmarks](#eedcbb1f-0f8e-4efc-a02b-74c9fb8438cc),
-                  NIST National Checklist Program [NCP](#997c9abf-6669-4196-89fd-68fce5f21b74)) when available, or locally develop
+                  sources (e.g., Center for Internet Security Benchmarks [[CIS Benchmarks](#eedcbb1f-0f8e-4efc-a02b-74c9fb8438cc)],
+                  NIST National Checklist Program [[NCP](#997c9abf-6669-4196-89fd-68fce5f21b74)]) when available, or locally develop
                   security configuration checklists otherwise, for all organization-owned or -managed high-impact information
                   systems, and systems processing confidential information.
       - control-id: cm-10
@@ -393,7 +395,7 @@ profile:
                 name: tamus_implementation
                 prose: >-
                   Develop information resources contingency plans that align with the member’s emergency operations
-                  plan as required by Texas A&M System Regulation 34.07.01, _Emergency Operations Plans_.
+                  plan as required by System Regulation 34.07.01, Emergency Operations Plans.
       - control-id: cp-4
         adds:
           - position: ending
@@ -514,7 +516,7 @@ profile:
                 name: tamus_implementation
                 prose: >-
                   Members shall require in-person or remote visual confirmation of the requestor's identity against
-                  identity evidence specified in [IA-12(2)](#ia-12.2) prior to information resource custodians
+                  identity evidence specified in [IA-12(02)](#ia-12.2) prior to information resource custodians
                   performing any requested changes (including, but not limited to, password reset, change of MFA phone
                   number or device, or change of recovery email address) of Identity Assurance Level (IAL) 2 user accounts, 
                   to include at a minimum, A&M System employees receiving payroll payments.  Visual confirmation may be
@@ -562,9 +564,15 @@ profile:
                 ns: "http://cyber.tamus.edu/ns/oscal"
                 name: tamus_implementation
                 prose: >-
-                  System Regulation 29.01.03, _Information Security_, designates Texas A&M University System Cyber
-                  Operations as the organizational security operations center. No member cybersecurity operations
+                  System Regulation 29.01.03, Information Security, designates Texas A&M University System
+                  Cyber Operations as the organizational security operations center. No member cybersecurity operations
                   or activities may conflict with or duplicate services delivered by A&M System Cyber Operations.
+      - control-id: ir-6
+        adds:
+          - position: ending
+            links:
+              - href: "#b2dbf666-35ba-4fdf-97a1-9e4b07b338f0"
+                rel: reference
       - control-id: ir-6.1
         adds:
           - position: ending
@@ -659,7 +667,7 @@ profile:
                         props:
                           - name: label
                             value: "2."
-                        prose: "redundant networks as specified in [CP-8](#cp-8);"
+                        prose: "redundant networks as specified in [CP-08](#cp-8);"
                       - id: pe-18_tamus_smt.b.3
                         name: item
                         props:
@@ -671,7 +679,7 @@ profile:
                         props:
                           - name: label
                             value: "4."
-                        prose: "adequate physical and cybersecurity as specified in the PE and SC families."
+                        prose: "adequate physical and cybersecurity as specified in the [PE](#pe) and [SC](#sc) families."
                   - id: pe-18_tamus_smt.c
                     name: item
                     props:
@@ -723,7 +731,7 @@ profile:
                 ns: "http://cyber.tamus.edu/ns/oscal"
                 name: tamus_implementation
                 prose: >-
-                  Ensure rules of behavior incorporate Texas AM System Policy 33.04, _Use of System Resources_, and the
+                  Ensure rules of behavior incorporate System Policy 33.04, Use of System Resources, and the
                   organization's acceptable use guidelines.
       - control-id: pl-10
         adds:
@@ -740,6 +748,10 @@ profile:
         adds:
           - position: ending
             links:
+              - href: "#7dbd6d9f-29d6-4d1d-9766-f2d77ff3c849"
+                rel: reference
+              - href: "#482e4c99-9dc4-41ad-bba8-0f3f0032c1f8"
+                rel: reference
               - href: "#1d635223-295d-4ac9-a117-9c7558cb9ea3"
                 rel: reference
           - position: before
@@ -755,15 +767,15 @@ profile:
                       - name: label
                         value: a.
                     prose: >-
-                      Designate a single system of record for inventory of all information systems [SP 800-171](#7dbd6d9f-29d6-4d1d-9766-f2d77ff3c849)
-                      and network-attached operational technology [SP 800-37](#482e4c99-9dc4-41ad-bba8-0f3f0032c1f8) owned or managed by the member;
+                      Designate a single system of record for inventory of all information systems [[SP 800-171](#7dbd6d9f-29d6-4d1d-9766-f2d77ff3c849)]
+                      and network-attached operational technology [[SP 800-37](#482e4c99-9dc4-41ad-bba8-0f3f0032c1f8)] owned or managed by the member;
                   - id: pm-5_tamus_smt.b
                     name: item
                     props:
                       - name: label
                         value: b.
                     prose: >-
-                      Include any cloud computing services [SP 800-145](#1d635223-295d-4ac9-a117-9c7558cb9ea3) operated by the member in the inventory of
+                      Include any cloud computing services [[SP 800-145](#1d635223-295d-4ac9-a117-9c7558cb9ea3)] operated by the member in the inventory of
                       organizational systems, and
                   - id: pm-5_tamus_smt.c
                     name: item
@@ -797,7 +809,7 @@ profile:
                 prose: >-
                   Categorize information and information systems owned or managed by the organization using a data
                   categorization structure that incorporates the guidance provided in the Texas A&M System
-                  [Data Categorization Standard](https://www.cyber.tamus.edu/policy/guidelines/data-categorization/),
+                  [[Data Categorization Standard](https://www.cyber.tamus.edu/policy/guidelines/data-categorization/)],
                   at a minimum.
       - control-id: ra-5.11
         adds:
@@ -888,9 +900,8 @@ profile:
                 ns: "http://cyber.tamus.edu/ns/oscal"
                 name: tamus_implementation
                 prose: >-
-                  Use country-based or IP-based blocking to restrict incoming communications
-                  traffic from countries on the TAMUS Blocked Countries list available at
-                  https://sso.tamus.edu/BlockedCountries.aspx.
+                  Use country-based or IP-based blocking to restrict incoming communications traffic from countries on
+                  the TAMUS Blocked Countries list available at https://sso.tamus.edu/BlockedCountries.aspx.
       - control-id: si-12.1
         adds:
           - position: ending
@@ -940,23 +951,29 @@ profile:
         rlinks:
           - href: https://statutes.capitol.texas.gov/Docs/BC/htm/BC.521.htm#521.002
       - uuid: 7b94d5e7-3a09-4790-8d5e-d50eefa003cc
-        title: DIRCATALOG
+        title: DIR Control Standards Catalog
         citation:
-          text: Texas Security Control Standards Catalog, Version 2.1
+          text: Texas Security Control Standards Catalog, Version 2.2
         props:
           - ns: "https://fedramp.gov/ns/oscal"
             name: version
-            value: Version 2.1
+            value: Version 2.2
         rlinks:
-          - href: https://dir.texas.gov/resource-library-item/security-control-standards-catalog
+          - href: https://dir.texas.gov/resource-library-item/security-controls-standards-catalog
       - uuid: ac9542bc-0446-48f5-b565-a888d6b043a7
         title: TAMUS Policy 29.01
         citation:
           text: Texas A&M University System Policy 29.01, Information Resources
         rlinks:
           - href: https://policies.tamus.edu/29-01.pdf
+      - uuid: c0fe2377-1bb5-47a5-89c9-9d1e978deec6
+        title: TAMUS Policy 29.02
+        citation:
+          text: Texas A&M System Policy 29.02, Information Security
+        rlinks:
+          - href: https://policies.tamus.edu/29-02.pdf
       - uuid: 56ad2ecd-c959-4926-ad66-39b187d1103f
-        title: TAMUS Reg. 29.01.03
+        title: TAMUS Regulation 29.01.03
         citation:
           text: Texas A&M System Regulation 29.01.03, Information Security
         rlinks:
@@ -968,17 +985,23 @@ profile:
         rlinks:
           - href: https://policies.tamus.edu/33-04.pdf
       - uuid: 222e06f0-2123-491d-98ad-bedeae9e8f13
-        title: TAMUS Reg. 33.05.02
+        title: TAMUS Regulation 33.05.02
         citation:
           text: Texas A&M University System Regulation 33.05.02, Required Employee Training
         rlinks:
           - href: https://policies.tamus.edu/33-05-02.pdf
       - uuid: 28edd686-b17c-47ca-aba4-4c7de11e82f5
-        title: TAMUS Reg. 34.07.01
+        title: TAMUS Regulation 34.07.01
         citation:
           text: Texas A&M System Regulation 34.07.01, Emergency Operations Plans
         rlinks:
           - href: https://policies.tamus.edu/34-07-01.pdf
+      - uuid: b2dbf666-35ba-4fdf-97a1-9e4b07b338f0
+        title: TAMUS Incident Notification Guidelines
+        citation:
+          text: TAMUS Incident Notification Guidelines
+        rlinks:
+          - href: https://www.cyber.tamus.edu/policy/guidelines/incident-notification/
       - uuid: 1d635223-295d-4ac9-a117-9c7558cb9ea3
         title: SP 800-145
         citation:

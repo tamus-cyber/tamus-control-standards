@@ -36,7 +36,10 @@ profile:
     as-is: true
   modify:
     set-parameters:
-      - param-id: at-2_prm_1
+      - param-id: at-02_odp.01
+        constraints:
+          - description: at least annually
+      - param-id: at-02_odp.02
         constraints:
           - description: at least annually
       - param-id: at-02_odp.06
@@ -70,10 +73,10 @@ profile:
           - twelve hours of detection
       - param-id: ir-06_odp.02
         values:
-          - Texas A&M University System Cybersecurity and Texas Department of Information Resources, as specified by the [TAMUS Incident Notification Guidelines]
+          - Texas A&M University System Cybersecurity and Texas Department of Information Resources, as specified by the TAMUS Incident Notification Guidelines
       - param-id: ir-06.01_odp
         values:
-          - TAMUS Incident Reporting Submission Form for Texas A&M University System reporting and SPECTRIM for DIR reporting
+          - TAMUS Incident Reporting Submission Form for Texas A&M University System reporting, and SPECTRIM for DIR/TXCC reporting
       - param-id: pl-04_odp.02
         values:
           - annually
@@ -90,7 +93,7 @@ profile:
           - biennially, for other information resources containing confidential information
       - param-id: si-05.01_odp
         values:
-          - TAMUS Cybersecurity GovDelivery for all intra-system communications
+          - TAMUS Cybersecurity distribution lists for all system-wide communications
           - organization-defined automated mechanisms
     alters:
       - control-id: ac-2.7

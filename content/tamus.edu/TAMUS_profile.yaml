@@ -2,7 +2,7 @@
 profile:
   metadata:
     title: Texas A&M University System Security Control Standards Catalog
-    version: "2.2.1"
+    version: "2.2.1.1"
     oscal-version: 1.1.2
     roles:
       - id: prepared-by
@@ -73,10 +73,10 @@ profile:
           - twelve hours of detection
       - param-id: ir-06_odp.02
         values:
-          - Texas A&M University System Cybersecurity and Texas Department of Information Resources, as specified by the TAMUS Incident Notification Guidelines
+          - Texas A&M University System Cybersecurity and Texas Cyber Command, as specified by the TAMUS Incident Notification Guidelines
       - param-id: ir-06.01_odp
         values:
-          - TAMUS Incident Reporting Submission Form for Texas A&M University System reporting, and SPECTRIM for DIR/TXCC reporting
+          - TAMUS Incident Reporting Submission Form for Texas A&M University System reporting, and SPECTRIM for Texas Cyber Command reporting
       - param-id: pl-04_odp.02
         values:
           - annually
@@ -156,10 +156,16 @@ profile:
                 ns: "http://cyber.tamus.edu/ns/oscal"
                 name: tamus_implementation
                 prose: >-
-                  System Regulation 33.05.02, Required Employee Training, implements the awareness and training policy
-                  for information security.
+                  [[System Regulation 33.05.02](#222e06f0-2123-491d-98ad-bedeae9e8f13)], Required Employee Training,
+                  implements the awareness and training policy for information security.
       - control-id: at-2
         adds:
+          - position: ending
+            links:
+              - href: "#222e06f0-2123-491d-98ad-bedeae9e8f13"
+                rel: reference
+              - href: "#ea9e850e-6a92-4f8b-b244-b4d4fbe97bf0"
+                rel: reference
           - position: before
             by-id: at-2_gdn
             parts:
@@ -167,13 +173,17 @@ profile:
                 ns: "http://cyber.tamus.edu/ns/oscal"
                 name: tamus_implementation
                 prose: >-
-                  The Texas A&M System will make literacy training and awareness available to system members via TrainTraq
-                  Course 3001, Information Security Awareness. Texas A&M System Cybersecurity, in coordination with Texas
-                  A&M University Technology Services and Division of Human Resources and Organizational Effectiveness,
-                  will update TrainTraq Course 3001 content annually as part of the Texas DIR Certified Cybersecurity
-                  Training program.
+                  The Texas A&M System will make literacy training and awareness available to system members via [[TrainTraq
+                  Course 3001](#ea9e850e-6a92-4f8b-b244-b4d4fbe97bf0)], Information Security Awareness. Texas A&M System
+                  Cybersecurity, in coordination with Texas A&M University Technology Services and Division of Human
+                  Resources and Organizational Effectiveness, will update TrainTraq Course 3001 content annually as
+                  part of the Texas DIR Certified Cybersecurity Training program.
       - control-id: at-2.2
         adds:
+          - position: ending
+            links:
+              - href: "#ea9e850e-6a92-4f8b-b244-b4d4fbe97bf0"
+                rel: reference
           - position: before
             by-id: at-2.2_gdn
             parts:
@@ -181,11 +191,14 @@ profile:
                 ns: "http://cyber.tamus.edu/ns/oscal"
                 name: tamus_implementation
                 prose: >-
-                  The Texas A&M University System will incorporate insider threat training into TrainTraq Course 3001,
-                  Information Security Awareness.
+                  The Texas A&M University System will incorporate insider threat training into [[TrainTraq Course
+                  3001](#ea9e850e-6a92-4f8b-b244-b4d4fbe97bf0)], Information Security Awareness.
       - control-id: at-2.3
         adds: 
           - position: ending
+            links:
+              - href: "#ea9e850e-6a92-4f8b-b244-b4d4fbe97bf0"
+                rel: reference
             props: 
               - ns: "http://cyber.tamus.edu/ns/oscal"
                 name: tamus_baseline
@@ -200,8 +213,8 @@ profile:
                 ns: "http://cyber.tamus.edu/ns/oscal"
                 name: tamus_implementation
                 prose: >-
-                  The Texas A&M University System will incorporate social engineering training into TrainTraq Course 3001,
-                  Information Security Awareness.
+                  The Texas A&M University System will incorporate social engineering training into [[TrainTraq Course
+                  3001](#ea9e850e-6a92-4f8b-b244-b4d4fbe97bf0)], Information Security Awareness.
       - control-id: at-3
         adds:
           - position: before
@@ -215,6 +228,10 @@ profile:
                   privileged access.
       - control-id: at-4
         adds:
+          - position: ending
+            links:
+              - href: "#ea9e850e-6a92-4f8b-b244-b4d4fbe97bf0"
+                rel: reference
           - position: before
             by-id: at-4_gdn
             parts:
@@ -222,8 +239,9 @@ profile:
                 ns: "http://cyber.tamus.edu/ns/oscal"
                 name: tamus_implementation
                 prose: >-
-                  Information security and privacy awareness training delivered via TrainTraq Course 3001 is documented
-                  and monitored in TrainTraq and retained for the duration of employment.
+                  Information security and privacy awareness training delivered via [[TrainTraq Course
+                  3001](#ea9e850e-6a92-4f8b-b244-b4d4fbe97bf0)] is documented and monitored in TrainTraq
+                  and retained for the duration of employment.
       - control-id: ca-2.1
         adds:
           - position: ending
@@ -380,6 +398,9 @@ profile:
       - control-id: cp-2.1
         adds:
           - position: ending
+            links:
+              - href: "#28edd686-b17c-47ca-aba4-4c7de11e82f5"
+                rel: reference
             props:
               - ns: "http://cyber.tamus.edu/ns/oscal"
                 name: tamus_baseline
@@ -395,7 +416,8 @@ profile:
                 name: tamus_implementation
                 prose: >-
                   Develop information resources contingency plans that align with the member’s emergency operations
-                  plan as required by System Regulation 34.07.01, Emergency Operations Plans.
+                  plan as required by [[System Regulation 34.07.01](#28edd686-b17c-47ca-aba4-4c7de11e82f5)], Emergency
+                  Operations Plans.
       - control-id: cp-4
         adds:
           - position: ending
@@ -462,7 +484,7 @@ profile:
                 ns: "http://cyber.tamus.edu/ns/oscal"
                 name: tamus_implementation
                 prose: >-
-                  Limit the lifetime of browser cookies used for binding authenticated sessions to organization-owned
+                  Limit the lifetime of browser local storage used for binding authenticated sessions to organization-owned
                   or -managed information systems to no more than five (5) days.
       - control-id: ia-12
         adds:
@@ -518,9 +540,9 @@ profile:
                   Members shall require in-person or remote visual confirmation of the requestor's identity against
                   identity evidence specified in [IA-12(02)](#ia-12.2) prior to information resource custodians
                   performing any requested changes (including, but not limited to, password reset, change of MFA phone
-                  number or device, or change of recovery email address) of Identity Assurance Level (IAL) 2 user accounts, 
-                  to include at a minimum, A&M System employees receiving payroll payments.  Visual confirmation may be
-                  accomplished through in-person verification or a live video conference session with the registration
+                  number or hardware token, or change of recovery email address) of Identity Assurance Level (IAL) 2 user
+                  accounts, to include at a minimum, A&M System employees receiving payroll payments.  Visual confirmation
+                  may be accomplished through in-person verification or a live video conference session with the registration
                   authority.  This control standard does not apply to automated systems such as self-service password
                   reset or MFA device management.
       - control-id: ir-4
@@ -564,9 +586,10 @@ profile:
                 ns: "http://cyber.tamus.edu/ns/oscal"
                 name: tamus_implementation
                 prose: >-
-                  System Regulation 29.01.03, Information Security, designates Texas A&M University System
-                  Cyber Operations as the organizational security operations center. No member cybersecurity operations
-                  or activities may conflict with or duplicate services delivered by A&M System Cyber Operations.
+                  [[System Regulation 29.01.03](#56ad2ecd-c959-4926-ad66-39b187d1103f)], Information Security,
+                  designates Texas A&M University System Cyber Operations as the organizational security operations
+                  center. No member cybersecurity operations or activities may conflict with or duplicate services
+                  delivered by A&M System Cyber Operations.
       - control-id: ir-6
         adds:
           - position: ending
@@ -731,8 +754,8 @@ profile:
                 ns: "http://cyber.tamus.edu/ns/oscal"
                 name: tamus_implementation
                 prose: >-
-                  Ensure rules of behavior incorporate System Policy 33.04, Use of System Resources, and the
-                  organization's acceptable use guidelines.
+                  Ensure rules of behavior incorporate [[System Policy 33.04](#a444439a-d0c7-4d93-b98d-3eeb506f2a1e)],
+                  Use of System Resources, and the organization's acceptable use guidelines.
       - control-id: pl-10
         adds:
           - position: before
@@ -742,8 +765,9 @@ profile:
                 ns: "http://cyber.tamus.edu/ns/oscal"
                 name: tamus_implementation
                 prose: >-
-                  The default baseline for an information system are those controls identified as required by Texas DIR and/or
-                  the Texas A&M University System for the impact level of the information system.
+                  The default baseline for an information system are those controls identified as
+                  required by Texas DIR and/or the Texas A&M University System for the impact level
+                  of the information system.
       - control-id: pm-5
         adds:
           - position: ending
@@ -886,6 +910,9 @@ profile:
       - control-id: sc-7.11
         adds:
           - position: ending
+            links:
+              - href: "#0d22bdb1-7458-4a52-bae5-88d396cee594"
+                rel: reference
             props:
               - ns: "http://cyber.tamus.edu/ns/oscal"
                 name: tamus_baseline
@@ -901,7 +928,7 @@ profile:
                 name: tamus_implementation
                 prose: >-
                   Use country-based or IP-based blocking to restrict incoming communications traffic from countries on
-                  the TAMUS Blocked Countries list available at https://sso.tamus.edu/BlockedCountries.aspx.
+                  the [[TAMUS Blocked Countries List](#0d22bdb1-7458-4a52-bae5-88d396cee594)].
       - control-id: si-12.1
         adds:
           - position: ending
@@ -990,6 +1017,12 @@ profile:
           text: Texas A&M University System Regulation 33.05.02, Required Employee Training
         rlinks:
           - href: https://policies.tamus.edu/33-05-02.pdf
+      - uuid: ea9e850e-6a92-4f8b-b244-b4d4fbe97bf0
+        title: TrainTraq Course 3001
+        citation:
+          text: TrainTraq Course 3001, Information Security Awareness
+        rlinks:
+          - href: https://apps2.system.tamus.edu/TrainTraq/web/CourseDetails.aspx?cnum=3001
       - uuid: 28edd686-b17c-47ca-aba4-4c7de11e82f5
         title: TAMUS Regulation 34.07.01
         citation:
@@ -1002,6 +1035,12 @@ profile:
           text: TAMUS Incident Notification Guidelines
         rlinks:
           - href: https://www.cyber.tamus.edu/policy/guidelines/incident-notification/
+      - uuid: 0d22bdb1-7458-4a52-bae5-88d396cee594
+        title: TAMUS Blocked Countries List
+        citation:
+          text: TAMUS Blocked Countries List
+        rlinks:
+          - href: https://sso.tamus.edu/BlockedCountries.aspx
       - uuid: 1d635223-295d-4ac9-a117-9c7558cb9ea3
         title: SP 800-145
         citation:

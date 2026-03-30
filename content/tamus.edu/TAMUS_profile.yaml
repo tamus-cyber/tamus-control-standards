@@ -2,7 +2,7 @@
 profile:
   metadata:
     title: Texas A&M University System Security Control Standards Catalog
-    version: "2.2.1.1"
+    version: "2.2.1.2"
     oscal-version: 1.1.2
     roles:
       - id: prepared-by

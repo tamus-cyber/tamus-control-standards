@@ -586,7 +586,7 @@ profile:
                 ns: "http://cyber.tamus.edu/ns/oscal"
                 name: tamus_implementation
                 prose: >-
-                  [[System Regulation 29.01.03](#56ad2ecd-c959-4926-ad66-39b187d1103f)], Information Security,
+                  [[System Regulation 29.02.01](#56ad2ecd-c959-4926-ad66-39b187d1103f)], Information Security Governance,
                   designates Texas A&M University System Cyber Operations as the organizational security operations
                   center. No member cybersecurity operations or activities may conflict with or duplicate services
                   delivered by A&M System Cyber Operations.
@@ -1000,11 +1000,11 @@ profile:
         rlinks:
           - href: https://policies.tamus.edu/29-02.pdf
       - uuid: 56ad2ecd-c959-4926-ad66-39b187d1103f
-        title: TAMUS Regulation 29.01.03
+        title: TAMUS Regulation 29.02.01
         citation:
-          text: Texas A&M System Regulation 29.01.03, Information Security
+          text: Texas A&M System Regulation 29.02.01, Information Security Governance
         rlinks:
-          - href: https://policies.tamus.edu/29-01-03.pdf
+          - href: https://policies.tamus.edu/29-02-01.pdf
       - uuid: a444439a-d0c7-4d93-b98d-3eeb506f2a1e
         title: TAMUS Policy 33.04
         citation:

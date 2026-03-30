@@ -2,7 +2,7 @@
 profile:
   metadata:
     title: Texas A&M University System Security Control Standards Catalog
-    version: "2.2.1.2"
+    version: "2.2.2"
     oscal-version: 1.1.2
     roles:
       - id: prepared-by
@@ -100,10 +100,10 @@ profile:
         adds: 
           - position: ending
             props: 
-              - ns: "http://cyber.tamus.edu/ns/oscal"
+              - ns: "https://cyber.tamus.edu/ns/oscal"
                 name: tamus_baseline
                 value: MODERATE
-              - ns: "http://cyber.tamus.edu/ns/oscal"
+              - ns: "https://cyber.tamus.edu/ns/oscal"
                 name: tamus_required_by
                 value: 2022-08-01
       - control-id: ac-3
@@ -116,20 +116,20 @@ profile:
         adds:
           - position: ending
             props:
-              - ns: "http://cyber.tamus.edu/ns/oscal"
+              - ns: "https://cyber.tamus.edu/ns/oscal"
                 name: tamus_baseline
                 value: MODERATE
-              - ns: "http://cyber.tamus.edu/ns/oscal"
+              - ns: "https://cyber.tamus.edu/ns/oscal"
                 name: tamus_required_by
                 value: 2022-08-01
       - control-id: ac-11
         adds:
           - position: ending
             props:
-              - ns: "http://cyber.tamus.edu/ns/oscal"
+              - ns: "https://cyber.tamus.edu/ns/oscal"
                 name: tamus_baseline
                 value: LOW
-              - ns: "http://cyber.tamus.edu/ns/oscal"
+              - ns: "https://cyber.tamus.edu/ns/oscal"
                 name: tamus_required_by
                 value: 2024-02-01
       - control-id: ac-19
@@ -138,7 +138,7 @@ profile:
             by-id: ac-19_gdn
             parts:
               - id: ac-19_tamus_smt
-                ns: "http://cyber.tamus.edu/ns/oscal"
+                ns: "https://cyber.tamus.edu/ns/oscal"
                 name: tamus_implementation
                 prose: >-
                   Require the implementation of a mobile device management (MDM) product on all organization-controlled
@@ -153,7 +153,7 @@ profile:
             by-id: at-1_gdn
             parts:
               - id: ac-1_tamus_smt
-                ns: "http://cyber.tamus.edu/ns/oscal"
+                ns: "https://cyber.tamus.edu/ns/oscal"
                 name: tamus_implementation
                 prose: >-
                   [[System Regulation 33.05.02](#222e06f0-2123-491d-98ad-bedeae9e8f13)], Required Employee Training,
@@ -166,11 +166,18 @@ profile:
                 rel: reference
               - href: "#ea9e850e-6a92-4f8b-b244-b4d4fbe97bf0"
                 rel: reference
+            props:
+              - ns: "https://cyber.tamus.edu/ns/oscal"
+                name: tamus_control_type
+                value: common
+              - ns: "https://cyber.tamus.edu/ns/oscal"
+                name: tamus_control_provider
+                value: "TAMUS Cybersecurity"
           - position: before
             by-id: at-2_gdn
             parts:
               - id: at-2_tamus_smt
-                ns: "http://cyber.tamus.edu/ns/oscal"
+                ns: "https://cyber.tamus.edu/ns/oscal"
                 name: tamus_implementation
                 prose: >-
                   The Texas A&M System will make literacy training and awareness available to system members via [[TrainTraq
@@ -184,11 +191,18 @@ profile:
             links:
               - href: "#ea9e850e-6a92-4f8b-b244-b4d4fbe97bf0"
                 rel: reference
+            props:
+              - ns: "https://cyber.tamus.edu/ns/oscal"
+                name: tamus_control_type
+                value: common
+              - ns: "https://cyber.tamus.edu/ns/oscal"
+                name: tamus_control_provider
+                value: "TAMUS Cybersecurity"
           - position: before
             by-id: at-2.2_gdn
             parts:
               - id: at-2.2_tamus_smt
-                ns: "http://cyber.tamus.edu/ns/oscal"
+                ns: "https://cyber.tamus.edu/ns/oscal"
                 name: tamus_implementation
                 prose: >-
                   The Texas A&M University System will incorporate insider threat training into [[TrainTraq Course
@@ -199,18 +213,24 @@ profile:
             links:
               - href: "#ea9e850e-6a92-4f8b-b244-b4d4fbe97bf0"
                 rel: reference
-            props: 
-              - ns: "http://cyber.tamus.edu/ns/oscal"
+            props:
+              - ns: "https://cyber.tamus.edu/ns/oscal"
+                name: tamus_control_type
+                value: common
+              - ns: "https://cyber.tamus.edu/ns/oscal"
+                name: tamus_control_provider
+                value: "TAMUS Cybersecurity"
+              - ns: "https://cyber.tamus.edu/ns/oscal"
                 name: tamus_baseline
                 value: LOW
-              - ns: "http://cyber.tamus.edu/ns/oscal"
+              - ns: "https://cyber.tamus.edu/ns/oscal"
                 name: tamus_required_by
                 value: 2024-09-01
           - position: before
             by-id: at-2.3_gdn
             parts:
               - id: at-2.3_tamus_smt
-                ns: "http://cyber.tamus.edu/ns/oscal"
+                ns: "https://cyber.tamus.edu/ns/oscal"
                 name: tamus_implementation
                 prose: >-
                   The Texas A&M University System will incorporate social engineering training into [[TrainTraq Course
@@ -221,7 +241,7 @@ profile:
             by-id: at-3_gdn
             parts: 
               - id: at-3_tamus_smt
-                ns: "http://cyber.tamus.edu/ns/oscal"
+                ns: "https://cyber.tamus.edu/ns/oscal"
                 name: tamus_implementation
                 prose: >-
                   Deliver role-based training to privileged users commensurate with the risk presented by the
@@ -232,11 +252,18 @@ profile:
             links:
               - href: "#ea9e850e-6a92-4f8b-b244-b4d4fbe97bf0"
                 rel: reference
+            props:
+              - ns: "https://cyber.tamus.edu/ns/oscal"
+                name: tamus_control_type
+                value: hybrid
+              - ns: "https://cyber.tamus.edu/ns/oscal"
+                name: tamus_control_provider
+                value: "TrainTraq (for literacy training records)"
           - position: before
             by-id: at-4_gdn
             parts:
               - id: at-4_tamus_smt
-                ns: "http://cyber.tamus.edu/ns/oscal"
+                ns: "https://cyber.tamus.edu/ns/oscal"
                 name: tamus_implementation
                 prose: >-
                   Information security and privacy awareness training delivered via [[TrainTraq Course
@@ -246,17 +273,17 @@ profile:
         adds:
           - position: ending
             props:
-              - ns: "http://cyber.tamus.edu/ns/oscal"
+              - ns: "https://cyber.tamus.edu/ns/oscal"
                 name: tamus_baseline
                 value: MODERATE
-              - ns: "http://cyber.tamus.edu/ns/oscal"
+              - ns: "https://cyber.tamus.edu/ns/oscal"
                 name: tamus_required_by
                 value: 2024-09-01
           - position: before
             by-id: ca-2.1_gdn
             parts:
               - id: ca-2.1_tamus_smt
-                ns: "http://cyber.tamus.edu/ns/oscal"
+                ns: "https://cyber.tamus.edu/ns/oscal"
                 name: tamus_implementation
                 prose: >-
                   Control assessments shall be performed by individual(s) independent of the information security program
@@ -267,7 +294,7 @@ profile:
             by-id: cm-3_gdn
             parts:
               - id: cm-3_tamus_smt
-                ns: "http://cyber.tamus.edu/ns/oscal"
+                ns: "https://cyber.tamus.edu/ns/oscal"
                 name: tamus_implementation
                 prose: >-
                   Incorporate change management processes to ensure secure, reliable, and stable operations to
@@ -308,10 +335,10 @@ profile:
         adds:
           - position: ending
             props:
-              - ns: "http://cyber.tamus.edu/ns/oscal"
+              - ns: "https://cyber.tamus.edu/ns/oscal"
                 name: tamus_baseline
                 value: MODERATE
-              - ns: "http://cyber.tamus.edu/ns/oscal"
+              - ns: "https://cyber.tamus.edu/ns/oscal"
                 name: tamus_required_by
                 value: 2022-08-01
       - control-id: cm-6
@@ -326,7 +353,7 @@ profile:
             by-id: cm-6_gdn
             parts:
               - id: cm-6_tamus_smt
-                ns: "http://cyber.tamus.edu/ns/oscal"
+                ns: "https://cyber.tamus.edu/ns/oscal"
                 name: tamus_implementation
                 prose: >-
                   Adopt baseline security configuration checklists that meet or exceed published industry best practice
@@ -340,7 +367,7 @@ profile:
             by-id: cm-10_gdn
             parts:
               - id: cm-10_tamus_smt
-                ns: "http://cyber.tamus.edu/ns/oscal"
+                ns: "https://cyber.tamus.edu/ns/oscal"
                 name: tamus_implementation
                 prose: >-
                   Inform users that unauthorized or unlicensed use of software is regarded as a serious matter subject
@@ -351,7 +378,7 @@ profile:
             by-id: cm-11_gdn
             parts:
               - id: cm-11_tamus_smt
-                ns: "http://cyber.tamus.edu/ns/oscal"
+                ns: "https://cyber.tamus.edu/ns/oscal"
                 name: tamus_implementation
                 parts:
                   - id: cm-11_tamus_smt.a
@@ -402,17 +429,17 @@ profile:
               - href: "#28edd686-b17c-47ca-aba4-4c7de11e82f5"
                 rel: reference
             props:
-              - ns: "http://cyber.tamus.edu/ns/oscal"
+              - ns: "https://cyber.tamus.edu/ns/oscal"
                 name: tamus_baseline
                 value: LOW
-              - ns: "http://cyber.tamus.edu/ns/oscal"
+              - ns: "https://cyber.tamus.edu/ns/oscal"
                 name: tamus_required_by
                 value: 2022-08-01
           - position: before
             by-id: cp-2.1_gdn
             parts:
               - id: cp-2.1_tamus_smt
-                ns: "http://cyber.tamus.edu/ns/oscal"
+                ns: "https://cyber.tamus.edu/ns/oscal"
                 name: tamus_implementation
                 prose: >-
                   Develop information resources contingency plans that align with the member’s emergency operations
@@ -428,17 +455,17 @@ profile:
         adds:
           - position: ending
             props:
-              - ns: "http://cyber.tamus.edu/ns/oscal"
+              - ns: "https://cyber.tamus.edu/ns/oscal"
                 name: tamus_baseline
                 value: LOW
-              - ns: "http://cyber.tamus.edu/ns/oscal"
+              - ns: "https://cyber.tamus.edu/ns/oscal"
                 name: tamus_required_by
                 value: 2022-08-01
           - position: before
             by-id: cp-4.1_gdn
             parts:
               - id: cp-4_tamus_smt
-                ns: "http://cyber.tamus.edu/ns/oscal"
+                ns: "https://cyber.tamus.edu/ns/oscal"
                 name: tamus_implementation
                 prose: >-
                   Include information resources contingency plan testing in the member’s emergency management plan
@@ -459,7 +486,7 @@ profile:
             by-id: cp-9.3_gdn
             parts:
               - id: cp-9.3_tamus_smt
-                ns: "http://cyber.tamus.edu/ns/oscal"
+                ns: "https://cyber.tamus.edu/ns/oscal"
                 name: tamus_implementation
                 prose: >-
                   Protect {{ insert: param, cp-09.03_tamus_odp.01 }} with a backup strategy which uses immutable backup
@@ -469,10 +496,10 @@ profile:
         adds:
           - position: ending
             props:
-              - ns: "http://cyber.tamus.edu/ns/oscal"
+              - ns: "https://cyber.tamus.edu/ns/oscal"
                 name: tamus_baseline
                 value: LOW
-              - ns: "http://cyber.tamus.edu/ns/oscal"
+              - ns: "https://cyber.tamus.edu/ns/oscal"
                 name: tamus_required_by
                 value: 2025-01-01
       - control-id: ia-11
@@ -481,7 +508,7 @@ profile:
             by-id: ia-11_gdn
             parts:
               - id: ia-11_tamus_smt
-                ns: "http://cyber.tamus.edu/ns/oscal"
+                ns: "https://cyber.tamus.edu/ns/oscal"
                 name: tamus_implementation
                 prose: >-
                   Limit the lifetime of browser local storage used for binding authenticated sessions to organization-owned
@@ -490,10 +517,10 @@ profile:
         adds:
           - position: ending
             props:
-              - ns: "http://cyber.tamus.edu/ns/oscal"
+              - ns: "https://cyber.tamus.edu/ns/oscal"
                 name: tamus_baseline
                 value: MODERATE
-              - ns: "http://cyber.tamus.edu/ns/oscal"
+              - ns: "https://cyber.tamus.edu/ns/oscal"
                 name: tamus_required_by
                 value: 2022-08-01
             links:
@@ -503,17 +530,17 @@ profile:
         adds:
           - position: ending
             props:
-              - ns: "http://cyber.tamus.edu/ns/oscal"
+              - ns: "https://cyber.tamus.edu/ns/oscal"
                 name: tamus_baseline
                 value: MODERATE
-              - ns: "http://cyber.tamus.edu/ns/oscal"
+              - ns: "https://cyber.tamus.edu/ns/oscal"
                 name: tamus_required_by
                 value: 2024-09-01
           - position: before
             by-id: ia-12.2_gdn
             parts:
               - id: ia-12.2_tamus_smt
-                ns: "http://cyber.tamus.edu/ns/oscal"
+                ns: "https://cyber.tamus.edu/ns/oscal"
                 name: tamus_implementation
                 prose: >-
                   Identity evidence shall be a physical or digital identification credential containing the bearer’s
@@ -524,34 +551,42 @@ profile:
         adds:
           - position: ending
             props:
-              - ns: "http://cyber.tamus.edu/ns/oscal"
+              - ns: "https://cyber.tamus.edu/ns/oscal"
                 name: tamus_baseline
                 value: MODERATE
-              - ns: "http://cyber.tamus.edu/ns/oscal"
+              - ns: "https://cyber.tamus.edu/ns/oscal"
                 name: tamus_required_by
                 value: 2024-09-01
           - position: before
             by-id: ia-12.3_gdn
             parts:
               - id: ia-12.3_tamus_smt
-                ns: "http://cyber.tamus.edu/ns/oscal"
+                ns: "https://cyber.tamus.edu/ns/oscal"
                 name: tamus_implementation
                 prose: >-
                   Members shall require in-person or remote visual confirmation of the requestor's identity against
                   identity evidence specified in [IA-12(02)](#ia-12.2) prior to information resource custodians
                   performing any requested changes (including, but not limited to, password reset, change of MFA phone
                   number or hardware token, or change of recovery email address) of Identity Assurance Level (IAL) 2 user
-                  accounts, to include at a minimum, A&M System employees receiving payroll payments.  Visual confirmation
-                  may be accomplished through in-person verification or a live video conference session with the registration
-                  authority.  This control standard does not apply to automated systems such as self-service password
-                  reset or MFA device management.
+                  accounts. IAL 2 accounts include, at a minimum, A&M System employees receiving payroll payments.  Visual
+                  confirmation may be accomplished through in-person verification or a live video conference session with
+                  the registration authority.  This control standard does not apply to automated systems such as
+                  self-service password reset or MFA device management.
       - control-id: ir-4
         adds:
+          - position: ending
+            props:
+              - ns: "https://cyber.tamus.edu/ns/oscal"
+                name: tamus_control_type
+                value: common
+              - ns: "https://cyber.tamus.edu/ns/oscal"
+                name: tamus_control_provider
+                value: "TAMUS Cybersecurity"
           - position: before
             by-id: ir-4_gdn
             parts:
               - id: ir-4_tamus_smt
-                ns: "http://cyber.tamus.edu/ns/oscal"
+                ns: "https://cyber.tamus.edu/ns/oscal"
                 name: tamus_implementation
                 prose: >-
                   Texas A&M University System Cyber Operations provides an incident handling capability for all Texas A&M
@@ -560,10 +595,10 @@ profile:
         adds:
           - position: ending
             props:
-              - ns: "http://cyber.tamus.edu/ns/oscal"
+              - ns: "https://cyber.tamus.edu/ns/oscal"
                 name: tamus_baseline
                 value: MODERATE
-              - ns: "http://cyber.tamus.edu/ns/oscal"
+              - ns: "https://cyber.tamus.edu/ns/oscal"
                 name: tamus_required_by
                 value: 2024-08-28
       - control-id: ir-4.14
@@ -573,23 +608,39 @@ profile:
               - href: "#56ad2ecd-c959-4926-ad66-39b187d1103f"
                 rel: reference
             props:
-              - ns: "http://cyber.tamus.edu/ns/oscal"
+              - ns: "https://cyber.tamus.edu/ns/oscal"
+                name: tamus_control_type
+                value: common
+              - ns: "https://cyber.tamus.edu/ns/oscal"
+                name: tamus_control_provider
+                value: "TAMUS Cybersecurity"
+              - ns: "https://cyber.tamus.edu/ns/oscal"
                 name: tamus_baseline
                 value: MODERATE
-              - ns: "http://cyber.tamus.edu/ns/oscal"
+              - ns: "https://cyber.tamus.edu/ns/oscal"
                 name: tamus_required_by
                 value: 2024-08-28
           - position: before
             by-id: ir-4.14_gdn
             parts:
               - id: ir-4.14_tamus_smt
-                ns: "http://cyber.tamus.edu/ns/oscal"
+                ns: "https://cyber.tamus.edu/ns/oscal"
                 name: tamus_implementation
                 prose: >-
                   [[System Regulation 29.02.01](#56ad2ecd-c959-4926-ad66-39b187d1103f)], Information Security Governance,
                   designates Texas A&M University System Cyber Operations as the organizational security operations
                   center. No member cybersecurity operations or activities may conflict with or duplicate services
                   delivered by A&M System Cyber Operations.
+      - control-id: ir-5
+        adds:
+          - position: ending
+            props:
+              - ns: "https://cyber.tamus.edu/ns/oscal"
+                name: tamus_control_type
+                value: hybrid
+              - ns: "https://cyber.tamus.edu/ns/oscal"
+                name: tamus_control_provider
+                value: "TAMUS Cybersecurity (for incidents managed by TAMUS Cyber Operations)"
       - control-id: ir-6
         adds:
           - position: ending
@@ -600,20 +651,20 @@ profile:
         adds:
           - position: ending
             props:
-              - ns: "http://cyber.tamus.edu/ns/oscal"
+              - ns: "https://cyber.tamus.edu/ns/oscal"
                 name: tamus_baseline
                 value: MODERATE
-              - ns: "http://cyber.tamus.edu/ns/oscal"
+              - ns: "https://cyber.tamus.edu/ns/oscal"
                 name: tamus_required_by
                 value: 2024-08-28
       - control-id: mp-3
         adds:
           - position: ending
             props:
-              - ns: "http://cyber.tamus.edu/ns/oscal"
+              - ns: "https://cyber.tamus.edu/ns/oscal"
                 name: tamus_baseline
                 value: MODERATE
-              - ns: "http://cyber.tamus.edu/ns/oscal"
+              - ns: "https://cyber.tamus.edu/ns/oscal"
                 name: tamus_required_by
                 value: 2022-08-01
             links:
@@ -623,17 +674,17 @@ profile:
         adds:
           - position: ending
             props:
-              - ns: "http://cyber.tamus.edu/ns/oscal"
+              - ns: "https://cyber.tamus.edu/ns/oscal"
                 name: tamus_baseline
                 value: MODERATE
-              - ns: "http://cyber.tamus.edu/ns/oscal"
+              - ns: "https://cyber.tamus.edu/ns/oscal"
                 name: tamus_required_by
                 value: 2022-08-01
           - position: before
             by-id: pe-6.3_gdn
             parts:
               - id: pe-6.3_tamus_smt
-                ns: "http://cyber.tamus.edu/ns/oscal"
+                ns: "https://cyber.tamus.edu/ns/oscal"
                 name: tamus_implementation
                 prose: >-
                   Ensure audio-visual surveillance technology used to monitor physical access to information systems
@@ -643,10 +694,10 @@ profile:
         adds:
           - position: ending
             props:
-              - ns: "http://cyber.tamus.edu/ns/oscal"
+              - ns: "https://cyber.tamus.edu/ns/oscal"
                 name: tamus_baseline
                 value: MODERATE
-              - ns: "http://cyber.tamus.edu/ns/oscal"
+              - ns: "https://cyber.tamus.edu/ns/oscal"
                 name: tamus_required_by
                 value: 2021-09-13
             links:
@@ -660,7 +711,7 @@ profile:
             by-id: pe-18_gdn
             parts:
               - id: pe-18_tamus_smt
-                ns: "http://cyber.tamus.edu/ns/oscal"
+                ns: "https://cyber.tamus.edu/ns/oscal"
                 name: tamus_implementation
                 parts:
                   - id: pe-18_tamus_smt.a
@@ -751,7 +802,7 @@ profile:
             by-id: pl-4_gdn
             parts:
               - id: pl-4_tamus_smt
-                ns: "http://cyber.tamus.edu/ns/oscal"
+                ns: "https://cyber.tamus.edu/ns/oscal"
                 name: tamus_implementation
                 prose: >-
                   Ensure rules of behavior incorporate [[System Policy 33.04](#a444439a-d0c7-4d93-b98d-3eeb506f2a1e)],
@@ -762,7 +813,7 @@ profile:
             by-id: pl-10_gdn
             parts:
               - id: pl-10_tamus_smt
-                ns: "http://cyber.tamus.edu/ns/oscal"
+                ns: "https://cyber.tamus.edu/ns/oscal"
                 name: tamus_implementation
                 prose: >-
                   The default baseline for an information system are those controls identified as
@@ -782,7 +833,7 @@ profile:
             by-id: pm-5_gdn
             parts:
               - id: pm-5_tamus_smt
-                ns: "http://cyber.tamus.edu/ns/oscal"
+                ns: "https://cyber.tamus.edu/ns/oscal"
                 name: tamus_implementation
                 parts:
                   - id: pm-5_tamus_smt.a
@@ -817,18 +868,48 @@ profile:
             by-id: pm-14_gdn
             parts:
               - id: pm-14_tamus_smt
-                ns: "http://cyber.tamus.edu/ns/oscal"
+                ns: "https://cyber.tamus.edu/ns/oscal"
                 name: tamus_implementation
                 prose: >-
                   Ensure an IT organization is designated to provide security monitoring for all information systems,
                   in both centralized and decentralized IT environments, owned or managed by the organization.
+      - control-id: ps-2
+        adds:
+          - position: ending
+            props:
+              - ns: "https://cyber.tamus.edu/ns/oscal"
+                name: tamus_control_type
+                value: common
+              - ns: "https://cyber.tamus.edu/ns/oscal"
+                name: tamus_control_provider
+                value: "TAMUS and Member Human Resources"
+      - control-id: ps-3
+        adds:
+          - position: ending
+            props:
+              - ns: "https://cyber.tamus.edu/ns/oscal"
+                name: tamus_control_type
+                value: common
+              - ns: "https://cyber.tamus.edu/ns/oscal"
+                name: tamus_control_provider
+                value: "TAMUS and Member Human Resources"
+      - control-id: ps-9
+        adds:
+          - position: ending
+            props:
+              - ns: "https://cyber.tamus.edu/ns/oscal"
+                name: tamus_control_type
+                value: common
+              - ns: "https://cyber.tamus.edu/ns/oscal"
+                name: tamus_control_provider
+                value: "TAMUS and Member Human Resources"
       - control-id: ra-2
         adds:
           - position: before
             by-id: ra-2_gdn
             parts:
               - id: ra-2_tamus_smt
-                ns: "http://cyber.tamus.edu/ns/oscal"
+                ns: "https://cyber.tamus.edu/ns/oscal"
                 name: tamus_implementation
                 prose: >-
                   Categorize information and information systems owned or managed by the organization using a data
@@ -841,7 +922,7 @@ profile:
             by-id: ra-5.11_gdn
             parts:
               - id: ra-5.11_tamus_smt
-                ns: "http://cyber.tamus.edu/ns/oscal"
+                ns: "https://cyber.tamus.edu/ns/oscal"
                 name: tamus_implementation
                 prose: >-
                   Texas A&M University System Cyber Operations serves as the central point of contact for public
@@ -857,7 +938,7 @@ profile:
             by-id: sa-3_gdn
             parts:
               - id: sa-3_tamus_smt
-                ns: "http://cyber.tamus.edu/ns/oscal"
+                ns: "https://cyber.tamus.edu/ns/oscal"
                 name: tamus_implementation
                 prose: >-
                   The member information security officer reviews the data security requirements and specifications
@@ -868,7 +949,7 @@ profile:
             by-id: sa-4_gdn
             parts:
               - id: sa-4_tamus_smt
-                ns: "http://cyber.tamus.edu/ns/oscal"
+                ns: "https://cyber.tamus.edu/ns/oscal"
                 name: tamus_implementation
                 prose: >-
                   The member information security officer:
@@ -914,38 +995,56 @@ profile:
               - href: "#0d22bdb1-7458-4a52-bae5-88d396cee594"
                 rel: reference
             props:
-              - ns: "http://cyber.tamus.edu/ns/oscal"
+              - ns: "https://cyber.tamus.edu/ns/oscal"
                 name: tamus_baseline
                 value: LOW
-              - ns: "http://cyber.tamus.edu/ns/oscal"
+              - ns: "https://cyber.tamus.edu/ns/oscal"
                 name: tamus_required_by
                 value: 2025-05-31
           - position: before
             by-id: sc-7.11_gdn
             parts:
               - id: sc-7.11_tamus_smt
-                ns: "http://cyber.tamus.edu/ns/oscal"
+                ns: "https://cyber.tamus.edu/ns/oscal"
                 name: tamus_implementation
                 prose: >-
                   Use country-based or IP-based blocking to restrict incoming communications traffic from countries on
                   the [[TAMUS Blocked Countries List](#0d22bdb1-7458-4a52-bae5-88d396cee594)].
+      - control-id: si-4
+        adds:
+          - position: ending
+            props:
+              - ns: "https://cyber.tamus.edu/ns/oscal"
+                name: tamus_control_type
+                value: common
+              - ns: "https://cyber.tamus.edu/ns/oscal"
+                name: tamus_control_provider
+                value: "TAMUS Cybersecurity (for managed endpoints)"
       - control-id: si-12.1
         adds:
           - position: ending
             props:
-              - ns: "http://cyber.tamus.edu/ns/oscal"
+              - ns: "https://cyber.tamus.edu/ns/oscal"
                 name: tamus_baseline
                 value: LOW
-              - ns: "http://cyber.tamus.edu/ns/oscal"
+              - ns: "https://cyber.tamus.edu/ns/oscal"
                 name: tamus_required_by
                 value: 2022-08-01
       - control-id: sr-6
         adds:
+          - position: ending
+            props:
+              - ns: "https://cyber.tamus.edu/ns/oscal"
+                name: tamus_control_type
+                value: hybrid
+              - ns: "https://cyber.tamus.edu/ns/oscal"
+                name: tamus_control_provider
+                value: "TAMUS Cybersecurity"
           - position: before
             by-id: sr-6_gdn
             parts:
               - id: sr-6_tamus_smt
-                ns: "http://cyber.tamus.edu/ns/oscal"
+                ns: "https://cyber.tamus.edu/ns/oscal"
                 name: tamus_implementation
                 prose: >-
                   Texas A&M University System Cyber Operations performs supplier assessments and reviews of

@@ -2,7 +2,7 @@
 profile:
   metadata:
     title: Texas A&M University System Security Control Standards Catalog
-    version: "2.2.2"
+    version: "2.2.3"
     oscal-version: 1.1.2
     roles:
       - id: prepared-by
@@ -873,6 +873,51 @@ profile:
                 prose: >-
                   Ensure an IT organization is designated to provide security monitoring for all information systems,
                   in both centralized and decentralized IT environments, owned or managed by the organization.
+      - control-id: pm-15
+        adds:
+          - position: ending
+            props:
+              - ns: "https://cyber.tamus.edu/ns/oscal"
+                name: tamus_control_type
+                value: hybrid
+              - ns: "https://cyber.tamus.edu/ns/oscal"
+                name: tamus_control_provider
+                value: "TAMUS Cybersecurity"
+          - position: before
+            by-id: pm-15_gdn
+            parts:
+              - id: pm-15_tamus_smt
+                ns: "https://cyber.tamus.edu/ns/oscal"
+                name: tamus_implementation
+                prose: >-
+                  Texas A&M University System Cybersecurity establishes an Information Security Council to facilitate
+                  contact with TAMUS member institutions and provide overall leadership and direction for the TAMUS
+                  information security program. Members of the TAMUS Information Security Council include:
+                parts:
+                  - id: pm-15_tamus_smt.a
+                    name: item
+                    props:
+                      - name: label
+                        value: a.
+                    prose: System Chief Information Security Officer and Deputy
+                  - id: pm-15_tamus_smt.b
+                    name: item
+                    props:
+                      - name: label
+                        value: b.
+                    prose: TAMUS Cyber Operations Executive Director and Associate/Assistant Directors
+                  - id: pm-15_tamus_smt.c
+                    name: item
+                    props:
+                      - name: label
+                        value: c.
+                    prose: System Member Chief Information Officers
+                  - id: pm-15_tamus_smt.d
+                    name: item
+                    props:
+                      - name: label
+                        value: d.
+                    prose: System Member (Chief) Information Security Officers
       - control-id: ps-2
         adds:
           - position: ending

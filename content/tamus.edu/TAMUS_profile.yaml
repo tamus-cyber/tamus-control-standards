@@ -1140,13 +1140,13 @@ profile:
       - uuid: c0fe2377-1bb5-47a5-89c9-9d1e978deec6
         title: TAMUS Policy 29.02
         citation:
-          text: Texas A&M System Policy 29.02, Information Security
+          text: Texas A&M University System Policy 29.02, Information Security
         rlinks:
           - href: https://policies.tamus.edu/29-02.pdf
       - uuid: 56ad2ecd-c959-4926-ad66-39b187d1103f
         title: TAMUS Regulation 29.02.01
         citation:
-          text: Texas A&M System Regulation 29.02.01, Information Security Governance
+          text: Texas A&M University System Regulation 29.02.01, Information Security Governance
         rlinks:
           - href: https://policies.tamus.edu/29-02-01.pdf
       - uuid: a444439a-d0c7-4d93-b98d-3eeb506f2a1e
@@ -1170,7 +1170,7 @@ profile:
       - uuid: 28edd686-b17c-47ca-aba4-4c7de11e82f5
         title: TAMUS Regulation 34.07.01
         citation:
-          text: Texas A&M System Regulation 34.07.01, Emergency Operations Plans
+          text: Texas A&M University System Regulation 34.07.01, Emergency Operations Plans
         rlinks:
           - href: https://policies.tamus.edu/34-07-01.pdf
       - uuid: b2dbf666-35ba-4fdf-97a1-9e4b07b338f0

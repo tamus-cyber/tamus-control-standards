@@ -1045,7 +1045,7 @@ profile:
                 value: LOW
               - ns: "https://cyber.tamus.edu/ns/oscal"
                 name: tamus_required_by
-                value: 2025-05-31
+                value: 2026-07-01
           - position: before
             by-id: sc-7.10_gdn
             parts:

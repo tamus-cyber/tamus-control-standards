@@ -1053,8 +1053,8 @@ profile:
                 ns: "https://cyber.tamus.edu/ns/oscal"
                 name: tamus_implementation
                 prose: >-
-                  Use country-based or IP-based blocking to restrict incoming communications traffic from countries on
-                  the [[TAMUS Blocked Countries List](#0d22bdb1-7458-4a52-bae5-88d396cee594)].
+                  Use IP-based blocking to restrict incoming communications traffic from entities listed on
+                  the [[Texas Cyber Command Prohibited Technologies Domains List](#0d22bdb1-7458-4a52-bae5-88d396cee594)].
       - control-id: si-4
         adds:
           - position: ending
@@ -1180,11 +1180,11 @@ profile:
         rlinks:
           - href: https://www.cyber.tamus.edu/policy/guidelines/incident-notification/
       - uuid: 0d22bdb1-7458-4a52-bae5-88d396cee594
-        title: TAMUS Blocked Countries List
+        title: Texas Cyber Command Prohibited Technologies Domains List
         citation:
-          text: TAMUS Blocked Countries List
+          text: Texas Cyber Command Prohibited Technologies Domains List
         rlinks:
-          - href: https://sso.tamus.edu/BlockedCountries.aspx
+          - href: https://dir.archerirm.us/apps/ArcherApp/Home.aspx?requestUrl=**search%2feyJ3b3Jrc3BhY2VJZCI6ODIsInNvbHV0aW9uSWQiOjY4LCJhcHBsaWNhdGlvbklkIjo0ODcsImlzTGV2ZWwiOiJGYWxzZSIsInZpZXdBcyI6ImRlZmF1bHQiLCJsZXZlbElkIjoyNzd9
       - uuid: 1d635223-295d-4ac9-a117-9c7558cb9ea3
         title: SP 800-145
         citation:

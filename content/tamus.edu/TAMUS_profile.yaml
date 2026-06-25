@@ -1033,7 +1033,7 @@ profile:
                         prose: >-
                           Vendors and third parties adhere to all state and Federal laws and System policies
                           pertaining to the protection of information resources and privacy of sensitive information.
-      - control-id: sc-7.11
+      - control-id: sc-7.10
         adds:
           - position: ending
             links:
@@ -1047,14 +1047,14 @@ profile:
                 name: tamus_required_by
                 value: 2025-05-31
           - position: before
-            by-id: sc-7.11_gdn
+            by-id: sc-7.10_gdn
             parts:
-              - id: sc-7.11_tamus_smt
+              - id: sc-7.10_tamus_smt
                 ns: "https://cyber.tamus.edu/ns/oscal"
                 name: tamus_implementation
                 prose: >-
-                  Use IP-based blocking to restrict incoming communications traffic from entities listed on
-                  the [[Texas Cyber Command Prohibited Technologies Domains List](#0d22bdb1-7458-4a52-bae5-88d396cee594)].
+                  Use IP-based blocking to prevent the exfiltration of information to entities listed on the
+                  [[Texas Cyber Command Prohibited Technologies Domains List](#0d22bdb1-7458-4a52-bae5-88d396cee594)].
       - control-id: si-4
         adds:
           - position: ending

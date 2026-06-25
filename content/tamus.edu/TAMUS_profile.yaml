@@ -1184,8 +1184,7 @@ profile:
         citation:
           text: Texas Cyber Command Prohibited Technologies Domains List
         rlinks:
-          - href: https://dir.archerirm.us/apps/ArcherApp/Home.aspx?requestUrl=**search%2feyJ3b3Jrc3BhY2VJZCI6ODIsInNvbHV0aW9uSWQiOjY4LCJhcHBsaWNhdGlvbklkIjo0ODcsImlzTGV2ZWwiOiJGYWxzZSIsInZpZXdBcyI6ImRlZmF1bHQiLCJsZXZlbElkIjoyNzd9
-      - uuid: 1d635223-295d-4ac9-a117-9c7558cb9ea3
+          - href: https://dir.archerirm.us/default.aspx?requestUrl=..%2fSearchContent%2fSearch.aspx%3fView%3dReport%26reportId%3d11563%26moduleId%3d487
         title: SP 800-145
         citation:
           text: >-

@@ -816,9 +816,9 @@ profile:
                 ns: "https://cyber.tamus.edu/ns/oscal"
                 name: tamus_implementation
                 prose: >-
-                  The default baseline for an information system are those controls identified as
-                  required by Texas DIR and/or the Texas A&M University System for the impact level
-                  of the information system.
+                  The default baseline for an information system are those controls identified as required by
+                  Texas Cyber Command and/or the Texas A&M University System for the impact level of the
+                  information system.
       - control-id: pm-5
         adds:
           - position: ending
@@ -1122,7 +1122,7 @@ profile:
         rlinks:
           - href: https://statutes.capitol.texas.gov/Docs/BC/htm/BC.521.htm#521.002
       - uuid: 7b94d5e7-3a09-4790-8d5e-d50eefa003cc
-        title: DIR Control Standards Catalog
+        title: TXCC Control Standards Catalog
         citation:
           text: Texas Security Control Standards Catalog, Version 2.2
         props:
